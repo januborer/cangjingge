@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《菩提道次第广论》的造作、 翻译、内容和题解》(法尊法师)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="菩提道次第广论的造作-翻译内容和题解法尊法师"><a class="header" href="#菩提道次第广论的造作-翻译内容和题解法尊法师">《菩提道次第广论》的造作、 翻译、内容和题解》(法尊法师)</a></h1>
+<p>　　　　《菩提道次第广论》的造作、翻译、内容和题解</p>
+<p>　　这篇纪录稿是法尊法师于一九四九年三月间在重庆汉藏教理院讲的，当时并承尊法师阅过。现在发表的题目和内容分段。未请看过。读者可以从这篇稿里看出：《菩提道次第广论》是怎样到内地来的、它的内容主要讲些什么，有什么特殊的地方，它对于真正学佛修行的人有什么必要和帮助，以及它为什么叫菩提道次第广论等这些意义。</p>
+<p>　　　　　　　　　　　　弘悲附志</p>
+<p>　　　　一、</p>
+<p>　　《菩萨道次第广论》是我在一九三四年由西藏回本院（汉藏教理院，下同）来随讲随译的。</p>
+<p>　　《菩提道次第广论》因为部帙繁多，每使学者很不容易听得圆满。记得我去西藏求法，一九二七年从甘孜拉惹巴师父听广论的《止观章》时，起初听讲的人很多，但到后来只有恒明和我两个人听，后来恒明也离去了，连我一人也未听完。大勇法师临圆寂时很殷重地嘱咐我，教我应去昌都从安东格什学广论，学了以后，无论如何还要把它传到内地来。勇法师并说，如果这部书能够传到内地，连我们进藏学法的三十几人所受施主一切供养，都可消受得了而不白费。我遵勇法师遗嘱，去亲近安东格什。最初，他老人家也未即讲授，到拉萨后，因有墀门噶伦作施主请他老人家讲，我们二十三人（多为安师原有弟子）才有随听。不过。噶伦只听到中士道便算了，其余的弟子们也时常缺席，剩下我和扎希却札两人；不久，札希却札亦辍听，只我一人听完全论。就由于这种不容易学圆满的原因，再加上讲的人很多是详讲下、中士道和上士道的菩提心处而略《止观章》，所以就是一般喇嘛也不容易彻底了解《止观章》。但是，这部书对内地学者似乎有缘，就本院来说，从我翻出后，前后有许多人都听圆满；至于本院以外的人，勇师最初的略论在成都印行，一般已经有佛学根底的人，喜爱得简直难以形容，广论初在本院油印，继于武汉排印二千部，也是一散而光。勇师的遗嘱我能完成，这是我足以自慰的。</p>
+<p>　　　　二、</p>
+<p>　　这书，尤其是《止观章》很难懂。在跑马山曾有过这样的笑话：「与其听止观，宁背石头！」不过，难懂固然难懂，重要却也重要，因为除了这部书以后，再没有能把一切佛法总摄起来作为一个补特伽罗所必须的修行方法的。这里，我可以摆一个故事，并顺便说明本书的造作。相当于内地玄奘法师的西藏大译师仁卿桑波，他毕生从事翻译，学问的丰富，自然没有话说。仁卿桑波晚年，当阿底峡尊者应藏王之请莅藏弘法时，他请吃斋，起初阿底峡尊者问他所学，凡阿底峡所有的，他都懂得，因而赞叹道，西藏有像你这样的人，实在用不着我来了。但后来阿底峡尊者问到他怎样把所学的拿来修行时，他说，所学法门很多，只可各门修各门的，各门按各门的仪轨去修。阿底峡尊者就笑起来了，他说，这样看来，西藏还是需要我哩！阿底峡尊者为什么这样说呢？就是因为他有总摄一切佛法而为一个补特伽罗次次第第修行所必须的菩提道次第教授的缘故！</p>
+<p>　　本书的作者宗喀巴大师，在得文殊菩萨加持而生起真正的中观见以后，经多人劝请，根据《菩提道炬论》和阿底峡尊者的三传弟子霞惹瓦的略注，再加以发挥和补充，遂成为我们现在所讲的这部伟大著作《菩提道次第广论》，著作的地点是惹震寺，时间为安居期中。后来因广论过繁，利根人研究起来固有堪能，但智慧稍差的人，就难免望洋兴叹，又经弟子们的劝请，于中摘要而成略论。作者因为深得这个统一的、次第的修行的体系和精要，并以发愿文的方式作发愿摄颂，尽摄本论要义。这样，关于菩提道次第的著作，作者宗喀巴大师逐完成著名的广、中、略三书。此外，作者对菩提道次第的精义，还在其它地方常以各种方式加以提示和摄集、或十颂八颂不等。</p>
+<p>　　　　三、</p>
+<p>　　本论的作者宗喀巴大师，如前述是得文殊的加持而造本论的。文殊指示作者三个要点为造这部论的中心依据：一、出离心，二、菩提心，三、正见。今人所普遍称道的「三要」，就是这三项事情。作者持此三要，再用上、中、下三士道的形式组成本论。我们世间一般人，每天所想所为，不外乎「现世」，换句话，即眼前的快乐，「后世如何」这问题，从来就没有想到过。然而一个人如果不顾及后世的长远利益，就必然地连脱离恶趣、得生善趣的能力也会没有，更谈不上真正的佛法。因此，要用种种的道理改造常人的心理，使能发起牺牲眼前快乐、注重未来长远利益的弃恶因、播善种的意乐和行为，就是说，先把学者造成一个很有把握地离恶趣而生善趣的人，作为堪修佛法的基础，这是很重要的。这就是下士道的作用。</p>
+<p>　　仅仅这样一个能修世间善法的下士，还是谈不到真正的佛法，真正的佛法是要厌离整个三界生死而求出世的个人解脱，和基于个人解脱而解脱他人的声闻乘法和菩萨乘法，因此，就必须在下士道的基础上进一步说明整个生死轮回的可厌，例如说，三界最高处所的「非想非非想处」，也不过八万大劫的享受，而这享受的本身且是「行苦」，何况劫满还有堕落的危险呢！用这样地道理使下士学者能够透过三界整个生死轮回，对之作通盘的考察和厌离。这就是能够引发「出离心」而彻底解决生死问题的中士道。</p>
+<p>　　中士道的学者已有自己解脱的能力，唯能自己解脱者才能解脱他人，没有中士道的能力作基础的人是不可能作利他的事情的。把一个学者由中士道引入上士道的理由是必须告诉中士：自己之所以要出离三界，完全是因为自己已经确认在整个生死里，没有哪一个地方是真正「安身立命」之处，哪怕小到像针尖大的地方也是找不到的；推己及人，三界一切众生也完全同自己一样，如果不出离生死，随时随地就只有痛苦，绝无快乐。由这点出发，想使一切众生也同自己一样地得到解脱，于是就去谋求能够利益众生的方法。又深知只有佛陀才能彻底利益众生，于是就去谋求能够成佛的方法。这样，「为利众生愿成佛」的「菩提心」就有可能发起，有了菩提心，就有资格修大乘菩萨行了。这便是上士道的情形。</p>
+<p>　　但是，依于出离心而发菩提心的上士，主要地要靠什么工具和应该怎样才能断烦恼而利益众生呢？这就是，只有在圣教中求得不共的「中观正见」！因为只有正见这个东西，才能斩断烦恼，才能使自己无我，纯洁而正确地利益众生，所以本论接着用很大的篇幅来特别抉择正见，这就是《止观章》。</p>
+<p>　　　　四、</p>
+<p>　　《菩提道次第广论》由于有出离心、菩提心和中观见的精要，由于有下士道、中士道和上士道的严密组织、就有下面这些特点。</p>
+<p>　　一、能够把一切圣教都无余地赅摄起来，并且都作为实际修行所必须。</p>
+<p>　　二、这种总摄是以三种士夫为次第的，因此，虽然总摄一切佛法于一身，但是并没有使人无从下手和不能完成整个修行过程的杂乱和不实际的缺点，而确实是切合「实修的次第」的。</p>
+<p>　　三、作者在正论之前先对他这部著作所根据的《道炬论》加以说明和称赞：说明《道炬论》的作者阿底峡尊者的殊胜，使学者因胜人而慕胜法；说明《道炬论》能摄尽一切圣教，使学者知胜法而起胜行；说明对于这样地胜法应该怎样地讲说和听闻的规矩，使法师和学者能共知行仪而都得实益。</p>
+<p>　　四、本论的一切理论，并不是任何没有真正了解佛法的人自作聪明地杜撰出来的而是上自佛陀、下至一切真正得佛心要的祖师们所递相传来的；本论述列的修行「教授」，也是古人实修实证的结果，从来源说，作者虽然是述古，但从实践说，这些「教授」也是作者经过自身的实际修证的，并非徒托寻思所设构的。</p>
+<p>　　五、本论的教授是用这样地方法来组织的：先具体地说出教授的事实，接着对所说的事实用正确的理论来成立，最后援引圣所说教作证明。这就使得一切真正信仰佛法并有佛法知解的修学者不能不接受本论的教授，而这也就使得本论的教授不是可以随意变动的。</p>
+<p>　　　　五、</p>
+<p>　　明白了本论的主要内容和它的特点，我们就可以非常容易地来理解本论的题名了。</p>
+<p>　　本论题名，也可以依照通常的方法分总、别两方面来讲。</p>
+<p>　　「论」是总名，它表示这部书不是三藏的经和律，而是属于论藏的。「论」的梵音叫「嘎哒」，有改除和开显两种意义，就是说，论的作用能使学者改除过恶，能给学者开显诸法真理；玄奘法师所谓「抉择法相」就是开显的意思，所谓「教诫学徒」就是改除的意思，凡是真正的论必须具有四种功德：有法、有义、对治生死、趣向涅槃。论也有通、别之分，就通义讲，一切经教皆可名论，因为一切三藏教典都具有改除过恶和进修善法的两种意义；就别义讲，只有根据佛经而造作的论典才名为论。</p>
+<p>　　「菩提道次第」是别名，因为这部论不讲别的东西，它是专门以菩提道次第为所论的内容的。</p>
+<p>　　「菩提」是梵音，古译「觉」「道」「智」「证」，但实际上应以「清净了解」的意思为比较确切。清净是清净障碍，了解是了解诸法真理，因为有障碍就不能了解诸法真理，要了解真理就必须清净障碍。但是，实际上所谓菩提，主要地还是指的了解，清净的意思是附带的；而且这里的菩提是指的通达诸法真理的「果智」，这种果智有声闻的、独觉的、佛陀的三种差别，而在这里，又是指的佛陀的果智，就是通常所说的「无上菩提」。</p>
+<p>　　无上菩提是修行人的最高最究竟的目的，要达到这个目的，必须有确切可靠的方法，方法就是「道」。道是能往的意思，也有通达的意思，通达无碍能往目的，就叫做道。世间上说，从开步走的地方到达终极目的地中间所经过的行程，就叫做道，但修行人对于所行的痕迹固然可以叫做道，对于能行的力量也可以叫做道。原来一个人从凡夫到成佛的整个修行过程，实际上是全靠这个人身内智慧的改造的，就是说，真正所谓修行，它的主体是智慧，这种智慧对修行的补特伽罗来说，也叫做道。这里所说的道，包括形式方面和内容方面的东西。我们通常所说的四念住、四断……这些东西是智慧所依的形式，是道的方式而不是道的主体，道的主体是按照佛陀所说的四念住等修行方式去修行的智慧，也是在佛所说的修行方法和修行人补特伽罗自身中间所出现的心理状态和心理的改变情况。关于道的解释，《俱舍论》等说得很详细，可以参考。</p>
+<p>　　佛所说的修行方法很多很多，但是其中没有一件不是成佛所必须的，所以任何人要打算成佛，就必须完全地修持佛所说的一切修行方法。这里的问题是：方法很多而又必须全修，但是实际上修起来，哪一种方法应该在前面修，哪一种方法应该在后面修，这都是有着一定先后秩序而又互相关连的次第的。这就表明，凡修菩提道，第一、对于一切真正佛说的修行方法（道）无论多少，必须完全具备，不缺任何支分；第二、对于完全具备的很多很多的修行方法，必须秩然有序，不乱任何步骤。我们对于这样又完全又有步骤的道叫做「圆满清净」之道。这就是本论题目上的「次第」二字的意思。</p>
+<p>　　总起来说，菩提是所求的极果；能够满足修行人的要求，使他得到所求极果的方法，就叫做道；对于道的一切支分，必须又圆具又不乱，这叫做次第；本论专门讲说从一个纯粹的凡夫次次第第地、圆满地修持足以得到究竟无上菩提这中间所有的道的次第，所以叫做菩提道次第论；「广」字是一个形容词，没有什么特别的意思，就是为了简别作者所作关于菩提道次第的略论，所以叫做《菩提道次第广论》。</p>
+<p>　　　　一九四九、三、十三记于重庆汉藏教理院第一讲堂</p>
+<p>　　　　（弘悲记）</p>
+<p>　　　　（原载《现代佛学》1954年十一月号）</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../ptdcdzj/ckzl/zkbdsdptdcdlyzxdfx1957ndseq.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../ptdcdzj/ckzl/ptddncstwcyjsrs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../ptdcdzj/ckzl/zkbdsdptdcdlyzxdfx1957ndseq.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../ptdcdzj/ckzl/ptddncstwcyjsrs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

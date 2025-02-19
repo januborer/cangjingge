@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第廿二章　三妙行－－身、口、意柔软 - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="第廿二章-三妙行身口意柔软"><a class="header" href="#第廿二章-三妙行身口意柔软">第廿二章　三妙行－－身、口、意柔软</a></h1>
+<p>第廿二章　三妙行－－身、口、意柔软</p>
+<p>　 　所谓“三妙行”就是身、口、意，最重要是身、口、意柔软。“行者，谓三行－－身行、口行、意行” “出息、入息名为身行”“出入息”是属于“身念住”方面，身体方面的 “有觉、有观名为口行”有觉、有观，这里的觉、观，就是有寻、有伺的意思，这是属于口行。事实上，在讲话之前，我们在头脑里面， 都已经有那些言语了，所谓的觉、观，它是比较微细的，虽然外面的声音还没有讲出来，但是事实上你的头脑里面、内心里面是已经有在讲话了。所以，这里有讲口 行、有觉有观，是讲说内心、头脑里面的言语嘀嘀咕咕那些。</p>
+<p>　 　“想、思名为意行”所谓“想、思”，又是更微细的念头、起心动念。更微细的念头、叫“ 想、思”，它是属于“意行”。“何故出息、入息名为身行？”“出息、入息是身 法，依于身、属于身、依身转，是故出息、入息名为身行”如果你的身体很浮躁，你的身体很粗鲁，或是说你现在刚运动、跑完五千公尺下来，出入息 一定会很急促、很快，所以出入息是随著我们身体而转、而变的。“有觉、有观故则口语，是故有觉、有观是口行”有觉、有观，就是内 心里面、脑中的言语、嘀嘀咕咕那些。“想、思是意行，依于心、属于心、依心转，是故想、思是意行”。</p>
+<p>　 　一般讲说修行，不是说越修越行，很多的修行都是越修越厉害，越修我越行、越厉害，因为我有时候也会遇到这样的人，要来比较、要来比剑的。如果修行不是让 你回来反观，照见到身、口、意是不是柔软，不能够在历缘对境里面，看到自己有没有贪嗔痴，这样的修行有需要重新检讨。但是他怎么讲呢？“啊！ 那是不重要的，那是方便法而已啦！我们讲最高境界那些，不需要这样啦！”我就跟他讲“看你个人怎么样认为嘛！你如果认为这样好， 那你就继续嘛！”我是觉得说修行是要一步一脚印、脚踏实地，事实上真正修行就是修正我们的行为，因为我们平常都很冲动，所谓的修行就是要修哪 些行呢？因为我们平常这个心，都是一直在冲动，我们本来的身、口、意都一直在冲动，修行就是要修我们的身行、口行、意行，我们平常的身、口、意都一直在冲 动，抓、绷紧都是，今天修行就是要回来看到我们的冲动，然后让我们的冲动能够缓和下来，让我们的行为跟讲话都能够缓和下来，我们的身、心会展现出一种安 详、柔和。</p>
+<p>　 　记得！修行就是修这些身行、口行、意行，让我们这些身、口、意，能够缓和、安详、柔和，身行、口行、意行这三种，它的粗细跟关联度是怎么样呢？身行、口 行、意行，哪一种在先？意行，再来是口行。实际上，这三者的展现，是身行在先，然后再来口行，再来才是身行，现在我们微细的念头、起心动念，已经是明显的 念头，内心里面的语言嘀咕、抱怨，已经是付诸实际行动。举个实际的例子，现在假设朋友侮辱你、骂你、责备你，这时候你内心里面起了一些不愉快的念头，已经 开始起一些不可意境的念头出来，所以你已经开始在酝酿了，然后再慢慢嘴巴里面就开始准备，内心里面就开始嘀嘀咕咕，再来你就会用嘴巴骂，如果这还不行、还 不能解决，就会用手打。如果以犯罪来讲，这三种的严重性，到这里都已经算满严重了，为什么你会到这么严重的情况？因为在前面这里不能解决。</p>
+<p>　 　修行事实上是在这里、从这里就消化了，但是一般没办法，然后内心里面接触到境之后，马上就冲到口行、意行，开始用骂的、用争吵的，争吵之后不能解决，就 开始动作、打架。所以，事实上是这样，意行、口行、身行，我们修行就是第一个要先能够看到身体的动作是不是粗糙？因为这算是很粗的，这是细的，这是更微细 的，你粗糙的冲动、我慢，能不能看到？这里你要能够看到，才能够看到细的这些我慢冲动；这些你能看到，才能够看到更微细的念头、起心动念。内心里面微细的 波浪起伏，你就能够看到。禅修就是要让大家有机会能够宁静下来去看到，尤其是要从“意行”里面就要能够看到，因为这算是满微细 的，透过几天的禅修，大家能够进入到更微细的心灵品质，然后去看到我们微细的“心行”，当他展现出来这些，你就更清楚地可以看得 到。</p>
+<p>　 　【法义分享】“修行”就是修身行、口行、意行。“身行”是指我们身体的动作，包括出入息； “口行”是指言谈、说话，“意行”是思想、念头。凡夫的身、口、意都是不断的冲动，很难停得下来。或是 在禅修的时候能缓慢下来，但是一出禅修区，又是不断的冲动，或是有些世间法的修行是越修越厉害，修行是越修越行，都是背道而驰。你能不能在历缘对境之中， 把讲话的速度慢下来？我们实际都可以去检验，也可以实际去应用，在修行方面也很实用，希望大家能够好好落实在平常历缘对境展现。</p>
+<p>　 　能否在历缘对境中，把讲话的冲动速度慢下来吗？能听到自己讲话的音调高低与声浪起伏吗？能觉察到想讲话的冲动与冲动背后的我是、我能、我慢吗？有看到手 脚、身体动作的急躁与轻浮吗？能缓和下来吗？有看到思想、意念的冲动吗？当我是、我能的慢心、贪心、嗔心升起之际，能觉察到吗？能停得下来吗？这几个问题 都是很重要的。</p>
+<p>　 　修行，如果没有好好把这些实际去检验、实际的应用，跟“出世间法”的解脱道，还有很大的差距。所以，我们要在历缘对境，能够随 时回来看到我们平常走路的时候，都是走得很快、走得很快，一直急著要去办什么，急著要去做什么，就是那种赶集的心。现在能不能把脚步缓和一下、慢一点？再 来，我们平常讲话的时候也是一样，都是急著要表现，然后急著噼哩啪啦的一直讲，冲动相续都很快，这也是很重要、随时都可以去修正的，能不能把讲话的冲动频 率减缓一点？能不能在你跟人家讲话的当下，清楚听到自己讲话的声音，这一点非常重要。这是真正修行的功力，这是修行功夫的展现，因为这就是明觉度，不是说 在那里禅坐、看佛性，看到什么、看到什么性，那不是重点。</p>
+<p>　 　重点就是要能够去明觉到身行、口行、意行，然后让它缓和下来，过去都已经过去，没关系！从现在归零，从现在开始，你在历缘对境中，跟家人讲话、跟朋友讲 话，跟上司、跟部属讲话，一样每一个当下，都能够清楚听到你讲话的内容、声调，讲话有冲动，也知道现在讲话在冲动。讲话声调的高低，要能够听得到，再来就 是要更微细去看到，我在讲话的当下有没有我慢？背后有没有我慢的心态？这一点要去看到。因为我们常常在讲话的当下，背后有我慢不容易觉察；再来背后有不如 实也没有看到，或是我们在讲话里面，有扭曲、有染污，有贪、嗔加在里面，有加油添醋……，如果没有相当的一种明觉度，我们都 不知道、也不以为然，甚至也会为自己的染污，加上一些合理化的解释，这方面都是修行的功夫，都是要我们如实回来面对自己，所谓“至人只是常 ”，能够返璞归真。</p>
+<p>　 　平常就要去看到我们讲话背后有没有扭曲？有没有染污？因为有这一层的功力，才有可能到达“至人”，才有可能返璞归真、成为真 人，修行都是要成为一位真人。当机缘不成熟，可以保持“圣默然”、保持沉默，但是我们不要自欺欺人，不要去扭曲、染污，不要去加 油添醋，或是背后有私人不良的动机、企图，然后又不承认、不以为然，这样就会失去真朴、失去纯真，就不可能真正做到真人。</p>
+<p>　 　打坐、禅修、四念处，以及种种修行法门，除了静下心来去深观法义外，目的是要用在日常生活、历缘对境中来现观种种冲动与我慢，检验是否真的 “知行合一”。我们在历缘对境的时候，去看到身行、口行、意行的冲动，就是当下见法，保持你的明觉心在当下，当下你有看到，保持 明觉心在当下，才能够看到身行、口行、意行的冲动，有没有贪嗔痴，才能够看得到。修行就是在历缘对境每天都可以去看到，如果有这些，我们就调整、修正，就 是真正的修行。所以，若是真的在修行（不是光用嘴巴讲），行者的身、口、意冲动，一定会透过现观而缓和下来，不是刻意的很慢很慢，而是明觉正知、柔和安 详，没有冲动急躁。当身、口、意渐渐柔软下来，“我慢”也会因为透过现观、反观，净化而渐渐淡薄。这方面很多都是我们修行上一个 很重要的转捩点，修行不是在展现我越来越厉害，能够实际应用出来，真正步上解脱道的“三妙行”就会出来。</p>
+<p>　 　所以，“三妙行”是怎么样呢？为什么称做“妙”？为什么叫做“三妙行”，向 初果、证初果，就要慢慢展现出“三妙行”，而“无为”是阿罗汉。我们本来的身、口、意，都是一直冲动， 现在透过修行、透过现观，我们的身、口、意，展现出一种柔和，展现出一种安详，然后你的身、口、意，就是形成一种美妙，但不是一般世间美丑的美，而是说他 身、口、意的冲动，原来从粗糙身、口、意冲动的那种行，转变成一种柔和，所谓“美妙”是柔和、安详的意思，因为透过现观，身、 口、意就会展现出柔和安详，跟一般人就会有所不一样的地方，遇到什么样的境界，也比较会老神在在这样。</p>
+<p>　 　一个真正走在解脱道上的人，他的身、口、意有现观之后，一定会自然的缓和柔软下来，展现出一种祥和、一种柔和、一种安详，就会自然展现出一种自然朴实纯 朴之风，于是会把这一股气氛，给有缘人看到这一种安详，在经典里面一样有提到，有些人看到佛陀的弟子，展现出安详柔和的身行、口行、意行，然后就问说 “你的老师是谁？你怎么能够展现出这样一种安详的气氛？”有听过这样的故事？都是因为透过有修有证，然后身、口、意自然展现出安 详，如果你的修行没有体会到法，刻意的身、口、意的缓慢，会形成一种僵化，形成一种造作，那一种妙、那一种柔和，就没办法展现出来。所以，一个人有没有见 法，一看就很清楚了。你的内心安不安？一看就知道啊！你的内心有见法，内心的安，一样柔和、安详，包括“意行”的安都是啊！</p>
+<p>　 　（第二节）最主要就是讲一个人用种种武力来防卫自己，都没有用啊！最重要你要自我防卫，就是实修“四念住”，还有把 “三妙行”做好，这样才能够真正的防卫自己，能够累积各种的善缘、减少各种恶缘，这样对你的修行会有很大的益助。</p>
+<p>　 　（第三节）是有关于修行的次第，“具善人已，便具亲近善知识”然后下面就可以以此类推，就像骨牌效应这样，当你有具备前面的正 知正见，后面的这些就会陆续的跟著出来。“便具护诸根”当你有正确的闻思之后，就会来到“守护六根”， 守护六根“便具三妙行”，所谓“守护六根”就是你在历缘对境的时候，六根的冲动已经有认真在看，自然 身、口、意的展现就会柔和。“三妙行已，便具四念处”在历缘对境的时候，你都有在检验、在应用，实际在深入四念处、禅修的时候， 就更能够深入，更能够体证、见法、证果。所以，“四念处”要修得成功，平常闻思、实修，都是要在平常历缘对境的时候，已经要开始 在应用了，不是说等到禅修的时候，才是真正修行，不是这样。在平常就慢慢已经在应用、在加温。“具四念处已，便具七觉支；具七觉支已，便具 明、解脱”就是修行的一个过程。</p>
+<p>　 　六根与身、口、意“三妙行”，两者有什么不一样的地方？我们平常是透过“六根”向“外六 境”，就是“六尘”攀缘、接触的，所谓“守护六根”，因为我们“六根 ”是向外接触之后，在接触的当下，你就要能够守护。身、口、意“三妙行”，是你有这些功夫之后，再来是向外展现。所 谓“六根”向外接触，事实上反过来是“六尘”跟我们的“六根”接触，其实是境 界到我们的心，境界流入我们的心。在境界流入我们心的当下，就要能够去看到我们“六根”有没有守护。所以，“六根 ”与“六尘”接触的当下，事实上是各种境界流入到我们心来，身、、口、意的行呢？是当有这些境界流入、进来之后，你 下一步就会采取行动，因此这是一种实际行为的展现。前面有先“六根”的接触，后面才会有身、口、意的行为展现，这是实际上要做出 来的。就像前面要开始搜集资讯，再经过一些判读、解读，后面这里就会展现行为出来。所以，修行就是前面接触的当下，你就要能够去看到，再来当你能够看到 时，身、口、意就能够展现“三妙行”，他就会柔软。</p>
+<p>　 　（第四节）讲述关于修行的次第，如果一个人没有惭愧心，他就会不恭敬，“不恭敬故习恶知识”所以常会“求人短 ”，“求人短故不信”，比如前面这一位从别人那里听到，当然也有看到这本书，然后打电话过来讲一些问题，就开始要比 较、要较量，当我稍微跟他回答一些问题，他就说：不是这样！不是这样！”，我就跟他讲：“如果你真正要了解，必须多看佛教历史方 面”他认为：“佛教历史不重要，是小学生在读的，那是祖师禅”我跟他讲：“不是这样啦！” 因为他认为自己是一个已经有相当证量的开悟者，于是我跟他讲：“如果你要跟我互动、希望听到真话，我希望你能够学习著归零，否则还是存著原来 的观念、知见，我们没办法沟通、没办法互动，这样因缘不成熟。因为我跟你讲什么，你就是还是存著原来的观念在下论断…… ”就会有“常求人短”的心态，因为凭著很多过去的知见，认为他修行境界很高，他已经开悟、已经怎么样了 ……。因为他讲的那些、我没有肯定他，反而跟他讲：“如果你要这样认为，只会耽误你自己迈向解脱之路，如果你愿 意的话，就是要学习著归零。如果学佛一开始，惭愧心、柔软心没有出来，却要在那里较量，这样要重新检讨”。</p>
+<p>　 　所以，“无惭、无愧”就不会有恭敬心，就会去“常求人短”，因为你的心是想要透过修行越修越厉害，然 后到处去跟人家展现自己的修行很高、很厉害，这样都是不正确的。如果一个人能够有惭愧心、“不放逸”，就会“恭敬顺 语”，真正要解脱就会遇到善知识，走在正确的解脱道上，就会回来内观，身心渐渐地柔软，于是不会去“求人短”，不会 跟人较量高低。记得！我们修行不是在跟别人比高比低，是在跟自己比；修行不是去跟别人比，也不是要你去跟某某大师、某某偶像比较，修行就是如实闻法之后， 回来反观自己，一方面能否看到每一次的闻、思、修，让自己有不断的脱胎换骨，看到“昨非而今是”。如果听闻一段期间，还没有看到 过去的知见不正确，没有脱胎换骨的感觉，表示很多还停留在过去的知见里面。</p>
+<p>　 　事实上，修行是随时回来反观照见，让我们的知见从原来的框框里面，不断的跳脱、不断的升华，让我们的知见、让我们的视野，超脱过去的框框，来到跟解脱 者、佛陀他们相同的视野、相同的世界、相同的胸襟。所以，修行不是去跟别人比较，而是跟自己比较，看自己有没有不断的成长、脱胎换骨？所以“ 不求人短”，因为你会向内反观看自己，“不求人短故生信”，为什么“不求人短”就会 “生信”呢？因为你的心宁静下来、有活在当下，然后认真去闻、思、修，因此就能够体悟到法。</p>
+<p>　　【法义分享】整个解脱道次第都是环环相扣，都有前因后果。只要能脚踏实地、实实在在的依法次法向而行，要见法、断结、证果、解脱，那是不待时节，随时都有可能。最大的问题是：“我慢”梗阻作祟，要归○而虚心学习，谈何容易。</p>
+<p>　 　（第五节）这一节是叙述佛陀跟萦发目楗连的一个对答，萦发目楗连不是大目楗连，这是另外一个人。“佛告目楗连：‘汝为何等福力 故，从彼众多种种异道沙门、婆罗门、遮罗迦出家所听其说法？’”萦发目楗连常常到处去听一些讲经说法，佛陀就问他说： “为什么你到处去听那些呢？”他也很老实回答：“我试听其竞胜论义福利，听其相违反论议福利故”我就是 很喜欢去听他们那些比高、比大、比小，又去看谁能够比出他最高的，就觉得这个人就是最厉害的，所以我就想去听闻这方面，也许就跟他学习，就像看武林哪一位 高手最厉害，我就想跟他学啊！“听其相违反论议福利故”那些最会骂的，讲的最大声的，我觉得那些最精采啊！我最喜欢听这些啊！这 好像在政治参选、选举的时候，很多是骂得越大声的，骂得越厉害的，掌声越多、群众会越多、造势越成功，所以这就是一般众生都是喜欢看热闹，要越有冲突、越 有戏可看，才觉得这样越有意思，众生就是喜欢看很有“内容”的一些戏。所谓的“内容”，不是真正好的内 容。</p>
+<p>　 　“长夜久远，种种异道沙门、婆罗门，遮罗迦出家竞胜论议，相违反论议福利，迭相破坏”佛陀就告诉他说：我看太多了！众生长夜以 来的习气就是这样，种种异道沙门、婆罗门，各方面的各宗各派、各种修行团体，以及一些宗派，不同的宗派、不同的宗教，大家彼此都是在那里“竞 胜论议”，都在比高比低、比大比小，要比出一个己大人小、己高人低、己优人劣，对于别人优点都看不到，然后都是一直在挑别人的毛病、找别人的 问题，所以“相违反论议福利”总是针对著别人、冲著别人，一直在那里挑毛病，“迭相破坏”。这是世间的 实相－－“迭相破坏”，所谓“文人相轻”。</p>
+<p>　 　修行人也是一样，如果没有建立起正知正见，你是抓住一个山头、抓住一个宗派，当你贴上这样一个大的标签之后，排他性就会出来，因此“文人相 轻”方面，修行人也是一样。当你认定一个团体、一个标签，框框、架构出来之后，就会排除异己。所以，我们一开始就跟大家讲：修行要走在解脱道 上，就是要打开无量的胸襟，你要超越任何宗教、宗派，这样才能够看到真理、看到实相，解脱自在。</p>
+<p>　 　“萦发目楗连白佛言：‘云何六入处律仪，修习多修习，令三妙行满足？’”怎样才能够收摄六根？然后 “三妙行”做得好呢？佛陀就告诉他：“若眼见适意、可爱念”就是欢喜的境界，很合自己意思的境界。遇到 这种境界，“能长养欲乐”就会让你起贪、增长你的贪，“令人缘著之色，彼比丘见已，不喜、不赞叹、不缘、不著、不住 ”当遇到这种境界的时候，一般众生会起贪，但是对一个有修行的人，能够了悟实相的人，他不会去起贪。“若眼见不适意 ”不可意境、逆境、不喜欢的境界，一般人就会起嗔，但是对一个有正确闻、思、修的人，有了悟实相真理的人，他不会起嗔。</p>
+<p>　 　“比丘见已，不畏、不恶、不嫌、不恚”不会成为境界的奴隶，“内心安住不动，善修解脱，心不懈怠”因 为有在“守护六根”，“三妙行”就会展现出来，平常都有在现观，已经把法应用出来，于是一期禅修的 “四念处”，就有机缘不断的脱胎换骨。众生喜欢听那些己高人低、己是人非、己大人小、己优人劣的高谈阔论，满足彼此内心的欲求， 事实上是因为你内心有这方面的欲求，好像说找不到人出气，去找一个很会骂的人帮你出气，于是去找相应。事实上，你内心里面有这样的欲求，于是去找那些跟你 相应的人，但是一般众生只要还没有解脱以前，都很喜欢比高、比大、比小，就是身见、我见不断，总是在高谈阔论、比较。佛教部派之所以会这样分裂，跟这些都 有关系，因为人多之后，团体的素质没办法掌控，很自然的一定会分裂，只是分裂到后来，佛教变成互相内部的攻击、厮杀，都不是很好的现象，然而这也是无常法 则，无常啊！</p>
+<p>　 　记得印顺长老就讲过一句话－－“我们要以佛法来研究佛法”，佛法讲的就是无常，要以无常法印来看待佛教佛法的流传与演变。，这 样知道吗，当你能够站在这样的立场，当你有一天体悟到原始法味的珍贵，这时候也能够以无限的胸襟，来包容一切的宗派、宗教，不会说一种“排他 ”，我们要有包容的胸襟，大家“以佛法来研究佛法”，了悟整个就是世间的常态，就是不断一直在演变、演变。佛法，当 它讲出来成为世间法，落入世间的语言文字，就是没办法不受世间法的影响。当落入文字，一百个人来读这本书，每个人的解读会相同吗？不相同啊！你也没办法去 强迫别人来相同，因此经典有经典的好处，但是也有它相当的弊病，都没办法避免的，因为世间就是这样无常。</p>
+<p>　 　“长夜久远，种种异道沙门竞胜论议，相违反论议福利，迭相破坏”这是世间很普遍的现象，佛门也是不例外。【法义分享】若能守护 六根，因有向内反观，所以身、口、意冲动会渐减少，而且会渐柔软。“六根触灭”，并不是六根不去触，而是遇到可意境－－不攀缘、 不粘著、不起贪爱；遇到不可意境－－不畏、不恶、不拒、不嗔。讲起来好像都很简单，但事实上不容易，遇到逆境要不畏、不恶、不拒、不嗔，很不容易啊！这都 是修行的境界。真正的境界、真正的功夫，都是在这里考验，也就是能够以平等心、舍心，去面对一切境界的可意－－顺境，或是不可意境－－逆境，因此内心能 “安住不动”解脱自在，但不是像木头人麻木不觉。</p>
+<p>　 　昨天我突然生病，睡到清晨觉得肚子很痛，一阵一阵的一直痛，经诊断是肠胃发炎，所以从昨天清晨开始，整天身体都很不舒服，到昨天晚上更是进入身体很不舒 服的情况，到今天上午才渐渐地好转，现在是恢复到百分之八十、九十，昨天就是突然发生肠胃炎，在疼痛的情况之下，一样啊！该吃药、当然我们吃药，但是在疼 痛的情况之下，以及身体的这些反应，包括拉肚子的情况，我们都是如实去看，就是看它怎么样痛的变化，它一阵痛、一个频率起来，然后就又消失，看著它的变 化，最重要就是你内心不迎不拒，内心接受它的变化，不是说不会痛啦！不痛就没感觉了，就是会痛，但是你看著它痛，你不去嗔恨，也不需要去埋怨说：我是去冲 到、还是去煞到……？都不必有这些心态。</p>
+<p>　 　现在当下症状是这样，你就是如实去觉察现在身心的变化，看到我们内心里面，有没有在起嗔啊？有没有起不安的心？如果这样一病不起，你能不能真的放下吗？ 中鼎不能过来上课啦！大家能不能可以放得下啊？整套课程没有结束，能不能放得下啊？当然可以呀！因缘如此，就接受啊！全部接受啊！所以，要应用到历缘对 境、面对各种境界，都能够去如实观察，然后溶入、接受。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../khwcfszj/ahjtdcdzdb/shlg21.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../khwcfszj/ahjtdcdzdb/crxn23.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../khwcfszj/ahjtdcdzdb/shlg21.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../khwcfszj/ahjtdcdzdb/crxn23.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

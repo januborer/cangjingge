@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>佛母出生三法藏经卷第二十三  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="佛母出生三法藏经卷第二十三"><a class="header" href="#佛母出生三法藏经卷第二十三">佛母出生三法藏经卷第二十三</a></h1>
+<p>　　　　佛说佛母出生三法藏般若波罗蜜多经卷第二十三</p>
+<p>　　　　　　　　西天译经三藏朝奉大夫试光禄</p>
+<p>　　　　　　　　卿传法大师赐紫臣施护奉诏译</p>
+<p>　　　　散华缘品第二十八之二</p>
+<p>　　尔时，世尊说是般若波罗蜜多正法时，于大会中现神通相，而此众会菩萨摩诃萨，苾刍，苾刍尼，优婆塞，优婆夷，天龙，夜叉，乾闼婆，阿修罗，迦楼罗，紧那罗，摩睺罗伽，人非人等。以佛威神力故，忽然得见阿閦如来应供正等正觉在此会中，犹如大海深固无动，有无量无数具足不可思议种种功德。菩萨摩诃萨并阿罗汉诸漏已尽无复烦恼，心善解脱慧善解脱，如大龙王所作已办，舍诸重担善得己利尽诸有结，正智无碍心得自在，一切功德皆悉具足者诸大声闻。又有无量无数苾刍，苾刍尼，优婆塞，优婆夷，及诸天龙八部。如是等众而共围绕。乃至阿閦佛国庄严等相皆悉得见。此诸众会，虽于是相起希有心，但乐瞻睹而悉不知其所从来？于是世尊摄其神力，此诸众会忽然不见阿閦如来及彼诸相。</p>
+<p>　　尔时，世尊告阿难言：「此诸大众皆不复见阿閦如来及诸相者。当知一切法亦复如是，不与眼作对法不可对法，法不可见法，是故无所从来亦无所去。何以故？阿难！一切法无知者无见者，无造者无作者。何以故？一切法如虚空无分别故。一切法甚深不可思议，譬如幻士不受诸法，无坚牢故。一切法无所受亦复如是。阿难！诸菩萨摩诃萨若如是行，是行般若波罗蜜多，而于是中亦无法可著。若如是学是学般若波罗蜜多，如是学者能到诸学彼岸。又复阿难！若菩萨摩诃萨，欲得阿耨多罗三藐三菩提者，应当学是般若波罗蜜多。何以故？是般若波罗蜜多学，于诸学中最上最大最胜最妙，无上中无上无等无等等。而能利益安乐一切世间，无依怙者为作依怙。如是学者诸佛许可诸佛称赞。阿难！诸佛如来应供正等正觉，学是法已能以足指按地，震动三千大千世界，乃至举足下足皆悉能现诸神通相。何以故？诸佛具足无量无数胜功德故。又复阿难！诸佛学是般若波罗蜜多故。于过去未来现在一切法中得无碍知见。是故阿难！我说般若波罗蜜多学，最上最大最胜最妙，无上中无上无等无等等。阿难当知！般若波罗蜜多无量无尽无有边际，若人欲称量般若波罗蜜多者，是即称量虚空。何以故？虚空无量故般若波罗蜜多无量。虚空无尽故般若波罗蜜多无尽，虚空无边际故般若波罗蜜多无边际。阿难！我不说般若波罗蜜多有所限量。何以故？若名句文是有量法，般若波罗蜜多非名句文即无限量。」</p>
+<p>　　阿难白佛言：「世尊！何因缘故佛说般若波罗蜜多无量？」</p>
+<p>　　佛言：「阿难！般若波罗蜜多无尽故无量，般若波罗蜜多离故无量，以无尽故离故即法不可得，不可得中当何有量？是故我说般若波罗蜜多无量。阿难！过去诸佛如来应供正等正觉，皆从般若波罗蜜多出生。是般若波罗蜜多即无尽。未来诸佛如来应供正等正觉，皆从般若波罗蜜多出生，是般若波罗蜜多亦无尽。于今现在十方无量阿僧祇世界现住说法者，诸佛如来应供正等正觉，皆从般若波罗蜜多出生。是般若波罗蜜多亦无尽。阿难！我亦从般若波罗蜜多出生，是般若波罗蜜多亦无尽。以是缘故般若波罗蜜多，已无尽，当无尽，今无尽。何以故？若能尽虚空，即能尽般若波罗蜜多。是故阿难！般若波罗蜜多无尽。」</p>
+<p>　　尔时，尊者须菩提作是念，如佛所说是义甚深我当问佛。作是念已即白佛言：「世尊！般若波罗蜜多无尽耶？」</p>
+<p>　　佛言：「须菩提！般若波罗蜜多无尽。何以故？一切法无生，如虚空故无尽。」须菩提白佛言：「世尊！若一切法无生者，般若波罗蜜多当云何生？」</p>
+<p>　　佛言：「须菩提！色无尽故般若波罗蜜多如是生，受想行识无尽故般若波罗蜜多如是生。须菩提！若菩萨摩诃萨如是了知，即般若波罗蜜多如是生。又菩萨摩诃萨，当观无明无尽故，般若波罗蜜多如是生，如是行无尽，识无尽，名色无尽，六处无尽，触无尽，受无尽，爱无尽，取无尽，有无尽，生无尽，老死忧悲苦恼等无尽故，般若波罗蜜多如是生。须菩提！若菩萨摩诃萨，以如是无尽法观诸缘生者，是行般若波罗蜜多，即不住声闻缘觉之地，必证阿耨多罗三藐三菩提安住一切智。菩萨坐道场时，应当如是观缘生法，如是观已不堕二边不住中道，是为菩萨不共之法，如是观者得一切智智。又须菩提！若菩萨摩诃萨，于阿耨多罗三藐三菩提有所退转者，是菩萨摩诃萨，即不能成就如是善巧方便，亦不能知，云何是菩萨摩诃萨，行般若波罗蜜多？云何是无尽法生般若波罗蜜多？云何是无尽法观诸缘生？须菩提！若菩萨摩诃萨，不退转于阿耨多罗三藐三菩提者，即能成就如是善巧方便，亦能了知菩萨摩诃萨如是行，是行般若波罗蜜多。以如是无尽法生般若波罗蜜多。以如是无尽法观诸缘生。须菩提！菩萨摩诃萨，能如是观诸缘生时，即不见有法非因缘生，亦不见有法是常是究竟是坚牢，亦不见法有作者有受者。须菩提！菩萨摩诃萨如是行般若波罗蜜多时念无尽法，如理出生般若波罗蜜多。以如是无尽法观诸缘生时，即不见色，不见受想行识，亦复不见无明行识，名色，六处，触受爱取有，生，老，，死，忧悲苦恼等。不见此佛刹亦不见彼佛刹，不见有法是此佛刹，亦不见有法是彼佛刹。须菩提！若菩萨摩诃萨，如是行般若波罗蜜多时，魔心大怖忧愁苦恼。须菩提！譬如有人丧失父母，极大悲痛忧愁苦恼，魔心生苦亦复如是。」</p>
+<p>　　须菩提白佛言：「世尊！但有一魔心生苦恼，为多恶魔皆苦恼耶？」</p>
+<p>　　佛告须菩提言：「菩萨摩诃萨如是行般若波罗蜜多时，所有三千大千世界一切恶魔，皆悉心生忧愁苦恼，各各不能安处其座。何以故？菩萨摩诃萨行是般若波罗蜜多故。一切世间天人阿修罗等所不能动，一切恶魔伺不得便。是故须菩提！菩萨摩诃萨，欲得阿耨多罗三藐三菩提者，当行是般若波罗蜜多。菩萨摩诃萨，行是般若波罗蜜多故，即能圆满布施波罗蜜多，持戒波罗蜜多，忍辱波罗蜜多，精进波罗蜜多，禅定波罗蜜多。如是圆满诸波罗蜜多已，即能圆满一切善法，具足一切方便愿力。又须菩提！菩萨摩诃萨，若欲摄诸善巧方便者，当行是般若波罗蜜多。又复当念无尽法，如理出生般若波罗蜜多。菩萨摩诃萨，如是行如是念时应生如是心，所有十方无量阿僧祇世界现住说法者，诸佛如来应供正等正觉，及诸佛一切智，皆从是般若波罗蜜多生。如诸佛所得法我悉应得。须菩提！菩萨摩诃萨行般若波罗蜜多时，于一弹指间能生如是心者，胜余菩萨摩诃萨，于兢伽沙数劫中布施功德。当知是菩萨摩诃萨，已得安住不退转地，诸佛护念。须菩提当知！菩萨摩诃萨，于一弹指间能生如是心者，具足如是一切功德。又菩萨摩诃萨，于一日中若过一日能生如是心者，当知是菩萨摩诃萨诸佛护念。在在所生生诸佛刹，具诸功德诸佛称赞，于一切处，广为众生作大利乐。须菩提！菩萨摩诃萨，行般若波罗蜜多时，能生如是心又复念无尽法，如理出生般若波罗蜜多者，譬如香象菩萨，于阿閦如来应供正等正觉所，行般若波罗蜜多，及修梵行。我诸菩萨亦复如是。」</p>
+<p>　　　　随知品第二十九</p>
+<p>　　「复次，须菩提！菩萨摩诃萨，应随知般若波罗蜜多相。所谓一切法无碍，当知般若波罗蜜多亦如是。一切法无分别，当知般若波罗蜜多亦如是。一切法无坏，当知般若波罗蜜多亦如是。一切法无作相，当知般若波罗蜜多亦如是。一切法无我无表慧所觉了，当知般若波罗蜜多亦如是。一切法但有假名字，当知般若波罗蜜多亦如是。一切法语言分别，即此语言无所有不可得，当知般若波罗蜜多亦如是。一切法无说，当知般若波罗蜜多亦如是。色无量，当知般若波罗蜜多亦如是。受想行识无量，当知般若波罗蜜多亦如是。一切法无量，当知般若波罗蜜多亦如是。一切法无相，当知般若波罗蜜多亦如是。一切法是通达相，当知般若波罗蜜多亦如是。一切法自性清净，当知般若波罗蜜多亦如是。一切法寂默，当知般若波罗蜜多亦如是。一切法无灭同于断，当知般若波罗蜜多亦如是。一切法得涅槃同真如，当知般若波罗蜜多亦如是。一切法无来无去无生无所生，毕竟生不可得，当知般若波罗蜜多亦如是。一切法无自相无他相，当知般若波罗蜜多亦如是。一切贤圣自性清净，当知般若波罗蜜多亦如是。一切法舍诸誓愿，当知般若波罗蜜多亦如是。一切法无方无处，当知般若波罗蜜多亦如是。何以故？色无方无处自性清净，当知般若波罗蜜多亦如是。受想行识无方无处自性清净，当知般若波罗蜜多亦如是。一切法喜乐性，当知般若波罗蜜多亦如是。一切法无染无离染，当知般若波罗蜜多亦如是。一切法非爱非离爱，当知般若波罗蜜多亦如是。色非尘非离尘自性清净，当知般若波罗蜜多亦如是。受想行识非尘非离尘自性清净，当知般若波罗蜜多亦如是。一切法无系著，当知般若波罗蜜多亦如是。</p>
+<p>　　「菩萨一切法佛智所觉了，当知般若波罗蜜多亦如是。一切法空无相无愿，当知般若波罗蜜多亦如是。一切法是大良药慈心为首，当知般若波罗蜜多亦如是。一切法住慈悲喜舍行，当知般若波罗蜜多亦如是。一切法净行住离诸过失，当知般若波罗蜜多亦如是。大海无边，当知般若波罗蜜多亦如是。须弥山庄严，当知般若波罗蜜多亦如是。色无边，当知般若波罗蜜多亦如是。受想行识无边，当知般若波罗蜜多亦如是。日轮光明照耀无边，当知般若波罗蜜多亦如是。一切音声无边，当知般若波罗蜜多亦如是。集一切佛法无边，当知般若波罗蜜多亦如是。一切众生界福智生无边，当知般若波罗蜜多亦如是。地界无边，当知般若波罗蜜多亦如是。水界火界风界空界识界无边，当知般若波罗蜜多亦如是。善不善法无边，当知般若波罗蜜多亦如是。一切佛法藏无边，当知般若波罗蜜多亦如是。一切法无边，当知般若波罗蜜多亦如是。空性无边，当知般若波罗蜜多亦如是。心心所法无边，当知般若波罗蜜多亦如是。心所行无边，当知般若波罗蜜多亦如是。</p>
+<p>　　「集一切法无量，当知般若波罗蜜多亦如是。一切法三摩地无量不可得，当知般若波罗蜜多亦如是。善不善法无量，当知般若波罗蜜多亦如是。一切法如师子吼，当知般若波罗蜜多亦如是。一切法不可坏，当知般若波罗蜜多亦如是。何以故？色如大海，受想行识如大海。色如须弥山庄严，受想行识如须弥山庄严。色如日轮光明照耀无边，受想行识如日轮光明照耀无边。色如一切音声无边，受想行识如一切音声无边。色如集一切佛法无边，受想行识如集一切佛法无边。色如众生界无边，受想行识如众生界无边。色如地界无边，受想行识如地界无边。色如水界火界风界空界识界无边，受想行识如水界火界风界空界识界无边。色离集善相，受想行识离集善相。色离和合相，受想行识离和合相。色如一切法三摩地无边，受想行识如一切法三摩地无边。色色离色自性，色真如是为佛法。受想行识识离识自性，识真如是为佛法。色相无边，受想行识相无边。色空无边，受想行识空无边。色于心心所法无边，受想行识于心心所法无边。色于心所行无生，受想行识于心所行无生。色于善不善法中不可得，受想行识于善不善法中不可得。色如师子吼，受想行识如师子吼。色毕竟不可坏，受想行识毕竟不可坏。以如是义故一切法不可坏，般若波罗蜜多亦如是。须菩提！若菩萨摩诃萨，能如是随知般若波罗蜜多。即于般若波罗蜜多中，无所行无所作无所证，非思惟观察筹量可及。远离一切谄诳作意，远离一切懈怠作意，远离一切悭嫉作意，远离我取作意，远离自他作意，远离我想人想众生想等，远离世间名闻利养，远离五盖等法，乃至远离一切非理作意。须菩提！菩萨摩诃萨，若如是行般若波罗蜜多，即于诸法中难得而得，乃能圆满一切功德，生诸佛刹成无上智。」</p>
+<p>　　　　常啼菩萨品第三十之一</p>
+<p>　　「复次，须菩提！诸菩萨摩诃萨，欲求般若波罗蜜多者，当如常啼菩萨摩诃萨。往昔于雷吼音王如来应供正等正觉法中修习梵行，勤求般若波罗蜜多。」</p>
+<p>　　须菩提白佛言：「世尊！常啼菩萨摩诃萨，作何方便而能求是般若波罗蜜多？」</p>
+<p>　　佛告须菩提言：「汝今当知，常啼菩萨摩诃萨，往昔求般若波罗蜜多时，不怖时长不念世事不惜身命，不乐世间名闻利养，于诸世间不生依著，但一心念求般若波罗蜜多。即于林中思惟方便，尔时空中有声作如是言：</p>
+<p>　　「善男子！汝可东行求是般若波罗蜜多。汝当往时若身若心勿生疲倦，勿念睡眠勿念饮食，勿念昼夜勿念寒热，勿念一切违碍等事。又复勿念内法外法，勿念于前亦勿念后，勿念四方四维上下。又复行时不得左右顾视，但一心念般若波罗蜜多。如是念时不应动色，不应动受想行识。若动五蕴即不行佛法，是行生死行。若行生死行，即不行般若波罗蜜多，即不成就般若波罗蜜多。是故汝今离如是相但一心求。」</p>
+<p>　　须菩提！尔时常啼菩萨摩诃萨，闻是空中声已，即答空中声言：「我今如所教行，何以故？我欲为一切众生作大光明，欲集一切佛法故。」</p>
+<p>　　时空中声即复赞言：「善哉，善哉。善男子！汝若东行求是般若波罗蜜多时，应信解一切法空无相无愿，当离诸相远离我见人见众生等见，远离恶知识亲近善知识。随所亲近应当尊重恭敬供养善知识者，能为汝说一切法空无相无愿无生无灭无性。汝若生如是尊重恭敬供养心者，应当不久得闻般若波罗蜜多，若于经卷中闻，若于法师所闻，汝随所闻般若波罗蜜多处，当生大师想尊重恭敬承事供养。是即知恩为报恩者。应作是念，此即是我真善知识。我闻此般若波罗蜜多故，不退转于阿耨多罗三藐三菩提，得近阿耨多罗三藐三菩提。不离如来应供正等正觉，生诸佛刹不生无佛刹中，远离诸难不生难处。善男子！汝应为求如是功德利故随从法师，不应为世间财利名誉故随从法师。又复以重法心故于法师所尊重恭敬，承事供养如大师想。常应觉知所有魔事，或时恶魔有因缘故，于说法者以好上妙色声香味触而为供养。彼说法者以方便力故受是五欲。汝于尔时不应生起不清净心而为障碍，但作是念，我无如是方便力故，而说法师为欲利乐一切众生令种善根故，虽受是五欲，于菩萨摩诃萨，无有少法可为障碍。善男子！汝于尔时应当安住诸法实相。何等名为诸法实相？所谓一切法无染无净。何以故？一切法自性空故，是中无我无人无众生无寿者。一切法如梦如幻如影如响，如是名为诸法实相。汝若如是安住，即不久得闻般若波罗蜜多。善男子！又复应当觉知魔事，或时魔因缘故，令说法者于听法者心生嫌恶，汝于尔时为求法故，不应暂起诸违碍想，于其法师益加尊重爱乐恭敬。汝当不久得闻般若波罗蜜多。」</p>
+<p>　　尔时常啼菩萨摩诃萨，闻空中声为教示已，即随所教东行求般若波罗蜜多。东行未久即作是念，我于向者云何不能问空中声东行远近至何方处，从谁得闻般若波罗蜜多？作是念已忧愁啼泣，即于彼住复作念言，我住于此一日二日乃至七日，若身若心无疲倦想，不念睡眠不念饮食，不念寒热不念昼夜，但一心念般若波罗蜜多。譬如有人唯生一子爱念甚重而忽丧殁，是时父母无复余念唯大苦恼忧愁啼泣。须菩提！常啼菩萨摩诃萨亦复如是，当于尔时无复余念，但念何时于何方处？从谁得闻般若波罗蜜多。」</p>
+<p>　　　　佛说佛母出生三法藏般若波罗蜜多经卷第二十三</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/fmcssfzj/fmcssfzjjd22.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/fmcssfzj/fmcssfzjjd24.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/fmcssfzj/fmcssfzjjd22.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/fmcssfzj/fmcssfzjjd24.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

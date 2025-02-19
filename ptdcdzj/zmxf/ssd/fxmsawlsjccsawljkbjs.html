@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《发心秘授》(阿旺 罗桑嘉措传授　昂旺朗吉堪布讲授)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="发心秘授阿旺-罗桑嘉措传授-昂旺朗吉堪布讲授"><a class="header" href="#发心秘授阿旺-罗桑嘉措传授-昂旺朗吉堪布讲授">《发心秘授》(阿旺 罗桑嘉措传授　昂旺朗吉堪布讲授)</a></h1>
+<p>　　　　发心秘授</p>
+<p>　　　　　　　　　　　　五世达赖喇嘛阿旺罗桑嘉措　传授</p>
+<p>　　　　　　　　　　　　昂旺朗吉堪布　讲授</p>
+<p>　　　　　　　　　　　　具足无缘大悲至尊具德恩师功德</p>
+<p>　　　　　　　　　　　　名称极难赞说昂旺朗吉堪布口授</p>
+<p>　　发心次第要览：</p>
+<p>　　一、皈依发心</p>
+<p>　　二、发心秘授：下中士道串修法</p>
+<p>　　1、修平等舍心</p>
+<p>　　2、续修知母</p>
+<p>　　3、次修念恩</p>
+<p>　　4、次修报恩</p>
+<p>　　5、次修慈心</p>
+<p>　　6、次修悲心</p>
+<p>　　7、次修增上心</p>
+<p>　　8、次修自他相换</p>
+<p>　　9、次发菩提心</p>
+<p>　　一、皈依发心等</p>
+<p>　　皈依师，皈依佛，皈依法，皈依僧。（诵若干遍）诸佛正法贤圣僧，直至菩提我皈依。（三遍）我以施等诸资粮，为利有情愿成佛。（三遍）愿一切有情离亲疏爱憎住平等舍。（三遍）愿一切有情具足乐及乐因。（三遍）愿一切有情离苦及苦因。（三遍）愿一切有情不离增上及解脱妙乐。（三遍）特为利益慈母一切有情，必须尽力速速证得正等觉位；为证此故，当依甚深道师佛瑜伽为门，趋入修习菩提道次第。（三至七遍）</p>
+<p>　　二、发心秘授，下中士道串修法</p>
+<p>（人生难得，善知识难遇，佛法难闻，修行机会难得）</p>
+<p>　　师云：难得具大义之人身已得，得之能成大义，应如何乃不空过，应勤取心要，以取得人身代价。此暇满具大义之人身，仅此一幸遇，难遇之佛法，仅此一幸遇。宗喀圣教尤难值遇，难遇如晨星寥寥无几之善知识，仅此初度值遇。胜缘会合，不能不赞为希有。如是难遇之因缘，以后更难幸遇。</p>
+<p>　　经云：人身仅一遇，如盲龟浮木。此言盲龟于大海中，寻其漂荡之浮木旧巢，若干亿万年偶一值遇。此喻大好人身，若干亿万年之偶一获得。</p>
+<p>（人生无常，死决定）</p>
+<p>　　如是难得之人身，能长住也好。但又不能长住，亦必须死。凡在生死圈中，莫不有死，死为决定义。</p>
+<p>（死期不决定，且生缘少而死缘多）</p>
+<p>　　且死无定期，刹那顷即可由此身变为他类身躯。盖此身脆弱及生缘少而死缘多故。</p>
+<p>（死时无法阻止，财富妻子丈夫儿女等皆无法带去，只能孤零零一人上路）</p>
+<p>　　又死时何可利益，财物妻子均不能利，死时唯冷泠清清一人而去。积如须弥之资财，死时纤尘许亦不能携去；广遍世界之子女，死时无一人能将自己留住不死；</p>
+<p>（强健与羸弱之身毫无用处，唯有含藏一切业力种子之心识，阿赖耶识，能相续下去）</p>
+<p>　　乃至与己俱生同来之身躯，死时亦须舍弃，唯余心识而去。</p>
+<p>（唯正法与三宝能利益、可作救护）</p>
+<p>　　死时唯一可利益者，唯佛说正法及三宝皈依处。能利益、唯正法，可作救护，唯有三宝。</p>
+<p>（发心精进修正法）</p>
+<p>　　既如是，须发心马上勤求正法，即马上勤求大乘法生起菩提心之教授。</p>
+<p>（若不然，得生善道机会渺茫，死后必堕三恶道，因无始来黑业多白业少故。）</p>
+<p>　　复从反面思之，如现在不发心马上去修正法，此身一失，其受生不外善恶二趣。以我多生以逮现世，恶业多故，定堕三途无疑。</p>
+<p>（思维地狱种种苦，起大怖畏心及远离心。人世的种种细微的苦我都不愿承受丝毫，何论地狱难堪众苦呢？而黑业却正把我向彼处牵引！）</p>
+<p>　　地狱中寒冽热炽，饿鬼道长时饥渴，畜生道互相残食，愚痴、寒热、饥渴、鞭打等苦，一旦堕入，何能忍受。</p>
+<p>（趁尚有机会，皈依求救护，取舍业果。求人天福报。）</p>
+<p>　　欲救此苦，唯有皈依三宝，勤于止恶修善。并须趁此身尚未堕入三途之时，即去勤求不入三途之法，即皈依三宝，希求救护，并发心依业果取舍而行；以求人天增上善果。</p>
+<p>（进一步思维，生人道仍不离八苦，诸受究竟全为苦，难出轮回，毫无是处。吾不取！）</p>
+<p>　　此尚不足，复思我今虽生善道，已得人身，而怨憎会苦、爱别离苦、求不得苦，以及生、老、病、死诸苦，凡今所遇，无不是苦。</p>
+<p>（再思维生天道，修佛法缘份极少，福报用尽，还堕恶趣，依然是苦，终非究竟，吾亦不取也！）</p>
+<p>　　即使生到最高之究竟天界，亦未离苦之自性；烦恼一生，终必还堕三途。如是三界，等同苦聚，长期是苦。</p>
+<p>（若欲了生脱死，如何修，当依戒定慧三学）</p>
+<p>　　然究应如何乃能离生死，乃离苦之自性。须依戒定慧三学，乃能脱离。故应依戒定慧三学而修。依此三学，确可解脱生死苦，解脱苦之自性。（再进一步思维，我虽出离热恼，得自在解脱，而一切诸父母亲朋友仇敌仍在苦海挣扎，迷不知途，我言解脱，岂非痴人说梦？缘何，众生同体故。）</p>
+<p>　　此尚不足，复思自己虽已出离，但自之一切父母尚沦苦海，此为诸佛菩萨所不忍所不许者。</p>
+<p>（既如此，当发愿度众生父母，方为圆满，皆大欢喜，而能度众生父母者，唯佛，故必发愿成佛。）</p>
+<p>　　为此故，须自他二利，须依大乘法，须生起菩提心。盖欲自他二利究竟圆满，必具功能，而此功能唯佛乃具，故须成佛。</p>
+<p>（成佛之道，在修大乘，大乘之要，在修菩提心。修菩提心之前，应先铲除亲爱怨憎中庸漠然之有漏三心。换之以无漏之平等舍心。基础才牢不可破。否则千里之堤，溃于一穴。竹篮打水一场空。）</p>
+<p>　　成佛方便，唯有大乘法。而大乘法之命脉，乃菩提心。故须发心修大乘法，发心生起菩提心。（须心与法相合而修，能感动而修。）</p>
+<p>　　阿底峡尊者依止金洲大师求得七因果言教与自他相换二种修心教授，依之修习，较易生起菩提心。修七因果言教之先，须先修平等舍心，乃能生起依一切有情而修心，而修为利一切有情愿成佛之菩提心。</p>
+<p>　　1、平等舍心应如何修：</p>
+<p>（欲修此法，必求加持，求大智大权势圆满成就者，此极方便而必须之法。）</p>
+<p>　　先想顶上释佛即上师，即一切佛，向之启请：祈尊加持我心相续，我对一切有情因亲生爱、因冤生憎、因中庸而漠然之三心，均祈加持除去而安住于平等舍。并祈加持我令一切有情亦除去此三种心而安住于平等舍。</p>
+<p>（冤亲中庸皆为缘起，切莫执着我相、人相，寿者相、众生相，应知众生同体。三者无丝毫自性可言。自编樊篱，还苦自己。于己于他，无任何益处。智者所不取也。）</p>
+<p>　　初、先想一中庸有情于自前面，思维：我愿迅生离冤憎亲爱中庸漠然之三心这平等舍心。如伊平日对自作过许多饶益，自对之一定生悦意心。此悦意心不可要，因能生爱执故，焉知此人过去不曾对自作过残害；故利我者不决定，而消遮爱执之心。反之，如伊对自作过如何残害，自对之一定生憎恨心，此亦不可，焉知此人过去不曾对自作过许多饶益，故害我者亦不决定，而遮止憎恨心。略想：利我者不可生爱执，过去对自曾作残害故；害我者不可生憎恨，过去对自曾作饶益故；由是遮止怨憎、亲爱中庸漠然三心而住于平等舍心。我今安住于平等舍心有何不可呢？！</p>
+<p>（亲者并非决定亲，因缘所成。亲者无自性。）</p>
+<p>　　嗣想亲厚者于自前面，思其于自饶益事，则生爱执，亦不可爱，因过去曾对自残害故。</p>
+<p>（仇者并非决定仇，因缘所成。仇者无自性。）</p>
+<p>　　嗣想怨仇于自前面，必生憎恨，此不决定，因彼过去曾对自饶益过。</p>
+<p>（是故安住平等心，为最上策。）</p>
+<p>　　反复思维后，三种均齐想于前面，如生爱则如前遮止（过去对自曾作残害故）；如生憎亦如前遮止（过去对自曾作饶益故）；遮止后，安住于平等舍心。</p>
+<p>（众生颠倒，执着我人众生寿者，故亲爱冤憎中庸漠然之心应速速舍去。）</p>
+<p>　　此平等舍心提念后，想于自方面此冤憎、亲爱、中庸漠然三心不可生。又回到他方面，此三心亦不可生。根本须于冤亲平等，即无所谓冤，无所谓亲，盖冤者过去曾作过许多次亲眷，亲者曾作过许多次冤仇。如阿罗汉结婚者故事，曾作偈云：“六亲锅内煮，子打父屁股，冤仇怀中抱，孙儿娶祖母。”众生颠倒，大多如是，思而压伏冤憎亲爱之心。如对冤许过去对自曾作利益，而现在是对自残害。但冤过去对自是利，不能过去是利，不许为利，而现在是利，乃许为利。以时间推之，冤对自过去曾作多利，总之是利；又将憎心压伏下去。</p>
+<p>（于亲者，起感激想，报恩想，于冤憎者亦然，且应生极大惭愧想，因其消我宿业，成就我故。）</p>
+<p>　　续想：一切有情虽在过去、现世，曾为我仇，比皆由我业力感召而来，彼等如执刑人，奉命行事，非于我故为加害；如是不生瞋恨。又彼等于我消多罪业，是则于我有益无损；我不但不生瞋恨，并且当生感激。又彼等因我多造恶业，为我消业，彼则自受下劣等报，是我累彼，我不但当生感激，且生极大惭愧；而为报彼恩故，极图度脱彼等。</p>
+<p>（众生皆喜乐不喜苦，将心比心，决定取平等心而舍亲爱冤憎中庸漠然之心。）</p>
+<p>　　嗣想三者于自前面，作总思维：亲者不可生贪，冤者不可生憎，中庸者不可漠然，于自于他均不可如是。但一切有情有共同性，即不意乐痛苦，意乐乐受。自又承许愿其具乐离苦之戒，又如何可生爱憎。</p>
+<p>（成佛乃为尽虚空遍法界众生成佛，自他尚在苦难中，应起同体大悲，舍爱憎心。）</p>
+<p>　　又想三者于自前面，于自方面决不可生亲即爱、冤即憎之心。一切有情均自母亲，决不可一部分爱一部分憎。并且自己乃依一切有情而成佛，决不会依一部分有情而成佛，不依其余一部分有情而成佛；一切有情均自恩者。自他双方均不可生亲者爱、冤者憎之心。因自他尚在水深火热之中，又何能有爱憎之分。</p>
+<p>（将此平等心广大周遍。）</p>
+<p>　　又渐推广到一村一县，乃至一切世界，对一切有情均不可生亲者爱、冤者憎之心而住于平等舍心。有暇时可广想。略想：冤亲二种有情于前面，而平其爱憎心。平等心生后，然后转入于知母念恩。依前说观到无可爱、憎、漠然；然后又启请，又观又修。如是周而复始，三四次修。</p>
+<p>（何为菩提心。其次第修法。）</p>
+<p>　　所谓菩提心者，须具有为利遍虚空一切有情之利他心，和为利一切有情自己必须成佛之愿成佛心二者，才是菩提心。依七因果言教和自他相换教授合修，更易生起菩提心。所谓七因果言教者，乃依知母、念恩、报恩、慈心、悲心、增上意乐、发菩提心七者，以前前为生后后之因的次第，长期殷勤串习，必生菩提心也。</p>
+<p>（无量劫中，无量母亲，无一有情不曾为我母。）</p>
+<p>　　2、修平等舍后，续修知母：即认识一切有情是母，为生起念恩心之因。</p>
+<p>　　知母者，即能认识一切有情均自母亲之心。八千颂云：一切有情，吾毋不去处，吾毋不生处，吾毋不死处。由此可知一切有情均自母亲。仅念此，认识母亲之心，尚不决定。再以无始之理思之，一切有情从无始来，心流不断，现在之心流，由过去之心流而来。现在之心流，非于现生中仅有，盖入胎之心流，来自入胎前之中有，中有之心流来自前生之心流，以此前前，推之无始。我从无始以来，受生无量数，母亲亦无量数。假如有哪一种有情未曾作过我的母亲，则我受生母亲的数量就不够。又从无始以来，我无处不曾受生过，无趣不曾受过生，故一切有情不仅作过我的母亲，而且多生作过我的母亲。依此理思之，一切有情确是我的母亲，何以我又不认识呢？</p>
+<p>　　譬如幼小离家，老大始回，见母而不认识，不能说不认识她就不是自己的母亲。</p>
+<p>　　又如见一虫豸于自前爬过，如有神通力，则知是自己过去生中的母亲，不能说她今生开形相变了就不是自己的母亲。</p>
+<p>（念母恩，念父恩，念友恩，念邻里，国恩，推而广之。）</p>
+<p>　　3、次修念恩：为生起报恩心之因。</p>
+<p>　　先想今生之母于自前面，思其对自种种养育之恩，为我救护一切损害，为我成办一切利乐。初住胎时，母亲一饮一食，一行一动，一坐一卧，都是在为保护胎儿着想，何者于胎儿有害，虽自喜食亦不食，何者于胎儿有益，自不喜吃亦要吃。更不顾自己疲劳、辛苦、困难，一行一动，一坐一卧，都是在为保护长养自己着想。假如母亲不是精心保护自己，稍一不慎，自己就会死在胎中，我身得来，实非容易。何母亲给我的身体，既不缺支，又具智慧，能辨善恶，依止佛法，精勤修学，可望成佛。母恩之大，何能比拟。中时，于出胎后，自己如一无知之肉虫，不能自己生存，全赖母亲温之暖之，哺之养之，母亲之心无时不刻不在自己身上，自己一颦一笑，母亲随之一忧一喜。自己粪便，母亲不惜以手承之，以指拭之。夜间便溺，浸湿床褥，母亲宁卧湿处，将自己移睡干处。自己一有疾病，母亲惶惶不安，求医求药，至心护理，不惜通夜不眠，抱自行走。自己不食不语，母亲更自忧心如焚。自己学语学走，全赖母亲昼夜教导扶持。即使有保姆抚养，保姆亦系看母亲的金钱和关心如何而爱护自己的。后时，成长入学，抚之育之，有加无已。既为自己学业担心，又为自己成长焦虑。乃至参加工作以后，尚时时为自己事业发展操心，关注之情，无时或已。母亲对自大恩，不仅今生，乃至多生，亦复如是。不仅在人趣中母恩如是之大，生于兽类，亦有跪乳之恩，生于禽类，亦有反哺之德。</p>
+<p>　　不仅今生母亲对自如是大恩，推之父亲、亲友、邻里，乃至遍虚空一切有情，均自母亲，对自大恩，莫不如是，须一一多遍思念母恩。</p>
+<p>（知恩必报，报恩之究竟法，为修究竟圆满方便善巧之正法。）</p>
+<p>　　4、次修报恩：为生起慈心悲心之因。</p>
+<p>　　思维我辈从婴儿受生饮乳，以至成人，一切忧劳母亲之事，无论初中后时，皆饱受母亲慈恩，如是大恩，焉能不报。以世间一切衣食供养，饥予食，寒予衣，食以甘食，衣以轻暖，作种种承侍供养，虽属报恩，然皆以苦为自性，转瞬即逝，尚非究竟报恩。慈母有情长期沉沦生死，备受诸苦，我当为之拔苦予乐，乃为究竟报恩。</p>
+<p>（愿彼得乐）</p>
+<p>　　5、次修慈心：修慈修悲为生起增上心之因，而悦意慈心，又为生起悲心之因，今修慈心。</p>
+<p>　　因受诸母深恩，见诸母有情如爱独子而心喜悦，极欲劝导令得安乐，令得涅槃无漏之乐。现诸母有情不仅缺乏无漏安乐，连有漏乐，亦甚缺乏，盖缺善法以作乐因。我当如何令彼得乐，愿其得乐，我誓愿令诸母有情俱获无苦之乐。</p>
+<p>（不忍其受苦，愿拔其苦。）</p>
+<p>　　6、次修悲心：</p>
+<p>　　诸母有情昔曾为转轮圣王，富有天下，福尽沉沦，仍在苦中，诸道慈母有情节莫不皆在苦苦、坏苦、行苦之中，无有自在。苦苦如伤上加盐，苦上加苦。坏苦似乐，瞬即成苦。行苦由烦恼业力使然，所作所受，毫无自在。因之诸母有情从无始来，流转生死苦海之中，饱受诸苦，今后烦恼继续滋生，仍不能离苦。为人子者，须为诸母有情拔苦予乐，尤须为之尽拔其苦，予以涅槃无苦之乐，乃为究竟报恩。</p>
+<p>（舍我其谁，责无旁贷，发猛厉心。）</p>
+<p>　　7、次修增上心：生起增上心，已圆满利他之心，又为生起菩提心之因。</p>
+<p>　　诸母有情盲目发狂，又无引导，正向悬岩险处狂奔，为人子者焉能委诸他人、坐视不救。何况自为学大乘法人，焉能不救。慈母发狂者，乃烦恼扰乱其心，不能自主。盲目者，乃无慧眼观察增上生和决定胜之义理。无引导者，无真实善友也。狂奔险处者，谓刹那刹那造诸恶业，总于生死，别向三途狂奔不已。我为慈母独子，母不望我，望谁去救，我不往救，谁复往救，责无旁贷，我非救度遍虚空一切慈母有情不可。</p>
+<p>（愿代彼受苦。）</p>
+<p>　　8、次修自他相换：为摧毁我爱执，转为他爱执，增胜利他心，易生真实菩提心。</p>
+<p>（愿诸母有情之苦由我承负。）</p>
+<p>　　想自母亲于自面前，想她无始以来，由烦恼业力，备受种种痛苦，今后仍无止息，为人子者，何能不救。想她所积一切罪障，苦及苦因，均化为灰烟黑雾，纷纷向自袭来，一一入于自身，代母消受净尽。次想父亲，次想亲眷，次想怨仇，乃至六道一切有情，皆自母亲，她们身中所有一切罪障，苦及苦因，均化为灰烟黑雾纷纷向自袭来，一一入于自身，均代诸母有情消受净尽。</p>
+<p>（愿我一切修法之功德入于诸母有情。）</p>
+<p>　　次想自己母亲于自前面，思其备受三苦，缺乏安乐。想自身分出一牟尼身入于母身，母亲因之诸苦净尽，亦转成牟尼身，随欲而有。次想父亲，次想半眷，次想怨仇，次想地狱，次想饿鬼，次想畜生，次想人道，次想阿修罗道，次想天道一切慈母有情均在苦中，缺乏安乐。由自身分出一一牟尼身，入于一一慈母身中，均令诸苦净尽，亦转成牟尼身，随欲而有。次想自身分出无量数牟尼身，化作供物，向十方三世诸佛菩萨作供，诸佛菩萨受供后，心生大乐，身放光明，入于自身，加持我身，将自一切罪障和烦恼所知二障消除净尽，自身化成光明转成佛身，作我已真实成佛想。</p>
+<p>（观想诸母有情供养佛菩萨，接受加持，成为法器。）</p>
+<p>　　次想一一慈母有情，均各身中分出无量数牟尼身，化作供物，向十方三世诸佛菩萨作供，诸佛菩萨受供后心生大乐，身放光明，加持一一有情，想一一有情已罪净慧生，成为堪受正法之法器矣。</p>
+<p>（观想自为诸母有情说法灌顶劝导修行，做有情真实成佛想。）</p>
+<p>　　次想自心放光，放出无量数上师、佛、菩萨到一一有情面前，为之说法灌顶、劝导修行，最后一一有情依之修行，均已二障净尽，俱皆化成光明，于无有丝毫实有自性之光明中顿成佛身，作均已真实成佛想。</p>
+<p>　　9、次发菩提心：</p>
+<p>（然而，唯有自成佛后，乃有救度功能，思维佛之功德。）</p>
+<p>　　想此仅系缘念一切有情成佛，要自己真实成佛后，乃有此救度功能。盖佛身功德具三十二相八十种好，一一相好，众德所成，诸大菩萨莫能测知。佛身紫金色，光明为性，常光数丈，使人瞻仰，无有厌足。见佛相者，能止恶生善，种成佛因。佛之教化，普及十方，随类现身，随诸根器，任运现身。于各方世界，普现十二种度化事业，有缘众生，随化得度。佛诸相好，一一毛孔，均能放光说法。佛光所至，热狱化凉，寒狱转温，六道诸苦，无不顿息。</p>
+<p>　　佛语功德，六十妙音，一音能说众法，一一有情随类得解。佛事业以语事业为第一，语示解脱，语音无远不遍，如同面聆。</p>
+<p>　　佛意功德，总为悲智，与声缘共者三十四种，与菩萨共者三十七种，其不共者三十九种。声缘菩萨仅得佛之相似功德一分，不能得佛真实功德一分。佛意中智德，遍一切所知境，阿底峡尊者曾云：“佛智于一切刹那能遍了知一切境界。”谓佛一念能遍了深广真俗二谛，最深最细深义，无不清晰显现。佛与声缘菩萨之智，有共不共之分，非智体各别，乃同一智体，唯了达程度不及佛耳。因之度化有情功能，亦不能及佛。佛意中悲德，于诸有情不分亲怨、爱逾独子、爱逾自身百千万倍，无一有情无时无刻不在佛悲悯之中。</p>
+<p>　　佛事业功德，如明净宝石，置于白处则白，置于黄处则黄，随缘而异，与缘相应。佛之俱生事业功德，亦复如是。遇菩萨众，则现报身而为说法。遇菩萨以下，则现化身而为说法。遇凡夫，则现帝释梵天人非人等，随缘而起，任运应机皆不作意。</p>
+<p>　　佛之无边功德，皆由教证二法而生，尤须证得佛之一切种智，乃能遍了一一众生须用何法始易得义。一切种智，唯佛独有，我为利益遍虚空一切慈母有情，誓愿成佛。</p>
+<p>（发愿）</p>
+<p>　　愿我从今以后，凡身误意所作善业和三世善根，以及行住坐卧四威仪，均一齐回向为利遍虚空一切慈母有情，誓愿速速成佛。</p>
+<p>　　诸佛正法贤圣僧，直至菩提我皈依，我以施等诸资粮，为利有情愿成佛。（一遍）</p>
+<p>　　吉祥圆满</p>
+<p>　　师云：受本法誓言：行者须日串习一遍。此系恩师单传菩提心修法之规。如依菩提道次第修法，于修六加行到资粮田诸尊收入主尊释佛，合入行者顶上上师，供七支曼遮后，即续修菩提心修法。应永惠居士殷重虔诚劝请，禀承至尊具德恩师功德名称极难赞说昂旺朗吉（前译阿旺南吉）堪布，慈悲法露，忆述成集。愿诸有情依之修习，迅成佛陀。</p>
+<p>　　低劣弟子昂旺敦振于1986年2月述于春城。1992年3月重校于蓉城。</p>
+<p>　　　　回向偈</p>
+<p>　　圣菩提心极珍贵，诸未生者令生起，令已发起不衰退，辗转增上恒滋长。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../ptdcdzj/zmxf/ssd/dcxxqylgzjkbdszyzqjrbqz.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ssd/jlxxfydfhdsz.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../ptdcdzj/zmxf/ssd/dcxxqylgzjkbdszyzqjrbqz.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ssd/jlxxfydfhdsz.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../ace.js"></script>
+        <script src="../../../editor.js"></script>
+        <script src="../../../mode-rust.js"></script>
+        <script src="../../../theme-dawn.js"></script>
+        <script src="../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

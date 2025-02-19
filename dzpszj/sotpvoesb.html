@@ -1,0 +1,679 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>SUTRA OF THE PAST VOWS OF EARTH STORE BODHISATTVA  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="sutra-of-the-past-vows-of-earth-store-bodhisattva"><a class="header" href="#sutra-of-the-past-vows-of-earth-store-bodhisattva">SUTRA OF THE PAST VOWS OF EARTH STORE BODHISATTVA</a></h1>
+<p>SUTRA OF THE PAST VOWS OF</p>
+<p>EARTH STORE BODHISATTVA</p>
+<p>TRANSLATED BY AMERICAN BHIKSU HENG CHING</p>
+<p>REVISED BY AMERICAN BHIKSUNI HENG CH’IH</p>
+<p>POLISHED BY AMERICAN BHIKSU HENG KUAN</p>
+<p>CERTIFIED BY GOLD MOUNTAIN SRAMANA DHYANA MASTER HSUAN HUA</p>
+<p>BUDDHIST TEXT TRANSLATION SOCIETY</p>
+<p>THE INSTITUTE FOR ADVANCED STUDIES OF WORLD RELIGIONS</p>
+<p>Chapter One</p>
+<p>Spiritual Penetrations in the Palace of the Trayastrimsa</p>
+<p>Thus I have heard; at one time the Buddha dwelt in the Trayastrimsa Heaven speaking Dharma for his mother. At that time an indescribable number of Buddhas as well as great Bodhisattvas, Mahasattvas, from limitless worlds in the ten directions, all assembled together to praise Sakyamuni Buddha’s ability to manifest the power of indescribably great wisdom and spiritual penetrations in the Evil World of the Five Turbidities, as well as his ability to regulate and subdue obstinate living beings so that they might come to know the dharmas of suffering and bliss. Each of these sent his attendants to greet the World-Honored One.</p>
+<p>At that time the Thus Come One smiled and emitted hundreds of thousands of millions of great clouds such as the Great Perfect Fullness Light Cloud, the Light Cloud of Great Compassion, the Light Cloud of Great Wisdom, the Light Cloud of Great Prajna, the Light Cloud of Great Samadhi, the Great Auspicious Light Cloud, the Light Cloud of Great Blessing, the Light Cloud of Great Merit, the Light Cloud of Great Refuge, and the Light Cloud of Great Praise.</p>
+<p>After emitting more indescribable clouds of light, he also emitted a great many wonderfully subtle sounds such as the</p>
+<p>Danaparamita sound, the Silaparamita sound, the</p>
+<p>Ksantiparamita sound, the viryaparamita sound, the</p>
+<p>Dhyanaparamita sound, and the Prajinaparamita sound.</p>
+<p>The Sound of Great Compassion, the Sound of Joyous Giving, the Sound of Liberation, the Sound of No-Outflows, the Sound of Wisdom, the Sound of Great Wisdom, the Sound of the Lion’ Roar, the Sound of the Great Lion’s Roar, the Sound of Thunderclouds, the Sound of Great Thunderclouds.</p>
+<p>After such indescribable sounds had issued forth, gods, dragons, ghosts, and spirits from the Saha world and other realms assembled in the Palace of the Trayastrimsa Heaven. They arrived from the Heaven of the Four Kings, the Trayastrimsa Heaven, the Suyama Heaven, the Tusita Heaven, the Transformation of Bliss Heaven, and the Heaven of Comfort Gained through Transformation of Others’ Bliss.</p>
+<p>The Heaven of the Multitudes of Brahma, the Heaven of the Ministers of Brahma, the Heaven of the Great Brahma Lord, the Heaven of Lesser Light, the Heaven of Limitless Light, the Heaven of Light-Sound, the Heaven of Lesser Purity, the Heaven of Limitless Purity, the Heaven of Universal Purity.</p>
+<p>The Birth of Blessings Heaven, the Love of Blessings Heaven, the Abundant fruit Heaven, the No-Thought Heaven, the No-Affliction Heaven, the No-Heat Heaven, the Good Views Heaven, the Good Manifestation Heaven, the Ultimate Form Heaven, the Mahesvara Heaven and so forth, until the Heaven of the Place of Neither Thought nor Non-thought. The gods, dragons, ghosts and spirits assembled together.</p>
+<p>Moreover, sea spirits, river spirits, stream spirits, tree spirits, mountain spirits, earth spirits, brook and marsh spirits, sprout and seedling spirits, day, night, and space spirits, heaven spirits, food and drink spirits, grass and wood spirits, and other such spirits form the Saha and other worlds all assembled together.</p>
+<p>In addition, all the great ghost kings from the Saha and other worlds assembled together. They were the Evil-Eyed Ghost King, the Blood-Eating Ghost King, the Essence-and Energy-eating Ghost King, the Womb and Egg-Eating Ghost King, the Sickness-Spreading Ghost King, the Poison-Gathering Ghost King, the Kindhearted Ghost King, the Blessings and Profit Ghost King, the Great Love and Respect Ghost King, and others.</p>
+<p>At that time Sakyamuni Buddha said to the Bodhisattva</p>
+<p>Manjusri, son of the Dharma King: “As you regard these Buddhas, Bodhisattvas, gods, dragons, ghosts, and spirits from this and other worlds, who are now assembled in the Trayastrimsa Heaven, do you know their number?”</p>
+<p>Manjusrisaid to the Buddha: “World-Honored One, even if I were to measure and reckon with my spiritual penetrations for a thousand aeons, I would not be able to calculate it.”</p>
+<p>The Buddha told Manjusri: “As I regard them with my Buddha eye, their number cannot be exhausted. Throughout many aeons all these beings have been crossed over, are being crossed over, will be crossed over, have brought to accomplishment, are being brought to accomplishment, or will be brought to accomplishment, by Earth Store Bodhisattva.”</p>
+<p>Manjusri said to the buddha: “World-Honored One, throughout many aeons I have cultivated good roots and certified to unobstructed wisdom. When I hear what the Buddha says, I immediately accept it with faith. Sound-Hearers of small attainment, gods, dragons, and the remainder of the Eight fold Division, as well as other living beings in the future, many hear the Thus Come One’s sincere and actual words but will certainly harbor doubts. They may receive the teaching most respectfully, but they will be unable to avoid slandering it. Would-Honored One, please discuss the conduct of Earth Store Bodhisattva while he was on the causal ground, and tell about the vows he made that have enabled him to accomplish such an inconceivable task.”</p>
+<p>The Buddha said to Manjusri: “By way of analogy, it is as if all the grasses, trees, forests, hemp, bamboo, reeds, mountains, rocks, and motes of dust in the world system of a million worlds were enumerated, and each one made into a Ganges River, while within each Ganges River each grain of sand became a world and within each world each mote of dust was an aeon, while within those aeons the motes of dust which would accumulate were in turn to become aeons. Increase this sum of time a thousandfold and know how long Earth Store bodhisattva has remained on the position of the Tenth Ground. Much longer was his dwelling on the grounds of sound-Hearer and Pratyekabuddha.</p>
+<p>“Manjusri, the awesome spirit and vows of this Bodhisattva are beyond thought. If good men or women in the future hear this Bodhisattva’s name, praise him, regard and worship him, make offerings to him, or if they draw, carve, cast, sculpt, or lacquer his image, they will be born among the Heaven of the Thirty-Three one hundred times, and will never again fall into the Evil Paths.</p>
+<p>“Manjusri, unspeakably many aeons ago, during the time of a Buddha named Lion Sprint Complete in the Ten Thousand Practices, Thus Comes One, Earth Store Bodhisattva was the son of an elder. On seeing that Bhddha adorned with a thousand blessings, the elder’s son asked what practices and vows had enabled him to achieve such an appearance. The Thus Come One said: ‘If you wish to perfect such a body throughout long aeons, you must liberate living beings who are undergoing suffering.’</p>
+<p>“Manjusri, the elder’s son then made this vow: ‘Throughout immeasurable aeons until the very boundaries of the future, I will establish many expedient devices for the sake of suffering and criminal beings in the Six Paths. When they have all been liberated I myself will perfect the Buddha Way.’ From the time he made this vow in the presence of that Buddha until the present, unspeakably many hundreds of thousands of nayutas of aeons have passed, and still he is a Bodhisattva.</p>
+<p>“Moreover, unthinkable asamkhyeya kalpas ago there was a Buddha named Enlightenment-Flower Samadhi Self-Sufficient King Thus Come One. That Buddha’s lifespan was four hundred thousand million asamkhyeya kalpas.”</p>
+<p>“During the Dharma-Semblance Age there was a Brahman woman who had much merit form former lives and who was respected by everyone. In walking, standing, sitting, and lying down she was surrounded and protected by gods. Her mother, however, had improper belief and often slighted the Triple Jewel.</p>
+<p>“That wise woman worked many skillful plans to entice her mother to hold right views, yet the mother did not totally believe. Before long her life ended and her spirit fell into the uninterrupted hell.</p>
+<p>“Knowing that when her mother was in the world she had not believed in cause and effect, the Brahman woman realized that, in accordance with her karma, her mother would be reborn in the states of woe. Thereupon she sold the family house, procured incense, flowers, and other items, and performed a great offering in that Buddha’s temple. Upon seeing the awesome and majestic image of the Thus Come One Enlightenment-Flower Samadhi Self-Sufficient King in the temple, the Brahman woman became doubly respectful. As she gazed at the venerable image she thought to herself: ‘Buddhas are also called Greatly Enlightened Ones Complete With All Wisdom. If the Buddha were in the world and I were to ask him, he would certainly know where my mother had gone at death.’</p>
+<p>“The Brahman woman wept for a long time with lowered head and then fixed her gaze on the Thus Come One. Suddenly a voice was heard in space, saying: ‘O! weeping holy woman, do not be so sorrowful, I shall show you where your mother has gone.’</p>
+<p>“The Brahman woman placed her palms together toward space and said: ‘What divinity is this who comforts my grief? From the day I lost my mother onward I have held her in memory day and night, but there is nowhere I can go to ask about the realm of her rebirth.’</p>
+<p>“A voice again resounded from space and said to the holy woman: ‘I am the one whom you behold and worship, the past Enlightenment-Flower Samadhi Self-Sufficient King Thus Come One. Because I have seen that your regard for your mother is double that of ordinary living beings, I will now show you the place of her rebirth.’</p>
+<p>“On hearing this voice the Brahman woman suddenly leaped up and fell back, breaking all her limbs. Those around her picked her up, and after she had been revived for awhile, she spoke into space and said: ‘Please pity me and quickly tell me my mother’s realm; my own death is not far off.’</p>
+<p>“The Thus Come One Enlightenment-Flower Samadhi Self-Sufficient King, spoke to the pious woman and said: ‘After your offering is complete, return home quickly. Sit upright thinking of my name and you will certainly know your mother’s place of rebirth.’ After she had finished worshipping the Buddha, the</p>
+<p>Brahman woman returned home, where, mindful of her mother, she sat upright recollecting the Thus Come One Enlightenment-Flower Samadhi Self-Sufficient King.</p>
+<p>“After a day and a night she suddenly saw herself beside a sea whose waters seethed and bubbled. Many horrible beasts with iron bodies flew about the sea, rushing in every direction. She saw hundreds of thousands of millions of men and women rising and sinking in the water, being mauled and devoured by the beasts. She beheld yaksas as well, each with a different form. Some had many hands, some many eyes, some many legs, some many heads. Sharp, swordlike teeth protruded from their mouths, and they drove the offenders on toward the beasts. Some yaksas seized the offenders and twisted their heads and feet together in a myriad horrifying shapes at which none would dare look.</p>
+<p>“During this time the Brahman woman was calm and fearless because of the power of recollecting the Buddha. A ghost king named Poisonless bowed and came to welcome the holy woman and said: ‘Excellent, O! Bodhisattva. Why have you come here?’</p>
+<p>“The Brahman woman asked the ghost king: ‘What is this place?’</p>
+<p>“Poisonless replied: ‘This is the first sea of the western face of the Great Iron Ring Mountain.’</p>
+<p>“The holy woman said: ‘I have heard that hell is within the Iron Ring. Is this actually so?’</p>
+<p>“Poisonless answered: ‘Hell is really here.’</p>
+<p>“The holy woman asked: ‘How have I now come to the hells?’</p>
+<p>“Poisonless answered: ‘No one can come here unless he has either awesome spirit or the required karma.’</p>
+<p>“The holy woman asked: ‘Why is this water seething and why are there so many criminals and evil beasts?’</p>
+<p>“Poisionless replied: ’These are the newly dead beings of</p>
+<p>Jambudvipa who have done evil deeds and who, during the first forty-nine days after their death, had no survivors to perform acts of merit on their behalf and rescue them from difficulty. Moreover, during their lives they planted no good causes. In accordance with their own deeds the hells appear, and they must first fathom this sea. Ten thousand yojanas east of this sea is another sea which has double the sufferings of this one. East of that is yet another sea where the sufferings are doubled still again. What the combined evil causes of the Three Karmic Vehicles evoke is called the sea of karma. This is that place.’</p>
+<p>“The holy woman again asked the ghost king Poisonless: ‘Where is hell?’</p>
+<p>“Poisonless answered: ‘Within the three seas are hundreds of thousands of great hells, each one different. There are eighteen that are specifically known as great hells. In succession there are five hundred with unlimited cruel sufferings, and further there are over one hundred thousand with limitless sufferings.’</p>
+<p>“The holy woman again spoke to the ghost king: ‘My mother has not been dead long, and I do not know on what path her soul has gone.’</p>
+<p>“The ghost king asked: ‘When the Bodhisattva’s mother was alive, what were her habitual deeds?’</p>
+<p>“The holy woman replied: ‘My mother had wrong views and ridiculed and slandered the Triple Jewel. Even if she occasionally believed, it was short-lived and turned again to disrespect. Although she has been dead but a few days, I do not know the place of her rebirth.’</p>
+<p>“Poisonless asked: ’What was the Bodhisattva’s mother’s name and clan? ’</p>
+<p>“The holy woman replied: ‘My parents were both Brahman; my father’s name was Sila Sudarshan, my mother’s name was Yueh Ti Li.’</p>
+<p>“Poisonless placed his palms together respectfully and told the Bodhisattva: ‘Please, Holy One, return to your original dwelling. Do not be worried or sorrowful, for the criminal woman Yueh Ti Li was born in the heavens three days ago. It is said that she was succeeded by a filial child who made offerings and cultivated merit for her sake in the temple of Enlightenment-Flower Samadhi Self-Sufficient King Thus Come One. Not only has the Bodhisattva’s mother obtained release from hell, but, as a result of so much merit, other offenders deserving of uninterrupted retribution have also attained bliss and have been reborn.’ When the ghost king was finished speaking, he withdrew, with palms still respectfully joined.</p>
+<p>“The Brahman woman quickly returned as if from a dream, understood what had happened, and swore a deep vow before the image of Enlightenment-Flower Samadhi Self-Sufficient King Thus Come One in the temple, saying: ‘I vow to establish many expedient devices in response to living beings who are suffering for offenses. Until the end of future aeons, I shall cause those beings to obtain liberation.’”</p>
+<p>The Buddha told Manjusri: “The ghost king Poisonless is the present Bodhisattva Wealthy Leader. The Brahman woman is now Earth Store Bodhisattva.”</p>
+<p>Chapter Two</p>
+<p>The Assembly of the Reduplicated Bodies</p>
+<p>At that time the reduplicated bodies of Earth Store Bodhisattva assembled in the palace of the Trayastrimsa Heaven from a hundred thousand tens of thousand of millions of inconceivable, unutterable, immeasurable, ineffable,</p>
+<p>asamkhyeyas of worlds, from all the places where there are hells. Because of the spiritual power of the Thus Come One, each came from his own direction together with thousands of ten thousands of nayutas of those who had obtained liberation from the paths of karma. All came holding incense and flowers as offerings to the Buddha. Because of the teachings of Earth Store Bodhisattva all of those who came were irreversible from Anuttarasamyaksambodhi, even though long kalpas ago they had been wandering in birth and death, undergoing suffering within the Six Paths without even temporary respite. Because of Earth Store Bodhisattva’s great compassion and deep vows, however, each had borne testimony to the fruits. When they came to the Trayastrimsa Heaven, their hearts jumping, they gazed at the Thus Come One, their eyes not leaving him for a moment.</p>
+<p>At that time the World-Honored One stretched forth his golden-colored arm and rubbed the crowns of all the reduplicated bodies of Earth Store Bodhisattva, from the hundreds of thousands of tens of thousands of millions of unthinkable, unutterable, immeasurable, ineffable, limitless asamkhyeyas of worlds, and said: “I teach and transform obstinate living beings within the evil worlds of the Five Turbidities, causing their minds to be regulated and subdued, to renounce the improper and return to the proper. One or two of ten, however, have bad habits remaining and I also divide into hundreds of thousands of millions of bodies in order to establish numerous expedient devices for them. There are those of keen roots who hear and then faithfully accept; there are others who have already reaped good retribution and who have been energetically exhorted to accomplishment. Yet others are dark and dull and must long be taught and transformed in order to effect their return, while others whose karma is heavy do not give rise to respect. The reduplication bodies cross over and release all of these manifold kinds of living beings by being manifested as the bodies of men, women, gods, dragons, spirits or ghosts. They may be manifested as mountains, forests, streams, springs, and rivers; as lakes, fountains or wells, in order to benefit people. All of these may save beings. The bodies of divine emperors, Brahma kings, Wheel-Turning Kings, laymen, kings of countries, prime ministers, officials, Bhiksus, bhiksunis, upasakas, upasika, Sound-Hearers, Arhats, Pratyekabuddhas, and Bodhisattvas, may be manifested in order to teach and rescue beings. It is not only the body of a Buddha which manifests.”</p>
+<p>The Buddha continued, saying: “You see that I have worked hard for many kalpas and endured different kinds of sufferings in order to liberate and cross over those living beings who are obstinate and difficult to transform and who suffer from offenses. Those among them who have not submitted undergo retributions according to their karma. If they should fall into the states of woe and endure a time of great suffering, you should remember my repeated commitment made in the Palace of the Trayastrimsa Heaven: I will cause all living beings in the Saha world, until the advent of Maitreya, to attain liberation, to leave suffering eternally, and to encounter Buddhas and receive their prophecies.”</p>
+<p>At that time the reduplicated bodies of Earth Store Bodhisattva from all the worlds returned together to a single form which, weeping with pity, said to the Buddha: “Throughout long aeons I have received the Buddha’s guidance, which has caused me to obtain inconceivable spiritual power and great wisdom. My reduplicated bodies fill as many worlds as there are grains of sand in a hundred thousand tens of thousands of Ganges Rivers. In each of those worlds, I transform into tens of thousands of millions of bodies, each of which crosses over a hundred thousand tens of thousands of people and causes them to return respectfully to the Triple Jewel, eternally leave birth and death, and reach the bliss of nirvana. Even if their good deeds within the Buddhadharma are as little as a hair, a drop, a grain of sand, a mote of dust, or a stand of down, I shall gradually cause them to be liberated and attain great benefit. World-Honored One, do not be concerned about future living beings with evil karma.” Thus he spoke three times: “World-Honored One, do not be concerned about future living beings with evil karma.”</p>
+<p>At that time the Buddha praised Earth Store Bodhisattva and said: “Very good, very good, I shall help in this work you so willingly undertake. When you fulfill these great vows after long and distant kalpas, you will instantly testify to Bodhi.”</p>
+<p>Chapter Three</p>
+<p>Contemplating the Karmic Conditions of Living Beings</p>
+<p>At that time the Buddha’s mother, the Lady Maya, placed her palms together respectfully and said to Earth Store Bodhisattva: “Holy One, the deeds done by the living beings of Jambudvipa differ. what are their respective retributions?”</p>
+<p>Earth Store replied: “In a thousand ten thousands of worlds and lands, whether with or without hells, with or without women, the Buddhadharma, Sound-Hearers, Pratyekabuddhas, and others, the retributions of the hells differ.”</p>
+<p>The Lady Maya again spoke to Earth Store Bodhisattva; “I wish to hear only of the bad paths that are the retributions for offenses in Jambudvipa.”</p>
+<p>Earth store Bodhisattva replied: “Holy Mother, please listen and I will explain it in general terms.”</p>
+<p>The Buddha’s mother answered: “I hope that you will do so.”</p>
+<p>Earth Store Bodhisattva said to the Holy Mother: “These are the names of the retributions for offenses in Jambudvipa. Living beings who are not filial to their parents, who harm or kill them, will fall into the uninterrupted hell, where, for a thousand millions of kalpas, they will seek in vain to escape.</p>
+<p>“Living beings who shed the Buddha’s blood, who slander the Triple Jewel, and who do not respect and venerate sutras, will fall into the uninterrupted hell, and for thousands of tens of thousands of millions of kalpas they will seek escape in vain.</p>
+<p>“Living beings who usurp property of the ‘permanently dwelling,’ who defile bhiksus or bhiksunis, who practice sexual acts within the sangharama, or who kill and harm beings there, will fall into the uninterrupted hell where, for thousands of millions of kalpas, they will seek escape in vain.</p>
+<p>“Living beings who pretend to be sramanas but whose hearts are not those of sramanas, who make destructive use of the gods of the permanently dwelling, who take advantage of the white-robed, and who turn their backs on the precepts, doing all manner of evil acts, will fall into the uninterrupted hells and for thousands of ten thousands of millions of kalpas seek escape in vain.</p>
+<p>“Living beings who steal the wealth and property of the permanently dwelling, their grains, food and drink, clothing, or anything that should not be taken, will fall into the uninterrupted hells, where they will seek escape for thousands of tens of thousands of millions of years in vain.”</p>
+<p>“In the midst of that hell is a bed that extends for ten thousand yojanas. When one person undergoes punishment, he sees his own body extended across and completely filling the bed, and yet each person of a thousand ten thousands sees his own body doing the same. Such are the retributions for various bad deeds.</p>
+<p>“Moreover, offenders undergo many sufferings. A hundred thousand yaksas, as well as evil ghosts with swordlike teeth and eyes like lightning, drag and pull at them with brass-clawed hands. Moreover, there are yaksas who brandish great iron halberds, which they pass through the offenders’ bodies, either through their mouths and noses or through their bellies and backs. They toss them into space, turn them over and pull them back, or else they place them on the bed. There are also iron eagles that peck at the offenders’ eyes, and iron serpents that encircle their necks. Long nails are driven into all their joints; their tongues are pulled out and plowed through; their guts are pulled out, sawed, and chopped in two. Molten brass is poured into their mouths and their bodies are bound in hot iron. Such are their karmic retributions throughout ten thousand deaths and as many births. They pass through millions of aeons, seeking for release but without hope.</p>
+<p>“When this world decays, the offender is born in another world, and when that world is annihilated, he passes in turn through others. When those worlds, too, fall and decay, he returns again. Such is the phenomenon of uninterrupted retribution for offenses.</p>
+<p>“Moreover, this hell is given the name uninterrupted for five reasons. What are they? 1) Punishment is undergone day and night throughout kalpas, and there is no time of respite. Therefore it is called uninterrupted. 2) One person fills it, yet many people also fill it. Therefore it is called uninterrupted. 3) The implements of punishment are forks, clubs, eagles, serpents, wolves, and dogs, which pound, grind, saw, drill, chisel, cut and chop; boiling liquids, iron nets, iron ropes, iron asses, and iron horses that flay one alive, bind the head in rawhide, and pour hot iron over one’s body; meals of iron pellets and drinks of iron fluids. Throughout many nayutas of kalpas such suffering continues without respite. Therefore it is called uninterrupted. 4) Whether a man, a woman, a barbarian, old or young, honorable or lowly, a dragon or a spirit, a god or ghost, everyone must undergo retribution for the offenses he has committed. Therefore it is called uninterrupted. 5) From the time of entry, one undergoes ten thousand deaths and as many births each day and night throughout a hundred thousand kalpas. He may seek release for but the space of a thought, but even such a brief pause is not possible. Only when one’s karma is exhausted can he attain rebirth. Because of this continuity, it is called uninterrupted.”</p>
+<p>Earth store Bodhisattva said to the Holy Mother: “This is a general description of the uninterrupted hell. If I were to speak extensively about all the names of the implements of punishment in the hells, and all the sufferings there, I could not finish speaking in an entire kalpa.”</p>
+<p>After hearing this the Lady Maya placed her palms together sorrowfully, made obeisance, and withdrew.</p>
+<p>Chapter Four</p>
+<p>Karmic Retribution of Living Beings</p>
+<p>At that time Earth Store Bodhisattva said to the Buddha: “World-Honored One. because I have received the awesome spiritual power of the Buddha, the Thus Come One, I reduplicate my body and rescue living beings from their karmic retributions everywhere, throughout hundreds of thousands of millions of worlds. If it were not for the great compassionate strength of the Thus Come One, I would be unable to perform such changes and transformations. Now, I receive the World-Honored One’s entrustment; until the coming of Ajita, I will cause all living beings in the Six Paths to attain liberation. So it is, World-Honored One, do not be concerned.”</p>
+<p>The Buddha then told Earth Store Bodhisattva: “Living beings who have not yet obtained liberation have unfixed natures and consciousness. They may practice evil or good and reap the corresponding karma. Their good or evil acts arise in accordance with their states, and they turn in the Five Paths without a moment’s rest. They pass through kalpas as numerous as motes of dust, confused, deluded, obstructed, and afflicted by difficulties, like fish swimming down a long stream through nets. They may slip about through the nets for a long time, but, after temporary liberation, they again are snagged. It is for such as these that I would be concerned, but since you have made extensive vows and sworn to cross over such offenders throughout many kalpas, I have no cause for worry. “</p>
+<p>When this was said, a Bodhisattva, Mahasattva, named Samadhi Self-Existent King arose from the midst of the assembly and said to the Buddha: “World-Honored One, what vows has Earth Store Bodhisattva made during these many kalpas that he now receives the World-Honored One’s special praise? Please, World-Honored One, speak about this.”</p>
+<p>The World-Honored One said to Samadhi Self-Existent King: “Listen attentively, consider this well. I shall now explain this matter for you.</p>
+<p>“Once, limitless asamkhyeyas of nayutas of kalpas ago, there was a Buddha named All-Knowledge-Accomplished Thus Come One, the One Worthy of Offerings, the One of Right and Equal Enlightenment, the One Perfect in Clarity and Conduct, the Well-Gone-Forth One, the Unsurpassed Scholar Who Comprehends the World, the Valiant Tamer and Guide, the Master of Gods and Men, the Buddha, the World-Honored One. That Buddha’s lifespan was sixty thousand kalpas. Before leaving home he had been the king of a small country and had been friendly with the king of a neighboring country with whom he practiced the Ten Good Deeds and benefited living beings. Because the citizens of these countries did many evil acts, the kings agreed to perfect expedient devices for them. One vowed: ‘I will accomplish the Buddha Way quickly and then cross over all the others without exception.’</p>
+<p>“The other king vowed: ‘If I do not first cross over all those who suffer for their offenses, and cause them to attain peace and Bodhi, I shall not accomplish Buddhahood.’”</p>
+<p>The Buddha told the Bodhisattva Samadhi Self-Existent King: “The King who vowed to become a Buddha quickly is All-knowledge-Accomplished Thus Come One. The king who vowed not to become a Buddha until he had seen all others safely across is Earth Store Bodhisattva.</p>
+<p>“Moreover, limitless asamkhyeya kalpas ago a Buddha named Pure-Lotus-Eyes Thus Come One appeared in the world. His lifespan was forty kalpas. During his Dharma-Image Period, an Arhat who had great merit and who crossed over living beings, teachings them as he encountered them, met a woman named Bright Eyes who made an offering of food to him.</p>
+<p>“‘What is your wish?’ asked the Arhat.</p>
+<p>“Bright Eyes replied: ‘On the day of my mother’s death I performed meritorious deeds for her rescue, but I do not yet know in what path she has been born.’</p>
+<p>“Out of pity for her, the Arhat entered into samadhi to contemplate, and saw that Bright Eyes’ mother had fallen into an evil path where she was undergoing extremely great suffering. The Arhat asked: ‘When your mother was alive, what deeds did she do that she should now be undergoing such great punishment in an evil path?’</p>
+<p>“Bright Eyes replied: ‘My mother enjoyed eating fish, turtles, and the like. She particularly relished their fried or boiled roe, and because she was fond of eating, she took thousands of lives. Oh, Venerable compassionate One, how can she be saved?’</p>
+<p>“The Arhat pitied her and established an expedient device and said: ‘With a sincere will be mindful of Pure-Lotus-Eyes Thus Come One, and also make carved and painted images for the benefit of the living and the dead.’</p>
+<p>“On hearing this, Bright Eyes renounced everything she loved, drew an image of that Buddha, and made offerings before it. Moreover, she wept sorrowfully as she respectfully gazed at and worshipped that Buddha. Suddenly, in the small hours of the night, as if in a dream, she saw that Buddha’s body, dazzling gold in color and as large as Mount Sumeru, emitting great light.</p>
+<p>“This Buddha said to Bright Eyes: ‘Before long your mother will be born in your own household and as soon as she can know hunger and cold she will speak.’</p>
+<p>“Shortly thereafter, a maidservant in the house bore a son who spoke within three days of his birth. Lowering his head and weeping mournfully, he said: ‘In life and death one must undergo retributions for his own deeds. I am your mother and have been in darkness for a long time. Since leaving you I have constantly been reborn in the great hells. As a result of receiving the power of your meritorious deeds, I have been able to be reborn, but only as a poor son of low class. My lifespan, moreover, will be short, and after thirteen years I will fall into an evil path again. Do you not have some way to effect my liberation?’</p>
+<p>“When Bright Eyes heard the words of the servant’s child, she knew without doubt that he was her mother and, choked with sobs, said to the child: ‘Since you are my mother you should know your own past offenses. What deeds did you do that caused you to fall into the Evil Paths?’</p>
+<p>“The servant’s child said: ‘I have undergone this retribution as a result of killing and slandering. If I had not received the merit which you earned to rescue me from difficulty, my karma would be such that I could not yet have been released.’</p>
+<p>“On hearing this, bright Eyes asked: ‘What happens during retribution in the hells?’</p>
+<p>“The servant’s son answered: ‘Merely to speak of those sufferings is unbearable, and even a hundred thousand years would not suffice to describe them all.’</p>
+<p>“Bright Eyes heard this and wept bitterly and said into empty space: ‘May my mother be eternally separated from the hells, and after these thirteen years may she be free of her heavy offenses and leave the Evil Paths. O! Buddhas of the Ten Directions, have compassion and pity me. Hear the far-reaching vows which I am making for the sake of my mother. If she can leave the Three Paths forever, leave the lower classes, leave the body of a woman, an never again have to endure them, then, before the image of the Thus Come One Pure-Lotus-Eyes, I vow that from this day forth, throughout hundreds of thousands of tens of thousands of millions of kalpas, I will rescue living beings who are suffering in the hells for their offenses, and others of the Three Evil Paths. I will rescue them all and cause them to leave the realms of the hells, hungry ghosts, animals, and the like. Only when the beings who are undergoing retribution for their offenses have all become Buddhas will I myself accomplish the right enlightenment.’</p>
+<p>“After making this vow she clearly heard the Thus Come One Pure-Lotus-Eyes say to her: ‘Bright Eyes, you have great compassion to be able to make such a great vow for your mother’s sake. I see that your mother will cast off this body after thirteen years and will be born a Brahman with a lifespan of one hundred years. After that life she will be born with a lifespan of kalpas in the Land of No Concern, after which she will accomplish Buddhahood and cross over as many men and gods as there are sand grains in the Ganges.’”</p>
+<p>Sakyamuni Buddha told Samadhi Self-Existent King: “The Arhat with great merit who helped Bright Eyes is now Inexhaustible-Intention Bodhisattva, the mother of Bright Eyes is Liberation Bodhisattva, and Bright Eyes herself is now Earth Store Bodhisattva. Throughout many aeons, because of his compassionate pity, he has made as many vows as there are sand grains in the Ganges to rescue living beings.</p>
+<p>“Men and women in the future who do not practice good but do evil, who do not believe in cause and effect, who indulge in sexual misconduct and false speech, who practice double-tongued and harsh speech, and who slander the Great Vehicle, will certainly fall into the Evil Paths. But if they encounter a good, knowing adviser who, in the flick of a finger, leads them to take refuge with Earth Store Bodhisattva, those living beings will obtain release from the retribution of the Three Evil Paths. Those whose acts show deference; who are respectful with a determined mind; who gaze in worship, praise, and make offerings of flowers, incense, clothing, gems or food and drink will be born in the heavens. There they will enjoy supremely wonderful bliss for hundreds of thousands of kalpas. When their heavenly merit is ended and they are born below in the world of men, they will be imperial kings throughout hundreds of thousands of kalpas and will be capable of remembering the causes and results of their former lives. O!</p>
+<p>Samadhi Self-Existent King, Earth Store Bodhisattva has inconceivable and ineffable great spiritual power to benefit living beings. All you Bodhidattvas should recall this sutra and proclaim and widely spread it.“</p>
+<p>Samadhi self-Existent King said to the Buddha: “World-Honored One, please do not be concerned. We thousands of ten thousands of millions of Bodhisattvas, Mahasattvas, receiving the Buddha’s awesome spirit, will certainly proclaim this sutra widely throughout Jambudvipa for the benefit of living beings.”</p>
+<p>Having spoken thus to the Buddha, the Bodhisattva Samadhi Self-Existent King put his palms together respectfully, bowed, and withdrew.</p>
+<p>At that time the Four Heavenly Kings arose from their seats, put their palms together respectfully, and said to the Buddha: “World-Honored One, since Earth Store Bodhisattva has made such extensive vows for kalpas, why then has he not yet completed his crossing over of beings? Why does he continue to practice such vast vow? Please, World-Honored One, explain this for us.”</p>
+<p>The Buddha told the Four Heavenly Kings: “Excellent, excellent. for your benefit as well as for the benefit of men and gods of the present and future, I will speak of Earth Store Bodhisattva’s works in the paths of birth and death in</p>
+<p>Jambudvipa in the Sahaworld. I shall speak of his expedient devices, and of his compassion and pity in rescuing, saving, crossing over, and liberating beings who are suffering for their offenses.“</p>
+<p>The Four Heavenly Kings replied: “Yes, world-Honored One, we would like to hear about his work.”</p>
+<p>The Buddha told the Four Heavenly Kings: “From kalpas long ago until the present, Earth store Bodhisattva has crossed over and liberated living beings, yet out of compassionate pity for those beings still suffering in the world, he has not yet completed his vows. Moreover, he sees that their causes for limitless kalpas in the future are like uncut tendrils and vines, and, because of this, he makes his mighty vows. Thus, in the continent of Jambudvipa, in the Saha world, this Bodhisattva teaches and transforms beings by means of thousands of myriads of expedient devices.</p>
+<p>“Kings, to killers Earth Store Bodhisattva speaks of a retribution of a short lifespan; to robbers he speaks of a retribution of poverty and acute suffering; to practices of sexual misconduct he speaks of the retribution of being born as pigeons, mandarin drakes and ducks; to the foul-mouthed he speaks of the retribution of a quarreling family.</p>
+<p>“To slanderers he speaks of the retribution of a tongueless and cankerous mouth; to the hateful he speaks of being ugly and crippled; to the stingy he speaks of frustrated desires; to gluttons he speaks of the retribution of sickness, hunger, and thirst; to those who enjoy hunting, he speaks of the retribution of a frightening insanity and disastrous doom.</p>
+<p>“To cruel parents or step-parents he speaks of the retribution of being flogged in future lives; to those who net and trap young animals, he speaks of the retribution of separation of flesh from bone; to those who slander the Triple Jewel, he speaks of the retribution of being blind, deaf, or mute; to those who slight the Dharma and regard the teachings with arrogance, he speaks of being in the Evil Paths forever; to those who recklessly use the things of the permanently dwelling, he speaks of the retribution of revolving in the hells for myriads of kalpas; to those who defile the pure conduct of others and purposely slander the Sangha, he speaks of an eternity in the animal realm; to those who scald, burn, behead, cut, or otherwise harm animals, he speaks of repayment in kind.</p>
+<p>“To those who violate precepts and the regulations of pure eating, he speaks of the retribution of being born as birds and beasts suffering from hunger and thirst; to those who make unprincipled and destructive use of things, he speaks of the retribution of never obtaining what they seek; to those who are arrogant and haughty, he speaks of a retribution of being servile and of low class; to those whose double-tongued behavior causes dissension and disorder, he speaks of a retribution of tonguelessness and speech impediments; to those of biased views, he speaks of rebirth in the frontier regions.</p>
+<p>“This is a general description of the hundreds of thousands of differing retributions resulting from the habitual bad deeds of body, mouth, and mind committed by the living beings of Jambudvipa. Since they have such differing responses, Earth store Bodhisattva uses hundreds of thousands of expedient means to teach them. The living beings who commit offenses must first undergo retributions such as these, and them fall into the hells, where they pass through kalpas with no moment of escape. You should therefore protect people and protect their countries. Do not allow living beings to be confused by these manifold deeds.”</p>
+<p>On hearing this the Four Heavenly Kings wept sorrowfully, placed their palms together, and withdrew.</p>
+<p>Chapter Five</p>
+<p>The Names of the Hells</p>
+<p>At that time Universal Worthy Bodhisattva, Mahasattva, said to Earth Store Bodhisattva: “Humane One, for the sake of the gods, dragons, and the fourfold assembly, as well as for all living beings of the present and future, please speak about the names of the hells and describe the retributions for evil undergone by living beings of Jambudvipa in the Saha world.”</p>
+<p>Earth Store Bodhisattva replied: “Humane One, receiving the Buddha’s awesome spirit as well as your strength, I shall speak in general terms of the names of the hells, and of the retributions for offenses and evil.</p>
+<p>“Humane One, east of Jambudvipa there is a mountain called Iron Ring, which is totally black and has neither sun nor moonlight. There is a great hell there called Uninterrupted, and another called the Great Avici. there is also a hell called Four Pointed, a hell called Flying Knives, a hell called Flying Arrows, and a hell called Squeezing Mountains; a hell called Piercing Spears, a hell called Iron Carts, a hell called Iron Beds, and a hell called Iron Ox; a hell called Iron Clothing, a hell called Thousand Blades, a hell called Iron Asses, and a hell called Molten Brass; a hell called Embracing Pillar, a hell called Flowing Fire, a hell called Plowing Tongues, and a hell called Head Chopping; a hell called Burning Feet, a hell called Eye Pecking, a hell called Iron Pellets, and a hell called Quarreling; a hell called Iron Ax, and a hell called Much Hatred.”</p>
+<p>Earth Store Bodhisattva said: “Humane One, such is the unlimited number of hells within the Iron Ring. In addition there is the hell of Crying Out, the hell of Pulling Tongues, the hell of Dung and Urine, and the hell of Brazen Locks; the hell of Fire Elephants, the hell of Fire Dogs, the hell of Fire Horses, and the hell of Fire Oxen; the hell of Fire Mountains, the hell of Fire Stones, the hell of Fire Beds, and the hell of Fire Beams; the hell of Fire Eagles, the hell of Sawing Teeth, the hell of Flying skin, and the hell of Blood Drinking, the hell of Burning Hands, the hell of Burning Feet, the hell of Hanging Thorns, and the hell of Fire Houses; the hell of Iron Rooms, and the hell of Fire Wolves.</p>
+<p>“Such are the hells, and within each of them there are one, two, three, four, or as many as hundreds of thousands of smaller hells, each with its own name.”</p>
+<p>Earth Store Bodhisattva told the Universal Worthy Bodhisattva: “Humane One, such are the karmic retributions of the living beings of Jambudvipa who do evil. The power of karma is extremely great and can rival Mount Sumeru; it can deepen the great ocean and can obstruct the way of wisdom. For this reason, living beings should not slight small evils and consider them as being no offense, for after death retribution is undergone in the most exact detail. Father and son may be close, but their roads diverge and each goes his own way, and even if they should meet, neither would consent to undergo suffering in the other’s place. Now, drawing on the awesome spiritual power of the Buddha, I shall speak of the events of hellish retributions for offenses. Please, Humane One, hear these words.”</p>
+<p>Universal Worthy replied: “ I have long know of the retributions of the Three Evil Ways. I hope that the Humane One will discuss them, so that living beings who do evil in the future time of the Dharma-Ending Age may hear the Humane One’s words and take refuge in the Buddha.“</p>
+<p>Earth Store said: “Humane One, these are the phenomena of retribution in the hells for offenses. There is a hell in which the offender’s tongue is stretched out and plowed through by cattle; there is a hell in which the offender’s heart is pulled out and eaten by yaksas; there is a hell in which the offender’s body is fried in cauldrons of seething broth; there is a hell in which the offender is made to embrace a red-hot bronze pillar; there is a hell in which the offender is followed everywhere by fire; there is a hell in which there is cold and ice; there is a hell in which there is limitless dung and urine; there is a hell in which there are flying maces; there is a hell in which there are many fiery spears; there is a hell in which one is constantly beaten on the chest and back; there is a hell in which one’s hands and feet are burned; there is a hell in which the offender is wrapped and bound by iron serpents; there is a hell in which there are running iron dogs; and there is a hell in which the offender is yoked between iron donkeys.</p>
+<p>“Humane One, such are the retributions. In each hell there are a hundred thousand kinds of utensils of karma, and all are made of copper, iron, stone, or fire, the four materials which are summoned by the manifold karmas. If I were to explain the hellish retributions for offenses in detail, any single hell would have hundreds of thousands of kinds of acute suffering. How much more numerous would the sufferings in the many hells be. Now, drawing upon the awesome spirit of the Buddha, I have replied to the Humane One’s question. It has been a general discussion, for if I were to speak in detail, I could not finish in a kalpa.”</p>
+<p>Chapter Six</p>
+<p>The Thus Come One’s Praises</p>
+<p>At that time the world-Honored One emitted a great bright light from his entire body, illuminating as many Buddha-lands as there are grains of sand in hundreds of thousands of millions of Ganges Rivers. With a great sound he spoke to all the Bodhisattvas, Mahasattvas, from all these Buddha-lands, as well as to the gods, dragons, ghosts and spirits, humans, nonhumans, and others, saying: “Listen as I now praise and extol Earth Store Bodhisattva, Mahasattva, who manifests great and inconceivable awesome spirit and compassionate power to rescue and protect living beings wherever they encounter misery and suffering. After my extinction, all of you Bodhisattvas, Great Beings, and all you gods, dragons, ghosts, spirits, and others should practice expedient devices for the sake of protecting this sutra and causing all living beings to testify to the bliss of nirvana.”</p>
+<p>After the Buddha spoke, a Bodhisattva named Universally Expansive arose from the midst of the assembly, placed his palms together respectfully, and said to the Buddha: “We now hear the World-Honored One’s praise of Earth Store Bodhisattva’s awesome spiritual virtue. World-Honored One, for the sake of future living beings in the Dharma-Ending Age, please tell us how Earth Store Bodhisattva has benefited men and gods; caused the gods, dragons, and the remainder of the Eightfold Division, as well as other living beings of the future, to receive the Buddha’s teaching respectfully.”</p>
+<p>At that time the World-Honored One said to the Bodhisattva Universally Expansive and to the Fourfold Assembly: “Listen attentively, listen attentively. I will briefly describe how Earth Store Bodhisattva’s blessings and virtues have benefited men and gods.”</p>
+<p>Universally Expansive replied: “So be it, World Honored One, we will be glad to hear.”</p>
+<p>The Buddha told the Bodhisattva Universally Expansive: “If in the future good men or good women hear Earth Store Bodhisattva, Mahasattva’s name, worship, and fix their gaze on him, they will overcome the offenses of thirty kalpas. Universally Expansive, if good men or good women paint, draw, use earth, stone, lacquerware, gold, silver, brass, or iron to make this Bodhisattva’s image, gaze at it, and bow but once, they will be reborn one hundred times in the Heaven of the Thirty-Three, and will eternally avoid falling into the Evil Paths. If their heavenly merit becomes exhausted and they are born below in the human world, they will be powerful kings.</p>
+<p>“If there are women who detest the body of a woman, and who full-heartedly make offerings to Earth Store Bodhisattva’s image, whether the image be a painting or made of earth, stone, lacquerware, brass, iron, or some other material, and if they do so day after day without fail, using flowers, incense, food, drink, clothing, colored silks, banners, money, jewels, and other items as offerings, when the female retribution body of those good women is exhausted, for hundreds of thousands of tens of thousands of aeons they will never again be born in worlds where there are women, much less be one, unless it be through the strength of their compassionate vows to liberate living beings. From the power of the meritorious virtues resulting from these offerings to Earth Store Bodhisattva, they will not receive the bodies of women throughout hundreds of thousands of tens of thousands of aeons.</p>
+<p>“Moreover, Universally Expansive, if a woman who dislike being ugly, vile, and prone to sickness gazes at and worships an image of Earth Store Bodhisattva with a sincere mind for even the space of a single meal, throughout thousands of tens of thousands of aeons she will always receive a body with full features. If that ugly woman does not dislike the body of a woman, during hundreds of thousands of ten thousands of millions of lives she will always be a royal woman or the concubine of a king, the wife of a minister of great family, or the wife of an elder, and be upright with perfect features. Such are the rewards for beholding and worshipping Earth Store Bodhisattva.</p>
+<p>“Moreover, Universally Expansive, if a good man or woman is able to play music, sing, or chant praises, and make offerings of incense and flowers before that Bodhisattva’s image, and is able to exhort others to do likewise, both now and in the future that person will be surrounded day and night by hundreds of thousands of ghosts and spirits who will even prevent bad news from reaching his ears, much less allow him to suffer accidents.</p>
+<p>“Moreover, Universally Expansive, in the future evil men, spirits, or ghosts may see good men or women respectfully making offerings and praising, beholding, and worshipping Earth Store Bodhisattva’s image. These evil beings may wrongly express ridicule and malign the acts of worship as profitless affairs devoid of meritorious qualities. They may bare their teeth in laughter, slander them behind their backs, and exhort others to do likewise, whether one person or many, or they may even bear just one single thought of slander. Such beings will fall into and remain in the Avici Hells, undergoing the utmost misery as retribution for their calumny, even after the nirvana of the thousand Buddhas of the Auspicious Aeon. After that kalpa they will be reborn among the hungry ghosts, where they will pass a thousand aeons before being reborn as animals. After another one thousand aeons, even though they may again attain a human body, they will be poor and lowly, with incomplete organs, and their many evil deeds will bind up their minds. Before long they will fall into the Evil Paths again. Universally Expansive, such are the retributions that will be undergone by those who ridicule and slander others’ offerings. How much worse will it be if they have other evil and harmful views.</p>
+<p>“Moreover, Universally Expansive, in the future men or women may be bedridden with a long illness and in spite of their wishes be unable either to get well or to die. At night they may dream of evil ghosts, of family and relatives, or of wandering in dangerous paths; in numerous nightmares they may roam with ghosts and spirits. As these dreams continue over a period of days, months, and years, such persons may weaken and waste away, cry out in fitful sleep, and be depressed and melancholy day by day. All of this is due to an unresolved degree of severity of their evil karmic paths, which make it difficult for them to die and difficult for them to be cured. The eyes of common men and women cannot distinguish such things.</p>
+<p>“In this instance this sutra should be recited once in a loud voice before the images of Buddhas and Bodhisattvas, and possessions which the sick one loves, such as clothing, jewels, gardens, or houses, should be offered, saying in a voice before the sick person: ‘I, so and so, before this sutra and image, give all these items on behalf of this sick person.’ Making offerings to the sutra and images, making images of Buddhas and Bodhisattvas, constructing temples and monasteries, lighting oil lamps, or giving to the permanently dwelling may be undertaken in a like manner.</p>
+<p>“The sick person should be told three times of the offerings that are being made so that he may hear and know of them. If his consciousnesses are separated and scattered and his breath exhausted, then for one, two, three, four, and on through seven days, this sutra should be read aloud in a clear voice. When that person’s life is gone he will achieve eternal liberation from all the heavy and disastrous offenses committed in his life, even the five offenses that receive uninterrupted retribution. He will always be born in a place where he will know his past lives; much greater will the beneficial retributions be if a good man or woman writes this sutra out himself, teaches others to do so, carves or paints images himself, or teaches others to do so.</p>
+<p>“Therefore, Universally Expansive, if you see a person reading and reciting this sutra or having a single thought of praise and respect for it, you should employ hundreds of thousands of expedients to exhort him to be energetic and not retreat. In both the present and the future he will be able to obtain thousands of tens of thousands of millions of inconceivable meritorious virtues.</p>
+<p>“Moreover, Universally Expansive, when dreaming or dozing, living beings in the future may see ghosts, spirits and other forms that are either sad, weeping, or worried, fearful, or terrified. These are all past fathers, mothers, sons, daughters, brothers, sisters, husbands, wives, and relatives from one, ten, a hundred, or a thousand lives, who have not yet been able to leave the Evil Paths. They have no place from which to hope for the power of blessings to rescue them, and so they plead with their flesh-and-bone descendants to establish expedient devices for them so that they might leave the Evil Paths. Universally Expansive, using your spiritual power, you should cause all these descendants to recite this sutra with sincerity before the images of Buddhas or Bodhisattvas, or to request others to recite it, either three or seven times. When the sutra has been sounded the proper number of times, relatives in the Evil Paths will obtain liberation and never again be seen by those who dream or doze.</p>
+<p>“Moreover, Universally Expansive, in the future, lowly people, bondsmen, serving maids, and others who are not independent may be aware of their past deeds and wish to repent of them and to reform. They should gaze at and worship Earth Store Bodhisattva’s image with a sincere heart for seven days and recite his name a full ten thousand times. When their current retribution ends they will be born into wealth and honor, and throughout thousands of tens of thousands of lives they will not pass through any of the sufferings of the Three Evil Paths.</p>
+<p>Moreover, Universally Expansive, if in the future in Jambudvipa there are Ksatriyas, Brahmans, elders, upasakas, and others of various names and clans who have newborn sons or daughters, they should recite this inconceivable sutra and recite the Bodhisattva’s name a full ten thousand times within seven days before the child’ birth. If that newly born child was to have had a disastrous life, he will be liberated from it and be peaceful, happy, easily raised, and long-lived. If he was to have received a life of blessings, his peace and happiness will increase, as will his lifespan.</p>
+<p>“Moreover, Universally Expansive, on the first, eighth, fourteenth, fifteenth, eighteenth, twenty-third, twenty-fourth, twenty-eighth, twenty-ninth, and thirtieth days of the month, the offenses of living beings will be gathered together and judged. Since almost every single movement or stirring of thoughts on the part of the living beings of Jambudvipa is karma and an offense, how much more likely are they to incur offenses when they actually give themselves over to killing, stealing, sexual misconduct, and false speech. If they are able to recite this sutra before the images of Buddhas, Bodhisattvas, or sages once on these ten days, there will be no disasters for one hundred yojanas to the north, south, east, and west. Those in their families, both old and young, now and in the future, will be apart from the Evil Paths throughout hundreds of thousands of years. If they can recite it once on each of these ten vegetarian days, there will be no accidents or illnesses in the family and there will be food and clothing in abundance.</p>
+<p>“Therefore, Universally Expansive, you should know of the unspeakable hundreds of thousands of tens of thousands of millions of great awesome occurrences of Earth Store Bodhisattva’s beneficial spiritual powers. The living beings of Jambudvipa have strong affinity with this Great Being, and if they hear his name, see his image, or hear but three or five words, a verse, or sentence of this sutra, they will obtain particularly wonderful peace and happiness in this present life. Through hundreds of thousands of tens of thousands of future lives their appearance will always be upright and they will be born into honorable and wealthy families.”</p>
+<p>After Universally Expansive had heard the Buddha, the Thus Come One, praise and laud Earth Store Bodhisattva, he knelt with both knees on the ground, placed his palms together, and said: “World-Honored One, I have long known that this great lord had such inconceivably great spiritual powers and vast mighty vows. My questions are put for the sake of benefiting living beings of the future; I shall receive the answer most respectfully. World-Honored One, what should we call this sutra and how should it be propagated?”</p>
+<p>The Buddha said: “This sutra has three names: the first is the Past Vows of Earth Store Bodhisattva; it is also called Earth Store’s Past Conduct; and it is called Earth Store’s Fundamental Power of the Way. Because this Bodhisattva has made such great vows over so many aeons to benefit and profit living beings, you should all propagate the sutra in accord with these vows.”</p>
+<p>After Universally Expansive heard this he placed his palms together respectfully, made obeisance, and withdrew.</p>
+<p>Chapter Seven</p>
+<p>Benefits for the Living and the Dead</p>
+<p>At that time earth store Bodhisattva, Mahasattva, said to the Buddha: “World-Honored One, I see that almost every motion and stirring of thought of the living beings of Jambudvipa is an offense, and that those living beings lose the benefits they have obtained, many of them retreating from their initial resolve. If they encounter evil conditions, they harbor them in every thought. This is like a man carrying a heavy rock through the mud. With each step his rock becomes heavier and more ponderous, and he sinks even deeper. If he meets a powerful guide he may be exhorted and warned to set his feet on firm ground again; his load may be lightened or even totally removed. If he reaches level ground he should remain aware of the evil road and never traverse it again.</p>
+<p>“World-Honored One, the habitual evil of living beings extends from the subtle to the overwhelmingly great. Since all beings have such habits, their parents or relatives should create merit for them when they are on the verge of dying in order to assist them on the road ahead. This may be done by hanging banners and canopies, lighting lamps, reciting the holy sutras, or making offerings before the images of Buddhas or sages. It includes recitation of the names of Buddhas, Bodhisattvas, and Pratyekabuddhas in such a way that the recitation of each name passes by the ear of the dying one and is heard in his fundamental consciousness.</p>
+<p>“The evil deeds done by living beings bear corresponding results, yet even if one ought to fall into the Evil Paths, his offenses may be eradicated if his survivors cultivate holy causes for him. During a period of forty-nine days after the death, they should do many good deeds that can cause the dead one to leave the Evil Paths, be born among male gods, and receive supremely wonderful bliss. The benefits that accrue to the survivors are also unlimited.”</p>
+<p>“Therefore, before the World-Honored One, as well as before the gods, dragons, and the rest of the Eightfold Division, both human and nonhuman, I vow to exhort the living beings of Jambudvipa to be careful and avoid harming, killing, and creating evil conditions, or calling on ghosts, spirits, or Wang Liang on the day of death. Why? Sacrificing beings is not in the least helpful to the dead but binds up the conditions of offense so that they grow ever more deep and heavy. The dead one might be due to receive a good retribution and be born among men and gods in his next life or in the future, but because of offenses committed by his family in his name, his good rebirth will be delayed. Everyone must undergo the Evil Paths in accordance with his own deeds; it is even more unbearable when survivors add to those deeds. It is as if a man had been traveling from a distant place with a hundred-pound load and had been cut off from his provisions for three days. If he were suddenly to encounter a neighbor who gave him a few more things to carry, his load would become heavier and more distressing.</p>
+<p>“Would-Honored One, as I contemplate the living beings of Jambudvipa, I see that those who are able to do good, even as little as a hair, a drop of water, a grain of sand, or a mote of dust, will obtain the benefits of their good deeds.”</p>
+<p>After this had been said, an elder named Great Eloquence, who had long since testified to the unproduced and who often appeared in the body of an elder to teach and cross over those in the ten directions, arose from the midst of that assembly, placed his palms together respectfully, and said to Earth Store Bodhisattva: “Great Lord, when the close and distant relatives of the dead in Jambudvipa cultivate meritorious virtues for the dead by preparing vegetarian meals and doing other good deeds, does the dead one attain any benefit?”</p>
+<p>Earth Store Bodhisattva replied: “Elder, based on the awesome spiritual power of the Buddha, I will now explain this matter, in a general way, for the sake of living beings of the present and future. Elder, if living beings of the present and future on the verge of dying hear the name of one Buddha, one Bodhisattva, or one Pratyekabuddha, they will attain liberation whether they have offenses or not.</p>
+<p>“If a man or woman who has not cultivated good causes during life and who has committed many offenses has close or distant relatives who do deeds productive of blessings and various holy deeds for his sake, after death he will receive one-seventh of the benefit, and six parts will accrue to those who help him. Therefore, all good men and women of the present and future who hear and practice this will obtain a share.”</p>
+<p>“When the great ghost of impermanence arrives, the spirit roams in darkness and obscurity, not knowing what is offense and what is merit. For forty-nine days it is as if one were stunned and deaf, or as if in a court arguing karmic retribution. Once judgment has been fixed, rebirth is undergone in accordance with one’s deeds. Before that rebirth is reached, there are thousands of ten thousands of worrisome sufferings that must be undergone. How much more is this the case for those who are to fall into the Evil Paths.</p>
+<p>“Throughout forty-nine days one whose life has ended and who has not yet been reborn looks for his flesh-and-bone survivors to do merit powerful enough to rescue him. At the end of that time he falls into his karmic retribution. If he is an offender, he passes through a hundred thousand years without a day of liberation; if his offenses are the five of uninterrupted retribution, he falls into the great hells, where he undergoes suffering for tens of thousands of aeons.”</p>
+<p>“Moreover, elder, when one who has bad karma dies, his relatives may prepare a vegetarian offering to aid him in his karmic path. In doing this they should not throw rice-washing water or vegetable leaves on the ground during the preparation of the meal, or before it has been eaten, and all food that has not first been offered to the Buddha and Sangha should not be eaten. If there is laxness or transgression in this matter, the deceased will receive no strength from it. If purity is vigorously maintained in making the offering to the Buddha and Sangha, the dead one will receive one seventh of the merit. Therefore, elder, if the living beings of Jambudvipa make vegetarian offerings after the death of their fathers, mothers, and relatives, and make earnest supplication on their behalf, they will benefit the living and the dead.”</p>
+<p>After this had been said, thousands of tens of thousands of millions of nayutas of ghost and spirits of Jambudvipa who were in the Trayastrimsa Heaven resolved their thoughts on the unsurpassed enlightenment. The elder, Great Eloquence, made obeisance and withdrew.</p>
+<p>Chapter Eight</p>
+<p>The Praises of the Multitudes of King Yama</p>
+<p>At that time from within the Iron Ring Mountain came Yama, Son of Heaven, and with him limitless ghost kings, all of whom appeared before the Buddha in the Trayastrimsa Heaven: the ghost king Evil Poison, the ghost king Many Evils, the ghost king Great Argument, the ghost king White Tiger, the ghost king Blood Tiger, the ghost king Crimson Tiger, the ghost king Disaster, the ghost king Flying Body, the ghost king Lightning Flash, the ghost king Wolf Tooth, the ghost king Thousand Eyes, the ghost king Animal Eater, the ghost king Rock Bearer, the ghost king Lord of Bad News, the ghost king Lord of Calamities, the ghost king Lord of Food, the ghost king Lord of Wealth, the ghost king Lord of Domestic animals, the ghost king Lord of Birds, the ghost king Lord of Beasts, the ghost king Lord of Mountain Spirits, the ghost king Lord of Birth, the ghost king Lord of Life, the ghost king Lord of sickness, the ghost king Lord of Danger, the ghost king Three Eyes, the ghost king Four Eyes, the ghost king Five Eyes, the Ch’i Li She King, the Great Ch’i Li She King, the Ch’i Li Ch’a King, the Great Ch’i Li Ch’a King, the No Ch’a King, the Great No Ch’a King, and other such great ghost kings. There were also hundreds of thousands of minor ghost kings who dwelt throughout</p>
+<p>Jambudvipa, each of whom ruled over something specific.</p>
+<p>Aided by the Buddha’s awesome spirit and the power of Earth Store Bodhisattva, all these ghost kings, as well as Yama, Son of Heaven, came together in the Trayastrimsa Heaven and stood off to one side. Then, Yama, Son of Heaven, placed his palms together and said to the Buddha: “World-Honored One, because of the Buddha’s awesome spirit and the power of Earth Store bodhisattva, all these ghost kings and I have been able to come to this great assembly in the Trayastrimsa Heaven. There is now a small doubt that we should like to express, and we hope the World-Honored One will be compassionate and resolve it.”</p>
+<p>The Buddha told Yama, Son of Heaven: “As you will. I shall speak for you.”</p>
+<p>At that time Yama, Son of Heaven, looked respectfully at the World-Honored One, made obeisance, turned his head to acknowledge Earth Store Bodhisattva, and then said to the Buddha: “World-Honored One, as I contemplate, I see that Earth Store Bodhisattva uses hundreds of thousands of expedient devices to cross over living beings who suffer for their offenses within the six paths of birth. I see that he does so without the least fatigue or weariness. This great Bodhisattva has inconceivable spiritual penetrations that enable living beings to obtain release from retribution for their offenses; nonetheless, before long, they fall back into the evil ways.</p>
+<p>“World-Honored One, since Earth Store Bodhisattva has such great inconceivable spiritual power, why do living beings not rely on it, stay in the good way, and eternally hold to their liberation? Please, World-Honored One, explain this for me.”</p>
+<p>The Buddha told Yama, Son of Heaven: “The living beings of Jambudvipa have stubborn and obstinate natures, difficult to tame, difficult to subdue. This great Bodhisattva constantly rescues such living beings throughout hundreds of thousands of aeons, and causes them to obtain liberation quickly. He rescues even those who have fallen into the Three Evil Paths from their offenses. He extricates them from their own basic karmic conditions and leads them to understand the events of past lives.</p>
+<p>“Because the living beings of Jambudvipa are bound up with heavy bad habits, which cause them to revolve in the paths, arriving and departing over and over, it takes this Bodhisattva many aeons to completely rescue and liberate them.</p>
+<p>“They are like a man who becomes confused, loses his original home, and mistakenly enters a dangerous path in which there are many yaksas, tigers, wolves, lions, serpents, and vipers. A confused person would certainly be poisoned very quickly on that path. When a wise adviser who understands many methods and who is able to control all the poison of those yaksas, evil ghosts, and others, suddenly encounters the confused man about to enter the dangerous road, the adviser says to him: ‘Say, fellow, why are you entering this road? What methods do you have to deal with all that poison?’</p>
+<p>“The confused traveler who hears such words suddenly knows that it is a dangerous path, and begins to retreat, to leave it. The good, knowing adviser then takes him by the hand leading him off the dangerous path so that he avoids the evil poisons. They reach a good way and he becomes happy and at peace. The adviser then says to him: ‘Well, confused one, do not go back into that path again, for those who enter it have a difficult time getting out, and moreover, it destroys their very nature and life.’</p>
+<p>“The confused traveler thanks him profusely, and as they are about to separate, the adviser says to him: ‘If you see those whom you know personally, as well as other travelers, be they men or women, tell them that there are many poisons and evils on that path which can cause them to lose their very nature and life. Do not let them seek their own deaths.’ In the same way, Earth Store Bodhisattva, replete with great compassion, rescues living beings who suffer from their offenses and causes them to be born among men and gods, where they receive wonderful bliss.</p>
+<p>“All the offenders, knowing the sufferings of the path of evil karma, obtain release and never go down that road again. They are like confused person who mistakenly enters a dangerous road but who, having encountered a good adviser who leads him out, does not enter that road again. If he meets others he teaches them not to enter into that road by saying: ‘I, myself, was confused but have obtained liberation and will not enter that road again.’ If he encounters that dangerous path again and he is still confused and makes the mistake, unaware that it is the dangerous path he encountered before, then he will probably lose his life. The same thing is true if one has fallen into the Evil Path and, because of the powerful expedient device of Earth Store Bodhisattva, has been made to take rebirth among men or gods, but then falls into the Evil Paths again. If one’s karmic bonds are heavy, one dwells in the hells for a long time without liberation.”</p>
+<p>At that time the ghost king Evil Poison placed his palms together respectfully, addressed the Buddha, and said: “World-Honored One, we limitless ghost kings of Jambudvipa either benefit or harm beings. Each of us is different; our karmic retribution causes us and our followers to roam in the world doing much evil and little good. When we pass a household or a city, a town, village, or hamlet, a garden, cottage, or hut where there is a man or woman who has cultivated as little as a hair’s worth of good deeds, who has hung but one banner or one canopy, who has used a little incense or a few flowers as offerings to images of Buddhas or Bodhisattvas, or who has read and recited the sutras, or burned incense as an offering to even one sentence or gatha in them, all of us ghost kings will respect and revere that person as we would the Buddhas of the past, present, and future. We will order all the smaller ghosts, each of whom has great power, as well as all the ground spirits, to surround and protect that person. Bad affairs, accidents, severe and unexpected illnesses, as well as all other unwelcome phenomena, will not be allowed to draw near his dwelling or place of residence, much less enter the door.”</p>
+<p>The Buddha said to the ghost kings: “It is excellent, excellent, that all you ghost kings and Yama are able to protect good men and women in this way. I shall tell Brahma and Sakra to cause you to be protected as well.”</p>
+<p>When this was said, a ghost king in the assembly named Lord of Lifespan said to the Buddha: “World-Honored One, my conditions are such that I am lord of the lifespan of men in</p>
+<p>Jambudvipa, and govern the time of their birth and death. My fundamental vows are based on a great desire to benefit people, but living beings do not understand my intent and go through birth and death uneasy. Why is this?</p>
+<p>“When humans in Jambudvipa have just borne children,” Lord of Lifespan continued: “be they boys or girls, or when they are just about to give birth, good deeds should be done to increase the benefits of the household and thus cause the local ground spirits to be immeasurably please. The spirits will then benefit the entire family and protect the mother and child so that they obtain great peace and happiness. After the birth, all killing and injuring for the purpose of offering fresh foods to the mother should carefully be avoided, as should calling together assemblies of the family for the sake of drinking wine, eating meat, singing, making music, and playing instruments, for all these things can keep the mother and child from obtaining peace and happiness. Why? At the difficult time of birth there are uncountable evil ghosts, such as Wang Liang and Ching Mei, who desire to eat the strong-smelling blood. I quickly cause the ground spirits of that household to protect the mother and child, allowing them to be peaceful and happy and to obtain benefit. When people in such households see this benefit they should establish merit in response to the ground spirits. If instead of doing this they harm, kill, and assemble all the relatives together for feasting and playing, they will undergo a retribution for this violation, which harms both mother and child.</p>
+<p>“Moreover, when the humans of Jambudvipa are on the verge of death, I desire to keep them from falling into the Evil Paths, regardless of whether they have done good or evil, but how much is my power to do so increased when they have cultivated good roots! When a practicer of good in Jambudvipa is about to die, there are hundreds of thousands of ghosts and spirits of the evil ways who transform themselves and appear as the parents, relatives, and friends of the dying in an attempt to lead him to fall into the Evil Paths. How much more is this the case for those who have done evil!</p>
+<p>“Therefore, World-Honored One, when a man or woman in</p>
+<p>Jambudvipa is on the verge of death and his consciousness and spirit are confused and dark, when he is unable to discriminate between good and evil and his eyes and ears are unable to see or hear, his relatives should certainly establish great offerings, recite the holy sutras, and recite the names of Buddhas and Bodhisattvas. Such good conditions can cause the dead person to leave the Evil Paths, and all the demons, ghosts, and spirits will withdraw and disperse.</p>
+<p>“World-Honored One, if at the time of death any living being hears the name of one Buddha or Bodhisattva, or if he hears a sentence or gatha of a Mahayana sutra, I see that such a person can be liberated from his small bad deeds, which unite to pull him into the Evil Paths, and that he can also be kept apart from the uninterrupted retribution of the Five Offenses.”</p>
+<p>The Buddha told the ghost king Lord of Lifespan: “Because of your great compassion you are able to make such great vows and protect all living beings in the midst of life and death. In the future, when men and women reach the time of death, do not withdraw from your vow, but cause them to attain liberation and be eternally peaceful.”</p>
+<p>The ghost king told the Buddha: “Please do not be concerned. Until the end of this life I shall constantly protect the living beings of Jambudvipa, both at the time of birth and at the time of death, so that they obtain tranquillity. I only wish that at the time of birth and death they will believe what I say and thereby be liberated and attain great profit.”</p>
+<p>At that time the Buddha told Earth Store Bodhisattva: “This great ghost king, Lord of Lifespan, has already passed through hundreds of thousands of lives as a great ghost king, protecting living beings in life and death. Only because of this great lord’s compassionate vows does he manifest the body of a ghost king, for in reality he is not a ghost. After one hundred and seventy aeons have passed, in an aeon named Tranquillity, he will accomplish Buddhahood. His kalpa will be called Happiness and his world will be named Pure Dwelling. His name will be No Appearance Thus Come One, and his lifespan will be incalculable aeons. Earth Store, the doings of this great ghost king are inconceivable, and the men and gods whom he crosses over are limitless.”</p>
+<p>Chapter Nine</p>
+<p>The Names of Buddhas</p>
+<p>At that time Earth Store Bodhisattva, Mahasattva, said to the Buddha: “World-Honored One, I shall now perform a profitable and beneficial act for the sake of living beings of the future, so that they may obtain great help and benefit in the midst of life and death. Please, World-Honored One, hear my words.”</p>
+<p>The Buddha told Earth Store Bodhisattva: “With your great compassion you now wish to undertake the inconceivable task of rescuing all those in the Six Paths who suffer for their offenses. The time is just right, speak quickly, for I am about to enter</p>
+<p>nirvana. You should complete this vow soon so that I have no need to be concerned for living beings of the present or future.“</p>
+<p>Earth Store Bodhisattva said to the Buddha: “In the past, numberless asamkhyeyas of aeons ago, a Buddha named Limitless Body Thus Come One appeared in the world. If a man or woman hears this Buddha’s name and suddenly gives rise to a thought of respect, that person will overstep the heavy offenses of forty aeons of birth and death. How much more will he be able to do this if he sculpts or paints this Buddha’s image, or praises and makes offerings to him. The merit of this is limitless and unbounded.</p>
+<p>“Again, in the past, as many aeons ago as there are grains of sand in the Ganges River, a Buddha named Jewel Nature appeared in the world. If a man or woman hears the name of this Buddha and in the space of a finger-snap decides to take refuge, it will be eternally impossible to turn that person from the unsurpassed path.</p>
+<p>“Again, in the past, a Buddha named Padma-Victory Thus Come One appeared in the world. If a man or woman hears this Buddha’s name, or if the name merely passes by his or her ear, that person will attain one thousand births in the Six Desire Heavens. How much more will this be true if he or she sincerely recites the name of that Thus Come One.</p>
+<p>“Again, in the past, indescribable asamkhyeyas of aeons ago, a Buddha named Lion Roar Thus Come One appeared in the world. If a man or woman hears this Buddha’s name and single-mindedly takes refuge, that person will encounter numberless Buddhas, who will rub his or her crown and bestow predictions of enlightenment upon the individual.</p>
+<p>“Again, in the past, a Buddha named Krakucchanda appeared in the world. If a man or woman hears this Buddha’s name and sincerely beholds, worships, or praises him, that person will be the Great Brahma King in the assemblies of the one thousand Buddhas of the Auspicious Aeon, and will there receive a lofty prediction.</p>
+<p>“Again, in the past, a Buddha named Vipasin appeared in the world. If a man or woman hears this Buddha’s name, that person will eternally avoid falling into the Evil Paths, will always be born among men and gods, and will receive supremely wonderful bliss.</p>
+<p>“Again, in the past, as many aeons ago as there are grains of sand in limitless and boundless numbers of Ganges Rivers, a Buddha named Jeweled Victory appeared in the world. If a man or woman hears this Buddha’s name, that person will never again fall into the Evil Paths and will eternally dwell in the heavens, where he or she will receive supremely wonderful bliss.</p>
+<p>“Again, in the past, a Buddha named Jeweled Appearance Thus Come One appeared in the world. If a man or woman hear this Buddha’s name and gives rise to a thought of respect, that person will before long attain the fruit of Arhatship.</p>
+<p>“Again, limitless asamkhyeyas of aeons ago, a Buddha named Kasaya Banner thus Come One appeared in the world. If a man or woman hears this Buddha’s name, that person will overcome the offenses of birth and death for one hundred aeons.</p>
+<p>“Again, in the past, a Buddha named Great Penetration Mountain King Thus Come One appeared in the world. If a man or woman hears this Buddha’s name, that person will encounter as many Buddhas as there are grains of sand in the Ganges, who will speak Dharma for him, and he will certainly realize Bodhi.</p>
+<p>“Again, in the past, there were Buddhas named Pure Moon Buddha, Mountain King Buddha, Wise Victory Buddha, Pure Name King Buddha, Accomplished Wisdom Buddha, Unsurpassed Buddha, Wonderful Sound Buddha, Full Moon Buddha, Moon Face Buddha, and other such indescribable Buddhas. World-Honored One, living beings of the present and future, both gods and humans, men and women, will obtain limitless meritorious virtues by merely reciting one Buddha’s name. How much the more if they recite many names. In birth and death all these living beings will obtain great benefit and ultimately will not fall into the Evil Paths.</p>
+<p>“If even one person in a dying person’s family loudly recites on Buddha’s name for the sake of the dying person, that dying one will quickly be freed from all karmic offenses except the uninterrupted retribution of the Five Offenses. The Five Offenses warranting uninterrupted retribution are so extremely heavy that one who commits them should not escape retribution for myriads of aeons. If, however, at the time of the offender’s death, another person recites the names of Buddhas on his behalf, his offenses can be gradually wiped away. How much more will this be true for living beings who recited those names themselves. The merit thus attained is limitless and eradicates numberless offenses.”</p>
+<p>Chapter Ten</p>
+<p>The Conditions and Comparative Merits of Giving</p>
+<p>At that time Earth Store Bodhisattva, Mahasattva, inspired by the Buddha’s awesome spirit, arose from his seat, knelt, placed his palms together and said to the Buddha: “World-Honored One, when I compare the various acts of giving done by the beings within the paths of karma, I see some that are great and some that are small. As a result, some receive blessings for one life, some for ten lives, and some receive great blessings and profit for one hundred or one thousand lives. Why is this? Please, World-Honored One, explain this for me.”</p>
+<p>At that time the Buddha told Earth Store Bodhisattva: “For the sake of all these assembled in the palace of the Trayastrimsa Heaven, I will discuss the comparative meritorious virtues of the giving done by the living beings in Jambudvipa. Listen attentively to what I say.”</p>
+<p>Earth Store Bodhisattva replied: “I have had doubts about this matter and will be pleased to listen.”</p>
+<p>The Buddha said to Earth Store Bodhisattva: “In</p>
+<p>Jambudvipa, the kings of countries, noblemen, great ministers, great elders, great Ｋsatriyas, great Brahmans, and others may encounter the tired, poor, hunchbacked, crippled, dumb, mute, deaf, stupid, or eyeless, as well as others who are handicapped. Those kings and great men may wish to give and be able to do so with great compassion, a humble heart, and a smile. They may give personally with their own hands, or arrange for others to do so, using gentle words and sympathetic speech. Such kings, ministers, and others will obtain blessings comparable to the meritorious virtue of giving to as many Buddhas as there are grains of sand in one hundred Ganges Rivers. Why is this? Those persons will receive such a meritorious reward because of having shown a great compassionate heart toward the poorest, most impoverished, and most handicapped individuals. For one hundred thousand lives they will always have an abundance of the seven gems, not to mention clothing, food, and the necessities of life.</p>
+<p>“Moreover, Earth Store, if in the future the kings of countries, Brahmans, and the like encounter Buddha stupas, monasteries, or images of Buddhas, Bodhisattvas, Sound-Hearers, or Pratyekabuddhas, and personally make offerings or give gifts, those persons will obtain three aeons as Sakra and will receive supremely wonderful bliss. If they are able to transfer the merit of that giving and dedicate it to the Dharma-realm, those great kings and other men will be Great Brahma Heaven Kings for ten aeons.</p>
+<p>“Moreover, Earth Store, if in the future, kings, Brahmans, and others encounter ruined, decayed, broken, and tumbledown stupas, temples, sutras, or images of previous Buddhas, they may resolve to restore them. They may then do so themselves or encourage as many as a hundred thousand other people to help, and thereby establish affinities. Those kings and the like will be Wheel-Turning Kings throughout a hundred thousand lives, and all those who help them will be kings of smaller countries for as many lives. If, before the Buddhastupa or monastery, they are able to resolve to dedicate this merit to the Dharma-realm, such kings and their helpers will finally accomplish the Buddha path, their good retribution being limitless and unbounded.</p>
+<p>“Moreover, Earth Store, if in the future the kings of countries, Brahmans, and others have compassionate thoughts when seeing the old, the sick, or women in childbirth, and provide them with ointments, medicines, food, drink, and bedding so as to make them peaceful and comfortable, the merit of their giving is quite inconceivable. For one thousand aeons such kings will constantly be lords of the Pure Dwelling Heaven; for two hundred aeons they will be lords in the Six Desire Heavens, and they will ultimately attain Buddhahood. They will eternally not fall into the Evil Paths, and for one hundred thousand lives they will hear no sounds of suffering.</p>
+<p>“Moreover, Earth Store, if kings, Brahmans and others can give in this way, in the future they will receive limitless blessings. If they are able to dedicate that merit, be it great or small, they will ultimately attain Buddhahood. How much more easily will they be able to attain the positions of Sakra, Brahma, or Wheel-Turning King. Therefore, Earth Store, you should exhort all living beings to study in this way.</p>
+<p>“Moreover, Earth Store, if there are good men or women who plant a few good roots in the Buddhadharma, amounting to as little as a fine hair, a grain of sand, or a mote of dust, they will receive incomparable blessings.</p>
+<p>“Moreover, Earth Store, good men or women in the future may encounter the image of a Buddha, Bodhisattva, Pratyekabuddha, or Wheel-Turning King, and may give gifts or make offerings. Such persons will attain limitless blessings and will always receive supremely wonderful bliss among men and gods. If they can dedicate that merit to the Dharma-realm, their blessings and profits will be beyond compare.</p>
+<p>“Moreover, Earth Store, if good men or good women in the future encounter a Mahayana Sutra, and on hearing but one</p>
+<p>gatha or sentence of it energetically resolve to be benevolent and respectfully praise and make offerings, those people will attain great, limitless, and unbounded rewards. If they can dedicate that merit to the Dharma-realm, their blessings will be incomparable.</p>
+<p>“Moreover, Earth Store, if in the future good men or women encounter new Buddhastupas, temples, or sutras of the Great Vehicle and make offerings to them, gaze at them in worship, and respectfully make praises with joined palms; or if they encounter old temples, stupas or sutras that are in ruins and either repair them themselves or encourage others to aid them, such people will be the kings of small countries throughout thirty lives. Those who act as the leaders in these affairs will always be Wheel-Turning Kings who teach those minor kings by means of the good Dharma.</p>
+<p>“Moreover, Earth Store, in the future, good men or good women may plant good roots in the Buddhadharma by giving, making offerings, repairing temples or monasteries, binding</p>
+<p>sutras, or doing good deeds that are as small as one strand of hair, one mote of dust, a grain of sand, or a drop of water. Merely by transferring the merit from that deed to the Dharma-realm, those people’s meritorious virtues will be such that they will receive supremely wonderful bliss for one hundred thousand lives. If they dedicate the merit only to their own family or relatives, or to their own personal benefit, they will receive as a result only three lives of bliss, thus putting aside the ten-thousandfold reward. Earth Store, such are the conditions of giving.“</p>
+<p>Chapter Eleven</p>
+<p>The Dharma Protection of the Earth Spirit</p>
+<p>At that time the earth spirit Firm And Solid spoke to the Buddha and said: “World-Honored One, from long ago I have personally beheld and paid homage to limitless Bodhisattvas,</p>
+<p>Mahasattvas, all of whom have inconceivable and great spiritual penetrations and wisdom, and all of whom cross over many living beings. Among all the Bodhisattvas, Earth Store Bodhisattva,</p>
+<p>Mahasattva, has the deepest and most weighty vows. World-Honored One, Earth Store Bodhisattva has great affinity with beings in Jambudvipa. Manjusi,Samantabhadra, Avalokitesvara, and Maitreya also transform hundreds of thousands of bodies to cross over those in the Six Paths, but their vows have an end. Earth Store Bodhisattva has made these vows to teach living beings in the Six Paths throughout aeons as many as the number of sand grains in hundreds of thousands of myriads of Ganges Rivers.</p>
+<p>“Would-Honored One, as I regard the living beings of the present and future, I see those who make shrines of earth, stone, bamboo, or wood and set them in pure places in the southern part of their dwellings. They place within the shrines an image of Earth Store Bodhisattva, either carved, painted, or made of gold, silver, copper, or iron. They then burn incense and make offerings, worship and praise him. By doing these things they will receive ten kinds of advantages and benefits.</p>
+<p>“What are these ten? Their lands will be fertile; their families and homes will be peaceful; their ancestors will be born in the heavens; they will have benefit and longevity in their present life; what they seek will be as they will; they will escape the disasters of water and fire; they will escape other calamities; their nightmares will cease; they will be protected by spirits in all their comings and goings; and they will encounter many causes of wisdom.</p>
+<p>“World-Honored One, living beings of the present and future will obtain these advantages and benefits if they can construct a place of worship and make offerings in their homes.”</p>
+<p>Firm And Solid continued to speak to the Buddha: “World-Honored One, If good men or women in the future keep this sutra and an image of the Bodhisattva in their homes, and if in addition they recite the sutra and make offerings to the Bodhisattva, I shall use my spiritual powers to surround and protect them day and night so that all threat of floods, fire, robbery and theft, great calamities, and small accidents, will be eradicated.”</p>
+<p>The Buddha told the earth spirit Firm And Solid: “There are few spirits who can match the great spiritual power you possess. Why? All the lands in Jambudvipa receive your protection; all the grasses, woods, sands, stones, paddy fields, hemp, bamboo, reeds, grains, rice, and gems come forth from the ground because of your power. Moreover, your constant praise of the beneficial deeds of Earth Store Bodhisattva makes your meritorious virtues and spiritual penetrations hundreds of thousands of times those of ordinary earth spirits.</p>
+<p>“If good men or women make offerings in the future to this Bodhisattva, or recite and rely upon the Sutra of the Past Vows of Earth Store Bodhisattva in their cultivation, you should use your spiritual power to protect them and not allow disastrous or unwelcome affairs even to be heard, much less undergone, by them. Not only will those people be protected by you, but</p>
+<p>Brahma,Sakra, and their retinues, as well as the retinues of all the other gods, shall also protect them. Why will they obtain protection from worthies and sages such as these? They obtain such great protection from having beheld and worshipped the image of Earth Store Bodhisattva, and from having recited this</p>
+<p>sutra of his past vows. They shall naturally leave the sea of suffering and certify to the bliss of nirvana.“</p>
+<p>Chapter Twelve</p>
+<p>The Benefits from Seeing and Hearing</p>
+<p>At that time the World-Honored One emitted hundreds of thousands of tens of thousands of millions of great rays of light from the door of his crown: the White Ray, the Great White Ray, the Auspicious Portent Ray, the Great Auspicious Portent Ray, the Jade Ray, the Great Jade Ray, the Purple Ray, the Great Purple Ray, the Blue Ray, the Great Blue Ray, the Azure Ray, the Great Azure Ray, the Red Ray, the Great Red Ray, the Green Ray, the Great Green Ray, the Gold Ray, the Great Gold Ray, the Good Luck Cloud, the Great Good Luck Cloud, the Thousand-Wheeled Ray, the Great Thousand-Wheeled Ray, the Jeweled Ray, the Great Jeweled Ray, the Solar Disc Ray, the Great Solar Disc Ray, the Lunar Disc Ray, the Great Lunar Disc Ray, the Palace Ray, the Great Palace Ray, the Ocean Cloud Ray and the Great Ocean Cloud Ray.</p>
+<p>After emitting such rays of light from the door of his crown, the Buddha spoke in wonderfully subtle sounds to the great assembly of gods, dragons, and other members of the Eightfold Division of ghosts and spirits, and to humans, nonhumans, and others: “Hear me now in the palace of the Trayastrimsa Heaven as I praise Earth Store Bodhisattva’s beneficial and inconceivable deeds among men and gods, his rapid progress in the causes of wisdom, his certification on the Tenth Ground, and his ultimate irreversibility from Anuttarasamyaksambodhi.”</p>
+<p>As this was said, in the midst of the assembly a Bodhisattva, Mahasattva, named Avalokitesvara, arose from his seat, knelt, and with palms together said to the Buddha: “World-Honored One, Earth Store Bodhisattva, Mahasattva, is replete with great compassion and pities living beings who suffer for their offenses. In thousands of tens of thousands of millions of worlds he manifests thousands of ten thousands of millions of transformation bodies. His meritorious virtues and awesome spiritual powers are inconceivable.</p>
+<p>“ I have heard the World-Honored One and the limitless Buddhas of the ten directions praise Earth Store Bodhisattva with different mouths but a common sound, saying that even if all the Buddhas of the past, present, and future were to speak of his meritorious qualities, these qualities still could not be fathomed. I have heard the World-Honored One tell the great assembly about the benefits of Earth Store Bodhisattva. World-Honored One, for the sake of living beings of the present and future, please explain Earth Store Bodhisattva’s inconceivability. Cause the gods, dragons, and the others of the Eightfold Division to gaze in worship and attain blessings.“</p>
+<p>The Buddha replied to the Bodhisattva Avalokitesvara: “You have great affinity with the Saha World. If gods, dragons, men, women, spirits, ghosts, or any other being who suffers for offenses within the Six Paths hears your name, sees your image, fixes his gaze on you, or praises you, they will become irreversible in the unsurpassed Way. They will always be born among men and gods and there receive wonderful bliss. When their conditions are ripe they will encounter Buddhas and be given their predictions of enlightenment. You now have great compassion and pity for living beings, for gods, dragons, and the others of the Eightfold Division. Listen as I proclaim the inconceivable benefits of Earth Store Bodhisattva. Listen attentively. I will discuss it for you.”</p>
+<p>The Avalokitesvara said: “So be it, World-Honored One, I will be pleased to hear.”</p>
+<p>The Buddha told the Bodhisattva Avalokitesvara: “In worlds of the present and future there will be gods whose heavenly merit has ended, who manifest the five signs of decay and are about to fall into the Evil Paths. When those signs appear, if those gods, whether male or female, see Earth Store Bodhisattva’s image, hear his name, gaze at him or bow once to him, they will increase their heavenly blessings, receive great happiness, and never again fall into the retributions of the Three Evil Paths. How much more will limitless, boundless merit, virtue, and blessings accrue to those who see and hear the Bodhisattva and use incense, flowers, clothing, food, drink, jewels, and gems as gifts and offerings.</p>
+<p>“Moreover, Avalokitesvara, if living beings in the Six Paths, present and future, are on the verge of death and hear the name of Earth Store Bodhisattva, the single passing of that sound by their ear will eternally remove them from the sufferings of the Three Evil Paths. How much more will this be true if the parents and relatives use the dying man’s houses, wealth, jewels, and clothing to commission the carving or painting of Earth Store Bodhisattva’s image. If that sick person has not yet died and sees or hears that, on his behalf, relatives have used his house, jewels, and so forth for the carving or painting of Earth Store Bodhisattva’s image, because of that merit, he may quickly be cured and his lifespan prolonged, even if his karmic retribution is such that he should have undergone severe sickness. If that person’s retribution is such that because of all manner of offense obstacles and karmic obstructions he should fall into the Evil Paths at death, because of receiving such merit he will be born among men and gods, and there receive extremely wonderful bliss. All his obstacles due to offenses will be eradicated.</p>
+<p>“ Moreover, Avalokitesvara, in the future a man or woman may lose father, mother, brothers, or sisters while he or she is still an infant or child under ten years. When fully grown the person may think of these parents and relatives but does not know into what path or world or heaven they have been born. If that person is able to carve or paint an image of Earth Store Bodhisattva, hear his name, or gaze upon and worship him; and if he can continue to do so from one through seven days, constantly hearing his name, seeing his image, beholding, worshipping, and making offerings without retreating form his initial resolve, then that person’s relatives will be liberated for many aeons. Even though their karma might be such as to cause them to fall into Evil Paths, they will be quickly reborn in the heavens, where they will receive supremely wonderful bliss. This results from their receiving the meritorious virtues established by that son, daughter, brother, or sister who has carved or painted an image of Earth Store Bodhisattva and then bowed to and worshipped it.</p>
+<p>“If that person’s relatives have already been born in the heavens on the strength of their own merit and are already experiencing supremely wonderful bliss, upon receiving this additional merit their causes for wisdom will increase and they will receive limitless bliss. If that person is able to behold and worship Earth Store Bodhisattva’s image single-mindedly during three weeks, reciting his name a full ten thousand times, the Bodhisattva may manifest a limitless body and tell that person the name of the world in which his relatives have been born. The Bodhisattva may manifest great spiritual power and personally lead him to those worlds in a dream to see his relatives.</p>
+<p>“Moreover, if one is able to recite the Bodhisattva’s name one thousand times a day every day for one thousand days, the Bodhisattva will command the ghosts and spirits to abide on the ground where that person is and to surround and protect him for his entire life. In this world his clothing and food will be abundant and he will have no suffering from sickness or the like. No accidents will occur in his house, much less affect his person. Finally, the Bodhisattva will rub his crown and bestow a prediction of enlightenment upon him.</p>
+<p>“Moreover, Avalokitesvara, if a good man or woman in the future wishes to practice great compassion to rescue all living beings and wishes to cultivate unsurpassed Bodhi in order to leave the Triple World, and if that person sees Earth Store Bodhisattva’s image, hears his name, and relies on him sincerely, using incense, flowers, clothing, jewels, food, and drink to make offerings, or if he gazes at and worships him, his wishes will quickly be realized and his obstructions will forever be left behind.</p>
+<p>“Moreover, Avalokitesvara, if good men and women in the future wish to fulfill hundreds of thousands of ten thousands of millions of wishes and to succeed in as many undertakings regarding both present and future, they should simply return to and rely upon, gaze in worship at, make offerings to, and praise the image of Earth Store Bodhisattva. Their wishes and goals will certainly be realized. Moreover, they may ask Earth Store Bodhisattva, the Compassionate One, to eternally protect them. In a dream the Bodhisattva will rub their crowns and bestow predictions of enlightenment.</p>
+<p>“Moreover, Avalokitesvara Bodhisattva, good men and women in the future may have high regard for the Great-Vehicle</p>
+<p>Sutras and make the inconceivable resolve to read and recite them from memory. They may then encounter a good master who instructs them, so that they may become familiar with the texts. But as soon as they learn them, they forget them. They may become unable for months and years to read or recite them from memory. It is because such persons’ karmic obstructions from past lives have not yet been eradicated that they do not have the nature to read and recite sutras of the Great Vehicle. Upon hearing Earth Store Bodhisattva’s name or seeing his image, they should feel deep respect and state their situation to the Bodhisattva. They should then take incense, flowers, clothing, food, and drink, as well as all manner of playthings, and make offerings to the Bodhisattva. They should place a bowl of pure water before the Bodhisattva’s image for one day and one night. Afterward, placing their palms together, let them state their request and then drink the water while facing south. As the water is about to enter their mouths they should be particularly sincere and earnest. After drinking the water they should abstain from the five pungent plants, wine, meat, all sexual activity, and false speech, as well as all killing and harming, for one to three weeks. In dreams these good men or women will see Earth Store Bodhisattva manifesting a limitless body and annointing their crowns with water. When they awaken they will be endowed with keen intelligence. Should this sutra then be heard by them one time, they will eternally remember it and never forget or lose a single sentence or verse.</p>
+<p>“Moreover, Avalokitesvara Bodhisattva, if there are people in the future whose food and clothing are insufficient, who endure sickness and ill fortune, whose families are not peaceful, whose relatives are scattered, who are bothered by unfortunate occurrences, or who are often startled in their sleep by dreams, upon hearing the Bodhisattva’s name and seeing his image, they should recite his name a full ten thousand times with extreme sincerity and respect. Those inauspicious matters will gradually be eradicated, and they will attain peace and happiness. Their food and clothing will be abundant and even in their dreams they will be peaceful and happy.</p>
+<p>“Moreover, Avalokitesvara, good men or women in the future who must enter mountain forests; cross over rivers, seas, and the great waters; or pass through dangerous roads for the sake of earning their own livelihood, for public affairs, matters of life and death, or other urgent business, should first recite the name of Earth Store Bodhisattva a full ten thousand times. The ghosts and spirits of the ground they pass over will always surround and protect them in their walking, standing, sitting, and lying down. The peace and happiness of those persons will constantly be guarded, so that even if they encounter tigers, wolves, lions, or other harmful evil creatures, the beasts will be unable to hurt them.”</p>
+<p>The Buddha told the Avalokitesvara: “Earth Store Bodhisattva has great affinity with beings in Jambudvipa. Hundreds of thousands of aeons would not be time enough to describe the benefits derived by living beings who see this Bodhisattva and hear his name. Therefore, Avalokitesvara Bodhisattva, you should use your spiritual powers to propagate this sutra and to cause the living beings of the Saha world to receive peace and happiness throughout hundreds of thousands of myriads of aeons.”</p>
+<p>At that time the World-Honored One spoke verses, saying:</p>
+<p>“Earth Store Bodhisattva’s spiritual strength</p>
+<p>Cannot be explained with infinities of words.</p>
+<p>To see, to hear, to worship for but one thought</p>
+<p>Brings endless benefit to men and gods.</p>
+<p>If a man’s or woman’s or a god’s or dragon’s</p>
+<p>Lifespan ends and he should fall</p>
+<p>Into evil ways, but returns sincerely and trusts</p>
+<p>In this Lord, his lifespan will increase</p>
+<p>And his offenses will be wiped away.</p>
+<p>Those who have lost their parents’ devoted care,</p>
+<p>And do not know what paths their spirits took;</p>
+<p>Lost brothers, sisters, or some other kin,</p>
+<p>Whom in their youth they never met at all,</p>
+<p>Should carve or paint an image of this Lord,</p>
+<p>Should gaze and worship him unceasingly,</p>
+<p>And for twenty-one days constantly hold his name.</p>
+<p>The Bodhisattva will reveal a boundless body</p>
+<p>And show the realms in which the kin were born.</p>
+<p>And kin who have fallen into evil ways</p>
+<p>Will quickly leave behind these states of woe.</p>
+<p>To cultivate the Bodhi unsurpassed</p>
+<p>And leave behind the suffering Triple World,</p>
+<p>To bring about the great compassion heart,</p>
+<p>Just gaze upon the image of this Lord.</p>
+<p>Each wish one makes will quickly come to pass</p>
+<p>And karmic hindrances will not bind one up.</p>
+<p>If one does not retreat from his first thought</p>
+<p>His crown will be rubbed, he’ll hear a prophecy.</p>
+<p>If a man resolves to read a sutra text,</p>
+<p>Wishing to cross over confused beings to the other shore,</p>
+<p>Although his wish transcends all words and thoughts,</p>
+<p>What he has read he straightaway forgets;</p>
+<p>Because he doubts, blocked by karmic faults,</p>
+<p>He cannot hold the sutra in his mind.</p>
+<p>To Earth Store Bodhisattva he should offer</p>
+<p>Scents and flowers, clothing, food, and toys,</p>
+<p>And place pure water on that Lord’s altar,</p>
+<p>Wait one day and night, then drink the water;</p>
+<p>Carefully avoid the pungent plants,</p>
+<p>Both meat and wine, improper sex and speech;</p>
+<p>For twenty-one days neither kill nor injure;</p>
+<p>Just recite the name of this great Lord.</p>
+<p>Then in a dream he’ll see the boundless realm</p>
+<p>And, once awake, obtain keenness of ear;</p>
+<p>Then when a sutra text passes his ear</p>
+<p>Throughout ten million lives he’ll not forget.</p>
+<p>The power of this Lord cannot be thought</p>
+<p>Or talked about, yet it can cause one to</p>
+<p>Obtain great wisdom.</p>
+<p>If poverty-stricken beings, plagued with disease,</p>
+<p>Whose homes are troubled, whose relatives are scattered,</p>
+<p>Who aren’t at peace, even in sleep or dreams,</p>
+<p>Seek a way to leave misfortune’s grasp</p>
+<p>And sincerely gaze in worship on this Lord,</p>
+<p>Their bitter sorrows will be wiped away.</p>
+<p>With sufficient food and clothes, and peaceful dreams,</p>
+<p>Gods and ghosts will circle and protect them.</p>
+<p>Those who travel in mountain wilds, on seas,</p>
+<p>Who meet with poisonous birds and beasts, or evil</p>
+<p>Men or ghosts, spirits, or evil winds-</p>
+<p>So many kinds of troublesome disturbances-</p>
+<p>Should gaze in worship and make offerings</p>
+<p>To Earth Store Bodhisattva’s form.</p>
+<p>Within the mountain forests, and on the seas,</p>
+<p>The evil multitudes will disappear.</p>
+<p>Avolokitesvara, be attentive.</p>
+<p>Earth Store cannot be reached by word or thought.</p>
+<p>A thousand million years is time too brief</p>
+<p>To fully describe the power of this Lord.</p>
+<p>If humans can but hear the name “Earth Store”,</p>
+<p>Or if they see his image, worship once,</p>
+<p>Or offer flowers, clothing, food, perfumes,</p>
+<p>They will delight in a thousand wondrous joys.</p>
+<p>If one returns this merit to the Dharma-</p>
+<p>Realm, he will become a Buddha, freed</p>
+<p>From birth and death. Therefore, Avalokitesvara,</p>
+<p>You should know this sutra and spread it through worlds</p>
+<p>More numerous than the Ganges River’s sands.“</p>
+<p>Chapter Thirteen</p>
+<p>The Entrustment of Men and Gods</p>
+<p>At that time the World-Honored One extended his gold-colored arm and again rubbed the crown of Earth Store Bodhisattva, Mahasattva, as he said: “Earth Store, Earth Store, your spiritual powers, compassion, wisdom, and eloquence are inconceivable. Even if all the Buddhas of the ten directions were to praise your inconceivable qualities, they could not finish in thousands of tens of thousands of aeons.</p>
+<p>“Earth Store, Earth Store, remember that now, in the</p>
+<p>Trayastrimsa Heaven in this great assembly of hundreds of thousands of tens of thousands of millions of ineffable Buddhas, Bodhisattvas, gods, dragons, and eightfold divisions of spirits, I entrust to you the men and gods of the future who have not yet left the burning house of the Triple World. Do not allow those beings to fall into the Evil Paths for the space of even a single day and night, much less fall into the uninterrupted hell of the Five Offenses and the Avici hell, where they would have to pass through thousands of tens of thousands of millions of aeons without being able to leave.</p>
+<p>“Earth Store, the beings of Jambudvipa are of irresolute will and nature, and they habitually do many evil deeds. Even if they resolve their thoughts on good, they quickly turn back on that resolve, and if they encounter evil conditions they tend to become increasingly involved in them. For this reason I reduplicate hundreds of thousands of millions of transformation bodies to cross them over in accord with their respective natures.</p>
+<p>“Earth Store, I now carefully entrust the multitudes of men and gods of the future to you. If, in the future, gods or men plant good roots in the Buddhadharma, be they as little as a hair, dust mote, grain of sand, or drop of water, you should use your spiritual powers and virtues to protect them so that they gradually cultivate the unsurpassed way and do not retreat from it.</p>
+<p>“Moreover, Earth Store, if in the future men and gods who ought to fall into the Evil Paths in accord with the retribution of their deeds, who are on the verge of falling into those paths, or who are already at the very gates of those paths, recite the name of one Buddha or Bodhisattva, or a single sentence or verse from a Mahayana sutra, you should manifest a limitless body, smash the hells, and cause them to be born in the heavens and receive supremely wonderful bliss.”</p>
+<p>The World-Honored One then spoke in verse, saying:</p>
+<p>“Men and gods of the future,</p>
+<p>as well as those now living,</p>
+<p>I entrust all to you.</p>
+<p>Use your penetrations</p>
+<p>To rescue them all.</p>
+<p>With your expedient skill in means,</p>
+<p>Do not allow them to fall</p>
+<p>into the Evil Paths.“</p>
+<p>At that time Earth Store Bodhisattva, Mahasattva, knelt, placed his palms together, and said to the Buddha: “World-Honored One, please do not be concerned. If good men and women in the future have a single thought of respect toward the Buddhadharma, I shall use hundreds of thousands of expedient devices to cross them over so that they may quickly attain liberation from birth and death. How much more will those who have heard of good undertakings and cultivated in accord with them be able to attain spontaneous irreversibility from the unsurpassed Way.”</p>
+<p>When this was said, a Bodhisattva named Empty Space Store arose from the midst of that assembly and spoke to the Buddha: “World-Honored One, I have come to the Trayastrimsa Heaven and heard the Thus Come One speak of the inconceivable power of Earth Store Bodhisattva’s awesome spiritual strength. If in the future good men or good women, as well as gods and dragons, hear this sutra and the name of Earth Store Bodhisattva, or if they gaze at and worship his image, how many kinds of advantages and blessings will they attain? Please, World-Honored One, speak about this for the sake of those living beings in the present and in the future.”</p>
+<p>The Buddha told Empty Space Store Bodhisattva: “Listen attentively, listen attentively, I shall enumerate and describe them to you. If there are good men and women in the future who see Earth Store’s image, or who hear this sutra or read or recite it; who use incense, flowers, food and drink, clothing, or gems as offerings; or if they praise, behold, and worship him, they shall attain twenty-eight kinds of advantages:</p>
+<ol>
+<li>
+<p>They will be remembered and protected by gods and dragons.</p>
+</li>
+<li>
+<p>Their good roots will increase daily.</p>
+</li>
+<li>
+<p>They will accululate superior causes of wisdom.</p>
+</li>
+<li>
+<p>They will not retreat from Bodhi.</p>
+</li>
+<li>
+<p>Their food and drink will be abundant.</p>
+</li>
+<li>
+<p>Epidemics will not touch them.</p>
+</li>
+<li>
+<p>They will not encounter disasters of fire and water.</p>
+</li>
+<li>
+<p>They will not be troubled by thieves.</p>
+</li>
+<li>
+<p>They will be respected by all who see them.</p>
+</li>
+<li>
+<p>They will be aided by ghosts and spirits.</p>
+</li>
+<li>
+<p>Women will be reborn as men.</p>
+</li>
+<li>
+<p>If born as women they will be daughters of kings and ministers.</p>
+</li>
+<li>
+<p>They will have upright and proper appearances.</p>
+</li>
+<li>
+<p>They will often be born in the heavens.</p>
+</li>
+<li>
+<p>They may be emperors or kings.</p>
+</li>
+<li>
+<p>They will know their past lives.</p>
+</li>
+<li>
+<p>They will attain whatever they seek.</p>
+</li>
+<li>
+<p>Their families will be happy.</p>
+</li>
+<li>
+<p>All disasters will be eradicated.</p>
+</li>
+<li>
+<p>They will eternally be apart from the paths of karma.</p>
+</li>
+<li>
+<p>They will always arrive at their destination.</p>
+</li>
+<li>
+<p>At night their dreams will be peaceful and happy.</p>
+</li>
+<li>
+<p>Their deceased relatives will leave suffering behind.</p>
+</li>
+<li>
+<p>They will receive the blessings from their past lives.</p>
+</li>
+<li>
+<p>They will be praised by the sages.</p>
+</li>
+<li>
+<p>They will be intelligent and their roots will be keen.</p>
+</li>
+<li>
+<p>They will have magnanimous, kind, and sympathetic hearts.</p>
+</li>
+<li>
+<p>They will ultimately attain Buddhahood.</p>
+</li>
+</ol>
+<p>“Moreover, Empty Space Store Bodhisattva, if gods, dragons, or spirits of the present or future hear Earth Store Bodhisattva’s name, bow to his image, or merely hear of his past vows and conduct, and then praise him and gaze at and worship him, they will attain seven kinds of advantages.</p>
+<ol>
+<li>
+<p>They will quickly step over to the sages’ ground.</p>
+</li>
+<li>
+<p>Their evil karma will be eradicated.</p>
+</li>
+<li>
+<p>All the Buddhas will protect and be near them.</p>
+</li>
+<li>
+<p>They will not retreat from Bodhi.</p>
+</li>
+<li>
+<p>Their fundamental powers will increase.</p>
+</li>
+<li>
+<p>They will know their past lives.</p>
+</li>
+<li>
+<p>They will ultimately realize Buddhahood.</p>
+</li>
+</ol>
+<p>At that time, all those who had come from the ten directions, unspeakable numbers of Buddhas, Thus Come Ones, as well as the great Bodhisattvas, gods, dragons, and the remainder of the Eightfold Divisions who heard Sakyamuni Buddha’s praise of Earth Store Bodhisattva’s great inconceivable spiritual powers, exclaimed that there had never been anything like this before.</p>
+<p>At that time incense, flowers, heavenly garments, and gems rained down in the Trayastrimsa Heaven as offerings to Sakyamuni Buddha and Earth Store Bodhisattva. When this was finished, the entire assembly again gazed, made obeisance, placed their palms together, and withdrew.</p>
+<p>61</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../dzpszj/dzpslgjxfjdnzxkgdhx.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../dzpszj/saokbsi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../dzpszj/dzpslgjxfjdnzxkgdhx.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../dzpszj/saokbsi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

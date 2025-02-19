@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>演培法师论地藏菩萨─拿出地狱未空誓不成佛的精神来  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="演培法师论地藏菩萨拿出地狱未空誓不成佛的精神来"><a class="header" href="#演培法师论地藏菩萨拿出地狱未空誓不成佛的精神来">演培法师论地藏菩萨─拿出地狱未空誓不成佛的精神来</a></h1>
+<p>　　　　演培法师论地藏菩萨（之三）</p>
+<p>　　　　拿出地狱未空誓不成佛的精神来　　　　演培</p>
+<p>　　　　绪　　说</p>
+<p>　　诸位居士！在夏历五六两月初一日的金刚法会中，我曾一再向诸位说：「七月快要到了。」当时还是个未来的展望，诸位或有以为还早得很，可是到了今天，七月初一已正式的展现在我们面前，是则时轮向前推进的迅速，多么令人感到极大的可畏！一年以十二个月计，今天为夏历七月初一，是则一年中的半年已经过去，现在回想起来，真如转眼间事，未来半年时间，必然过得更快。当知时间一去不复返的，我们应怎样的把握时间来修学佛法！</p>
+<p>　　俗语说的「岁月催人老」，我们能不憬悟时间飞逝，而更努力从事于佛化工作！如不善用从我们面前溜过的时间，不但辜负了佛教，亦太辜负了自己，未免太过可惜！佛化事业所要做的。虽说是很多的，但最极重要的，莫过于是怎样的利益众生。因为任何一个佛化事业，看起来好像是个别的，实际都是围著这大前题而转的。所以佛法的每个行者，都应时刻的想到怎样以佛法化世？因我们从佛法中得到法益，都是大悲佛陀所赐给我们的。我们要想报答佛陀的深恩大德，唯有以佛法化导世间，令诸人群走上佛法大道。经说：「若不说法度众生，毕竟无能报恩者。」</p>
+<p>　　每年夏历的七月，是中国佛教的一个忙月，不是为了别的什么事忙，而是为了超度救济忙。从这点看，不难看出佛教的慈悲，是怎样的遍于一切含识之类。不但现实人间的救济，是佛法所从不忽视的，就是离开人间的幽冥众生，亦为佛法慈悲所要救济的对象。因而，已断恶趣的，使之生命更为光辉；未断恶趣的，使之得以超拔出来，不致在诸恶趣中，受诸痛苦的袭击。是则七月佛教所举行的各种超度救济法会，从它救济幽冥众生这一面看，是就不是没有什么意义，更不可视为迷信行为，因为目的在于救拔恶趣众生的痛苦，纯粹是从慈悲救度之心出发的！</p>
+<p>　　夏历七月间，佛教寺庙举行超度救济法会，扩大来说，固是超度救济一切众生，切近点说，实是超度自己的亲生父母。父母在这世间结束生命后，继续而来的新生命，究在五趣中的那一趣，未得道眼的我们，谁也不会知道。为了济拔超度自己的父母，没有其他适当的办法，只好仰仗佛力法力的超荐。如此说来，举行法会，实还含有倡行孝道的意义，而地藏大士就是奉行孝道的一位大菩萨。印顺论师说：「地藏菩萨是提倡孝道的，重视超度救济父母。中国人特重孝道，其慎终追远的精神，与地藏法门相合，故地藏菩萨在中国，受到特殊的尊敬。」</p>
+<p>　　　　一　　地藏菩萨的胜德</p>
+<p>　　地藏不是初发心的低级菩萨，而是久修大行的高级菩萨，所成就的不可思议功德，不特不是我们所能想像得到的，就是声闻缘觉亦不能测度而知。地藏十轮经说「是地藏菩萨有无量无数不可思议殊胜功德之所庄严，一切世间声闻独觉所不能测。」又说：「如是大士功德善根，一切世间天人大众，皆不能测其量浅深，若闻如来为汝广说如是大士功德善根，一切世间天人大众，皆生迷惑或不信受。」试想想看，这那里是初发心的菩萨所能成就的？但这么多的殊胜功德，既不是短时间内所修成的，亦不是普通功德所可比拟，而是在菩提道上所培植起来的。</p>
+<p>　　现对地藏大士的功德略说一二：修学大乘佛法最重要的，是怎样的于诸佛法而得自在，唯有于诸佛法得到自在的，才能无畏的向著佛道前进，不致中途退堕下来。地藏大士于诸佛法，已经得到无碍自在，绝对不会有所滞碍的停止不前。其次为大乘行者所重要的，是怎样登上最高的一切智山。当知所谓一切智山，不是容易登上去的，因为其间有著很多阻碍，要想登上它的最高峰，不但要有一股坚定不移的毅力，更要有克服种种阻碍的大精进力。否则，鲜有不从智山滚下来，跌得头破血流，甚至粉身碎骨。但是地藏大士，已无碍自在的善登一切智山！</p>
+<p>　　尤其为大士最大特色的，就是为了成熟一切有情。不论是个怎样的国土，都能随其悲愿止住其中，运用各式各样的不同方便，发起无量无边的殊胜功德，成熟无量无边的所化有情。使诸佛土所化的一切有情，或是发现诸欲境界的无量过患，因而对之深深的远离，不致陷入诸欲的重重包围中；或是具足最极增上的惭愧，对于任何一个恶法，心无忘失的予以远离，不致使自己陷在罪恶的深渊中；或是善巧的具足天眼智通等，深深的了达三世罪福因果，一切都受因果律的支配，不敢为非做歹的造诸恶因，免得将来感受极重的痛苦，对于因果有著高度的敬畏！</p>
+<p>　　各个国土的各个众生，其根性和好乐是都不同的，菩萨在诸国土中的教化方法，自然不是一成不变的。所以菩萨有时在某国土中，特别入于诸佛灯炬明定，令该国土的一切有情，看到菩萨入于这样的定，自然而然的舍弃一切邪道，归投到三宝的正道中来，依照三宝的正确指示，向著人生的正道迈进，做个有为有守具有人格的人。从此以往，始终在三宝的正道中来往，再也不会受魔外的诱惑，误入邪道去乱闯乱撞！当知没有高度正见，是不可能做到的，因为「魔外的恶见力量极大，如不曾在佛法中得到不退转，都有受魔外所转的可能。」</p>
+<p>　　佛法行者的修学佛法，要想一直的勇往前进，客观环境的清净美妙，同样也是极为重要的。所以很多在因地行菩萨道的菩萨，为了摄化更多不同种类的众生，特别以大行愿庄严净土，让诸众生到净土来修学佛法。地藏大士是位广修大行的高级菩萨，对此当然深切的了解。所以有时到某国土度生，为了适应这国土中的众生要求，特将这国土中的所有一切尘垢不净臭秽悉皆消灭，使该国土地平如掌，种种良好的现象自然涌现，得到清净殊胜的众相庄严。让诸众生在这美妙的环境中，如法的安心的修学佛法，以完成自己所要完成的一切殊胜功德！</p>
+<p>　　总之，如地藏十轮经卷一说：「此善男子，成就如是功德妙定威神之力勇猛精进，于一食顷能于无量无数佛土一一土中，以一食顷皆能度脱无量无数殑伽沙等所化有情，令离众苦皆得安乐，随其所应安置生天、涅槃之道。」地藏大士这样度化众生，不是短时间的事，而是长远的事。如地藏十轮经卷一又说：「此善男子，曾过无量无数大劫，于过无数佛世尊所，发大精进坚固誓愿，由此愿力为欲成熟诸有情故。」从这两段经文的叙述中，可知地藏菩萨的心愿，自从发心以来，只知心心念念的怎样度化众生，从不为自己的前途如何而打算。</p>
+<p>　　修学菩萨大行的高级菩萨，所得功德都是不可思议，供养恭敬都会得大利益，但佛在各大乘经中，每因当机赞叹而有所不同：如在普门品中，就特别的赞美观音菩萨；在普贤行愿品中，就特别的赞美普贤菩萨；在弥勒上生经中，就特别的赞美弥勒菩萨；在许多大乘经中，则特别的赞美文殊菩萨；而今在地藏十轮经中，则又特别赞美地藏菩萨。如该经卷一说：「善男子！假使有人于其弥勒及妙吉祥并观自在、普贤之类而为上首殑伽沙等诸大菩萨摩诃萨所，于百劫中至心归依、称名、念诵、礼拜、供养求诸所愿。不如有人于一食顷至心归依、称名、念诵、礼拜、供养地藏菩萨求诸所愿，速得满足。所以者何？地藏菩萨利益安乐一切有情，令诸有情所愿满足，如如意宝，亦如伏藏。如是大士为欲成熟诸有情故，久修坚固大愿大悲，勇猛精进过诸菩萨，是故汝等应当供养。」从这比较中，可以看出地藏大士的功德，是怎样的殊胜圆满，是怎样的值得吾人恭敬尊重，是怎样的值得大乘佛法行者的效法！因为地藏菩萨一切功德的完成，都是为了利乐有情的，而且本著坚固悲愿，精进勇猛的去做的；岂是一般初发心的菩萨所能望其项背？难怪地藏菩萨的圣号，不特传遍了裟婆世界，更传遍了无量无数的诸国土中。</p>
+<p>　　　　二　　地藏愿恶世度生</p>
+<p>　　庄严净佛国土，摄化一切众生，固然是菩萨的悲愿所在，但若能在秽恶世界说法度生，其精神更为崇高伟大，而为专在净土行化者之所不及。因为秽恶世界的众生，多陷在悲惨恶运中，其所受的痛苦，真是无法形容。如果没有大心之士，予以强有力的救济，终不能跳出浊恶世界，只有长期的被诸痛苦之所包围，忍受难以形容的众苦逼迫！我佛释迦牟尼，在这五浊恶世，度化各类机宜，不特成为众生慈父，而且博得六方诸佛的一致称许。诚如弥陀经中说的：「彼诸佛等亦称赞我不可思议功德，而作是言：释迦牟尼佛能为甚难希有之事，能于娑婆国土五浊恶世——劫浊、见浊、烦恼浊、众生浊、命浊中，得阿耨多罗三藐三菩提，为诸众生说是一切世间难信之法」。可见在秽恶世界的成佛度生，是多么的难能可贵！肯得在秽恶世界说法度生的，又是多么少之又少？但是地藏菩萨在经中以偈赞佛到最后说：「我今学世尊，发如是誓愿，当于此秽土，得无上菩提。」「释迦牟尼佛是出现于秽恶世界，并于秽土成佛的。地藏菩萨要学习释迦佛，发愿于此秽土成佛，于此秽土度生，可说是释迦佛精神的继承者。」这一悲愿的精神，是多么的为今日之所必需！因而愿在秽恶世界度罪苦众生的地藏菩萨，更是多么的值得称扬赞叹！</p>
+<p>　　　　三　　地藏愿恶趣度生</p>
+<p>　　菩萨所以发愿度生，原因在于众生有苦。而众生苦有轻有重，菩萨既然誓愿度生，是就不能避重就轻，而应越是苦恼多的地方越要去，越是苦恼重的越要救度。依佛法说，最苦的地方莫过地狱，最苦的众生莫过地狱有情。一般知道地狱苦的，听说将要堕入地狱，必然就怕得不得了，无论怎样不愿入地狱，因地狱确是最苦处，而且地狱亦复是很多的。不管地狱是怎样的众多，不论地狱是怎样的苦痛，当知皆是南阎浮提众生，造诸恶业之所招感的，因而自造还得自受，任何人都代替不了。不说一般人如此，就是最极至亲的父子，到那时候亦是各走各路。</p>
+<p>　　地狱罪苦究是怎样的？地藏经地狱名号品中，有极清楚的说明，在此我不想详为论说。总而言之，各各地狱之中，有百千种的业道之器，不是铜的，就是铁的，不是坚石，就是烈火，而这四样东西，并不是真的属于外在的东西，来向生命体压迫的，实是众生自己各种业行之所招惑的。一一狱中已有这么多的苦处，何况还有很多的地狱？其苦当然不可言宣！是以如将地狱百千万亿种的苦楚，用现代语灵活的把它描写出来，令人看了，没有不毛骨悚然的。因而生存在这人间，对于个己的身心行为活动，不得不予严密的注意，千万不能造下堕地狱业！</p>
+<p>　　一般地狱已经是苦不堪言，何况还有无间地狱？其苦自更无法形容。如地藏经观众生业缘品说：「无间狱者，其狱城周匝八万余里；其城纯铁，高一万里：城上火聚，少有空缺。其狱城中，诸狱相连，名号各别：独有一狱，名曰无间。其狱周匝万八千里，狱墙高一千里，悉是铁为。上火彻下，下火彻上：铁蛇铁狗，吐火驰逐，狱墙之上，东西而走。狱中有床，遍满万里，一人受罪，自见其身遍卧满床。千万人受罪，亦各自见身满床上。众业所感，获报如是！」如是像这样的苦报，亦完全是由众生业力所感，不是真的有什么铁蛇铁狗等来折磨众生！</p>
+<p>　　像这样业感罪苦的众生，在无间狱中受诸罪苦，动辄经过百千亿劫，要想出离没有出离的时候，其受痛苦的惨状，不是人间所能描绘得出的，亦不是短时间所能说尽的。但是众生怎么会到这样苦处去的？是不是有个什么大力者将众生推进去的？不！佛法不承认有个惩罚众生的大力者，一切是自我之所创造的。你造了这样的罪业，不想进去也得进去，逃是逃不了的，必须将你罪报受了才能出离，是以当你受这罪苦时，既不能责怪什么夜叉恶鬼，亦不能怨恨什么铁鹰铁蛇，而应反省自己为什么会造下这么重的弥天大罪？是以责任应该由自己负的！</p>
+<p>　　地藏经阎浮众生业感品说：「生死业缘，果报自受。」这是光目女的母亲造恶堕在恶趣而又转生为婢女之子时，对光目女的坦然自白。这是光目女母亲亲生所受的经验之谈，一般不信因果业报的，从这应该醒醒自己的头脑，对有如是因必有如是果的道理不可不信。如做</p>
+<p>时代的新人物，不肯承认业果报应，佛菩萨虽很慈悲，一时也救不了你，必要到你从所受的极大痛苦中清醒过来，确认业果是丝毫不爽的，重视自己的行为活动，不敢再做损人而不利己的非法勾当，方能仰仗佛菩萨的威德之力，从极大痛苦的恶趣中，特别是从地狱趣中超拔出来！</p>
+<p>　　地藏菩萨悲心特重，不特愿在恶浊世界度生，而且愿入地狱度化罪苦众生，希望在地狱中受极大苦的众生，皆能出离地狱不再受地狱之苦。可是罪业深重的众生，不知佛菩萨的大慈大悲，一味任性的要怎样做就怎样做，刚刚在人间透过一口气来，就又忘了在地狱中所受的痛苦，于是故态复萌的，于不知不觉间又造成罪业，到了人间的生命结束，就又堕入恶趣中受极大苦，致劳菩萨忧虑勤苦的无有已时。诚如经中说的：「久远劫来，迄至于今，度脱众生，犹未毕愿。」我们要学菩萨发心修行，就得要学地藏菩萨发大誓愿，然后方能真正与菩萨行相应。</p>
+<p>　　　　四　　地藏的宏愿无尽</p>
+<p>　　地藏大士所以到今天还未完毕度生的大愿，问题不在菩萨的不努力，而在众生的罪业太重，所以佛在阿含经中常说：「失人身者如大地土，得人生者如爪上尘。」是以众生在生死中轮回，真止安处在人间时少，即或偶得菩萨的教化，生到这人世间来，也只不过是暂时的，大多数的时间是在恶趣，于恶趣中又以在地狱时间最长。原因众生在没有得解脱前，性识总是没有一定的，忽而做了很多的善事；忽而造了很多的恶业。不论为善为恶，都是逐境而生，好像车轮那样，在五趣中旋转，没有一刻停息，动不动的在恶趣中要经过微尘数的那么多的劫数。</p>
+<p>　　这一不寻常的现象，不特我们不了解菩萨为什么这样不惮烦的，常在地狱度化众生，就是身为四天王天的天人，亦不明白地藏在地狱中度生的大愿，是这样的无有尽期。于是向佛这样问道：「地藏菩萨从久远劫来，发了这么大的大愿，照理老早就应度尽所有众生，为什么到现在还没有把众生度完，而今又在佛前重发誓愿？究是由于愿力的不坚？还是由于众生的难度？我们对这确实有点想不通，请佛慈悲再为我们解说！」四天王天的这一请问，不特是为自己想不通而请问，实亦代表我人而请问，因为这是很多人在内心中都存有的疑问。</p>
+<p>　　佛陀回答四天王天说：「不错，自从久远劫来一直到现在，地藏菩萨都在不断的度脱众生。可是不论菩萨尽了怎样最大的努力，而他的内心却还未完结，正因众生未曾度尽。而众生在这世界中，又受种种痛苦的逼迫，不但现在如此，就是向未来无量数劫去看，众生所造的各种罪业，亦如蔓草一样的牵延不断。菩萨有鉴于此，于是慈悲怜愍之心又复生起，更发重大的誓愿，无论如何要度这些众生，当这些众生一日未度，菩萨之心一日不安。由此可以想像菩萨的悲愿是多么的深重？而菩萨的一再发大誓愿，目的完全在于众生，总望每个众生，获得究竟解脱。」</p>
+<p>　　　　结　　说</p>
+<p>　　地藏大士在行菩萨道的过程中，不论是为长者子时，不论是为婆罗门女时，不论是为小国王时，不论是为光目女时，其所发的誓愿，都是为的度脱罪苦六道众生，特别是为度脱地狱罪苦众生。而且还要广设方便尽令解脱，然后自己方成佛道。像这样的发愿，当然会要常在地狱中度生。所以中国佛教形容地藏的大愿有四句话说：「众生度尽，方证菩提；地狱未空，誓不成佛。」当今世乱如麻，现实人间就是活地狱，为佛嫡骨儿孙的我们，应「拿出地狱未空誓不成佛的精神来」，效法地藏大士那样的庄严地狱，度尽地狱等的众生，才是真正菩萨道的实践者！</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../dzpszj/ypfsldzpsfdzzdyxdzzdx.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../dzpszj/ypfsldzpsxxdzpsdxqjs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../dzpszj/ypfsldzpsfdzzdyxdzzdx.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../dzpszj/ypfsldzpsxxdzpsdxqjs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

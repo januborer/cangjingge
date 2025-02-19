@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>佛说开觉自性般若波罗蜜多经卷第一  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="佛说开觉自性般若波罗蜜多经卷第一"><a class="header" href="#佛说开觉自性般若波罗蜜多经卷第一">佛说开觉自性般若波罗蜜多经卷第一</a></h1>
+<p>　　　　佛说开觉自性般若波罗蜜多经卷第一</p>
+<p>　　　　　　　　译经三藏朝散大夫试鸿胪卿光梵</p>
+<p>　　　　　　　　大师赐紫沙门臣惟净等奉　诏译</p>
+<p>　　如是我闻。一时世尊在王舍城鹫峰山中。与大苾刍众并菩萨摩诃萨众俱。是时佛告尊者须菩提言。须菩提。色无性假性实性。受想行识无性假性实性。须菩提。如是乃至眼色眼识。耳声耳识。鼻香鼻识。舌味舌识。身触身识。意法意识。无性假性实性。</p>
+<p>　　复次须菩提。色于如是三性中转愚。是所行当知是为菩萨正行。如是行者。是菩萨速疾证得阿耨多罗三藐三菩提果。</p>
+<p>　　须菩提。受想行识亦复如是。若菩萨摩诃萨于诸识中解无相法。苦自止息诸相寂静。如是所行。当知是为菩萨正行。如是行者。是菩萨速疾证得阿耨多罗三藐三菩提果。</p>
+<p>　　尔时世尊重说颂曰。</p>
+<p>　　　　若解无相法　　　　诸苦自止息</p>
+<p>　　　　众相皆寂静　　　　是菩萨所行</p>
+<p>　　复次须菩提。于诸色中闇之与明平等依止菩萨若能如实了知。解入此者诸法亦然。是菩萨速疾证得阿耨多罗三藐三菩提果。</p>
+<p>　　须菩提受想行识亦复如是。于诸识中闇之与明平等依止。菩萨若能如实了知。解入此者诸法亦然。是菩萨速疾证得阿耨多罗三藐三菩提果。</p>
+<p>　　尔时世尊重说颂曰。</p>
+<p>　　　　若法闇与明　　　　平等性如是</p>
+<p>　　　　依止及解入　　　　知已得菩提</p>
+<p>　　复次须菩提。若菩萨摩诃萨于诸色须菩提。受想行识于三性转。若有智者如实了知。即于识中不生取著。亦不现转其心开明。由彼于识不生取著心开明已。即于大乘法中而能出离何况声闻缘觉乘中。又由如是不生取著心开明故。不于长时在彼地狱畜生饿鬼人天诸趣受生死苦。</p>
+<p>　　复次须菩提。色为生邪为灭邪。若谓色有生。彼色即无生。若谓色无生。彼色即是无生自性。若复菩萨如实了知彼色即是无生自性。是故于色无生可有。</p>
+<p>　　须菩提。受想行识亦复如是。识为生邪为灭邪。若谓识有生。彼识即无生。若谓识无生。彼识即是无生自性。若复菩萨如实了知彼识即是无生自性。是故于识无生可有。</p>
+<p>　　复次须菩提。若有人言。色是我是我所。作此说者。我说彼是外中之外。愚夫异生邪见分位。</p>
+<p>　　须菩提。若有人言。受想行识是我是我所。作此说者。我说彼是外中之外。愚夫异生邪见分位。</p>
+<p>　　复次须菩提。若有人言。色是先世因所成作。或大自在天所化因作。或无因缘。作此说者。我说彼是外中之外。愚夫异生邪见分位。</p>
+<p>　　须菩提。若有人言。受想行识是先世因所成作。或大自在天所化因作。或无因缘。作此说者。我说彼是外中之外。愚夫异生邪见分位。</p>
+<p>　　复次须菩提。若有人言。色以色像为相。受以领纳为相。想以遍知为相。行以造作为相。识以了别为相。作此说者。我说彼是外中之外。愚夫异生邪见分位。</p>
+<p>　　复次须菩提。若有人言。苦不寂静。若彼色灭此乐寂静。作此说者我说彼是外中之外。愚夫异生邪见分位。</p>
+<p>　　须菩提。若有人言。受想行识。亦复如是。苦不寂静若彼识灭。此乐寂静。作此说者我说彼是外中之外。愚夫异生邪见分位。</p>
+<p>　　复次须菩提。若有人言。彼色是无。受想行识亦悉是无。作此说者。我说彼是外中之外。愚夫异生邪见分位。</p>
+<p>　　复次须菩提若有人言。如佛所说。色无自性不生不灭。本来寂静自性涅槃。作是说者。彼于一切法即无和合亦无乐欲。随其言说作是知解。我说彼是外中之外。愚夫异生邪见分位。</p>
+<p>　　须菩提。若有人言。受想行识亦复如是。如佛所说。皆无自性不生不灭。本来寂静自性涅槃。作是说者。彼于一切法即无和合亦无乐欲。随其言说作是知解。我说彼是外中之外。愚夫异生邪见分位。</p>
+<p>　　复次须菩提。若复有人计色为有。取著于色有所生起。随言说转。又复计色为有。即于彼色杂染依止。有相随转。又复计色为有。即于彼色修习净法。成立随转。</p>
+<p>　　须菩提。受想行识亦复如是。若复有人计识为有。取著于识有所生起。随言说转。又复计识为有。即于彼识杂染依止。有相随转。又复计识为有。即于彼识修习净法。成立随转。</p>
+<p>　　复次须菩提。若诸菩萨计色为有。于彼色中有断有知。于大乐行言说成办。随有所转。又诸菩萨计色为有。于彼色中有断有知。表示成办随有所转。又诸菩萨计色为有。于彼色中以能了知白法具足。谓于诸法得自在已。于大乐行而能随转。</p>
+<p>　　须菩提。受想行识亦复如是。若诸菩萨计受想行识为有。于彼识中有断有知。于大乐行言说成办。随有所转。又诸菩萨计识为有。于彼识中有断有知。表示成办随有所转。又诸菩萨计识为有。于彼识中以能了知白法具足。谓于诸法得自在已。于大乐行而能随转。</p>
+<p>　　复次须菩提。若复有人于色中色所有分量。于苦中苦所有分量。不能如实平等观者。即于色中我有所得若于色中我有所得。即于色中我见有所得。若于色中我见有所得。即于色中众生见有所得。若于色中众生见有所得。即于色中彼众生见而无所得。若于色中彼众生见无所得时。即彼众生亦无所得。若或于法有所得相可成立者。即有所得相而有依止。是故于彼声闻缘觉乘中不能出离。何况大乘。</p>
+<p>　　须菩提。受想行识亦复如是。若复有人于识中识所有分量。于苦中苦所有分量。不能如实平等观者。即于识中我有所得若。于识中我有所得。即于识中我见有所得。若于识中我见有所得。即于识中众生见有所得。若于识中众生见有所得。即于识中彼众生见而无所得。若于识中彼众生见无所得时。即彼众生亦无所得。若或于法有所得相可成立者。即有所得相而有依止。是故于彼声闻缘觉乘中不能出离。何况大乘。</p>
+<p>　　复次须菩提。若复有人于色中色所有分量。于苦中苦所有分量。而能如实平等观者。即于色中我无所得。若于色中我无所得。即于色中我见无所得。若于色中我见无所得。即于色中众生见无所得。若于色中众生见无所得。即于色中彼众生见而有所得。若于色中彼众生见有所得时。即彼众生亦有所得。若或于法有所得相可成立者。即有所得相而有依止。是故于彼声闻缘觉乘中不能出离。何况大乘。</p>
+<p>　　须菩提。受想行识亦复如是。若复有人于识中识所有分量。于苦中苦所有分量。而能如实平等观者。即于识中我无所得。若于识中我无所得。即于识中我见无所得。若于识中我见无所得。即于识中众生见无所得。若于识中众生见无所得即于识中彼众生见而有所得。若于识中彼众生见有所得时。即彼众生亦有所得。若或于法有所得相可成立者。即有所得相而有依止。是故于彼声闻缘觉乘中不能出离。何况大乘。</p>
+<p>　　复次须菩提。若人于色中不能如实平等观察。不实分别分量及疑动分量故。即于色中色而有所得。若于色中色有所得时。即于色中色见有所得。若于色中色见有所得。即于色中众生有所得。若于色中众生有所得。即于色中一切有所得。若一切有所得时。即一切无所得。若或于法有所得相可成立者。即有所得相而有依止。是故于彼声闻缘觉乘中不能出离。何况大乘。</p>
+<p>　　须菩提。若人于受想行识中。不能如实平等观察。不实分别分量及疑动分量故。即于识中识而有所得。若识中识有所得。即识中识见有所得。若识中识见有所得。即识中众生有所得。若识中众生有所得。即识中一切有所得。若识中一切有所得时。即一切无所得。若或于法有所得相可成立者。即有所得相而有依止。是故于彼声闻缘觉乘中不能出离。何况大乘。</p>
+<p>　　　　佛说开觉自性般若波罗蜜多经卷第一</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/fsgxfmbrblmdpsj.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/fskjzxbrblmdj/fskjzxbrblmdjjd2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/fsgxfmbrblmdpsj.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/fskjzxbrblmdj/fskjzxbrblmdjjd2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

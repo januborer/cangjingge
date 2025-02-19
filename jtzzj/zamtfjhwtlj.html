@@ -1,0 +1,516 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>赞阿弥陀佛偈（后魏　昙鸾撰）  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="赞阿弥陀佛偈后魏-昙鸾撰"><a class="header" href="#赞阿弥陀佛偈后魏-昙鸾撰">赞阿弥陀佛偈（后魏　昙鸾撰）</a></h1>
+<p>　　　　赞阿弥陀佛偈</p>
+<p>　　　　昙鸾法师作</p>
+<p>南无阿弥陀佛(释名无量寿傍经奉赞亦曰安养)</p>
+<p>南无至心归命礼西方阿弥陀佛</p>
+<p>　现在西方去此界　　十万亿刹安乐土</p>
+<p>　佛世尊号阿弥陀　　我愿往生归命礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>南无至心归命礼西方阿弥陀佛</p>
+<p>　成佛已来历十劫　　寿命方将无有量</p>
+<p>　法身光轮遍法界　　照世盲冥故顶礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>南无至心归命礼西方阿弥陀佛</p>
+<p>　智慧光明不可量　　故佛又号无量光</p>
+<p>　有量诸相蒙光晓　　是故稽首真实明</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>南无至心归命礼西方阿弥陀佛</p>
+<p>　解脱光轮无限齐　　故佛又号无边光</p>
+<p>　蒙光触者离有无　　是故稽首平等觉</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>南无至心归命礼西方阿弥陀佛</p>
+<p>　光云无碍如虚空　　故佛又号无碍光</p>
+<p>　一切有碍蒙光泽　　是故顶礼难思议</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>南无至心归命礼西方阿弥陀佛</p>
+<p>　清净光明无有对　　故佛又号无对光</p>
+<p>　遇斯光者业系除　　是故稽首毕竟依</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>南无至心归命礼西方阿弥陀佛</p>
+<p>　佛光照耀最第一　　故佛又号光炎王</p>
+<p>　三涂黑闇蒙光启　　是故顶礼大应供</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　道光明朗色超绝　　故佛又号清净光</p>
+<p>　一蒙光照罪垢除　　皆得解脱故顶礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　慈光遐被施安乐　　故佛又号欢喜光</p>
+<p>　光所至处得法喜　　稽首顶礼大安慰</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　佛光能破无明闇　　故佛又号智慧光</p>
+<p>　一切诸佛三乘众　　咸共叹誉故稽首</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　光明一切时普照　　故佛又号不断光</p>
+<p>　闻光力故心不断　　皆得往生故顶礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　其光除佛莫能测　　故佛又号难思光</p>
+<p>　十方诸佛叹往生　　称其功德故稽首</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　神光离相不可名　　故佛又号无称光</p>
+<p>　因光成佛光赫然　　诸佛所叹故顶礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　光明照耀过日月　　故佛号超日月光</p>
+<p>　释迦佛叹尚不尽　　故我稽首无等等</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　哀愍覆护我　　令法种增长　　此世及后生</p>
+<p>　愿佛常摄受</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方极乐世界观世音菩萨</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方极乐世界大势至菩萨</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方极乐世界诸菩萨清净大海众</p>
+<p>　愿共诸众生往生安乐国普为师僧父母及善知识法界众生。断除三障。同得往生阿弥陀佛国。归命忏悔</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　阿弥陀佛初会众　　声闻菩萨数无量</p>
+<p>　神通巧妙不能算　　是故稽首广大会</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　安乐无量摩诃萨　　咸当一生补佛处</p>
+<p>　除其本愿大弘誓　　普欲度脱诸众生</p>
+<p>　斯等宝林功德聚　　一心合掌头面礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　安乐国土诸声闻　　皆光一寻若流星</p>
+<p>　菩萨光轮四千里　　若秋满月映紫金</p>
+<p>　集佛法藏为众生　　故我顶礼大心海</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　又观世音大势至　　于诸圣众最第一</p>
+<p>　慈光照曜大千界　　侍佛左右显神仪</p>
+<p>　度诸有缘不暂息　　如大海潮不失时</p>
+<p>　如是大悲大势至　　一心稽首头面礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　其有众生生安乐　　悉具三十有二相</p>
+<p>　智慧满足入深法　　究畅道要无障碍</p>
+<p>　随根利钝成就忍　　二忍乃至不可计</p>
+<p>　宿命五通常自在　　至佛不更杂恶趣</p>
+<p>　除生他方五浊世　　示现同如大牟尼</p>
+<p>　生安乐国成大利　　是故至心头面礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　安乐菩萨承佛神　　于一食顷诣十方</p>
+<p>　不可算数佛世界　　恭敬供养诸如来</p>
+<p>　华香伎乐从念现　　宝盖幢幡随意出</p>
+<p>　珍奇绝世无能名　　散华供养殊异宝</p>
+<p>　化成华盖光晃耀　　香气普薰莫不周</p>
+<p>　华盖小者四百里　　乃有遍覆一佛界</p>
+<p>　随其前后次化去　　是诸菩萨佥欣悦</p>
+<p>　于虚空中奏天乐　　雅赞德颂扬佛慧</p>
+<p>　听受经法供养已　　未食之前腾虚还</p>
+<p>　神力自在不可测　　故我顶礼无上尊</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　安乐佛国诸菩萨　　夫可宣说随智慧</p>
+<p>　于己万物亡我所　　净若莲华不受尘</p>
+<p>　往来进止若泛舟　　利安为务舍适莫</p>
+<p>　彼已犹空断二想　　然智慧炬照长夜</p>
+<p>　三明六通皆已足　　菩萨万行贯心眼</p>
+<p>　如是功德无边量　　是故至心头面礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　安乐声闻菩萨众　　人天智慧咸洞达</p>
+<p>　身相庄严无殊异　　但顺他方故列名</p>
+<p>　颜容端正无可比　　精微妙躯非人天</p>
+<p>　虚无之身无极体　　是故顶礼平等力</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　敢能得生安乐国　　皆悉住于正定聚</p>
+<p>　邪定不定其国无　　诸佛咸赞故顶礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　诸闻阿弥陀佛号　　信心欢喜庆所闻</p>
+<p>　乃暨一念至心者　　回向愿生皆得往</p>
+<p>　唯除五逆谤正法　　故我顶礼愿往生</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　安乐菩萨声闻辈　　于此世界无比方</p>
+<p>　释迦无碍大辩才　　设诸假令示少分</p>
+<p>　最贱乞人并帝王　　帝王复比金轮王</p>
+<p>　如是展转至六天　　次第相形皆如始</p>
+<p>　以天色像喻于彼　　千万亿倍非其类</p>
+<p>　皆是法藏愿力为　　稽首顶礼大心力</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　天人一切有所须　　无不称欲应念至</p>
+<p>　一宝二宝无量宝　　随心化造受用具</p>
+<p>　堂宇饮食悉如此　　故我稽首无称佛</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　诸往生者悉具足　　清净色身无可比</p>
+<p>　神通功德及宫殿　　服饰庄严如六天</p>
+<p>　应器宝钵自然至　　百味嘉肴倏已满</p>
+<p>　见色闻香意为食　　忽然饱足受适悦</p>
+<p>　所味清净无所著　　事已化去须复现</p>
+<p>　晏安快乐次泥洹　　是故至心头面礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　十方佛土菩萨众　　及诸比丘生安乐</p>
+<p>　无量无数不可计　　已生今生当亦然</p>
+<p>　皆曾供养无量佛　　摄取百千坚固法</p>
+<p>　如是大士悉往生　　是故顶礼阿弥陀</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　若闻阿弥陀德号　　欢喜赞仰心归依</p>
+<p>　下至一念得大利　　则为具足功德宝</p>
+<p>　设满大千世界火　　亦应直过闻佛名</p>
+<p>　闻阿弥陀不复退　　是故至心稽首礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　神力无极阿弥陀　　十方无量佛所叹</p>
+<p>　东方恒沙诸佛国　　菩萨无数悉往觐</p>
+<p>　亦复供养安乐国　　菩萨声闻诸大众</p>
+<p>　听受经法宣道化　　自余九方亦如是</p>
+<p>　释迦如来说偈颂　　无量功德故顶礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　诸来无量菩萨众　　为植德本致虔恭</p>
+<p>　或奏音乐歌叹佛　　或颂佛慧照世间</p>
+<p>　或以天华衣供养　　或睹净土兴等愿</p>
+<p>　如是圣众悉现前　　蒙八梵声授佛记</p>
+<p>　一切菩萨增愿行　　故我顶礼婆伽婆</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　圣主世尊说法时　　大众云集七宝堂</p>
+<p>　听佛开示咸悟入　　欢喜充遍皆得道</p>
+<p>　于时四面起清风　　击动宝树出妙响</p>
+<p>　和韵清彻遏糸竹　　逾于金石无伦比</p>
+<p>　天华缤纷逐香风　　自然供养常不息</p>
+<p>　诸天复持天华香　　百千伎乐用致敬</p>
+<p>　如是功德三宝聚　　故我运想礼讲堂</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　妙土广大超数限　　自然七宝所合成</p>
+<p>　佛本愿力庄严起　　稽首清净大摄受</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　世界光曜妙殊绝　　适悦宴安无四时</p>
+<p>　自利利他力圆满　　归命方便巧庄严</p>
+<p>　宝地澄静平如掌　　无有山川陵谷阻</p>
+<p>　若佛神力须则见　　稽首不可思议尊</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　道树高四百万里　　周围由旬有五十</p>
+<p>　枝叶布里二十万　　自然众宝所合成</p>
+<p>　月光摩尼海轮宝　　众宝之王而庄严</p>
+<p>　周匝垂间宝璎珞　　百千万种色变异</p>
+<p>　光焰照曜超千日　　无极宝网覆其上</p>
+<p>　一切庄严随应现　　稽首顶礼道场树</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　微风吹树出法音　　普流十方诸佛刹</p>
+<p>　闻斯音得深法忍　　至成佛道不遭苦</p>
+<p>　神力广大不可量　　稽首顶礼道场树</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　树香树色树音声　　树触树味及树法</p>
+<p>　六情遇者得法忍　　故我顶礼道场树</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　蒙道场树对六根　　乃至成佛根清彻</p>
+<p>　音响柔顺无生忍　　随力浅深咸得证</p>
+<p>　此树威德所由来　　皆是如来五种力</p>
+<p>　神力本愿及满足　　明了坚固究竟愿</p>
+<p>　慈悲方便不可称　　归命稽首真无量</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　从世帝王至六天　　音乐转妙有八重</p>
+<p>　展转胜前亿万倍　　宝树音丽倍亦然</p>
+<p>　复有自然妙伎乐　　法音清和悦心神</p>
+<p>　哀婉雅亮超十方　　故我稽首清净乐</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　七宝树林周世界　　光耀鲜明相映发</p>
+<p>　华果枝叶更互为　　稽首本愿功德聚</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　清风时时吹宝树　　出五音声宫商和</p>
+<p>　微妙雅曲自然成　　故我顶礼清净薰</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　其土广大无崖际　　众宝罗网遍覆上</p>
+<p>　金缕珠玑奇异珍　　不可名宝为挍饰</p>
+<p>　周匝四面垂宝铃　　调风吹动出妙法</p>
+<p>　和雅德香常流布　　闻者尘劳习不起</p>
+<p>　此风触身受快乐　　如比丘得灭尽定</p>
+<p>　风吹散华满佛土　　随色次第不杂乱</p>
+<p>　华质柔软烈芬芳　　足履其上下四指</p>
+<p>　随举足时还如故　　用讫地开没无遗</p>
+<p>　随其时节华六返　　不可议报故顶礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　众宝莲华盈世界　　一一华百千亿叶</p>
+<p>　其华光明色无量　　朱紫红绿间五色</p>
+<p>　炜烨焕烂曜日光　　是故一心稽首礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　一一华中所出光　　三十六百有千亿</p>
+<p>　一一光中有佛身　　多少亦如所出光</p>
+<p>　佛身相好如金山　　一一又放百千光</p>
+<p>　普为十方说妙法　　各安众生于佛道</p>
+<p>　如是神力无边量　　故我归命阿弥陀</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　楼阁殿堂非工造　　七宝雕绮化所成</p>
+<p>　明月珠珰交露幔　　各有浴池形相称</p>
+<p>　八功德水满池中　　色味香洁如甘露</p>
+<p>　黄金池者白银沙　　七宝池沙互如此</p>
+<p>　池岸香树垂布上　　栴檀芬馥常流馨</p>
+<p>　天华璀璨为映饰　　水上熠耀若景云</p>
+<p>　无漏依果难思议　　是故稽首功德藏</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　菩萨声闻入宝池　　随意浅深如所欲</p>
+<p>　若须灌身自然注　　欲令旋复水寻还</p>
+<p>　调和冷暖无不称　　神开体悦荡心垢</p>
+<p>　清明澄洁若无形　　宝沙映彻如不深</p>
+<p>　澹淡回转相注灌　　婥约容豫和人神</p>
+<p>　微波无量出妙响　　随其所应闻法语</p>
+<p>　或闻三宝之妙章　　或闻寂静空无我</p>
+<p>　或闻无量波罗蜜　　力不共法诸通慧</p>
+<p>　或闻无作无生忍　　乃至甘露灌顶法</p>
+<p>　随根性欲皆欢喜　　顺三宝相真实义</p>
+<p>　菩萨声闻所行道　　于是一切悉具闻</p>
+<p>　三涂苦难名永闭　　但有自然快乐音</p>
+<p>　是故其国号安乐　　头面顶礼无极尊</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　本师龙树摩诃萨　　诞形像始理颓纲</p>
+<p>　关闭邪扇开正辙　　是阎浮提一切眼</p>
+<p>　伏承尊悟欢喜地　　归阿弥陀生安乐</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　譬如龙动云必随　　阎浮提放百卉舒</p>
+<p>　南无慈悲龙树尊　　至心归命头面礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　我从无始循三界　　为虚妄轮所回转</p>
+<p>　一念一时所造业　　足系大地滞三涂</p>
+<p>　唯愿慈光护念我　　令我不失菩提心</p>
+<p>　我赞佛慧功德音　　愿闻十方诸有缘</p>
+<p>　欲得往生安乐者　　普皆如意无障碍</p>
+<p>　所有功德若大少　　回施一切共往生</p>
+<p>　南无不可思议光　　一心归命稽首礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　十方三世无量慧　　同乘一如号正觉</p>
+<p>　二智圆满道平等　　摄化随缘故若干</p>
+<p>　我归阿弥陀净土　　即是归命诸佛国</p>
+<p>　我以一心赞一佛　　愿遍十方无碍人</p>
+<p>　如是十方无量佛　　咸各至心头面礼</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方阿弥陀佛</p>
+<p>　哀愍覆护我　　令法种增长　　此世及后生</p>
+<p>　愿佛常摄受</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方极乐世界观世音菩萨</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方极乐世界大势至菩萨</p>
+<p>　愿共诸众生往生安乐国</p>
+<p>　　南无至心归命礼西方极乐世界诸菩萨清净大海众</p>
+<p>　愿共诸众生往生安乐国普为师僧父母及善知识法界众生。断除三障。同得往生阿弥陀佛国。归命忏悔</p>
+<p>　　　　赞阿弥陀佛偈赞一百九十五　礼五十一拜</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../jtzzj/jtybmzhj.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../jtzzj/zjxdywsjtfsztsdjj.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../jtzzj/jtybmzhj.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../jtzzj/zjxdywsjtfsztsdjj.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

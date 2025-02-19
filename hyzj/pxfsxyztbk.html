@@ -1,0 +1,350 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>普贤菩萨行愿赞（唐　不空）  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="普贤菩萨行愿赞唐-不空"><a class="header" href="#普贤菩萨行愿赞唐-不空">普贤菩萨行愿赞（唐　不空）</a></h1>
+<p>　　　　普贤菩萨行愿赞</p>
+<p>　　　　开府仪同三司特进试鸿胪卿</p>
+<p>　　　　肃国公食邑三千户赐紫赠司空</p>
+<p>　　　　谥大鉴正号大广智大兴善寺</p>
+<p>　　　　三藏沙门不空奉　　　诏译</p>
+<p>　　所有十方世界中　　一切三世人师子</p>
+<p>　　我今礼彼尽无余　　皆以清净身口意</p>
+<p>　　身如刹土微尘数　　一切如来我悉礼</p>
+<p>　　皆以心意对诸佛　　以此普贤行愿力</p>
+<p>　　于一尘端如尘佛　　诸佛佛子坐其中</p>
+<p>　　如是法界尽无余　　我信诸佛悉充满</p>
+<p>　　于彼无尽功德海　　以诸音声功德海</p>
+<p>　　阐扬如来功德时　　我常赞叹诸善逝</p>
+<p>　　以胜花鬘及涂香　　及以伎乐胜伞盖</p>
+<p>　　一切严具皆殊胜　　我悉供养诸如来</p>
+<p>　　以胜衣服及诸香　　末香积聚如须弥</p>
+<p>　　殊胜灯明及烧香　　我悉供养诸如来</p>
+<p>　　所有无上广大供　　我悉胜解诸如来</p>
+<p>　　以普贤行胜解力　　我礼供养诸如来</p>
+<p>　　我曾所作众罪业　　皆由贪欲嗔恚痴</p>
+<p>　　由身口意亦如是　　我皆陈说于一切</p>
+<p>　　所有十方群生福　　有学无学辟支佛</p>
+<p>　　及诸佛子诸如来　　我皆随喜咸一切</p>
+<p>　　所有十方世间灯　　以证菩提得无染</p>
+<p>　　我今劝请诸世尊　　转于无上妙法轮</p>
+<p>　　所有欲现涅槃者　　我皆于彼合掌请</p>
+<p>　　唯愿久住刹尘劫　　为诸群生利安乐</p>
+<p>　　礼拜供养及陈罪　　随喜功德及劝请</p>
+<p>　　我所积集诸功德　　悉皆回向于菩提</p>
+<p>　　于诸如来我修学　　圆满普贤行愿时</p>
+<p>　　愿我供养过去佛　　所有现住十方世</p>
+<p>　　所有未来速愿成　　意愿圆满证菩提</p>
+<p>　　所有十方诸刹土　　愿皆广大咸清净</p>
+<p>　　诸佛咸诣觉树王　　诸佛子等皆充满</p>
+<p>　　所有十方诸众生　　愿皆安乐无众患</p>
+<p>　　一切群生获法利　　愿得随顺如意心</p>
+<p>　　我当菩提修行时　　于诸趣中忆宿命</p>
+<p>　　若诸生中为生灭　　我皆常当为出家</p>
+<p>　　戒行无垢恒清净　　常行无缺无孔隙</p>
+<p>　　天语龙语夜叉语　　鸠槃荼语及人语</p>
+<p>　　所有一切群生语　　皆以诸音而说法</p>
+<p>　　妙波罗蜜常加行　　不于菩提心生迷</p>
+<p>　　所有众罪及障碍　　悉皆灭尽无有余</p>
+<p>　　于业烦恼及魔境　　世间道中得解脱</p>
+<p>　　犹如莲华不著水　　亦如日月不著空</p>
+<p>　　诸恶趣苦愿寂静　　一切群生令安乐</p>
+<p>　　于诸群生行利益　　乃至十方诸刹土</p>
+<p>　　常行随顺诸众生　　菩提妙行令圆满</p>
+<p>　　普贤行愿我修习　　我于未来劫修行</p>
+<p>　　所有共我同行者　　共彼常得咸聚会</p>
+<p>　　于身口业及意业　　同一行愿而修习</p>
+<p>　　所有善友益我者　　为我示现普贤行</p>
+<p>　　共彼常得而聚会　　于彼皆得无厌心</p>
+<p>　　常得面见诸如来　　与诸佛子共围绕</p>
+<p>　　于彼皆兴广供养　　皆于未来劫无倦</p>
+<p>　　常持诸佛微妙法　　皆令光显菩提行</p>
+<p>　　咸皆清净普贤行　　皆于未来劫修行</p>
+<p>　　于诸有中流转时　　福德智慧得无尽</p>
+<p>　　般若方便定解脱　　获得无尽功德藏</p>
+<p>　　如一尘端如尘刹　　彼中佛刹不思议</p>
+<p>　　佛及佛子坐其中　　常见菩提胜妙行</p>
+<p>　　如是无量一切方　　于一毛端三世量</p>
+<p>　　佛海及与刹土海　　我入修行诸劫海</p>
+<p>　　于一音声功德海　　一切如来清净声</p>
+<p>　　一切群生意乐音　　常皆得入佛辩才</p>
+<p>　　于彼无尽音声中　　一切三世诸如来</p>
+<p>　　当转理趣妙轮时　　以我慧力普能入</p>
+<p>　　以一刹那诸未来　　我入未来一切劫</p>
+<p>　　三世所有无量劫　　刹那能入俱胝劫</p>
+<p>　　所有三世人师子　　以一刹那我咸见</p>
+<p>　　于彼境界常得入　　如幻解脱行威力</p>
+<p>　　所有三世妙严刹　　能现出生一尘端</p>
+<p>　　如是无尽诸方所　　能入诸佛严刹土</p>
+<p>　　所有未来世间灯　　彼皆觉悟转法轮</p>
+<p>　　示现涅槃究竟寂　　我皆往诣于世尊</p>
+<p>　　以神足力普迅疾　　以乘威力普遍门</p>
+<p>　　以行威力等功德　　以慈威力普遍行</p>
+<p>　　以福威力普端严　　以智威力无著行</p>
+<p>　　般若方便等持力　　菩提威力皆积集</p>
+<p>　　皆于业力而清净　　我今摧灭烦恼力</p>
+<p>　　悉能降伏魔罗力　　圆满普贤一切力</p>
+<p>　　普令清净刹土海　　普能解脱众生海</p>
+<p>　　悉能观察诸法海　　及以得源于智海</p>
+<p>　　普令行海咸清净　　又令愿海咸圆满　　诸佛海会咸供养　　普贤行劫无疲倦</p>
+<p>　　所有三世诸如来　　菩提行愿众差别</p>
+<p>　　愿我圆满悉无余　　以普贤行悟菩提</p>
+<p>　　诸佛如来有长子　　彼名号曰普贤尊</p>
+<p>　　皆以彼慧同妙行　　回向一切诸善根</p>
+<p>　　身口意业愿清净　　诸行清净刹土净</p>
+<p>　　如彼智慧普贤名　　愿我于今尽同彼</p>
+<p>　　普贤行愿普端严　　我行曼殊室利行</p>
+<p>　　于诸未来劫无倦　　一切圆满作无余</p>
+<p>　　所须胜行无能量　　所有功德不可量</p>
+<p>　　无量修行而住已　　尽知一切彼神通</p>
+<p>　　乃至虚空得究竟　　众生无余究竟然</p>
+<p>　　及业烦恼乃至尽　　乃至我愿亦皆尽</p>
+<p>　　若有十方无边刹　　以宝庄严施诸佛</p>
+<p>　　天妙人民胜安乐　　如刹微尘劫舍施</p>
+<p>　　若人于此胜愿王　　一闻能生胜解心</p>
+<p>　　于胜菩提求渴仰　　获得殊胜前福聚</p>
+<p>　　彼得远离诸恶趣　　彼皆远离诸恶友</p>
+<p>　　速疾得见无量寿　　唯忆普贤胜行愿</p>
+<p>　　得大利益胜寿命　　善来为此人生命</p>
+<p>　　如彼普贤大菩萨　　彼人不久当获得</p>
+<p>　　所作罪业五无间　　由无智慧而所作</p>
+<p>　　彼诵普贤行愿时　　速疾销灭得无余</p>
+<p>　　智慧容色及相好　　族姓品类得成就</p>
+<p>　　于魔外道得难摧　　常于三界得供养</p>
+<p>　　速疾往诣菩提树　　到彼坐已利有情</p>
+<p>　　觉悟菩提转法轮　　摧伏魔罗并营从</p>
+<p>　　若有持此普贤愿　　读诵受持及演说</p>
+<p>　　如来具知得果报　　得胜菩提勿生疑</p>
+<p>　　如妙吉祥勇猛智　　亦如普贤如是智</p>
+<p>　　我当习学于彼时　　一切善根悉回向</p>
+<p>　　一切三世诸如来　　以此回向殊胜愿</p>
+<p>　　我皆一切诸善根　　悉已回向普贤行</p>
+<p>　　当于临终舍寿时　　一切业障皆得转</p>
+<p>　　亲睹得见无量光　　速往彼刹极乐界</p>
+<p>　　得到于彼此胜愿　　悉皆现前得具足</p>
+<p>　　我当圆满皆无余　　众生利益于世间</p>
+<p>　　于彼佛会甚端严　　生于殊胜莲花中</p>
+<p>　　于彼获得受记莂　　亲对无量光如来</p>
+<p>　　于彼获得受记已　　变化俱胝无量种</p>
+<p>　　广作有情诸利乐　　十方世界以慧力</p>
+<p>　　若人诵持普贤愿　　所有善根而积集</p>
+<p>　　以一刹那得如愿　　以此群生获胜愿</p>
+<p>　　我获得此普贤行　　殊胜无量福德聚</p>
+<p>　　所有群生溺恶习　　皆往无量光佛宫</p>
+<p>　　八大菩萨赞　　出八大菩萨曼茶罗经末</p>
+<p>　　圆寂宫城门　　能摧户扇者</p>
+<p>　　诸佛法受用　　救世我顶礼</p>
+<p>　　自手流清水　　能除饿鬼渴</p>
+<p>　　三界如意树　　顶礼莲花手</p>
+<p>　　大慈水为心　　能息嗔恚火</p>
+<p>　　顶礼慈氏尊　　能断欲弓弦</p>
+<p>　　虚空藏妙慧　　虚空寂静尊</p>
+<p>　　生死流解脱　　顶礼佛心子</p>
+<p>　　无边有情惑　　能息无益心</p>
+<p>　　普贤我顶礼　　善逝上首子</p>
+<p>　　尘劳尽僮仆　　超胜魔罗军</p>
+<p>　　顶礼金刚手　　能说一切明</p>
+<p>　　顶礼妙吉祥　　持妙童子形</p>
+<p>　　舒遍智慧灯　　攘夺三界明</p>
+<p>　　一切除盖障　　是故我顶礼</p>
+<p>　　无尽智慧尊　　能生无竭辩</p>
+<p>　　如地诸有情　　所依一不断</p>
+<p>　　坚慧悲愍藏　　地藏我顶礼</p>
+<p>　　此真善逝子　　赞扬所获福</p>
+<p>　　以此诸有情　　如彼成赞器</p>
+<p>普贤菩萨行愿赞</p>
+<p>速疾满普贤行愿陀罗尼曰</p>
+<p>襄么悉底哩也（四合）地尾（二合）迦（引）南（二）怛佗（引）孽哆南（二）唵（引三）阿（引）戌[口<em>缚]啰尾拟[仁-二+尔]娑[口</em>缚]（二合引）诃（引四）</p>
+<p>　　每日诵普贤菩萨行愿赞后。即诵此真言才诵一遍。普贤行愿悉皆圆满。三摩地人速得三昧现前。福德智慧二种庄严。获坚固法速疾成就</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../hyzj/wsslfyjdjftbtl.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../hyzj/dfgpxssjtscnt.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../hyzj/wsslfyjdjftbtl.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../hyzj/dfgpxssjtscnt.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

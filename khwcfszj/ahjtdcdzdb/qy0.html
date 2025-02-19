@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第○章　前言 - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="第章-前言"><a class="header" href="#第章-前言">第○章　前言</a></h1>
+<p>　　　　第○章　前言</p>
+<p>　　“前言”部分，上次们有讲说一切要归○。不管过去如何辉煌或坎坷，一切归○，因为我们装填很多正确跟错误的资讯，综合起来让我们现在没办法以一个○、一个全新的心态来认清佛法，导致我们在闻、思、修上面，会有很多的障碍。但是，“归零”也不是要你们都不要相信、都放下其他的，只要来相信我空海的就好，不是这样！“归零”是让自己重新开始、让自己新生，从原来旧有的框框窠臼里面脱胎换骨出来，超越我们原来的思想框框范围，超越我们原来的思考模式，超越我们原来的判断方式，这样我们才能够再重新认清真理、认清佛法。</p>
+<p>　　所以，“归零”的力道是非常强，作用也非常大。一方面让我们身心柔软，让我们过去习以为常的观念，能够重新给以柔软、软化，等于让我们这个器具重新清洗过、重新认识。“归零”是给自己脱胎换骨、给自己新生，不必等到下一世，不用等来世，设若我们现在可以“归零”，我们现在就是一个新的生命的开始，所以“归零”是非常重要，让我们打开无限的视野，如实探讨身心内外、宇宙人生的实相、真理，让我们以无量的胸襟，超越一切宗派、宗教的框框，秉持“吾爱吾师、吾更爱真理”的求真精神，了悟宇宙人生的实相，远离颠倒梦想而解脱自在。这里我们每天都要练习、每天都要做，不是说“好！我今天归零”，但是明天又恢复到原来的习性窠臼里面，我们却不知道。这是每天都要做的工作，每天都要提醒自己，记得！除非你已经证到阿罗汉，就算你证到初果，还是一样要“归零”，证到二果、三果，也是一样“归零”。</p>
+<p>　　真正的阿罗汉、真正的解脱者，他只有活在“零”的世界，活在“空”的世界，他内心里面没有什么成见，他就是如实的来看待这世间，如实的来看待这个实相，那个“零”就是让我们不带成见、不带偏见，没有贪、嗔、痴。所以，我们说要断除贪、嗔、痴，就是我们每天“归零”，就是让我们每天能够我们贪、嗔、痴的这些习性断除掉，这样你慢慢的用功，就自然水到渠成，整个贪、嗔、痴都完全断除。所以，“归零”方面非常重要。</p>
+<p>　　在宗教方面，我们可以把它概略分为三个层面，一个是属于迷信型的宗教，第二是信仰型的宗教，第三是智慧型的宗教。</p>
+<p>　　什么叫做迷信型的宗教？就是不断要去祈求加持、消灾、保佑、发财啦！不断去祈求各种神像、各种佛、各种菩萨、各种偶像，然后请他们加持、消灾、帮忙……，然后让自己发财，让自己样样都能够符合自己的意愿，就是属于迷信型的宗教。不断向心外求，而且这一种是越多神越保佑，他越好。一般民间的信仰，大部分都是这一种型态，什么神都拜、什么都好，觉得越多越好，好像越多这些保障，就可以越安心，是属于多神教的信仰。</p>
+<p>　 　第二是信仰型的型态，已经慢慢提升到是要求心灵的寄托、精神的寄托、心灵的安慰。一般来讲，通常是在祈求发财、祈求升官，还是属于名利方面比较多，但是 这一类信仰型的宗教，已经渐渐进展到精神层次方面，希望能够有一个心灵的寄托，所以这一种往往是需要一个超级的神、超级的偶像，让他有一个心灵的寄托，大 部分可以归纳是属于一神教方面的体系，他会认为很多神的这些，都是向心外求，都是停留在迷信，唯有我们这个一神，才是真正究竟的神。现在世界上很多宗教是 属于信仰型，信仰精神方面的寄托。</p>
+<p>　 　第三个是智慧型的宗教，它是重视在求真求证，然后让我们去了悟、去觉悟宇宙人生的实相真理。原始的佛教是属于这一个层次的宗教，但是慢慢演变之后的佛 教，变成落入在这两个层面，这是非常可惜啊！所以，我们第一堂课要跟大家讲解，有关于佛教从量变到质变，就是让大家知道佛教原来是属于智慧型的宗教。</p>
+<p>　 　很多宗教是变成怎么样呢？你只要相信就好，讲求的是信，你只要信就得救，现在绝对没有批判任何宗教，我们是如实来讲。但是，佛教呢？不是要你信就好，不 是说佛陀怎么跟你讲，你就怎么信。佛陀绝不是说我是权威的，我怎么跟你讲、你就怎么信，不是这样！佛陀跟我们讲宇宙人生的实相真理，佛法就是宇宙人生的实 相真理，佛陀跟我们讲这些真理，让我们去求真、去求证，要经过你的实修实证。所以，绝对不是要你只是信，这就是佛教智慧型的型态，跟一般其它宗教型态不一 样的地方。</p>
+<p>　　再来，耶稣有讲过一句话－－“我就是真理，我就是道路”。这一句话是不错，但是很多众生又把这些话曲解了。不是耶稣才是真理、才是道路而已，真正有见到法的人、真正有看到真理的人，他本身就是真理的化身，也就是佛教所讲的“法身”。他本身见到法、证悟到法，了解、觉悟到宇宙人生的实相，他是一个觉悟者，他本身就是一个“法身”，他本身有这个真理实相存在，可以协助有缘人去认识这个真理。所以，耶稣讲说“我就是道路，我就是真理”， 耶稣本来最初也不是说你只要相信就好，事实上也是透过他，去找到他所找到的真理。但是，因为耶稣讲话很纯真、很率直，一般众生没办法容许耶稣所讲的，因此 后来他就在人类贪、嗔、痴的会合之下，耶稣被钉死了。结果，原来耶稣所要的这一种智慧型宗教，又落入到信仰的层面，所以也是很可惜。但是，这样也是很不错 啦！已经有这样的一个层次上来，当他机缘成熟，一样可以来到实际去求证，觉悟到什么是真理的层面。</p>
+<p>　　第一种类型的迷信型宗教，如果以一般众生的人数分布来讲，大概有60﹪的人是属于迷信型的情况，有30﹪的人会从多神信仰来到一神信仰，再来大概有10﹪的人会超越以上两个层面，进入智慧型求真求证的宗教型态，渐渐回到自依止、法依止。前面迷信、信仰两种型态都还有一些神、很多神的存在，信仰型是一个超级大力神让你依靠、让你依赖。</p>
+<p>　　以究竟来讲，佛教是“无神论”， 因为佛陀看的很深、看的很透，不管多么厉害的神，他们也都是属于缘起和合的众生，他跟你、我都完全平等，所以我们跟佛陀也是完全平等，跟耶稣也是完全平 等，只是大家还没有认识到真理，会认为佛陀是高高在上、耶稣高高在上。其实，我们跟他们都是完全平等的，不管再多么厉害的神都一样，佛陀是要我们去认清， 去找寻、去认识这个真理、我们叫做“法”。于是佛陀讲出来的法，我们称作“佛法”。</p>
+<p>　　原始佛法是要我们“自依止”，要自己去亲证，然后回到法上面来，回到真理上面来，这时候你本身就是法身，就很清楚知道“我就是道路，我就是真理”， 就是耶稣所讲的真正含意。当然，一般的宗教就像我们读书，必须从幼稚园、小学，国中、高中、大学、研究所，这样一直逐渐上来，到越上层次的人数会比较少、 越来越少，都是要自依止、法依止，前面的阶段都还是有所依靠、依赖，我们修行层次要慢慢提升上来，如果大家因缘许可，就直接契入原始佛法，净土思想都是一 些方便法。</p>
+<p>　　如果佛教里面还有很多的烧香拜拜、祈求、加持……， 又会落入在迷信、信仰方面，因此我们要逐渐提升，来到心灵智慧的成长、成熟。我们的原始佛法就是直接讲述这方面，现在我们就直接回到如何去求真求证，生死 轮回、痛苦不安的原因到底在哪里。其他的宗教是你只要信仰就好，多神信仰就是说你来拜拜、来拜我、供养我，你对我虔诚一点，我就给你加持、给你保佑。原始 佛法不是这样，佛陀不是要这样，因为这都是向心外去求。如果向心外求，记得！他能够给你利，也能够给你弊；他会带给你利，也会带给你弊，也就是会带给你副 作用。所以，他会带给你天堂，当然相对的，地狱也在旁边侍候你。</p>
+<p>　 　就像说地下钱庄，你要借钱很快，有求必应，很快！但是之后呢？很多的后患就跟在后面，所以，如果你向心外求，能够求得到或是越灵验、越快的，记得！它的 利跟弊是相对的，它会给你天堂、也会给你地狱。真正智慧型的宗教，当你慢慢一直提升上来，体悟到法、体悟到真理之后，会超越这些。因为天堂、地狱这些， 利、弊这些，都还是在二元对立的世界。当你慢慢体证到究竟解脱、究竟“空”、涅槃无为之后，一定要超越二元对立，来到一体实相世界，“阿含解脱道次第”第34章提到的《心经》，就是在讲述一体世界，要超越二元对立。</p>
+<p>　　但是，所谓的“超越二元对立”，绝对不是我们用头脑所能够去想像思惟。现在的想像思惟，就像我们的眼睛还没有好，还是一个瞎子，然后用头脑去想像阳光、去看阳光，就像瞎子去摸象，以“瞎子摸象”的 角度来理解。佛陀讲说一定可以实际去体证到真理，一定可以去超越二元对立。佛陀要我们回来如实面对自己，你的苦、你的不安，原因在哪里？如果没有苦、没有 不安，就不必修行啊！也没有修行这回事。一般众生对这个苦、不安、逆境，都认为是人生不如意之事十之八九，都是怪东怪西，当我们面对这些不可意境，就是求 啊！求啊！不断的去求啊！佛陀就坦白讲，这是没完没了，是向心外求。</p>
+<p>　 　佛陀要我们如实回来面对自己的这些问题，然后找寻出到底原因在哪里。当你能够找到原因，才能够对症下药，才能够把这个苦、不安的根本原因铲除掉，你才能 够解脱自在。所以，当你了解原因，然后对症治疗之后，才能够解脱啊！你去了解原因，包括实际去求真、求证、觉悟的过程，就是我们整个修行次第的闻、思、 修、证。要了解原因，你一定要进入闻思，就是我们这些课程所要做的工夫，没有经过这方面课程的薰习，没有正确的闻思、正确的理解，就没办法进入实修。</p>
+<p>　 　没办法进入正确的修，就没办法亲证、没办法解脱！如果还一直停留在向心外求的层次，没有经过正确闻思的基础，后面的证悟阶段就不可能达到，于是就会变成 向心外去求，或是说三大阿僧祇劫。但是，只要我们回来这里，大家一定会觉得修行是很落实、很扎实，每一天都可以逐渐体会，每一天都可以逐渐净化，都可以做 到的。所以，往后大家可以实际去感受到每一天每一周都在提升、都在净化。</p>
+<p>　　何谓“法无定法”的法？就是美丑没有绝对的标准。美丑、善恶、是非……， 没有绝对的标准。以审美的标准来比喻，你认为她很美，另一个人却未必认为很美。做这一件事情你认为是善，另一个人也未必认为是善。以政治方面来讲，包括说 建不建核四的政策方面，有的政党就认为不建核四才是善的，有的政党却认为要兴建核四才是善的，然而到底建不建核四？是善、还是恶？它没有一个绝对的标准。 所以，“法无定法”是世间法方面没有一个绝对的标准，在二元对立的世界，看你站在哪一个角度、喜欢哪一个角度，就会排斥你不喜欢的那个角度。但是你有你的喜欢、他有他的喜欢，你的角度跟他的角度在看呢？对美丑、是非、好坏，就没有绝对的。</p>
+<p>　 　所以，这又是在修行方面一个很重要关键，修行就是要超越二元对立相对的世界，提升到绝对的世界。但是，要你一下子就契入到这里，是非常不容易啦！如果没 办法契入到这里，也是过渡时期的一个方便法，我们不能够排斥。银行能不能帮助你解决困难？可以啊！但是你不能老是要依靠银行借贷过日。因此，银行可以帮忙 我们，但是最好是我们无债一身轻。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../khwcfszj/ahjtdcdzdb/ahjtdcdzdbx.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../khwcfszj/ahjtdcdzdb/ahjtdcdgl1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../khwcfszj/ahjtdcdzdb/ahjtdcdzdbx.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../khwcfszj/ahjtdcdzdb/ahjtdcdgl1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

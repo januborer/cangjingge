@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>千年古觀音像降臨莊嚴寺紀實（沈家楨）  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="千年古觀音像降臨莊嚴寺紀實沈家楨"><a class="header" href="#千年古觀音像降臨莊嚴寺紀實沈家楨">千年古觀音像降臨莊嚴寺紀實（沈家楨）</a></h1>
+<p>　　　　观世音菩萨的修行方法及证悟过程</p>
+<p>　　　　（本文是前篇[067]英文讲演的中文稿）</p>
+<p>　　　　　沈家桢</p>
+<p>　　观世音菩萨宏愿解脱一切众生的痛苦。自古以来，在世界各地，有数不清的灵感奇迹，都和观音有关。因为观世音菩萨和这世界上的人类，有这样深厚密切的缘份，所以效仿观世音菩萨的修行方法，最易得到感应和成就。</p>
+<p>　　在《楞严经》里，有一段极重要的经文，是记载观世音菩萨自己讲述他修行的方法及经过。这是在一次法会上，二十五位大菩萨遵照释迦牟尼佛的咐嘱，讲述每个人的修行经验。二十五位讲完之后，释迦佛叫文殊师利菩萨作一个总结。在文殊师利的结论中，他指出：对这个世界上的人而言，观世音菩萨以耳根修禅定的法门为最契机。因为这个原因，所以我选了这个题目，希望各位都能获益。</p>
+<p>　　在讨论观音菩萨的修法之前，将若干有关联的佛陀教示温习一下，也许可以帮助各位的了解。</p>
+<p>　　佛法的目的是解除众生的苦痛。佛说：人生的一切苦痛，都是因妄想执著而来，而妄想执著则是从我们的攀缘心所产生。</p>
+<p>　　　　什么是攀缘心呢？</p>
+<p>　　攀缘心这个「缘」字是指人的一切感觉的对象，诸如五官所接触、领会到的外界的山河大地形形色色，及脑筋里面所生起的一切思想、意见及知识都包括在内。「攀」的意思即是执著，抓住不放。所以，攀缘心者，是我们人类「见物即执著」的心理状态。不但执著，而且相信这种现象是真实的。</p>
+<p>　　这种执著，即是妄想执著。因为这种妄想执著，妄生分别，认妄作真，所以生出贪嗔痴种种行为，造成种种痛苦。简单的讲，我们是生活在颠倒之中。</p>
+<p>　　佛陀传下了很多法门，叫我们如何可以认清颠倒。这许多法门的中心教法，是叫我们不要攀缘（止），集中心力来观照宇宙人生的真相（观），这即是禅那，也译作静虑。所以，习禅并不叫人像顽石枯木一样地呆坐，而是叫人全心全意将心力专注一处（一点或一事都可以），使生理心理逐渐起变化，以达到三昧的境界。这种专注浸沉，往往是层层深入，所谓过了一重山，又是一重山。要到那么一天，妄想执著犹如捕风捉影，连名相都不存在时，方才有个消息。</p>
+<p>　　现在我们先将《楞严经》上记载观世音菩萨所讲述他用耳根修禅定的过程，这段经文重录如下：</p>
+<p>　　　　初于闻中　　入流亡所　　所入既寂　　动静二相</p>
+<p>　　　　了然不生　　如是渐增　　闻所闻尽　　尽闻不住</p>
+<p>　　　　觉所觉空　　空觉极圆　　空所空灭　　生灭既灭</p>
+<p>　　　　寂灭现前　　忽然超越　　世出世间　　十方圆明</p>
+<p>　　各位请记住：一、观世音修行用的是耳根，因此我们所讲的，都以听闻为主体。二、观世音菩萨所说的是他修行的过程，因此是由浅入深。我们大多数人都只能说是在修行的初期，因此关于观世音的初期修行经验，特别对我们有用。我将尽可能解释得详尽些，希望各位能够有所收获。</p>
+<p>　　在研究观世音的修行过程中，对「我」、「闻性」、「闻」、「听」及「声」这五个名词，有先认识清楚的必要。这五个名词，实际上也代表妄想执著的五个层次。「声」是最浅最粗的妄想执著，而「我」则是最深最细也是最难消除的妄想执著。下面我当一一指出观世音菩萨如何一层层地消除妄想执著，以完成本性显现的修持。</p>
+<p>　　「声」、「听」、「闻」及「闻性」通常容易混作一谈，其实其中有很重要及根本的区别。观世音的初期修行，即是从认识这种区别开始。据传说观世音是在海滩边习禅定的，他每天听到海潮声音的来去。清晨醒来，万籁俱寂，潮声远来，打破了清静；不久潮声退去，耳边又恢复清静，随后潮声再来，静又消失了。观世音研究这潮声的来去，发觉潮声及清静这两个对象，在听觉（指所闻的闻性）中是此起彼伏的；潮声生，清静灭；潮声灭，清静生。可是两者有一相同之点，即是都不久存，都有生灭；而听觉则不然，它却老是在那儿。因为有听觉，所以能听到潮声，潮声去了，听觉并不随之而去；因为那时听到的是静。如果听觉随潮声而去，则不但分不出静，而且潮声再来时，又何能再听到次一个潮声？因此，潮声有来去生灭，而听觉则并无来去生灭。（注一）</p>
+<p>　　这个「声音」有来去生灭的一点，非常重要，因为世人的妄想执著，实在是因为「跟追」这暂时生灭的声音而来。为使各位得一深刻的印象起见，我再举一个例：</p>
+<p>　　我现在打一下钟，「当──」我问：「有钟声没有？」大家回答：「有钟声。」待钟声过去，我又问：「现在有钟声没有？」大家回答：「钟声没有了。」这答得很对，钟声是来了又去，也可以说是有生有灭。可是现在让我再打钟一下「当──」而我又问：「各位听见吗？」各位都说：「听见。」一会儿钟声消失，我又再问：「各位听见吗？」有人答：「听不见了。」这话可有了语病，好比盲人说不能看见一样，为什么呢？因为盲人并不是看不见，不过所看见的是黑暗而已。我们现在并不是听不见，不过听见的不是钟声，而是静或其他声音而已。试想如果你的听觉没有了，你怎能知道钟声已息。又如果听觉没有了，你又怎能现在还听到我说话。可见消失的只是钟声，而不是你能听的听觉。钟声有来去，有生灭，而听觉则老是在那儿，并无来去，也没有生灭。这不动而能听的听觉，佛法中叫它为「闻性」。</p>
+<p>　　上面的例子，说明「闻性」和「声」的区别。一天到晚，在我们耳边忽生忽灭、一刻不留的是「声」。一直在那儿，不生不灭的是「闻性」。聋子也一样有「闻性」，但是听不到声音。</p>
+<p>　　那么什么叫做「听」？而「听」和「闻」又有什么区别呢？</p>
+<p>　　大家都晓得，耳朵是听声音的。说得更详尽些，外面的波动震动耳膜，因此传达到脑子里的听神经，就听到声音。所以，「听」是「闻性」经耳及脑两器官而生声音感觉的一种作用。可是各位可晓得，发生有声音的感觉，却并不一定需要耳朵。二十多年前，在加拿大的蒙特里城（MONTREAL）有一位范宣德（VINCENT）博士用电极接触著人的脑子来做实验。他将一位太太的脑壳打开一部分，当一对极细的电棒微触脑子的某一点时，这位太太忽然说她听到了某种熟悉的歌声。但当时并没有人在唱歌。当电棒移开时，歌声亦即终止；电棒再触此点时，同样的歌声却又重来，她这个有歌声的感觉，显而易见，是只用了脑子，并未用到耳朵；我们叫这种作用为「闻」。正如梦中听人说话，也没有用耳朵，所以也只是「闻」，而不是「听」。</p>
+<p>　　现在我们对这四个名词，应该已有比较清楚的概念了。让我再来总结一下：「闻性」是人一直有的听的本能，它无来去，也没有生灭。闻性由脑子及耳而起的闻的作用称为「听」；其单由脑子而起闻的作用称为「闻」。「声音」则是听或闻的对象，它是有来去、有生灭的。事实上，每一个单独的声音，都是刹那生灭的。对此四个名词有了认识之后，我们就比较容易了解观世音所讲的修行过程了。</p>
+<p>　　观世音菩萨说：</p>
+<p>　　「初于闻中」，是说：「我在修行的初期，运用听觉。」这里我要请各位特别注意，在这修行的初期，观世音菩萨也和我们一样：一、有「我」的强烈观念；二、知道运用「闻性」；三、有「闻」及「听」的作用；四、听到「声音」，譬如上面所讲的潮声。为什么我在此处要强调观世音在修行的初期，也像我们凡夫一样，有「我」、「闻性」、「闻」、「听」及「声」等妄想执著呢？这是因为要反映以后观世音怎样逐一消除这种妄想执著。</p>
+<p>　　上面已说过，观世音是在海滩边修禅定的，因听潮声的来去，悟到声音在闻性中刹那生灭，并非永久的、实有的；而人之妄想烦恼，却都因执著这声音而来。所以，观世音采用「入流亡所」的方法，使声音不再成为烦恼的根源。</p>
+<p>　　「入流亡所」（注二）应该分开来研究，现在我们先讨论「入流」「入」是佛法中的一个专有名词，是表示人的各器官与外界接触的现象。所以，佛法中有所谓「六入」，那是眼、耳、鼻、舌、身五外部器官与外界的接触，及脑意识与外界思想的接触的总称。此处的「入」则是「耳入」，是外界的波动震著耳膜，使人发生有声音感觉的现象。</p>
+<p>　　「流」的意义是「不住」。《金刚经》里常提到「不住色生心，不住声、香、味、触、法生心。」「不住」即是说不要将「入」留停下来，要让它一接「即流」。所以，观世音所说的「入流」，即是《金刚经》中的「不住声生心」。</p>
+<p>　　再说得详细些，「入流」就是说不要停留每一个因耳朵与外界接触所感到的单独的声音（单音），而要让每个单音像流水般的继续不绝的流去。这句话听上去好像很容易，实则很难。我们人的毛病，就是在留住这种单音，而将它们连贯起来，于是组成名词，连成句子，产生意义，妄想执著由此而生，烦恼苦痛由此而来。各位不信，让我们来试一试。</p>
+<p>　　现在我请任何一位在座发三个单音，各位听著。</p>
+<p>　　「观」。──「世」。──「音」。──</p>
+<p>　　现在我问：「各位听到了什么？」很多人回答：「观世音」。诸位答「观世音」的，就没有做到「入流」。因为你们没有让「观」「世」「音」三个单音一「入」即「流」，而是将这三个单音都留住下来，连贯了起来，组成「观世音」，这个名词，并且很多位的脑子里，将平时所知关于观世音菩萨的都连想了起来，这就是妄想执著啊！各位，不论「观世音」这个名词是好或坏，它一样妄想执著。所以，要去掉妄想执著，就得「入流」。</p>
+<p>　　这样一试，各位也许反过来要说，那倒真不容易，人的脑子中就有这么的机能，将单音留住下来，连贯起来，叫我们怎能「不住」而让它「流」呢？这话也不尽然，我们仔细想一想，「入流」也并不这么难。此刻各位的耳朵和外界接触而产生的音声实在多得很：有汽车经过的声音，有小孩在外面吵闹的声音，有邻座呼吸的声音，还有很多其他的声音，可是各位很自然地将这些声音都「流」而「不住」。所「不流」的，只是我在讲的声音。为什么呢？因为各位在注意我讲的话，要想知道我在说些什么，因此不让这些「入」流去，而将这些「入」留住，因此就听见我的话，也因此就产生许多思想上的反应。又譬如你听到的三个单音，如果各位不将它们留住，每个单音都任它一触即流，单独的一个「观」声，一个「世」声，或一个「音」声，都产生不出观世音这个名词及因之而有的一切意义。各位自己可以将这个道理推而广之，自会觉得「入流」这个办法，确是很妙。</p>
+<p>　　「亡所」的亡是「亡失」、「消除」的意思；「所」是所听到的对象及因听到而引起的一切对象的简称。在佛学经书里，常提到「能」、「所」两个名词。「能」是指能起此作用的主体，譬如能听的我、能看的我。「所」是指此作用所及的对象，譬如所听到的声音、所看到的色彩。世界上有许多现象，都由此相对的「能、所」观念造成，是妄想执著的主要形态，所以，「亡所」是说在修行中「亡失了听到的对象及因此对象而产生的一切对象。」让我来举一个例子：</p>
+<p>　　记得有一次有一位居士说「地下车（指纽约的SUBWAY）的声音真闹，一坐进地下车，就被乱烘烘的闹声弄得心烦。」当我们分析这句话的时侯，就会发现下列的层次：</p>
+<p>　　一、坐进地下车，耳朵与外界接触（「入」）。</p>
+<p>　　二、将每个单音留住了下来（不流而住），乃发觉有声音（听到的对象──这是第一个「所」）。</p>
+<p>　　三、这声音是轰轰轰的（单音连贯起来，造成有意义的对象这是第二个「所」）。</p>
+<p>　　四、这轰轰的声音是地下车的声音（联想起其他的对象这是第三个「所」）。</p>
+<p>　　五、地下车的闹声真烦心（又联想起以往的经验，引起烦心的对象──这是第四个「所」。）</p>
+<p>　　现在让我们将这些对象一层层的反推回去。</p>
+<p>　　一、尽管知道是地下车的闹声，但不去联想起以往因听到地下车闹声而烦心的经验──「亡」第四个「所」。</p>
+<p>　　二、尽管听到轰轰的声音，但不去管它是飞机的轰轰声呢，还是地下车的轰轰声，还是其他的轰轰声──「亡」第三个「所」。</p>
+<p>　　三、尽管听到有声音，可是不去分别它是轰轰声呢，还是吱吱声，还是其地各种的声音──「亡」第二个「所」。</p>
+<p>　　四、每个单音，任它一触即流（入流），不予留住连贯，闻性中不起有声音的感觉──「亡」第一个「所」。</p>
+<p>　　到此阶段，所有的「所」——对象，郡已亡失，此种境界，便是「入流亡所」。</p>
+<p>　　各位现在明白了「入流亡所」的整个意义。观世音菩萨在他修行的初期，即是用的这个方法：在闻性中，耳入不住，亡失对象。</p>
+<p>　　观世音接下去说：「所入既寂，动静二相，了然不生。」</p>
+<p>　　这三句是说因「入流亡所」的不断训练，功夫渐深，在闻性中此时已没有任何可听的对象，（「所已寂」），也没有了耳根和外界接触的现象，（「入已寂」）；闻性中清清净净，但并不昏沉或木然而无知觉，（因此说「了然」）。此时感觉到的，是既没有动的形相（声因动而来），也没有「静」的形相（与动相对的静）。在这个阶段，已经是「定」的境界了。不过「定」有程度的深浅，要一层层的深入，现在还只能说是初定的境界。在这境界中，前面指出的五项妄想执著——「我」、「闻性」、「闻」、「听」及「声」，还只能说是去掉了「声」及『听」。可是因为去掉了「声」「听」这两种妄想执著，人类的许多苦痛，已经可以减去很多。世人能到此境界，已能够有很多快乐自在的受用。这时侯佛陀所教的「不要攀缘」可以说已经达到，接下去是要「集中心力来观照宇宙人生的真相」。观世音到此境界，并不停止，而是努力深入推究，使「定」的程度日益加深，所以说：</p>
+<p>　　　　如是渐增</p>
+<p>　　讲到此处，我想说一个寓言。因为在这以前的修行境界，有很多位可能已经达到。但自此以后，则都是定中用功夫，不容易为一般人所了解。先说一个寓言，不但希望增加各位的兴趣，也藉此说明我本人的立场。</p>
+<p>　　各位知道青蛙在他生足之前，只能在水中生活，要等长大，足生出来后，方能到岸上去。有一天一只母蛙从岸滩上回来，对一群只能在水中过活的小蛙说「孩子们呀！那岸上可真舒服啊！阳光是这样的温暖，微风吹来，又是那么地凉爽！」各位，小蛙可能体会到此中的舒服滋味。小蛙们吵著叫母蛙解释得更清楚些，可是母蛙用尽它所能想像得到的形容词，无法使小蛙了解真滋味。一直要等到小蛙自己长出脚来时，一跳上岸，恍然大悟，原来那天母蛙所讲的是如此。</p>
+<p>　　在座的可能有母蛙在，但我本人却只是小蛙，因此，我所讲的，只算是小蛙传述母蛙的话。如果各位中有的也是小蛙，那么我们只能说是小蛙和小蛙瞎猜瞎摸一番。但希望我们这群小蛙，有那么一天，大家长出脚来，跳上岸去，那时才能真正了解观世音菩萨所讲的真相。</p>
+<p>　　观世音菩萨接下去讲：</p>
+<p>　　　　闻所闻尽，尽闻不住</p>
+<p>　　因为在此阶段，「闻」及「闻性」还在，观世音在定中，继续深入推究这「能闻的我」和「所闻的对象」究竟有什么区别？推究来，推究去，推到尽头，才恍然大悟，原来「能闻的我」和「所闻的对象」，其中并无分别，因此说「闻所闻尽」。第一个「闻」，是说「能闻」，也即是指「能闻的我」或「能闻的闻性」，接下去「所闻」即是「所闻的对象」。推到尽头，觉悟并无分别可求，所以说「尽」。这时因「闻性」及「闻」的观念已不存在，心中自在净乐，一般的苦痛，除生死外，可谓已完全消除。可是观世音并不以达到此境界为满足，也不停止，再继续深入推究，所以「尽闻不住」。就是说，能闻所闻，推到尽头，了知一无分别，但仍不停止，于是又接下去是：</p>
+<p>　　　　觉所觉空，空觉极圆</p>
+<p>　　定的境界，再深一层。在此境界，已只有一种「觉」在定中。但是什么人在「觉」呢？是「我」在觉。因此，只要有觉的念头存在，还是有一个「我」。观世音再深入推究，观察这「能觉的我」及「所觉的对象」究竟有什么区别？研来研去，研到尽头，原来「能觉的我」与「所觉的对象」也没有分别，同是不可捉摸的「空」，因此说「觉所觉空」。</p>
+<p>　　在这个定的境界中，不复有肉体的我的存在，生死的苦痛至此解脱。而这「空」的感觉，则是穷极三界，没有时间的限制；圆遍一切，也没有空间的边际。所以，观世音菩萨说，他在这个阶段的境界是「空觉极圆」。但是这境界还没有到圆满的地位，观世音在空中继续修进，接下去是：</p>
+<p>　　　　空所空灭</p>
+<p>　　这时定的境界，自又更深一层。可是在这境界中，仍有一个空的感觉存住。是什么人在空中感到空呢？此时虽已没有肉体的我的存在，可是意识中的「我」还很微细的隐隐存在；也就是说，还有极轻微的妄想执著，没有除净。这时的境界，很容易被误解而认为已到修行的顶峰，其实还差最重要的一个最后关键，所以切不可停止，要百尺竿头，更上一级，加紧推究这「能空的我」和「所空的对象──空」又有什么区别呢？推究到头，不但「能空」「所空」原无分别，忽然连「空」也失其所在，因此说：「空所空灭」。</p>
+<p>　　到了这个境界，一切有生有灭、可生可灭的念头、感觉、观照，如「闻」、如「觉」、如「空」、如「我」，都完全寂灭，妄想执著已一丝不存，人生的一切苦痛，已都解脱，正如黑暗消灭，所有的全是光明，所以说：</p>
+<p>　　　　生灭既灭，寂灭现前</p>
+<p>　　这已经是母蛙上岸的景象，所以「寂灭现前」切不可误作「现」在「我」的面「前」解。六祖慧能为防人误解，曾特别指出《坛经．机缘品》：「是则寂灭现前，当现前时，亦无现前之量。」此时已没有「我」的观念，所以「现前」是整体充满的意思。并没有前后、多少的比较观念。因此接下去说：</p>
+<p>　　　　忽然超越，世出世间</p>
+<p>　　所有人世界的一切妄想执著，以及在禅定中所经过的层层深入的一切境界，统统不再留碍，也再没有本体或对象可以留碍。本性显现，这时观世音菩萨所能描写的只是：</p>
+<p>　　　　十方圆明</p>
+<p>　　「十方」，指没有一个固定的中心点（没有「我」），也没有一个固定的方向；「圆」是圆满不缺，无所不及，无有边际；「明」则是无有障碍。这是用人类的语言文字，勉强表达本性的境界。「十方圆明」不但说明在本性之外，再找不到任何一物，没有佛，没有众生，而且连虚空也找不到。这就是佛学经书里面的所谓「本性」，所谓「体」，也叫做「佛性」、「如来藏」、「真如」都代表这同一的境界。</p>
+<p>　　在《楞严经》上记载著观世音菩萨接下去又讲了两句，那是说的由「体」起「用」，是证悟后，在本体空性中，自动显起的大慈大悲、普度众生的作用。这时的境界：烦恼即是菩提，菩提即是烦恼，一切法不离本性，一切法即是本性。可是这种境界，以我们凡夫俗子的执著心理来思维度量，很容易和世间的妄想混为一谈。如若执著了「用」，反会妨碍禅定的进修，所以这两句就留下不解说了。好在各位如能悟「体」，「用」自然会有。这原是一而二，二而一的。我这样的小蛙，还得先好好的在「入流亡所」上痛下功夫，至少可以去掉一些人间的执著烦恼，也希望大家的烦恼苦痛，可以因为学习观世音菩萨的修法而为之减轻。</p>
+<p>　　佛法中强调人身难得，有若晨星，而万万千千的人中能有机缘听到佛法的，更是稀少。我不妨再加一句：听到了像观音菩萨的修行法门这样难得的佛法，能有机会及时依之而修行的，则更是稀少中的稀少。我衷心祈望各位都是稀少中的稀少者！</p>
+<p>　　多谢各位。</p>
+<p>　　注一：此处所谓「听觉」（闻性）并无来去生灭，是与声音及静比较而言。倘依真如本性来讲，则听觉（间性）仍旧是生灭法。再讲得彻底些，凡是一有名相，就有生灭，连「本性」，这个名相，也是生灭法。只有「生灭两圆离」，到不可说不可说的境界，方才算真实。</p>
+<p>　　注二：《楞严经》历代疏解甚多，对「入流」多作逆流讲，即须陀垣果。意思是说众生循声流转，谓之为出，观世音反闻自性，谓之为入。这里的讲法，和前人的注解，并不完全相同，是想用最浅而易懂的说法，使初期修行的学人，容易了解实行，有不妥之处，还望大德指正。</p>
+<p>　　　　（一九八二年讲于夏威夷观音庙）</p>
+<p>　　　　摘自《沈家桢居士演讲集》</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../gsypszj/qngyxybxszgdzssjrb.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../gsypszj/rsqyccg.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../gsypszj/qngyxybxszgdzssjrb.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../gsypszj/rsqyccg.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

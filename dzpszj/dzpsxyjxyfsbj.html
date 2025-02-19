@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>地藏菩萨行愿纪（显荫法师编集）  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="地藏菩萨行愿纪显荫法师编集"><a class="header" href="#地藏菩萨行愿纪显荫法师编集">地藏菩萨行愿纪（显荫法师编集）</a></h1>
+<p>　　　　地藏菩萨行愿纪</p>
+<p>　　　　世界佛教居士林编辑处编集</p>
+<p>　　　　自　　序</p>
+<p>　　　　释　显荫</p>
+<p>　　盖闻佛法僧伽，三宝乃福田之胜。慈悲誓愿，万行为道果之先。礼敬归依，妙体岂离于当念？称扬咏叹，灵根原具于自心。懿惟大愿地藏王菩萨，久超圣地，夙契圆门。常修成佛之妙因，无尽度生之弘愿。过去世孝亲敬佛，大善堪夸。未来际宏法利生，神机莫测。拯泥犁之苦楚，恩洽幽冥。揭果报之森严，化周尘世。必地狱破空始成正觉，非众生度尽不证菩提。澈底悲心，六道众咸蒙护念。甚深大愿，十方佛莫不赞扬。受如来咐嘱之深，天宫摩顶。修菩萨愿行之广，地狱栖身。救刹土之含生，遍恒沙之世界。是功德主，曰地藏王。称念圣号者，所愿速成。塑画金容者，获福无限。持经文一句一偈，便植良因。作功德一渧一尘，亦获大利。回向鸿慈于法界，必证无上之菩提。兹特略录圣纪，以期广化迷流，假浅显之文言，述博深之义旨。用付手民而传布，藉资心地之栽培。于以使雅俗齐参妙谛。遐迩共悟真修。返本穷源，会向菩萨宏誓海。背尘合觉，归诣如来大道场。虚空有尽，我愿无穷。等与群生，同圆众智。</p>
+<p>　　　　癸亥七月支那苾刍释显荫敬识于中江小九华。</p>
+<p>　　　　第一章　　绪论</p>
+<p>　　南无佛。南无法。南无僧。「南无」读作「曩谟」，是归依敬顺的意思。佛是究竟觉悟的尊号。如释迦牟尼佛，阿弥陀佛等。都是体证妙觉，做世间导师，故称佛宝。法是修行的法则，如三藏经教，是出生死成佛道的法门，故称法宝。僧是依法修行的比丘，进而上之，如文殊、普贤、观音、地藏、诸大菩萨。绍隆佛化，普度众生，故称僧宝。归依佛、法、僧三宝，是修心人最要紧的法门。念念觉照便是南无佛；心心正直，便是南无法；念念上求佛道，心心下化众生，便是南无僧。这是归依自心的三宝。念佛诵经拜菩萨，这是归依住持的三宝。要晓得归依三宝的意义和方法，请看三归正范一书，就知道了。</p>
+<p>　　妙法莲华经方便品上说：「一称南无佛，皆已成佛道。」闻经一句一偈，决定成佛。举手低头，烧香散花，供养佛像，用金、石、土、木，雕塑佛像，如此功德，都会成佛。这是归依三宝便可成佛的明证。</p>
+<p>　　地藏菩萨本愿经上说：「若有人营造佛像塔寺，供养布施，当得天帝之报。若有见先佛塔庙经像毁坏，发心修补，或劝人布施结缘，以此功德，千百生中，常做国王。若能以上功德，回向法界，决定成佛。若有善男信女，于佛法中，种少善根；或布施供佛、或修补塔寺、或装理经典、如是乃至一毛一尘一沙一渧，是人功德，回向法界，舍一得万报。一切众生，临命终时，若得闻一佛名，一菩萨名，或大乘经一句一偈，便得灭除众罪，脱恶道苦。」临终一闻，尚有这样好处，大家日日的念佛诵经，一心恭敬三宝，决定可以离苦得乐，将来定能成佛。</p>
+<p>　　　　第二章　　地藏菩萨的圣号</p>
+<p>　　佛法僧三宝，是苦海的慈航，黑夜的明灯。因为众生惑业太深，受大苦报，非仗三宝慈光来救济，不能解脱。从前有一位大菩萨，他自己依佛法修行，早证十地。因为怜愍众生轮回苦恼，他就发愿；度尽那些众生，然后自己成佛。地狱众生，最为苦恼。所以菩萨分身，遍满十方世界，地狱道中，救度众生。地狱未空，誓不成佛！有如此大愿，常在地狱行菩萨道，故称大愿地藏王菩萨。若有众生，求免地狱苦者，请恭敬称念：「南无大愿地藏王菩萨」。</p>
+<p>　　　　第三章　　地藏过去世的因缘</p>
+<p>　　地藏菩萨，早证十地圣位。尽未来际，普度众生。菩萨度生大愿，为何发起？不可不知菩萨过去世的因缘。</p>
+<p>　　Ａ、菩萨为长者子──过去很久很久，有佛号师子奋迅具足万行如来出世，那时有长者（大富大贵大德大势的人，名为长者）子，见佛相好端严，心生欢喜，因叩问如来，何以有如此相好？</p>
+<p>　　佛说：「久远度脱一切受苦众生，故能证得。」</p>
+<p>　　长者子就在佛前发愿，尽未来际，度脱六道一切罪苦众生！众生度尽，然后成佛。此长者子，即地藏菩萨是。</p>
+<p>　　Ｂ、菩萨为婆罗门女──过去觉华定自在王如来像法（佛法住世，有三时期，──（一）正法，佛法极盛。（二）像法，佛法次盛。（三）末法，因众生业重，故佛法渐衰）的时候，有个婆罗门（就是净修道行的人家）女，很信佛法。其母奉事邪道，不信佛法，所以命终堕下地狱。圣女知母堕苦，就变卖田地产业，办了香花供具，搬到寺里，供养觉华定自在王佛的形像，且在佛前礼拜，求佛指示母的生处。心诚意切，感佛灵应。忽然听到空中说：「你供佛毕事，还家念佛，自然知道了。」圣女归家，端坐一心，念觉华定自在王佛。念了一日一夜，忽觉自身到一海边，看见海水滚沸，有许多人出没其中，还有恶鬼毒兽，打扑吞食，真正苦楚不堪。圣女念佛，所以不甚害怕。有一鬼王，来迎圣女。女问鬼王：「此是何处？」</p>
+<p>　　鬼王答道：「这是地狱边海，人在世间，做了杀生、偷盗、邪淫、妄语、争讼、恶骂，种种罪业。死了四十九天，还没有人替他作福忏悔，乃就渡过此海。海东有海，还要苦；海东尚有海，更加苦！过了三重业海，就是地狱了。」</p>
+<p>　　女问鬼王：「我母生在何处？」且告以姓氏及生死年月。</p>
+<p>　　鬼王查告：「初来地狱受苦，三日前已经生天去了，因为孝顺之女，代他作福。」圣女闻之，寻如梦归，知代母作福的好处，感佛恩德，就到佛寺塔像前发愿；尽未来际，度脱一切罪苦众生。此婆罗门女，便是地藏菩萨。</p>
+<p>　　Ｃ、菩萨为光目圣女──过去清净莲华目如来像法的时候，有一阿罗汉（就是已出苦海的圣人，世人供养他，获福无量）福度众生。有一圣女，名曰光目。设食供养，叩问亡母现生何处？罗汉入定，观见女母在地狱受苦。因为在世喜食鱼鳖，炒煮鱼子，伤命无数，故受此苦。光目求罗汉救拔。罗汉教他专念清净莲花目佛，兼塑形像，礼敬供养。光目依教，塑画佛像，恭敬供养，系念不忘，精诚所感，梦佛放光，告光目言：「汝母当生汝家」。</p>
+<p>　　过了几天，光目家中，婢女生子，未满三日，便会说话，告诉光目道：「吾是汝母，因杀害、毁骂，故堕地狱。蒙汝修福，拔救吾难，可惜短命，年止十三便死，更落恶道。」光目闻说，啼泣悲号，对空发愿，哀求十方诸佛，救母永离地狱恶道。便对清净莲华目佛像前，发大誓愿；愿母离苦，以后百千万亿无量劫中，十方世界，地狱恶道，受苦众生，誓愿救度，皆令成佛，然后自成正觉。发此大愿，就听到清净莲华目佛向他说：「如此大慈，发大誓愿。汝母十三岁毕，便生善处受乐。」那时为母发愿，救度众生的圣女，就是地藏菩萨。</p>
+<p>　　Ｄ、菩萨为国王──过去有佛，号一切智成就如来。未出家时做国王，和一邻国国王友善。大家修行仁政，利益万民。因为国民多作恶业，一王发愿，早成佛道，度尽恶人。一王发愿，若不先度受苦恶人，尽使止恶修善，离苦得乐，我终不愿成佛。发愿早成佛道者，便是一切智成就如来。发愿先度众生者，便是地藏菩萨。</p>
+<p>　　　　第四章　　地藏的慈悲誓愿</p>
+<p>　　地藏菩萨，在过去世，发大誓愿；「拔一切众生苦，与一切众生乐。」一切受苦的众生，都度尽了，然后成佛。所以菩萨分身，充满十方世界。每一世界，化百千万亿身。每一身，度百千万亿人。令归敬三宝，永离生死苦，得涅槃（灭诸烦恼，度生死海，得究竟乐，名为涅槃）乐。但于佛法中所做善事，如毫发许，皆使度脱生死，得大利益。释迦牟尼佛，曾在忉利天宫，再摩地藏菩萨顶，赞叹地藏神力不可思议，慈悲不可思议，智慧不可思议，辩才不可思议。正使十方诸佛，于千万劫中，赞叹不尽。以未出三界的苦恼众生，咐嘱地藏。若有天人，于佛法中，种少善根，便须拥护，教令增长，勿使退失。若有落在恶趣，但能念一佛一菩萨名，一句一偈大乘经典，亟当神力救拔，现无边身，为碎地狱。遣令生天受乐。释迦世尊，慈悲无尽。地藏菩萨，受佛咐嘱，所行慈悲，无尽无尽。惟愿大家！止恶修善，恭敬三宝，自然常为佛菩萨所护念了。</p>
+<p>　　　　第五章　　地藏的应机示化</p>
+<p>　　菩萨常在娑婆世界（我们居住的苦恼地方，叫做娑婆世界）教化众生。若遇杀生的人，向他说短命报。偷盗得贫苦报。邪淫得雀鸽鸳鸯报。恶口、毁谤得无舌疮口报。嗔恚得丑陋报。悭吝得求不得报。不孝父母，得天地灾杀报。前后父母恶毒者，得转生鞭挞报。毁谤三宝，得盲聋喑哑报。轻慢经教，得永处恶道报。破用常住物（就是佛寺中物），得地狱报。污诬梵僧，得畜生报。畋猎恣杀，得轮回递偿报。骄慢贡高，得下贱报。邪见得边地受生报。两舌斗乱，得无舌百舌报。如是种种罪人，为说种种罪报，以警悟之。是诸罪人，若不悔悟，既受苦报，后堕地狱受苦。所以菩萨殷勤教化，教人改恶向善，免得受苦。所望大家相信因果。恶道可怕，快快的修心呀！</p>
+<p>　　　　第六章　　地藏的功德利益</p>
+<p>　　菩萨的愿力有这样大，功行有如此深。所以恭敬菩萨，功德利益，也就不可思议了。</p>
+<p>　　Ａ、塑画形像的利益──在清净的所在，或用金、石、木、土，做地藏菩萨的形像。烧香供养，敬礼赞叹。是人居处，就有十种利益：</p>
+<p>　　1、土地丰收。2、家宅永安。3、亡者生天。4、现存益寿。5、所求遂意。6、无水火灾。7、虚耗辟除。8、杜绝恶梦。9、出入神护。10、多遇圣恩。</p>
+<p>　　若有善男信女，彩画形像，或作金、银、铜、石形像。一瞻一礼，是人百返生于三十三天，永离恶道。若有女人，厌女人身，尽心供养菩萨形像，毕此一生，便脱女身。若有善男信女，对菩萨像前，作乐歌赞，香华供养。乃至劝于一人多人，现在未来，常有善神，拥护是人，永离一切恶难之事。</p>
+<p>　　Ｂ、见闻的功德利益──若有善男信女，欲发慈心，救度众生；欲出三界，欲修无上菩提，是诸人等，见菩萨像，闻地藏名，至心归依，供养礼赞者，所愿速成，无有障碍。乃至百千万亿事，所求必成。若有众生，临命终时，闻菩萨名，一声历于耳根，死后永离三恶道苦。若有善男信女，读诵大乘经典，（佛经有大乘小乘两种，小乘是自脱生死的法门，大乘是自利、利他。度众生，成佛道的法门。）不易纯熟领悟，闻地藏名，见菩萨像，虔备上妙香花，种种供养，恭敬陈白，以净水一盏，安菩萨前，经一日一夜，合掌请服。回首向南，临入口时，至心郑重。服后三七日，禁止荤酒妄语，是人于睡梦中，见菩萨现无边身，授灌顶水，梦觉便得聪明，看经易得懂了。</p>
+<p>　　Ｃ、称名的功德利益──世有诸人，或衣食不足，或疾病缠身，或家宅不安，种种灾苦。恭敬称地藏菩萨名，满于万遍，自然灾去福来，皆得安乐。有人入山渡海，先念菩萨名万遍。常得善神拥护，免诸险害。有诸下贱不自由人，忏悔夙业，念菩萨名满万遍。千万生中，常得尊贵。若有人志求佛道，念菩萨名，速得成就。</p>
+<p>　　Ｄ、持经的功德利益──地藏菩萨本愿功德经，释迦世尊在忉利天宫说。详述菩萨本誓愿力，本所修行，及利益存亡，种种功德。见人读诵此经，一念赞叹，信心不退，所得功德，不可思议。对佛菩萨像前，志心读诵此经，或请人读，三遍或七遍，过去眷属，堕恶道者，仗此功德，皆得解脱。若有新生男女，七日之中，与读此经，并念菩萨名万遍。此新生子，宿殃尽灭，安乐易长，更增福寿。于十斋日（初一、初八、十四、十五、十八、二十三、二十四、二十八、二十九、三十日）对佛菩萨像前，读此经一遍，四方境内，离诸灾患。此居家人，百千岁中，永离恶趣。衣食丰溢，殃去福至。诸人闻地藏名，见菩萨像，及闻是经三字五字，一句一偈，现在受乐，将来百千生中，常生尊贵之家。香花幡盖，供养佛像，读诵是经，一句一偈，阎罗天子，及诸鬼王。敬礼是人，如三世诸佛。依此经一事修行，便有诸天鬼神拥护。瞻礼地藏形像，及转诵本愿经，可得七种利益：</p>
+<p>　　1、速超圣地。2、恶业消除。3、诸佛护临。4、菩提不退。5、增长本力。6、宿命皆通。7、毕竟成佛。</p>
+<p>　　Ｅ、念佛的功德利益──地藏菩萨本愿经称名号品上说：「称念佛名，灭无量罪，获无量福。过去诸佛，如；无边身佛、师子吼佛、袈裟幢佛、宝性佛、宝相佛、宝胜佛、净月佛、满月佛、月面佛等诸佛如来。闻诸如来名号，一弹指顷，发心归依。于无上道，永不退转。若人命终，家人代为高声念佛。是命终人，便除重罪，何况自念。可见诸佛菩萨哀悯众生，莫不过于父母之爱其儿女。凡有忆念，即蒙化度。还有一位最慈悲的佛，他的世界，无有恶道，但受快乐。有人愿生彼国，只要称彼佛名，命终便来接引。有人称念他圣号一声，可灭八十亿劫生死重罪。这就是阿弥陀佛。与称念十方诸佛，一样功德。地狱恶道，可怕得很。大家念佛，求生极乐世界，免得到恶道受苦，致烦地藏菩萨悲心救度了。我们依佛菩萨的宗旨，以了生死大事，望大家快快的称念，南无阿弥陀佛。南无阿弥陀佛……</p>
+<p>　　　　第七章　　地藏与地狱众生</p>
+<p>　　世间有捣毁佛像，毁谤佛法，及做杀、盗、邪淫、恶口、两舌的恶人。死了就下无间地狱。何谓无间地狱？此地狱说来很可怕。地狱周围万八千里，高一千里。四周上下，都是铁制。罪人身满狱中，上火彻下，下火彻上。铁狗咬啮，恶鬼抛打，铁鹰啖目，铁蛇缴颈，百肢都下长钉，拔舌抽肠，众苦交迫。受苦无一刻间断，亦无出期，故名无间地狱。不信三宝，造作十恶的人，将来有如此大苦吃，作恶到底有何好处呢？还有种种地狱，随人之造恶大小，而苦有轻重，如飞刀、火箭、夹山、通枪、铁车、铁床、铜柱、叫唤、拔舌、啖眼、剥皮、烧脚、烙手、火象、火牛、火山、火狼、寒冰、粪尿、镬汤、种种地狱，说之不尽。世间作恶的人，死了四十九日以内，在诸司拷问，但望人间代他供佛作福。倘若宰杀生灵祭祀，恶人更加罪重。若有孝子贤孙，代他斋戒作福。罪人于诸功德，七分里得到一分受用，虽在地狱受苦，也可休息休息。果然功德做得大，就可超升。若用荤腥祭祀，罪人受苦，直如火上添油。此则世人不可不知！世人临命终时，家人代他高声念佛菩萨名，及诵读尊经。便能消罪，免堕恶趣。七七日内，广造众福。亡者生天，存者安泰。（参看第十章）地藏菩萨受释迦世尊的咐嘱，不令众生，堕落恶趣。有堕落者，必设法救度。只要有点善根，便蒙拔济。大家要知道地狱可怕，赶紧止恶修善，以副地藏救苦的悲愿。</p>
+<p>　　　　第八章　　地藏与诸佛菩萨</p>
+<p>　　诸佛菩萨，皆以慈悲普度为宗旨。释迦佛咐嘱地藏，救度众生。是则地藏的大愿，便是释迦的大愿。阿弥陀佛，接引众生，生彼极乐世界，令免恶道苦楚。地藏以破空地狱为期，目的也是相同。至于诸大菩萨，如；大智文殊师菩萨、大行普贤菩萨、大愿地藏王菩萨、大悲观世音菩萨、大慈弥勒菩萨等。从表面看起来，有的大智，有的大行，乃至大愿、大慈、大悲，各有各的长处。其实从法身理体起大智，因大智故发大愿，因大愿故立大行，大行不出大慈与乐，大悲拔苦而已。是故理、智、行、愿、慈、悲、虽各有所大，然大体不二。故诸大菩萨，皆具大愿。地藏也具足大智、大行、大慈、大悲、方能达到其度众生成佛道之目的。所以称念地藏菩萨，与恭敬诸菩萨，功德正同。</p>
+<p>　　　　第九章　　地藏行化中华的圣迹</p>
+<p>　　金地藏本名乔觉，新罗王子金氏近属也（新罗国在朝鲜之东）。自幼好道出家。唐至德时，航来中土，卓锡九华。岩栖涧汲，以示高洁。曾遇毒螫，端坐无念。有美妇人（即龙母）作礼奉药。石间有清泉涌出，至今不涸，称龙女泉。邑人诸葛节，见其独坐石室，旁一破鼎，白土杂少米为食。异之，为买地建寺供养。其国闻之，渡海相从者日众。自后贤宦富绅之瞻礼布施者，踵相接。菩萨日坐南台，焚香对四部经，独味深旨。贞元十年，寿九十九，示寂。趺坐函中，三年开视，颜色如生。兜罗手软，骨节有声，如撼金锁。菩萨金锁百骸鸣，骨节钩锁，诚菩萨相也。建塔之地，发光如火，因名其地曰神光岭。肉身至今犹存。自唐至今，顶礼者数千里接踵而至，岁无虚日。香火之盛甲天下，非菩萨之灵，曷克臻此？</p>
+<p>　　以上一段记，是从九华山志里摘录出来，可惜不甚详尽。他日当亲访九华，拜礼菩萨。名山圣迹，所见必较详确，当于林刊中发表。</p>
+<p>　　金地藏有送童子下山诗，载在全唐诗集。今亦摘载林刊，以供仰瞻。</p>
+<p>　　　　第十章　　余　　言</p>
+<p>　　第一章明归依三宝的利益，似与地藏菩萨无甚关系。殊不知菩萨度生，其唯一宗旨，就是教人归依三宝，止恶修善。那么人人都向善道里去，不会落于恶道受苦，只此就是菩萨破空地狱度尽众生的要法。所以发明菩萨行愿，先须示三宝的利益。</p>
+<p>　　三宝不出自心，念念归依三宝，便是念念翻邪向正，念念止恶修善，岂不是修心人最要注意的么？请大家格外留神！</p>
+<p>　　妙法莲华经上说：一称南无佛，及闻法一句一偈，都会成佛。因为佛法种子种下去，将来必会抽芽滋长，譬如吃了少金刚，永久不消，必致穿肠而出。种下佛法种子，必成佛而后已也。</p>
+<p>　　塑画佛像，何以也有大功德呢？因为佛的法身，遍一切处。如水在地中，掘之则现。所以金、石、土、木，塑画诸像，便是法身无相无不相的真像。澈见法身，洞会法界。福德利益，自然不可思议。</p>
+<p>　　于佛法中，种微细善根，舍一得万报。譬如下种良田，种一而获万也。</p>
+<p>　　临命终时，闻一佛名，一句经，一菩萨名，便得灭罪。岂不便宜？要晓得平常不种善根，临终那里听得到三宝名字？亟须战战兢兢的修心才是，切不可贪便宜。</p>
+<p>　　佛的相好庄严，因为救度众生而得。那么救度众生，便是增长自己的福报。所以利他便是利己。</p>
+<p>　　世上恶人，堕在地狱受苦。倘有孝子贤孙，替他作福，就可灭罪生天。这是什么道理呢？这是正显佛的慈悲，譬如人落粪坑，有一发在外，尚可引救出秽。人堕地狱，有一丝毫善根，佛必设法救度也。然道力不及业力，则佛也无法可想。须要功德之力，超过恶业之力，方有用处。请学婆罗门女，善根深植，方能救得他母亲。做人子孙的，只要学圣女的纯孝精诚，切勿存侥幸之心，乃就对得过去祖先了。</p>
+<p>　　作恶既然要堕地狱，还是不作恶为妙。不堕粪坑，何假一发之功？要晓得一发是很危险的，倘若勇于为恶，止望身后忏悔，就可灭罪，决定没有如此便宜。请大家猛省！</p>
+<p>　　因果报应之律，是丝毫不错的。善恶之报，似影随形。种瓜得瓜，种豆得豆。我人厌苦而求乐，止恶修善，最为要紧。</p>
+<p>　　地藏菩萨的慈悲誓愿大，所以福德利益亦大。誓愿慈悲，我人心念，本自具足。所以恭敬地藏，便是显自性本具的功德。敬地藏，学地藏。将来我们也能地藏。请大家勉旃！</p>
+<p>　　地狱实在可怕得很！请大家赶紧念南无阿弥陀佛，求生极乐世界。是为生死大事最要问题。</p>
+<p>　　九华金地，菩萨现比丘身。若论菩萨法身，充满宇宙。应身也随类示现。所以尽大地皆是地藏度众生之处。大家修心念佛，以求脱苦，便能副菩萨的悲愿。望大家厌生死苦，发菩提心。修心！念佛！</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../dzpszj/dzpsbjlgllyjs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../dzpszj/dzpsbjyywgxz.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../dzpszj/dzpsbjlgllyjs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../dzpszj/dzpsbjyywgxz.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

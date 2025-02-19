@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第六章　乐见圣贤 - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="第六章-乐见圣贤"><a class="header" href="#第六章-乐见圣贤">第六章　乐见圣贤</a></h1>
+<p>　第六章　乐见圣贤</p>
+<p>　　乐见圣贤，是培养恭敬心、柔软心。</p>
+<p>　　“阿难！莫作是语─半 梵行者是善知识、善伴党，非恶知识、恶伴党。所以者何？纯一满净，梵行清白，谓善知识、善伴党，非恶知识、恶伴党。所以者何？我常为诸众生做善知识。其诸 众生有生故，当知世尊正法，现法令脱于生；有老、病、死、忧、悲、恼苦者，离诸炽然，不待时节，现令脱恼苦，见通达，自觉证知，是则善知世、善伴党，非恶 知识、恶伴党”。</p>
+<p>　　【法义分享】：以佛陀的要求标准是：要证到无学位的四果阿罗汉，才有资格当众生的“善知识”。这里的经文是叙述阿难跟佛陀反映，有修行证果、证到阿罗汉的人，太少了！认为“无鱼、有虾也好”（将就将就），只要具足一些正知正见，或是初果、二果，这样也可以做善知识。佛陀就讲：不可以这样！因为佛陀要求是高标准，真正要做众生的善知识，是要成就证阿罗汉，这样才最好啦！佛陀就说不是半梵行者，不是一半这样就可以，解脱道要走完，这样是最好。因为“五下分结”跟“五上分结”有没有断除，还有很大的差距。</p>
+<p>　　如果是初果到三果，都一样有在寻寻觅觅的阶段。初果到三果，虽然已经走在正法的解脱道上，但是初果、二果、三果，都一样在寻觅的阶段，也因为对“无常”跟“无我”的体证，还没有到达阿罗汉的深度，也就是对生命核心的执取，还没有完全破除，虽然理解上可以知道“无我”，但是还没有真正做到，因此佛陀就以高标准的要求，认为要成就阿罗汉，才能够成为众生的善知识。</p>
+<p>　　佛陀就讲：以我为例，我常为诸众生做善知识，本身就是走过这一条解脱道，了悟生死大事的人，“其诸众生有生故，当知世尊正法，现法令脱于生”因为众生“有生”的生，只是一个代表而已，因为佛陀了悟、体证到“无我”、“无生”，所以佛陀以高标准来看就是说：“有生、有死”都是凡夫，还在苦海中浮浮沉沉、头出头没。因为众生“有生”，还在生死苦海之中浮浮沉沉，所以才会有如来、世尊来说正法，让众生“现法令脱于生”，“现法”也就是现世、这一世、现在，你就可以去逐步的见到法，这一世就可以解脱自在。</p>
+<p>　　所以，原始佛法都不是讲未来、来世怎么样，那种说法是不得已的，当你根基因缘不成熟，才讲来世，不然都是讲这一生、这一世，亦即“现法令脱于生”，因为了悟生死大事之后，了悟“无常”跟“无我”，于是对生命的执取就会全然的放开，就能够脱离生死轮回，亦即“令脱于生”。因为有老、病、死，忧、悲、恼苦，有这些种种苦，众生被这些苦，逼得在苦海中浮沉、不安，只要好好听闻佛法，闻、思、修逐步上来，就能够“离诸炽然，不待时节，现令脱恼苦”。</p>
+<p>　　你要出离苦海、到达究竟涅槃彼岸，是“不待时节”，不用再等到“三大阿僧只劫”，或是要等到未来佛诞生才有，那都是后来的说法，原始佛法没有这样的说法。佛陀就跟我们讲：因为法它是过去、现在、未来，都是如此、都是存在的，只要你好好静下来去现观，就能够“不待时节”，“现令”就是现在就令脱恼苦，而“见通达”就是你现在就能够通达，了悟、彻悟、彻证佛法，彻证真理、自觉证知，自己有没有体证到，可以亲自去觉知到、证悟到。“自觉证知，是则善知识、善伴党”如果是真正走过来的人，他会有能力引导你，实际去体证到；如果他本身没有亲证走过来，不管他再怎么讲，都只是还在“知识”的层面，“知见”的层面上而已。所以，佛陀能够引导众生，然后去亲证、亲见，亦即“自觉证知”，才是真正的善知识、善伴党。</p>
+<p>　　（第二节）只要你能够按照解脱道的次第逐步上来，在向初果、证初果、二果、三果……，这样就进入“圣者之流”，也就是“如来”的圣众－－四双八辈，如果能够进入“圣者之流”， 就是属于世间的福田，因为他已经知道解脱道怎么走了，就值得众生恭敬，慢慢跟他学习走上解脱道。亲近具有正知正见、有修有证的善知识，培养恭敬心与柔软 心，将可减少很多不必要的生命与浪费，培养恭敬心跟柔软心非常重要，有的修行人并没有很重视这方面，当他要跟人家学习，也是抱著一种“我慢”心，好像来这里学习一个功夫，学好之后就走人，或是有一天学得比你厉害之后，青出于蓝、更甚于蓝，可以江山换人，江湖那一套越修越厉害的心态。</p>
+<p>　　真正的“出世间解脱法”，绝对不是这样！如果以如此心态学习，是没办法学到“出世间法”的心法。因为你的心不柔软，就没办法契入；心不柔软，就没办法见到法。所以要有柔软心、要真心。</p>
+<p>　　（第三节）“弟子敬奉师长”有 哪些要注意的？师长要对弟子有哪些注意的？这里的经文大家自行参考，因为文字比较容易了解。【法义分享】：没有学生就没有老师。你要先有迈向究竟解脱的决 心，而且身心柔软，明眼善知识才会出现。没有学生就没有老师，如果没有要迈向解脱的决心，没有决心要学习，纵然有解脱者出现，他也没办法协助你。所以，你 如果没有看到自己的不足，没有虚心学习之心，善知识就不会出现。纵然有解脱者在你面前出现，如果你带著我慢之心在看，或是说你想跟他较量功夫，有这种较量 之心，真的解脱者很少很少会出招让你看的。你真心、诚心、柔软心，才能够找到真正的善知识。</p>
+<p>　　（第四节）如果一个人能够奉侍善知识，他会怎么样？乐见圣贤─培养恭敬心、柔软心，这在修行解脱方面是很重要的一环，等于说一环一环这样下来。如果能够侍奉善知识，“便习奉事，若习奉事，便习往诣”会渐渐喜欢听闻佛法，什么时候要上课了，大家就会把时间腾出来，除非天大地大的事情，不然一定设法克服，然后过来闻法，就会热衷于闻法。</p>
+<p>　　当听闻到善法之后，“便习耳戒”，本来对正法无法了解、体会，当你慢慢闻思之后，法喜就会渐渐产生，因为常常在闻思，体悟就会越来越增加，在闻思的过程会“习观法义”，“止观双运”去体会法义。“观”是你的心要宁静下来，做有深度的体悟。当你慢慢进入有深度的体悟之后，就会“便习受持法”，这时候也渐渐进入实修，向你讲述无常、苦、无我，是真、是假？你会不断去求证、求证、求证。</p>
+<p>　 　有的人认为《阿含经》，或是佛陀所讲的法、佛法，是属于佛教的，其实这样的说法，也不是完全正确，像我们这样几堂课下来，大家可以慢慢体会到，我们所讲 的这些法，并不专属于任何一个宗教、一个宗派，因为这些都是众生通通有的共同问题，任何宗派、任何宗教的众生都有，不是说你基督教徒，就没有这些问题；不 是说你是信奉一贯道，就没有这些问题，都有啊！所以，我们讲的就是众生共通的问题。</p>
+<p>　　当慢慢去“受持法”之后，你会“习玩诵法”，不断在咀嚼、反覆思惟，好像把它当个“玩具”这样，本来以为学佛好像很苦，你会抗拒嘛！当你慢慢产生法喜、乐趣之后，会在那里不断咀嚼、反覆推敲，在那里思维、求证，那种法喜就出来啊！所以，当一样事情你把它当作苦差事在做，跟把它当作一种游戏在玩，心情就不一样嘛！当你产生这种法喜，会常常不断很喜欢去“玩弄“，很喜欢去咀嚼。</p>
+<p>　　所以，“习玩诵法”，这时候已经会从原来的被动，慢慢变成主动，如果能够去“习玩诵法”，就会渐渐去“观法忍”，“忍”就是本来对于法义还不是很清楚，或是容易受人家的左右，人家三言两语就把你的信心动摇，说你这是小乘啦！你这是不了义啦！……很快就把你拐走了。当你慢慢进入深度的闻思，体会到重要法义之后，已经慢慢生根下来了，于是慢慢有定力出来，不会被人家三言两语就把你吹走。所以，“忍”就是已经有见法的力道，“观法忍”这时候你的信心渐渐成长，然后更进一步“正思惟”，再者“正念、正智”，当然就会水涨船高一直上来。再来进入实修，就会守护六根，“护戒、不悔、欢悦”，跟前面所讲过的步骤有相同之处，其余……以此类推。所以，就能够进入“定”，“止观双运”之后，就能够“见如实、知如真”，就能够迈向解脱。</p>
+<p>　　真正的善知识，每一脚步都是协助你“依法不依人”，协助你逐渐独立，协助你亲自去体证宇宙人生的实相、真理，而达到究竟解脱自在。所谓的“奉事善知识”是怎么样呢？真正的善知识是协助你“依法不依人”，亲近一个善知识，不是要你对他抓取越紧，或是说他对弟子抓取越紧，如果他有想牢牢抓住你，或是多收一个弟子、多剃一个头，他又多一个势力、多一个得力助手……，都不是正确的观念，在抓取弟子的势力范围越来越多，都不是这样。真正的善知识是宣说正法、真理实相，只要你有心要学习，他是逐步协助你去看到现在当下的法，看到在你身心里面的法，看到在大自然的法，协助你逐步的独立，依法不依人。</p>
+<p>　　（第五节）这一经内容很深、也很有意思。“尊者须菩提在罗阅城耆阇崛山中，在一山侧缝衣裳”须菩提在罗阇城偏远的山中，亦即乡下的山侧那里缝衣裳，为什么他们要缝衣裳？不是他们没钱在做副业加工，因为以前的出家人所穿的，几乎都是废物利用，人家不用的、淘汰掉的，他们尽量做一些废物利用，很多所穿著的都是拼拼装装，而且都是要自己缝补。我个人曾经在1989年到泰国阿姜查的道场去参访，也都是实行这样的制度，穿的衣服都要自己去车缝，连比丘也一样要练习自己去做。在那里缝衣裳，就是制做他们自己要穿的衣裳。</p>
+<p>　　“是时，须菩提闻世尊今日当来至阎浮里地，四部之众靡不见者，我今者宜可时往问讯礼拜如来”这时候须菩提听闻佛陀今天会来到阎浮里地，附近的修行人、出家众，或是一般百姓，大家听到佛陀要来，都很高兴的想去晋见佛陀、顶礼佛陀。所以，此时须菩提就想今天也应该要去问讯顶礼我的老师，应该要去礼拜如来，于是“尊者须菩提便舍缝衣之业，从座起，右脚著地”须菩提放下他的工作，然后站起来准备出去见他的老师了。</p>
+<p>　　“是时，彼复作是念”这时候须菩提突然停下来沉思，“此如来形，何者是世尊，为是眼、耳、鼻、口、身、意乎？往见者复是地、水、火、风种乎？一切诸法皆悉空寂，无造、无作”这两句话非常重要，等于说须菩提又有很大的体会、突破，他本来想说听到佛陀要来到，我们身为弟子的，应该要赶快去晋见佛陀、顶礼佛陀，但是当他做如是想，踏出脚步之后，这时候体会“此如来形，何者是世尊？”我到底要去看什么样的世尊呢？“为是眼、耳、鼻、舌，身、意乎？”我是要去看祂的眼睛呢？还是耳朵？还是鼻子？口、身、意，到底要看哪一部分呢？</p>
+<p>　　“往见者复是地、水、火、风种乎？”我去看的不是一堆地、水、火、风，这样而已吗？里面的含意很深，我到底是去看祂六根的哪一部分呢？事实上，他已经有进入“界分析”方 面的解剖，已经看到缘起，是一些因缘、一些众生的组合而已。所以，眼、耳、鼻、舌、身、意这些，事实上就是一些众生的组合而成，到底要去看哪一部分呢？或 是去看一些地、水、火、风？因为我们的身体组成元素就是地、水、火、风，我只是去看一些地、水、火、风种，这样而已啊！当他体会到这里的时候，变成怎么 样？破除一切的形象，“一切诸法皆悉空寂，无造、无作”这时候体证到“空”、体证到“无我”，因此他已经不著重在身相、外相了。</p>
+<p>　　这时候再去体会世尊的开示，以前佛陀曾经开示过的，但是当时他们未必体会得到，今天他终于有所体会，于是再去咀嚼佛陀所开示的那一句偈：“若欲礼佛者，及诸最胜者；阴持入诸种，皆悉观无常”佛陀曾经开示要去顶礼佛陀、恭敬佛陀，其中最重要、最好、最殊胜的是什么呢？“阴持入诸种、皆悉观无常”这一句话很重要，何谓“阴持入诸种”？虽然都是言简意赅，但是含意都很深，“阴”是代表什么？就是五阴或是五蕴。“持”是什么？是六界。“入”呢？六入处。所以，蕴、界、处，为什么用“持”来代表？因为它衬托出很重要的一个字眼，所谓“四界”地、水、火、风，地就是大地，地球是不是支撑、承载著所有的众生，以及所有的动物、植物？</p>
+<p>　　地球、地界支撑承载著所有的动物、植物，于是以此来衬托出它的深义，“持”代表大自然这些地、水、火、风，它在支撑著众生的的生命。你的慧命，都是地、水、火、风在支持著、在支撑著，因此“持”有很深的含意存在，生命能够存在，背后的支撑力，都是地、水、火、风，四界或是六界来支撑著、支持著。</p>
+<p>　　“阴持入诸种，皆悉观无常”这一句话很重要，不管你从蕴、界、处，哪一个角度去看，都要看到“无常”。事实上，这里是从不同的角度来切入，要把我们的身心、内外宇宙人生的实相做实相的解析，不管你从哪个角度切入，都要能够去看到“无常”，第一个“无常法印”。</p>
+<p>　　“曩习过去佛，以及当来者；如今现在佛，此皆悉无常”都要去体悟到“无常法印”。“若欲礼佛者，过去及当来；说于现在中，当观于空法”注意！真正的礼佛，过去、现在、未来，你都要体证到“空”。“空”不是一般所理解的“空性”，“当观空”含意很深。“若欲礼佛者，过去及当来；现在及诸佛，当计于无我”的“当计于无我”，就是要深刻去体证到“无我”，这几句偈已经标出一个很重要的观念，佛陀不是要来让你膜拜啊！佛陀是要来协助你此生此世就解脱自在。要如何解脱自在呢？一定要从各种角度，蕴、界、处，现在的术语就是身心、内外宇宙人生的现象界一切里面，去体悟到“无常”、体悟到“无我”、体证到“空”，也就是解脱自在。</p>
+<p>　 　所以，真正对佛陀最大的顶礼、最大的礼敬、最大的诚意，就是解脱自在、依法去修行，然后真正去体证到，才是对佛陀最大的回馈。它这里所讲的深义，就是不 要只是外相在佛陀面前顶礼、恭敬，像是很礼敬、很恭敬，佛陀不是要你展现形式上的礼敬、恭敬，是要你真正的去体悟法，然后实证出来，才是真正“此中无我、无命、无人、无造作，亦无形容有教、有授者，诸法皆悉空寂”。</p>
+<p>　　“此中无我、无命、无造作”，就像《金刚经》所讲的“无我相、无众生相、无人相、无寿者相”所以当我看到这一经，认为是《金刚经》的原始胚胎，《金刚经》是从这一经慢慢再去演化，做更深度的解析、更具体的说明，大乘般若的味道很浓，这一经很深、很深，要慢慢去体会。</p>
+<p>　　“何者是我？我者无主。我今归命真法之聚”我今天终于体会到什么是实相？什么是如来法身？因为他见到实相、见到真理，真正体证到无为、无我、还有空。“尔时，尊者须菩提还坐缝衣。……”当他体会到这些之后，哇！他整个人有很大的的突破，这时候就再坐下来，继续做我的工作，所以他没有出去了。</p>
+<p>　　“是时，比丘尼至世尊所，头面礼足，而白佛言：‘我今礼最胜尊，今日先得觐省，我优钵花色比丘尼是如来弟子”优钵花色就是莲花色比丘尼，在佛陀弟子里面算是很有名的一位弟子，莲花色比丘尼就怎么样呢？人家说抢头香，像初一的凌晨、半夜，有人去朝天宫抢头支香，佛教也是一样，当佛陀要来，大家都要抢头香，表示对佛陀的恭敬，于是莲花色比丘尼抢到第一位，因此赶快说“我今礼最胜尊”今天我抢到第一个。佛陀怎么回答？“尔时，世尊与彼比丘尼而说偈言：‘善业已先礼’”善业就是须菩提，须菩提已经是第一位，你不是头一个。“最初无过者”没有一个比他还更先，“空无解脱门，此是礼佛意”佛陀就进一步解释，真正体证到“空”，体证到“无为”而解脱自在，才是真正的礼佛。</p>
+<p>　　“若欲礼佛者，当来及过去；当观空无法，此名礼佛义”如果要真正顶礼佛陀，就是要去体证到“空”，体证到涅槃、体证到无为，这样才是真正的礼佛。这一经的含意很深，《阿含》里面一样有很深的般若、空方面，大乘般若系统其实不是另外独创，都是在阐扬《阿含》里面的深义。但是真正要体证到无人相、无我相、无众生相、无寿者相，必须要逐步上来，慢慢要进入去体会什么叫做“无常”，体证到“无常法印”，然后再进一步体证到“无我”，然后再体证“缘起性空”、“缘起甚深”。当你体会到“缘起甚深”，再来才能够体会到涅槃、无为、空，又是甚深极甚深。</p>
+<p>　 　有关于神通方面，有的人可以看出他的不究竟，有的人却很著迷，如果没有去试过，你就是不会死心，像佛陀祂本身拥有很多神通，但是祂很少很少用神通去度化 众生，祂会看因缘，如果有众生需要，会耍一些花招让你看，不然佛陀很少用神通的。为什么要有神通呢？因为有些人很铁齿硬牙，有时候没有让你这样耍弄过，很 难死心啦！</p>
+<p>　 　我们常常会听到说大陆有一些特异功能，现在没有针对任何人，而是针对这些事情，但是很多的大陆特异功能，后来被什么样的人拆穿？被魔术师拆穿，那些大陆 特异功能在还没有被拆穿之前，一些学者、一些专家都还在帮他们背书，因为那些学者专家他们也很惊讶，认为这么神奇、这么伟大，依照他们的理解，就会觉得说 不可思议，没办法理解啊！于是就帮他们背书，觉得他们真的很厉害，但是魔术师却把他们拆穿了。为什么魔术师能够拆穿他们？因为是同行，你玩什么花样，我很 清楚啦！魔术师会跳出来拆穿。</p>
+<p>　 　魔术师与假的特异功能两者之间，有哪些很重要的不同点？魔术师是正当的一个职业，你们也知道我玩的是假的，我也知道这些是假的，我们大家都知道是假的， 但是我用一些很奇特的花招，让你们看得目瞪口呆，这里面是一种有娱乐性，但是大家都知道是假的，只是说我们要看他很技巧的一种方式，等于说就是颠倒你的视 觉，这其中有没有欺骗的心？大家都很真诚、很如实，所以这里面没有欺骗的心。</p>
+<p>　 　但是那一种以特异功能作幌子，不是真的，却强调是真的，这里面是什么样的心态？就是有欺骗的心态，因此这是很重要的一个不同，魔术师他就看不惯，明明知 道你这些骗术，但是你却不老实，所以就要把他拆穿。所以，这让我们再更深层去体会，多少宗教师用类似的手法在欺骗众生，知道吗？因此大家要有求真求证的精 神，只要我们本身做不到的事情，他说有多高的神通奇迹，我觉得都要保留，不要一听了、一看了之后，就盲信迷信，大家要有求真求证的功夫。</p>
+<p>　　“轮回是否有现世当下，以及前世、来世之分？”事 实上，我们不要把轮回又当作很玄的解释，只要你还没有解脱，我们每天都是在贪、嗔、痴里面头出头没的轮回，你每天的心情，苦受啊！乐受啊！不苦不乐啊！有 时候心情很高兴啊！有时候心情又掉入谷底啊！心情很不好、很郁闷，生气、暴怒，就是落入地狱啊！当你的心情很安祥、很祥和，心胸很开朗，你的心胸无限，当 下就是在天堂。所以，不要把轮回想得很抽象，你每天的情绪都是在起起浮浮，就是一种轮回。</p>
+<p>　　“转世活佛与弥勒菩萨，是否也是人心所造？”有些方面，我们不便于说得太明，只能够说有什么样的众生、市场需求什么，就会有这样的一种商品出来，我们点到为止就好。</p>
+<p>　　“佛说法灭尽经，是否为伪经？”所 谓的真伪方面，我们不去做一个论断，如果我们说这是伪经，认为真的人，他就会跟你吵。所以，真伪方面，我们不去做论断，只是说这一部经有没有帮助你见法？ 有没有帮助你解脱自在？如果没有，这部经我们可以把它保留，这算是属于一种方便法。如果这部经能够帮你见到法、解脱自在，就没有真伪之分，它就是阐述著宇 宙的真理实相，帮助我们解脱自在。因此有关真、伪方面，不在于斤斤计较，而是在于有没有真的帮助我们。</p>
+<p>　　“正业、定业如何不得转？”正 业、定业不能转，是后来的一些说法，我们大家不要被正业、定业局限住了，只要大家能够归零，你就是无限的可能。你能够归零，身心能够柔软，你就有无限的可 能，这一生这一世就有可能解脱自在。如果你去抓著很多过去的观念，抓著很多过去的包袱，于是你所抓的包袱把你拖拉著，你认为自己命苦啦！业力重啦！那是因 为你抓著不放，只要你愿意放、随时归零，都是有无限的可能。所以，不要被那些种种业束缚住了，《阿含经》里面很少讲定业那些，都是讲怎么样让你的身心柔软 下来，现在回到当下来，好好去体会法，好好去现见法，现世解脱自在。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../khwcfszj/ahjtdcdzdb/qjszs5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../khwcfszj/ahjtdcdzdb/twzf7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../khwcfszj/ahjtdcdzdb/qjszs5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../khwcfszj/ahjtdcdzdb/twzf7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

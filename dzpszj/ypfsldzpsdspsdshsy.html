@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>演培法师论地藏菩萨─地藏菩萨的深弘誓愿  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="演培法师论地藏菩萨地藏菩萨的深弘誓愿"><a class="header" href="#演培法师论地藏菩萨地藏菩萨的深弘誓愿">演培法师论地藏菩萨─地藏菩萨的深弘誓愿</a></h1>
+<p>　　　　演培法师论地藏菩萨（之一）</p>
+<p>　　　　地藏菩萨的深弘誓愿　　　　演培</p>
+<p>　　　　佛历二五一七年八月十日讲于新加坡佛教青年弘法团</p>
+<p>　　诸位居士！今天来到贵团和诸位讲点佛法，可说是个极为难得的殊胜因缘，本人特别感到高度的欢喜！贵团自成立以来，对于法轮的推动，表现得相当积极，可以想见诸位是怎样的热忱为法！在这末法时代，世界人心陷溺，已经到了难以想像的顶点，假定不以佛法来拯救，人类未来的前途，真将是不堪设想！是以如何推动如来法轮，将人类从危险边缘，迅速的导向安全点，该是每个佛子应有的责任。诸位是一群在家学佛的青年，皆有自己本位所应做的事业，能够每周抽出宝贵的时间，作自修化他的工作，实是极值得赞美的！</p>
+<p>　　现在是中国夏历的七月，亦是佛教最忙的一月。因为，十五的盂兰法会，固然是在这月举行，三十的地藏法会同样是在这月举行，所以僧俗弟子为此就大忙特忙起来。不过这个忙，在佛教来说，是有深长意义的，因为盂兰法会和地藏法会，都以提倡孝道为其主题，而中国又是个极为重视孝道的国家，所以参加这两大法会的特别多。这两大法会所以说它以提倡孝道为其主题，因这两大法会所依据的盂兰盆经及地藏本愿经，向被认为是我佛为诸弟子所说的孝经。孝是世出世法所共尊重，放诸四海而皆准的，亦为任何人不可废。</p>
+<p>　　当知孝顺现在的父母师僧，济拔过去父母及诸宗亲等，为做人应有的基本德行。如忽略了这点，人之所以为人，是就成为问题。诸位每周集合到这里，虔诚的诵念地藏经，既是作为个人的修持，亦是超荐过去的宗亲，可说是极为适合时宜的。因此，今我要对诸位讲的一个题目是：「地藏菩萨的深弘誓愿」。</p>
+<p>　　愿在佛法行者，特别是度生的菩萨，可说是非常重要的，亦是绝对不可少的。如进一步说，不特学佛的人需要有愿，就是在俗的人亦要有愿。佛法所说的发愿，就是儒家所说的立志。发愿或立志之所以重要，从事实上去观察，不难明白的发现，就是吾人不论做什么事，细小的事也好，巨大的事也好，世间的事也好，出世的事也好，均非具有坚定不移的崇高志愿不可，否则的话，那就什么事都做不成。我们不妨试想一想：想要做大事的，那个不希望自己的事业有所成就？发心学佛的，那个不希望自己得以了生脱死？求生净土的，那个不希望自己得以往生莲邦？可是真能达到目的的究有几人？问题就在志愿的有无和是否坚固，有志愿而又坚固的，必能达到所要达的目的。</p>
+<p>　　愿，古德解说为：「希须乐欲之意，志求满足之称。」论其自体，在大乘说，就是菩提心，亦即法华经所说的一切智愿。所以有时就直接的说为菩提愿，是指内心热烈的欲求而言。学佛的菩萨，是以大觉为所追求的最高目标；是以度生为所担负的最大任务。但这都不是茍且所能从事的，必须具有真诚的愿欲，才能切实的努力去行。如诸菩萨在菩提道上，精进勇猛无懈无倦的迈进，目的无非是为满足自己所发的心愿，假定没有愿力在鞭策著自己，要想不惜牺牲生命的上求下化，那是确实很难做到的。有了愿力推动著自己前进，在菩提大道上，不论遇到怎样困难和阻力，都可以坚定的志愿，予以强有力的克服。是以佛法行者，特别是大乘菩萨，当其决定要踏上菩提大道时，没有不立其深弘誓愿的。</p>
+<p>　　智度论中曾讨论到愿的不可缺少：「一切菩萨所修的行业，都是极为清净，以此清净的业因，必得清净的乐果，为什么还要立愿？譬如种田的人家，只要勤劳的耕耘，到了收割的时期，自然会得到榖子，那里说要发愿才会有收成？这是不能相提并论的！当知作福如没有愿，是就绝对无所树立。唯有以愿为导御，所行始能有所成。作福尚且要愿，何况是庄严佛界的大事？庄严佛界的这件大事，不是独行功德所能完成的，一定要有愿力的资助，如牛有股力量可以拖车，但若没有御者的驾御，要想有所到达是不可能的。当知庄严佛界的大愿，也是如此。所修的福德如牛，所发的大愿犹如御者，唯有以愿驾御福德，才能到达无上佛果。」华严经卷第七十七说：「一切佛事，从大愿起」，更可看出愿的重要性。</p>
+<p>　　省庵大师的劝发菩提心文劈头就说：「入道要门，发心为首；修行急务，立愿居先。愿立则众生可度，心发则佛道堪成。茍不发广大心，立坚固愿，则纵经尘劫，依然还在轮回；虽是修行，总是徒劳辛苦。」从这几句的叙说中，发心及愿力的重要，明白的透露了出来。以「愿立则众生可度」言，事实确是如此的。世出世间最大的难事，我以为无过于是度生，因为所要度的众生，不特有无量无边的那么多，而且根性亦是各各不同的，你要他这样，他偏要那样；你要他那样，他偏要这样，很难个个如法如律的，照著菩萨的指示去做。因为秽恶世界的众生，诚如地藏菩萨对佛说的：「举心动念无非是罪，脱获善利多退初心，若遇恶缘念念增益。」又说：「习恶众生，从纤毫间，便至无量。」阎罗王众赞叹品说：「然诸众生脱获罪报，未久之间又堕恶道。」又说：「自是阎浮众生，结恶习重，旋出旋入。」教化像这样的众生，如没有坚定的志愿，怎么能够继续下去？所以唯有立愿，始可度诸众生。</p>
+<p>　　立志发愿固是每个菩萨所应具有的，但任何一位菩萨的愿力，没有地藏菩萨的愿力来得深重。地神护法品说：「是地藏菩萨摩诃萨，于诸菩萨誓愿深重……如文殊、普贤、观音、弥勒，亦化百千身形度于六道，其愿尚有毕竟。是地藏菩萨教化六道一切众生所发誓愿劫数，如千百亿恒河沙。」不特没有毕竟的时候，亦是超过其他所有菩萨的，所以称为大愿地藏王菩萨。而其大愿怎样，现从地藏经中举出几种来说明，就可知道地藏菩萨的愿力弘深。</p>
+<p>　　一、忉利天宫品说：「时长者子因发愿言：我今尽未来际不可计劫，为是罪苦六道众生，广设方便尽令解脱，而我自身方成佛道。」这是长者子在师子奋迅具足万行如来前所发的度生大愿，一直到释迦出世的时代，甚至到今天的末法时代，他要度众生的心愿，一些也没有退转，仍旧努力做菩萨，不愿立刻去成佛。</p>
+<p>　　二、忉利天宫品又说：「婆罗门女寻如梦归，悟此事已，便于觉华定自在王如来塔像之前，立弘誓愿，愿我尽未来劫，应有罪苦众生，广设方便使令解脱。」这是婆罗门女在觉华定自在王如来塔像的前面，所立的这个弘誓大愿，以报觉华定自在王如来，救度她的母亲，脱地狱苦而得上生天堂的大恩德。</p>
+<p>　　三、阎浮众生业感品说：「一王发愿早成佛道，当度是辈令使无余；一王发愿若不先度罪苦众生，令是安乐得至菩提，我终未愿成佛。」发愿度生有两种不同的态度：一种是佛的发愿，就是自己先成了佛，然后再倒驾慈航，入苦海中度众生；一种是菩萨发愿，就是先度尽了所有众生，然后自己方成佛道。现在这两位小国王的发愿不同，就是如此。经中续说：「佛告定自在王菩萨：一王发愿早成佛者，即一切智成就如来是；一王发愿永度罪苦众生未愿成佛者，即地藏菩萨是。」菩萨一切修行，都以愿为先导，你是怎样的发愿，就会怎样的去行。自己愿先成佛，自然就直向佛道前进而得先成佛道；自己愿后成佛，自然就以度生为唯一的要务，使得很多众生都已解脱或证正觉，而自己仍在生死中度生。</p>
+<p>　　四、阎浮众生业感品又说：「十方诸佛慈哀愍我，听我为母所发广大誓愿：若得我母永离三途及斯下贱，乃至女人之身永劫不受者，愿我自今日后，对清净莲华目如来像前，却后百千万亿劫中，应有世界所有地狱及三恶道诸罪苦众生，誓愿救拔，令离地狱恶趣畜生饿鬼等，如是罪报等人尽成佛竟，我然后方成正觉。」这次发这样的大愿，为使大愿的圆满实现，特求恒河沙数世界的诸佛，慈悲哀愍于他，助成他的愿心，更是证明他的愿力广大。</p>
+<p>　　如上四次所发的愿心，都是要度尽六道众生先成佛，然后自己方成佛道，是以讲到地藏的大愿，佛教界把它总结说成：「地狱未空，誓不成佛；众生度尽，方证菩提」，以显示地藏愿力的广大无边。因为无量无数各类不同的众生，要想一个不遗的度尽，固是很难做到；就是要想空诸地狱的所有罪苦有情，亦不是如所说的那样简单容易。</p>
+<p>　　地藏经观众生业缘品，形容堕入无间地狱众生难以出离说：「动经亿劫，求出无期，此界坏时，寄生他界，他界次坏，转寄他方，他方坏时，展转相寄，此界成后，还复而来。」诸位想一想看：「无间罪报，其事如是」，而堕地狱的众生，犹如大地之土那样的多，而从地狱出来来到人间的，又如爪上之尘那样的少，说是「地狱未空，誓不成佛」，其愿力的深重宏伟，岂是一般菩萨所能及？</p>
+<p>　　从上种种的分析，不论就那角度说，愿力确是极为重要的。无论做什么有益人群及诸众生的事，如没有愿力的支持，必会虎头蛇尾，不能彻始彻终。佛法所说的发愿，在向菩提大道的前进中，好像现在机器的发动机，不论是部怎样精美优良的机器，亦不论你是一个技术多么高超的技师，如果没有发动机，要想使这部机器开动，那是决不可能的。吾人发心学佛，如何树立志愿，如何开动这发动机，该是最极重要的一大课题。志愿这一发动机，一旦被你开动了，不但可以立即开步走，就是中途遇到怎样的困难，亦会被你一一克服，决不致于退转下来，成为一个败坏菩萨。</p>
+<p>　　发心菩萨终于得成佛道，因素固然是多方面的，但以愿力为其先导，则是大乘经中所一再强调的。做菩萨而不发愿，说是能成就菩提，将是一不思议事。所以真正的菩萨，不但要发通愿，还要发各别愿。地藏菩萨所发的愿心，所以称为深弘誓愿，因他早于尘点劫前，就以荷负六道罪苦众生为己任，并愿恒处幽冥界内，度化地狱中的罪苦众生，或使他们已经成佛，或使他们暂住声闻缘觉，而自己仍然忍苦忍难的在地狱中度生，直至地狱众生空了，并使地狱庄严起来，然后自己才成佛道。此真所谓「虚空有尽，我愿无穷」的大愿。</p>
+<p>　　现在的时代是进步了；人类的生活是提高了，一般说来，什么似乎都比过去好。实际说来，人类的苦难现在比过去多；人类的危险现在比过去大，不但做人一点大意不得，而人类需要佛法的滋润，较之过去任何一个时代尤为殷切。所以我望诸位效法地藏的发广大愿，以佛法去度化一切众生，特别是众生中的人类。最后请大家同声称念南无大愿地藏王菩萨！（宽严记）</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../dzpszj/hyfsldzpspqjzdljsdzj.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../dzpszj/ypfsldzpsfdzzdyxdzzdx.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../dzpszj/hyfsldzpspqjzdljsdzj.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../dzpszj/ypfsldzpsfdzzdyxdzzdx.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

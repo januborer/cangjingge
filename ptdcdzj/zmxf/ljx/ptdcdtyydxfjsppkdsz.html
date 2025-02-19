@@ -1,0 +1,497 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《菩提道次第体验引 导修法教授》(帕绷喀大师　造)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="菩提道次第体验引-导修法教授帕绷喀大师-造"><a class="header" href="#菩提道次第体验引-导修法教授帕绷喀大师-造">《菩提道次第体验引 导修法教授》(帕绷喀大师　造)</a></h1>
+<p>　　　　菩提道次第体验引导修法教授</p>
+<p>　　　　　　　　　　　　　　　　　　帕绷喀大师　造</p>
+<p>　　　　　　　　　　　　　　　　　　仁钦曲札　译</p>
+<p>　　　　第一章　教诫观察修之重要及其修法扼要</p>
+<p>　　上师善慧能仁金刚持，父子传承诸师加持力，</p>
+<p>　　我与一切传承弟子众，自心与法融合求加持！</p>
+<p>　　已获难得利大暇满身，且见现世八法似稚嬉，</p>
+<p>　　由是一心成办久乐藏，如是诸友善哉唉嘛霍！</p>
+<p>　　我等虽能多闻与讲习，亦获开演百论之辩才，</p>
+<p>　　反观自心丝毫无长进，因无解证融合观修故。</p>
+<p>　　闻矣学矣解矣但尔许，无观察修所生猛利信，</p>
+<p>　　暇满、无常、厌离（出离心）、闻所生（即闻所成慧），仅伺察意（七种心识之一。全无凭借任何经验、理由以实际断除增益之定知，而一概从新耽著真实自境之计度心。七种心识中，除现量与比量外，其他五种包括「伺察意」在内，均非「量」，终当消失故，</p>
+<p>　　于彼之後若不作引发，思所成之具量诸体验，</p>
+<p>　　前已消失後者未生间，多数行人渐成教油子。</p>
+<p>　　成恶习後虽闻道次第，以及其加持力上师语，</p>
+<p>　　亦难调伏心念转鄙陋，故当勤施深法免此过。</p>
+<p>　　此复由彼上师语加持，及自具量听闻所出生，</p>
+<p>　　闻所成之觉受如何妙，亦当郑重继生思所成。</p>
+<p>　　若谓如何生起思所成，即于彼彼随一所缘类，</p>
+<p>　　以诸犀利教理从各方，作观察修生起体验法。</p>
+<p>　　如立「上师即佛」为所修，次当数数运用犀利理，</p>
+<p>　　以求成立上师即是佛，即于引生此之定解法，</p>
+<p>　　再再努力修习谓「观修」</p>
+<p>　　如是暇满、无常、出离心，发心、正见等诸所缘类，</p>
+<p>　　犀利观修生定解为主。</p>
+<p>　　如是观力所引思所成，纵然体验仅露其端倪，</p>
+<p>　　然亦免成教油子之险，坚固觉受基础将建立，</p>
+<p>　　故当学习善巧观修法。</p>
+<p>　　此从文殊上师（宗喀巴大师），语密出，惟是自宗别法观察修，</p>
+<p>　　余宗派中少分亦未说。</p>
+<p>　　于《菩提道次第广论》义，若细观察复作思惟者，</p>
+<p>　　观修原因、如何修法等，自宗殊胜别法获定解。</p>
+<p>　　单仅温习所缘忆念修，非是此中所谓观察修，</p>
+<p>　　此复心中默记诸文句，思惟其义亦非观察修。</p>
+<p>　　道之体性、次第、数量等，牢记心中回忆体如何，</p>
+<p>　　次第如何、数量又如何，亦忆念修非是观察修。</p>
+<p>　　当知观察修义如前说，立一所缘类成所修本，</p>
+<p>　　复次以诸生起定解法，甚深教理数数应观察。</p>
+<p>　　譬如我等于诸悦意色，因何而美数数思惟时，</p>
+<p>　　生起猛利贪欲、于贪境，作观察修故增现前贪。</p>
+<p>　　如是再再思惟某仇敌，如何于自作诸损害理，</p>
+<p>　　嗔恚渐增、此即于嗔境，作观察故嗔恚觉受盛。</p>
+<p>　　如是改弦易辙于善品，数数观察彼彼原因时，</p>
+<p>　　彼彼善心觉受即增长，一如先前贪欲、嗔恚理。</p>
+<p>　　修此等时教理何最利，尤其能令自心作转变，</p>
+<p>　　发起觉受最犀利之理，即应数数思惟反覆修。</p>
+<p>　　不断思惟一种能立时，如闻母逝噩耗自心中，</p>
+<p>　　悲伤愈增感觉生起者，是达扼要之相再用功．</p>
+<p>　　数数思推一种能立时，变成似熟悉者、自心中</p>
+<p>　　不生感动、此即未达要，亦是成教油子前兆故，</p>
+<p>　　猛利启请上师并积净（积福、净罪），次复修所缘相求达要。</p>
+<p>　　或有未修亦于此等时，信心以及无常、出离等，</p>
+<p>　　忽然猛力生起时心念，生真证德心生大欢喜，</p>
+<p>　　稍后如前感觉全无时，以为退失而恼众所见。</p>
+<p>　　此乃暂时有限之现象，并非生起真实之证悟，</p>
+<p>　　是故生时不应起慢心，退时自亦不必起烦恼，</p>
+<p>　　然则此乃本尊与上师，加持相故当求令坚固。</p>
+<p>　　真觉受者是由辨别慧，数数修习信与无常等，</p>
+<p>　　体验依次生起乃比量，是故坚固不退非如前。</p>
+<p>　　此复从初依止知识法，乃至发心之间各所缘，</p>
+<p>　　最初但能了解「通达」修；复从依止知识法开始，</p>
+<p>　　至发心生「有励力觉受」；复次如前再修「无励力」，</p>
+<p>　　觉受生起妙法应了知。</p>
+<p>　　修时生起修即能生想，熟悉所缘名为「通达」相；</p>
+<p>　　尚需多种教理作思惟，如是能生觉受、不思时，</p>
+<p>　　不生此名「有励力觉受」，乃至思与不思无差别，</p>
+<p>　　何时思推随即朗然起，此即「无励力之觉受」相，</p>
+<p>　　犹如自心生贪不需修，如是自心解与体验合，</p>
+<p>　　此时现起证悟之曙光。</p>
+<p>　　再者某些所缘易生起，仅七日许勤修即可生，</p>
+<p>　　或需数日数月方生起，或虽终年修习亦难生。</p>
+<p>　　例如「死亡决定」易生起，「死期不定」却极难生起，</p>
+<p>　　「死时除法余皆无益」理，极易生起其余悉如是。</p>
+<p>　　于易生者不需强拖延，生已即当改修次所缘；</p>
+<p>　　于难起者不作阻滞想，经年累月耽延需忍耐，</p>
+<p>　　乃至不生体验勤修习。</p>
+<p>　　前前所缘觉受已生者，以及後後有待生体验，</p>
+<p>　　除忆念修不需用其他，全力观修当前所缘类。</p>
+<p>　　　　第二章　教诫依止善知识理之体验生起法</p>
+<p>　　如是观察修及修要诀，如何及修法等善示已</p>
+<p>　　若谓最初作何观察修，以及如何具体修习法？</p>
+<p>　　当知总示三科（菩提道次第引导的前三大科：1、为显其法根源净故开示作者殊胜；2、为于教授起敬重故开示作者殊胜；3、如何闻说具二殊胜法之理）、加行法（六加行），</p>
+<p>　　不需作观察修故最初</p>
+<p>　　应从「依止知识法」开始。</p>
+<p>　　此复「依止利益」约七日，「不依倒依过患」一周许，</p>
+<p>　　若善思惟即可令心变。</p>
+<p>　　复次「根本修信」之一科，虽极重要生起却极难，</p>
+<p>　　滞留于此数月或数年，不应怯弱以为太长久，</p>
+<p>　　乃至心未转变一心修。</p>
+<p>　　此复若于每座修多科，恐成忆念修非观察修，</p>
+<p>　　故于每座但勤修一科。</p>
+<p>　　例如此段四科之第一，「上师是佛金刚持所许」</p>
+<p>　　单立此项为所修目标，运用犀利能立之教理，</p>
+<p>　　乃至未生定解整座中，精进修习、今日如是修，</p>
+<p>　　明日修此、後天亦修此，本月修此、下月亦修此，</p>
+<p>　　如是未发体验持续修，体验生已转入次所缘。</p>
+<p>　　已生觉受忆念修即可，体验未起纵修次所缘，</p>
+<p>　　前者未起後者不生故，当于前者励力发体验。</p>
+<p>　　此节觉受生已当转入，「诸佛事业作者是上师」</p>
+<p>　　于第二科如前勤修习。</p>
+<p>　　此科觉受生已再接修，「即于现在诸佛与菩萨，</p>
+<p>　　仍在利益有情」之一科。教理与师教授善配合，</p>
+<p>　　猛力观察修习如今日，明日、後日以及日、月、年，</p>
+<p>　　乃至未发体验持续修。</p>
+<p>　　引发体验见师实即佛，此较其余各科为最要，</p>
+<p>　　故当于此励力勤修习。</p>
+<p>　　此科觉受生已转次科，「自所见相无法决定」者，</p>
+<p>　　以观察修努力勤修习。</p>
+<p>　　如是修习力故于上师，真实见为诸佛之体性，</p>
+<p>　　自之上师与诸佛二者，感觉犹如和合为一时，</p>
+<p>　　即生依止知识法证悟。</p>
+<p>　　如是根本修信之四科，发体验已复于「念师恩」，</p>
+<p>　　四科依次修习生觉受。</p>
+<p>　　「加行令师喜」者可略思。</p>
+<p>　　　　第三章　教诫令进程迅速修法奇特教授</p>
+<p>　　如是依师法中信与敬，各节科判觉受生起已，</p>
+<p>　　暇满开始乃至发心间，次虽应当依次发体验，</p>
+<p>　　然因依师法中「师即佛」，根本修信一科觉受者，</p>
+<p>　　不经长年观修难生起，为令觉受进程速疾故，</p>
+<p>　　修法奇特教授如是行：</p>
+<p>　　每日一座修习依师法，各科所缘修法均如前；</p>
+<p>　　一座自暇满起依次修。通过观察发起体验时，</p>
+<p>　　一则依师法之觉受增，二则暇满、无常、痛苦等，</p>
+<p>　　下、中土道体验依次生，依师法之一方究竟时，</p>
+<p>　　下、中觉受亦达高上位。</p>
+<p>　　如是若能旁求见观察（空性见），「三主要道」体验同时增、</p>
+<p>　　同时圆满道程极速疾。</p>
+<p>　　譬如核桃、杏与葡萄种，同时种植三者之树干，</p>
+<p>　　树枝、花叶亦将同时长，最终三者果实可同享。</p>
+<p>　　是故每日座或座之分，各各分为三段之一分，</p>
+<p>　　修习依止善知识之法；一分从暇满始至发心，</p>
+<p>　　依次转修各科生觉受；一分于甚深见勤观修。</p>
+<p>　　　　第四章　于暇满生体验法</p>
+<p>　　如是分为三段修习时，依止善知识法如前修，</p>
+<p>　　自暇满始发起体验规：</p>
+<p>　　第一「认识暇满之体性」，当思「若生无暇将如何，</p>
+<p>　　目前未如是生堪庆幸」，非是空话、顾他当反观，</p>
+<p>　　现自具足以犀利观修，再再思惟定与相续合，</p>
+<p>　　如贪获宝感觉喜洋洋，即生认识「暇满」之证悟。</p>
+<p>　　复次接修「利大」所缘类，以诸甚深教理之观察，</p>
+<p>　　数数分析考察、若感觉，刹那无益虚度亦可惜，</p>
+<p>　　此时即生「利大」之觉受。</p>
+<p>　　复次转入「难得」所缘类，以诸猛利观察修习故，</p>
+<p>　　若觉纵然刹那之推延，亦如倾注金粉于水中，</p>
+<p>　　极感可惜对此难忍受，心中即生「难得」之证悟。</p>
+<p>　　　　第五章　发起无常体验法</p>
+<p>　　复次接修「无常」所缘类，最初「不念死之六过患」，</p>
+<p>　　惟修七昼夜许即可生。</p>
+<p>　　「六种念死利益」约一周，修习定能令心作转变。</p>
+<p>　　复次「死决定」之三种因，彼之第一「死主决定来，</p>
+<p>　　无缘能令却退」之一科，无论持续数日或数月，</p>
+<p>　　亦当励力勤作观察修。</p>
+<p>　　该科体验生已转次科，「寿无可添不断减少」者，</p>
+<p>　　承接前科立为所应修，以观察修触动彼要害。</p>
+<p>　　如是觉受生已修次科，「生时亦无修法之闲暇」，</p>
+<p>　　于此道理勤作观察修。</p>
+<p>　　尤其修习「死相」一科者，乃是奇特无比念死诀，</p>
+<p>　　由此容易生起念无常。</p>
+<p>　　此复法会开示科判中，讲于修死九种因相后，</p>
+<p>　　修时在此间修为要诀。</p>
+<p>　　彼时以三因相决定死，当思死殁次第为何焉，</p>
+<p>　　修习令生恐惧战惊掠。</p>
+<p>　　依照拙著《劝念无常歌》（即本书附录五：《策励自他一切人等痛念无常歌·心匙》），</p>
+<p>　　于其文义作诸观察修，再再思惟自身死情形，</p>
+<p>　　将生怖畏不复能安坐。</p>
+<p>　　如是修习死亡似现前，犹如降临自身极可畏，</p>
+<p>　　诸死殁相明了如现前，心惊胆战如是觉受出，</p>
+<p>　　即是生起「死决定」证量。</p>
+<p>　　复次「死无定期」根本中，第一因相「寿量不决定」</p>
+<p>　　以观察修集中修此科，此时此刻死亡不降临，</p>
+<p>　　如是保证非有之道理，以观察修多方围绕修。</p>
+<p>　　忆念「死无定期」之教授，甚深秘密要义为如下：</p>
+<p>　　自身亲眼目睹或耳闻，有关他人猝死寿无定，</p>
+<p>　　死缘众多或正行走死，或正食时或正谈话死，</p>
+<p>　　或正言笑或正奔跑死，或正角力比试强弱死。</p>
+<p>　　此刻为人彼刻成尸体，此时存在彼时成乌有，</p>
+<p>　　此等本性数数应思惟。</p>
+<p>　　「我亦具足如是死本性，此时此刻不死岂能定？</p>
+<p>　　今夕不成尸身岂能定？今夕不作超荐岂能定？</p>
+<p>　　今夕不送尸林岂能定？」如是以犀利理作观察，</p>
+<p>　　自身何时纳入阎罗口，遭其獠牙噬咬不决定；</p>
+<p>　　又如自己为宿仇所囚，身陷囹圄弑期难预料，</p>
+<p>　　如是能念「不定」体验生。</p>
+<p>　　复次转入「死缘」所缘类，修习死缘众多活缘稀。</p>
+<p>　　若生觉受当修次所缘，「身命犹如水泡极脆弱」，</p>
+<p>　　以观察修励力勤思惟。</p>
+<p>　　如是死无定期三因相，于彼修法触及要害故，</p>
+<p>　　将念「此时不死难保证」，卧时将念「明晨能起否？」</p>
+<p>　　起时将念「今晚能卧否？」，去时将念「能返原地否？」</p>
+<p>　　返时将念「下次能去否？」，当念「明日后世何先至？」</p>
+<p>　　当念「糌粑与命何先尽？」，当念「茶叶与寿何先无？」</p>
+<p>　　当念「此刻不走难决定」，「无暇！无暇！」心生急迫感，</p>
+<p>　　如是即生「寿无定」觉受。</p>
+<p>　　念「死决定」虽稍容易生，「死无定期」之心难生起，</p>
+<p>　　不应考虑是否久耽延，数日、数月、数年当持续，</p>
+<p>　　乃至心未转变专注修。</p>
+<p>　　此科觉受生已改所缘，此复「死时除却正法外，</p>
+<p>　　亲友财物身体均无益」，此三因相经日、经月修，</p>
+<p>　　死时除法无益了知已，无需再修即生觉受量。</p>
+<p>　　此者易生不需长时修，体验生时即迁次所缘。</p>
+<p>　　　　第六章　于恶趣苦生体验法</p>
+<p>　　复次说时修习恶趣苦，以及皈依建立分别释，</p>
+<p>　　修时各各恶趣所缘类，其後接修皈依为要诀。</p>
+<p>　　然于初发业者先别学，恶趣以及皈依所缘类，</p>
+<p>　　体验端倪出已、将二者，合并为一如是极有效。</p>
+<p>　　是故最初先修三恶趣，第一大热地狱「等活」苦，</p>
+<p>　　此复当发体验想出自身，现前生于该狱思诸苦，</p>
+<p>　　此刻现前降于自身上。</p>
+<p>　　若想「如是生者虽不妙，然此仅为想象故非真」，</p>
+<p>　　当思如是思惟虽非实，然自相续具有诸大力，</p>
+<p>　　能引「等活」造而未坏业，若遭触发转成具力「有」（十二因缘的第十支），</p>
+<p>　　决定堕入彼中毋庸疑。</p>
+<p>　　今但思惟尚起大恐惧，现前生于其中奈何之？</p>
+<p>　　当思如是痛苦能忍否？当思如是寿量能受否？</p>
+<p>　　如是已生相与决定生，二者轮流诚恳善修故，</p>
+<p>　　当下猛利希求救此苦，皈依处及解脱方便等，</p>
+<p>　　心神惶恐茶饭亦不思，此等强烈感觉出现时，</p>
+<p>　　即是生起「恶趣苦」证量。</p>
+<p>　　如是「黑绳」「众合」与「号叫」，以及「大号叫」与「热」「极热」</p>
+<p>　　并「无间」狱各别之痛苦—修法如前猛利而专一</p>
+<p>　　精进修习生起诸觉受。</p>
+<p>　　复次四近边狱与八种，寒冷地狱修法均如前，</p>
+<p>　　非如观看远处景象般，当想自身现前生彼中，</p>
+<p>　　及决定生、彼时所受苦，长久猛利难忍之大苦，</p>
+<p>　　降于自身情形猛力修。由是极难忍苦令心惊，</p>
+<p>　　如前心生刺痛无食欲，希求救苦皈依解脱法，</p>
+<p>　　猛力生起即此之证量。</p>
+<p>　　修习地狱苦之增进法：《念住经》（《圣正法念住经》）中所说地狱类，</p>
+<p>　　当勤读诵彼苦差别状，绘成图像于彼善观察，</p>
+<p>　　应思「我舍此身后无间，亦具如是苦性奈何之？」</p>
+<p>　　数数忆念即成胜增进。</p>
+<p>　　复次感觉自身如现前，生于饿鬼类与畜生中，</p>
+<p>　　虽然目前此事未成真，然能引业心中多如藏，</p>
+<p>　　不久决定受生必无疑，当思彼时我将如何之。</p>
+<p>　　设想自身现前受生于，饿鬼类与犬、驴等畜生，</p>
+<p>　　或是虫蚁鸟兽等类中，思彼行住威仪何能忍？</p>
+<p>　　此处亦当诵读《念住经》，所说饿鬼、畜生之苦状。</p>
+<p>　　如是修故若思「于当下，若能闭恶趣门岂非善？</p>
+<p>　　现具关闭方便岂非善？」若能速速实施精进法，</p>
+<p>　　即是生起体验之标准，如同阿难二侄之故事。</p>
+<p>　　　　第七章　学习皈依</p>
+<p>　　如是三恶趣之诸痛苦，体验生已发起希求心，</p>
+<p>　　欲获能救此苦之皈依，当思彼即三宝及功德。</p>
+<p>　　「可皈依之四种因相」者，思惟一周即可令心转。</p>
+<p>　　复次思惟佛之身功德，以及语功德与意功德，</p>
+<p>　　事业功德略如《道次第》，广如二《庄严》（即《现观庄严论》和《大乘经庄严论》）与《宝性》等，</p>
+<p>　　诸大教典之中所说者，根据自心能力善修习。</p>
+<p>　　于三宝生不退转信心，猛力增长即此之证量。</p>
+<p>　　如是法功德与僧功德、略如《道次》广如诸大论，</p>
+<p>　　所说内容修习能观见，自宗大师、教法及随学，</p>
+<p>　　三宝功德、生起难劫夺，猛利信心此即觉受量。</p>
+<p>　　于此生体验已修次科，「了知三宝差别」之各节，</p>
+<p>　　发觉受故三宝相互间，能作明确区别即证量。</p>
+<p>　　生体验已接修次所缘，名为「由承许门皈依量」：</p>
+<p>　　自思「上师佛为皈依师，法宝即是真正之皈依，</p>
+<p>　　僧伽乃是成办皈依伴」，猛利至诚承许复心念：</p>
+<p>　　「无余皈依大师助伴故，决定惟有三宝」即证量。</p>
+<p>　　生体验已转入次所缘，「不言有余之门而皈依」：</p>
+<p>　　「惟我大师佛陀之教法，乃是求解脱者之津梁，</p>
+<p>　　由六别法之门而超胜：其余宗派大师及教法，</p>
+<p>　　苯波外道世间天神等，佛法之外其他师与教，</p>
+<p>　　由六别法之门而下劣。」善思惟故自宗之大师，</p>
+<p>　　彼之教法及随学三者，方堪皈依余皆非皈依，</p>
+<p>　　如是定解至诚而生起，由是希求皈依余等心，</p>
+<p>　　少分亦不生起为证量。</p>
+<p>　　复次「皈依功德」约七日，「皈依学处」亦修一周</p>
+<p>　　可令心变如是当努力。</p>
+<p>　　皈依所缘体验之发起，不需化费太久时间故，</p>
+<p>　　闻思诸大教典所说义，与修配合汇集三者行。</p>
+<p>　　三宝功德广大如虚空，亦如恒河沙数难计算，</p>
+<p>　　复如大海深邃难测度，窥见少分功德生信心，</p>
+<p>　　此福三界为器犹为小，是故于此努力切实修。</p>
+<p>　　　　第八章　恶趣苦与皈依诸别法合修法</p>
+<p>　　如是思惟三种恶趣苦，详念三宝功德之二者，</p>
+<p>　　各别觉受妥善发起时，次当合并此二而皈依：</p>
+<p>　　依于何因而作皈依者？即是怖长恶趣苦折磨；</p>
+<p>　　及于能救此苦之三宝，发深忍信依此之二因，</p>
+<p>　　至心承许三宝为依怙，亲友、希冀处即皈依体。</p>
+<p>　　倘若自身堕于恶趣中，不得归处皈依亦不知，</p>
+<p>　　故应当下皈依为最要。</p>
+<p>　　此复怙主寂天之善说，《入行论》中「睁大惊恐眼」，</p>
+<p>　　乃至「请速除怖畏」云云，如论所说应当善思推。</p>
+<p>　　复次汇集彼等之别法，详广修法如下当实施：</p>
+<p>　　从自头顶上师之心间，放出皈依全境住面前，</p>
+<p>　　自身周围六道有情绕，思已首先修习「等活」苦，</p>
+<p>　　觉受现前恐惧身战栗。</p>
+<p>　　「不需畏此、能救皈依处，上师三宝面前空中住，</p>
+<p>　　彼等具有能力救此苦，是故我当至诚而启请，</p>
+<p>　　自他一切有情等活狱，其中痛苦当下愿救护。」</p>
+<p>　　如是想中多诵皈依偈。</p>
+<p>　　如是「黑绳」「众合」「号叫」等，余热地狱及四近边狱，</p>
+<p>　　八寒冷狱、饿鬼、畜生等，分成各科各节依次序，</p>
+<p>　　修习各各痛苦、各节后，接作皈依扼要甚稀有！</p>
+<p>　　如今皈依计数人虽多，然于皈依因与皈依体，</p>
+<p>　　功德差别、承许、不说余，此等建立懵然皆不知，</p>
+<p>　　惟是口头空话重数量，如是计数岂成净皈依？</p>
+<p>　　不能入于内道佛教门，如苦差般皈依有何用？</p>
+<p>　　是故欲勤计数念皈依，当于此间广修所缘类，</p>
+<p>　　如是精进方达彼扼要。」</p>
+<p>　　本文《菩提道次第体验引导修法教授　通俗明了直指其要》者，是应巴康雪朵寺扎贡却珠仁波切致书请求，由恩德无比最胜依怙金刚持帕绷喀大乐藏吉祥贤，于事务极其繁忙之间隙忽然赐予。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../ptdcdzj/zmxf/ljx/ptdcdljxfnhssj.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ljx/ldljxssbcdsz.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../ptdcdzj/zmxf/ljx/ptdcdljxfnhssj.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ljx/ldljxssbcdsz.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../ace.js"></script>
+        <script src="../../../editor.js"></script>
+        <script src="../../../mode-rust.js"></script>
+        <script src="../../../theme-dawn.js"></script>
+        <script src="../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>佛教的救世精神－觀世音菩薩（附　觀音菩薩的法門）（聖嚴法師）  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="佛教的救世精神觀世音菩薩附-觀音菩薩的法門聖嚴法師"><a class="header" href="#佛教的救世精神觀世音菩薩附-觀音菩薩的法門聖嚴法師">佛教的救世精神－觀世音菩薩（附　觀音菩薩的法門）（聖嚴法師）</a></h1>
+<p>　　　　观世音菩萨普门品导读</p>
+<p>　　　　　张火庆</p>
+<p>　　　　一、西方极乐世界的观音信仰及其反证</p>
+<p>　　俗云：「家家弥陀佛，户户观世音」，在中国民间的佛教信仰里，最为人们熟知、怀念、亲近的，应是阿弥陀佛与观世音菩萨，其在中国民众日常生活与精神寄托所代表的意义，颇为复杂，几乎成为多数人宗教经验的主要内容。尤其两晋以来净土根本经典的陆续译出，以及唐善导大师以后历代祖师大德对于净土理论与行持的阐扬，「净土法门」在佛教信仰界广受接纳，持名念佛被认为是三根普被，利钝全收、横超三界、带业往生的简捷易行道；西方极乐世界的纯净、和平、庄严、富足，使成为人们欣求皈依的方向。在这片安乐国土里主持接引众生大事的，有所谓「西方三圣」：阿弥陀佛是具足无量光明与寿命且曾发起四十八大愿的至尊导师；观世音与大势至则是以其本具功德愿力作为辅佐的两大菩萨。这种完美的组合，透过净土经论的弘传确定，成为信众们牢不可破的印象。现时流行的早晚课诵本，起首便称：「莲池海会，弥陀如来，观音势至坐莲台，接引上金阶，大誓弘开，普愿离尘埃。」明莲池大师所作回向文云：「临命终时，阿弥陀佛与观音势至，诸圣贤众，放光接引，垂手提携。」这是三圣合说，又有：「弥陀身心遍法界，观音观察三轮应，势至威光无边际，普择有缘归本国。」这是三圣分说。因此，在净土信仰里，我们所认识的观世音菩萨是被归属于西方极乐世界的成员，其事业与地位乃从阿弥陀佛分化而来，以「胁侍菩萨」与「补储大士」两种身分而庄严其名；也就是说，在净土经论里，观世音菩萨是「金冠顶戴阿弥陀如来而作其胁侍，助其教化，并且在弥陀灭后，继承其位为极乐教主」的。这种三圣结合的观念，较早出于《观世音菩萨授记经》，大意云：从前「金光明师子游戏如来」出世时，有「威德国王」治理世界，有时入于三昧，从其左右涌出二朵莲华，化生二童子──宝意与宝上──两人均已发心成菩萨，即观世音与大势至。弥陀入灭后，观音补位成佛，名为「普光功德山王如来」，而观音灭后，势至亦补位成佛。这部经说明三圣依次递禅的关系。其后又有《观无量寿佛经》第七观云：「无量寿佛住立空中，观世音与大势至二大士左右侍立」，第十三观附言观音与势至二菩萨辅助阿弥陀佛，普及一切教化。又有《请观世音菩萨消伏毒害陀罗尼经》云：「去此不远，正立四方，有佛名无量寿，有菩萨名观世音、大势至。恒以大悲怜悯一切……。」从这些经典所看到的三圣关系，极其完满地达成了摄受群机的思想：象征阿弥陀佛四十八大愿所成就的理想极乐世界；有了慈悲柔和、现世救济的观世音；以及有势力、以念佛三昧诱导归依的大势至；两菩萨胁侍递补，便可绵延无穷无尽，功德无边了。</p>
+<p>　　如上所说，作为阿弥陀佛的胁侍与补位而常住西方极乐世界的观世音菩萨，是净土思想全盛以后的附会。若根据经典反推，则除了前述三经外，尚有如《光世音授记经》、《观音授记经》、《悲华经》等，大致认为观音以及阿閦、宝相、势至、文殊、普贤等，诸佛菩萨，都是阿弥陀如来的因地之子。这当然是为了扩大弘扬净土信仰所作的整合附会，以阿弥陀佛极乐世界来盖括十方三世诸佛的功德并总收一切严净国土的殊胜，令所有众生得以最简易的方法──系念阿弥陀佛、一心不乱──即可当生成就，速出轮回、获无生忍，永不退转。但这种整合归纳的作法，乃属大乘后起的观念，并不能完全说明观音信仰的缘起及其流变；或者说，较早期的佛教经典里，阿弥陀佛与观世音菩萨，原本是立场不同、各自独立存在的；虽然后汉支娄迦谶译出的《无量清净平等觉经》已有提及无量清净佛（即阿弥陀佛）及卢楼恒菩萨（即观世音）的补储关系，但这关系的建立，并不能代表原始观音信仰的真相；而可能是从《大毗婆娑论》、《大智度论》、《阿育王传》、《般舟三昧经》中有关弥勒菩萨接续释迦牟尼佛补储的古老信仰而得到暗示导出的。在这里，有一些反面的证据如：提到阿弥陀佛的最古老与最重要的经典《般舟三昧经》与《阿弥陀经》，都没有出现任何有关观世音的事：其次是唐代译出的经典，如《金刚顶经》及《陀罗尼集经》则提倡阿弥陀佛是从观世音思想发展出来的；而《一切功德庄严王经》、《大方广曼殊室利经》则以执金刚神及观自在菩萨为释迦牟尼的左右胁侍；更可异的是《阿噜力经》则以观世音为本尊、势至及普贤为胁侍。从这些与西方三圣说全然对立或矛盾的经典来看，观世音菩萨原本即拥有独立自主，与诸佛同等尊崇的地位（天台智者大师《观音玄义》引经说明观音过去已经成佛，号正法明如来，而释迦佛为其弟子）。因此，我们可以另外从《普门品》、《华严经》、《首楞严经》及其他经典，或慧远《三宝感通录》、法显《佛国记》。玄奘《西域记》等文献看到作为完全独立的本尊而被崇拜信奉的观世音菩萨。</p>
+<p>　　　　二、观音信仰的原理及特性</p>
+<p>　　观音名号的梵文中译，较流行的有「观世音」与「观自在」两种。从译成名字的含义里，即已显示两种不同的取向：「观自在」是灵明清纯，无碍自在的宗教活动；「观世音」则是无碍的智慧与丰富的慈爱，浑然融合的宗教人格。但这两种译名及其涵义则统摄的形容了观音信仰的全貌。或者，再从经典上引据，则「观世音」一词，主要有两种说明：《首楞严经》所云菩萨最初修行的法门是「耳根圆通」，不向外闻声而反闻闻性，得到性定解脱：</p>
+<p>　　　初于闻中，入流亡所；所入既寂，动静二相，了然不生。如是渐增，</p>
+<p>　闻所闻尽；尽闻不住，觉所觉空。空觉极圆，空所空灭，生灭既灭，寂灭</p>
+<p>　现前：忽然超越出世出世间，十方圆明。</p>
+<p>而《法华经普品门》则说明菩萨慈悲济世的本愿是「寻声救苦」，只要受苦众生专心称念菩萨名号，而与彼愿力感应道交，便得救度：</p>
+<p>　　　若有无量百千万亿众生，受诸苦恼，闻是观世音菩萨，一心称名，</p>
+<p>　观世音菩萨即时观其音声，皆得解脱。</p>
+<p>这两部经所云，若分别而说，则前者是自利，后者是利人；自利为智，利人为悲。</p>
+<p>　　至于「观自在」的名义，主要以《般若波罗密多心经》为代表而总括前两经典的内涵：</p>
+<p>　　　观自在菩萨，行深般若波罗密多时，照见五蕴皆空，度一切苦厄。</p>
+<p>不论是自利与利人，悲智双运，都能得到大自在的不可思议解脱境界：</p>
+<p>　　这两种名号在于终极整合的意义上是一致的。但为了侧重说明菩萨「称名求助的济世本愿」的特性，我们选择使用「观世音」的名称，作为方便解说。首先，从有神论的客体上说，「观世音」意谓：菩萨能以佛的圆融智慧来观察十方世界，感应一切受苦众生求救之声音，随令解脱，均得离苦得乐，消灾免难。若从自性论的主体上说，「观世音」是所观的个体对象，能观的是众生内心的灵性；或者说：观音是众生的「自内证」，众生只要一心称名，即可得到与佛菩萨齐等的信念妙方，在音声中，「观音」自然出现。这种说法是把菩萨因地所发的誓愿看成众生内在的自性，众生念观音即是念自性，因此，众生的得救虽可说是菩萨的功劳，其实亦是自性的解脱；从大乘般若学而言，即所谓「菩萨清凉月，常游毕竟空；众生心垢净，菩提影现中。」或者「修习空花梵行，宴坐水月道场，降伏镜里魔军，大作梦中佛事。」这是能观与所观。主体与客体的融合，到后来都在般若智慧里泯绝名相的对立，成为《金刚经》所云：「如是灭度无量无边无数众生，实无众生得灭度者。」</p>
+<p>　　总结的说，从观音名号而生的信仰，不仅是「应现人性必然的希求所产生的慈悲本体」，也是「以行深般若波罗蜜为原流的智慧尊者」；在这个充满矛盾与苦恼的世间，担负起皈依真理者所感应的，不可思议的「勇猛性格」。因此，受到广土众民熟悉亲近的观世音菩萨，是表现出应现自在，广大灵感，寻声救苦的慈悲权化的形象：</p>
+<p>　　观世音菩萨即是以倾听现实苦恼众生至诚祈愿的音声，契机而现的绝对圣者，其特性如何？我们从大乘佛教的「菩萨」一词探其意涵，可以得知菩萨是依「誓愿」而存在，其生命本质就是为了有始有终的实现誓愿。几乎所有菩萨在因地修行时，都会发起弘誓大愿，而这些誓愿在内容与对象方面的差异，就成为他们分别努力的目标，并决定其道果成就的特性。古德云：「心真则事实，愿广则行深」，菩萨是为了利益众生而求法、而发愿、而苦行的，观世音菩萨的誓愿，在《普门品》偈颂有总赞云：</p>
+<p>　　　汝听观音行，善应诸方所；弘誓深如海，历劫不思议；侍多十亿佛，</p>
+<p>　发大清净愿。</p>
+<p>这里所谓「弘誓」、「清净愿」的具体内容如何？我们可以从悲智双运的观点，作如下的分说：</p>
+<p>　　　┌（1）与　乐──满　愿─┐</p>
+<p>　慈悲┤　　　　├现世利乐</p>
+<p>　　　└（2）拔　苦──救　难─┘</p>
+<p>　　　┌（3）权说法──现身度脱┐</p>
+<p>　智慧┤　　　　├出世道果</p>
+<p>　　　└（4）施无畏──观照般若┘</p>
+<p>这四项内容可说涵盖了大乘佛法的全部精义。有一首流传的诗赞颇能说明观世音信仰的形象：</p>
+<p>　　　观音誓愿妙难思，赴感应机不失时；救苦寻声磁吸铁，现身说法月应池；</p>
+<p>　　　尘刹国中咸事济，婆娑界内更垂慈；深恩穷劫莫能赞，冀愍群萌各护持。</p>
+<p>在相关的经典如《华严经入法界品》第二十七参云：</p>
+<p>　　　我住此大悲行门，常在一切诸如来所，普现一切众生之前，或以布施</p>
+<p>　摄取众生，或以爱语，或以利行、或以同事……或现色身……或现种种不</p>
+<p>　思议色净光明网……或以音声……或以威仪……我修此大悲行门，愿常救</p>
+<p>　护一切众生，愿一切众生离险道怖，离热恼怖……我以此方便，令诸众生</p>
+<p>　离怖畏已，复教令发阿耨多罗三藐三菩提心，永不退转。</p>
+<p>这段经文主要是从「权说法」与「施无畏」而言。稍后的其他经典亦有时专注于其中几项以表现观音菩萨誓愿的特性，如《悲华经》云：</p>
+<p>　　　愿我行菩萨道时，若有众生受诸苦恼恐怖等事，退失正法，堕大暗处</p>
+<p>　，忧愁孤穷，无有救护，无依无舍……汝观天人及三恶道一切众生，生大</p>
+<p>　悲心，欲断众生诸烦恼故，欲令众生得安乐故……。</p>
+<p>此段经文主旨与前经略同。而《十一面神咒心经》则云：</p>
+<p>　　　我今说之，欲利乐一切有情，灭一切恶故，心所愿称遂故。</p>
+<p>著重于「与乐满愿」。唯同经又说诵此咒百八遍者，现身获得「十种胜利」及「四种功德胜利」，其内容则包括全四项誓愿。</p>
+<p>　　另《千手千眼无碍大悲心陀罗尼经》云：</p>
+<p>　　　今当欲说，为诸众生得安乐故，除一切病故、得寿命故、得富饶故、</p>
+<p>　除灭一切恶业重罪故、离障难故、增长一切白法诸功德故、成就一切诸善</p>
+<p>　根故、远离一切诸怖畏故、速能满足一切诸希求故。</p>
+<p>并列举「十大愿」、「得十五种善生」、「免十五种恶死」等。把誓愿功德扩展到无所遗漏；尤其额外的是「临命终时，十方诸佛，皆来授手，欲生何等佛土，随愿皆得往生。」明显的是在净土思想流行后，顺应时势而补入的，此外，《首楞严经》以「身成三十二应，入诸国土」及「令诸众生，于我身心，获十四无畏功德」；郑重恳切的说明观音誓愿的殊胜。</p>
+<p>　　总结上引经典所述观音菩萨誓愿的特征是：</p>
+<p>　　1、没有界限的普遍性──普门示现神通力──救济一切灾难苦痛，满足所有愿望希求。</p>
+<p>　　2、除去当前人间的苦恼患难，寻求真正安乐的日常生活，而不标榜娑婆与净土的对照与厌欣。这两个特征使得备受苦难的广土众民特别忆念、亲近他，然而，众生应以何种方式取得观音菩萨的护持垂愍与消灾解厄？如此广大深重的誓愿，应如何修持乃得感应？「净土宗」以念佛为往生的法门，而念佛又大略分为「实相、观想、观像、持名」四种，有层次及难易的差别。观音信仰所取者即是最简易直截的「持名」──称我名号，即得解脱──这种形式是与「观世音」的取义有直接的关系，并且也是世界上所有宗教共有的观念──源于人类天性，于遭遇苦难时，自然发出求救的赤子般天真的呼唤──而观世音菩萨常以庄严的女性身表现慈悲柔和的母性，感应了众生的呼求。且由于菩萨具有无事不知、无时不观的全知全能的普遍灵性，乃将一切众生视如自己子女，毫无分别的伸出救援之手，无论如何罪大恶极的人，亦一视同仁，平等救济。真正可说是绝无选择的「有求必应」，并且，这种救援又包括精神的烦闷与肉体的痛苦。前引《普门品》已有「闻是观世音菩萨，一心称名，观世音菩萨，即时观其音声」的感应道交之说：《华严经》亦云：</p>
+<p>　　　愿诸众生，若念于我，若称我名，若见我体，皆得免离一切怖畏……。</p>
+<p>　　《悲华经》云：</p>
+<p>　　　若能称我名字，若其为我天耳所闻，天眼所见……。</p>
+<p>　　《请观世音菩萨消伏毒害陀罗尼经》则云：</p>
+<p>　　　汝等当一心称南无佛、南无法、南无僧、南无观世音菩萨摩诃萨，</p>
+<p>　大悲大名称，救护苦厄者……</p>
+<p>这些都是专从菩萨名号说明持名称念的利益；而密宗盛行后，观世音被视为独立本尊，于是出现许多心咒，并以持咒取代称名，或者两者并行，如《十一面神咒心经》云：</p>
+<p>　　　我由此咒，名号尊贵，难可得闻……称我名者，皆得不退转地……</p>
+<p>　况能于我所说神咒，受持读诵，如说修行……</p>
+<p>　　《大悲心陀罗尼经》则更加入弥陀佛号：</p>
+<p>　　　发是愿已，至心称念我之名字，亦应专念我本师何弥陀如来，然后诵咒。</p>
+<p>这样层层附加，使原始简单的称念观音名号的形式，变得复杂而沦于附庸，已经违背了观音誓愿的普遍性与亲和力。</p>
+<p>　　「称名」形式的意义，除了前述源于人类天性的呼声外，另有属于宗教心理过程的深层诠释，即「主观的内心与客观的本尊融合在一起，成为契机，入我我入，进展为三昧，成为自内证的表现，得以解脱烦恼苦闷」；而这种称名三昧亦即是「观心」，由观智而照见自我心性，开发如来藏。因此，从自内证与观心的理论上说，所谓观音「普门示现」的自在神性，其实就是「众生自心的灵性」，当众生至心唱念观音名号而进入三昧境界时，本性中的圣灵即时发酵而出，被看作观音显现感应而来。</p>
+<p>　　　　三、妙法莲华经观世音菩萨普门品的思想</p>
+<p>　　说明了脱离西方极乐世界而成为独立本尊的观音信仰的特性之后，再看《观世音菩萨普门品》的内容思想。这品经文可说是观音信仰的基础，也就是根本经典。据学者考证，《普门品》原本是独立单行的，约成立于大乘诸经典结集初期，可能是印度海滨或补陀洛的宗教学者作成，其年代早于《法华经》。而因为都是演说诸法实相的妙理，且以「多宝佛塔」的涌现因缘作为联系，后来遂收录一起，成为第二十五品。又此品属于早期经典，仍保留原姶宗教特色；假如把它与《摩诃般若波罗密多心经》相比较，其特色更明显：《心经》是亲自在菩萨向智慧第一的舍利子宣说五蕴皆空的般若真理，其文字理路极为透彻精妙，哲思内蕴则幽玄简明，应当是大乘佛教思想圆熟期产生的经典，可能从大般若经中选萃浓缩而成，并附载密教神咒。相反的，《普门品》的长行文则极为素朴，所说哲理反映了人间性现世利益的希求，尤其「脱七难」、「应二求」的内容正是古人最惊怖的灾厄现象以及最关心的继嗣问题；再加上「除三毒」、感应事迹，以及无所不至的摄受力等；而「三十三身应现」的例子，可能是从印度古代吠陀经典的天界神话演绎而来；凡此种种都与原始宗教的民间信仰一致。</p>
+<p>　　由于具备这种原始与民间的特色，《法华经》译分到中国后，唯独此《普门品》特别受到民众的信受奉行，而产生许多臆测与传说，如所谓观音大士慈悲心切，与此婆娑世界的因缘最为深切；或者说因为中国北凉国王沮渠蒙逊持诵《普门品》而消除多年的业障病，故极力推广此品，成为人人熟知能念的佛经。后来的人更由于观世音「救苦救难」的特性，而把《普门品》与《大悲咒》、《心经》、《白衣大士神咒》、《观音佛祖大救苦心经》、《观音十句延命经》等编集成册，成为完整的观音法门课诵本；这里面可说经咒不分、佛道混杂，却表现了民众对于观世音菩萨及《普门品》的选择性的价值取向。更进一步在普遍而长期的持诵经验里，发生并流传许多感应事迹，亦被集中收录成专书，即所谓《持验录》、《感应记》等，其内容项目包括救焚、救溺、脱险、免杀、愈疾、除祟、拯随、佑岁、赐福、得子、应化、说法、证果、瑞应……几乎无所不能，且依时代的演进，仍不断的适应扩张。此外，淅江南海也建立起「中国普陀山」的观音道场；而民间更流传著由楚庄王女妙善公主修行成道的「中国观音」；道教神谱里，不知何时也出现了「观音妈」；这些都是把观世音菩萨本土化的显著例子，在这本土化的过程里反映了两个事实：一是中国信众对观世音的特殊偏爱；一是以慈悲与灵感两项特性，约化了观音的形象──此即「普门示现神通力」的观念，而这种观念的起源与代表性经典便是《普门品》。</p>
+<p>　　《普门品》的经文大致分成「长行」与「偈诵」两部分：前者成立年代较早，后者则是后来附加的（约产生于佛灭后第五百年间）。这两部分除了重复申说共同的基本观念外，长行又偏于宣讲救苦满愿与示现度化的神通力，偈颂则发挥弘愿深誓与三业普观的方便智。全品的文章结构，据演培法师《观世音菩萨普门品讲记》的分解，大致区别为三段：</p>
+<p>　　　　（一）　长行别示</p>
+<p>　　这是无尽意菩萨在法华会上向佛当机请问，佛则备示感应以答之，往返问答的过程里，宣说了观世音菩萨得名的因缘及示现说法的化迹。以下又分两层：</p>
+<p>　　1、得名所以</p>
+<p>　　按照《法华经》的顺序，第二十四品介绍了东方妙音菩萨已得「现一切色身三昧」而任运自在的住世教化众生之后，接著第二十五品，由无尽意代表会众请问「观世音菩萨以何因缘，名观世音」？佛的回答，先是总标「寻声救苦」作为定义，其次则别示「持名感应」──即所谓火不能烧、水不能没、罗刹不能贼、刀杖不能杀、恶鬼不能逼、杻械枷锁不能囚、怨贼险路不能害──解脱七难，在前面已经谈到它最初只在反应原始宗教的人间希求，但大乘思想成熟后，又有学者为它附会上人性意义的解释，如嗔恚（火）、爱欲（水）、怨杀（罗刹）、骄妒（刀杖）、诡计（恶鬼）、我执名利（杻械枷锁）、烦恼迷惑（怨贼险路）等。这种附会固然具有某种程度的象征作用，却不如保存其现实外境的面目，因为接下去又有「离三毒」──贪、嗔、痴；「应二求」──求男、求女；文字表面的意思已够充分完整，无须额外引申。在广显称名感应的例证后，以「受持观世音菩萨名号，得如是无量无边福德之利」作结，普劝持名供养。</p>
+<p>　　2、游化方便</p>
+<p>　　前层由称名感应以表现菩萨的「大威神力，多所饶盛」，是现世的利乐；这层则以游化十方说明菩萨「开示佛法，度脱迷途」，是出世的解脱，无尽意菩萨在这里提出的问题是「云何游此婆娑世界？云何而为众生说法？方便之力其事云何？」这三点总括了菩萨身口意三轮的度世法门。佛的回答先是广显「游化诸国」，包括三圣、六天、五人、四众、诸妇、二童、八部、力士等，所谓三十三身应现说法，使众生随缘得度。这三十三部身适用的范围虽广，却是泛指三界国土具有特殊身分的众生；在其次回答「游于婆娑」才专说此间一切有情，以能施无畏而显其妙德。最后则以「是观世音菩萨成就如是功德，以种种形，游诸国土，度脱众生。」以及「观世音菩萨有如是自在神力，游于婆娑世界，」作结并普劝供养。</p>
+<p>　　　　（二）　偈颂合显</p>
+<p>　　长行文在无尽意菩萨以颈间璎珞作为供养，而观世音菩萨将彼转供释迦牟尼佛与多宝佛塔后，即已结束（但全品最后还有一段称扬闻法利益的话，可视作独立单元）。接著是无尽意「以偈问曰」，把长行文的内容用五言句法重复申说，这部分的文字结构也分两层：</p>
+<p>　　1、得名所以</p>
+<p>　　以「汝听观音行……能灭诸有苦」十句总标观世音菩萨的弘誓大愿、善应灭苦。其次以十二次「念彼观音力」共四十八句，别显「免三灾、脱八难」的威神力。这里所列举的项目与长行文仅有火坑、巨海、囚禁枷锁、罗刹诸鬼，怨贼刀杖等相同，其余如毒龙恶兽、蛇蝎毒烟、山顶堕落、王难临刑、咒诅毒药、雷电雹雨等，皆是添加的；最后以「众生被困厄，无量苦逼身；观音妙智力，能救世间苦」四句作结。</p>
+<p>　　2、游化方便</p>
+<p>　　前层点出「妙智力」作为菩萨救苦的凭借。接著这层先从三业普应以广显「应化诸国」。从「具足神通力」以下八句是身业；「真观清净观」以下八句是意业；「悲体戒雷震」以下四句是口业。其次以「诤讼经官处」以下四句，及「妙音、观世音、梵音、海潮音、胜彼世间音」来正显菩萨的「游于娑婆」。最后更以菩萨慈悲，能作众生依怙，是故应常念顶礼。</p>
+<p>　　　　（三）　闻品获益</p>
+<p>　　前两段长行文与偈颂，是《普门品》的本文，都是由无尽意菩萨发起与佛的当机问答。此段从文字书写上应该是长行文的部分，但被偈颂隔开，且改由持地菩萨向佛称扬闻说此品的利益。因此，它可以视作独立的段落，或者称为「流通分」。经文云：「若有众生，闻是观世音菩萨品，自在之业，普门示现神通力者，当知是人，功德不少。」这是佛经的惯例，为赞叹世尊说法的特殊，并尊重「佛法难闻今已闻」的因缘，只要能够参加法会、亲近如来。闻说教示，都是功德无量的。为此，学佛众生应当发愿：请佛住世、劝转法轮。最后一句经文是：「佛说是普门品时，众中八万四千众生，皆发无等（编者注：此处疑漏一「等」字），阿耨多罗三藐三菩提心。」这称为「时众发心」，是顺著前面闻法功德而自性发起的勇猛精进心。原本也是佛经的惯例，在正式说法完毕，会众「欢喜赞叹、信受奉行、作礼而去」。而《普门品》以发挥菩提心作结，乃是劝请一切闻法众生，从此发心学菩萨行，与观世音的悲愿相应，如此才得自度与度人。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../gsypszj/gsypspmpjyqjmyy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../gsypszj/gsypspmpdjzhy.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../gsypszj/gsypspmpjyqjmyy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../gsypszj/gsypspmpdjzhy.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

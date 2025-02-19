@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>卷七之四 - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../../favicon.png">
+        <link rel="stylesheet" href="../../../../css/variables.css">
+        <link rel="stylesheet" href="../../../../css/general.css">
+        <link rel="stylesheet" href="../../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../../highlight.css">
+        <link rel="stylesheet" href="../../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="卷七之四"><a class="header" href="#卷七之四">卷七之四</a></h1>
+<p>古歙门人成时编辑</p>
+<p>【募造敬字庵疏】</p>
+<p>【净然沙弥化念佛疏】</p>
+<p>【忍草沙弥化念佛疏】</p>
+<p>【建盂兰盆会疏】</p>
+<p>【敷先开士守龛助缘疏】</p>
+<p>【善生开士饭僧功德疏】</p>
+<p>【重修观音庵疏】</p>
+<p>【大悲圆行疏】</p>
+<p>【结社修净业兼阅华严大钞助缘疏】</p>
+<p>【募刻憨山大师全集疏】</p>
+<p>【庐山五乳峰法云寺重造大殿疏】</p>
+<p>【念豆儿佛疏】</p>
+<p>【金陵三教祠重劝施棺疏】</p>
+<p>【水陆大斋疏】</p>
+<p>【疏二】</p>
+<p>　【 募造敬字庵疏】</p>
+<p>娑婆世界以音声语言为教体。故一一文字。皆佛祖慧命圣学源流所关也。敬字卽敬文宣至圣。与迦文世尊。其开昏愦而培智种者。岂浅鲜哉。温陵为文献之邦。素称佛国。今者有敬字庵之设。此洙泗道源所浚。亦西竺心光所映也。人皆可以为尧舜。凡有心者。皆得作佛。请从事于斯语。则凡点画纸墨之委弃者。皆可见尧于墙。见佛于瓦砾矣。抑更有告焉。一切字纸断断可与六经三藏同观。而六经三藏断断不可与一切字纸同视。庵成请勒斯语。</p>
+<p>　【净然沙弥化念佛疏】</p>
+<p>经云。一称南无佛。皆已成佛道。此言正因佛性。人人本具。故称性所起缘了二因。必与正因同得究竟也。是以念佛三昧。名为三昧中王。普摄一切三昧。修此三昧。凡有三种。一者惟念他佛。二者惟念自佛。三者自他俱念。修虽有三。成功则一。一念他佛者。托阿弥陀佛果德庄严。为我所念之境。专心注意而忆念之。或忆名号。惑想相好。或缘四十八愿。往昔洪因。或思力无畏等。现在胜德。或观正报。或观依报。总名为念他佛。贵在歴歴分明。一心不乱。则三昧功成。径登净域。如东林诸上善人。卽其证也。二念自佛者。观此现前一念介尔之心。无体无性。横徧竖穷。离过绝非。不可思议。具足百界千如。种种性相。与三世佛。平等无二。如此观察。功深力到。圆伏五住。净于六根。豁破无明。顿入秘藏。如西天四七。东土六祖。及南岳大师。天台智者。卽其证也。三自他俱念者。了知心佛众生。三无差别。众生是诸佛心内众生。诸佛是众生心内诸佛。托彼果上依正。显我自心理智。如观经云。是心作佛。是心是佛。由我心性本具功德不可思议。诸佛果中威力不可思议。故感应道交。自他不隔。极果圆因。称理映发。如永明寿楚石琦所修法门。卽其证也。方便多门。归元无二。随行一辙。俱得到家。切勿疑虑。自隔要津。今净然沙弥。栖心净土。兼以此法广化有缘。当知只此一念。便可作大势至法王子眷属。慎无自轻自屈。更愿见者闻者。深心随喜。共登莲籍。亦慎无自藐藐他。庶几同圆种智。而五浊可空也。勉之哉。</p>
+<p>　【忍草沙弥化念佛疏】</p>
+<p>弥陀如来。以四十八愿。摄化十方。势至大士。以念佛三昧。游此世界。当知末世众生。舍净土一门。而求脱生死。不可得矣。佛法无多子。久常难得人。一时勇猛。不若终身无倦所以慈云大师。示晨朝十念法门。飞锡尊者。阐一念得生妙旨。今忍草沙弥。发心普劝缁素。修此念佛三昧。每日从十万起以至一百。或惟十声。下至日念一声。不拘数之多寡。但以终身不闲断为则。将此饥餐渴饮工夫。用作宝地珍池左券。傥能一念中。顿破无明。便超寂光净土。顿断尘沙。便超实报净土。顿断见思。便超方便净土。纵未断惑。五浊渐澄。佛光渐露。登同居净土。永脱轮回。固无惑矣。普愿见者闻者。于此便作东林胜会想。于一切登名莲簿者。便作十八高贤想。则一心普念三世佛。而念佛三昧了了现前矣。</p>
+<p>　【建盂兰盆会疏】</p>
+<p>予观世出世。至德要道。皆无有胜于孝慈者也。世闲非孝慈。无以成圣贤。出世非孝慈。无以作佛祖。顾孝慈之名一耳。实则有四焉。养父母育子孙。令皆得欢喜者。世界悉檀也。前可继。后可传。令皆得生善者。为人悉檀也。顺几谏。严庭训。令皆得灭恶者。对治悉檀也。底豫允若。佑启咸正。令皆得入理者。第一义悉檀也又一世之父母固然矣。推而极之。不有无始以来。歴劫生身之重恩乎。一家之子孙固然矣。扩而充之。不曰法界含灵皆犹吾赤子乎。是以儒者。且尽其道于目前。佛氏幷充其致于累劫。儒者且举其端于宇内。佛氏幷穷其量于刹海。儒非故为拘虚。而佛非故为荒诞也。儒者引而不发。以示厥始。佛氏充无不尽。以究其终。不啻如金声玉振焉。所以自大法东渐。千有余载。达人高士。罔不会心。至若昌黎晦庵辈。虽极力诋之于前。不免倾心味之于后。良以孝慈宗旨。终无闲然故也。今七月十五日。为大目犍连度母设供之辰。夫目连果证应真。六通第一。而欲报慈恩。尚须三宝众僧之力。况吾辈乎。吾辈生匪空桑。心非顽石。念罔极之深恩。怀终天之永戚。自非托事盂兰。曷以略伸积悃。所言盂兰盆者。此飜解倒悬器。葢冥涂之苦。不啻倒悬。今以净器僃陈佳供。能令剧苦永脱故也。凡厥孝子慈孙。慎勿徒为大言。以自饰曰。吾父吾祖。灵应在天。何当久滞三涂。咦。难言之矣。旣未闻出世四谛法门。又未必遵行三归五戒十善。轮回之苦。谁能免者。傥于此日。悬悬致望。子若孙之福济。而竟置之漠然。于心安乎。且经又言之矣。若父母现在者。福乐百年。若七世父母。自在化生。入天华光。此则功德利益。又不止于仅解倒悬而已。仁人君子。宜何如努力以共成斯会也。诗曰。孝子不匮。永锡尔类。吾甚为儒之希圣贤。释之希佛祖者望之。</p>
+<p>　【敷先开士守龛助缘疏】</p>
+<p>有世闲孝道。有出世孝道。世闲之孝。就养无方。立身行道是已。出世之孝。精修道业。广度累劫是已。至世出世孝。两擅其美。如黄梅睦州者。殆不多得。今于敷先开士见之。开士青山名族。世习东鲁礼乐。方壮之年。发心学佛。徧游真寂博山之门。以法力愿力。劝其乃尊。长斋修道。躬奉甘旨二寒暑。又劝以圆现僧相。几一载而西逝。葢年已八十六矣。仍停龛虎丘麓。日夕梵呗。将以愧天下之为人子而不孝者。幷一洗佛门无父之冤。噫。惟学佛然后知儒。亦惟真儒乃能学佛。不肖出家。父未葬。母未养。本图大事旣明。然后作织屦计。而夙障深重。致令慈母舍我西驰。终天之憾。寤寐永叹。开士独能生尽其养。死尽其诚。旭也真愧死无地矣。方外云踪。不能稍助薪水。聊赘空言。徧为仁人孝子。宣此至情。其有喜心乐助。俾开士完此一段最后孝思。亦锡类弘慈也。</p>
+<p>　【善生开士饭僧功德疏】</p>
+<p>买死马头。则千里之马至。饭寻常僧。则三乘圣僧格。此必然之理。无足怪者。世人妄生分别。竞欲舍凡取圣。而郭永定居士。知凡圣一体。自发心饭万僧。复化人饭万僧。非自行檀施。不足转化他人。非广化结缘。不足满自愿力。可以劝矣。</p>
+<p>　【重修观音庵疏】</p>
+<p>普门示现。无刹不是全身。何成何坏。须知示坏示成。皆与吾人作增上缘耳。苟向大士施一文一粒。譬如投滴水于大海。顿同海体。尽未来时。决不消竭。兹者躬逢大慈悲父。借大板卷倾颓之古观音庵。为说法处。借恒元开士为说法人。恒元深达此妙借法门。又借予代为普门说法。予谓恒元日。有助此嘉猷者。弗问多少。汝悉与授阿耨多罗三藐三菩提记可矣。</p>
+<p>　【大悲圆行疏】</p>
+<p>观音大士。与娑婆最有因缘。而大悲陀罗尼。尤为密传心印。秘要法门。葢以不思议心。持不思议语。则不思议熏。不思议变。真如螟蛉呪子。不觉其肖之。速也。顾此呪自四明尊者。设立行法后。从元至明。未尝绝倡。一传于天台。再传入武林。坛仪供具。于斯为盛。而法式理观。不免有字经三写。乌鸢成马之虞。余向游吴越。每欲稍正其讹。乃久诵水潦鹤者。竞嫌昏耄。付诸永叹而已。祖堂湛持开士。思如法构坛严像。余喜此方缁素。未染讹习。犹可与正其始也。爰赘片言。使坛仪供具。如法先成。庶法式理观。次第毕举。如是则若显若密。若禅若教。皆一以贯之矣。</p>
+<p>　【结社修净业兼阅华严大钞助缘疏】</p>
+<p>阿弥陀佛。以法界藏身。示成道于极乐。则有四十八愿。广摄群机。毗卢遮那佛。亦以法界藏身。示成道于娑婆。则有普贤十大愿王。导归安养。是故欲求生净土。须究华严宗。欲识华严宗。须求生净土。或笑曰。华严事事无碍法界。当处卽常寂光。何为舍此求彼邪。应之曰。旣事事无碍。卽于此求彼。又何碍也。旣当处卽常寂光。卽西方亦常寂光也。常寂光固无可舍无可求。亦何碍舍何碍求。如是舍寂光秽。求寂光净。生则决定生。去则实不去。生则实不生。去则决定去。何碍之有。其人罔措。余曰。汝若不会。请问之毗卢遮那。汝若不能见毗卢遮那。请问之普贤愿王。汝若不能见普贤愿王。请向十字街头合掌语诸人曰。乞施我一文钱。当必有告汝者矣。</p>
+<p>　【募刻憨山大师全集疏】</p>
+<p>此方之机。以文字为教体。故儒号文宣。佛号迦文。由性天垂文章。文章可闻。卽性天可闻也。由文章达性天。性天不可闻。卽文章亦岂可闻哉。佛法入支那。渐事义解。达磨初来。直指人心。见性成佛。一洗文字习气。可谓炙病得穴。然仍以棱伽印心。文章性天。未始判然为二明矣。数传后。棱伽一经。又复流为名相。于是诸大宗匠。竞出手眼。拯济挽回之。要皆超情离见。解粘去缚。破尽凡夫心识。令与修多罗合而已。未有敢违背佛语。自张见帜者也。流至今日。五宗公案。不几又成名字学问乎。惟吾憨翁大师。乘夙愿力。本从西方再来。始出长干。发足行脚。便有香象截流气槪后五台雪里。绝后再苏。沛若江湖。落笔无滞。悯末世无闻暗证。旣昧佛语。亦失佛心。故多有著述。而法语诗文等四十二卷。皆老人随自意语。尤多醒发人处。法眷虚中。缮写成帙。呈诸牧斋钱太史。一无赖沙门。冒从太史公处诒稿而去。今高足某。继乃师志。乞余一言。转白檀信。余感师翁梦中接引深恩。愧无以报。爰涕泣书此。</p>
+<p>　【庐山五乳峰法云寺重造大殿疏】</p>
+<p>华严经云。若人欲了知。三世一切佛。应观法界性。一切惟心造。葢自无始以来。直至尽未来际。惟此一心。无有一时一刻不造种种五阴。造种种世闲。造种种国土者也。造而成也。无所从来。造而坏也。无所至去。可不谓惟心乎。故世有达惟心者始可与商所造。亦惟有善所造者。始可与悟惟心耳。今人局视此心。曾不能知心外无法。又复卑视事造。曾不能知事外无理。故语以庄严佛刹。辄云不必著相。嗟嗟。相固不必著矣。非相又安可著邪。若达惟心。则相卽非相。是心造殿。是心是殿。何著之有。设不以其心造殿。又将以其心造种种敝恶依正。安得顷刻有不造时。而造殿为佛界妙缘。缘因若熟。了因必发。了因若发。正因必彰。方知造卽非造。回视枉此心力。造余襍业。驾言无造。终不免轮回者。岂可同年语哉。匡庐五乳峰法云寺。日遂颓圯。其徒某不离吾人心内。创此良缘。而吾为缁素之愿造佛界。不愿造九界者告如此。</p>
+<p>　【念豆儿佛疏】</p>
+<p>雪山有药。名毗伽摩。眼若见之。眼得清净。鼻若嗅之。鼻得清净。身若触之。身得安隐。若以涂鼓。军中击之。所有毒箭。应身拔出。嗟嗟。一茎草耳。何以厥功若此。愚者未免疑之。阿弥陀佛。万德尊主因积僧祇。果圆十劫。愿王无尽。福慧无穷。散心一称其名。亦灭八十亿劫生死重罪。彼疑一茎草者。又安能深信无惑哉。有念佛者。不纪以珠纪以豆。又将豆供海众。使其沦肌肤浃骨髓。乃至徧身毛孔。咸放佛光。八万四千户虫。咸得度脱。此之功德。难议难思。念豆施豆。功德平等。豆为法界。十方诸佛。三世导师。皆在一粒豆上转大法轮。现宝王刹。此豆邪。非豆邪。非豆非非豆邪。能信此一粒豆者。可以无疑于一茎草矣。重说偈曰。此豆泥丸突出难分剖。非豆咽下分明无处躲。非豆非非豆。大家倾出摩竭斗。</p>
+<p>　【金陵三教祠重劝施棺疏】</p>
+<p>三教深浅。未暇辩也。而仁民爱物之心则同。夫仁爱非外铄也。行于荒原旷泽。见骸体纵横。枯骨狼藉。未有不怵惕恻隐者。充恻隐之心。仁不可胜用。儒以之保民。道以之不疵疠于物。释以之度尽众生。如不龟手药。所用有大小耳。故吾谓求道者。求之三教。不若求于自心。自心者。三教之源。三教皆从此心施设。苟无自心。三教俱无。苟昧自心。三教俱昧。苟知此心而扩充之。何患三教不总归陶铸也哉。心足以陶铸三教。乃名能尽其性。亦能尽人物之性。尽人物之性。乃知民不止吾胞。物不止吾与。是故一民饥。我之饥也。一民寒。我之寒也。一枯骨未葬。我未葬也。合天下之苦。以为己苦。合天下之善。以为己善。故莫大乎与人为善。俾一滴善。同归至善海中。无分剂。无穷尽。斯可与言尽性之道也已。金陵三教祠。自癸亥倡施棺。主其事者。为了玄大德。二十年施三万余具。了玄去世兼值变更。事遂寝。今流离梵独。倍于昔时。狐狸蝇蚋。徧于野壑。仁人君子。急议续行。亦此心万不容己者。而吾因得引其说而申之。昔孟子谓孝子掩亲诚是。然仁人过之。虽非亲友。颡亦必泚。视亦必睨。当知一切有情。本来同体。是名一本。然则视父母同路人者。恶之至也。薄之极也。视路人同父母者。善之大也。慈之厚也。一人善。致天下祥。一念慈。回宇宙泰。况合众善为善。普众慈为慈。功德可思议哉。昔天帝与阿修罗战。乍胜乍退者再。由世有一人。欲作善事辄欲止者再故也。或问予曰。匹夫一念进退。何遂关天帝胜负。予曰。如天平。两处各二十两。傥以一分益彼一处。彼则偏重矣。故曰。天下者。天下之天下。又曰。以身观身。以天下观天下。今各捐分文铢两。俾泽及枯骨。观身观天下胥在此已。</p>
+<p>　【水陆大斋疏】</p>
+<p>佛祖统纪云。梁武帝梦神僧告曰。六道四生。受苦无量。何不作水陆大斋。拔济之。帝问沙门。无知者。唯志公劝广寻经论。必有因缘。帝卽遣迎大藏。积日披览。创立仪文。三年而成。乃建道场于夜分。亲捧仪文。悉停灯烛。而白佛言。若理协圣凡。愿拜起灯烛自明。或体式未详。灯暗如故。言讫。一礼。灯烛皆明。再礼宫殿震。三礼天雨华。天监四年二月十五日。就金山寺修设。帝临地席。诏祐律师宣文。当时灵响。不能僃录。周隋之际。此仪不行。至唐咸亨中。西京法海寺英禅师。梦泰山府君。请往说法。独坐方丈。见异人前告曰。向于泰山府君处。窃睹尊容。世有水陆大斋。可益幽品。文是梁武所集。今大觉寺吴僧义济得之。愿师往求。如法修设。师寻诣大觉。果得其文。遂于月望修斋。斋毕。向之异人。与徒属十数。来谢曰。弟子秦庄襄王也。又指其徒曰。此范睢。穰侯。白起。王翦。张仪。陈轸。皆秦臣也。咸坐本罪。囚幽阴府。昔梁武金山设会。前代纣王之臣皆得脱免。弟子是时亦暂息苦。以狱情未决。未获脱。今弟子与此辈。幷列国君臣。皆承法力。得生人闲。言讫而隐。自是英公。常设此斋。流行天下。至有宋咸湻年闲。有谓金山越王疏旨。专为平昔仕宦。报效君亲。未见平等修供之意。力挽志磐法师。续成新仪六卷。绘像二十六轴。自宋至明。又歴五百余岁。云栖大师。依此仪稍事改削。行之古杭。智旭曾于云栖躬逢盛举。见其坛法精严。事理僃明。罗十法界于一堂。运三观心于刹海。真不思议功德也。丙戍。游金山。索彼仪文观之。汗漫馍糊。不可寻究。葢由磐公较定后。行于四明。世称南水陆。而金山旧仪。被宋元以来世谛住持。附会添襍但事热闹。用供流俗士女耳目。世称为北水陆也。云栖大师具择法眼。故不从北从南每设供结界密护。除主坛一人。表白二人。斋主一人。香灯五人外。余人例于幙外瞻礼。不得入内坛坛内人出入。必皆易衣澡浴。所以得名如法供养不似诸方滥张圣像。任男女襍沓游观。致使饮酒食肉。吞烟啖［艹/秝］之人。皆得熏薉尊仪也。新都郑千里长公完德。三藏殿主人七净。新都杨长公。江寕陈旻昭。欈李谭埽庵。欲令此法重得流通。津度靡极。顾此法源流。惟旭颇能考知其详。敢僭述缘起。为贤达告。</p>
+<p>灵峰蕅益大师宗论卷第七之四终</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../../oydsqjzj/wj/lfzl/dqj7/z3.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../../oydsqjzj/wj/lfzl/dbj8/z1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../../oydsqjzj/wj/lfzl/dqj7/z3.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../../oydsqjzj/wj/lfzl/dbj8/z1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../../ace.js"></script>
+        <script src="../../../../editor.js"></script>
+        <script src="../../../../mode-rust.js"></script>
+        <script src="../../../../theme-dawn.js"></script>
+        <script src="../../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../../clipboard.min.js"></script>
+        <script src="../../../../highlight.js"></script>
+        <script src="../../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

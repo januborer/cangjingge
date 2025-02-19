@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《三要所缘次第趋入兜率妙 梯》(根敦嘉措著　蒋扬仁钦恭译)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="三要所缘次第趋入兜率妙-梯根敦嘉措著-蒋扬仁钦恭译"><a class="header" href="#三要所缘次第趋入兜率妙-梯根敦嘉措著-蒋扬仁钦恭译">《三要所缘次第趋入兜率妙 梯》(根敦嘉措著　蒋扬仁钦恭译)</a></h1>
+<p>　　　　三要所缘次第趋入兜率妙梯</p>
+<p>　　　　　　　　　　　　　　根敦嘉措〈第二世达赖喇嘛〉著　蒋扬仁钦恭译</p>
+<p>　　礼敬大悲观世音自在</p>
+<p>　　无量诸佛圣悲慧，为渡有行所化现，大悲观音妙飞幡，三界依怙诚礼敬。</p>
+<p>　　此为经论续密意，直至中阴修持要，善编佛语胜口诀，易解语蔓广宣说。</p>
+<p>　　大悲观音之口诀教授，是由瑜伽自在铼札邹基为慈圣蹙曝大译师法生赐教。在「三要所缘次第」的前行，应当依据先贤诸师等广大讲授了解至尊銤札自传殊胜，然后传授此论。于此，尽以易解语解说正行所缘次第。</p>
+<p>　　正行分二：甲，示本文。乙，修此意。</p>
+<p>　　本文曰：「此生恒续观本尊，临终忆念“破瓦”法，中阴修习“合”诀窍，续持乃为诸要义。」如论所云，初句示今生，二句临终，三句解说中阴持修，四句包含上述所有内容。「破瓦」与「合修」二法是属于临终及中阴所需修持，然而若能得到圆满利益，则应当下殷勤修法。修法之理，不能仅于一日过猛或是过弱，而是如同河续般的修持。</p>
+<p>　　乙分四：今生如何续观本尊之理、临终修持破瓦之意、中阴身时合修的运用以及随顺宣说见行要点。</p>
+<p>　　今生如何续观本尊之理</p>
+<p>　　本文曰；「无常苦相随念后，怜悯大悲极生起，顶部上师胸本尊，观修自心无自性。」此意修持分四：依缘劝发口诀教授、正行菩提心宝观修教授、祈求上师本尊方便教授、观想自心无自性之教授。</p>
+<p>　　本文初句「无常」及「苦相」。前者阐述念死无常则为断除今世贪着之因；后者说明了透过轮回所有痛苦的认知，来断除对轮回所有享受的贪着，进而对解脱产生自然希求之方法。在这二种内容暗示了共下士道次修心之理以及共中士道修心之理等一切所缘观修，若详细解释，唯恐繁多，所以依据胜尊洛桑扎巴所著作的《菩提道次第》了解其意。</p>
+<p>　　第二句：「怜悯大悲极生起」。并非为了别解脱之希求，为利益一切有情，独自担起重任，发起无上菩提愿心，积极行持菩萨胜行。至于七因果的菩提心修持，以及自他换等菩提心修持之理，可从《菩提道次第》与大乘修心教授得知。</p>
+<p>　　第三句：「顶部上师胸本尊」。此是祈求上师本尊方便教授。复此，自身发起菩提殊胜妙心后，圆满两种资粮，于成佛时自可令诸有情从轮回获得脱渡。然今自无能力，为使一切有情即能远离轮回与三恶道等难忍众苦，所以当下需要皈依救护。此时应当恳切祈求胜者观音自在以及千劫贤佛：观想自己顶部有座白色玻璃的无垢宝塔，具有千门、内外透彻、明光性质，宝瓶内有莲花及月垫，安住具恩根本上师所化现的至尊圣者观音自在，如雪山般的纯白身色、一面四臂，初二臂于胸部合掌，次右臂持着水玻璃宝所造念珠、次左臂持着白色莲花，金刚伽趺坐姿，以各种珠宝与多色衣饰’庄严其身，无有自性的本尊圣身如同虚空彩虹般的放大光芒，并安住于万光之中。并观想千门住有千劫贤佛，东部皆是毗卢遮那佛，身色属白；南部皆是宝生佛，身色属黄；西部皆是无量光佛，身色属红；北部皆是不空成就佛，身色属绿，如是观想则是「顶住上师」的观修，虽于其它教授中有说喀撒巴尼观音之缘念，可是内容却无大异。因多数随念六字明咒者有修四臂观颂的缘故，所以在此说明。</p>
+<p>　　于胸部观修本尊之法：观想自身胸部有一朵红色千瓣莲花，朝上开放，此中月垫上安住与自心无二的本尊大悲观音，其像如同上述。白色「阿」字所现的无垢千瓣，明光性质，放射千种光芒。观世音的胸部月垫上有白色「啥」字，四周围绕着如珍珠般的六字咒轮。如此专注观修后，再对于顶部上师大悲观音以及千劫贤佛生起极大净信，眼眶满泪、寒毛竖立、悲喜交集地祈请大悲上师与本尊：「如我父母六道众生，沦落轮回浩瀚苦海，无依怙、无可救护、伤痛悲泣，祈愿彼等皆能现今得渡、速速得渡、于现处得渡」如此猛烈祈请因缘，感得顶部观音放射光芒，照入胸部观音；千劫贤佛放射光芒，照入千种「阿」字，依此因缘，胸部观音与千种「阿」字等无二智慧之性质，化现成了无量白色甘露之续流，激涌融入体内、充满全身，三门的一切罪障及习气如同黑色蒸气、炭烟、独蝎般的从毛孔及所有根门缓缓流出，身成无垢琉璃，圆满观音相好庄严。</p>
+<p>　　甘露续流从毛孔流出，初入地狱世间，充满狱界，净除一切地狱众生热冷伤痛，以及诸苦因缘业与烦恼。狱界炙热大地、燃炽火房、极冷狭闇等畏惧世间瞬间消灭；唯成祥乐净土，如意宝之性质、柔和乐触，宽广无际。有情众生成为观音自在，无有自性、如虚空彩虹，作此观想。</p>
+<p>　　同样的，如是甘露续流顺序地流入饿鬼、畜生、阿修罗、人、天、色与无色界等天人，依此因缘，饿鬼的饥渴痛苦、畜生的互相残杀及愚痴痛苦、阿修罗的斗争痛苦、人的生老病死、天人往生与堕落下趣的痛苦、色与无色界的行苦等，以及诸苦因缘与烦恼，皆得净除，如上述般彼等所居处器世间成为祥乐净土；有情众生成为观音本尊，作此观想。此后，若欲持诵六字明咒，则观想：自生观音的口中念出六字明咒，并且与已生起观音等诸有情同时诵出响亮六字声音，震动大千世界。</p>
+<p>　　如是尽量持诵后，于结行时，观想安住自身胸部本尊的心中「啥」字放光，照亮一切极乐器世间，光芒充满，并融入已生起观音的诸有情，再次的，已充满的光芒融入自身，及顶部观音，再次融入胸部观音；融入千劫贤佛胸部千种「阿」字；宝塔如同虚空彩红般消失。自生观音胸部的花瓣与「阿」字，此复中部观音，此复胸部咒论与宝垫，此复中部「啥」字，最后观修无缘正见，安住入定。</p>
+<p>　　第四句：「观修自心无自性」之理分二：修持人无我之理、修持法无我之理。略说此义，首先，当我们内心产生了极为强烈的我执时，若观察此心如何见法，则会察觉到：自身五蕴上的我并非是「唯取」或是「唯见」，此心所缘之我是一种五蕴上原有、本有的的「我」。</p>
+<p>　　同样的，见到「抬举栋梁作用者」时，会感到这是「柱子」；若观察此心如何见法，则会察觉到：此木头上的柱子并非是以「这是柱子的心」唯取而有，而是「从」境上形成的一种「柱子」。</p>
+<p>　　虽然会如此地见到，可是在五蕴境上绝没有所谓的「原有之我」！譬如；「柱子」是唯于「抬举栋梁的木头」意识缘取而有；绝非是从境上的柱子。因为，于此木头还未取名「柱子」之前是不会有柱子的认识，或是因为没有取名为「柱子」所以此木头上没有柱子。之后，从木上取名为「柱子」起，看到此时才会说看到柱子，因此柱子是唯于木上意识安立而有，并非「从」木上形成柱子。</p>
+<p>　　同样的，有些婴儿诞生后因取名为「扎西」的缘故，所有人看到他时自然就会想起扎西。这时候虽然会感觉扎西从这位婴儿而有，但是从他本身没有扎西。否则，这位婴儿还未取名为扎西之前，看到他时就应该认为是扎西才对，然而却没有啊！依上述所说之例，所以我与蕴体等一切法，都是由个别的施设处以心往境安立而已，并非从境上生存。彻底安立此义，以根本定作观修；于后得道时，虽见一在此只是简单扼要地说明了空见修持之理；于正见讲授中可获得广义，应当了知。</p>
+<p>　　临终修持「破瓦」之法</p>
+<p>　　本文曰：「自身行持供施后，一切依赖极断故，光体毛孔行结后，导引心识兜率住。」维修此义分三；去除成就破瓦逆缘、成办顺缘、正破瓦所缘等三。</p>
+<p>　　初者，如果贪着今世食衣住受，就如飞鸟因石绑捆，虽欲往生兜率，但却成为破瓦障碍，因此需要对治肉体的贪着。如本文的初句已说故，先以化身供田；祈请资粮田：前方虚空有八大狮子抬举的宽广宝座，上有莲花月垫，安住着根本上师所现的至尊观音，其相如上述观想。在顶方有主要的传承上师，则上身部位有与四部相应的坛城诸尊及诸佛菩萨，下身部位有声闻、独觉、空行、护法等如云围绕。同样的，宝座下旁有曾受害的冤亲债主；下方有今世父母，以及由彼牵引的一切六道有情，诸客遍满大地虚空，如是观想后，集资之法：唉！我于轮回己得凡身无数，光以人身而言就无可测量；一切生中，只造无义琐事、浪费人生，未曾做过伟大有义善事；今世虽获朽败肉身，但也未曾行持正法，反而为了生活造作众多恶业；临终时，此身如同空旷野地，只剩灰墟。由恶业力，无法忍受后世恶道极苦，实无道理贪着今世肉身，所以当藉由此身迅速累积圆满资粮！因此殷重祈请大悲观音。观想自心胸部的观音圣像朝前直往，安住前方虚空，反视老旧朽身时，变成了面如凝脂、相好庄严的圣相。此时，于前方上师观音作此祈祷：「祈愿大悲上师本尊加持，使我此身能够迅速成办圆满资粮。」因祈求故，上师诵出唵、啊、吽三字，形成了三座「人头灶石」高山，之后，从本尊胸部赐予空行弯刀，斩除了原有朽坏上身的头骨，血淋淋地覆盖在三各灶石上，其血流遍满并越出了三千世界；此复，空行母再次手持多把弯刀，把一块块的肉皮血股切剁成零碎，放置头骨内，头骨充满了血肉。此复，本尊诵出唵、啊、吽三字，一切血肉变成了无漏智慧所化成的甘露，颜色如同落日般今黄灿烂，其味觉与受觉使诸佛菩萨心续安乐满足，净除了六道痛苦。此复，从字胸部出现了手持顶骨的空行母，遍满虚空；无尽甘露从彼等所持顶骨溢出，因供养于根本传承上师、本尊、佛、菩萨、声闻、独觉、空行、护法，使无漏心续生起大乐，满足欢喜，迅速地圆满资粮。同样的，因为赐予冤亲债主的缘故，彼等取回业债、净债除恨，皆为观音。因为赐予今世恩惠父母，以及由彼牵引的一切六道有情，所以消灭六道痛苦，以及诸苦因缘业与烦恼。如上述所说，器世间成为净土、情世间成为了观音，再以前述的观想来念诵六字明咒。最后，诸器融为光芒及有情等，次复融入自身；于前方虚空中安住的根本传承上师，直至空行护法等一切尊者，也皆融入自身，获得加持。最终自观无缘甚深空义，所供境、供物、供养者、供法等皆无有自性微尘，殷重生起无有三轮的智慧。</p>
+<p>　　如是思维，虽然可以断除对肉身的贪着，但却没有远离对于师长，以及财物等享受贪着耶？答，本文的第二句已作解释如何断除贪着之理。此生虽然遇值众多师长，却如风力堆叶般的短促，终究还是师长弃舍离去，或是自己弃舍师长；临终时，无有亲朋好友可做伴侣随己同行，必须独自远离，如是思维不应贪着。临终时，自己如同溶乳中取出羊毛般的孤零，必须放下财物享受，既如此，应当以无恋心，将财物作三宝物，或是供僧等善事。如是思维不应贪着。</p>
+<p>　　第二，成办破瓦顺缘：生起猛烈往生兜率之希求、往生此处之发愿、诸善业回向于此因缘。</p>
+<p>　　第三，正破瓦所缘：本文的后二句已作解释。兜率法宫位于众多珠宝妙房环绕的中心，又称法幢高宫殿，也是至尊弥勒索居住的圆满宝宫。在此宫的前方有块辽阔清幽的宝石广场，名为「悦意法持」，是慈尊传法的地方。中有善贤狮座，安住胜者慈尊，稳如须弥，金光闪闪，放射万道光芒；面朝南瞻部洲，善说般若波罗蜜多教法于环绕四面的菩萨众，其数无量。</p>
+<p>　　观想自己明显见此胜景，并专注祈请：祈求胜者大悲慈尊，使我能从轮回与恶趣畏惧中得到救护，并导至兜率、迅速引导、于此处引导！如是祈请因缘，观想看见从慈尊的胸部延伸了如同衫袖般的长光管，打开了自己顶部的净穴，就像开窗户一样，之后逐渐地进入了顶穴。自心胸部的观音圣像，从已打开的顶穴光管往上朝看，依此因缘，擦净了慈尊胸部的黄金曼达盘，如日光般的灿烂。</p>
+<p>　　此时观想：光管是「道」、自己是「行道者」、破瓦〈往生〉至慈尊的胸部。依三种想再次殷重地祈请。依此因缘，慈尊的胸部放下了光钩，经由光管穿过，进入了顶穴，融入己生起的自心胸部观音。光钩圆满吊起自心，远离顶穴，如同飞箭般无碍地经由光管直奔慈尊胸部，缓缓融入慈尊心续，成为无二，恒续此观。再次第由胸部离去，成为了胜慧天子，具有可行大乘妙法之种性者。于慈尊的传法广场上，安座在千瓣莲花的中部，享有无量慈尊妙法甘露。</p>
+<p>　　中阴身的主要修持──合修</p>
+<p>　　本文曰：「明晓彼为中阴身，变更外内秘密等，性空大悲胜瑜伽，善巧力使妙结生。」如上所云，初句说明了在中阴身时认识中阴身的方法。现在所看到的一切都是中阴幻象，所以要了解中阴身是中阴身！如是反覆观修，若生于中阴，应当思维：我今已生中阴，所见一切皆属中阴现象，因此认识中阴身为中阴身，就像梦中也会恒续想起白天般。</p>
+<p>　　第二，正行中阴修持。外变相：当看到了现有的器世间都是由地石木等性质所形行，应当思维这一切都是我在中阴时候的幻象，并不存在，不随凡夫相而转，观想皆是净土。</p>
+<p>　　内变相：看到有情、人、畜生等种种相时，应观想全都成为观音本尊。</p>
+<p>　　密变相：如是看到情器两种世间时，都会现在自性幻象，因为受到自心实执随眠的污染，虽见此相，但实际上绝无自性。如此观想的缘故，生在中阴时，若有看到狱界及阎罗世间，应当想念这些都是净土；看到狱卒拿起利刀追我时，应当想念诸有情成为观音本尊，所见到的一切也都在自性空中现起。</p>
+<p>　　后二句说明念力往生之理：为得到可成办清净正法之暇满，于中阴身看到父母拥抱时，随行生力，生起缘父嗔心、缘母贪心。此时，对于嗔境父亲，应该思维无始恩惠，生起猛利悲心，去除嗔患；虽见贪境之母，但思维无自性，对治贪过。此后，于今世母亲胎内投生，修持余道。为有情广大利益而持今生。</p>
+<p>　　随顺宣说见行要点随顺宣说见行要点：认识所见正观理、于此不乱修持理、正念等味行持理、大成就者妙教授。</p>
+<p>　　认识所见一切皆有自性，依正理决定所见不实，此为正观理。修持理：于决定理专注于境，心不散乱。行持理：轮回涅盘于性空中味觉相同，思维此义，持菩萨行。「大成就者妙教授」：上述内容都是至尊銤扎教授的缘故，所以显示了这偈颂并非由銤扎所说。</p>
+<p>　　以上圆满了易解携便的「三要所缘次第」之教授。</p>
+<p>　　白莲碧水心湖生，稀有珍珠细深道；妙绳善串美璎珞，贤淑巧女颈饰耀。</p>
+<p>　　无逸精进所生善，愿诸有情离恶崖，兜率宝宫胜喜乐，大乘甘露悦受用。</p>
+<p>　　【附录】：</p>
+<p>　　菩萨戒十八根本堕及四十六恶作</p>
+<p>　　初分十八根本堕：</p>
+<p>　　一、自赞毁他图利敬，二、悭吝财法不惠施，三、拒他忏谢忿不忍四、疑拒大乘菩萨藏，五、供三宝物回入己，六、背舍毁谤于正法七、迫害僧侣使还俗，八、造作五种无间罪，九、持邪倒见毁因果十、毁坏国邑聚落等，十一、宣深空理于浅智，十二、令人悔退无上道十三、使人弃舍别解脱，十四、轻毁持守二乘者，十五、妄言虚夸证圣果十六、受取盗自三宝物，十七、爱乐宣说相似法，十八、轻言舍弃菩提心</p>
+<p>　　除第十八条犯舍心与第九条犯邪见，不需具足四缠即算犯根本堕外，其余皆需具足四缠才算构成违犯根本堕罪。此四缠为：一、不执为过患二、欲心〈造罪〉不舍三、欢喜味着四、无惭无愧</p>
+<p>　　此中具全四项者为上品缠，具足第一项者为中品缠。若为具足其余三项而不具第一项者为下品缠。故除舍心和邪见外，任行何罪未具足四缠，仅成下、中品有漏所摄之恶作，并非成他胜罪，故应勤使不全是为应理也。</p>
+<p>　　次分恶作四十六之戒，此等如何守护理：</p>
+<p>　　一、每日恭敬供三宝，二、不随欲心而顺转，三、恭敬腊长耆德者四、切勿非理作酬答，五、若受他请应赴宴，六、他人施等应受供七、悉求法者施与法，八、不应舍弃破戒者，九、为他净信现声闻十、但非少事如彼等，十一、七种开许需应依，十二、不以邪命而营生十三、掉举散乱不应行，十四、不应自求脱生死，十五、恶声恶誉应避护十六、实需猛调应严伏，十七、不应违越沙门法，十八、若他忿疑应歉谢十九、他来悔谢应接受，二十、不应乐执忿不舍，二一、不为供事而摄众二二、勿耽睡眠懒懈怠，二三、不依无利无义语，二四、于时应问三摩地二五、不应乐取五盖障，二六、不应贪着静虑味，二七、不舍声闻小乘法二八、但非废自法藏修，二九、亦非如此勤外论，三十、但修外论非爱乐三一、不应毁谤菩萨藏，三二、不可自赞而毁他，三三、为闻正法处处往三四、切莫依文莫解义，三五、可为助伴应往助，三六、奉侍病者亦如此三七、可除其苦应为除，三八、可宣正理如实说，三九、应于有恩作酬答四十、开解他人诸忧恼，四一、希求财者施与财，四二、利益徒众事亦行四三、随顺他心而邹行，四四、实可赞誉应称扬，四五、如理治罚应责者四六、神通威摄堪调者</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../ptdcdzj/szyd/sl/sdsykbawljssks.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ljx/ptdctxjjpbkdsjlyjbtzrbqyz.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../ptdcdzj/szyd/sl/sdsykbawljssks.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ljx/ptdctxjjpbkdsjlyjbtzrbqyz.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../ace.js"></script>
+        <script src="../../../editor.js"></script>
+        <script src="../../../mode-rust.js"></script>
+        <script src="../../../theme-dawn.js"></script>
+        <script src="../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

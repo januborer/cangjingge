@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《菩提道次第摄颂》（中本） (宗喀巴大师造　法尊法师译)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="菩提道次第摄颂中本-宗喀巴大师造-法尊法师译"><a class="header" href="#菩提道次第摄颂中本-宗喀巴大师造-法尊法师译">《菩提道次第摄颂》（中本） (宗喀巴大师造　法尊法师译)</a></h1>
+<p>　　　　菩提道次第摄颂</p>
+<p>　　　　　　　　宗喀巴大师造颂</p>
+<p>　　　　　　　　比丘法尊译</p>
+<p>大科分二：初、依止善知识；二、依止已、修心之次第。</p>
+<p>初、依止善知识分二：初思维依止之胜利及不依止之过患；二、依止之法。</p>
+<p>今初</p>
+<p>　　万善根本从师出，能生利乐如良田，</p>
+<p>　　依止违法断善根，如理事师求加持。</p>
+<p>二、依止之法分二：初、意乐依止；二、加行依止。</p>
+<p>今初</p>
+<p>　　一切时处普摄护，诸善知识真佛身，</p>
+<p>　　但观功德毋寻过，并念大恩求加持。</p>
+<p>二、加行依止。</p>
+<p>　　殷重敬信为意乐，身命财物如教修，</p>
+<p>　　殊胜供养作加行，唯令师喜求加持。</p>
+<p>二、依止已修心之次第分二：初、于暇满身劝受心要；二、正取心要之法。</p>
+<p>今初</p>
+<p>　　八难既离十圆满，小大显密总能修，</p>
+<p>　　后恐此身难再得，愿受心要求加持。</p>
+<p>二、正取心要之法分三：初、于共小士道修心次第；二、于共中士道修心次第；</p>
+<p>　　　　　　　　　　　三、于大士道修心次第。</p>
+<p>初、于共小士道修心次第分四：初、思维死无常；二、思维恶趣苦；三、归依三宝；</p>
+<p>　　　　　　　　　　　　　　四、于业果生决定信、并依四力忏罪。</p>
+<p>今初</p>
+<p>　　死仇决定终须到，容或今日便降临，</p>
+<p>　　死时世事均当舍，速修妙法求加持。</p>
+<p>二、思维恶趣苦。</p>
+<p>　　无始所集不善业，死堕恶趣不自由，</p>
+<p>　　若堕当受寒热等，思苦难忍求加持。</p>
+<p>三、归依三宝。</p>
+<p>　　能除众怖作依怙，真实不虚无他方，</p>
+<p>　　虔皈三宝受学处，总别遵行求加持。</p>
+<p>四、于业果生决定信并依四力忏罪。</p>
+<p>　　黑白业感苦乐果，各别应受勤止作，</p>
+<p>　　别于无始所集罪，四力对治求加持。</p>
+<p>二、共中士道修心次第分四：初、思惟生死过患（苦谛）；二、思维流转生死之因</p>
+<p>　　　　　　　　　　　　　（集谛）；三、生起希求解脱心（灭谛）；</p>
+<p>　　　　　　　　　　　　　四、修学三学（道谛）。</p>
+<p>今初、思惟生死过患（苦谛）</p>
+<p>　　此生勤修白业因，一得人天贤善身，</p>
+<p>　　自性之苦不能越，愿出轮回求加持。</p>
+<p>二、思维流转生死之因（集谛）。</p>
+<p>　　有海飘流不自由，作此恶剧是惑业，</p>
+<p>　　业复依于烦恼起，誓诛惑仇求加持。</p>
+<p>三、生起希求解脱心（灭谛）。</p>
+<p>　　业惑增上成流转，结生相续系缚坚，</p>
+<p>　　离此当得无漏乐，勤希解脱求加持。</p>
+<p>四、修学三学（道谛）。</p>
+<p>　　为脱有苦依三学，出家身德佛所称，</p>
+<p>　　生生愿持解脱戒，如护眼珠求加持。</p>
+<p>三、于大士道修心次第分三：初、入大乘之理趣；二、发菩提心之轨则；</p>
+<p>　　　　　　　　　　　　　三、发心已修菩萨行之法。</p>
+<p>今初</p>
+<p>　　但求解脱虽可得，惜于自利且未圆，</p>
+<p>　　愿修能满二利行，入大乘道求加持。</p>
+<p>二、发菩提心之轨则分二：初、发菩提心之修法；二、受持菩提心。</p>
+<p>初、发菩提心之修法有二：初、由因果七教授门修法（依阿底峡所传修菩提心法）。</p>
+<p>　　　　　　　　　　　　二、由自他互换门修法（依寂天菩萨所传修菩提心法）。</p>
+<p>初、由因果七教授门修法分二：初、利他心修法；二、希求菩提之心修法。</p>
+<p>初、利他心修法分二：初、成立菩提心之基；二、正修发菩提心。</p>
+<p>初、成立菩提心之基分二：初、于一切有情修等舍；二、于一切有情修悦意慈。</p>
+<p>今初</p>
+<p>　　恩怨中庸今虽现，思量各各无决定，</p>
+<p>　　不应虚妄分爱憎，勤修舍心求加持。</p>
+<p>二、于一切有情修悦意慈分三：初、修知母；二、修念恩；三、修报恩。</p>
+<p>今初</p>
+<p>　　生死流转无其始，入胎受生亦无初，</p>
+<p>　　故知有情皆是母，愿生斯见求加持。</p>
+<p>二、修念恩。</p>
+<p>　　今生爱我母为最，众母爱护亦如之，</p>
+<p>　　思此厚恩未能报，忆念母恩求加持。</p>
+<p>三、修报恩。</p>
+<p>　　若知有恩尤弃舍，似我下劣更有谁，</p>
+<p>　　是故图报当拔苦，并予胜乐求加持。</p>
+<p>二、正修发菩提心分三：初、修慈；二、修悲；三、修增上意乐。</p>
+<p>今初</p>
+<p>　　有恩母等乏安乐，我以身财善根施，</p>
+<p>　　愿诸有情皆得乐，一切圆具求加持。</p>
+<p>二、修悲。</p>
+<p>　　母等众生苦所逼，苦因苦果愿尽离，</p>
+<p>　　纵有余殃我代受，勤修悲心求加持。</p>
+<p>三、修增上意乐。</p>
+<p>　　一切世间诸有情，获无漏乐断苦根，</p>
+<p>　　我应决定如是作，愿速堪能求加持。</p>
+<p>二、希求菩提之心修法。</p>
+<p>　　任运成办自他利，世尊而外更有谁，</p>
+<p>　　以此为利有情事，愿速成佛求加持。</p>
+<p>二、由自他互换门修法分三：初、自他平等修法；二、自他相换修法。三、修取舍法。</p>
+<p>今初</p>
+<p>　　自他于苦皆不欲，愿得安乐此心同，</p>
+<p>　　他之求乐亦如我，自他等视求加持。</p>
+<p>二、自他相换修法。</p>
+<p>　　爱自即成众苦因，爱他则为万善本，</p>
+<p>　　生佛差别从此出，自他相换求加持。</p>
+<p>三、修取舍法。</p>
+<p>　　以我善乐诸因果，他苦因果尽无余，</p>
+<p>　　如风去来行取舍，由此发心求加持。</p>
+<p>二、受持菩提心。</p>
+<p>　　为令发心长不退，念其胜利日六修，</p>
+<p>　　断四黑法依白法，如理勤行求加持。</p>
+<p>三、发心已、修菩萨行之法分二：初、总修大乘法；二、别修金刚乘法。</p>
+<p>初、总修大乘法分二：初、受菩萨戒之法；二、受已修学之法。</p>
+<p>今初</p>
+<p>　　成就利他发宏誓，为速圆满此誓愿，</p>
+<p>　　进受大戒起大行，勤猛修学求加持。</p>
+<p>二、受已修学之法分二：初、成熟自相续修六度法；二、成熟他相续修四摄法。</p>
+<p>初、成熟自相续修六度法分六：初、修布施法；二、修戒法；三、修忍法；</p>
+<p>　　　　　　　　　　　　　　四、修精进法；五、修静虑法；六、修慧法。</p>
+<p>今初</p>
+<p>　　身命资具三世善，各随所愿施有情，</p>
+<p>　　从心变现以布施，舍心增广求加持。</p>
+<p>二、修戒法。</p>
+<p>　　别解脱等诸律仪，舍命不犯罪恶行，</p>
+<p>　　若遮若性微细罪，羞耻防护求加持。</p>
+<p>三、修忍法。</p>
+<p>　　人及非人四大种，所作损恼多相逼，</p>
+<p>　　断除嗔恚不与较，观业忍受求加持。</p>
+<p>四、修精进法。</p>
+<p>　　既为利他求菩提，无量艰辛经劫海，</p>
+<p>　　于诸难行无怯倦，著精进铠求加持。</p>
+<p>五、修静虑法。</p>
+<p>　　念知坚固除沉掉，心缘一境生轻安，</p>
+<p>　　身心于善有堪能，随意得止求加持。</p>
+<p>六、修慧法。</p>
+<p>　　以分别智观法性，即由观力引轻安，</p>
+<p>　　复从轻安发深观，愿生此慧求加持。</p>
+<p>二、成熟他相续修四摄法。</p>
+<p>　　由施摄众成眷属，说如法语示利行，</p>
+<p>　　以身作则现同事，四摄利他求加持。</p>
+<p>二、别修金刚乘法分四：初、成就深咒道器依师受灌顶；二、清净三昧耶律仪；</p>
+<p>　　　　　　　　　　　三、二种次第修法；四、发愿速证果。</p>
+<p>今初</p>
+<p>　　已修共道成法器，当求具德阿舍黎，</p>
+<p>　　为入秘密胜上乘，受四灌顶求加持。</p>
+<p>二、清净三昧耶律仪。</p>
+<p>　　所受真言诸密戒，若善守护易成就，</p>
+<p>　　不守决当堕地狱，舍命珍护求加持。</p>
+<p>三、二种次第修法分二：初、生起次第修法；二、圆满次第修法。</p>
+<p>今初</p>
+<p>　　净凡死有中有生，能于道果二位中，</p>
+<p>　　成办法报化三身，生初次第求加持。</p>
+<p>二、圆满次第修法。</p>
+<p>　　业风悉入心无坏，现证幻身及光明，</p>
+<p>　　并双运道第二次，圆满诸行求加持。</p>
+<p>四、发愿速证果。</p>
+<p>　　如虹澄净金刚身，离障俱生空乐意，</p>
+<p>　　和合双运金刚持，愿速证得求加持。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../ptdcdzj/gbls/ptdcdssgbzkbdszfzfsy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../ptdcdzj/gbls/ptdcdsslbzkbdszfzfsy.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../ptdcdzj/gbls/ptdcdssgbzkbdszfzfsy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../ptdcdzj/gbls/ptdcdsslbzkbdszfzfsy.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

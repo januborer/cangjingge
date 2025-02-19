@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>金刚般若波罗蜜经弥勒菩萨偈颂  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="金刚般若波罗蜜经弥勒菩萨偈颂"><a class="header" href="#金刚般若波罗蜜经弥勒菩萨偈颂">金刚般若波罗蜜经弥勒菩萨偈颂</a></h1>
+<p>　　　金刚般若波罗蜜经　　弥勒菩萨偈颂</p>
+<p>　　编者按：</p>
+<p>　　相传无著菩萨，升睹史多天兜率宫慈氏尊处，就《金刚经》义请益弥勒菩萨，得弥勒菩萨七十七偈。无著转教其弟世亲（又名天亲），世亲菩萨依照其教造论作释，并加进归敬偈二（首），结偈一（尾），于是就有了传世的弥勒菩萨八十偈。</p>
+<p>　　自古以来，这弥勒菩萨八十偈就是理解、修习《金刚经》的权威性依据，无数高僧大德关于《金刚经》的注解疏论，都依经引偈，然后引申发挥。故我们把此八十偈辑出，单独排列于经文之后、论疏之前，以飨读者。</p>
+<p>　　检索经藏，弥勒偈颂有元魏菩提流支（《大藏经》1511《金刚般若波罗蜜经论》）和唐义净（《大藏经》1514《能断金刚般若波罗蜜多经论颂》）二种译文。前者有偈有释，八十偈现成辑出。后者七十七偈合三百零八句，我们则从义净另译的对该《颂》的解释──《能断金刚般若波罗蜜多经论释》（《大藏经》1513）中，辑出归敬偈和结偈，亦得八十偈。</p>
+<p>　　对二种译系，我们校勘之后，加上编号，得二部分如下：</p>
+<p>　　　　第一部分</p>
+<p>　　摘自《金刚般若波罗蜜经论》（天亲菩萨造，元魏天竺三藏菩提流支译），文见《大藏经》第二十五册，1511。</p>
+<p>　　校对用：</p>
+<p>　　　　1、《金刚仙论》（世亲菩萨造，金刚仙论师释，元魏天竺三藏菩提流支译），文见《大藏经》第二十五册1512。</p>
+<p>　　　　2、《金刚般若经疏论纂要》（唐宗密著），文见《大藏经》第三十三册1701。</p>
+<p>　　　　3、《金刚般若波罗蜜经宣演》（唐道氤撰）文见《大藏经》第八十五册，2733。</p>
+<p>　　　　4、《金刚般若旨赞》（唐昙旷著），文见《大藏经》第八十五册，2735。</p>
+<p>　　　　5、《金刚经宗通》（明曾凤仪撰），文见《续藏经》第三十八册。</p>
+<p>　　　　6、《金刚般若经偈会本》（元魏天竺三藏菩提流支译，清通理集），文见《续藏经》第三十九册《金刚经新眼疏经偈合释》。</p>
+<p>　　　　7、《金刚鎞》（清广伸撰），文见《续藏经》第三十九册。</p>
+<p>　　　　8、《金刚经郢说》（清徐发撰），文见《续藏经》第三十九册。</p>
+<p>　　又：校对结果，除在下列八十偈中注明外，尚有二点需要指出：</p>
+<p>　　　　一、有少数本子将（15）提前到（11）前，不知何据。</p>
+<p>　　　　二、有在（67）前加上一偈：「彼如来妙体，即法身诸佛，法身不可见，彼识不能知。」最早见于宗密之《金刚般若经疏论纂要》。</p>
+<p>　　　　上述二点，或与七十七偈数目不合，或与义净译系不能契合，故不取。仅于此指出，聊备一说。</p>
+<p>（1）法门句义及次第　世间不解离明慧　大智通达教我等　归命无量功德身</p>
+<p>（2）应当敬彼如是尊　头面礼足而顶戴　以能荷佛难胜事　摄受众生利益故</p>
+<p>（3）巧护义应知　加彼身同行　不退得未得　是名善付嘱</p>
+<p>（4）广大第一常　其心不颠倒　利益深心住　此乘功（或作「工」）德满</p>
+<p>（5）檀义（或作「度」）摄于六　资生无畏法　此中一二三　名为修行住</p>
+<p>（6）自身及报恩　果报斯不著　护存己不施　防求于异事</p>
+<p>（7）调伏彼事中　远离取相心　及断种种疑　亦防生成心</p>
+<p>（8）分别有为体　防彼成就得　三相异体故　离彼是如来</p>
+<p>（9）说因果深义　于彼（或作「后」）恶世时　不空以有实　菩萨三德备</p>
+<p>（10）修戒于过去　及种诸善根　戒具于诸佛　亦说功德满</p>
+<p>（11）彼寿者及法　远离于取相　亦说知彼相　依八八义别</p>
+<p>（12）差别相续体　不断至命住　复趣于异道　是我相四种</p>
+<p>（13）一切空无（或作「生」）物　实有不可说</p>
+<p>　　　　依言辞（或作「词」）而说　是法相四种</p>
+<p>（14）彼人依信心　恭敬生实相　闻声不正取　正说如是取</p>
+<p>（15）佛非（或作「不」）见果知　愿智力现见　求供养恭敬　彼人不能说</p>
+<p>（16）彼不住随顺　于法中证智　如人舍船筏　法中义亦然</p>
+<p>（17）应化非真佛　亦非说法者　说法不二取　无说离言相</p>
+<p>（18）受持法及说　不空于福德　福不趣菩提　二能趣菩提</p>
+<p>（19）于实名了因　亦为余生因　唯独诸佛法　福成第一体</p>
+<p>（20）不可取及说　自果不取故　依彼善吉者　说离二种障</p>
+<p>（21）佛于然灯语　不取理实智　以是真实义　成彼无取说</p>
+<p>（22）智习唯识通　如是取净土　非形第一体　非严庄严意</p>
+<p>（23）如山王无取　受报亦复然　远离于诸漏　及有为法故</p>
+<p>（24）说多义差别　亦成胜校量　后福过于前　故重说胜喻</p>
+<p>（25）尊重于二处　因习证大体　彼因习烦恼　此降伏染福</p>
+<p>（26）苦身胜于彼　希有及上义　彼智岸难量　亦不同余法</p>
+<p>（27）坚实解深义　胜余修多罗　大因及清净　福中胜福德</p>
+<p>（28）能忍于苦行　以苦行有善　彼福不可量　如是最胜义</p>
+<p>（29）离我及恚相（或作「嗔恚」）　实无于苦恼　共乐有慈悲　如是苦行果</p>
+<p>（30）为不舍心起　修行及坚固　为忍波罗蜜　习彼能学心</p>
+<p>（31）修行利众生　如是因当识　众生及事相　远离亦应知</p>
+<p>（32）假名及阴事　如来离彼相　诸佛无彼二　以见实法故</p>
+<p>（33）果虽不住道　而道能为因　以诸佛实语　彼智有四种</p>
+<p>（34）实智及小乘　说摩诃衍法　及一切授记　以不虚说故</p>
+<p>（35）随顺彼实智　说不实不虚（或作「不实亦不虚」）</p>
+<p>　　　　如闻声取证　对治如是说</p>
+<p>（36）时及处实有　而不得真如　无智以住法　余者有智得</p>
+<p>（37）闇明（或作「如」）愚无智　明者如有智</p>
+<p>　　　　对治及对法（或作「对法及对治」）　得灭法如是</p>
+<p>（38）于何法修行　得何等福德　复成就何业（或作「等」）　如是说修行</p>
+<p>（39）名字（或作「见」）三种法　受持闻广说　修从他及内　得闻是修智</p>
+<p>（40）此为自淳（或作「醇」）熟　余者化众生　以事及时大　福中胜福德</p>
+<p>（41）非余者境界　唯依大人说　及希闻信法　满足无上界</p>
+<p>（42）受持真妙法　尊重身得福　及远离诸障　复能速证法</p>
+<p>（43）成种种势力　得大妙果报</p>
+<p>　　　　如是等胜业　于法修行知（或作「显彼修行业」）</p>
+<p>（44）于内心修行（或作「如是无有相」）　存我为菩萨</p>
+<p>　　　　此即（或作「则」）障于心　违于不住道</p>
+<p>（45）以后时授记　然灯行非上　菩提彼行等　非实有为相</p>
+<p>（46）彼即非相相　以不虚妄说（或作「说故」）　是法诸佛法　一切自体相</p>
+<p>（47）依彼法身佛　故说大身喻　身离一切障　及遍一切境</p>
+<p>（48）功德及大体　故即说大身　非身即是身　是故说非（或作「大」）身</p>
+<p>（49）不达真法界　起度众生意　及清净国土　生心即是倒</p>
+<p>（50）众生及菩萨　知诸法无我　非圣自智信　及圣以有智</p>
+<p>（51）虽不见诸法　非无了境眼　诸佛五（或作「无」）种实　以见彼颠倒</p>
+<p>（52）种种颠倒识　以离于实念　不住彼实智　是故说颠倒</p>
+<p>（53）佛智慧根（或作「为」）本　非颠倒功德</p>
+<p>　　　　以是福德相（或作「根」）　故重说譬喻</p>
+<p>（54）法身毕竟体　非彼相好身　以非相成就　非彼法身故</p>
+<p>（55）不离于法身　彼二非不佛　故重说成就　亦无二及有</p>
+<p>（56）如佛法亦然　所说二差别　不离于法界　说法无自相</p>
+<p>（57）所说说者深　非无能信者　非众生众生　非圣非不圣</p>
+<p>（58）彼处无少法　知菩提无上　法界不增减　净平等自相</p>
+<p>（59）有无上方便　及离于漏法　是故非净法　即是清净法</p>
+<p>（60）虽言无记法　而说是彼因　是故一法宝　胜无量珍宝</p>
+<p>（61）数力无似胜　无似因亦然　一切世间法　不可得为喻</p>
+<p>（62）平等真法界　佛不度众生　以名共彼阴　不离于法界</p>
+<p>（63）取我度为过　以取彼法是　取度众生故　不取取（或作「彼」）应知</p>
+<p>（64）非是色身相　可比（或作「显」）知（或作「诸」）如来</p>
+<p>　　　　诸佛唯法身　转轮王非佛</p>
+<p>（65）非相好果报　依福德成就　而得真法身　方便异相故</p>
+<p>（66）唯见色闻声　是人不知佛　以真如法身　非是识境故</p>
+<p>（67）不失功德因　及彼胜果报　得胜忍不失　以得无垢果</p>
+<p>（68）示（或作「亦」）胜福德相　是故说譬喻（或作「故重说胜喻」）</p>
+<p>　　　　是福德无报　如是受不取</p>
+<p>（69）是福德应报　为化诸众生　自然如是业　诸佛现十方</p>
+<p>（70）去来化身佛　如来常不动　于是法界处　非一亦不（或作「非」）异</p>
+<p>（71）世界作微尘　此喻示彼义　微尘碎为末　示现烦恼尽</p>
+<p>（72）非聚集故集　非唯是一喻　聚集处非彼　非是差别喻</p>
+<p>（73）但随于音声　凡夫取颠倒　非无二得道　远离于我法</p>
+<p>（74）见我即不见　无实虚妄见　此是微细障　见真如远离</p>
+<p>（75）二智及三昧　如是得远离　化身示现福　非无无尽福</p>
+<p>（76）诸佛说法时　不言是化身（或作「佛」）　以不如是说　是故彼说正</p>
+<p>（77）非有为非离　诸如来涅槃　九种有为法　妙智正观故</p>
+<p>（78）见相及于识　器身受用事　过去现在法　亦观未来世</p>
+<p>（79）观相及受用　观于三世事　于有为法中　得无垢自在</p>
+<p>（80）诸佛希有总持法　不可称量深句义　从尊者闻及广说　回此福德施群生</p>
+<p>　　　　第二部分</p>
+<p>　　摘自《能断金刚般若波罗蜜经论颂》（无著菩萨造，唐三藏法师义净译），文见《大藏经》第二十五册，1514。</p>
+<p>　　校对用《能断金刚般若波罗蜜多经论释》（无著菩萨造颂，世亲菩萨释，三藏法师义净译），文见《大藏经》第二十五册，1513。</p>
+<p>（1）此经文句义次第　世无明慧不能解　稽首于此教我等　无边功德所生身</p>
+<p>（2）具如斯德应礼敬　彼之足迹顶戴持　觉辕难驾彼能乘　要心普利诸含识</p>
+<p>（3）胜利益应知　于身并属者　得未得不退　谓最胜付嘱</p>
+<p>（4）于心广最胜　至极无颠倒　利益意乐处　此乘功德满</p>
+<p>（5）六度皆名施　由财无畏法　此中一二三　名修行不住</p>
+<p>（6）为自身报恩　果报皆不著　为离于不起　及离为余行</p>
+<p>（7）摄伏在三轮　于相心除遣　后后诸疑惑　随生皆悉除</p>
+<p>（8）若将为集造　妙相非胜相　三相迁异故　无此谓如来</p>
+<p>（9）因与果甚深　于彼恶时说　此非无利益　由三菩萨殊</p>
+<p>（10）由于先佛所　奉持于戒学　并植善根故　名具戒具德</p>
+<p>（11）能断于我想　及以法想故　此名为具慧　二四殊成八</p>
+<p>（12）别体相续起　至寿尽而住　更求于余趣　我想有四种</p>
+<p>（13）皆无故非有　有故不可说　是言说因故　法想有四种</p>
+<p>（14）由彼信解力　信故生实想　不如言取故　取为正说故</p>
+<p>（15）佛了果非比　由愿智故知　为求利敬者　遮其自说故</p>
+<p>（16）证不住于法　为是随顺故　犹如舍其筏　是密意应知</p>
+<p>（17）化体非真佛　亦非说法者　说法非二取　所说离言诠</p>
+<p>（18）自受为他说　非无益集福　福不持菩提　彼二能持故</p>
+<p>（19）得自性因故　此余者是生　唯是佛法故　能成最胜福</p>
+<p>（20）不取自果故　非可取可说　解脱二障故　说妙生无诤</p>
+<p>（21）在然灯佛所　言不取证法　由斯证法成　非所取所说</p>
+<p>（22）智流唯识性　国土非所执　无形故胜故　非严许严性</p>
+<p>（23）譬如妙高山　于受用无取　非有漏性故，亦非是因造</p>
+<p>（24）为显多差别　及以成殊胜　前后福不同　更陈其喻说</p>
+<p>（25）两成尊重故　由等流殊胜　烦恼因性故　由劣亦胜故</p>
+<p>（26）彼果胜苦故　难逢胜事故　境岸非知故　于余不共故</p>
+<p>（27）是甚深性故　胜余略诠故　胄族高胜故　望福福殊胜</p>
+<p>（28）彼行堪忍时　虽苦行善故　彼德难量故　由斯名胜事</p>
+<p>（29）由无恚怒情　不名为苦性　有安乐大悲　行时非苦果</p>
+<p>（30）生心因不舍　是故应坚求　谓是得忍边　及此心方便</p>
+<p>（31）应知正行者　是利生因故　于有情事相　应知遍除遣</p>
+<p>（32）彼事谓名聚　最胜除其想　诸世尊无此　由真见相应</p>
+<p>（33）果不住因位　是得彼果因　世尊实语故　应知有四种</p>
+<p>（34）立要说下乘　及说大乘义　由诸授记事　皆无有差别（或作「舛」）</p>
+<p>（35）不得彼顺故　是非实非妄　如言而执者　对彼故宣说</p>
+<p>（36）常时诸处有　于真性不获　由无知有住　智无住得真</p>
+<p>（37）无智犹（或作「由」）如闇　当闲（或作「闇」）智若明</p>
+<p>　　　　能对及所治　得失现前故</p>
+<p>（38）由如是正行　获如是福量　于法正行者　业用今当说</p>
+<p>（39）于人（或作「文」）有三种　受持闻广（或作「读演」）说</p>
+<p>　　　　义得由从他　及己闻思故</p>
+<p>（40）此谓熟内己　余成他有情　由事时大性　望福福殊胜</p>
+<p>（41）非境性独性　能依是大人　及难可得闻　无上因增长</p>
+<p>（42）若但持正法　所依处成器　蠲除诸业障　速获智通性</p>
+<p>（43）世妙事圆满　异熟极尊贵　于此法修行　应知获斯业</p>
+<p>（44）由自身行时　将己为菩萨　说名为心障　违于无住心</p>
+<p>（45）授后时记故　然灯行非胜　菩提彼行同　非实由因造</p>
+<p>（46）无彼相为相　故显非是妄　由法是佛法　皆非有为相</p>
+<p>（47）谓以法身佛　应知喻丈夫　无障圆具身　是遍满性故</p>
+<p>（48）及德（或作「得」）体大故　亦名为大身　非有身是有　说彼作非身</p>
+<p>（49）不了于法界　作度有情心　及清净土田　此名为诳妄</p>
+<p>（50）于菩萨众生　诸法无自性　若解虽非圣　名圣慧应知</p>
+<p>（51）虽不见诸法　此非无有眼　佛能具五种　由境虚妄故</p>
+<p>（52）种种心流转　离于念处故　彼无持常转　故说为虚妄</p>
+<p>（53）应知是智持　福乃非虚妄　显此福因故　重陈其喻言（或作「说」）</p>
+<p>（54）谓于真法身　无随好圆满　亦非是具相　非身性应知</p>
+<p>（55）于法身无别　非如来无二　重言其具相　由二体皆无</p>
+<p>（56）如佛（或作「来」）说亦无　说二是所执　由不离法界　说亦无自性</p>
+<p>（57）能说所说虽甚深　然亦非无敬信者　由非众生非非生　非圣圣性相应故</p>
+<p>（58）少法无有故　无上觉应知　由法界不增　清净平等性</p>
+<p>（59）及方便无上　由漏性非法　是故非善法　由此名为善</p>
+<p>（60）说法虽无记　非不得应知　由斯一法宝　胜彼宝无量</p>
+<p>（61）于诸算势类　因亦有差殊　寻思于世间　喻所不能及</p>
+<p>（62）法界平等故　佛不度众生　于诸名共聚　不在法界外</p>
+<p>（63）若起于法执　与我执过同　定执脱有情　是无执妄执</p>
+<p>（64）不应以色体　唯（或作「准」）如来法身　勿彼转轮王　与如来齐等</p>
+<p>（65）即具相果报　圆满福不许　能招于法身　由方便异性</p>
+<p>（66）唯见色闻声　是人不知佛　此真如法身　非是识境故</p>
+<p>（67）其福不失亡　果报不断绝　得忍亦不断　以获无垢故</p>
+<p>（68）更论于福因　为此陈其喻　彼福无报故　正取非越取</p>
+<p>（69）彼福招化果　作利有情事　彼事由任运　成佛现诸方</p>
+<p>（70）去来等是化　正觉常不动　彼于法界处　非一异应知</p>
+<p>（71）微尘将作墨　喻显于法界　此论造墨事　为彰烦恼尽</p>
+<p>（72）非聚非集性　显是非一性　于彼总集性　明其非异性</p>
+<p>（73）不了但俗言　诸凡愚妄执　断我法二种　非证觉无故</p>
+<p>（74）是故见无见　无境虚妄执　由此是细障　如是知故断</p>
+<p>（75）由得二种智　及定彼方除　陈福明化身　非无无尽福</p>
+<p>（76）诸佛说法时　不言身是化　由不自言故　是其真实说</p>
+<p>（77）如来涅槃证　非造亦不殊　此集造有九　以正智观故</p>
+<p>（78）见相及与识　居处身受用　过去并现存　未至详观察</p>
+<p>（79）由观察相故　受用及迁流　于有为事中　获无垢自在</p>
+<p>（80）由斯诸佛希有法　陀罗尼句义深邃　从尊决已义广开　获福令生速清净</p>
+<p>4</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../jgjzj/fsndjgbrblmdjtyj.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../jgjzj/lcfdssjgj.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../jgjzj/fsndjgbrblmdjtyj.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../jgjzj/lcfdssjgj.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

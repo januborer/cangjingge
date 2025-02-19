@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>礼佛的深义 - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="礼佛的深义"><a class="header" href="#礼佛的深义">礼佛的深义</a></h1>
+<p>　　　　礼佛的深义</p>
+<p>　　在禅修期间，每天都会有早晚课礼佛，我们的早晚课跟一般传统的方式，稍有不一样的地方，方式虽然有所不同，但事实上本质是相同的。因为每位佛教徒都是希望能够学习佛陀，也能够向佛陀看齐，而早日成佛、解脱自在、普渡众生，所以今天就跟大家深度解析礼佛的深义。</p>
+<p>　 　一般的佛教徒或是一般百姓，大部份都把佛、佛陀，当做一般民间信仰的神在朝拜、崇拜、祈求。如果事业不顺利，就想透过拜拜、拜佛、礼佛，然后祈求事业能 够顺利；如果比较欠缺钱，很多人就想透过礼佛、拜佛，能够多赚一些钱；如果太太生不出小孩子，也会向佛陀祈求帮助能够生个龙子龙女；媳妇生不出小孩，做婆 婆的会婆婆妈妈的关心，也会暗中去祈求，祈求媳妇能够早日生个小孩，让她能够抱子抱孙…。</p>
+<p>　 　但是，如果我们把佛陀当做是一般神佛这样看待、在拜，就像是把钻石当玻璃珠在玩，不是说一般神祇不好，一般我们诚心诚意向神祇祈求，只要出发点是正确、 是善良，龙天护法、很多的善神都会协助我们的，如果你的出发点不纯正，是不应该向诸佛菩萨、诸神祈求。佛陀所要告诉我们的，不是有什么欲贪不满足，你来求 我就帮助你，不是这样的，因为这样只能够一时的救济、济急，而且也只是一种治标。佛陀所希望的是让你从根本解决而能够治本，并且让你能够开智慧，不是在没 有打开智慧情况之下，然后一直在盲目的祈求。因此，我们要了解礼佛的深义。</p>
+<p>　 　以前在我国中时期的乡下没有佛教，只有民间的信仰，当我看到一般民间很多人所在崇拜的妈祖，有这么多人在向她祈求，那时候我也发出一种愿力，希望将来能 够像妈祖一样保佑苍生，能够协助众生解除痛苦。后来也接触到民间信仰的保生大帝，他是属于偏重在医治众生的病痛、疾苦方面，看到来自台湾北、中、南部全省 不少人，到村里庙宇向保生大帝求医、求神、求治病的良方，当时看到这些情况，也发愿将来能够像保生大帝一样，泞够帮助众生解除病痛，愿默默的为这世间多付 出。</p>
+<p>　 　以空海在成长的过程中，看到这些诸神，一方面是感恩，当然那时候也会拿香来拜，但是在我内心里面，就是有一种见贤思齐的心，就是要向他们看齐、学习，他 们是我们学习的榜样。当后来渐渐成长到大专时期，接触了佛法、佛教之后，慢慢了解佛教的深奥，以及佛陀的伟大，我同样发愿要向佛陀看齐、学习，希望将来能 够跟佛陀一样，大慈大悲悯众生，能够宣说无上微妙法，协助众生出离苦海。</p>
+<p>　 　所以，在空海成长的过程里，遇到这些世界级的伟人，空海不是自卑也不是“我慢”，而是虚心学习、感恩他们，然后学习他们的智 慧、效法他们的精神，向他们看齐、学习，希望将来也能够跟他们一样，今天跟大家分享礼佛的深义。当空海在拜佛的时候，一方面是感恩佛陀，我也希望以后各位 在礼佛的时候，真的能够体会到礼佛的深义，而不是一般盲目的崇拜。也不要认为那只是一个雕像、塑像，为什么要拜那些，这是偶像崇拜、是迷信。这种观念是一 半对、一半错，错的是：也许这里面有很多我们的“我慢”，让我们的腰弯不下来，让我们的头低不下来。</p>
+<p>　　　　一、培养感恩的心</p>
+<p>　 　跟各位同修互相勉励的就是，以后我们在礼佛的时候，第一、我们能够培养感恩的心。为什么要培养感恩的心呢？因为在这娑婆世界、在这地球上，释迦牟尼来人 间，从一位平凡的凡夫，然后用生命去找法、去修行，当他大彻大悟之后，上到彼岸，他不辞众生、悲悯众生、倒驾慈航，告诉众生一条清清楚楚的解脱之路，让黑 暗中的世界、苦海中的众生，能够因循著这一条清楚的解脱之路，而逐渐迈向解脱，登上彼岸、出离苦海。所以，当我体会到这些的时候，我真的由衷生起感恩之 心，在空海拜佛的过程不是拜偶像，而是充满著感恩，感恩善知识，就像在黑暗中的灯塔指引我们一条解脱之路，所以感恩的心是礼佛的第一个意义。</p>
+<p>　　　　二、见贤思齐的心</p>
+<p>　 　第二层意义就是，我们说要学佛、成佛，是真的要把那些变成动词、实际去做，而最具体的就是在礼佛、拜佛的时候，我们要有这一种见贤思齐的心，礼佛、拜佛 就是为了成佛，就是为了向释迦牟尼佛看齐，向人间、人类伟大的智慧者看齐，让我们能够大彻大悟，让我们能够早日远离颠倒梦想的世界。所以，在四弘愿里面的 “佛道无上誓愿成”，是真的要去实践，不要以为此生此世要成佛是“我慢”，不是的！你不成佛，那才是在 “我慢”的世界，或是在“卑慢”的世界打滚，真的成佛、真的解脱，是来到完全没有“我慢 ”的世界，我们要向佛陀看齐、学习，来到完全没有贪、没有嗔、没有痴、没有“我慢”的世界，内心的清静、祥和，对这 世间就是只有慈悲，对一切众生就是慈悲善待一切众生，所以我们学佛的第二层深义就是见贤思齐。</p>
+<p>　　　　三、培养慈悲心</p>
+<p>　 　礼佛、拜佛是帮助我们培养慈悲心，当佛陀成佛之后，一样用生命去弘法，他放下王子、放下将来国王的继承权、放下世间的一切名利，然后到处弘法度众生，超 越宗派、超越种族、超越国界，内心里面所想的是为普天下的众生，心怀天下众生，希望众生早日出离苦海，佛陀这一种自度、度人，自利、利人的这一种慈悲精 神，值得我们看齐、学习。问问我们自己跟佛陀差多少？如果有不足的地方，我们就看齐、学习，学习佛陀大慈大悲悯众生，以慈悲心善待一切众生，跟众生广结善 缘，这就是礼佛的第三层意义：长养我们的慈悲心。</p>
+<p>　　　　四、培养柔软心</p>
+<p>　 　礼佛可以培养我们的柔软心，心虽然是无形，一般众生的心是僵化、僵硬的，一般众生的心常常不是自卑、就是“我慢”，我们要学习 佛陀心的清净，如果你在礼佛的当下，能够见贤思齐，向这些世界的智慧者、解脱者看齐、学习，承认我们自己的不足，承认我们自己的贪、嗔、痴，承认我们自己 的脸黑，当你懂得把腰弯下来，把头低下来的时候，就是你迈向光明大道的转捩点，也是迈向解脱的分水岭。一个人如果腰弯不下来，头低不下来，要仔细去分析背 后是不是“我慢”在作祟，礼佛可以让我们培养柔软的心，培养感恩的心、培养慈悲心，礼佛能够让我们照见不足，让我们身心更柔软， 这是礼佛的第四层意义：培养柔软心。</p>
+<p>　　　　五、开发我们的明觉</p>
+<p>　 　礼佛当下可以开发我们的明觉，有的人制定一天要礼多少拜、礼拜多少次，这样才叫做礼佛，这样功课才做完，有的人发愿一天要礼拜一千拜，所以就拚命的朝著 那个数目努力在拜，拜下去马上起来然后再拜，一二三…一直在那里拜，在还没有拜到九百九十次之前，他的心是紧的，因为觉得还没有到达目标， 离目标还很远，所以他要赶快努力用功。因此，在礼佛的当下，很难安住在每一个当下，你是为了达到那个数目的那个目标而在礼佛，你这样当下错失掉很多的体 悟，错失掉很多的觉察，真正的礼佛不在于次数的多少，而在于我们由衷的发出来一种礼敬、一种感恩。在礼佛的当下，动作不要快，不在于次数的多少，也不在于 姿势，要怎么样礼佛才叫做正确？是没有绝对标准，就算你姿势正确，但是如果身心不柔软、没有诚心，这样的礼佛功效也不大，我们要的是实质的意义、真正的意 义。</p>
+<p>　 　礼佛有真正礼佛的功效，而不是拜个形式，所以我们在礼佛的时候，你慢慢的拜，而且每一个动作、每一个过程，你都清清楚楚，要合掌、要弯腰、要屈膝，手、 膝著地，双手按在地上、翻掌以及五体投地，在这整个过程，你都保持清醒明觉、不疾不徐，在整个动作里面，充满著安祥、充满著柔和。如果你能够这样去拜，就 算这半个小时，只有礼佛十次，那也都是相当的值得。以前半小时，可能你要礼佛六十次，一分钟礼佛两次，但是现在就算在三十分钟内，礼佛只有十次，而你能够 保持那一种清醒明觉，这个效果是比前者更大的。</p>
+<p>　 　而且在礼佛的当下，这是开发我们的“身念住”，你身体的每一个动作，都要清清楚楚的觉察，包括要起身的时候，也不是马上囫囵吞 枣的起来，这个反方向的动作过程，一样我们保持清醒明觉，所以当下，你不但能够见贤思齐、培养柔软心、长养慈悲心，而且当下也是开发我们的“ 身念住”，开发我们身体各种动作的明觉，这样你的礼佛会更有意义。如果你的身心更稳定、觉察力又够高，你当下又可以去看到动作之前的起心动 念。</p>
+<p>　 　当你觉察力够的时候，包括我要合掌、要屈膝、要弯腰、要伏在地上，这整个过程都去看到动作之前的起心动念；要起身的时候、要翻掌，头颈部要起来、腰要挺 直，膝要起来，这个过程一样都是有意识之流、有意念在引导，你能不能清楚看到？如果你能够看到，你也是当下“身念住”、 “心念住”都在开发。所以，大家要能够深深的体会礼佛的意义，而且朝这方面去做，这样不但能够身心越来越柔软，而且明觉也会不断 的开发，就算你在礼佛，也一样可以处处见法。</p>
+<p>　　　　六、了悟究竟皈依处在哪里</p>
+<p>　 　礼佛的最后一个意义，就是让我们能够了悟究竟皈依处在哪里？涅槃彼岸在哪里？如果你能够体会到整个宇宙、整个大自然，跟我们生命的息息相关，佛陀所指引 的究竟目标在哪里？如果你能够体会到你的内心会对整个大自然，会充满著感恩的心，你礼佛的当下，不但感恩佛陀，你也会感恩整个大自然，也会感恩众生恩啊， 因为这个小我的存在，真的需要整个大自然，众多的因缘，以及世间非常多的因缘，这个小我才能够存在啊，如果你能够这样体会，你这个“小我 ”会溶入整个法界、“大我”里面，你会来到安祥，解脱自在的世界啊，好！礼佛的深义就跟大家分享到这里，谢谢大家！ 谢谢！，祝各位法喜充满！，谢谢！，四念处修行法要第28集， 主讲人：空海法师，好！各位同修，大家好！，我们继续来跟大家分享，如何才能体证到“无我”，体证“无我 ”，这个已经是来到见法最深的地方，不是见到佛性、自性事情就解决，不是这样啦，真的是要体悟到“无我”，而且要做 到“无我”啦，你就会像诸佛菩萨一样解脱自在啊，那我们现在来跟大家分享，怎么样才能够体悟到“无我 ”，除了前几天跟大家分享的，要去彻证“无常”之外，从六根跟六尘的接触当下，每一个当下去体悟“无常 ”法流之外，因为你体悟无常法流，你会体会到没有一个实体的存在，没有一个固定不变的存在，它是一直的都在流动生灭变化，那这个流动生灭变 化，它就会让你对那个“我”的根深地固的观念，慢慢的溶解、慢慢的溶解，再来，你如果能够进一步去分析，这个“我 ”要能够存在，需要哪些的条件？哪些的因缘？这个要深入到生命核心来探讨，我这个生命能够存在，需要哪些的因缘条件？如果说有“ 我”，那这个“我”到底是怎么来？这个“我”要能够存在，到底需要哪些条件？佛教讲说，如 果这个“我”你要承认它，单独能够存在有“我”的话，那它一定要符合常、恒、一，常、一、主宰，它要符 合常、恒常，再来就是“一”再来是“主宰”，这个“一”就是说，你不需要其他 的因缘，你可以完全一个人，单独主宰、单独决定，我要怎么样就能够怎么样，包括那个“一”一个人、一个因素，你都不需要其他的因 素，包括你又能够主宰一切，如果这三个你能够做得到，能够维持常恒，能够维持独一、个体存在，能够主宰一切，那这样的话，这个“我 ”，它才能够存在，才能够成立，如果这三个，你一一的去检验，那是不可能存在的话，那你就能够体悟到什么叫做“无我 ”，所以第一个，我们前面讲“三法印”的第一个法印“无常”，那就是在告诉我们，你要追求 一个常恒的“我”，那是不可能的，那是因为你没有了解实相而已，如果你真的去彻证大自然存在的运转法则，大自然存在的实相，当你 一一去检验去求证之后，你发现真的一切都在流动，所以你就知道，这个常…常恒的这个法印，这个现象、这一种梦想，那是不存在的，再来，我们 来解析这个“一”，就是说，我只要靠我一个人，我就能够成就一切，就能够承办一切，我要吃饭，我只要动个念头，喔!这 些米啊饭啊菜啊，全部都自动的涌现出来，我不需要农人种田，我不需要农人去种菜，我不需要别人来煮这些饭菜，我不需要那些瓦斯、柴火都不用，我只要一个念 头饭菜全部都出来，你能不能这样做到，如果可以，那表示你不需要众因缘的协助，你只要“一”、一个，你就可以解决一切，空海检验 过，我是承认我不可能这样，我需要很多的因缘协助我才能够存在，所以当我在吃一餐饭的时候，我就是感恩，感恩众因缘，包括说我们要能够有衣服穿，要有多少 的因缘配合，我们才能够有这些衣服可以穿，我们要能够承办一件事情，背后要有多少的因缘的协助、护持，我们才能够承办一件事情，包括说，你今天能够在这个 庄严的禅堂来打坐，你背后要有多少因缘的支撑、支持，你知道吗？你有深度去解析吗？除了家人的支持体谅、护持之外，除了公司老板、上司主管，他们的配合、 支持之外，再来，这样的一个禅堂，这样的一个环境存在，要凝聚多少的因缘才能够形成，我们为这整个大因缘、大环境，我们付出了多少，不是邀功而是要问我们 自己，我们为这样的一个禅修，我们付出了多少，如果我还在那里，坐的在那里牢骚一大堆，抱怨一大堆还很多的不满，这里也不顺遂那里也不好，这里也不如意， 如果我们还在那里这样抱怨，那表示我们都看不到，背后的因缘，如果你能够去看到，我今天能够有因缘，在这里好好的禅修用功，能够开发我们的明心，开发我们 的觉性，能够让我见法，真的这背后要具足非常多的因缘，这时候你的身心会很柔软，而且会充满著感恩的心，当你的身心越柔软，越有感恩的心，那你的见法力道 反而是越强，身心柔软的时候，你就能够溶入当下的法流里面，所以不要一谈到修行，总是在那里抱持著一个方法，然后在那里一直要入深定，一直要坐多久才叫做 修行，不是这样啊，如果你观念知见错误的话，你越修，心反而越僵化，“我慢”反而越大啊，所以如果说你能够来这里禅修，你能够长 养你那一种慈悲心，跟感恩的心，那你已经成功了一大半，你的生命品质会不一样的，再来，要解析“无我”，刚才我们这个 “一”，我们已经解析了，你真的认真去解析，你就知道，不是我一个人很厉害啊，不是我一个人能够承办事情啊，要众因缘啊，再来再 去解析“主宰”，我能够主宰一切吗？我能够让我这个色身不老、不病、不死吗？我能够不吃饭吗？能够不呼吸吗？我能够让我最敬爱的 家人、亲人，能够让他不老、不病、不死吗，我能够随心所欲，我要怎么样就怎么样吗，你慢慢的去解析啊，如果说你能够主宰一切，你要怎么样就怎么样的话，那 你就可以推翻佛陀所讲的“无我”的，这个真理实相，空海都很认真的去检验去思惟、去求证发现，真的释迦牟尼他的智慧，实在是非常 的高超啊，他讲出了非常深的真理实相啊，一般的宗教很少能够触及，很少在解析的“无我”，佛陀竟然能够看得这么的清楚，所以当我 越深入去了解，我越佩服啊，所以“无我”不是抽象、不是想像，也不是拿来跟人家争辩，不是说我懂很多，我很会引经据典，我懂得比 你多，我可以辩赢过你，如果你拿“无我”要去辩赢过别人的话，那你的“无我”都只是知见啊，因为你是用 “我”在宣说“无我”，用“我慢”在驳倒别人，如果你真的来到“ 无我”的世界，那你是不与众生诤啊，不与世间诤啊，“入空戏论灭”啊，你真的来到“无我” 的世界，你绝对不会跟众生比大比小、比高比低的，你只有慈悲善待一切众生，协助有缘人啊！，众生有苦我们就协助啊！，再来，如果要去体会“无 我”，你还可以从一些角度去体悟，我这个色身是不是真的，需要仰靠大地、流水阳光、空气、还有虚空，佛经里面讲的，我们这个色身是由四界，就 是地、水、火、风，这些所组合而成？如果再讲更具体详细的话，包括空，地、水、火、风、空，就会有那个“识”的产生，所以如果扩 大到六界，那就是地界、水界、火界风界、空界跟识，但是，这些都不是名相，你不要把它又在一直在五蕴身心里面，在那里钻研，我这个身心是由地界，地是什 么，地是肌肉、地是骨头地是坚硬，那这样，我体会我看到了地界了，但是你却否定，这个大自然的这个地球，这个地界跟我们有什么关系，你认为学佛不要去看那 些，学佛跟那些没关系，我们就五蕴身心里面去钻研、去解析就好，如果你只是在五蕴身心里面，要透视“无我”要解析“ 无我”的话，空海所经历过的是，那是不可能的，因为你是用一个“我”，在解析“无我”，但 是一般学佛者不容易觉察到这一点，因为“四念处”的这些修法，包括以前在五蕴身心里面，要去解析“无我 ”，我也都下过很多功夫啊，但是就算下过很多功夫，生命修到奄奄一息，还是发现…奇怪！，怎么还是会有“我慢？ ”，怎么还是会有不安？这个“我”怎么还是不知究竟皈依处在哪里，所以，当后来有一些因缘，让我体悟到之后，啊!深 深的发现真的你要体悟“无我”，一定要看到活生生的佛法，一定要看到整个大自然跟我们的密切关系啊，如果你能够去体会，我每天我 这个色身，不错！，一样是具足地、水、火、风、空，但是这些元素材料从哪里来呢？你如果能够去看到，我身体里面的地界，原来是来自这个大自然的地界啊，这 个土地啊，你吃稻米、吃那些瓜果，那就是那些植物，它们吸取土壤里面的养份，转换土壤里面的那些铁质、钙质、矿物质，然后结出累累的果实，它们是把它转 换，加上光合作用，结出累累的果实，跟青菜、蔬菜之后，我们再间接吃土壤，也就是我们吃这些五谷、蔬菜，但是在这样一个转换的过程，众生就不容易看到，我 们的身体的骨头跟肌肉，是来自于土壤的转换，只是一个转换众生就看不到，所以你以为，我的这个生命，跟地球、跟土地没关系，佛陀都明白的告诉我们，我们这 个生命，就是由土地组合而成，由水份组合而成，那这些土地、这些水，不是我所创造出来的，不是我修行很厉害，我能够发明发挥出来的，这些都是大自然本来就 存在啊，那这个“我”要成长，你都是每天不断的要吸取，土地的营养，然后你的肉体、骨头，才能够继续健康的存在著，你每天要吸取 大自然的水份，我身体里面的水份，才能够继续保留著，我才能够有足够的水份，喝水，你就是在喝大自然的甘露水啊，我这个生命能够存在，就是要整个大自然的 养育啊，这就是缘起啊，这个生命要存在，这个“我”要存在，就是要这么多的因缘啊，再来，空气，一般人很难体会到说，一分钟的空 气，是这么的有价值，五分钟的空气比五百万都更有价值，知道吗？五分钟的空气比五百万都更有价值，你失去了五百万，你不会死亡，你只是会痛苦、哀伤、不 舍，但是你难过几天之后，你的生命还是活著，你也还可以，就算你全部的家产都丧失掉了，你也还是可以重新东山再起，重新来过，你的生命还不会死掉，除非你 自己自暴自弃，但是只要五分钟，没有新鲜的空气让你呼吸，绝大多数的人都要死掉，超过三分钟没有新鲜的空气，大部份的人就会变成植物人，所以我们要静下来 解析啊，平常我认为我很厉害，我学问很高、我很聪明，我IQ很 高我办事能力很强，你看这都是我行啊，我很厉害啊，你能不能看到这个背后，都需要整个大自然的支撑，大自然的养育，需要很多的因缘具足，我才能够活著，因 为有大自然的支撑，我这个生命活著，有这个主体，我才能够去做其它事情，但是我们却常常忘恩负义啊，我们却常常忘本啊，如果你体悟不到“无我 ”，那就请你自己练习看看，把你的鼻子跟嘴巴都捏起来，看你能够憋气多久，真的要去练习，如果你学佛学了几十年，你还体悟不到“ 无我”，还体悟不到大自然的风界，跟我们身体的空气，有多么重要的密切关系，如果你体悟不到的话，请你把鼻子跟嘴巴捏起来，不要呼吸，看你能 够活多久？看这个“自我”多么厉害，如果你很厉害，那你就不要呼吸，而又能够活著，如果你认为你的修行境界很高，你神通广大，那 你能不能自己无中生有，创造空气出来，你生命不需要这个，大自然的这些空气，我靠我的神通，我就能够变化出无边的无量的空气出来，如果能，你的神通能够变 化出这些，那你的神通就有用，如果没有的话，那一些神通，它跟生命的存在关系不大，我们只是做一些助缘，如果你认为你的神通很广大，你能不能去看到，很多 都只是雕虫小技，能够看到这些，当你有神通的时候，你不会增长“我慢”的，你会擅用一些工具去协助众生，你也会知道，我能够帮助 众生的，也是很有限，是一些助缘，而生命存在的主要因素，那都是整个大自然在支撑啊，大地、流水、空气我们分析过了，再来看看火、火界，我们身体里面的火 界，要清楚的认识出来啊，那不是无中生有啊，火界讲的就是太阳，我们生命能够存在，跟太阳完全是密不可分，没有太阳把阳光、把能源输送到地球来，我们地球 的所有的植物跟动物，欠缺能源，生命就会全部都枯萎掉啊，你能不能去体会，火界就是来自于太阳，太阳默默的在燃烧自己，不只照亮众生，而且把生命的能源， 燃烧自己，把自己生命的能源，来供养地球上的植物、动物，而我们曾几何时，好好的去感恩太阳，感恩这个大自然的养育，所以大家静下来，好好去解析好好去体 悟，什么叫做“无常”？什么叫做“缘起甚深”？如果你能够体会到“缘起甚深 ”，佛陀就跟我们讲“若见缘起则见如来”，如果你真的能够彻证“无常”，又体悟到 “缘起甚深”，那你就能够来到解脱自在的世界，因为你会体会到，什么叫做“无我”的真理实相，祝各位早 日开悟，解脱自在！谢谢大家！谢谢</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../khwcfszj/rhcntzdww.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../jingshuxiazai.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../khwcfszj/rhcntzdww.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../jingshuxiazai.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

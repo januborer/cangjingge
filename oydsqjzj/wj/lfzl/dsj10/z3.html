@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>卷十之三 - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../../favicon.png">
+        <link rel="stylesheet" href="../../../../css/variables.css">
+        <link rel="stylesheet" href="../../../../css/general.css">
+        <link rel="stylesheet" href="../../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../../highlight.css">
+        <link rel="stylesheet" href="../../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="卷十之三"><a class="header" href="#卷十之三">卷十之三</a></h1>
+<p>古歙门人成时编辑</p>
+<p>【槜李天寕禅堂度岁卽事】</p>
+<p>【寄吴西城先生】</p>
+<p>【士民失德亢旱不雨野人忧之赋四月】</p>
+<p>【和答吴叔雅】</p>
+<p>【中秋后二日群鹤集于灵峰赋灵鸟】</p>
+<p>【用韵题背坐图二首】</p>
+<p>【和陈非白三首】</p>
+<p>【和张兴公二首】</p>
+<p>【和答宋量公】</p>
+<p>【赠耦西】</p>
+<p>【示偈六首】</p>
+<p>【题谢在之扇头】</p>
+<p>【赠魏国徐燕超居士】</p>
+<p>【寿刘今度六旬】</p>
+<p>【五戒歌示憨月】</p>
+<p>【示昱岩】</p>
+<p>【示马光世】</p>
+<p>【施茶偈】</p>
+<p>【杨辅之读破空论】</p>
+<p>【题旻昭画赠季筏】</p>
+<p>【示君甫】</p>
+<p>【和答宋量公】</p>
+<p>【学道偈】</p>
+<p>【迥者隐纳之深痛也】</p>
+<p>【入山四首】</p>
+<p>【寄寿幽栖主人】</p>
+<p>【知足偈】</p>
+<p>【七净督梓大佛顶经玄文】</p>
+<p>【祖堂度岁写怀二首】</p>
+<p>【偶成三绝】</p>
+<p>【续梦中句（有序）】</p>
+<p>【丙戌春幻游石城随缘阅藏以偿夙愿夜梦塑地藏大士身首具手足未成感赋。】</p>
+<p>【雨窻偶成】</p>
+<p>【病中有感】</p>
+<p>【阅大智度论毕纪怀四首】</p>
+<p>【示庸庵比丘】</p>
+<p>【丙戌生辰骤雨初霁偶成】</p>
+<p>【寿马太昭四十】</p>
+<p>【和答张兴公二首】</p>
+<p>【丙戌中秋怀净土】</p>
+<p>【丙戌重阳同湛公登祖堂山顶】</p>
+<p>【悼予正法友】</p>
+<p>【挽旅泊大德】</p>
+<p>【示陈砥中】</p>
+<p>【灵奕生日以偈示之】</p>
+<p>【示别两堂法友】</p>
+<p>【诗偈三】</p>
+<p>　【槜李天寕禅堂度岁卽事】</p>
+<p>弹指欣传刹海春。裁喷小雨润梅筠。薪炉焰炽开眉宇。锣鼓声繁涤耳尘。流接熙河分愈合。香来祇树远仍亲。闲看嫩草庭前绿。蝴蝶庄周哆大椿。</p>
+<p>　【寄吴西城先生】</p>
+<p>鸟出晨峦绕树飞。十年回首故人稀。杏坛已悟浮云影。莲社今瞻落日晖。秀水盈盈湖水溢。吴山隐隐越山微。遥闻耆域多灵草。聊寄阿伽第一机。</p>
+<p>　【士民失德亢旱不雨野人忧之赋四月】</p>
+<p>四月炎暑。忧心如杵。嗟此农夫。不遑安处。晓拭其眉。爰卜其础。庶几油油。甘露湑湑。</p>
+<p>民之无聊。夕不谋朝。恣尔贸贸。爰积其愮。孽旣饶止。悲亦遥止。式瞻前后。靡不焦止。</p>
+<p>民之无知。竞骛其私。病旣孔急。曾莫尔医。嗟彼达士。为则为仪。胡反自局。而无远思。</p>
+<p>亦有美乳。聿襍于浒。饮乳则乐。饮水则瘐。嗟彼达士。罔识去取。静言思之。不如群羽。</p>
+<p>维山有灵。维麓有渟。嗟彼达士。明德维馨。醒醒不寐。寕卽于冥。惜尔双目。一指所扃。</p>
+<p>平等平等。旣生且并。下视其足。高视其顶。抱识含知。谁云或迥。溺此涂炭。曾莫之拯。</p>
+<p>维金有冶。维柏有霜。日月有蚀。不减其光。嗟彼达士。厥用不臧。舍尔冰鉴。逐此骊黄。</p>
+<p>我心忧思。何所求思。载观宇宙。不可游思。缅怀千古。谁与酬思。熙河泗水。浴彼流思。</p>
+<p>　【和答吴叔雅】</p>
+<p>十世何尝离目前。刹那不住涅槃天。但观心外元无法。莫谓师家别有传。罗什译经存寸舌。瞿昙诱子赖空拳。归来共尔黄金地。择取华池千叶莲。</p>
+<p>　【中秋后二日群鹤集于灵峰赋灵鸟】</p>
+<p>矫矫灵鸟集于山。娱我多士。终朝永闲。</p>
+<p>矫矫灵鸟集于阿。娱我多士。雍雍以和。</p>
+<p>有怀乐土。实多灵羽。羡此东林。式瞻西户。送想功成。觌面斯覩。</p>
+<p>　【用韵题背坐图二首】</p>
+<p>世事无端忒认真。纵饶藏脸未藏身。分明少室九年意。毕竟谁能举似人。</p>
+<p>尘刹甘为出世逋。大千坐见一微图。拈来短尘浑闲事。谭尽三乘半字无。</p>
+<p>　【和陈非白三首】</p>
+<p>严冬落木转凄凄。积雪平铺茅屋低。举世相看同败北。几人能解早归西。晨朝共觐慈悲父。饭后还要法喜妻。消尽劫波生死梦。浑然六字是全提。</p>
+<p>莫厌多番彻骨寒。晓鸡三倡梦初残。迎风赖有仲由缊。饰体欣无季子纨。触境会心原不远。离言觅旨却成难。自从识得空王印。白牯狸奴古佛看。</p>
+<p>才提正令已成旁。尔焰河中识浪茫。空劫前仍捕影。缘心心断似吹光。朔风夜急松多韵。白雾晓开山自苍。堪笑东村王大姐。强将尘坌作梳妆。</p>
+<p>　【和张兴公二首】</p>
+<p>枉直纷纷计尺寻。独怜尘世欲泥深。也知昔日酥为酒。莫怪今时叶作金。字性本空香徧地。机先有句月穿林。子期侧耳浑无事。共鉴高山流水音。</p>
+<p>每惭少贱鄙能多。更叹初心渐似梭。白发数茎悲镜雪。孤怀半世付春波。芜榛易用铦锋削。鬬诤难将影响和。奋起一声涂毒鼓。活人原不离干戈。</p>
+<p>　【和答宋量公】</p>
+<p>流芳五叶一枝花。未委根源莫浪夸。针芥投时初祖笑。机关转处纳僧嗟。无心击碎情尘锁。有句重添佛祖枷。识取自衣珠不借。朦胧镜影漫相遮。</p>
+<p>　【赠耦西】</p>
+<p>善财初发意。百城方尽南。一见普贤后。始知西更湛。十愿导其往。深禅不用参。弥陀法界藏。介尔一念含。六字声歴歴。皎月澄寒潭。未识岐涂苦。那知此道甘。上善共携手。列祖朋盍簪。观成一十六。生品列三三。任彼驰圆顿。方兹定有惭。</p>
+<p>　【示偈六首】</p>
+<p>觅心无得便心安。谁解抛桩急水滩。落地枕声惊客梦。月移花影度阑干。（示知安）</p>
+<p>高山最早得曦光。悬鼓余辉亦倍彰。海底立身如泰岳。不愁冬至夜偏长。（示昱岩）</p>
+<p>六年苦行老瞿昙。麻麦充饥事太憨。星夜抬头明个事。前三三是后三三。（示雪瞿）</p>
+<p>密在汝边安可传。长年桡破水中天。华亭舟覆无消息。卖尽风流不著钱。（示密传）</p>
+<p>青莲权实意分明。百万人天较最亲。独有饮光赃未尽。瞥然一笑误芳春。（示敷公）</p>
+<p>洪钟未扣已先鸣。不许耳闻许眼闻。泥牛吼月浑闲事。无限春光付白云。（示静含）</p>
+<p>　【题谢在之扇头】</p>
+<p>介尔心田足水草。随他此外别寻讨。君不见。大千三变土依然。龙女从兹出海岛。</p>
+<p>　【赠魏国徐燕超居士】</p>
+<p>恺悌慈祥古佛心。襟期爽朗芥投针。只从安养遴柎萼。不向时流较釜鬵。一念便能严四土。十声谁肎易千金。春来柳叶初含笑。把手同游解脱林。</p>
+<p>　【寿刘今度六旬】</p>
+<p>文章垂宇宙。归戒印心王。耳顺圆通旨。荷风殿阁凉。</p>
+<p>　</p>
+<p>　【五戒歌示憨月】</p>
+<p>受戒易。守戒难。莫将大事等闲看。浮囊渡海须勤护。一念差池全体残。理胜欲。便安澜。把定从来生死关。任他逆顺魔军箭。凛凛孤怀月影寒。不杀生。太慈仁。物我一体如长春。蠕动蜎飞佛性等。贤愚贵贱无疎亲。不偷盗。充义奥。正直清廉明节操。心外无法可当情。菩提性具非他造。不淫欲。梵行笃。身心皎洁同珠玉。泰山乔岳立清风。等闲超出娑婆狱。不妄语。诚相与。广长舌相昏涂炬。矢口千金敌国钦。九界同归作洲渚。不饮酒。离群丑。智慧照明狮子吼。衣里圆珠岂更忘。免得亲翁再苦口。三归五戒果精明。观音势至为师友。</p>
+<p>　【示昱岩】</p>
+<p>介尔一念心。横竖不可尽。谛审复谛观。本迹二俱泯。悟后亦非奢。迷时亦何窘。迷悟弗当情。乃达无生忍。</p>
+<p>　【示马光世】</p>
+<p>未知个事难得知。已知欲忘亦不易。忘却威音那畔底。今时方显头头是。著衣吃饭弄神通。劔树刀山任游戏。念弥陀。算珠记。夫妇知能第一义。净秽两忘仍歴然。法界分明无碍事。一念圆彰四土严。三身顿证惊长寐。信得真。见得至。步步脚跟都著地。以兹自觉觉众生。大智光明照十世。</p>
+<p>　【施茶偈】</p>
+<p>心佛众生无别理。冬日饮汤夏饮水。结得今时欢喜缘。须摩国内长相似。度尽含灵不见功。僧祇劫自刹那始。</p>
+<p>　【杨辅之读破空论】</p>
+<p>般若离微色悟迷。还将五度作阶梯。法元无法何烦埽。空若耽空亦有倪。秋至共看桐叶落。春深时听子规啼。道人读罢金刚论。瞖抉奚劳更觅錍。</p>
+<p>　【题旻昭画赠季筏】</p>
+<p>古木高岩暎日晖。长年破浪带纶归。升平曲罢无余事。笑问金鳞几许肥。</p>
+<p>　【示君甫】</p>
+<p>直信现前心。觅之不可得。无法足当情。分别亦非识。</p>
+<p>　【和答宋量公】</p>
+<p>不将半日漫偷闲。辨妄穷真别有缘。识取梦中谁作主。便知火内亦栽莲。棱伽已悟安心诀。棒喝多惭利口禅。珍重子韶仍格物。棂牛出尾树归田。</p>
+<p>　【学道偈】</p>
+<p>学道如弹琴。急则声易绝。缓则不成音。学道如植苗。不芸襍荒草。助长致枯焦。学道如源泉。不见汹涌势。流久石能穿。学道如白月。光顿照阎浮。明乃渐皎洁。先学律仪戒。能捉烦恼贼。次学定共戒。能缚烦恼贼。次学无漏戒。永灭烦恼贼。贼昔昌炽时。本非他方来。今贼虽永灭。究竟无所之。譬如世乱时。处处皆甲兵。及其治平日。在在皆良民。但得心王正。根尘永肃清。十一善心所。如彼贤良臣。君能亲用之。拔茅汇舌征。贤良善辅佐。邪恶自潜形。风行草必偃。何庸务力争。</p>
+<p>　【迥者隐纳之深痛也】</p>
+<p>彼迥者苍。胡然局止。彼广者舆。胡复趗止。欲卜于朝。氛孔毒止。欲卜于野。情亦曲止。问侣于玄。罔可录止。载问于释。不异俗止。俗犹嗜福。释乃趋狱。</p>
+<p>彼迥者苍。远岂无极。八万由旬。感应一息。百尔开士。勿轶尔德。因果酬偿。尘劫匪忒。瞥存其私。终婴鬼殛。庶几慎思。眚瞖是拭。目旣清明。华元非色。</p>
+<p>彼迥者苍。匪维匪方。悟也故里。迷也异乡。异乡之曲。不可详也。我愁孔亟。闻断肠也。</p>
+<p>我有慈父。示安于西。我久逃逝。耳罔可提。今旣悔矣。痴犹未刲。载怨载慕。乃泣乃啼。</p>
+<p>我病未已。遑恤于他。哀此同体。口滋其多。多言穷也。默可容也。自攻厥慝。无他攻也。</p>
+<p>灵峰之麓。有室如谷。风巽于状。雪沽于服。何忮何求。马麦孔馥。谁肎我勖。载胥及淑。</p>
+<p>　【入山四首】</p>
+<p>万山隔断市尘嚣。日暮秋风吼竹涛。世浊未能融动静。秖宜此地解天弢。</p>
+<p>一夏炎威苦逼人。灵峰片石旧盟新。归来泉味偏增逸。何必桃源觅避秦。</p>
+<p>盈亏本自无增减。何故山深辉较扬。照此道人冰雪意。夏云春露亦成霜。</p>
+<p>一微涉动便颓山。棘满栴林柰本删。晓起不堪频对镜。大千无地置惭颜。</p>
+<p>歴劫熏修誓未灰。半生残喘尚徘徊。斩钉截铁从兹始。忍使摩尼隐积埃。</p>
+<p>　【寄寿幽栖主人】</p>
+<p>指天指地重阳节。桂菊呈妍明月台。十里赠君无别语。四明一喝声如雷。</p>
+<p>　【知足偈】</p>
+<p>德薄难消供。云泉意倍长。雪来珠满案。风过叶盈牀。一具蒲团稳。千家麦饭香。自怜身渐老。苦行未堪偿。</p>
+<p>　【七净督梓大佛顶经玄文】</p>
+<p>忆我二十三。创闻真了义。涕泣每沾巾。愿求无上智。逾年心益坚。黾勉从披鬀。力埽葛藤缠。一意离文字。秖见凿头方。那识锥头利。赖有劣善根。靡敢自暴弃。时复温旧闻。展转不成寐。窃思性相宗。岂必判成二。云何诸疏家。各妄分门类。研之罔可通。任之两相戾。乃掀昔人窠。亦触今时忌。直朔说默源。细绎指月譬。蛇绳麻匪殊。影光镜寕异。原无法外心。安有理外事。妙旨旣泠然。微言忽玄契。迎刃解全牛。不啻土委地。语语破执情。节节吐郁气。信有佛力加。私怀安忍昧。初刻在温陵。山川阻迢递。长干复剞劂。习公如来使。赋此券乐邦。将来同受记。</p>
+<p>　【祖堂度岁写怀二首】</p>
+<p>叶落柴枯病后身。肎将虚解博闲名。应怜五百初颓执。未忍孤单悻远征。婴杵面痕刊血泪。金兰语臭结心盟。岁朝雨涤魔氛净。邃谷传开二鼓声。</p>
+<p>冽尽梅英始报春。今年仍是去年人。观河不改浑生灭。交臂潜移绝旧新。愧我未尝畱只字。劳他犹自覩双唇。何如善吉岩中坐。帝释携来蕚满旬。</p>
+<p>　</p>
+<p>　【偶成三绝】</p>
+<p>急雨狂风襍晚钟。冷然身世湛沤空。晓看碎玉铺千嶂。如是浮幢第几重。</p>
+<p>少年逐队各欢呼。独坐孤峰万虑枯。愧有一端情未瞥。强将残羽覆新雏。</p>
+<p>个事何关亏与成。尸凭两鬼攫分争。朝来枕落催残梦。赢得虚名较羽轻。</p>
+<p>　【续梦中句（有序）】</p>
+<p>人之患。在好为人师。旭出家来。绝无为人师想。而为师十余年矣。然每省。未堪作古人弟子。嗟嗟。图旦夕名。忘尘劫誓。智乎。梦中得句。一镜愁容发渐白。半生名世事无成。不觉痛哭而醒。</p>
+<p>一镜愁容发渐白。半生名世事无成。愿轮欲共虚空转。莫负当年乐士盟。</p>
+<p>　【丙戌春幻游石城随缘阅藏以偿夙愿夜梦塑地藏大士身首具手足未成感赋。】</p>
+<p>积雨溟蒙缛客思。鸽声传怨度新枝。千年学脉凭谁寄。万古愁怀只自知。镜里病容衰已甚。梦中慈相体犹亏。何时了却文言债。蓦入重岩就故医。</p>
+<p>　【雨窻偶成】</p>
+<p>世运若奔河。哲人日以迥。慧照哀式微。夙习恒在酩。嗟我欲拯怀。过涉几灭顶。何时彼岸回。飘然驾慈艇。光明煞尔彰。妙用仍衣褧。默要忍欢机。悲誓谁能并。识此方便宗。爰达度生綮。缅思华台尊。胡为不自肎。</p>
+<p>　【病中有感】</p>
+<p>四百四病互围绕。八十八使镇相随。梦里忽忆大士号。咨嗟感慕仍吁嘻。如意珠王谁蔑有。竛竮劫簸徒愚痴。念佛独许三昧宝。声声圆彰无盈亏。上士一决一切了。狂邪飜覆生狐疑。安养一撮卽华藏。弥陀十劫毗卢师。从今一信永弗迷。横超那畏生盲嗤。</p>
+<p>　【阅大智度论毕纪怀四首】</p>
+<p>雨多入夏夜偏寒。胡汉于今辩最难。拟绝百非还坠断。欲离四句已成瘢。分明文字元无性。却怪处空亦可刓。赖有横超归路稳。不随年少学邯郸。</p>
+<p>般若何尝独尚空。通能成塞塞成通。菱锥佛事随缘建。荷镜魔军任运攻。度尽众生无可度。功圆妙觉不居功。应怜此日谭玄客。鱼目摩尼妄拟同。</p>
+<p>病在膏肓亦可医。自慙积劫太憨痴。几回说梦仍添梦。秖是三思未再思。垢重愈知学不厌。忏频终恃法元慈。笔端齿落催残晷。（举笔忽落一齿）送想悬轮更莫迟。</p>
+<p>寒暑推人念念移。何须齿落始添悲。狼惊未得脂消尽。草益空令肉渐痿。搔首控归无上士。抚膺披露有生疵。他年净土华敷日。记取坛前痛哭时。</p>
+<p>　【示庸庵比丘】</p>
+<p>嗔能荡家宝。慈乃积法财。损益秖在我。胡以空徘徊。明镜现妍丑。影像无去来。但宜躬自厚。慎勿责友侪。洁矩可为喻。恕己真昏瞢。过去已无及。将来须创惩。深思忍辱行。割截心无病。嗔则两俱伤。慈则并获庆。释迦果旣圆。歌利因亦正。</p>
+<p>　【丙戌生辰骤雨初霁偶成】</p>
+<p>四十不闻道。五十犹空老。纵满百年春。奚足称寿考。岁岁此日生。此生何日了。法门小比丘。律行多未晓。说时似惺惺。用时仍颠倒。数悔复数违。嗟哉恒痛抱。所恃格外慈。示我三昧宝。随分度余晖。雷雨还晴皎。</p>
+<p>　【寿马太昭四十】</p>
+<p>形而上者谓之道。形而下者谓之器。四谛分明举似人。谁达缘生第一义。非断非常非有空。法法头头绝思议。鄙夫问我我无知。时行物生天何示。肎从宣圣觅心源。便悟威音那畔事。昭老今逢不惑年。祝君聊举金刚智。识取缘生无性宗。方知三藏非文字。</p>
+<p>　</p>
+<p>　【和答张兴公二首】</p>
+<p>僧祇岂是枉施功。独怪郎王强异同。空界任从星布列。川流终向海浑融。分明万物原非物。仿佛相逢却未逢。介尔觅时虽不得。调心谁继可师风。</p>
+<p>道旷无涯莫计功。恒沙佛祖路皆同。随情异见元非异。拟欲融归便弗融。空劫劫前仍是物。有迷迷处亦相逢。喜闻不昧平生句。今日依然庞老风。</p>
+<p>　【丙戌中秋怀净土】</p>
+<p>皓月年年照客秋。梦中时动故乡愁。兜罗绵手垂应久。优鉢罗华散未收。痴掉不除增愧色。贪嗔犹炽碍真修。长空雁影萧然度。寄我深思到宝楼。</p>
+<p>　【丙戌重阳同湛公登祖堂山顶】</p>
+<p>秀出芙蓉接紫微。万山匍匐竞归依。论交只许盟千古。问谛无劳杜百非。江上风帆谁去住。峰头云物任翔飞。几枝红叶呈秋影。峻岭寒空映晚晖。</p>
+<p>　【悼予正法友】</p>
+<p>志士每难遇。胡为多夭伤。末运固莫挽。悲心寕肎忘。良由名根误。说药迷真方。止观乏针砭。闻见滋膏肓。所以明心诀。飜作戕身枪。虽逐幻缘逝。金刚种未亡。先觐弥陀觉。邀予返故乡。</p>
+<p>　【挽旅泊大德】</p>
+<p>净土迢迢不涉程。阎浮礼诵已功成。沤花顿灭千生影。德水初标九品名。酬债岂应嫌病苦。横超寕复畏讥评。殷勤为我求慈父。何日同垂只手迎。</p>
+<p>　【示陈砥中】</p>
+<p>出家儿。求安寕。外寕必有内忧生。无量劫来虚妄种。惯向禅那静里呈。出家儿。求尊贵。虎背仙人难去住。成佛作祖带污名。戴角披毛推上位。出家儿。求无累。解脱深坑安可坠。莲华原向污泥生。陆地高原空钝置。出家不在几茎发。先须炼就纯钢骨。勘破时流名利根。九仞未泉须再掘。从此路头真。门庭漫问津。沩山警策语。古德有真因。</p>
+<p>　【灵奕生日以偈示之】</p>
+<p>有德卽有福。无嗔卽无祸。心宽寿自延。量大智自裕。应思老头陀。愿居众人后。破纳以遮身。持鉢度贫陋。</p>
+<p>　【示别两堂法友】</p>
+<p>世谛矜流布。哀哀古佛心。饩羊虽爱礼。拜上岂从今。共执驴鞍解。争将柿蒂钦。引商刻羽后。寕敢望知音。</p>
+<p>灵峰蕅益大师宗论卷第十之三</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../../oydsqjzj/wj/lfzl/dsj10/z2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../../oydsqjzj/wj/lfzl/dsj10/z4.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../../oydsqjzj/wj/lfzl/dsj10/z2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../../oydsqjzj/wj/lfzl/dsj10/z4.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../../ace.js"></script>
+        <script src="../../../../editor.js"></script>
+        <script src="../../../../mode-rust.js"></script>
+        <script src="../../../../theme-dawn.js"></script>
+        <script src="../../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../../clipboard.min.js"></script>
+        <script src="../../../../highlight.js"></script>
+        <script src="../../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

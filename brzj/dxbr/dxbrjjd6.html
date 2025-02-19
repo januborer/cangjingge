@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>道行般若经卷第六  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="道行般若经卷第六"><a class="header" href="#道行般若经卷第六">道行般若经卷第六</a></h1>
+<p>　　　　道行般若经卷第六</p>
+<p>　　　　　　　　后汉月支国三藏支娄迦谶　　译</p>
+<p>　　　　摩诃般若波罗蜜阿惟越致品第十五</p>
+<p>　　须菩提白佛言：阿惟越致菩萨当何以比，当何以观其行，当何以相，当何从知是阿惟越致菩萨。佛言：阿惟越致菩萨，如逮得禅者不动摇，如罗汉辟支佛地佛地，是佛地如本无终不动，佛说本无闻不言非，空是中本无入本无，是所本无如本无，亦不言非，如是入中，入中以闻是本无以，若转于余处闻心终不疑，亦不言是，亦不言非，如是本无如本无住，其所语不轻，所言不说他事但说他正，他人所作不观视，用是比用是相行具足，知是阿惟越致菩萨，阿惟越致终不形相沙门婆罗门面类，不祠祀跪拜天，不持华香施于天，亦不教他人为，身不生恶处，不作女人身，当持十戒，不杀生强盗淫泆两舌嗜酒恶口妄言绮语，不嫉妒嗔恚骂詈不疑，亦不教他人为，身自持十戒不疑，复教他人守十戒，于梦中自护十戒，亦复于梦中面目见十戒，阿惟越致心学诸法，皆安隐为世间人说经，持深经授与令得分德住，悉致愿使得经，令用；分德住阿惟越致，闻说深经时终不疑，不言不信，亦不恐惧，所语柔软，微妙至密少睡卧行步出入，心安谛无乱，时徐举足蹈地，安隐顾视所，斐服衣被净洁，无垢坋无蚤虱，身中无八十种虫，所有功德稍稍欲成满，心极清净悉受得之，其功德过出于世间。</p>
+<p>　　须菩提白佛言：云何菩萨心清净，当何以知之。佛言：是菩萨所作功德转增多，其心极上，自在无所挂碍，悉逮得其功德是心甚清洁，清洁过于阿罗汉辟支佛道上，如是阿惟越致，有来供养者不受用喜一切无悭贪，说深经时未尝于中有厌极也，正在智中深入，若余所欲有问深经者，持是深般若波罗蜜为说之，其有他道所不能正者，持是深般若波罗蜜为正之，从是经中所出法，悉持无常之事相语之，诸世间经书所不能解者，持是深般若波罗蜜为解之，用是故，弊魔来到是菩萨所，便于边化作大八泥犁，其一泥犁中有若干千百千菩萨化作是以便指示之言，是辈皆阿惟越致菩萨，从佛受决以今皆堕泥犁中，佛为授若泥犁耳，设若作阿惟越致受决菩萨者，若当受疾悔之言，我非阿惟越致，若悔之言尔者，便不复堕泥犁中当生天上。佛言：设是菩萨心不动转者是阿惟越致弊魔复化作其师被服，往到菩萨所诡语，若前从我所闻受者今悉弃舍，是皆不可用也，若自悔过，受疾悔之随我言者，我日来问讯汝，不用我言者，终不复来视汝，若莫复说是事，我不复欲闻，是故说是皆非佛所说，余外事耳，汝今更受我所语，我所说皆佛语。佛言：菩萨闻是言其心动转者，不从过去佛受决，未上菩萨举中，未在阿惟越致地，设是菩萨心不动转者，知是深经空所致，作是思惟，终不信他人语，譬若比丘得阿罗汉，不复随他人语，悉明见经中证，是为空所致，终不可动，如阿罗汉辟支佛道所念法，终不可复还，是菩萨为在阿惟越致地住，正住向佛门，终不可复还，是为极度，用是比用是相行具足，知是阿惟越致菩萨，复有弊魔化作异人，往到菩萨所作是语，若所求为勤苦耳，不求佛法也，若空负是勤苦为用，是勤苦之难为求乎？若在恶道中以来大久，适今得为人，汝不当于是中思惟，不当自患厌耶？当复于何所更索是躯，汝何不早取阿罗汉道，用佛为求之，是菩萨心不动转者，知是阿惟越致，弊魔不能动转舍去，更作方便，化作若干菩萨在其边住，因指示言：若见不耶？是悉菩萨，皆供养如恒中沙佛，以皆与衣被饮食床卧具医药，悉具足皆从如恒中沙佛，受行法问慧，当所施行，如法住，如法求，皆入中作是学作是受作是行，悉以尚不能得佛，若学以来甫尔，当何因得佛，菩萨闻是言心不动转者，弊魔复舍去不远，复化作诸比丘示之言：是悉阿罗汉，过去世时皆求菩萨道，不能得佛，今皆取阿罗汉已，如是比丘当何从得佛，菩萨闻是语心不动转，当觉知魔为佛言：作是学作是求作是行，于是深般若波罗蜜中住，心不动转者，如是比相行具足，知是阿惟越致。佛言：菩萨当作是学作是求护是教受佛教，当念行于他方闻魔语如是，心不动转，不可移，觉知魔为，菩萨作是学不得佛者，佛语为有异，佛语终不欺也，弊魔复往到菩萨所，作是诡甥言，佛如空，是经不可得边幅，不可得极，是经中我悉知已皆空耳，若为是中勤苦，若不当觉知魔为此事，魔作是经，云何欲于中欲得作佛，是非佛所说，菩萨当谛觉知是魔所为，菩萨作第一禅第二禅第三禅第四禅三昧，越阿惟越致，不随录是四禅，是所禅作三昧，越用人入欲中故禅三昧，是菩萨终不随禅教，其功德极过禅上去，有共称誉名字者不用喜，不称誉者亦不用作忧，其心终不动乱，常念世间人，善出入行步坐起常端心正志，少淫意，在家者与妇人相见心不乐喜，常怀恐怖，与妇人交接，念之恶露臭处不净洁，非我法也，尽我寿命不复与相近，当脱是恶露中去，譬若有人行大荒泽中，畏盗贼心念言：我当何时脱出是厄道中去，当弃远是淫泆畏惧如行大荒泽中，亦不说其人恶，何以故？诸世间皆欲使安隐故也。佛言：如是菩萨其福具足得之，是皆深般若波罗蜜威神力，使作是念，是菩萨和夷罗洹化诸鬼神随后，亦不敢近附菩萨终不失志，心不妄，起身体完具无疮癞，极雄猛终不诱他人妇女，若有治道符祝行药身不自为，亦不教他人为，见他人为者心不喜也，终不说男子若女人为事，亦不说非法之事，亦不生恶处，用是比用是相行具足，知是阿惟越致菩萨。</p>
+<p>　　须菩提白佛言：菩萨用何等故名为阿惟越致。佛言：菩萨不与国王若世俗城郭聚落会人从事，不与盗贼若军师兵刃从事，不与男子女人从事，不与余道人若祠祀诸鬼神酒肉谷食从事，不与香及烧香若缯彩利业调戏从事，不与海中若诸所欲从事，不与弊恶无反复好斗乱人者从事，但与深般若波罗蜜从事，心终不远离萨芸若，常在中不志常行中正，无不行时，常称誉贤善者上头，常随善知识，不与恶知识相随，常求佛法，愿欲生异方佛刹，用是故，常与佛相见供养之，从欲处色处空处，从彼间来生中国，常于善人黠慧中生，在工谈语晓经书家生，常不好豫世俗之事，生不犯法，常在大国中生，未常在边地生也用是比用是相行具足，用是故名为阿惟越致菩萨，终不言我是阿惟越致，亦不言我非，亦不疑我非阿惟越致地，亦不言我是阿惟越致地，譬若有人得须陀洹道，在其地终不疑魔事，适起即觉知，魔稍稍来不听随在阿惟越致地终不疑不懈怠，譬若有人作恶逆，尽其寿命心终不可转，使作善不念恶，是恶心至死终不休，是菩萨住中正，在阿惟越致地，心不可移动十方终不能复转其心，自有道地，终不疑无阿罗汉辟支佛，心不念佛难得，心大无有极，安隐坚住其地，无有能降之者，作是住，无有能过是黠者，用是故，弊魔大愁毒言，是菩萨心如刚铁不可转，便复更作佛形往语菩萨言：若何不于是间，取阿罗汉证，若未受决得阿耨多罗三耶三菩，若不得是比，不得是相，菩萨用是比，用是相行具足，如是尚不得佛，若当何因得之。佛言：设是菩萨闻魔语，若心不动者，是菩萨从过去怛萨阿竭受决已，得阿耨多罗三耶三菩，是故觉知魔作佛形得来言，是非佛也魔耳，欲使我心摇，我心不可动。佛言：是菩萨心不可动转者，从过去怛萨阿竭受决已，授阿耨多罗三耶三菩，住阿惟越致地，何以故？用是比用是相行具足故，知是阿惟越致菩萨悉得法者悉行中正，当代不惜身命，是菩萨一切法悉受得之，过去当来今现在，佛所有法悉得持护，用是故，当为不惜身命，未常懈怠，无有厌时，怛萨阿竭及诸弟子说经时心终不疑，亦不言非佛说，闻说深般若波罗蜜，终心不有疑，亦不言非，如是菩萨逮无所从生法，乐于中立，持是功德悉具足，用是比用是相行具足，是为阿惟越致菩萨。</p>
+<p>　　　　摩诃般若波罗蜜道行经怛竭优婆夷品第十六</p>
+<p>　　须菩提白佛言：阿惟越致菩萨极从大功德起，常为菩萨说深法教入深。佛言：善哉善哉须菩提，若乃内菩萨使入深，何等为深，空为深，无想无愿，无识无所从生灭，泥洹是为限。须菩提白佛言：泥洹是限，非是诸法。佛言：诸法甚深，色痛痒思想生死识甚深，何等为色痛痒思想生死识甚深，如本无，色痛痒思想生死识本无，尔故甚深须菩提言，难及也，天中天，色痛痒思想生死识，妄消去便为泥洹。佛言：甚深与般若波罗蜜相应，当思惟念，作是住学，如般若波罗蜜教，菩萨随是行，当思惟念，如中教应行一日，是菩萨为却几劫生死，譬如淫泆之人，有所重爱端正女人与共期会，是女人不得自在，失期不到，是人宁有意念之不耶？须菩提言：其人有念思想，当到欲与相见，坐起宿止言语。佛言：其人未到之间，能有几意起念。须菩提言：是意甚多甚多。佛言：菩萨念深般若波罗蜜，如是一日心不转者，却生死若干劫，菩萨学般若波罗蜜，如中教如中所说思念，随是行一日，为却恶除罪，若有菩萨远离深般若波罗蜜，正使布施如恒中沙劫，不如是菩萨随深般若波罗蜜教一日，其功德出彼上，若复有菩萨寿如恒中沙劫，并持前所布施，与须陀洹斯陀含阿那含阿罗汉辟支佛佛，不得深般若波罗蜜，若复有菩萨随深般若波罗蜜中行如中教，其功德出彼上，若复有菩萨寿如恒中沙劫，布施如前，持戒具足，若复有菩萨求深般若波罗蜜，从念起说经，其功德出彼上，若复有菩萨持经布施，其功德转上，得阿耨多罗三耶三菩，是菩萨持经布施，以来深入是中随是教，其功德出彼上，若复有菩萨以经布施不深入是中，转不及也，若复有菩萨持经布施，复深入是中，未常有离时，为般若波罗蜜所护，其功德甚多甚多。</p>
+<p>　　须菩提白佛言：所识有著者，此二何所功德为多。佛言：菩萨所识，若求深般若波罗蜜，乐于空，乐无所有，乐尽，乐无常，念是为不离般若波罗蜜，如是菩萨得功德不可计阿僧祇须菩提白佛言：不可计复言阿僧祇，有何等异。佛言：阿僧祇者，其数不可尽极也，不可计者，为不可量计之，了不可得边崖，尔故为不可计阿僧祇。须菩提言：佛说不可计，色痛痒思想生死识亦不可计，佛语须菩提，汝所问者，有何因使色痛痒思想生死识不可计不可量，须菩提问佛，何等为不可量。佛言：于空中计之为不可量，无想无愿计之，如是不可量。须菩提言：空计是法不可计。佛言：云何我常不言诸法空。须菩提言：如怛萨阿竭所说法悉空。佛言：诸法悉空不可尽不可计，经无有各各慧，无有各各异，怛萨阿竭但分别说耳，空不可尽不可量，是想是愿是识是生是欲是灭是泥洹，随所喜，作是为说，作是现示，作是为教，怛萨阿竭所说如是。</p>
+<p>　　须菩提言：难及也，天中天，经本空耳，云何复于空中，说经，是经不可逮，如我了佛语，诸法不可逮，佛言如是，诸法不可逮，佛言如是，诸法不可逮空耳，是为不可逮。须菩提言：如佛说本无不可逮，愿解不可逮慧有增有减。佛言：不也。须菩提言：若有不可逮慧有增有减，檀波罗蜜，尸波罗蜜，羼提波罗蜜，惟逮波罗蜜，禅波罗蜜，般若波罗蜜，不增不减，若不增波罗蜜者，菩萨何因近阿耨多罗三耶三菩，何缘得阿惟三佛，设不减波罗蜜者，菩萨何因近阿耨多罗三耶三菩，何缘近阿惟三佛佛坐。佛言：是不可逮慧不增不减，菩萨求深般若波罗蜜若守者，如是沤和拘舍罗菩萨不念檀波罗蜜增，亦不念减，复作是念，但名檀波罗蜜，所布施念持是功德施与作阿耨多罗三耶三菩，施如是尸波罗蜜，羼提波罗蜜，惟逮波罗蜜，禅波罗蜜，菩萨求般若波罗蜜若守者，得沤和拘舍罗，不念般若波罗蜜有增有减，是但名为般若波罗蜜，求之若守者，发心念持是功德施与作阿耨多罗三耶三菩。须菩提白佛言：何等为阿耨多罗三耶三菩。佛言：本无是也，是本无不增不减，常随是念不远离，是即为近阿耨多罗三耶三菩坐，不可逮法，不可逮慧，若般若波罗蜜皆不增不减，菩萨念是不远离，为近阿耨多罗三耶三菩。须菩提白佛言：菩萨持初头意，近阿耨多罗三耶三菩，若持后头意近之。佛言：初头意后来意，是两意无有对。须菩提言：后来意初头意无有对，何等功德出生长大。佛言：譬如然灯炷，用初出明然炷，用后来明然炷。须菩提言：非初头明然炷，亦不离初头明然炷，亦非后明然炷，亦不离后明然炷，佛问须菩提，云何如是不。须菩提言：如是天中天。佛言：菩萨不用初意，得阿耨多罗三耶三菩，亦不离初意得，亦不用后意得，亦不离后意得也。佛言：云何是为得阿惟三佛不。须菩提言：阿惟三佛甚深是因缘，菩萨不用初意，得阿耨多罗三耶三菩，亦不离初意得，亦不用后意得，亦不离后意得也。佛言：云何心前灭后复生耶？须菩提言：不也。佛言：心初生可灭不。须菩提言：可灭。佛言：当所灭者宁可使不灭不。须菩提言：不也。佛言：本无，宁可使住不。须菩提言：欲住本无，当如本无住。佛言：设令在本无中住，宁可使发坚固不？本无宁有心无心，不离本无宁有心不？见本无不？作是求为深求不。须菩提言：天中天，作是求为无所求，何以故？是法了不可得，亦不可见。佛言：菩萨求般若波罗蜜为求何等。须菩提言：为求空。佛言：设不空为求何等。须菩提言：为求想。佛言：云何去想不？不也，是菩萨为不去想。须菩提言：不作是求忘想，何以故？求想尽者，设想灭者，即可灭也，便得阿罗汉，是为菩萨沤和拘舍罗，不灭想得证，向无想随是教。舍利弗谓须菩提：若有菩萨有三种事，向三昧门，守三昧门，一者空，二者无相，三者无愿，是三者有益于般若波罗蜜，不但昼日益，夜梦中亦当复益，何以故？佛说昼夜梦中等无异。须菩提言：若有菩萨昼日有益于般若波罗蜜，夜梦中亦复有益。舍利弗言：云何若梦中有所作，宁有所得不？佛所说经，如梦中所有。须菩提言：梦中所作善，觉大喜为益，梦中所作恶，觉不喜为减。舍利弗言：设于梦中杀人其心喜，觉以言，我杀是人快乎？如是云何。须菩提言：不然，尔皆有所因缘心不空，尔会有所因缘，若见若闻若念为因缘，尔故知耳，从是中令人心有所著，令人心无所著，是为不忘，尔皆有所因缘故。舍利弗言：所作皆空耳，何因心有所因缘。须菩提言：想因缘，是故心因缘从是起。舍利弗言：菩萨梦中布施持是施与作阿耨多罗三耶三菩，如是有施与无。须菩提言：弥勒菩萨近前在，旦暮当补佛处，是故知当从问，舍利佛白弥勒菩萨，我所问。须菩提言：弥勒菩萨能解之，弥勒言：如我字弥勒当解乎？当以色痛痒思想生死识解慧乎？持是身解耶？若空若色痛痒思想生死识解慧，色痛痒思想生死识空无力，当所解是法了不见也，亦不见当，所解者，是法了不见当得阿耨多罗三耶三菩者。舍利弗言：弥勒菩萨所说为得证，弥勒言不也，我所说法不得证，舍利弗便作是念，弥勒菩萨所入慧甚深，何以故？常行般若波罗蜜以来大久远矣。</p>
+<p>　　佛问舍利弗，云何若自见作阿罗汉时不。舍利弗言：不见也。佛言：如是菩萨不作是念我受决，是法当于中得阿惟三佛，亦无有得阿惟三佛者，菩萨作是行，为求般若波罗蜜，终不恐我不得阿惟三佛，随是法中教，求般若波罗蜜，用是故我无所畏，菩萨至大剧难虎狼中时终不畏怖，心念言：设有啖食我者为当布施行檀波罗蜜，近阿耨多罗三耶三菩，愿我后作佛时，令我刹中无有禽兽道菩萨至贼中时终不怖惧，设我于中死，心念言：我身会当弃捐，正令我为贼所杀，我不当有嗔恚，为具忍辱行羼提波罗蜜，当近阿惟三佛，愿我后得佛时，令我刹中无有盗贼，菩萨至无水浆中时心不畏怖，自念言：人无德使是间无水浆，愿我后得阿惟三佛时，使我刹中皆有水浆，令我刹中人悉得萨芸若八味水。菩萨至谷贵中时心不恐怖，自念言：我当精进得阿惟三佛，使我刹中终无谷贵，令我刹中人在所愿所索饮食悉在前，如忉利天上食饮，菩萨在疾疫中时，心念言：我终无恐惧，正使我身死是中，会当行精进得阿惟三佛，令我刹中无有恶岁疾疫者，必当降伏魔官属。佛言：菩萨闻是阿耨多罗三耶三菩阿惟三佛。却后大久远乃得佛者心不恐怖，从本际起，意学以来用不为久也，譬如人意一转顷耳，何以故？无有本际故，佛说是时，有优婆夷从坐起前至佛所，为佛作礼长跪白佛言：我闻是不恐不怖，必降恐怖之处，索阿耨多罗三耶三菩，得阿惟三佛已当说经，佛笑口中金色光出，优婆夷即持金华散佛上，持佛威神华皆不堕地，阿难从坐起更斐袈裟，前为佛作礼长跪问佛言：佛不妄笑，既笑当有所说佛言，是怛竭优婆夷却后当来世名星宿劫，是中有佛名金华佛，是优婆夷后当弃女人身，更受男子形却后当世阿閦佛刹，从阿閦佛刹去复到一佛刹，从一佛刹复生一佛刹，如是无终极，譬如遮迦越王从一观复游一观，从生至终足不蹈地，是优婆夷从一佛刹复到一佛刹，未尝不见佛，阿难心念，如阿閦佛刹诸菩萨会者，是为佛会耳，佛知阿难心所念。佛言：是诸菩萨会者，悉度生死已，是优婆夷后当作金华佛，度不可计阿罗汉令般泥洹，是时佛刹中无有禽兽盗贼，无有断水浆若谷贵病疫者，其余恶事悉无有，阿难问佛，是优婆夷从何佛已来作功德。佛言：乃昔提和竭罗佛所作功德，初发意求佛，提和竭罗佛时，亦复持金华散佛上愿言，持是功德施与，作阿耨多罗三耶三菩者。佛言：如我持五华散提和竭罗佛上，即逮得无所从生法乐于中立，授我决言，却后无数劫，若当为释迦文佛是优婆夷，尔时见我从佛授决，其心亦念，我亦当授决得阿耨多罗三耶三菩，如是菩萨受决佛语阿难，是怛竭优婆夷于提和竭罗佛所，初发起本阿耨多罗三耶三菩阿惟三佛，阿难白佛言：是怛竭优婆夷所求已度，佛言已度。</p>
+<p>　　　　道行般若经卷第六</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/dxbr/dxbrjjd5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/dxbr/dxbrjjd7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/dxbr/dxbrjjd5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/dxbr/dxbrjjd7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

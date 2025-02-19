@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>演培法师论地藏菩萨─发地藏之大愿．行地藏之大孝  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="演培法师论地藏菩萨发地藏之大愿行地藏之大孝"><a class="header" href="#演培法师论地藏菩萨发地藏之大愿行地藏之大孝">演培法师论地藏菩萨─发地藏之大愿．行地藏之大孝</a></h1>
+<p>　　　　演培法师论地藏菩萨（之二）</p>
+<p>　　　　发地藏之大愿．行地藏之大孝　　　　演培</p>
+<p>　　　　中华民国四十四年农历七月讲于善导寺地藏法会</p>
+<p>　　时间过得真快，六月十九颧音菩萨成道纪念刚过，七月三十地藏菩萨成道纪念又来。就佛菩萨的众多及佛菩萨的无处无时不现身说，一年三百六十日，没有一天不是佛菩萨的诞生及成道，我们每年所以只固定的举行几次佛菩萨的纪念法会，只是就我们所知及与我们娑婆世界特别有缘的佛菩萨说，其实菩萨诞辰及成道日多得很。</p>
+<p>　　菩萨之所以为菩萨，应具备的条件本来很多，但主要的不出悲智行愿四个大字。不是菩萨当然不谈，若是菩萨就绝对不可缺少这四者。话虽这么说，但菩萨各有偏重不同，所以佛教向来说有悲增上菩萨、智增上菩萨、行增上菩萨、愿增上菩萨的差别。如以我们所知的菩萨为代表：大悲观音为悲增上的代表者；大智文殊为智增上的代表者；大行普贤为行增上的代表者；我们今天所纪念的大愿地藏，就是愿增上的代表者。尤其值得我们庆喜的，此四代表的菩萨圣者，在我们大中华民国，都有他的根本道场（南海普陀山为观音道场，山西五台山为文殊道场，四川峨嵋山为普贤道场，安徽九华山为地藏道场），各各摄化他所应摄化的有情。所以生在中国而又听到佛法的我们，应为自己深厚的善根而欣喜；应为得以亲近大菩萨而欢跃；进而更应效法此诸菩萨为法为人的大无畏精神，在这苦难的时代里，多多为苦难的人类，做些有益于人类的事业！</p>
+<p>　　在诸大菩萨中，其悲智，其行愿，在在都是值得我们学习的。但为适应时代根性的要求，在这志薄行弱之徒特多的今日，我觉得大愿地藏那种苦干实干，专向苦难处去救度众生的愿力，是我们所急须学习的。愿是愿欲希求，对于自己所悬的崇高目标，不达目的誓不中止，是为愿力。拿现在的话说，就是坚固的强大的意志力。吾人不论做什么事，必须强固的意志力，在后策进推动，然后始克有成。假定意志薄弱，愿力不坚，那就一事无成。古人说的「精神一到，何事不成」，就是这愿力坚强的结果。然这强固的意志力，是怎样来的呢？依我个人的实感，不外是据于宗教之力，如站在佛教的立场说，那就是佛菩萨的精神力之所感召。</p>
+<p>　　看！佛教的诸菩萨，活跃于生死中，不惜任何牺牲，甚至舍头目髓脑，而仍广行菩萨道救度众生，推原其始，实就是这强大的意志力在推动。因而我们可说：菩萨行者的一生，是为意志力活现的一生。他们行于漫长的菩提道上，不知要与好多困难搏斗，不知要几度失去生命，但因有意志力在支持，愈遇困难，愈有危险，愈能勤勉的奋力的为众生而服务，决不为任何阻力而有所畏缩。由此可看出信仰的力量，显现于菩萨的意志中。这可惊的强固的意志力，从宗教的情操上说，实是热烈信仰的结果。以佛教的老话说，所谓「从信起愿」，就是这个意思。</p>
+<p>　　菩萨行者，悬念一切众生，生起救济的自觉时，不管怎样都要救度他们，于是慈悲变为强大的意志力，而形成其崇高伟大的人格。后世的人们，为了仰慕他的人格，就生起侍奉所崇拜者的观念。佛教信仰的意志力，有这样强大的力量，于此可见。值此意志颓丧，精神萎靡的时代，佛教这信仰意志力，实有注入人们心灵的必要。因强调了佛陀的信仰，就能将自己置于无限佛陀之上，蒙佛陀的加被，使自己的意志力强大起来，终于发生金刚般的勇猛无畏之力！</p>
+<p>　　发愿，为佛教行者必具的行门之一，不特以上求下化为标的的大乘，要发广大的誓愿，就是以涅槃解脱为标的小乘，也不能无愿而成。再说，专仗他力的，固须净愿求生；纯凭自力的，亦须愿力支撑。所以愿是遍通一切的，任何学佛的人，都不能不发愿，而在大乘菩萨法中，更有总愿别愿之别。愿的重要性，学者没有不知，但发怎样的愿？为什么要发愿？这是大有出入的。以我国现在一般学佛者言：大都以「愿生净土」为最大的志趣。愿生净土，本没有可訾议，但成为问题的，就是我们现实所住的这个世界，应当给他怎样办呢？假定说是就让他这样，而只顾自己往生极乐，那消极的气氛，未免太浓厚了。「佛教是最积极的」，这句话，常常出于我们学佛者之口，如有人说佛教是消极，我们学佛的道友，总是老大不高兴！可是，不高兴是一回事，事实又是一回事，欲除去人们说「佛教是消极」的误会，只在理论上争，是没有用的，要在行为上表现，才是最有力的武器。如仍一味的讨厌这个秽恶世界，一心一意想迅速结束这个生命，早日生到极乐世界去，对于现实世间不闻不问，无论你与人争得怎样面红耳赤，都不能除去「佛教是消极」的污点。因而，真欲表现大乘积极救世的精神，为佛子者，从今日起，必须生起怎样把这世界也庄严起来的弘愿。堪为我们榜样的，就是今日所纪念的大愿地藏王菩萨。</p>
+<p>　　我们知道：本师释迦牟尼佛，是在这娑婆国土五浊恶世，难行能行，难忍能忍，得成阿耨多罗三藐三菩提的，所以博得十方诸佛的赞叹。如阿弥陀经中说：「彼诸佛等，亦称赞我不可思议功德，而作是言：释迦牟尼佛，能为甚难希有之事，能于娑婆国土五浊恶世……得阿耨多罗三藐三菩提。」继承这精神而实践这行愿的，不能不说是地藏菩萨。如地藏十轮经的序品，显示地藏的愿心说：「我今学世尊，发如是大愿：当于此秽土，得无上菩提！」这是何等的精神？请诸位仔细的想想看，今日学佛的善男信女，出家在家者，有几个发愿要在秽土成佛的？即或有几个大心菩萨如此发心，恐亦被愿生他方净土的行者，呵为不修行的生死凡夫，甚而至于斥为魔王外道。中国佛法的不兴，有人说，这些一心求生净域而就以为代表全部佛法的，要负大部分的责任，我觉得有他相当的理由！</p>
+<p>　　地藏菩萨，不但发愿要在秽土成佛，更发弘誓要入地狱度尽众生，所以关于大愿地藏，在佛教里有几句脍炙人囗而为众所周知的话，就是「地狱未空，誓不成佛；众生度尽，方证菩提。」这真是尤为难能可贵的无畏精神。试想一想：娑婆世界，名为堪忍，出现在这世界舞台，可说已经够苦的了，没有一点毅力，根本就受不了，所以意志怯弱者，总想早日出此娑婆。但大愿地藏，本其度生无限的热忱，要到这苦恼世界的最苦的地狱里去，救拔苦迫逼切的地狱众生。根据他的愿力分析：度众生，不只是度少数的众生，而是要度尽一切众生；入地狱，不但是暂时的，而且要常住地狱。不但常住地狱，而且要庄严地狱，使地狱成为乐国，这是何等的愿心？这样愿力庄严的菩萨，是多么的伟大！无怪地藏菩萨深受我国学佛人士的崇拜，礼念。今日我们大家集合在这儿，纪念地藏菩萨的成道，不应只是形式的香花供养，称念圣号，就算表示了对菩萨的敬意，理应切切实实的发地藏之大愿，愿于此浊恶世界成等正觉，愿深入地狱度苦恼有情！</p>
+<p>　　不错，地藏的大愿，是值得赞美，尤其是值得我们效法的，但菩萨为什么会发这样大愿的？自也是一大问题。据经中说：促起菩萨的悲愿，其因缘很多的，而地藏悲愿的激发，从地藏经的宣示，我以为是出于一片孝思，就是一片孝顺父母之心，换句话说，为报父母养育深恩，而发如是大愿。如大士为婆罗门女、光目女时，发救度一切众生的广大誓愿，就是因母得脱恶道及「愿我之母永脱地狱」而来的愿心。总之，地藏大士，因孝思而激发大愿，因本愿而实行大孝，孝行与愿力并重，完成崇高圣格，乃得名为大愿地藏王菩萨。</p>
+<p>　　孝道，在我国人的脑海中，其印象是极深刻的，因中国的伦常，特别重视孝道。为人的子女，对父母行孝，本是天经地义，为任何一国人民，都应如是行的。所以孝经说：「夫孝，天之经也，地之义也，民之行也。」所以然者，因为孝是德行的根本，一个人如对堂上的父母不能行孝，那他对人就决不能有义，对国就决不能尽忠，而对一切也就无从谈起。孝道对于做人的重要，于此可见。总统曾经说过：「父母生养我们，教育我们，以至于成立，爱之抚之，无微不至，真所谓父母之恩，昊天罔极。我们对于父母，那里可以不孝顺，如果对于父母不忠孝，则对他人必不爱，对国家必不忠，所谓『孝悌也者，其为人之本欤！』我们要能行道于天下，必先行孝悌以事父母兄长。孟子说：『不得乎亲，不可以为人，不顺乎亲，不可以为子。』这就是讲孝顺为事亲之本。」我们读了总统说的这番话，即可知孝道是怎样重要，而我人不得不行孝于堂上的二老了。</p>
+<p>　　可是，现代的人们，因运用人类的力量，征服大自然的结果，一方面文明发达到有史以来的大进步；一方面精神堕落亦达到可惊的地步！不说别的，单就家庭而言：吾人原是人海中的一叶扁舟；家庭乃是碇泊修缮的一所良港。翻腾于怒涛狂澜中的人生之舟，不时受著风险及苦痛的袭击，当精疲力竭而感到生命空虚时，能给与我人安慰及光明的，唯有可爱的和平家庭。假定没有这可泊人生之舟的家庭，不管那船舫如何坚牢，恐终不免于覆灭。所以家庭的和平，是人生的幸福。然所以能得和平幸福，其头绪虽说多端，而为人子者如何孝养父母，不能不说是首要。可是自命为时代的人物，在欧风美雨呼唤、物质文明陶醉下，欲推翻一切旧传习，不但不再重视孝，甚而至于唱出非孝的口号，我真不知这是时代的进步还是退步？实令人不胜慨叹之至！在我觉得：时代不管是怎样的进步，人类的根本总不能忘却，人而如果忘本，那还成什么人？试想：我们从母体出生后，有一段很长的幼稚期，不能独立生存，全赖父母的抚养长大成人，怎可到自己有了生存的能力，就把生身父母忘得一干二净，什么侍奉孝敬一切都不顾呢？况且再进一步说：没有父母又那里有你有我？所以只要我们还承认自己是一个人，饮水思源，对于父母，就不能不孝顺。不特如此，我有父母，我当孝于我的父母，他人也有父母，必须使他人也能孝于他的父母，那才算是真孝！尽管时代已经进步到原子时代，但为事亲之本的孝道，总归为人类应遵行的德行常道，决不因时代的进步而有所改变。如以为时代进步了，孝道可以不要了，那就大错特错，根本不配做个时代人物！真欲站在时代前面，领导时代进化的，应以孝敬父母发扬孝德为己任才得，因唯有爱父母的，才能真正的爱人类！</p>
+<p>　　讲到这里，或许有人要说：孝道的重要，这是人人所知的，也是人人应行的；然而你们佛教，有出家有在家的二众，割爱辞亲，离家远走，既不能「晨昏定省」，又不能「福禄侍奉」，这能算是孝吗？所以真正不重孝的，恐怕还是佛教吧？像这样误会佛教的很多。其实，佛教是伦理色彩最浓厚的宗教，不特不忽视世间的孝道，而且极端的重视孝道。唯佛法所重与世俗所重不同的：佛法重在历劫的、永久的、广义的孝道。世俗只重现世的、暂时的、狭义的孝道。举最明显的例子来说：我佛成道后不久，特回国为父王说法，以报现前的老父之恩；待到将入涅槃时，为报生身的母恩，乃又发出一片孝思，上升到忉利天去，专为他的母亲说法，以期报深恩于万一。而且自佛成道后，不但报答了现世的父母之恩，并报答了无始来的生生世世父母之恩，这那里是浅见者流所见到的不重孝呢？再如地藏大士，于过去久远不可说不可说劫前，因被孝顺心的驱使，为报父母养育之恩，扩大到愿度一切众生。认为自己父母的生死苦痛固应救拔，一切众生的生死苦痛亦应为之解除，况且轮回五趣中的每一众生，都曾展转的做过我的父母，我不去济拔他们，还让谁去救度呢？像这样的报答一切父母恩的大孝，又那里是一般只知孝顺自己父母者所能理会？所以诸佛诸菩萨本身，固没有一个不是孝道实践者，就是说法开示于人，也无不殷勤的赞美于孝，令人行孝！不过佛法说孝以及真正孝道的完成，不仅是「晨昏定省，福禄侍养」，而主要在劝发父母信敬三宝，从三宝的信敬中，获得生死的究竟解脱。所以莲池大师说：「父母恩重，过于山邱，五鼎三牲未足酬，亲得离尘垢，子道方成就。」这点很重要。我们中国人，在农历七月里，而有追亲的思想，或于十五中元节度亡，或于三十地藏成道日超荐，站在报恩的立场讲，这是很有意义的。唯须更进一步的，就是要从狭义的孝亲，进到广义的孝亲，效法地藏大士，行大孝于人间，那才算是真正的纪念了地藏菩萨！</p>
+<p>　　最后，我还得一说的，佛教讲救济不单是未来的，且亦是现在的。宗教上的未来救济，固然重要；现实的世间救济，尤为重要。唯有现实真能得救济，始可信未来亦被救济。如现实的都不兑现，那还谈什么未来？所以佛法决不崇尚空论，当知实行孝道也是如此。父母去世以后，究竟生于善道恶道，固然值得做子女的关心，在可能范围内，多为设供修福，使得早蒙佛力加被，出离苦处；但尤要者，还是父母在的时候，曲顺亲心，事之以礼，奉养孝敬，令信三宝。即或父母有所不是，我们只有加以婉劝，以尽为人子的天职，万一父母不听，亦觉问心无愧，而所以孝敬父母的一片孝心，仍当有加无已，决不可因父母的一时疏忽，就失去做儿女的应行之道。所以我们看一个人是否行孝道，不在父母死后排场摆得大，而在父母生前是否孝养周到，如父母在日都不孝，则死后的一切作为，是否出于孝思，就大成问题了。因此，佛法虽讲行孝于无始来的父母之大孝，而特重对现前父母所行的实孝，这是重视孝道的我人所不可忽视的！</p>
+<p>　　关于地藏的名义，大士的化迹，历来讲的很多，现我一概从略。今天对诸位所说的，主要是显示菩萨的大愿与大孝。愿诸位一致的：</p>
+<p>　　　　发地藏之大愿！</p>
+<p>　　　　行地藏之大孝！</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../dzpszj/ypfsldzpsdspsdshsy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../dzpszj/ypfsldzpsncdywksbcfdjsl.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../dzpszj/ypfsldzpsdspsdshsy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../dzpszj/ypfsldzpsncdywksbcfdjsl.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

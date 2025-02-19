@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>大般若波罗蜜多经　卷第二百四 - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="大般若波罗蜜多经-卷第二百四"><a class="header" href="#大般若波罗蜜多经-卷第二百四">大般若波罗蜜多经　卷第二百四</a></h1>
+<p>　　　　大般若波罗蜜多经　卷第二百四</p>
+<p>　　　　　　大唐三藏法师玄奘奉　　诏译</p>
+<p>　　　　初分难信解品第三十四之二十三</p>
+<p>　　「复次，善现！色清净故受清净，受清净故色清净。何以故？是色清净与受清净，无二、无二分、无别、无断故。受清净故想清净，想清净故受清净。何以故？是受清净与想清净，无二、无二分、无别、无断故。想清净故行清净，行清净故想清净。何以故？是想清净与行清净，无二、无二分、无别、无断故。行清净故识清净，识清净故行清净。何以故？是行清净与识清净，无二、无二分、无别、无断故。识清净故眼处清净，眼处清净故识清净。何以故？是识清净与眼处清净，无二、无二分、无别、无断故。</p>
+<p>　　「眼处清净故耳处清净，耳处清净故眼处清净。何以故？是眼处清净与耳处清净，无二、无二分、无别、无断故。耳处清净故鼻处清净，鼻处清净故耳处清净。何以故？是耳处清净与鼻处清净，无二、无二分、无别、无断故。鼻处清净故舌处清净，舌处清净故鼻处清净。何以故？是鼻处清净与舌处清净，无二、无二分、无别、无断故。舌处清净故身处清净，身处清净故舌处清净。何以故？是舌处清净与身处清净，无二、无二分、无别、无断故。身处清净故意处清净，意处清净故身处清净。何以故？是身处清净与意处清净，无二、无二分、无别、无断故。意处清净故色处清净，色处清净故意处清净。何以故？是意处清净与色处清净，无二、无二分、无别、无断故。</p>
+<p>　　「色处清净故声处清净，声处清净故色处清净。何以故？是色处清净与声处清净，无二、无二分、无别、无断故。声处清净故香处清净，香处清净故声处清净。何以故？是声处清净与香处清净，无二、无二分、无别、无断故。香处清净故味处清净，味处清净故香处清净。何以故？是香处清净与味处清净，无二、无二分、无别、无断故。味处清净故触处清净，触处清净故味处清净。何以故？是味处清净与触处清净，无二、无二分、无别、无断故。触处清净故法处清净，法处清净故触处清净。何以故？是触处清净与法处清净，无二、无二分、无别、无断故。法处清净故眼界清净，眼界清净故法处清净。何以故？是法处清净与眼界清净，无二、无二分、无别、无断故。</p>
+<p>　　「眼界清净故色界清净，色界清净故眼界清净。何以故？是眼界清净与色界清净，无二、无二分、无别、无断故。色界清净故眼识界清净，眼识界清净故色界清净。何以故？是色界清净与眼识界清净，无二、无二分、无别、无断故。眼识界清净故眼触清净，眼触清净故眼识界清净。何以故？是眼识界清净与眼触清净，无二、无二分、无别、无断故。眼触清净故眼触为缘所生诸受清净，眼触为缘所生诸受清净故眼触清净。何以故？是眼触清净与眼触为缘所生诸受清净，无二、无二分、无别、无断故。眼触为缘所生诸受清净故耳界清净，耳界清净故眼触为缘所生诸受清净。何以故？是眼触为缘所生诸受清净与耳界清净，无二、无二分、无别、无断故。</p>
+<p>　　「耳界清净故声界清净，声界清净故耳界清净。何以故？是耳界清净与声界清净，无二、无二分、无别、无断故。声界清净故耳识界清净，耳识界清净故声界清净。何以故？是声界清净与耳识界清净，无二、无二分、无别、无断故。耳识界清净故耳触清净，耳触清净故耳识界清净。何以故？是耳识界清净与耳触清净，无二、无二分、无别、无断故。耳触清净故耳触为缘所生诸受清净，耳触为缘所生诸受清净故耳触清净。何以故？是耳触清净与耳触为缘所生诸受清净，无二、无二分、无别、无断故。耳触为缘所生诸受清净故鼻界清净，鼻界清净故耳触为缘所生诸受清净。何以故？是耳触为缘所生诸受清净与鼻界清净，无二、无二分、无别、无断故。</p>
+<p>　　「鼻界清净故香界清净，香界清净故鼻界清净。何以故？是鼻界清净与香界清净，无二、无二分、无别、无断故。香界清净故鼻识界清净，鼻识界清净故香界清净。何以故？是香界清净与鼻识界清净，无二、无二分、无别、无断故。鼻识界清净故鼻触清净，鼻触清净故鼻识界清净。何以故？是鼻识界清净与鼻触清净，无二、无二分、无别、无断故。鼻触清净故鼻触为缘所生诸受清净，鼻触为缘所生诸受清净故鼻触清净。何以故？是鼻触清净与鼻触为缘所生诸受清净，无二、无二分、无别、无断故。鼻触为缘所生诸受清净故舌界清净，舌界清净故鼻触为缘所生诸受清净。何以故？是鼻触为缘所生诸受清净与舌界清净，无二、无二分、无别、无断故。</p>
+<p>　　「舌界清净故味界清净，味界清净故舌界清净。何以故？是舌界清净与味界清净，无二、无二分、无别、无断故。味界清净故舌识界清净，舌识界清净故味界清净。何以故？是味界清净与舌识界清净，无二、无二分、无别、无断故。舌识界清净故舌触清净，舌触清净故舌识界清净。何以故？是舌识界清净与舌触清净，无二、无二分、无别、无断故。舌触清净故舌触为缘所生诸受清净，舌触为缘所生诸受清净故舌触清净。何以故？是舌触清净与舌触为缘所生诸受清净，无二、无二分、无别、无断故。舌触为缘所生诸受清净故身界清净，身界清净故舌触为缘所生诸受清净。何以故？是舌触为缘所生诸受清净与身界清净，无二、无二分、无别、无断故。</p>
+<p>　　「身界清净故触界清净，触界清净故身界清净。何以故？是身界清净与触界清净，无二、无二分、无别、无断故。触界清净故身识界清净，身识界清净故触界清净。何以故？是触界清净与身识界清净，无二、无二分、无别、无断故。身识界清净故身触清净，身触清净故身识界清净。何以故？是身识界清净与身触清净，无二、无二分、无别、无断故。身触清净故身触为缘所生诸受清净，身触为缘所生诸受清净故身触清净。何以故？是身触清净与身触为缘所生诸受清净，无二、无二分、无别、无断故。身触为缘所生诸受清净故意界清净，意界清净故身触为缘所生诸受清净。何以故？是身触为缘所生诸受清净与意界清净，无二、无二分、无别、无断故。</p>
+<p>　　「意界清净故法界清净，法界清净故意界清净。何以故？是意界清净与法界清净，无二、无二分、无别、无断故。法界清净故意识界清净，意识界清净故法界清净。何以故？是法界清净与意识界清净，无二、无二分、无别、无断故。意识界清净故意触清净，意触清净故意识界清净。何以故？是意识界清净与意触清净，无二、无二分、无别、无断故。意触清净故意触为缘所生诸受清净，意触为缘所生诸受清净故意触清净。何以故？是意触清净与意触为缘所生诸受清净，无二、无二分、无别、无断故。意触为缘所生诸受清净故地界清净，地界清净故意触为缘所生诸受清净。何以故？是意触为缘所生诸受清净与地界清净，无二、无二分、无别、无断故。</p>
+<p>　　「地界清净故水界清净，水界清净故地界清净。何以故？是地界清净与水界清净，无二、无二分、无别、无断故。水界清净故火界清净，火界清净故水界清净。何以故？是水界清净与火界清净，无二、无二分、无别、无断故。火界清净故风界清净，风界清净故火界清净。何以故？是火界清净与风界清净，无二、无二分、无别、无断故。风界清净故空界清净，空界清净故风界清净。何以故？是风界清净与空界清净，无二、无二分、无别、无断故。空界清净故识界清净，识界清净故空界清净。何以故？是空界清净与识界清净，无二、无二分、无别、无断故。识界清净故无明清净，无明清净故识界清净。何以故？是识界清净与无明清净，无二、无二分、无别、无断故。</p>
+<p>　　「无明清净故行清净，行清净故无明清净。何以故？是无明清净与行清净，无二、无二分、无别、无断故。行清净故识清净，识清净故行清净。何以故？是行清净与识清净，无二、无二分、无别、无断故。识清净故名色清净，名色清净故识清净。何以故？是识清净与名色清净，无二、无二分、无别、无断故。名色清净故六处清净，六处清净故名色清净。何以故？是名色清净与六处清净，无二、无二分、无别、无断故。六处清净故触清净，触清净故六处清净。何以故？是六处清净与触清净，无二、无二分、无别、无断故。触清净故受清净，受清净故触清净。何以故？是触清净与受清净，无二、无二分、无别、无断故。受清净故爱清净，爱清净故受清净。何以故？是受清净与爱清净，无二、无二分、无别、无断故。爱清净故取清净，取清净故爱清净。何以故？是爱清净与取清净，无二、无二分、无别、无断故。取清净故有清净，有清净故取清净。何以故？是取清净与有清净，无二、无二分、无别、无断故。有清净故生清净，生清净故有清净。何以故？是有清净与生清净，无二、无二分、无别、无断故。生清净故老死愁叹苦忧恼清净，老死愁叹苦忧恼清净故生清净。何以故？是生清净与老死愁叹苦忧恼清净，无二、无二分、无别、无断故。老死愁叹苦忧恼清净故布施波罗蜜多清净，布施波罗蜜多清净故老死愁叹苦忧恼清净。何以故？是老死愁叹苦忧恼清净与布施波罗蜜多清净，无二、无二分、无别、无断故。</p>
+<p>　　「布施波罗蜜多清净故净戒波罗蜜多清净，净戒波罗蜜多清净故布施波罗蜜多清净。何以故？是布施波罗蜜多清净与净戒波罗蜜多清净，无二、无二分、无别、无断故。净戒波罗蜜多清净故安忍波罗蜜多清净，安忍波罗蜜多清净故净戒波罗蜜多清净。何以故？是净戒波罗蜜多清净与安忍波罗蜜多清净，无二、无二分、无别、无断故。安忍波罗蜜多清净故精进波罗蜜多清净，精进波罗蜜多清净故安忍波罗蜜多清净。何以故？是安忍波罗蜜多清净与精进波罗蜜多清净，无二、无二分、无别、无断故。精进波罗蜜多清净故静虑波罗蜜多清净，静虑波罗蜜多清净故精进波罗蜜多清净。何以故？是精进波罗蜜多清净与静虑波罗蜜多清净，无二、无二分、无别、无断故。静虑波罗蜜多清净故般若波罗蜜多清净，般若波罗蜜多清净故静虑波罗蜜多清净。何以故？是静虑波罗蜜多清净与般若波罗蜜多清净，无二、无二分、无别、无断故。般若波罗蜜多清净故内空清净，内空清净故般若波罗蜜多清净。何以故？是般若波罗蜜多清净与内空清净，无二、无二分、无别、无断故。</p>
+<p>　　「内空清净故外空清净，外空清净故内空清净。何以故？是内空清净与外空清净？无二、无二分、无别、无断故。外空清净故内外空清净，内外空清净故外空清净。何以故？是外空清净与内外空清净，无二、无二分、无别、无断故。内外空清净故空空清净，空空清净故内外空清净。何以故？是内外空清净与空空清净，无二、无二分、无别、无断故。空空清净故大空清净，大空清净故空空清净。何以故？是空空清净与大空清净，无二、无二分、无别、无断故。大空清净故胜义空清净，胜义空清净故大空清净。何以故？是大空清净与胜义空清净，无二、无二分、无别、无断故。胜义空清净故有为空清净，有为空清净故胜义空清净。何以故？是胜义空清净与有为空清净，无二、无二分、无别、无断故。有为空清净故无为空清净，无为空清净故有为空清净。何以故？是有为空清净与无为空清净，无二、无二分、无别、无断故。无为空清净故毕竟空清净，毕竟空清净故无为空清净。何以故？是无为空清净与毕竟空清净，无二、无二分、无别、无断故。毕竟空清净故无际空清净，无际空清净故毕竟空清净。何以故？是毕竟空清净与无际空清净，无二、无二分、无别、无断故。无际空清净故散空清净，散空清净故无际空清净。何以故？是无际空清净与散空清净，无二、无二分、无别、无断故。散空清净故无变异空清净，无变异空清净故散空清净。何以故？是散空清净与无变异空清净，无二、无二分、无别、无断故。无变异空清净故本性空清净，本性空清净故无变异空清净。何以故？是无变异空清净与本性空清净，无二、无二分、无别、无断故。本性空清净故自相空清净，自相空清净故本性空清净。何以故？是本性空清净与自相空清净，无二、无二分、无别、无断故。自相空清净故共相空清净，共相空清净故自相空清净。何以故？是自相空清净与共相空清净，无二、无二分、无别、无断故。共相空清净故一切法空清净，一切法空清净故共相空清净。何以故？是共相空清净与一切法空清净，无二、无二分、无别、无断故。一切法空清净故不可得空清净，不可得空清净故一切法空清净。何以故？是一切法空清净与不可得空清净，无二、无二分、无别、无断故。不可得空清净故无性空清净，无性空清净故不可得空清净。何以故？是不可得空清净与无性空清净，无二、无二分、无别、无断故。无性空清净故自性空清净，自性空清净故无性空清净。何以故？是无性空清净与自性空清净，无二、无二分、无别、无断故。自性空清净故无性自性空清净，无性自性空清净故自性空清净。何以故？是自性空清净与无性自性空清净，无二、无二分、无别、无断故。无性自性空清净故真如清净，真如清净故无性自性空清净。何以故？是无性自性空清净与真如清净，无二、无二分、无别、无断故。</p>
+<p>　　「真如清净故法界清净，法界清净故真如清净。何以故？是真如清净与法界清净，无二、无二分、无别、无断故。法界清净故法性清净，法性清净故法界清净。何以故？是法界清净与法性清净，无二、无二分、无别、无断故。法性清净故不虚妄性清净，不虚妄性清净故法性清净。何以故？是法性清净与不虚妄性清净，无二、无二分、无别、无断故。不虚妄性清净故不变异性清净，不变异性清净故不虚妄性清净。何以故？是不虚妄性清净与不变异性清净，无二、无二分、无别、无断故。不变异性清净故平等性清净，平等性清净故不变异性清净。何以故？是不变异性清净与平等性清净，无二、无二分、无别、无断故。平等性清净故离生性清净，离生性清净故平等性清净。何以故？是平等性清净与离生性清净，无二、无二分、无别、无断故。离生性清净故法定清净，法定清净故离生性清净。何以故？是离生性清净与法定清净，无二、无二分、无别、无断故。法定清净故法住清净，法住清净故法定清净。何以故？是法定清净与法住清净，无二、无二分、无别、无断故。法住清净故实际清净，实际清净故法住清净。何以故？是法住清净与实际清净，无二、无二分、无别、无断故。实际清净故虚空界清净，虚空界清净故实际清净。何以故？是实际清净与虚空界清净，无二、无二分、无别、无断故。虚空界清净故不思议界清净，不思议界清净故虚空界清净。何以故？是虚空界清净与不思议界清净，无二、无二分、无别、无断故。不思议界清净故苦圣谛清净，苦圣谛清净故不思议界清净。何以故？是不思议界清净与苦圣谛清净，无二、无二分、无别、无断故。</p>
+<p>　　「苦圣谛清净故集圣谛清净，集圣谛清净故苦圣谛清净。何以故？是苦圣谛清净与集圣谛清净，无二、无二分、无别、无断故。集圣谛清净故灭圣谛清净，灭圣谛清净故集圣谛清净。何以故？是集圣谛清净与灭圣谛清净，无二、无二分、无别、无断故。灭圣谛清净故道圣谛清净，道圣谛清净故灭圣谛清净。何以故？是灭圣谛清净与道圣谛清净，无二、无二分、无别、无断故。道圣谛清净故四静虑清净，四静虑清净故道圣谛清净。何以故？是道圣谛清净与四静虑清净，无二、无二分、无别、无断故。</p>
+<p>　　「四静虑清净故四无量清净，四无量清净故四静虑清净。何以故？是四静虑清净与四无量清净，无二、无二分、无别、无断故。四无量清净故四无色定清净，四无色定清净故四无量清净。何以故？是四无量清净与四无色定清净，无二、无二分、无别、无断故。四无色定清净故八解脱清净，八解脱清净故四无色定清净。何以故？是四无色定清净与八解脱清净，无二、无二分、无别、无断故。</p>
+<p>　　「八解脱清净故八胜处清净，八胜处清净故八解脱清净。何以故？是八解脱清净与八胜处清净，无二、无二分、无别、无断故。八胜处清净故九次第定清净，九次第定清净故八胜处清净。何以故？是八胜处清净与九次第定清净，无二、无二分、无别、无断故。九次第定清净故十遍处清净，十遍处清净故九次第定清净。何以故？是九次第定清净与十遍处清净，无二、无二分、无别、无断故。十遍处清净故四念住清净，四念住清净故十遍处清净。何以故？是十遍处清净与四念住清净，无二、无二分、无别、无断故。</p>
+<p>　　「四念住清净故四正断清净，四正断清净故四念住清净。何以故？是四念住清净与四正断清净，无二、无二分、无别、无断故。四正断清净故四神足清净，四神足清净故四正断清净。何以故？是四正断清净与四神足清净，无二、无二分、无别、无断故。四神足清净故五根清净，五根清净故四神足清净。何以故？是四神足清净与五根清净，无二、无二分、无别、无断故。五根清净故五力清净，五力清净故五根清净。何以故？是五根清净与五力清净，无二、无二分、无别、无断故。五力清净故七等觉支清净，七等觉支清净故五力清净。何以故？是五力清净与七等觉支清净，无二、无二分、无别、无断故。七等觉支清净故八圣道支清净，八圣道支清净故七等觉支清净。何以故？是七等觉支清净与八圣道支清净，无二、无二分、无别、无断故。八圣道支清净故空解脱门清净，空解脱门清净故八圣道支清净。何以故？是八圣道支清净与空解脱门清净，无二、无二分、无别、无断故。</p>
+<p>　　「空解脱门清净故无相解脱门清净，无相解脱门清净故空解脱门清净。何以故？是空解脱门清净与无相解脱门清净，无二、无二分、无别、无断故。无相解脱门清净故无愿解脱门清净，无愿解脱门清净故无相解脱门清净。何以故？是无相解脱门清净与无愿解脱门清净，无二、无二分、无别、无断故。无愿解脱门清净故菩萨十地清净，菩萨十地清净故无愿解脱门清净。何以故？是无愿解脱门清净与菩萨十地清净，无二、无二分、无别、无断故。</p>
+<p>　　「菩萨十地清净故五眼清净，五眼清净故菩萨十地清净。何以故？是菩萨十地清净与五眼清净，无二、无二分、无别、无断故。</p>
+<p>　　「五眼清净故六神通清净，六神通清净故五眼清净。何以故？是五眼清净与六神通清净，无二、无二分、无别、无断故。六神通清净故佛十力清净，佛十力清净故六神通清净。何以故？是六神通清净与佛十力清净，无二、无二分、无别、无断故。</p>
+<p>　　「佛十力清净故四无所畏清净，四无所畏清净故佛十力清净。何以故？是佛十力清净与四无所畏清净，无二、无二分、无别、无断故。四无所畏清净故四无碍解清净，四无碍解清净故四无所畏清净。何以故？是四无所畏清净与四无碍解清净，无二、无二分、无别、无断故。四无碍解清净故大慈清净，大慈清净故四无碍解清净。何以故？是四无碍解清净与大慈清净，无二、无二分、无别、无断故。大慈清净故大悲清净，大悲清净故大慈清净。何以故？是大慈清净与大悲清净，无二、无二分、无别、无断故。大悲清净故大喜清净，大喜清净故大悲清净。何以故？是大悲清净与大喜清净，无二、无二分、无别、无断故。大喜清净故大舍清净，大舍清净故大喜清净。何以故？是大喜清净与大舍清净，无二、无二分、无别、无断故。大舍清净故十八佛不共法清净，十八佛不共法清净故大舍清净。何以故？是大舍清净与十八佛不共法清净，无二、无二分、无别、无断故。十八佛不共法清净故无忘失法清净，无忘失法清净故十八佛不共法清净。何以故？是十八佛不共法清净与无忘失法清净，无二、无二分、无别、无断故。</p>
+<p>　　「无忘失法清净故恒住舍性清净，恒住舍性清净故无忘失法清净。何以故？是无忘失法清净与恒住舍性清净，无二、无二分、无别、无断故。恒住舍性清净故一切智清净，一切智清净故恒住舍性清净。何以故？是恒住舍性清净与一切智清净，无二、无二分、无别、无断故。</p>
+<p>　　「一切智清净故道相智清净，道相智清净故一切智清净。何以故？是一切智清净与道相智清净，无二、无二分、无别、无断故。道相智清净故一切相智清净，一切相智清净故道相智清净。何以故？是道相智清净与一切相智清净，无二、无二分、无别、无断故。一切相智清净故一切陀罗尼门清净，一切陀罗尼门清净故一切相智清净。何以故？是一切相智清净与一切陀罗尼门清净，无二、无二分、无别、无断故。</p>
+<p>　　「一切陀罗尼门清净故一切三摩地门清净，一切三摩地门清净故一切陀罗尼门清净。何以故？是一切陀罗尼门清净与一切三摩地门清净，无二、无二分、无别、无断故。一切三摩地门清净故预流果清净，预流果清净故一切三摩地门清净。何以故？是一切三摩地门清净与预流果清净，无二、无二分、无别、无断故。</p>
+<p>　　「预流果清净故一来果清净，一来果清净故预流果清净。何以故？是预流果清净与一来果清净，无二、无二分、无别、无断故。一来果清净故不还果清净，不还果清净故一来果清净。何以故？是一来果清净与不还果清净，无二、无二分、无别、无断故。不还果清净故阿罗汉果清净，阿罗汉果清净故不还果清净。何以故？是不还果清净与阿罗汉果清净，无二、无二分、无别、无断故。阿罗汉果清净故独觉菩提清净，独觉菩提清净故阿罗汉果清净。何以故？是阿罗汉果清净与独觉菩提清净，无二、无二分、无别、无断故。</p>
+<p>　　「独觉菩提清净故一切菩萨摩诃萨行清净，一切菩萨摩诃萨行清净故独觉菩提清净。何以故？是独觉菩提清净与一切菩萨摩诃萨行清净，无二、无二分、无别、无断故。</p>
+<p>　　「一切菩萨摩诃萨行清净故诸佛无上正等菩提清净，诸佛无上正等菩提清净故一切菩萨摩诃萨行清净。何以故？是一切菩萨摩诃萨行清净与诸佛无上正等菩提清净，无二、无二分、无别、无断故。</p>
+<p>　　大般若波罗蜜多经卷第二百四</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/dbrj/dbrblmdjjd203.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/dbrj/dbrblmdjjd205.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/dbrj/dbrblmdjjd203.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/dbrj/dbrblmdjjd205.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

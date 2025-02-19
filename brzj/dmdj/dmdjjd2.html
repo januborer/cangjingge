@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>大明度经卷第二  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="大明度经卷第二"><a class="header" href="#大明度经卷第二">大明度经卷第二</a></h1>
+<p>　　　　大明度经卷第二</p>
+<p>　　　　　　　　南吴月支国居士支谦译</p>
+<p>　　　　天帝释问品第二</p>
+<p>　　尔时帝释与四万天子四天王。与二万天子梵众天。与万天子梵辅天。与五千天子俱皆来会坐。诸天子宿命功德光耀巍巍。持佛神力明彻照。</p>
+<p>　　释问善业言。是诸天子大会欲听说智度无极。云何闿士大士于大明中立乎。</p>
+<p>　　善业曰。诸天子。乐闻者听我说。因持佛力广说智度。何天子。未求闿士道者。今皆当求。以得沟港道者不可复得闿士道士。何以故。闭生死道已。正使是辈求者。我代其喜不断功德也。悉欲使取经中极尊法使上至佛。</p>
+<p>　　佛言。善哉善哉。劝乐闿士学乃尔乎。</p>
+<p>　　善业白佛言。我当报恩。终不敢违之。所以然者。往昔如来无所著正真道最正觉。皆与弟子为诸闿士说智度。如来时亦在中学斯经妙行。今自致作佛。用是故当报恩。我作是说法。闿士受之我劝乐。劝乐以大道疾令作佛。释欲所闻者听所问矣。</p>
+<p>　　问曰。闿士云何立智度中乎。</p>
+<p>　　答曰。持空法立如是。</p>
+<p>　　释问。闿士大士以影弘誓大乘。所至奏五阴。不当于中住。沟港频来不还应仪。缘一觉至于佛。不当于中住。五阴无常。不当于中住。于苦乐好丑是我所非我所。不当于中住。沟港道不动成就。不当于中住。何以故。七死七生便度去。频来道不动成就。不当于中住。何以故。一死一生便度去。不还道不动成就。不当于中住。何以故。于上灭度。应仪道不动成就。不当于中住。何以故。应仪道成已便尽于灭度中而灭讫。缘一觉道不动成就。不当于中住。何以故。不能逮佛道便灭讫。是故不当于中住。如来无所著正真道最正觉用无量人故作功德。我皆当令灭讫正于佛中住。佛所作皆究竟已乃灭讫。亦不当于中住。</p>
+<p>　　秋露子问设使闿士大士不当住五阴沟港频来不还应仪缘一觉上至佛。当云何住。</p>
+<p>　　善业言。如来无所著正真道最正觉有住处乎。</p>
+<p>　　答曰。不也。何以故。佛无所住。亦不在动摇不动摇处住。亦不不住。亦无无住。一切无是如如来住。当作是住。不当住不住。亦不当住无住。当作是住学无所住矣。</p>
+<p>　　尔时诸天子心念。诸鬼神所语悉可了知。今是尊者善业所说经道了不可知。善业知其心所念。语诸天子。是经难了难了。所以者何。我所道说所教起都为空矣。以斯故难闻。闻而难了。</p>
+<p>　　诸天子心复作是念。是语当解当解。今尊者善业深入于法身。即告诸天子。设使欲索沟港频来不还应仪缘一觉无上正真道。若于其道中住。皆当学明度。当持守。诸天子心复念。所说乃尔。当复于何处更索经师。又告诸天子。欲知我所说法者。如幻人无所闻无所行。</p>
+<p>　　诸天问。今在是闻法者是人为非幻乎。</p>
+<p>　　善业言。人如幻幻如人。如求沟港频来不还应仪缘一觉正真道。人如幻幻如佛道。</p>
+<p>　　诸天子复问。乃至佛亦复如幻如人乎。</p>
+<p>　　曰乃至灭度亦如幻如人。</p>
+<p>　　诸天子言。灭度亦复如幻如人乎。</p>
+<p>　　曰设使有法过于灭度者。亦复如幻如人矣。善业告诸天子。是幻是人泥洹皆空俱无所有。尊者秋露子满祝子问说明无度如是者。谁能持奉行之。</p>
+<p>　　答曰。贤者不退转闿士大士能持奉行之。其应仪等无能受持者。所以者何。我所说法为无所说亦无所处。法已无所处。法已无所嘱累。法以是故亦无能受持者。释心念。尊者善业雨法宝。我宁可化作花以散其上。便化作甘香花以散佛及善业诸比丘上花至其膝。善业即知言。是华不出于忉利天上释所散花。出于幻耳。释言。是花非从树出。如贤者善业所可说。斯事本寂自幻树出矣。释言。是花从幻树出也。不从树出者为非是。非是者为非花。释言。明度甚深微妙。</p>
+<p>　　答曰。然所以者何。无所逮得亦无所说。释言。尊者处深微妙明度于法不诤处。无所有于法无所动。</p>
+<p>　　答曰。然法非动法。当作是学。如是学不学沟港频来不还应仪缘一觉道。作是学者为学一切智出于诸法。为不生五阴。学受身行不学受余法。秋露子问。如是为不学受一切智乎。不学亡失。不学受他法乎。</p>
+<p>　　答曰。然是为学一切智出于诸法。释闻法便问秋露子。当云何于其中求。</p>
+<p>　　报言。于善业明度品中求。释问。善业持何威神恩当学知。</p>
+<p>　　报言。持如来威神恩知。释所问。明度闿士大士当云何求不可从五阴求。不可离之求。何以故。明度非五阴。亦不离之不起之。为无所著无出无倚。无倚是明度矣。释言。大士为大明无边无底。</p>
+<p>　　报言。五阴皆无边。以是故当知。法无边人无底。当知法无底。身与作复作用。是故当知之。与大明等无异。无中边亦无本端。不可限量。一切不可得。以是故。明度无边无底不可计计为多。释问。人云何无底。</p>
+<p>　　善业言。云何于释意。何所法中名为人。于法中不见有名为人者。何以故不。见有所从来处。所以者何。人本未皆空无所有故。设使有来者有住止者但名耳。何以故。于名字中学有所有不。</p>
+<p>　　曰不也。</p>
+<p>　　善业曰。用名字无所有故。无作我者。是故人无底。正使如来无所著正真道最正觉寿如恒沙劫。口说名人人。复人宁有生灭者不。释言。一切无生灭者。</p>
+<p>　　善业言。所以者何。用一切人净故。无所起名非名不可得。是故人无底。明度无极名无底。当作是知。</p>
+<p>　　　　持品第三尔时诸天无央数同时三叹曰。鸣经乎。鸣经乎。是尊者善业所说道深矣。斯大明弘义。如如来所由出矣。有闻者学之诵之。我敬视之如如来。佛告诸天子。诚然。昔锭光如来无所著正真道最正觉时有宫。宫中有是经。我时持之。锭光佛受我决言。若后当为人中持悉逮佛智。作佛名能儒如来无所著正真道最正觉。三界最尊。安定于法中极明。号曰天中天。诸天子白佛言。少有及者。天中天。有持大明者。为受一切智矣。时佛在众中央坐。佛告除馑众除馑女清信士清信女。今是四部为证。爱欲天梵天无结爱天皆知。佛告释言。高士学斯定持诵其文。众邪不得其便令横死也。忉利诸天子求佛道者。未学诵获其奥者。是辈天子皆往到是学持诵者所。若于空闲避隈处亦不恐不怖也四天王释梵及诸天子等各白佛言。我当护是学持诵者。释复白佛言。难及天中天。是明度学者心无动摇。悉受六度已。</p>
+<p>　　佛言。然善听我说。上中下言皆善。释言。受教。</p>
+<p>　　佛言。我经中有欲害乱者起恶意往。未至道亡。后所作终不成。何以故。用是高士学是经故。譬若有药其名神丹有蛇索食道逢虫物。蛇欲啖虫。即到神丹药所。蛇闻药香即还去。何以故。是药力所却。如是是辈高士其欲害者便自止还。是明度威神力所厌伏也。</p>
+<p>　　佛言。设有乱者便于彼间自坏不成四天王皆护入经如行者。自在所为所语如甘露。言重成道。嗔恚贡高诸恶不生。四天王护之。所以然者。学明度故。心自生念。有诤起者不可近。我求索佛道义。不可随是嗔恚语。使我疾逮好心。斯高士所作悉见善像。释白佛言。难胜天中天。乃过诸恶无与等者。佛言释。是辈人或当过剧难之中终不恐。无能害者。善士当诵惟斯定。政使死至。若怨在中欲共害者。如佛所语终兵刃向者不中其身。所以然者。斯定诸佛神咒咒中之王矣。学是咒者不自念恶。不念人恶。都无恶念。是为人中之雄。自致作佛为护众生。夫学斯行者疾成佛道。是经书已虽不学。诵者当持其卷。人鬼凶毒不能害矣。宿命重殃唯斯不除。譬如得佛处。若人若鬼神禽兽从一面入无能害者。何以故。用得佛处故。其威神护过去现在当来索佛道者。皆当于中得佛道。人入其处不恐无畏。明度所止天人鬼龙皆为作礼恭敬护视。用经德尊故。释白佛言。若有书持经卷承事供养天宝名华栴檀珍琦香缯盖幡。若有持如来无所著正真道最正觉舍利。起塔自归作礼承事供养。天宝花香具足如上。其福孰多。</p>
+<p>　　佛言。我问若随所乐报。云何是如来一切智。成是身出现于世。从何义得。</p>
+<p>　　对曰。从明度义得。</p>
+<p>　　佛言。不用是身舍利得佛也。乃从一切智生得佛身。我灭度后舍利供养如故。若善人书是经学持讽诵自归作礼承事供养。具足如前则为供养一切智。已从是经中得功德无比。复白佛言。阎浮提人民不供养者。为不知是福尊无比耶。</p>
+<p>　　佛言。有几所人信佛信经信比丘僧。释言。信者少耳。及求沟港频来不还应仪缘一觉至求佛者复少矣。</p>
+<p>　　佛言。无量人行求佛道。至于在不退转地立者。若一若两耳。学是法会成佛。当为作礼承事恭敬。何以故。用晓佛法世少有故。过去如来求佛道者皆从是成。我时亦在中。如来灭度后取舍利起七宝塔。尽形寿自归作礼承事供养。天宝花香具悉如前满四天下。若三千大千国土众生悉得人道。各作七宝塔。以妓乐乐之。复过是如恒边沙佛刹人。人起七宝塔供养劫复劫。都是欲界中诸妓乐花香缯盖皆具如上。所说其福德益多不。</p>
+<p>　　对曰。甚多天中天。</p>
+<p>　　佛言。不如书持经卷自归护定福多无量。何以故。从中出如来一切智故。</p>
+<p>　　佛言。百倍恒边沙佛刹人皆起七宝塔。不在计中如是千万亿无数倍。不在明度净定计中尔时四万天子与释俱来大会。诸天子启释言。尊者。当取诵是经。</p>
+<p>　　佛言。当学当持当诵。释若质谅神兴兵欲与忉利天战。其念诵是经。质谅神众即去。释言。大尊咒天中天。佛言然天辈过去当来今现在十方诸佛。皆起是咒自致作佛。出十诚功德。开士大士从中生佛未出于世时。闿士悉出说照明四弃四拔苦四事空五通。譬如月盛满时从空中出照明于星。闿士求功德盛满如是。皆从权德大明中出。当作是知学持诵是经。为至德悉具足佛言。其人终不为邪毒水火兵刃王法所横死。何以故。是明度所拥护。若复有余事起。若至王所及太子傍臣所。与之相见辄欢喜言笑。所以然者。以其普慈等济恕惠群生润功无量用。是故见者悉起立。尔时有异道人。遥见佛大会欲坏乱坐众。疾至佛所。释作是念。当云何尽我寿在佛边受诵是法。即从佛闻受诵。彼异道人遥远绕天中天一匝。从彼间道径去。秋露子念。是中云何异道人从彼间道径去。心念是佛即知。秋露子释念明度。异道人无善意来故弊邪念。佛与四部弟子共坐。爱欲天梵天诸天子悉复在中会无异人。闿士大士受决者会。当为人中之将自致作佛。我当往乱之。是弊邪乘一辕之车驾马四匹稍至佛所。释作是念。弊邪所乘非国王瓶沙。非波斯匿。非释种。非维耶利。四马车皆不类之。正是弊邪所作也。邪常昼夜索佛短乱世人。能常持心究竟明度。邪便道还。忉利迦翼天子持天花在空中立便散佛上。四面散而尊叹曰。究竟道原明度之谓也。阎浮提人民乃得闻见。复持杂华四散佛上曰。其有求者守者。终不为邪众所害也。是辈人民福德弘大。何况乃学持讽诵用是法住。其人前世已得见佛净心供养。欲一切知得一切智宝。当从明度索之。佛言然。阿难白佛言。无举名布施重戒忍辱精进弃定。但举明度名。何以故。天中天。</p>
+<p>　　佛言。明度于度中最尊。云何阿难。不布施持戒忍辱精进禅定智者。当缘为六度无极一切知乎。阿难言。唯然天中天。不行六行不为六度。诚非大明度无极一切知之明矣。</p>
+<p>　　佛言。然大明最尊。譬如地种。散。其中同时出生众生得命。如是阿难。明度如地。五度如种。从中生成。释白佛言。如来所说善士学持诵明度者功德未竟。佛语释。我不说是功德未竟。我自说书持经卷承事作礼花香名宝杂缯盖幡功德者耳。释白言。我身护视是人。佛语释。诵明度者有若干千天到是经师。听经不解义者欲问所疑。用慈于经中即自晓了。是人作功德悉自见知。若于四部弟子中说经时。其心无所难。若形试者终不畏。何以故。明度所护凶试者去。</p>
+<p>　　佛言。我不见人当明度者。人亦不见明度明度所厌也。无有轻者。心不恐怖无所畏。父母重之。沙门哀之。诸亲贤友爱之。或恶事来持忠正法为解之。是善士所作功德悉自见心。当作是知。十方无数佛国诸天人鬼龙。质谅神执乐神胸臆行神似人形神。皆至经师所问讯听受作礼致敬绕毕各去。斯行德使然。四天大王忉利天盐天兜术天不骄乐天化应声天。梵天梵众天梵辅天大梵天。水行天水微天无量水天。水音天约净天遍净天净明天守妙天玄妙天福德天德纯天近际天快见天。无结爱天上诸天子皆往问讯听受作礼绕竟各去。诸无结爱天尚悉来下在诸天中。何况是三千大千国土诸爱欲无色天子耶。彼所处常完坚无娆者。除宿不请余不能动。其功德悉受。是时诸天来当知之。释言。云何知天中天。</p>
+<p>　　佛言。是善士女欢喜时知来已当避去。闻鬼神香。或龙鬼神蛇躯神。来到闻鬼神香。以为曾知已当避去。当净身体用清净故鬼神皆大欢喜。小天见大天来便避去。尊天威神巍巍其光重明。稍安徐往尊天入至经所。是善士女则踊跃喜所。止处悉当净住是。人病终不著身。所止处常安隐未常有恶梦。梦中但见佛见塔闻明度。但见诸弟子。见极过度。见佛坐。见自然经轮。见粗欲成佛时。见诸佛得佛。见自然新经轮。见若干闿士。见六度种种解说是当作佛。见余佛刹。见佛及尊经无与等者。某方刹如来无所著正真道最正觉弟子众。如来在其中说经。是辈善士梦如是已安隐。觉身体净洁且轻。不复思食身软美饱。若比丘得定自定觉心软不思食身软美饱如是。何以故。鬼神不敢近是欲取佛者。</p>
+<p>　　　　功德品第四</p>
+<p>　　复次帝释。是天下如来舍利满中施与。有持智度无极书施与。尔取何所。释言。我取智度。何以故。我不敢不敬舍利。天中天舍利由斯明度出。天人所尊矣。如我与诸天共坐坐持异床。我未至诸天子为坐作礼绕以去。是坐尊故。吾于斯受经。诸天于彼为礼。如是天中天。明度出如来无所著正真道最正觉之舍利。一切智从中生身。用是故两分中取明度。正使三千复大千国土满中舍利为一分。明度书为二分取书。何以故。从中出舍利供养所致。譬如负债人与国王参正。无复问者亦无所畏。何以故。在王边有力故也。譬如无价明月珠。有是宝者其德无等所著处鬼神不得其便不为所中。若士女持明月珠所著。鬼神即去。若中热风寒。持明月珠著身。热风寒皆除去。夜著冥中即明。热凉寒温。众毒向已持珠示之诸毒即灭。如是天中天。明月珠尊。若人目痛冥近之即愈。其德巍巍。在著何所便随珠色。正使持若干种缯裹珠著水中。水故如珠色。水浊即为清。是珠德无比。阿难问释。云何独彼有珠耶。斯土亦有乎。释言。亦有不足言。如我所说者。异天下宝轻。不如彼德尊十百千万亿倍。若以著箧函中其明彻出。正使出去处明如故。天中天。一切知德至如来灭度后。是一切知舍利遍布供养如故。置是三千大千国土满中如来舍利。正使恒边沙佛刹满中舍利为一分。是经为二分。我于两分取是经。佛语释。过去如来皆从中出自致成佛。甫当来及十方无数佛刹现在诸佛亦从中出。为人中将自致成。释言。一切众生心所求。如来从明度悉了知。</p>
+<p>　　佛言。用是故闿士大士昼夜求明度。释言。惟求大明不求余度乎。</p>
+<p>　　佛言。六度无极。皆求闿士布施持戒忍辱精进一心分诸经。不及求明度。譬如是天下种树。若干色种种叶花实各异。其影无异影影相类。如是五度从明度出。一切知种种相成无异。释白佛言。景明德尊其为难等矣。天中天。若有书是经承事供养花香缯盖幡。若复授与人。其福孰多。释言。自供养复分人其福太多。</p>
+<p>　　佛言。如是书经供养华香众宝名缯盖幡。若有书经供养复分与人。其福无量。经师所处转说本净。其福甚多。复次一天下人皆令持十戒。置是四天下。复置小国中国二千三千大国土。如恒沙佛刹人民皆令持十戒。其福宁多不。</p>
+<p>　　对曰。甚多天中天。</p>
+<p>　　佛言。不如书持是经分与人使书学之。其福倍多。置上十戒。皆令作四弃四拔苦四事空及五通皆成得。云何其福宁转倍多不。</p>
+<p>　　对曰。甚多天中天。</p>
+<p>　　佛言。不如是书经卷与人使书若为读。其福倍多。复次学解中慧其福甚多。释白佛言。云何学明度解中慧。</p>
+<p>　　佛言。有当来善士。欲得无上正真道最正觉。乐学明度。恶友教学末智。何等为末智。</p>
+<p>　　佛言。来世比丘得经。欲学恶友教之五阴无常。学五阴无常。求作斯学失大明获末智。</p>
+<p>　　佛言。求者不坏五阴无常视。何以故。本无故。如斯当为景明之学。其福无度。复次一天下人皆令得沟港频来不还应仪缘一觉道。皆令成就。又如恒沙佛刹人民皆求无上正真道福。不如净定广说义。所以然者。皆由斯定得一切知十二经德。皆由斯学成佛。无盖佛出。即生沟港频来不还应仪缘一觉。并发意求佛获斯定者。福最尊矣。若有善愿欲疾作佛。以经施之令成大士。得斯定者其福难尽。释白佛言。如是天中天。极安隐。是闿士大士疾近佛。用是故。受其福转倍多。何以故。其得是法疾近佛坐。善业语释言。善哉善哉。当作是解。闿士受净定疾得作佛所作行。当如净不得景定不得作佛在所问。</p>
+<p>　　　　变谋明慧品第五</p>
+<p>　　尔时慈氏闿士语善业。有闿士大士代欢喜最尊分德法。虽或布施持戒。所守分德法尊无盖德被无表。</p>
+<p>　　善业言。当从是代欢喜分德之法。何以故。十方无量佛刹一一刹土不可计数数灭度。以是本所起无上正真道最正觉及自致灭度处。其功德极度所致之德。诸弟子所作布施持戒守法分德彼德最尊。过无所著功德。都天中天持戒身定身慧身无所挂碍身度知见身。安隐大慈不可具计。经中所学诸功德都计合积之。代欢喜德福尊无盖。以斯喜行用求无上正真道。心念言持是施与我作无上正真道。当作是行。求心以来悉还得之。慈氏语善业。作是求以来者不还得作是施者。</p>
+<p>　　善业言。有不施者当从何得亦无所守从何出生。若意悔还为堕四颠倒。所施与。无常谓常。苦谓乐。空谓实。无身谓有身。意悔还所信还持是心求佛。作是施与作无上正真道。慈氏语善业。新学士女不当于前解慧也。何以故。其所信乐所造德本恐亡。还当为不退转说之。若在善友边久者解说之。是人不惧者也。如是代欢喜极尊。持是施与作一切知。持是心作是施与。代欢喜。是心尽灭无处不可见。何心作是施与得无上正真道。何心是心。心无两对心。无身当作何施与乎。释言。恐新学士或怖而志还。云何作功德施与最尊代欢喜。云何以作施与得无上正真道。</p>
+<p>　　善业言。斯土闿士大士悉具足供养诸佛破坏众恶。以等行如一。降伏邪党弃捐重担。所有福德罪垢都寂。戒定慧解脱度知见所愿已获。十方无数刹土有灭讫者。所作分德其尊无上。何因闿士不悔心想。云何不悔心无所想。持是施与作上行者。正使是心念自了知之。作是曹想不悔心想。如悔所喜悔。正使心念复了知是心作。是为想悔心悔喜悔。正使闿士持其心了知作。是为想觉。持何等施与持何所心。了知作是觉。持何等施与持何所心。了知是心诸法。何所法持是施与为等与。不及作是施。诸过去当来今现在佛所有功德。及弟子未得道者。天龙鬼神诸闻经初发心学者。都合积累代喜最尊矣。持是功德复知是法尽灭无处亦无法。作是施与无想悔无心悔无喜悔。作是众所不还是为无上正真道施与他有分德。不谛明之不作是施与。何故所致无所有。代喜分德亦空闿士作此明之。诸佛所灭度者。持所施与功德使我悉得之。如一作是知所行。作无上正真道。是所作不在想过去所知尽灭想无处想作念得。作是想非施与也。不作是想为施与。当作是学。闿士大士权德当于是中索之。未得明度不得入是法中。所持分德中无得。作是听身识是有德之人。有想便著反欲苦住。如来无所著正真道最正觉不乐持施与。持施与见虚空。何以故。极大得灭讫视佛有想者为碍施是与大。还不当作是还如来施与当谛。何以故。杂毒病故。作是施。譬作美饭杂毒著中。色好甚香无不喜者。不知饭中有毒。愚人食之欢喜饱满。其食欲消时必危身命矣。夫不知取施之义者。不晓将护两碍之难。必如毒饭之说也。若高士欲施。常如往古来今诸佛。持戒身定身慧身解脱身度知见所见慧身。及诸弟子于中所作功德。是所佛缘一觉施与。持是功德都代欢喜施与。以作无上正真道。持是想施与时悔。谓之有用。是故譬若杂毒饭。如是有德之人当作是觉知。过去当来今现在佛。云何施与。何因成就出无上正真道。随如来教持是施与。知所作功德生时身相。经所得了知。成时我作是代欢喜。自致佛道无过也。终不离如来法。不杂毒也。当作是施与。如戒如定如慧如解脱如度知见。慧所现身无欲处无色处无空处。亦无往古来今从中来者。譬若无所有。是所施与诸法亦无所有。是为成施与中无毒也。若作异施为行反施。唯闿士所施是法若佛。皆更知作是施自致作佛。今我施已作无上正真道。佛言善哉善哉。善业。所作如佛。又三千大国土人皆使念四等心。不如上施其尊无盖也。复次三千大国人皆作无上正真道。使如恒沙佛刹人共供养之。震越衣服饮食床卧病瘦医药。事事具足如恒沙劫随恣所乐。云何其福宁多不。</p>
+<p>　　善业言。甚多天中天。</p>
+<p>　　佛言。代喜功德福过其上。</p>
+<p>　　善业言。功德如恒沙佛刹不能受也。</p>
+<p>　　佛言。善哉善哉。持明度者是所施与。乃从本来福出其上。尔时四天王与二万天子。以头面著佛足。却白佛言。弘慈普施明度德化巍巍无盖。乃至于斯乎。何以故。学明度闿士大士所欢乐故。忉利天盐天兜术天不骄乐天化应声天诸天子。各以宝树名华杂香以散佛上。缯盖天幡妓众乐欢心贡佛而叹曰。极大施与天中天。大士权德乃作是施。学明度德大士所欢乐。梵众天梵辅天大梵天水行天水微天无量水天水音天。约净天遍净天净明天守妙天玄妙天福德天德纯天近际天快见天无结爱天诸天子。皆以头面著佛足作是言。闿士学明三界希有。佛告诸天子。置是三千大国土中人皆作无上正真道者。更复异恒沙佛刹人都共供养。是辈闿士大士其随所喜复过是者。不及代欢喜施与。三世佛天中天持戒身定身慧身解脱身度知见身。及诸弟子在中作功德者。都积累合会虽尔代喜过上。善业问言。从中何得。</p>
+<p>　　佛言。求闿士道有德人。当知往古来今法无取无放无想无见。从是法中无所出生法无尽法心往来法。我作是代喜施疾得无上正真道。复次于三世佛所作布施持戒忍辱精进一心明慧代欢喜。无所挂碍法未来未成。亦无所挂碍十方无数佛刹现在者。诸法不著不缚不脱。以是法作无上正真道。是代喜施无能过者。无能坏之。如恒沙佛刹闿士寿劫亦然。使彼人供养尔所闿士大士。具足如彼多劫。如戒忍辱精进弃定法。乃作是布施代欢喜。德尊出其上无量之计。</p>
+<p>　　　　明度经卷第二</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/dmdj/dmdjjd1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/dmdj/dmdjjd3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/dmdj/dmdjjd1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/dmdj/dmdjjd3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

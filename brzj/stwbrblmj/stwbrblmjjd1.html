@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>胜天王般若波罗蜜经卷第一  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="胜天王般若波罗蜜经卷第一"><a class="header" href="#胜天王般若波罗蜜经卷第一">胜天王般若波罗蜜经卷第一</a></h1>
+<p>　　　　圣八千颂般若波罗蜜多一百八名真实圆义陀罗尼经</p>
+<p>　　　　　　　　西天译经三藏朝奉大夫试光禄卿</p>
+<p>　　　　　　　　传法大师赐紫臣施护等奉　诏译</p>
+<p>　　　　归命最胜诸佛母　　般若波罗蜜多法</p>
+<p>　　　　过去未来及现在　　一切诸佛从是生</p>
+<p>　　　　善生诸佛为佛母　　无性自性我清净</p>
+<p>　　　　佛为须菩提广说　　如其所说今略集</p>
+<p>　　般若波罗蜜多有一百八名。一者最胜般若波罗蜜多二一切智。三一切相智四实际。五真如六无坏真如。七无异真如八实性。九如实生十不颠倒。十一空无相无愿十二无性。十三自性十四无性自性。十五法性十六法界。十七法定十八法住。十九法无我二十法相。二十一非众生二十二非寿命。二十三非长养二十四非士夫。二十五非补特伽罗二十六非语言。二十七非语言道二十八离心意识。二十九无等三十无等等。三十一无憍三十二无我三十三无戏论三十四离戏论。三十五过诸戏论三十六一切佛母。三十七出生一切菩萨三十八出生一切声闻缘觉。三十九长养摄持一切世间四十无尽福行具足。四十一运用智慧四十二起作神通。四十三作净天眼四十四作净天耳。四十五作他心智四十六作宿命智。四十七作漏尽智四十八圣清净。四十九吉祥五十安住四念处。五十一具四正断五十二运四神足。五十三诸根清净五十四诸力具足。五十五严七觉支五十六示八圣道。五十七施七圣财五十八圆满九次第定。五十九具十自在六十安住十地。六十一圆满十力六十二十遍处庄严。六十三运用十智六十四善作调伏十种胜怨。六十五出生诸禅定六十六超过三界。六十七妙住一切正遍知觉六十八具一切智智。六十九内空七十外空。七十一内外空七十二空空。七十三大空七十四胜义空。七十五有为空七十六无为空。七十七毕竟空七十八无际空。七十九散空八十无变异空。八十一共相空八十二自相空。八十三不可得空八十四无性空八十五自性空八十六无性自性空。八十七无起作八十八不生。八十九不灭九十不断。九十一不常九十二非一义。九十三非多义九十四非来。九十五非去九十六善观缘起。九十七非寻伺九十八无摄藏。九十九无所有一百本来无所作。一百一无二一百二非无二。一百三寂静慧无所趣一百四无系无染与虚空等。一百五离十相语一百六诸法自性犹如幻梦。一百七如陶家轮。一百八一切法同一味。如是般若波罗蜜多一百八名。若常持诵者销灭一切罪。一切诸佛所共称赞。一切菩萨及诸贤圣。于长时中常所卫护。即说般若波罗蜜多真实圆义陀罗尼曰。</p>
+<p>　　怛[宁+也]（切身）他（引一句）唵（引）钵啰（二合）倪（引）钵[口+缚]（二合）倪（引二）摩贺（引）钵啰（二合）倪也（二合引）婆（引）西（引三）钵[口+缚]（二合）倪也（二合引）路（引）葛葛哩（四）阿倪也（二合引）那尾驮摩泥（五）悉提（引六）苏悉提（引七）悉奠睹弥（引）婆[言+我][口+缚]底（八）萨哩[口+缚]（二合）三钵怛野（九）萨哩网（二合）[言+我]孙奈哩（十）薄讫底（二合）[口+缚]蹉梨（引十一）钵啰（二合）萨（引）哩多诃萨底（二合引十二）摩（引）说（引）萨那葛哩（十三）底瑟姹（二合）底瑟姹（二合十四）绀波绀波（十五）左罗左罗（十六）[言+我][口+缚][言+我][口+缚]（十七）[言+我]哩惹（二合）[言+我]哩惹（二合）（十八）阿（引）[言+我]蹉阿（引）[言+我]蹉（十九）婆[言+我][口+缚]底摩（引）尾蓝摩莎（引）贺（引二十）提（引二十一）纥凌（二合引二十二）室凌（二合引二十三）率噜（二合）（引）底（二十四）三蜜哩（三合）底（二十五）尾惹曳（引）莎（引）贺（引二十六）</p>
+<p>　　此陀罗尼秘密章句若常忆念受持读诵者。所获功德不可称计。</p>
+<p>　　　　圣八千颂般若波罗蜜多一百八名真实圆义陀罗尼经</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/sbqsbrblmdybbmzsyytlnj.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/stwbrblmj/stwbrblmjjd2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/sbqsbrblmdybbmzsyytlnj.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/stwbrblmj/stwbrblmjjd2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

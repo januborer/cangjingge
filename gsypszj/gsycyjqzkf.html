@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>觀世音持驗紀（清，周克復）  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="觀世音持驗紀清周克復"><a class="header" href="#觀世音持驗紀清周克復">觀世音持驗紀（清，周克復）</a></h1>
+<p>　　　　绘像普门品颂</p>
+<p>　　　　　　印光大师</p>
+<p>　　大哉观世音，彻证法界藏；乘大悲愿力，普现诸色相。寻声以救苦，随感而遍应；如月到中天，万川悉印映。良由众生心，与菩萨无二；因其背觉故，遂致成隔异。既遇诸灾难，仰冀垂救援；即此一念心，便契真觉源。以故一起念，念于菩萨名；遂于当念中，蒙救离灾刑。世尊在灵鹫，席宣法华经；无尽意菩萨，以名敬致征。世尊遂略说，现身救苦事；大地举一尘，略示少分义。由是诸众生，得有所怙恃；如天地覆载，如父母抚育。昔有一善士，欲广菩萨慈；泥金书普门，兼绘救苦仪。年代已久远，幸得常保守；故致吴蝶卿，亲获谨承受。欲启世正信，因祈为著语；愿令法界众，同证实相理。乃忘其固陋，略表诸因缘；庶几见闻者，登第一义天。</p>
+<p>【若有持是观世音菩萨名者，设入大火，火不能烧，由是菩萨威神力故。】</p>
+<p>　　事证──觉世经说证：明天启间，杭城大火，有江右商，兀坐危楼，自知莫救。人见白衣大士，洒水楼旁，火熄。众叩作何善？商谢无之。后其叔言：彼父殁，遗产五百金，彼嫡出而长，四弟庶出而幼。彼经商廿余年，积五千金，诸弟婚毕，析产为五均分之，合族义焉。按此一行如是，则其人可知矣。大士感应事迹，多不胜录。当阅本迹感应颂，及灵感录，可知其概。</p>
+<p>【若为大水所漂，称其名号，即得浅处。】</p>
+<p>　　事证──夷坚志：宋徐熙载之母程氏，平素敬奉观音。绍兴四年，熙载馆彭大任家，挈二子往。及归，僦（赁也）石镇航船。长江淼漫，三更许，风雨暴至，怒涛拂空，榜人莫呈其技。熙载念父子寄命一叶，脱葬鱼腹，老母谁养？即率同舟齐声持观世音菩萨名。良久，遇巨桑一株，众力挽之，系繂（音律，船上大索也，）泊焉。侵晨视之，则在高沙浦中，不见巨桑。逾日抵家，母迎笑曰：「昨夕梦一媪导汝父子归来，今果然。」始验菩萨垂救也。</p>
+<p>【若有百千万亿众生，为求金银等宝，入于大海。假使黑风吹其船舫，飘堕罗刹鬼国，其中若有乃至一人，称观世音菩萨名者，是诸人等，皆得解脱。】</p>
+<p>　　事证──普陀山志：宋徽宗崇宁间，户部侍郎刘达，给事中吴栻，同使高丽。及还，自群山岛，经四昼夜，月黑云翳，冥蒙不知所向。舟师大怖，遥叩普陀，俄神光满海，四瞩如昼，历见招宝山，遂得登岸。又冥祥记：刘宋元嘉间，顾迈舟发石头城，风号浪阔。急诵观音经十余遍，风息浪平，屡闻奇香，遂得安济。</p>
+<p>【若复有人，临当被害，称观世音菩萨名者，彼所执刀杖，寻段段坏，而得解脱。】</p>
+<p>　　事证──冥祥记：晋南宫子敖，戍新平，为长乐公所破，合城数千人皆被戮。子敖知不可免，但诚心念观世音。及戮至子敖，群刃交下，或高或低，持刀人忽疲懈，四肢不随。长乐公惊问曰：「汝有何能？」子敖答曰：「能作马鞍。」遂释之。子敖并不知何以作此言。彼造一大士小像，行则顶戴，止则礼拜。</p>
+<p>【若三千大千国土，满中夜叉罗刹，欲来恼人，闻其称观世音菩萨名者，是诸恶鬼，尚不能以恶眼视之，况复加害？】</p>
+<p>　　事证──佛祖统纪：梁释慧简，精修戒律，虔诚勇毅，世罕其选。荆州厅事东，有别斋三间，多鬼怪，人不敢入。简居之，自住一间，余安经像。夜见一人，黑衣无目，从壁中出，倚简门上。简心甚了了，但口不得说，遂默念观音圣号。良久，鬼冉冉入壁而没。简徐起澡漱，礼诵如常。次夜梦向人曰：「仆于汉末居此，已数百年，性刚直，多所不堪，君诚净行好人，特相容耳。」遂绝。</p>
+<p>【设复有人，若有罪，若无罪，杻械枷锁，检击其身。称观世音菩萨名者，皆悉断坏，即得解脱。】</p>
+<p>　　事证──法苑珠林：晋窦传，河内人，永和中，为高昌步卒吕护俘执之。同伴七人，共系狱，克日将杀。僧支道山，时在护营中，与传相识。闻其被禁，往候之。传谓曰：「今命在顷刻，能相救乎？」山曰：「若至心念观音，必有感应。」传遂专心默念三昼夜，械锁忽自解。传念同伴桎梏，何忍独去，复恳菩萨神力普济。言毕，余人皆以次解脱，遂同遁。众还乡里，咸敬信奉法焉。</p>
+<p>【若三千大千国土，满中怨贼。有一商主，将诸商人，赍持重宝，经过险路。其中一人作是唱言：「诸善男子！勿得恐怖，汝等应当一心称观世音菩萨名号，是菩萨能以无畏施于众生，汝等若称名者，于此怨贼，当得解脱。」众商人闻，俱发声言：「南无观世音菩萨！」称其名故，即得解脱。（怨，仇也，冤枉也，世多通用。）】</p>
+<p>　　事证──上海天潼路，蔡仁茂玻璃店主蔡仁初，民十七年二月廿八日，被匪绑去。蔡默念观音，初则车轮胎爆，次则汽油起火。匪乃打蔡三枪，蔡适跳三跳，故无伤，匪遁而蔡归。（闻本人说。）</p>
+<p>【若有众生，恭敬礼拜观世音菩萨，福不唐捐。是故众生，皆应受持观世音菩萨名号。】</p>
+<p>　　事证──福报录：杭州徐文敬公，身居台鼎，福慧交修，喜与人讲三教圣贤事迹。集刊敬信录等书，孳孳引人为善。太夫人日诵观世音圣号千声，喜谈因果，家人环听，娓娓不倦。翻刻玉历钞传，愿人改过为善。每遇凶年，必捐资周济亲族，无德色。公子本，官至东阁大学士。疗，官甘肃巡抚。孙以烜，官侍郎。景熹，官盐法道。诸曾孙辈，科第蝉联。</p>
+<p>【若有国土众生，应以佛身得度者，观世音菩萨即现佛身而为说法。】</p>
+<p>　　经证──大悲咒经：佛在普陀落迦山，观世音宫殿中，与无量菩萨、声闻、天龙八部俱。时观世音，密放神光。众会问佛，佛言观世音菩萨欲安乐诸众生，故放此光。于是观世音先说此咒功德，次说此咒，并说咒之形貌状相，所谓大慈悲等十心，并诸利益。佛言：「此菩萨过去无量劫中，已作佛竟，号正法明如来。为欲发起一切菩萨，安乐成熟诸众生，故现作菩萨。」</p>
+<p>【应以辟支佛身得度者，即现辟支佛身而为说法。】</p>
+<p>　　经证──华严经十地品：金刚藏菩萨说第六地已，天女奏乐赞佛。偈曰：威仪寂静最无比，能调难调世应供，已超一切诸世间，而行于世阐妙道。虽现种种无量身，知身一一无所有，巧以言辞说诸法，不取文字音声相。按此下各应身，所引华严经文，虽非观世音菩萨事迹，然于菩萨应现度生之道，大有发明，阅者须注意而圆会焉。</p>
+<p>【应以声闻身得度者，即现声闻身而为说法。】</p>
+<p>　　经证──不空罥索经云：诵是咒者，得二十种利益，复获八法。一者临终见观自在菩萨，作比丘像，现前慰喻。又传灯录，载达磨祖师化后，魏宋云于葱岭见之，世传师为观音化身。又高僧传，记宝志禅师灵迹甚多，梁武帝命张僧繇写师像，师剺面出十一面观音，妙相殊丽，或慈或威，繇不能写，世谓师亦观音化身。高僧传三集，万回师谓：僧伽大士亦观音化身。</p>
+<p>【应以梵王身得度者，即现梵王身而为说法。】</p>
+<p>　　经证──华严经入法界品：海幢比邱，从其额上，出无数百千亿梵天，色相端严，世间无比。威仪寂静，言音美妙，叹佛说法，叹佛功德，令诸菩萨悉皆欢喜。能办众生无量事业，普遍一切十方世界。按海幢比邱，寄位六住，变现如是。况观音以过去古佛，随机示现，岂凡情世智而能测度乎哉！</p>
+<p>【应以帝释身得度者，即现帝释身而为说法。】</p>
+<p>　　经证──华严经入法界品：海幢比邱，从其眉间白毫相中，出无数百千亿帝释，皆于境界而得自在。摩尼宝珠系其顶上，光照一切诸天宫殿，震动一切须弥山王，觉悟一切诸天大众。叹福德力，说智慧力，生其乐力，持其志力，净其念力，坚其所发菩提心力，赞乐见佛令除世欲，赞乐闻法令厌世境，赞乐观智令绝世染，止修罗战，断烦恼诤，灭怖死心，发降魔愿。兴立正法须弥山王，成办众生一切事业，如是所作，周遍法界。</p>
+<p>【应以自在天身得度者，即现自在天身而为说法。】</p>
+<p>　　经证──华严经入法界品：观自在菩萨告善财言：「善男子！我住此大悲行门，常在一切诸如来所，普现一切众生之前。或以布施摄取众生，或以爱语，或以利行，或以同事，摄取众生。或现种种不思议色净光明网，摄取众生。或以音声，或以威仪，或为说法，或现神变，令其心悟，而得成熟。或为化现同类之形，与其共居，而成熟之。」</p>
+<p>【应以大自在天身得度者，即现大自在天身而为说法。】</p>
+<p>　　经证──华严经入法界品：善财赞喜目观察众生夜神偈曰：法身恒寂静，清净无二相，为化众生故，示现种种形。于诸蕴界处，未曾有所著，示行及色身，调伏一切众。不著内外法，己度生死海，而现种种身，住于诸有界。远离诸分别，戏论所不动，为著妄想者，弘宣十力法。一心住三昧，无量劫不动，毛孔出化云，供养十方佛。得佛方便力，念念无边际，示现种种身，普摄诸群生。</p>
+<p>【应以天大将军身得度者，即现天大将军身而为说法。】</p>
+<p>　　经证──华严经离世间品：普贤菩萨颂菩萨行曰：深知变化法，善应众生心，示现种种身，而皆无所著。或现于六趣，一切众生身，释梵护世身，诸天人众身，声闻缘觉身，诸佛如来身，或现菩萨身。修行一切智，善入软中上，众生诸想网，示现成菩提，及以诸佛刹。了知诸想网，于想得自在，示修菩萨行，一切方便事。</p>
+<p>【应以毗沙门身得度者，即现毗沙门身而为说法。】</p>
+<p>　　经证──华严经入法界品：叹菩萨德曰：已得自在清净神通，乘大智舟，所往无碍，智慧圆满，周遍法界。譬如日出，普照世间，随众生心，现其色像。知诸众生，根性欲乐，入一切法，无诤境界，知诸法性，无生无起，能令小大，自在相入。</p>
+<p>【应以小王身得度者，即现小王身而为说法。】</p>
+<p>　　经证──悲华经：无诤念王太子，名为不眴，于宝藏佛前发愿云：是诸众生，以亲近恶知识故，退失正法，尽诸善根，摄取种种邪见，以覆其心，行于邪道。愿我行菩萨道时，众生受诸苦恼恐怖等事，无有救护，无依无舍。若能念我，称我名字，为我天耳所闻，天眼所见，是众生等，若不免此苦恼者，我终不成正觉。宝藏佛授记云：汝观众生，生大悲心，欲断众生诸苦恼故，欲众生住安乐故，今当字汝，为观世音。</p>
+<p>【应以长者身得度者，即现长者身而为说法。】</p>
+<p>　　经证──华严经光明觉品，偈云：若以威德色种族，而见人中调御师，是为病眼颠倒见，彼不能知最胜法。如来色形诸相等，一切世间莫能测，亿那由劫共思量，色相威德转无边。如来非以相为体，但是无相寂灭法，身相威仪悉具足，世间随乐皆得见。按，初地菩萨，已能百界作佛，况古佛现身之观音乎？故宜以观佛之义观观音也。</p>
+<p>【应以居士身得度者，即现居士身而为说法。】</p>
+<p>　　经证──华严经入法界品：海幢比丘，从其足下，出无数百千亿长者居士婆罗门众，皆以种种诸庄严具庄严其身，悉著宝冠，顶系明珠。普往十方一切世界，雨一切宝，一切璎珞，一切衣服，一切饮食，如法上味。一切华，一切鬘，一切香，一切涂香，一切欲乐资生之具。于一切处，救摄一切贫穷众生，安慰一切苦恼众生，皆令欢喜，心意清净，成就无上菩提之道。</p>
+<p>【应以宰官身得度者，即现宰官身而为说法。】</p>
+<p>　　经证──华严经入法界品：遍行外道语善财言：「善男子！此都萨罗城中，一切方所，一切族类，若男若女，诸人众中，我皆以方便，示同其形，随其所应而为说法。诸众生等，悉不能知我是何人，从何而至，唯令闻者如实修行。善男子！如于此城，利益众生，于阎浮提城邑聚落，所有人众住止之处，悉亦如是而为利益。」按遍行外道，寄位十行，所行如是，则观音可知。</p>
+<p>【应以婆罗门身得度者，即现婆罗门身而为说法。】</p>
+<p>　　经证──华严经入法界品：海幢比丘从其两膝，出无数百千亿刹帝利婆罗门众，皆悉聪慧，种种色相，种种形貌，种种衣服，上妙庄严。普遍十方一切世界，爱语同事，摄诸众生。所谓贫者令足，病者令愈，危者令安，怖者令止，有忧苦者咸使快乐。复以方便而劝导之，皆令舍恶，安住善法。按，圆教初住菩萨，即以分证法身，非凡情所能测度。况已后之四十位菩萨乎？况古佛示现之观音乎？</p>
+<p>【应以比丘、比丘尼、优婆塞、优婆夷身得度者，即现比丘、比丘尼、优婆塞、优婆夷身而为说法。】</p>
+<p>　　事证──洱海丛谈，载观音七化：一唐永徽间，化白须老人，戴红莲瓣冠，披袈裟持钵，至农家乞食。二化梵僧持钵，向馌妇乞食。三化梵僧坐宝山磐石上。四化一僧持杖擎钵，牵白犬乞食开南郡。五化僧执杨枝，蹑木屐行走，马追之不及。箭射之，箭皆化为莲华，今洱东所谓莲华菜也。六化游僧，忽腾空现大士相。七化僧名菩提陀诃。此乃节录。</p>
+<p>【应以长者、居士、宰官、婆罗门妇女身得度者，即现妇女身而为说法。】</p>
+<p>　　事证──普陀山志：清康熙廿八年南巡，将到禾城，忽见老妪簪红华一朵，独操小舟，直过御舟前。帝问：「何船。」曰：「渔船。」「有鱼否？」曰：「有。」倏不见，悟为大士化身，遂赐帑重兴普陀前后两寺。又梦厂杂著，载汉囗孝子闵贞，欲追摹父母遗像。日虔祷大士前，感大士为现其父母像，得摹以奉祀。其他现女身事甚多，不能尽纪。欲悉知者，可阅观音感应颂，及灵感录。</p>
+<p>【应以童男童女身得度者，即现童男童女身而为说法。】</p>
+<p>　　事证──观音感应传：唐元和十二年，陕右金沙滩上，有艳女挈篮卖鱼，人竞欲室之。女曰：「余授经，一夕能诵普门品者事之。」黎明能者二十。女曰：「一身岂能配多夫？请易金刚经。」如前期，能者复居其半。女又易法华经，期以三日，惟马氏子能。迎入门，女即死，糜烂立尽，遂瘗之。他日有僧来访，马氏子引至墓所。僧振锡，墓棺同开，惟黄金色锁子骨存焉。僧曰：「此观音菩萨，悯汝等以化现耳。」言讫，腾空而去。</p>
+<p>【应以天、龙、夜叉、乾闼婆、阿修罗、迦楼罗、紧那罗、摩睺罗伽、人非人等身得度者，即皆现之而为说法。】</p>
+<p>　　经证──华严经入法界品：遍行外道告善财言：「善男子！阎浮提内九十六众，各起异见而生执著，我悉于中方便调伏，令其舍离所有诸见。如阎浮提，余四天下，亦复如是。如四天下，三千大千世界，亦复如是。如三千大千世界，如是十方无量世界诸众生海，我悉于中随诸众生心之所乐，以种种方便，种种法门，现种种色身以种种言音而为说法，令得利益。」</p>
+<p>【应以执金刚神得度者，即现执金刚神而为说法。】</p>
+<p>　　经证──华严经世主妙严品：妙色那罗延执金刚神赞佛偈曰：汝应观法王，法王法如是；色相无有边，普现于世间。佛身一一毛，光网不思议；譬如净日轮，普照十方国。如来神通力，法界悉周遍；一切众生前，示现无尽身。如来说法音，十方莫不闻；随诸众生类，悉令心满足。</p>
+<p>【假使兴害意，推落大火坑；念彼观音力，火坑变成池。】</p>
+<p>　　事证──现果随录：明徽人汪姓者，家居昆山，持斋三年，拟至普陀进香。某年元旦，已束装下船矣，忽店旁火起，急报促回。汪曰：「吾积诚三载，方朝菩萨，岂以一店易吾志乎？纵被毁，吾不归矣！」竟扬帆而去，进香毕，回昆见四面店屋，俱成焦土，汪店楼房，巍然独存，万人惊叹。又高僧传二集：北魏释法智为白衣时，行泽中，忽遇猛火延烧，四面俱至，自分必死，惟至心诵观世音。俄而火过，草无遗茎，惟智容身地未延及。</p>
+<p>【或漂流巨海，龙鱼诸鬼难；念彼观音力，波浪不能没。】</p>
+<p>　　事证──法苑珠林：晋徐荣，山东琅玡人，尝至东阳，还经定山，舟人不习水道，误堕洄洑中，垂欲沉没。荣无复他计，惟至心呼观音名，须臾如有数十人齐力牵引者，顷时涌出洄洑中。沿江而下，日已暮，天大昏暗，风雨均厉，前驶不知所向，而涌浪转盛，船几欲覆。荣至心诵佛经不辍，忽见山头有火，烈焰炽盛，彻照江心，回舟趋之。安然达岸，既至，光息，无复所见。明日问浦中人，昨夜山上是何火，皆云无之，乃知佛力冥佑也。</p>
+<p>【或在须弥峰，为人所推堕；念彼观音力，如日虚空住。】</p>
+<p>　　事证──异谈可信录：明沈文崧，宰山左。有同官某，亲老无子，将奉差西藏。沈慨然代往，跋涉险阻，三年始归，闻者叹其高义。随仆夏祥最忠，一日晦雾，至陡[土+反]，下临深涧万丈。二仆堕涧，沈马足已陷，忽仰见云雾中大士手持青莲，向沈指导，俄顷身已越涧至平地。痛丧二仆，久之昏黑，闻人语声，急呼之，则夏祥独至矣。问何能来？曰堕涧时，有绿毛人长丈余，自涧中负出。主仆相抱大哭。高文良公为绘大士像，书年月纪之。</p>
+<p>【或被恶人逐，堕落金刚山；念彼观音力，不能损一毛】</p>
+<p>　　事证──冥祥记：晋潘道秀，从军北征失利，至心念观世音，梦寐辄见菩萨在前后。后南奔，迷不知道，于山中空际忽睹圣容，如今行像，指示归路。秀作礼罢，遂不见，得归路还家。又，异谈可信录：贵州修文县白水洞，产水银，夫役千余，岩下居民数百户。洞前二里许有溪，忽来一美妇，浴其中，乳垂至脐。居民空室趋观，甫近溪，轰然岩塌，庐舍俱陷，浴妇竟杳无踪，方悟大士化身拯众。</p>
+<p>【或值怨贼绕，各执刀加害；念彼观音力，咸即起慈心。】</p>
+<p>　　事证──慈恩法师传：师度玉门关，晚宿沙漠中。相从之胡人石磐陀者，忽心变，拔刀起向法师。师起，念观世音菩萨。胡见已还卧，师与马令去。又，天竺志：黄巢作乱，所过杀戮甚多。至杭，老稚数百万，泣拜大士，愿垂慈佑。及钱镠与战，闻空中念佛声，仰视云端，旌幢宝盖，拥护大士。其火首金刚、天龙、修罗等众，扈从无算。缪兵见之，勇气百倍，巢曰：「佛士也！」遂遁去。</p>
+<p>【或遭王难苦，临刑欲寿终；念彼观音力，刀寻段段坏。】</p>
+<p>　　事证──齐书：孙敬德防北陲，造观音像礼事之。后为劫贼横引，断死刑，其夜礼忏流泪，忽如梦，见一僧，教诵救苦观音经千遍，得免苦难。敬德诵至临刑时，足千遍，刀斫折为三段。三换刀，折如初，丞相高欢表请免刑，遂得放归。又，高僧传二集：唐靺鞨人帝示阶，逃入高丽，拾得二寸许铜像，不知何神，安皮袋中，饮啖酒肉亦祭之。高丽疑是细作，斫之，三刀不伤。出像，背有三刀痕。曰此佛像，可往唐国咨问。阶乃于幽州出家。</p>
+<p>【或囚禁枷锁，手足被杻械；念彼观音力，释然得解脱。】</p>
+<p>　　事证──法苑珠林：唐董雄，贞观中为大理丞，幼奉佛素食，因坐李仙童事，与王忻等数十人同系狱。雄专念普门品，锁自解落在地，钩连不开。即告御史张守一验之，错愕良久，重锁严封而去。雄仍诵，锁复解堕地有声，朱封如故。忻初不信佛，其妻诵经，辄诮曰：「何为异端所媚？」及见雄事始知佛力广大，深悔不信之咎，因虔诵菩萨名，锁亦脱。一时台中内外闻者奇之，同狱囚俱获免。</p>
+<p>【咒诅诸毒药，所欲害身者；念彼观音力，还著于本人。】</p>
+<p>　　事证──南五台山示迹记：隋仁寿中，山有毒龙，变作道士，卖药于京都。服之，立刻升天，实以妖通置于山中龙窟而食之。忽来一僧，结茅峰顶，伏彼妖通，使安窟穴，民被庇荫，入道者众。次年六月十九入灭，及茶毗时，东峰上现金桥，列诸天众，音乐天华，异香馥郁。南台百宝灿烂，广莫能知，于烟云之间，现自在端严之相，慈容伟丽，璎珞珠衣，焕然对目，始知观音大士示迹也。</p>
+<p>【或遇恶罗刹，毒龙诸鬼等；念彼观音力，时悉不敢害。】</p>
+<p>　　事证──夷坚志：族人洪洋，夜归，忽大声发山涧，如数十本巨木摧折，亟下轿谋避处，而物已来前，身长三丈，从顶至踵，皆灯也。洋素持大悲咒，急诵之，物植立不动。洋丧胆仆地，然诵咒不辍，物乃退，曰去矣，径入畈下民家而没。洋归，得病而愈，二轿夫竟死。后访民家，一门死于疫，始知物乃疠鬼也。</p>
+<p>【若恶兽围绕，利牙爪可怖；念彼观音力，疾走无边方。】</p>
+<p>　　事证──南海慈航：明闽人雷法振，烧炭为业。家有鸭栏木，纹理精细，欲刻大士像，未果。一日入山烧炭榛葬丛中，突一虎来搏。忽有绰约妇人，当虎叱之，虎慑伏叩首退。振拜问姓名，曰：「身是君家鸭栏木耳。」遂不见。振感悟，择吉雕刻，终身持斋顶礼。又，太平广记：唐王令望还卯州临溪，路极险阻，忽遇猛兽，震怖非常。急念金刚经，猛兽熟视，曳尾而去。须知念观音，比念金刚经，理无优劣，事更简易。若逢险难，尤宜专念观音。</p>
+<p>【蚖蛇及蝮蝎，气毒烟火然；念彼观音力，寻声自回去。】</p>
+<p>　　事证──谈薮：宋赖省干，以妖术杀人祭鬼，于浙中买十余岁童女以供用。一女之母奉大士，随之习念心经。至轮祭时，沐浴妆饰，锁空宅中。女自分必死，一心诵经，夜半，有物自天窗下，光闪如电。急诵揭谛咒，口中忽出光，物欲进复却。女口中光渐大，射物铿然有声，仆地。值逻卒过，女呼杀人，卒破壁出女，见一大白蟒死矣。捕赖及家人，依法治之。</p>
+<p>【云雷鼓掣电，降雹澍大雨；念彼观音力，应时得消散。】</p>
+<p>　　事证──山西蔚州，夏秋间，每雨必有小雹。其地各村小庙中，必有僧住，自夏至秋收时，不许闲人入庙，甚严肃。僧每日按时诵经咒，名为念苗经，若逢天浓阴，云现凶象，虽非诵经钟点，亦必特为虔诵，以期不至雨雹坏稼也。余于清光绪十三年，朝五台，至其地，住月余。见凡雨必有小雹，如小豆者少许，问其邑人，遂知诵经止雹之事。释印光识。</p>
+<p>【诤讼经官处，怖畏军阵中；念彼观音力，众怨悉退散。】</p>
+<p>　　事证──天竺志：吴越王钱镠，起自草野，誓奠东南，犹豫未决。夜梦一妇人谓曰：「汝慈悲不杀人，将藩翰一方，中原天子五易姓，汝之疆土自若，子孙绵远，封侯拜相，廿余年当觅我于天竺山中。」镠自是所向无前，屡有神助，故书之于册，昭示子孙，世世崇祀。又，越州董昌作乱，镠祷大士，乃出兵。对敌之际，空中闻万骑驰骤之声，昌一见褫魄，不接战即败走，而全越底定。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../gsypszj/gylglq.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../gsypszj/hxpmpsygfs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../gsypszj/gylglq.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../gsypszj/hxpmpsygfs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

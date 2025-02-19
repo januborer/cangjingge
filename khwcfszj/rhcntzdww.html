@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>如何才能体证到“无我 ”？ - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="如何才能体证到无我-"><a class="header" href="#如何才能体证到无我-">如何才能体证到“无我 ”？</a></h1>
+<p>　如何才能体证到“无我”？</p>
+<p>　 　体证“无我”，已经是来到见法最深的地方，不是见到佛性、自性就解决了，不是这样的。要真的体悟到“无我”，而且要做到“无我”，你就会像诸佛菩萨一样解脱自在。怎么样才能够体 悟到“无我”？除了要彻证“无常”之外，从六根跟六尘接触的每一个当 下去体悟“无常”法流，当体悟无常法流，你会体会到没有一个实体的存在、没有一个固定不变的存在，它是一直都在 流动生灭变化。</p>
+<p>　 　这个“流动生灭变化”就会让你对这个“我”的根深蒂固观念，慢慢的 溶解、慢慢的溶解，你如果能够进一步去分析这个“我”要能够存在，需要哪些的条件？需要哪些的因缘？这个需要深 入到生命核心来探讨。我这个生命能够存在，需要哪些的因缘条件？如果说有“我”，那这个“ 我”到底是怎么来？这个“我”要能够存在，到底需要哪些条件？佛教讲说，如果你要承认 “我”单独能够存在，它一定要符合“恒常、一、主宰”。</p>
+<p>　 　这个“一”就是你不需要其他的因缘，可以完全一个人单独主宰、单独决定，我要怎么样就能够怎么样，包括那个 “一”、一个人、一个因素，你都不需要其他的因素，你能够主宰一切。如果这三个你能够做得到，能够维持常恒，能 够维持独一、个体存在，能够主宰一切，这个“我”才能够存在、才能够成立，如果这三个你一一去检验，那是不可能 存在的话，你就能够体悟到什么叫做“无我”？</p>
+<p>　 　“三法印”的第一个法印是“无常”，就是在告诉我们，要追求一个常 恒的“我”，是不可能的，那是因为你没有了解实相而已，如果你真的去彻证大自然存在的运转法则、大自然存在的实 相，当你一一去检验去求证之后，发现真的一切都在流动，所以你就知道这个常恒的这个法印，这个现象、这一种梦想是不存在的。</p>
+<p>　 　再来，我们来解析这个“一”，就是只要靠我一个人，我就能够成就一切、就能够承办一切，我要吃饭，只要动个念 头，喔! 这 些米、饭、菜啊！全部都自动的涌现出来，我不需要农人种田，我不需要农人去种菜，我不需要别人来煮这些饭菜，我不需要那些瓦斯、柴火，都不用！我只要一个 念头，饭菜全部都出来，你能不能这样做到？如果可以，就表示你不需要众因缘的协助，你只要“一”、一个，你就可 以解决一切。</p>
+<p>　 　空海检验过，我是承认我不可能这样，我需要很多的因缘协助我才能够存在，所以当我在吃一餐饭的时候，我就是感恩，感恩众因缘，包括说我们要能够有衣服 穿，要有多少的因缘配合，我们才能够有这些衣服可以穿；我们要能够承办一件事情，背后要有多少的因缘的协助、护持，才能够承办一件事情，包括今天能够在这 个庄严的禅堂打坐，背后要有多少因缘的支撑、支持，你知道吗？你有深度去解析吗？除了家人的支持、体谅、护持之外，除了公司老板、上司主管他们的配合、支 持之外。</p>
+<p>　 　再来，这样的一个禅堂、这样的一个环境存在，要凝聚多少的因缘才能够形成，为这整个大因缘、大环境，我们付出了多少？不是邀功，而是要问自己，我们为这 样的一个禅修付出了多少？如果我坐的在那里，还在牢骚一大堆、抱怨一大堆、还有很多的不满、这里也不顺遂、那里也不好、这里也不如意。如果我们还在那里这 样抱怨，表示我们都看不到背后的因缘，如果你能够去看到今天能够有因缘，在这里好好的禅修用功，能够开发我们的明心、开发我们的觉性，能够让我见法，真的 这背后要具足非常多的因缘，这时候你的身心会很柔软，而且会充满著感恩的心，当你的身心越柔软、越有感恩的心，你的见法力道反而是越强。</p>
+<p>　 　身心柔软的时候，就能够溶入当下的法流里面，所以不要一谈到修行，总是抱持著一个方法，然后一直要入深定，一直要坐多久才叫做修行，不是这样的。如果你 的观念知见错误，你越修，心反而越僵化，“我慢”反而越大，所以如果你能够来这里禅修，能够长养慈悲心跟感恩的 心，你就已经成功了一大半，你的生命品质会不一样的。</p>
+<p>　 　要解析“无我”，这个“一”，如果你真的认真去解析，你就知道不是 我一个人很厉害，不是我一个人能够承办事情，要众因缘啊！</p>
+<p>　 　其次，解析“主宰”，我能够主宰一切吗？我能够让我这个色身不老、不病、不死吗？我能够不吃饭吗？能够不呼吸 吗？我能够让我最敬爱的家人、亲人不老、不病、不死吗？我能够随心所欲、要怎么样就能怎么样吗？你慢慢的去解析，如果你能够主宰一切，要怎么样就能怎么 样，你就可以推翻佛陀所讲的“无我”的这个真理实相。空海很认真的去检验、去思惟、去求证，发现释迦牟尼的智 慧，实在是非常的高超，他讲出了非常深的真理实相，一般的宗教很少能够触及、很少在解析“无我”，而佛陀竟然能 够看得这么的清楚。</p>
+<p>　 　所以，当我越深入去了解，我越佩服佛陀。因此，“无我”不是抽象、不是想像，也不是拿来跟人家争辩，不是说我 懂很多、很会引经据典，我懂得比你多、可以辩赢过你……，如果你拿“无我”要去辩赢过别人，你的 “无我”就只是知见啊！因为你是用“我”在宣说“无我”，用“我 慢”在驳倒别人。</p>
+<p>　 　如果真的来到“无我”的世界，你是不与众生诤、不与世间诤啊！“入空戏论灭”。真的来到“无我”的世界，你绝对不会跟众生比大比小、比高比低的，你只有慈悲善待一切众生、协助 有缘人啊！众生有苦，我们就协助。</p>
+<p>　 　再来，如果要去体会“无我”，你还可以从一些角度去体悟：我这个色身是不是真的需要仰靠大地、流水、阳光、空 气、还有虚空？佛经里面所讲的，我们这个色身是由四界，就是地、水、火、风这些所组合而成，如果再讲更具体详细的话，包括空，地、水、火、风、空，就会有 “识”的产生。所以，如果扩大到六界，就是地界、水界、火界、风界、空界跟识，但是这些都不是名相，你不要又一 直在五蕴身心里面钻研：我这个身心是由地界……，地是什么？地是肌肉、地是骨头、地是坚硬，那这样 ……，我体会、我看到地界了，但是你却否定大自然的这个地球，这个地界跟我们有什么关系，你认为学佛不要去 看那些，学佛跟那些没关系，我们就五蕴身心里面去钻研、去解析就好……。</p>
+<p>　 　如果你只是在五蕴身心里面，要透视“无我”、要解析“无我”的话， 空海所经历过的是，那是不可能的！因为你是用一个“我”在解析“无我”，但是一般学佛者不容易觉察到这一点，因为“四念处”的这些修法，包括以前在五蕴身心里面要去解析 “无我”，我也都下过很多功夫，但是就算下过很多功夫，生命修到奄奄一息，还是发现… …奇怪！，怎么还是会有“我慢”？怎么还是会有不安？这个“我 ”怎么还是不知究竟归依处在哪里？</p>
+<p>　 　当后来有一些因缘让我体悟到之后，深深的发现你要真的体悟“无我”，一定要看到活生生的佛法，一定要看到整个 大自然跟我们的密切关系，如果你能够去体会每天我这个色身，不错！一样是具足地、水、火、风、空，但是这些元素材料从哪里来呢？你如果能够去看到我身体里 面的地界，原来是来自这个大自然的地界、这个土地，你吃稻米、吃那些瓜果，就是那些植物吸取土壤里面的养份，转换土壤里面的那些铁质、钙质、矿物质，把它 们转换，再加上光合作用，然后结出累累的果实跟青菜、蔬菜之后，我们再间接吃土壤，也就是我们吃这些五谷、蔬菜。</p>
+<p>　 　但是在这样一个转换的过程，众生就不容易看到我们的身体的骨头跟肌肉，是来自于土壤的转换，只是一个转换，众生就看不到，所以你以为我的这个生命跟地 球、土地没关系，佛陀明白的告诉我们这个生命，就是由土地组合而成、由水份组合而成，这些土地、这些水不是我所创造出来的，不是我修行很厉害，我能够发 明、发挥出来的，这些都是大自然本来就存在啊！这个“我”要成长，都是每天不断的要吸取土地的营养，然后你的肉 体、骨头，才能够继续健康的存在著。你每天要吸取大自然的水份，我身体里面的水份才能够继续保留著，我才能够有足够的水份；喝水，你就是在喝大自然的甘露 水，我这个生命能够存在，就是要整个大自然的养育，这就是缘起。这个生命要存在、这个“我”要存在，就是要这么 多的因缘。</p>
+<p>　 　再来，空气，一般人很难体会到说一分钟的空气，是这么的有价值，五分钟的空气比五百万都更有价值。失去了五百万，你不会死亡，你只是会痛苦、哀伤、不 舍，但是难过几天之后，你的生命还是活著，你也还可以。就算你全部的家产都丧失掉了，也还是可以重新东山再起、重新来过，你的生命还不会死掉，除非你自己 自暴自弃。但是只要五分钟，没有新鲜的空气让你呼吸，绝大多数的人都要死掉，超过三分钟没有新鲜的空气，大部份的人就会变成植物人。</p>
+<p>　 　所以我们要静下来解析，平常自认很厉害，我学问很高、我很聪明、我IQ很 高、我办事能力很强，你看这都是我行、我很厉害啊！你能不能看到这背后都需要整个大自然的支撑、大自然的养育？需要很多的因缘具足，我才能够活著，因为有 大自然的支撑，我这个生命活著、有这个主体，我才能够去做其它事情。但是我们却常常忘恩负义、常常忘本啊！如果你体悟不到“无我 ”，就请你自己练习看看，把你的鼻子跟嘴巴都捏起来，看你能够憋气多久？</p>
+<p>　 　真的要去练习，如果你学佛学了几十年，还体悟不到“无我”，还体悟不到大自然的风界跟我们身体的空气，有多么 重要的密切关系，如果你体悟不到的话，请你把鼻子跟嘴巴捏起来，不要呼吸，看你能够活多久？看这个“自我”多么 厉害，如果你很厉害，你就不要呼吸而又能够活著，如果你认为你的修行境界很高、神通广大，你能不能自己无中生有，创造空气出来？你生命不需要大自然的这些 空气，我靠我的神通，我就能够变化出无边的无量的空气出来？</p>
+<p>　 　如果能，你的神通能够变化出这些，那你的神通就有用；如果没有的话，那一些神通跟生命的存在关系不大，我们只是做一些助缘。如果你认为你的神通很广大， 你能不能去看到？很多都只是雕虫小技，能够看到这些，当你有神通的时候，你不会增长“我慢”的，你会擅用一些工 具去协助众生，你也会知道能够帮助众生的，也是很有限，只是一些助缘，而生命存在的主要因素，都是整个大自然在支撑啊！</p>
+<p>　 　大地、流水、空气都分析过了，再来看看火、火界，我们身体里面的火界，要清楚的认识出来，那不是无中生有。火界讲的就是太阳，我们生命能够存在，跟太阳 完全是密不可分，没有太阳把阳光、把能源输送到地球来，我们地球所有的植物跟动物欠缺能源，生命就会全部都枯萎掉，你能不能去体会？火界就是来自于太阳， 太阳默默的在燃烧自己，不只照亮众生，而且把生命的能源、燃烧自己，把自己生命的能源来供养地球上的植物、动物，而我们曾几何时好好的去感恩太阳？感恩这 个大自然的养育？</p>
+<p>　 　所以，大家静下来好好去解析、好好去体悟，什么叫做“无常”？什么叫做“缘起甚深 ”？如果你能够体会到“缘起甚深”，佛陀就跟我们讲“若见缘起则见如 来”，如果你真的能够彻证“无常”，又体悟到“缘起甚深”，你就能够来到解脱自在的世界，因为你会体会到什么叫做“无我”的真理实相。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../khwcfszj/sncxxfywd.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../khwcfszj/lfdsy.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../khwcfszj/sncxxfywd.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../khwcfszj/lfdsy.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

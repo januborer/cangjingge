@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>印順法師論觀世音菩薩  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="印順法師論觀世音菩薩"><a class="header" href="#印順法師論觀世音菩薩">印順法師論觀世音菩薩</a></h1>
+<p>　　　　印顺法师论观世音菩萨</p>
+<p>　　　　　摘自《顽石点头》</p>
+<p>　　　　观世音菩萨的赞仰</p>
+<p>　　　　　——在善导寺讲——</p>
+<p>　　今天，是观世音菩萨的圣诞，大家受了菩萨的恩德所感召，来本寺同聚一堂，共祝圣诞，实为难得，中国人信仰观世音菩萨特别多，尤其是女众。今天趁此殊胜的机缘，为大家一谈观世音菩萨的意义，以增长我们正确的认识和信仰。</p>
+<p>　　观世音，是罗什的旧译，玄奘新译为观自在，这是同一梵语的不同传译。中国每略为观音。菩萨，简单说，就是上求下化的大心众生，在修行历程中，还没有达到究竟圆满的大乘行者。观世音在上求下化的菩萨中，据悲华经说，他是一生补处的法身大士，是继承阿弥陀佛位的菩萨。功行几乎圆满，十方诸佛的所有功德，几乎都是具足了。经中有处说：观世音是过去「正法明如来」，那末他是佛而现化菩萨的。他现身在无量的国土中，以菩萨身，拯救多难的苦恼众生，还表现他无穷的广大悲愿。观世音与阿弥陀佛，有著特殊的关系，不但他是「西方三圣」中的一尊。而且还有说：观世音就是阿弥陀佛的化身。</p>
+<p>　　或有人问：观世音菩萨何处人，他的道场究在何处？其实观音是古佛再来，不可说他有固定道场，因为他是「无刹不现身」的。他是阿弥陀的辅弼，他的道场，便是极乐世界。但在这娑婆世界，南印度海边的普陀落伽山，是观世音菩萨的古道场，这如华严经等都如此说。梁贞元年，日僧慧锷，在中国请了一尊观音像，想带回日本供养，谁知路经舟山群岛（在浙江定海县），却被狂风恶浪阻止了归程。被迫将圣像请上了海中的一个小岛——梅岑，筑一所茅蓬来供养。观世音菩萨与此岛有缘，日子久了，朝拜敬仰观音圣像的人多起来，此岛就成为观音菩萨的道场，也就改名为「普陀山」。此外在西藏拉萨，达赖喇嘛住持的地方，名「普陀宫」，这因为传说达赖是观音菩萨的化身。这可见观世音菩萨的道场，并无一定。那里有虔诚的观音信仰，那里有观世音菩萨的大悲救世精神，那里就是普陀，那里就有观音。太虚大师说：「清净为心皆补怛（即普陀），慈悲济物即观音」。诸位！即如今日的善导寺，难道不是观音菩萨的道场吗？</p>
+<p>　　随机应化，是菩萨行的特色。今天念诵的大悲咒，是千手千眼的观世音。千手，表拯救众生的伟大能力；千眼表智慧光的无处不照。这是大悲大智的表征；为了接引众生向正觉的大道，观音菩萨的方便应化，可以说无微不至。这在法华经普门品中，叙述得最为清楚。如应以佛身得度者，观世音菩萨即现佛身而为说法，乃至应以夜叉阿修罗，人非人等身得度者，即皆现之而为说法。现实的世间中，如应以居士、农夫、工商军政人等身得度者，亦现其类而为说法。随类应化的方便，是菩萨行中的同事摄。此不独观世音有之，如弥勒菩萨偈颂说：「弥勒真弥勒，分身千百亿，时时示时人，时人自不识」，也就是此意。千手千眼而外，有十八臂观音，四臂观音。最一般的，即示现天人庄严相的圣观音。一向有三十三观音的类别，总不外随机示现而已！</p>
+<p>　　观音菩萨的身像，究竟是男是女，一般人总不免这样的疑问著。其实随类现身，当然可以有男相，有女相。不过约大菩萨相说，都是大丈夫相。唐代以前的观音，也总是大丈夫相的。华严经也说：「勇猛丈夫观自在」。然而观音菩萨的特殊表德，是大慈大悲。约这个意义说，他的应化，一方面是内在的悲心激发；一方面是那一类的有情苦痛多，菩萨的现身应化就多。观世音在人类中的应化，现女身的较多，这是有两个意义的。一、女众的苦难，从古代以来，一直多过了男人。二、女众内心的特性，是慈忍柔和。表现在她们的日常行为中，即是爱。女众的心理，慈爱确实超过了男人。如母亲对于自己的儿女爱，深重殷切，无微不至；父亲对儿女就没有那样深重殷切的了。爱，即在私我的黑影中所表现的慈悲，是慈悲的局限化，不免带点歪曲。慈悲，即爱的无我的扩大。由于女众内在具有了母亲的特性，故以慈悲为特德的观世音菩萨，即多应现女身。扩大为无私的大爱，泛爱广大的人类，一切众生，都如慈母爱自已的儿女一样。所以观世音的应现女身，不但为了女众受的苦痛多，而就是发扬人间的母爱，使广大而无私的，成为菩萨的平等慈悲。所以，我们信仰观世音，应如孩子的敬仰母亲一样。能如此的诚切敬仰，如母子的心意感通，自能得观世音菩萨的救护。</p>
+<p>　　观世音——阿缚卢枳帝湿伐啰，在今日印度教中，也是有人知道的，而且还是女性。所以，唐宋以来，观音像塑为女相，是有意义与根据的。在海浪滔天生存俄顷的航海生活中，最危险，安全最无把握，即最需要慈悲的救护。所以，观音在海滨一带，信仰最深。如印度的观音道场，在南海；中国方面，江、浙、闽、广、台湾、以及南洋的华侨间，观世音菩萨是惟一的安慰者。中国的普陀山，也在东海中。值得注意的，如台湾（闽广等沿海诸省都有）的天后宫，妈祖庙，都与沿海的民众信仰有关，而且都是现女相的。从人类的宗教学说，慈悲救护的要求，会无意识的现起女相来。西方的一神教，本是反对设像的，而天主教有马利亚——耶稣的母亲像。马利亚、称为圣母，传说中，也有种种慈悲救护的神迹，与观音菩萨一样。所以在宗教中，这不外乎无限慈悲的祟仰，无限慈悲的表现而已。如从菩萨的示现说，马利亚还没有出世以前，观音的圣德，已是大乘佛教共知的事迹了。这些都可看作观音的一种应化，特别是今日台湾所有的天后（妈祖），我们应以观音的精神去充实他，净化他。应以天后——妈祖身而得度者，即现天后，妈祖身而为说法。</p>
+<p>　　不过，这里特别要说到的是：（一）一般人崇敬观世音菩萨，往往多为功利的交易，如向菩萨许愿，如菩萨佑助我，那末我来还愿。如：「重修庙宇，再塑金身」等等。这种贿赂式的祈求，即是毫无真实信仰，是非佛法的！信仰观世音菩萨，向菩萨祈求，应如孩子信仰自已的母亲，向母亲祈求一样，绝对信任，真诚亲切。只要与儿女有利益，母亲是会给予的。我们所祈求的，或是不合理的，或是与我们无益的，菩萨难道也会救助你？（二）母亲护助儿女，但儿女的光明前程，不是母亲的赐予，不是一切依赖母亲，而是自己立志向上，努力创造的成果。所以信仰观世音菩萨，切不可推卸了自己在现实人生中应负的责任，过著事事依赖菩萨的生活，自己不长进，不离恶，不行善，不知归依三宝，奉行佛法，颠颠倒倒。菩萨是大慈大悲的，但你自己罪业所障，菩萨也救不了你。所以应仰慕观音菩萨慈悲救世的精神，奉行佛法，诚切的实行，当然会得到菩萨的救护。在人生的旅程上，若遇到了无法解决的困难，如不是定业，不是罪有应得，凭著信仰的真诚，自能获得观世音不可思议的感应！</p>
+<p>　　每一大菩萨，表征了一种不同的德性，慈悲，即观音菩萨的德性。我们如果不杀生，而且对一切众生，能予以普遍的爱护，那末我们的心行，就与观音的慈悲相应。相应则相感，这即是「同类相感」的道理。所以，我们内心的信仰，要能表现在外表的行动上，现实的行为，要能与观音菩萨的慈悲行相应。这才是我们今天对观音菩萨应有的真正纪念！（惟慈记）</p>
+<p>　　　　修学观世音菩萨的大悲法门</p>
+<p>　　　　　——讲于善导寺——</p>
+<p>　　在今天纪念观音菩萨的法会中，我想把菩萨的救世悲行，作一简单的介绍，使我们对菩萨更有深一层的信解。</p>
+<p>　　诸位都知道观音菩萨的手中执有净瓶与杨枝，净瓶与杨枝，这是表示了菩萨普救世间的伟大悲行。世间如火宅，众生心中充满了热恼。观音菩萨时以瓶中的甘露水，遍洒人间，使在热恼中的一切有情皆获清凉。有热恼煎逼的苦恼众生，谁不想得到清凉？如愚痴众生，渴求智慧，体弱多病，希求健康，贫贱众生，追求富贵……现实人生的种种缺憾，与内心的种种烦恼，是热恼的根源。热恼，如天旱时，稻禾需要雨水的灌溉一样。大家信仰观音菩萨，即渴求菩萨的甘露水，息灭内心的热恼。观音菩萨确有令众生热恼变清凉的甘露水，如愚痴众生，多病众生，能时时虔诚的礼念观音，能得菩萨的悲心救护，便能渐增智慧，或体力康健。</p>
+<p>　　可是，人们有一怪现象，即不到苦难当头，想不起观音菩萨，就是信仰，也不恳切，也不能真心诚意的接受指导。这种临时抱佛脚的行为，有智者决不出（编者注：「出」字疑应为「如」字）此。真正信仰观音菩萨，不仅是临时救急，更应重于平时的实践，在忠实的实践中，得菩萨的感应，自能解脱现生的苦痛与内心的热恼。也唯有在平时奉行菩萨的言教，才能增长清净的功德法财。如信任医师，就得处处听医师的嘱咐。若你在病时，信任医师的诊治，一旦病好，就把医生嘱咐的卫生之道——多运动，慎饮食，注意清洁等，完全忘却，这怎能求得身体的长久健康？不但有了病需要恢复健康，无病时更需要维持健康，促进健康。所以我们在平时，必需遵守医师的嘱咐，注意运动，饮食，清洁等。信仰观音菩萨，也应重视平时的忠实奉行。若平时的行动，与菩萨的教诲相违，等到身临苦难，即使得菩萨的救济，也已是下策了。所以要想澈底解决苦痛，常得杨枝甘露的灌洒，常得没有热恼的清凉，要在平时忠实奉行菩萨的教导。</p>
+<p>　　观音菩萨教化众生是以身作则的。他自身精进地修大悲行，也教众生修大悲行；他从大悲行中自利利他，积集了无量功德，远离了生死苦恼而得究竟的解脱。我们若依菩萨的言说奉行，最低限度也能解脱现生的苦恼，获得人生的应有福乐；若能生生世世修大悲行，即可成就观音菩萨的无边功德，而得无上的解脱。所以，观音菩萨的大悲法门是不可思议的。华严经中的善财童子参访观音，当时他求观音菩萨的开示：应如何发心学菩萨行？观音菩萨直接的对他说：菩萨应学的法门无量无边，但在这无边的法门中，我是修学了大悲行解脱门。起初我渐渐地学行大悲，经过长久时间的学习，终于深入了大悲法门广度众生，成就无边的清净功德，而得无上的解脱。善财！我以大悲法门修菩萨行，一贯的目的，在解除一切众生的苦痛：救护他，使他们免除怖畏。</p>
+<p>　　众生欲得菩萨的护念，无有恐怖，应修学观音菩萨的大悲法门。但大悲应如何修学呢？学习大悲的方法极为简单。凡见人类的苦痛，不管他与我有什么关系，都能平等的予以同情，愿意他减轻现有的苦恼；如更能平等的同情一切众生，时时想减轻他们的痛苦，这即是菩萨的悲心。悲心，本来每一个有情都是有的，但是众生的心境狭隘，不能扩大同情成为菩萨的悲心。从前我还未出家时，记得家姊在某一晚上得病，我听到姊姊病苦的呻吟声，心里也感到非常的苦痛。因不放心姊姊的病，心急不安，不能入眠；可是越是心急，越觉夜长，干急的等天亮了，好去请医生。由我对姊姊痛苦的同情，推知他人的同情，如父母见自己的儿女得病，或儿女见父母得病，心里总有深重的同情，而且著急得很。人人对自己的亲人怀有深切同情心，但每不问别人的苦难，甚至亲见亲闻悲惨凄切的境界，还是若无其事，如此就离去菩萨的大悲义太远了。世人何以不能扩大同情，成为菩萨的悲心呢？这因我们无始来就被烦恼所迷惑，为自私的情见所包围，所以不能现起平等的悲心来。根据佛法的缘起义说：人与人间的关系很深；常人以为自己的亲属朋友才有关系，其实，农夫，军警，商人等……那一界人不与你有深切的关系？你想：若没有农夫，你那来资养生命的食物？没有军警，谁来保障你的生存？没有商人，谁给你转运别处急需的一切物品？你这样一想，整个人类都与你有著密切关系，当然全人类是你的同情对象。若再深一层观察：一切有情都是与你同样的是具有心识的动物，我与他都是障深业重的苦恼众生，无始以来都会有过亲密的关系。能作如是观，自能扩大同情成为平等自救救他的悲心。</p>
+<p>　　有人说：我没有权势，或没有财力，如何救人？其实这都不是不能悲恻援助的理由。真正悲心激发，即自己的力量多大，就献出多大的力量。力量可以有大小，却不会完全没有。如见小孩跌落水坑，难道没有扶起他的力量？再不然，难道没有呼救的力量？我们如存悲恻拔苦的心肠，决不问有多大力量，只是脚踏实地的随分随力的做去。观音菩萨起初也与我们一样，但他修学大悲法门，愈修愈深，悲心愈深，功德力愈大，如今观世音已是将入佛境的大菩萨了，他也还是由凡夫渐渐修成的。若我们能发愿生生世世的修大悲法门，当来不也可以成观音菩萨吗？大悲是趣向佛境的极要法门，有大悲行，才能积集自利利他的无边功德，趣证佛果；否则，即没有成佛的可能。大乘佛法的实践者，即在乎具有深重的悲心，悲心虽然人皆有之，但没有菩萨的广大，若能不断地修学，悲心即能渐渐地发挥出来，成为无穷的深广。观音菩萨开示善财修大悲行，他自己也如实的广行大悲，他真是一位以身作则的大师。我们以观音菩萨为模范，渐渐地修学，大悲行总有圆满成就的一天。但在修学的过程中，不要以为菩萨的悲智如此深广，不能一天学成，生起畏难的念头，如怕难，即要失望而停顿了。要知道菩萨的深广悲智，是他在无量劫中修成的。学菩萨不要心急，但确定目标，不断的学去，必能渐入圣境。心急确为常人的第一病，但世间那有一蹴即成的易事？心急对于学习是无益的，反而有碍学习的进步。如能不畏艰苦，耐心的学习，自会越学越快。这如初读书的童子，开始念一两句都背不出来，但书读多了，增长了理解力，就是数千字的长文也容易熟背了。修学佛法，起初总觉不易，但能耐心修学，大悲力自一天天增长，等到悲力强大，救度众生的艰巨工作，就容易负担了。</p>
+<p>　　真正大乘佛法的实践者，对大悲的修学极为重视。因为大乘的发菩提心，广度众生，就是「菩提所缘，缘苦众生」的悲心发动。若离去了悲心，即不成菩提心，想成佛是不可能的。没有悲心的菩萨行－－布施、持戒等，乃至广修礼佛、诵经、供养，这都是人天的果报，或者是小乘功德，若具有悲心，他的一切修行，都是将来成佛的因缘。所以经中说到修学，总是说「大悲为上首」。一切成佛的清净功德，都要以大悲为领导，无大悲领导所修的一切功德，至多也不过是人天成二乘小果吧了。</p>
+<p>　　扩大同情而成为菩萨的平等悲心，在凡夫位上似乎不易做到。但我们若常观察人与人间的关系，则不难发现到我与人类的关切。当澈底透视了人我间的相关性，则不管什么人的苦难，都容易引起同情心。其次，我们要看他人的好处，别看他人的坏处。人总有多少好处，也不能完全没有错误的。若过去某人骂过我，现在他遭遇了不幸，我就欢喜，这是幸灾乐祸心，与悲心相障碍。若我们忘记他的错失，而见到他人的功德，从好处想，别人有难，我们自能生起深重的同情心。能透视人我间的相关性，能注重他人的好处，自会逐渐引发同情，这即向观音菩萨的悲心去学习。我们纪念菩萨，要发扬菩萨的大悲精神。我们要向菩萨看齐，相互策励、劝进，这样无论对己对人都有无量的利益。最后我希望诸位都从学修大悲行中，做成大悲救苦的观音菩萨。﹝唯慈记﹞</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../gsypszj/jsdbzgsydcfs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../gsypszj/lsgyfmymfs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../gsypszj/jsdbzgsydcfs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../gsypszj/lsgyfmymfs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

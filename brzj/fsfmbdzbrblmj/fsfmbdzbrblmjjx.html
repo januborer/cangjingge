@@ -1,0 +1,394 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>佛母宝德藏般若波罗蜜经卷下  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="佛母宝德藏般若波罗蜜经卷下"><a class="header" href="#佛母宝德藏般若波罗蜜经卷下">佛母宝德藏般若波罗蜜经卷下</a></h1>
+<p>　　　　佛母宝德藏般若波罗蜜经卷下</p>
+<p>　　　　　　　　西天译经三藏朝散大夫试光禄卿明教大师臣法贤奉诏译</p>
+<p>　　　　法王品第二十三</p>
+<p>　　　　日出光明照世间　　云幻焰散黑闇灭</p>
+<p>　　　　所有萤光及众星　　乃至满月皆映蔽</p>
+<p>　　　　菩萨住空无相愿　　行于最上大智行</p>
+<p>　　　　罗汉缘觉证皆超　　一切邪见俱能破</p>
+<p>　　　　譬如王子施财宝　　自在能利诸众生</p>
+<p>　　　　众生欢喜悉随顺　　无疑当得嗣王位</p>
+<p>　　　　菩萨勤行大智行　　施甘露法利群生</p>
+<p>　　　　一切人天悉爱乐　　决定当证法王位</p>
+<p>　　　　佛母宝德藏般若伽陀我品第二十四</p>
+<p>　　　　魔恐菩萨证法王　　虽处天宫常忧恼</p>
+<p>　　　　放火掣电现诸相　　欲令菩萨生退惧</p>
+<p>　　　　大智菩萨心不动　　昼夜常观般若义</p>
+<p>　　　　如鸟飞空心泰然　　一切魔事无能为</p>
+<p>　　　　菩萨若起嗔怒心　　于昼夜分或斗诤</p>
+<p>　　　　时魔欢喜而精勤　　菩萨是远于佛智</p>
+<p>　　　　菩萨或诤或嗔怒　　毗舍左鬼得其便</p>
+<p>　　　　入彼菩萨身心中　　令退菩提魔所作</p>
+<p>　　　　菩萨授记未授记　　或起嗔怒或斗诤</p>
+<p>　　　　乃至心念皆过失　　知已倍更勤修行</p>
+<p>　　　　菩萨思念于诸佛　　皆从忍辱证菩提</p>
+<p>　　　　忏悔如说持正行　　是如佛法而修学</p>
+<p>　　　　佛母宝德藏般若伽陀戒品第二十五</p>
+<p>　　　　若学戒法有作相　　而于戒法不善学</p>
+<p>　　　　知戒非戒无二相　　如是乃名学佛法</p>
+<p>　　　　若有菩萨住无相　　受持不离名持戒</p>
+<p>　　　　于佛法学乐承事　　是名善学而无著</p>
+<p>　　　　是大智者如是学　　心永不生不善法</p>
+<p>　　　　如日虚空而往来　　放百千光破黑闇</p>
+<p>　　　　若学般若住无为　　能摄一切波罗蜜</p>
+<p>　　　　六十二见身见摄　　般若摄受亦复尔</p>
+<p>　　　　譬如有人具诸根　　命根灭故诸根灭</p>
+<p>　　　　若诸菩萨行大智　　亦行一切波罗蜜</p>
+<p>　　　　声闻缘觉诸功德　　大智菩萨悉皆学</p>
+<p>　　　　虽学非住亦非求　　所学之学此为义</p>
+<p>　　　　佛母宝德藏般若伽陀幻化品第二十六</p>
+<p>　　　　若发志心而随喜　　最上菩提不退行</p>
+<p>　　　　三千须弥重无量　　随喜善法重过彼</p>
+<p>　　　　众生为求解脱法　　一切随喜作福蕴</p>
+<p>　　　　作佛功德法回施　　当为世间尽诸苦</p>
+<p>　　　　菩萨不著诸法空　　了知无相无挂碍</p>
+<p>　　　　内心亦不求觉智　　是行最上波罗蜜</p>
+<p>　　　　如虚空界无障碍　　无所得故亦不有</p>
+<p>　　　　大智菩萨亦复然　　住寂静行如虚空</p>
+<p>　　　　如有幻师作幻人　　众人见幻而皆喜</p>
+<p>　　　　幻人虽现种种相　　名字身心俱不实</p>
+<p>　　　　行般若行亦复然　　为世间说证菩提</p>
+<p>　　　　乃至种种所作事　　如幻师现悉无著</p>
+<p>　　　　佛佛化现诸佛事　　所作皆无彼我相</p>
+<p>　　　　菩萨大智行亦然　　一切现行如幻化</p>
+<p>　　　　如木匠人心善巧　　一木造作种种相</p>
+<p>　　　　菩萨大智亦复然　　无著智行一切行</p>
+<p>　　　　佛母宝德藏般若伽陀妙义品第二十七</p>
+<p>　　　　大智菩萨行如是　　天人合掌恭敬礼</p>
+<p>　　　　乃至十方佛刹中　　亦得功德鬘供养</p>
+<p>　　　　假使恒河沙佛刹　　所有众生皆作魔</p>
+<p>　　　　一一毛变无边相　　不能娆动于菩萨</p>
+<p>　　　　大智菩萨有四力　　而彼四魔不能动</p>
+<p>　　　　空行亦不舍众生　　菩萨慈悲处利乐</p>
+<p>　　　　佛母般若波罗蜜　　菩萨了知深信重</p>
+<p>　　　　内心真实而奉行　　应知是行一切智</p>
+<p>　　　　法界如实不可得　　由如虚空无处所</p>
+<p>　　　　如天宫殿应念生　　亦如飞禽思果树</p>
+<p>　　　　大智菩萨如是行　　住彼寂静之功德</p>
+<p>　　　　法不可见亦无说　　菩提非得非不得</p>
+<p>　　　　所有声闻及缘觉　　修行寂静三摩地</p>
+<p>　　　　爱乐寂静得解脱　　唯佛超出于一切</p>
+<p>　　　　菩萨依禅到彼岸　　不住寂静行如空</p>
+<p>　　　　如禽飞翔不堕地　　如鱼水中行自在</p>
+<p>　　　　菩萨若为诸众生　　当求未曾有佛智</p>
+<p>　　　　施与最上第一法　　此名最上行行者</p>
+<p>　　　　佛母宝德藏般若伽陀散华品第二十八</p>
+<p>　　　　如来说戒波罗蜜　　一切戒中为第一</p>
+<p>　　　　智者欲奉一切戒　　当学佛戒波罗蜜</p>
+<p>　　　　今此法藏诸佛母　　为最第一快乐所</p>
+<p>　　　　过现未来十方佛　　生此法界而无尽</p>
+<p>　　　　一切树林华果等　　皆从大地而生长</p>
+<p>　　　　大地不厌亦不著　　不减不增复不倦</p>
+<p>　　　　佛及声闻缘觉等　　天及世间安隐法</p>
+<p>　　　　皆从般若之所生　　般若无增亦无减</p>
+<p>　　　　世间上中下众生　　一切皆从无明生</p>
+<p>　　　　因缘和合转苦身　　无明无增亦无减</p>
+<p>　　　　乃至方便诸法门　　皆从般若所生出</p>
+<p>　　　　彼方便法随缘转　　般若无增亦无减</p>
+<p>　　　　菩萨了知十二缘　　乃至般若无增减</p>
+<p>　　　　如日云中放光明　　破无明障证菩提</p>
+<p>　　　　佛母宝德藏般若伽陀聚集品第二十九</p>
+<p>　　　　大菩萨修四禅定　　如所爱乐而无住</p>
+<p>　　　　或复不住于四禅　　当得最上之菩提</p>
+<p>　　　　得最般若住禅定　　四无色等三摩地</p>
+<p>　　　　为得最上大禅定　　而复不学诸漏尽</p>
+<p>　　　　此功德藏未曾有　　行三摩地而无相</p>
+<p>　　　　住彼不破于我见　　有心所思生欲界</p>
+<p>　　　　譬如南阎浮提人　　未生诸天生北洲</p>
+<p>　　　　见彼境界而求生　　作彼住已而复还</p>
+<p>　　　　菩萨所修之功德　　三摩地行而相应</p>
+<p>　　　　虽同凡夫住欲界　　由如莲华不著水</p>
+<p>　　　　菩萨度脱于众生　　圆满净土波罗蜜</p>
+<p>　　　　不求生于无色界　　而求菩提波罗蜜</p>
+<p>　　　　譬如天人获宝藏　　虽得不生爱乐心</p>
+<p>　　　　或言天人而起心　　欲收彼宝不可得</p>
+<p>　　　　大智菩萨不乐住　　四禅寂静三摩地</p>
+<p>　　　　出彼寂静三摩地　　而入欲界为世间</p>
+<p>　　　　若菩萨行三摩地　　不乐罗汉及缘觉</p>
+<p>　　　　乃至散乱凶恶心　　无知迷乱无功德</p>
+<p>　　　　色声香味触五欲　　及彼缘觉声闻等</p>
+<p>　　　　如是之法悉远离　　等引不离菩提心</p>
+<p>　　　　菩萨一向为众生　　修行精进波罗蜜</p>
+<p>　　　　由如奴仆事其主　　利于众生亦如是</p>
+<p>　　　　如仆事主心专注　　虽被嗔辱而无对</p>
+<p>　　　　凡所动止常在心　　唯恐彼主责其过</p>
+<p>　　　　菩萨为求佛菩提　　如奴事主利众生</p>
+<p>　　　　证得无上菩提已　　利生如火烧草木</p>
+<p>　　　　昼夜勤行利他行　　利已内心无我相</p>
+<p>　　　　如母爱子常卫护　　寒暑虽苦心无倦</p>
+<p>　　　　佛母宝德藏般若伽陀常欢喜品第三十</p>
+<p>　　　　菩萨爱乐为众生　　修治佛刹清净行</p>
+<p>　　　　恒行精进波罗蜜　　无如微尘心退倦</p>
+<p>　　　　大智菩萨俱胝劫　　久修苦行为菩提</p>
+<p>　　　　不离精进波罗蜜　　无懈怠心终得证</p>
+<p>　　　　从初发心为菩提　　乃至得获寂静证</p>
+<p>　　　　恒于昼夜行精进　　大智菩萨应如是</p>
+<p>　　　　有言能破于须弥　　方证无上菩提果</p>
+<p>　　　　闻已懈怠而退心　　是彼菩萨之过失</p>
+<p>　　　　大智菩萨闻是言　　谓须弥卢甚微小</p>
+<p>　　　　于一念间可破坏　　亦不住证佛菩提</p>
+<p>　　　　于身心语行精进　　度脱世间作大利</p>
+<p>　　　　或著我相起懈怠　　而不能证佛菩提</p>
+<p>　　　　无身心相无众生　　离诸相住不二法</p>
+<p>　　　　为求无上佛菩提　　是行精进波罗蜜</p>
+<p>　　　　大智菩萨行利乐　　令人闻言悉欢喜</p>
+<p>　　　　说法无说无听人　　名最上忍波罗蜜</p>
+<p>　　　　譬如宝满三千界　　施佛缘觉及罗汉</p>
+<p>　　　　不如知法忍功德　　百千万分不及一</p>
+<p>　　　　持忍菩萨得清净　　三十二相到彼岸</p>
+<p>　　　　一切众生悉爱乐　　闻法信受而调伏</p>
+<p>　　　　或有众生以栴檀　　涂菩萨身为供养</p>
+<p>　　　　或有持火遍烧然　　行平等心无嗔喜</p>
+<p>　　　　大智菩萨持是忍　　或为缘觉及声闻</p>
+<p>　　　　乃至世间诸众生　　悉皆回向佛菩提</p>
+<p>　　　　譬如世间贪五欲　　甘忍三涂无边苦</p>
+<p>　　　　菩萨为求佛菩提　　今何不勤持忍辱</p>
+<p>　　　　割截首足劓耳鼻　　禁缚捶拷诸楚毒</p>
+<p>　　　　如是苦恼悉能忍　　是住忍辱波罗蜜</p>
+<p>　　　　佛母宝德藏般若伽陀出法品第三十一</p>
+<p>　　　　持戒当得高名称　　亦复证得三摩地</p>
+<p>　　　　持戒为利诸众生　　后当证于佛菩提</p>
+<p>　　　　心重缘觉及声闻　　及见破戒说他过</p>
+<p>　　　　虽实持戒为菩提　　是名持戒行五欲</p>
+<p>　　　　欲证菩提功德法　　持戒具足行利乐</p>
+<p>　　　　若行毁破于尸罗　　是则灭坏于菩提</p>
+<p>　　　　菩萨虽乐受五欲　　归命佛法及圣众</p>
+<p>　　　　念我当证一切智　　是住尸罗波罗蜜</p>
+<p>　　　　菩萨经历俱胝劫　　奉行十善无间断</p>
+<p>　　　　心乐缘觉及罗汉　　是犯波罗夷重罪</p>
+<p>　　　　持戒回向佛菩提　　而不作念求自益</p>
+<p>　　　　但念利他诸众生　　是则持戒波罗蜜</p>
+<p>　　　　菩萨若行诸佛道　　于众生离种种相</p>
+<p>　　　　不见破戒诸过患　　此为最上善持戒</p>
+<p>　　　　菩萨要离于诸相　　无我无人及寿者</p>
+<p>　　　　不著戒相及行相　　是则持戒之殊胜</p>
+<p>　　　　如是具足而持戒　　一切无碍无分别</p>
+<p>　　　　头目手足施无吝　　一切所爱皆无著</p>
+<p>　　　　了知法本空无我　　乃于此身无恋著</p>
+<p>　　　　况外财物而不舍　　及彼非处而嫉妒</p>
+<p>　　　　于内外施生我慢　　是菩萨病非为施</p>
+<p>　　　　或起嫉妒生鬼趣　　或得为人处贫贱</p>
+<p>　　　　知彼众生贫贱因　　菩萨发心恒布施</p>
+<p>　　　　施如四洲草木数　　如是广大亦无相</p>
+<p>　　　　大智菩萨行施已　　复念三有诸众生</p>
+<p>　　　　菩萨亦为彼众生　　悉皆回向于菩提</p>
+<p>　　　　如是行施无所著　　亦复不求于果报</p>
+<p>　　　　名大智者为一切　　施因虽少果无量</p>
+<p>　　　　乃至三有诸众生　　一切皆以尊重施</p>
+<p>　　　　如供养佛及菩萨　　缘觉声闻之功德</p>
+<p>　　　　大智菩萨以方便　　用彼施福行回向</p>
+<p>　　　　当令一切众生类　　皆悉证得无上觉</p>
+<p>　　　　如假琉璃宝大聚　　不及一真琉璃宝</p>
+<p>　　　　回施世间一切众　　不及回施无上觉</p>
+<p>　　　　菩萨行施于世间　　不作我慢无所爱</p>
+<p>　　　　修行而得大增长　　如月离障出云中</p>
+<p>　　　　佛母宝德藏般若伽陀善护品第三十二</p>
+<p>　　　　菩萨布施济贫乏　　令得富盛度苦恼</p>
+<p>　　　　果报永灭饿鬼趣　　及得断除诸烦恼</p>
+<p>　　　　持戒远离畜生趣　　舍八非念得正念</p>
+<p>　　　　忍辱当得最上色　　如金世间悉爱乐</p>
+<p>　　　　精进善法获无边　　所有功德不可尽</p>
+<p>　　　　修行禅定离五欲　　从等持得神通明</p>
+<p>　　　　智获无边佛法藏　　慧了诸法本来因</p>
+<p>　　　　佛知三界诸过咎　　为转法轮灭诸苦</p>
+<p>　　　　菩萨此法得圆满　　佛刹清净众生净</p>
+<p>　　　　受持佛种并法种　　圣众种及一切法</p>
+<p>　　　　医世间病最上师　　以智慧说菩提方</p>
+<p>　　　　宝德藏有种种药　　令众生服悉证道</p>
+<p>　　　　佛母宝德藏般若波罗蜜经卷下</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/fsfmbdzbrblmj/fsfmbdzbrblmjjz.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/sbqsbrblmdybbmzsyytlnj.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/fsfmbdzbrblmj/fsfmbdzbrblmjjz.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/sbqsbrblmdybbmzsyytlnj.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

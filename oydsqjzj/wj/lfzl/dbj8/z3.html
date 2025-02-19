@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>卷八之三 - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../../favicon.png">
+        <link rel="stylesheet" href="../../../../css/variables.css">
+        <link rel="stylesheet" href="../../../../css/general.css">
+        <link rel="stylesheet" href="../../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../../highlight.css">
+        <link rel="stylesheet" href="../../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="卷八之三"><a class="header" href="#卷八之三">卷八之三</a></h1>
+<p>古歙门人成时编辑</p>
+<p>【塔志铭】</p>
+<p>【樵云律师塔志铭】</p>
+<p>【紫竹林颛愚大师爪发衣鉢塔志铭】</p>
+<p>【祭文】</p>
+<p>【然香供无尽师伯文】</p>
+<p>【吊不忘文】</p>
+<p>【奠影渠灵隐二兄文】</p>
+<p>【祭颛愚大师爪发衣鉢塔文】</p>
+<p>【祭在庸维那文】</p>
+<p>【祭了因贤弟文】</p>
+<p>【寄奠新伊大法师文】</p>
+<p>【塔志铭】</p>
+<p>　【 樵云律师塔志铭】</p>
+<p>予在江外。卽闻樵云关主。以苦行实修。为八闽敬仰。戊寅冬。渡洪塘。趋温陵。担役愚夫。皆能言其为众之切。自课之勤也。未几。闻讣。恨缘薄。不及一晤。赋短章哀之。越二年庚辰。予至漳南。高足如田。遵遗命营全身塔于石室之岭。请予铭。按师为澄邑新安周氏子。出家漳之开元寺。法名真常。樵云其别号也。儿时以瓦缶竹木列为瓶锡。父知其志。舍入寺。寺为罗汉琛禅师道场。师鬀度时。卽有慕琛之心。谒南山闲寂老人。禀尸罗要旨。咨净土法门。旣于堆云岭头建亭施茗。每经残月下。一虎当涂。师以杖叩云。此往来要道。慎毋面目憎人。虎驯去。次于三台石室。瓦釜绳牀。课经枯坐。阅三载。拟欲他往。闻空中有声畱之。乃启建佛殿。结构僧寮。额其岩曰闲云石室。盖闲寂老人曾于此栖迟故也。闭关峭坐。寝食俱忘。道风日著。檀信日归。嗣是设华严堂。辟接众舍。延待十方。尽心尽礼。爰感五台无静律师。为不请友。飞锡关前。为师圆具。从此葺三山之大藏。兴支提之辟支。参无尽法师于天姆。觐普门大士于普陀。乃至游歴南华。肖六祖栴檀之像。复归石室。又以行脚多年。律学疎旷。北登五台。重咨心地。然后开甘露戒品。于温陵古莆诸处。而一以净土为指归。师一生笃实苦行。普心接纳。于禅讲名流。尤虚怀靡闲。盖其乐取人善。年弥高而德弥谦。故不必挥尘竖拂。已可扶宗教之衰矣。世寿八十有三。法腊五十有奇。鬀度若干人。戒子不啻万指。铭曰。</p>
+<p>先哲旣逝。人情日浮。掠虚逞见。谁怀远忧。海南佛国。沦为荒丘。髠不禀戒。兵奴狱囚。挺生樵老。爱河之舟。广设行筏。度彼迷流。走徧天下。乃集胜猷。尸罗再揭。乐邦横截。不似诸方。证龟作鼈。</p>
+<p>　【紫竹林颛愚大师爪发衣鉢塔志铭】</p>
+<p>金陵紫竹林颛愚大师。丙戌仲夏六月坐脱。门人以陶器奉全身。供于林之山阳。次年弟子请归云居。于是金陵缁素。以所存爪发衣鉢。就山阳建塔供养。征铭于旭。旭愧学未师安。言无足重。然人之相知。贵相知心。旭旣谬辱爱敬。迥逾世情。又安敢以无文辞。谨按谱。师讳观衡。颛愚其字也。顺天霸州人。姓赵氏。昆季四人。师居仲。母梦大士携童子入门。急抱之。觉而有娠。万歴己卯年。八月十八日亥时生。白衣重胞。状异凡子。年十二。卽茹素。喜事观音大士。年十三。翛然有出尘志。年十四。坚欲入道。父母不许。乃潜逸。涂遇五台山圆照寺惠仁师。恳求发度。依住四载。年十八。闻清凉山师子窟空印大师名。潜逸往参。投诚笃事。居侍寮三载。咨决心疑。仰学至德。始终如一日也。年二十二。随空师入燕都。侍棱严讲席。进菩萨戒。参紫柏大师。自念习听义学。未是出家大丈夫事。潜逸南行。参雪浪云栖二大师。独住天台华顶峰。读棱严经。破诸疑网。时高明无尽大师。登华顶访智者遗踪。见师孑处茅庵。少年精进。托宿作竟夜谈。越三年。移住匡山干罡岭。每一饭辍。坐数日。至第三年。月下经行。忽有省悟。三十岁。进曹溪礼六祖。次夏四月。谒憨山大师于端州。一见相契。秋仲辞去。登南岳。住石廪峰。三十三岁。误食草乌。中毒滨绝。离山就医。憨大师特至南岳。叹曰。禅门下衰。幸得一个半个真为生死学人。与之周旋。稍慰寂寥。今斯人而有斯病。岂龙天厌薄法门乎。三十八岁。结五台庵于邵陵。觐憨大师于湖东。参侍半月。大师示以法语。大意谓身病已瘳。切不可被禅病侵。葢众生身病本乎执取。而禅病亦本乎执取。若法执不忘。已见犹存。亦是病。直须将从前参禅执守功勋。幷［糸-/\］妙知见。一齐唾却。定不可被他养作病根。其语切。至几数千言。今亲笔手卷。尚供林中。故知颛师从来开示学人。随机圆活。不似诸方认定一死猫头。其得力于憨大师者诚不浅也。师曾以授戒法问憨大师。大师答云。老朽未阅律部。于诸戒相。实未细详。今惟遵梵网。以心地法门为宗。以十重为要。其四十八轻。亦未能细说。但令行人半月半月诵持而已。近时学人。识浅心粗。多虚少实。求其果能精持如古人者。所未易见。而弘律者。原非学人事。多杜撰。难可为准。公处若有藏经。幸一详检律部。有以示我。望之望之。维时师亦无暇阅律。但宗棱严四种清净明诲。开示后人。令持心戒。兼令专礼观音大士。著有圆通忏法。流通最广。居五台庵。二十年足不越户外。度弟子千余人。授记署名者几三万人。至年五十九岁。特登匡山五乳寺。埽憨大师塔。建报恩道场。寺众请主法席。固辞不可。仲秋下匡山。登云居。礼祖塔。寺众亦坚畱主席。黎明潜逸。中涂疾作。不能行。阖山比丘往返虔请。乃复登云居。至六十五岁秋。离山登舟。山为再震。师于此山夙缘深矣。是冬泊石头城。次年冬十月。卓钖紫竹林。林本城北荒地。师住未几。蔚为丛席。师发心深为生死大事。故于父母师长。皆不辞而行。然秉性至孝。每遇亲师忌日。设追荐道场。必极诚慤。竭哀慕。观者无不感发。生平仪容古朴。不事矜餙。广颡丰颐。平顶大耳。修髯如戟。短发覆肩。目光炯炯射人。终夜露坐。不畏大风。或雷雨亦坐大伞下。故学者称伞居和尚云。衣服不御寸帛。日惟一粥一饭。绝不襍食。每作务必兼人。其接物也。上自王公大人。下逮田夫牧竖。礼不异节。温温言笑。霭若春风。而学者见之。不威而慑。随所到处。仅一辆草鞵便行。来不先通。去不先辞。锡驻之地。缁素云集。求戒问道。殆无虚日。然未尝自立涯岸。别建门庭。盖旣得空印大师之教。又得憨山大师之禅。又复汇归于云栖大师之净土。故其开示法语。直捷广大。似紫柏。应机禅语。轻便圆活。似赵州。又眼界虽甚高旷。口角不轻雌黄谦光盛德。慈念虚怀。真令人目击道存也。所著有棱严金刚四依解。及紫竹林全集行世。法腊五十四。生年六十有八。长旭二十年。兼亲侍憨山大师。诚为法门先辈尊宿。乃不惟忘年下交。而每致书问。必反称辱教某某。呜呼旭真慙悚无地已。合掌堕泪为之铭曰。</p>
+<p>佛法如大海。潜流注百川。达者知浩浩。昧者泥涓涓。三宗争鼎足。五叶分单传。不有超方志。谁惩鬬诤愆。师承普门愿。悯浊来施权。奋然脱爱网。习教还修禅。放生广檀度。说戒结深缘。慈容蔼冬日。机辩赫炎天。德重如岱岳。怀虚若冲渊。足迹徧寰宇。操持脱言诠。握拳念大士。撒手宅金莲。舍利镇祖窟。爪发畱福田。照此石城地。永永百千年。</p>
+<p>【祭文】</p>
+<p>　【然香供无尽师伯文】</p>
+<p>不肖初游台岭。卽覩慈辉。但钦温恭之德。罔窥法海之涯。方且甘暗证而蔑义涂。因门庭而昧堂奥。造罪意地者。匪希矣。后出入禅林。目击时弊。始知非台宗不能纠其纰。台教存。佛法存。台教亡。佛法亡。诚不我欺也。顾于老伯。犹半信半疑。自缔盟筹兄。乃甫倾向。而老伯已往生珍池矣。徒增悲仰。窃聆化仪。慙怀悔志。拟将何裨。呜呼。师弦绝响。野干竞鸣。演教者。舍醇醲而取糟粕。参宗者。先发足而后问津。孰能依教起观。一洗说食数宝之陋。知津发足。解脱盲修瞎炼之纷。老伯实中流砥柱。杲日中天也。悯予小子。不沾法乳于生前。不修微供于殁后。敬以三炷臂香。深达忏摩。三炷臂香。遥伸印手。惟老伯不起。寂光。现觉三有。鉴法门婴杵之忧。钖初心止观之佑。苟机感之不譌。必含笑而摄受。</p>
+<p>　【吊不忘文】</p>
+<p>比丘智旭。居灵峰山。闻不忘音公弃世。敬诵梵网戒经一卷。金光明空品十卷。灭定业真言千遍。幷为文遥向而吊之日。呜呼。千古圣贤。必从豪杰中来。而千古豪杰。必以圣贤为的。舍圣贤之准绳。尚豪杰之意气。误矣。认豪杰之意气。当圣贤之品格。益误矣。公豪杰自期者也。始予交臂而失。旣而肝胆许之。然予之许公也。拟欲进乎圣贤。而公之自许也。终未舍乎豪杰。逮行法华三昧。予访关次。作竟夜谈。时为公羡。亦为公忧也。公初惑圆谈。妄谓乘急而戒可缓。及警心于乘鹤渡海忽折一翅之梦。方知戒亦应急。而未达戒卽是乘。是以虽行事忏。理境不彰。况调身失其方便。进道每任已情。重障造于前。掉悔逼于后。善友隔于他山。闻解局于文字。以此灭罪悟心。难矣。然公未彻者。乘戒源头。而不迷者。出世因果。源头未彻。感现在恶疾而终。因果不迷。定可免将来异熟。予为公悲。亦为公幸。公亦可自慰于冥冥也。呜呼。末世修行。多败少成。公其谛信法华威力。及阿弥愿轮。顿除爱见之私。速往金莲之津。迨予报尽。垂手来迎。同觐慈尊。其秉梵音。回视西湖殿里。接引像旁。披诚发露。盟以肺肠。可谓果因交彻。久要不忘者矣。</p>
+<p>　【奠影渠灵隐二兄文】</p>
+<p>呜呼。世固有相爱不相知者。此其爱非道爱也。亦有知爱而不相期责者。此其知非实知也二兄之相知相爱相期责也二十余年。如形影焉。乃予与二兄为莫逆交。仅自乙亥春始。忆其时。未尝有投契之思。特以天降霪雨。为吾三人作意外介绍。故灵兄诗曰。只此十日雨。倾予半世怀。噫奇矣。是冬予遘笃疾。二兄尽力调治。不啻昆季母子也。逮予住九子游八闽二兄梦寐予。犹予之梦寐二兄也。今春予从闽中闻影兄之变。痛切肺肝。念佛十万以悼之。夏五月。予出苕城。秋七月。灵兄冒酷暑。相访殷殷出世大事。不两月忽婴疾。急手书召予。予驰赴。未及百里。竟舍我先逝。呜呼。自惟解行俱荒。瑕玼非一。谬蒙信许。过于常情又承治命。欲予演观无量寿佛经首题名义。予旣奉命。复念佛十万为增上助缘。呜呼。当病苦切身。而大事殷殷之意。生死一如若斯。予无似。若粪壤之助嘉禾。则庶几矣。每思影兄之沉静。灵兄之爽朗。俱堪千古。至其戒行冰霜。慧性颖悟。正信力强。出世心苦。诚堪立地超佛越祖。而大愿未克。齌志长骛者。其故何哉。大约身见稍重。迁延咎景。不能向冰凌劔刃上游戏出没。不肎从荆棘瓦砾中掉臂厝胫。致使无生法忍。必竢净土花开始领也。然此幻躯。不可保信。纵令爱惜。曾不少矜。养怨入冢。谁曰不然。二兄诚能瞥然覰破。憬无余情。弹指莲华可敷。不复更竢半劫一劫。乃至刹尘矣。然后为我仰白慈尊。常以慧光折摄我心。幻缘一尽。垂手而迎。是予所深望于二兄者也。</p>
+<p>　【祭颛愚大师爪发衣鉢塔文】</p>
+<p>呜呼。人不难相爱。难于相知。翁真知我者哉。世纵有一二爱且知者。而志操相携。旭虽不敢拟翁泰山之德。幸三事略无违焉。尚质朴。诎虚文。不肎苟合时宜。注经论。赞戒律。不肎悬羊头而卖狗脂。甘淡薄。受枯寂。不肎受丛席桎梏。而掣其羁縻。呜呼。以法门耆宿如翁。而旭过蒙知爱。又志操相合如此。其能已于怀也。翁所证深浅。非旭能拟。而生平最倾心处。请略纪之。当今知识。罕不以名相牵。利相饵。声势权位相依倚。如翁古道自爱者有几。当今知识。罕不以掠虚伎俩。笼罩浅识。令生惊诧。如翁平实稳当者有几。当今知识。罕不侈服饰。据华堂。恣情适意。如翁破衫草履茅茨土阶者有几。当今知识。罕不精选侍从。前列后随。如翁躬自作役。不图安享者有几。当今知识。罕不同流合污。自谓善权方便。慈悲顺俗。如翁不肎苟殉诸方。甘受担板之诮者有几。故凡闻翁之风者。顽夫廉而不滥。懦夫立而不倾。伯夷之隘。所以为圣之清也。岂似枉寻直尺。诡遇一朝者。身虽存名已先沦也哉。旭每悲如来正法。一坏于道听涂说入耳出口之夫。再坏于色厉内荏羊质虎皮之徒。其父报仇。其子必且行劫。尤而效之。何所不［辶@至］。翁之爪发衣鉢幸存。则翁之道风未灭。必有闻而兴起者。庶共砥狂澜于末叶乎。</p>
+<p>　【祭在庸维那文】</p>
+<p>呜呼。公之从予游也。颛大师命也。公初听大乘止观归。颛师叩大义。公能略答。故颛师再命公登祖堂。予卽烦公襄理僧事。然予深取于公。不唯能听经。能职事也。闻公同颛师住云居。努力众务。不惜身命。逮颛师疾。公炎暑不解带者六旬余。虽大孝事父母。何以加焉颛师寂。公复以职事来研教理。予且大病。公执侍不异事颛师。呜呼。以公如此心地。如此精神。岂应年未三十。遂尔奄逝。无怪乎公之恋恋。不欲西驰也。虽然。公之见地未远大矣。吾人无始以来。舍身受身。何止刹海微尘。今幸遇明师良友。闻西方净土。无上圆顿横超胜异方便。惟恐归家不早耳。乃必欲于幻身百年内。做学问。开丛席。名满天下。然后快心。曾不思西方有大学问。大丛席。名满十方三世。得非欲速见小之为害乎。公其尽将生平事师孝德。及无始善根。一一摄取现前。回向阿弥陀佛大愿海中。决志直趋极乐世界。更无疑贰。予不久幻缘旣尽。伫望公随三圣。招予同浴七珍池也。</p>
+<p>　【祭了因贤弟文】</p>
+<p>呜呼。了因。尔遂至此耶。尔自幼发愿。竟不满其愿耶。予将玉汝于成。汝不及再见我耶。呜呼。予方悼十子忆汝。汝又复为予所悼耶。呜呼。汝见我已来。二十五年。从予游十九年矣。汝之长处。我尽知之。短处我亦尽知之。我急欲去汝之短。汝则疑畏。舍我而去。我必欲成汝之长。故时时礼拜持诵而保祐汝。乃汝竟不能自保。呜呼。此夙业耶。抑现缘耶。犹忆汝与彻因初侍我也。我卽苦口劝二人互相师。汝宜师彻因立志。彻因宜师汝朴实。是后彻因长于律学。终以不朴实而丧身。不谓汝微会入于台宗。亦终以不立志而死于房头耶。夫烦恼力强。此我短处。信心慙愧。我长处也。不肎诸方宗教。此我短处。独具宗教只眼。不肎自足。日研日进。我长处也。善学者。学其长。舍其短。故孔子见贤思齐。见不贤而自省。择其善者从之。其不善者改之。汝乃不学我之惭愧。不学我之研求进入。此岂称善学耶。呜呼。汝半涂而废。罪诚在我不在汝。独哀汝幼志未遂也。哀汝师叔苦心成就不获大成也。哀汝于圆顿大法。甫入门。不能升堂入室也。哀汝获恶病殁在房头。未知临终正念现前否也。哀我诸子可充一椽一柱者。相继去世。不为我聊存一线也。呜呼。法门之衰。非一日矣。众生障重剧矣。佛慈如日。生盲不瞻。佛慈如雨。覆盆不沾。汝旣稍瞻。亦旣稍沾。柰何中辍。弗竟勉旃。为汝礼忏。为汝诵经。汝灵不远。应知我忱。欢喜领受。助汝西生。汝西生已。为我白佛。愿以慧光。照我幽窟。俾我开晓。有善无忒。旦晚命尽。早归净域。与汝同观。七珍八德。自行早圆。化他无极。虚空可消。愿轮不息。呜呼哀哉。尚飨。</p>
+<p>　【寄奠新伊大法师文】</p>
+<p>呜呼。宗说之不明于世也久矣。古人得宗说之源。故虽分之而愈合。今人拾宗说之似。故虽合之而愈分。此其可痛哭长叹息者。何止若三若七而已。旭生也晚。不及亲炙云栖老人。暨绍觉尊者。犹幸获与老师为忘年交者。几三十年。不异得见云栖绍公两尊宿也。方今法道淆譌。日甚一日。紫乱朱。郑声乱雅。大似刻人粪为栴檀。独赖老师以耆年硕德而默镇之。巨集法巨集戒。身为律。声为经。正不必如孟轲好辩。野犴狡狐。已自褫魄。今何不幸示寂如此其速耶。客岁效华祝。方拟一二年犹得拜见慈颜。歴陈衷曲。而今竟不可复得。岂不痛哉。老师久已鉴旭苦心。故破格下交于旭。今又高据莲台。洞开慧眼。必倍知旭之艰苦。而茫茫斯世。旭安敢更以知己望他人哉。伏读老师嘱语。字字堪为末世金錍。及门诸贤。必能恪遵而宏扩之。自利利他。法皆具足。可谓度人事毕。无复遗憾。柰法日旣没。举世皆盲。旭能不为后流未度众生。兴悲感耶。</p>
+<p>灵峰蕅益大师宗论卷第八之三</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../../oydsqjzj/wj/lfzl/dbj8/z2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../../oydsqjzj/wj/lfzl/djj9/z1.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../../oydsqjzj/wj/lfzl/dbj8/z2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../../oydsqjzj/wj/lfzl/djj9/z1.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../../ace.js"></script>
+        <script src="../../../../editor.js"></script>
+        <script src="../../../../mode-rust.js"></script>
+        <script src="../../../../theme-dawn.js"></script>
+        <script src="../../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../../clipboard.min.js"></script>
+        <script src="../../../../highlight.js"></script>
+        <script src="../../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

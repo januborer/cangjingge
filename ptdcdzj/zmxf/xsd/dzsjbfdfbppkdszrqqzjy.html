@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《对治世间八法的方 便》(帕绷喀大师著　仁钦曲扎敬译)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="对治世间八法的方-便帕绷喀大师著-仁钦曲扎敬译"><a class="header" href="#对治世间八法的方-便帕绷喀大师著-仁钦曲扎敬译">《对治世间八法的方 便》(帕绷喀大师著　仁钦曲扎敬译)</a></h1>
+<p>　　　　对治世间八法的方便</p>
+<p>　　　　　　　　　　　　　　　　帕绷喀大师著</p>
+<p>　　　　　　　　　　　　　　　　仁钦曲扎敬译</p>
+<p>　　火鸡年，帕绷喀金刚持住锡于昌都甘丹绛巴林时，为便于学人如何断除，对治世间八法，特择录道次第广论等而成此文。</p>
+<p>　　敬礼上师！</p>
+<p>　　《善住意天子请问经》中说：「得诸利称与誉乐，不应于彼生骄慢，虽遭无利称毁苦，愿无耽著护世间」。《妙臂请问续》中说：「称无称与利无利，苦乐如是毁誉等，以心善破诸世法，罪恶渊薮应舍弃」。《亲友书》中也说：「利无利苦乐，称无称毁誉，了世俗八法，齐心离斯境」。文中的「了世俗」是指国王，此段劝诫国王对八法应等量齐观。受用圆满之利与贫穷之不利，身中无病心情舒畅之乐与不乐，名声远播之称与无称，他人当面对自己恭维之誉与毁，这八种法是世人最为执著的，最容易生起贪憎，但由此生起的贪憎只不过是错乱心造作的颠倒作意，所以实在的贪憎并不是取舍境，基本上应象注疏中所说的那样：「于利等四不生欢喜与念著，于无利等四不生苦恼与憎恚，于彼等八法应平等住！」</p>
+<p>　　《道次第广论》中说：「又易生难离，谓爱四事：利誉称乐，及于此等四相违品，意不欢喜，当修对治。此复总修生死过患，特修念死，即能退除」。以及「思维誉等无功德之理，思维有过失之理，故于破此应当欢喜」。</p>
+<p>　　今初：若他赞我称誉广大，全无现世长寿无病及无后世获福德等二种利益，故彼失坏若不喜者，则无屋用砂屋倾塌，诸愚童涕哭与我等今者等无有异，应自呵责而不贪著。如云「赞称及承事，非福非长寿，非力非无病，非令身安乐，我若识自利，彼利自者何」？又云「若沙屋倾塌，儿童极痛哭，如是失赞誉，我心如愚童」。</p>
+<p>　　第二：赞誉等者，于诸非义令心散乱，坏灭厌离，令嫉有德，退失善事。如是思已，则于彼等令心厌离。如云「赞等令我散，彼坏厌离心，嫉妒诸有德，破坏圆满事」。</p>
+<p>　　第三：如是令我退失誉称及利敬者，是于恶趣救护于我，斩除贪缚，遮趣苦门，如佛加被。</p>
+<p>　　如是思已，应由至心灭憎生喜。如云：「故若有现前，坏我誉等者，彼岂非于我，救护堕恶趣？」「我为求解脱，无须利敬缚，若有解我缚，我何反憎彼？我欲趣众苦，如佛所加被，闭门而不放，我何反憎彼？」其他如《入行论》所说教授，破除对作毁谤等三事的无法忍受：心非有体他能害，若直害身间损于心，毁等于身亦不能损，既于身心二具无损故应欢喜，如是思已断除忧悒，忧悒若灭，憎不生故。亦如论云「意非有形故，谁亦不能坏，由耽著于身，故身为苦损。毁訾及粗语，并其恶名称，于身若无害，心汝何故憎」。霞惹瓦云「若于康垅巴，内邬苏巴，照巴三人，任说何语与向工石，全无差别，故得安乐，后时诸人耳根薄弱，故无安乐」。若对馨敦说某作是言，答曰：「暗中可骂国王，汝犯离间应当忏悔」。有谓慧金刚瑜伽师云：「人说我等为伏后者」。答云：「人不于人作言说事，又于何事」。次云：「速断离间。若作是念，由毁訾等则余补特伽罗于我不喜故不欢喜，若余不喜我，于我有损可为实尔，然此于自全无所损，故应断除不欢喜心。如云：「余不喜于我，此于现后世，俱不损于我，何故我不乐」。若作是念，虽他不喜无损于我，然由依此，即能障碍从他人所获得利养，故于毁訾谤传恶名者而发憎愤，所得利养须置现世，憎他之恶随逐而行，故无利养速疾死没，与以邪命长时存活，前者为胜。设获利养长时存活，然于死亡终无免脱终须有死，至临终时，先经百年受用安乐，与唯一年受用安乐，二者相等，唯为念境。儿时苦乐无差别故，比如梦中受乐百年，与唯须臾领受安乐，二睡醒时，乐与不乐全无差别。如是思维，若于利敬能破贪著，则于毁訾扬恶名等不生忧悒，以不求于他显我殊胜，虽不显扬喜无退故」。</p>
+<p>　　《宗喀巴大师散集》中说：「是故此虚荣心有白黑花三种，黑者易知，余二多有错乱，慎勿放逸」！</p>
+<p>　　至尊米拉在道歌中唱到：「现世如欺岂不知？受用如幻岂不知？快乐如梦岂不知？毁誉如响岂不知」？「亲友施主徒众三，我瑜伽师无所需，汝世俗辈乃需之。财物资具喧闹三，我瑜伽师无所需，求虚名者乃需之」。以及「为摧世间八法故，世尊人王说诸法，如今自诩智者众，谁不热衷于八法？为舍世间诸业故，佛说守护戒律法，如今持戒尊者众，谁不身陷俗务中」？</p>
+<p>　　《最初修心》中说：「众生依怙」说得好：现在一般法师，律师，禅师，也不过是想有现世的法师，律师之名，闭关修行的人在门楣上写些字，表示修行人不会客，也无非是想有现世的禅师之名。行布施，也只是希望得到现世的乐善好施的美名。这比如把糍粑粉抛到水里，毫不相干。甚至作一点点供养，也希望别人看见。任凭作什么事，都有这个无所不想的观念来参加，任何善行，都是在追逐名呀名呀！「名」像个骑士，它索着我们的一切。因此士夫们！我们必须用枪戳穿攀缘现世的观念，如果不戳穿它，那么，一切习教，持律，说法和参禅，都不能关闭三恶趣的门，都不能回避三恶趣的苦，而这样的法师，律师和禅师有什么用处呢？以及格西奔为了施主的情面，希望施主赞叹庄严而作供品的故事。嘉色仁波切说：「亲友承事皆舍弃，求他承事舍心衰，乡亲受用悉舍弃，复为好名心所缚，如断铁镣被绳捆」。</p>
+<p>　　博朵巴曾说：「人所不欲四世法，解脱行者自选择，不触于库藏无损，触者为他做嫁衣，利等四法视为他，如同失物应了知。多康觉沃持蜜行，招蜂利等引仇敌，权势广大苦海涌，俗语亦然应了知」。</p>
+<p>　　正理自在说：「希求世间八法事，赞毁以及称无称，利与无利乐与苦，于彼欢喜或不喜，种种分别生起时，不可自矜为佛徒，过去将来与现在，八法等起有或无，当于自心作提问」。</p>
+<p>　　格西桑摩瓦说：「此世间八法之事周遍于我等一切有情，其中欢喜快乐尤为周遍，在此大地之上，众有情熙熙攘攘莫不为希求快乐而行。然乐之根中有苦不应欢喜，于苦不应灰心失望。若注重现世之乐而对后世漠然，以为作某某事即有快乐，则无论是佛法还是世间法，一切所作皆成现世者，世间八法者，应如是思维，于下述者亦应如是思。若所求之乐未生，想「如彼出生即当欢喜」而生值遇之爱；彼若现前，想「我甚欢喜」而生现喜之爱；彼若已生，想「当不离此」而生不离之爱；若现在无而昔曾受乐，想「我当时欢喜快乐」而生味著过去欲之过去爱；若生苦与不欲事，想「若无此苦，我当快乐」而生远离之爱；若彼不生，想「彼不生起甚妙」而生不值遇之爱；若苦乐皆非，则生欲彼不衰之爱，故彼等一切皆随贪爱转，乃是世间八法者现世者」。</p>
+<p>　　觉贡钦摩说：「我们也应该象以前格西敦巴所作的那样在念诵偈颂时，甚或是一偈句，都应依止对治，断除世间八法」。敦巴仁波切对于这世间的一切享受都是弃舍了的。有一次，因为街上请吃饭，他教功德自在说：「今天你到那里去吧！我因为想作一个弃舍世间享受的样子，所以去不成」。他说着穿一件破旧的衣服，披一件大氅。褪出两膊，把两袖搭在左右肩上。有时走进柏树林里，有时拿了一根滕杖支着下颌，口念：「世间智者利与衰，苦乐毁誉及称讥，世间八法非我境，一切当作平等观」。有时又念：「我今求解脱，不须利敬缚」。他这样走来走去地念，有时全念，有时念一点，有时念一半。在他，并不需要那样做，这是为的教导后人。瑾哦瓦也常常念这个颂文，而等观八法。</p>
+<p>　　正如《入行论》中所说：「是故如来说：凡夫无自利，终不生欢喜，故莫亲凡夫」。折除现世的牛鼻绳，任做何事都逃不出自利的俗套。老师对学生，学生对老师，主人对仆人，仆人对主人等相互欺骗者比比皆是。耶协嘉措大师说：「入自利洞窟，见利他皱眉」。为了希望别人赞叹自己的证德高妙，相续调柔等，对别人装出恭敬和举止文雅的样子，表里如一正直之人极为少有。遇到别人呵责怀疑使心绪不宁，自己没有个决定，别人向自己合掌敬礼或称呼自己为仁波切，格西拉或先生等便满心欢喜，反之若拳脚相加或直呼己名，或称某某札巴，或喂等则心生忧恼等之辈无量无边。</p>
+<p>　　如果修暇满，死无常等达到扼要的话，这些便容易遮退，不仅如此，二种菩提心的修心对对治八法也有很大的力量。如《摄正法经》中广说：「说空性者无住故，诸世间法不能劫夺，无利之喜，亦无无利不喜，无称之勇悍，亦无无称怯弱，无毁之畏惧，亦无赞之欢快，无乐之贪，亦无苦之忧恼。如是诸世间法不能劫夺者为通达空性，如是不能劫夺故应通达所说空性」。又说「诸凡菩萨仪轨……利与无利，称与无称，赞毁乐苦不能撼动，一切知量……」。</p>
+<p>　　又《最初修心》中说：「若想至心求法，然未最初的舍弃现世白黑花三种所作是最重要的。其中除埋怨发牢骚等之外，大家都容易知道象杀生，偷盗等黑所作是非理的，也容易断除。但白所作或花所作之类，如不舍现世之耽著，而忙于灌顶，说法，造像，施舍，经忏，印擦擦，绘护轮，降魔放咒及日课等，能断除这些的就很少了。心不离现世的耽著，所作再妙亦无意义。</p>
+<p>　　总之，所有善与不善都是心的功用故，此心应不招致天鬼人三者嫌恨才是。因陀罗菩提王在《智慧成就》中说：「所作业随一，皆身口意作，余无第四种，彼等应观察，无心唯身口，绝不能造作，彼若无词句，亦不能出口。是故身口业，是意之变化，众生以自心，随作善不善。有益诸业者，一切善观察，颠倒乃非福，诸胜者善说。是故善不善，皆心所造作，心亦能破坏，众生师所说」。</p>
+<p>　　《迦叶品》也说：「如为海水漂，却因干渴死，爱多法放逸，法海随恶趣。比如巨囊药，世人所珍爱，病者不服用，此药终无益；比丘具戒德，见闻然不除，非礼烦恼病，彼勤闻无益」。对这段经文应认真考虑，这里说的意思是，某些人一生都在实践佛法，别人都认为他们是佛弟子，他们本人也认为自己是个佛弟子，而他们最后却象渴死在海中一样死后堕入恶趣。这究竟说的是何许人呢？回答是，就是那种经受不起现世的痛苦，放不下现世的快乐，要快乐，要幸福，要名声，从灌顶说法到日常念诵，所有的一切都在忙于现世经营的人。我们在轮回中所受的一切苦，都是世间八法招来的，但我们世间八法的白黑花三种所作仍在不断地增长膨胀，而这一切所作都是没有意义的，就象背负无益于治病的药而行一样。</p>
+<p>　　有人不理解要绝不考虑现世的快乐而整个地加以抛弃的原因，或者会想：「那么一切以世间八法或烦恼为动机所造业都是罪恶，都是恶趣的因吗」？总的来说，以世间八法为动机所作的白黑花三种，一切未由殊胜出离心所摄持的，都纯系领受轮回苦之因。所以说以烦恼为动机所作诸法皆成无益，然而是否成恶趣之因或罪恶，则分二种，上中下三士道中。下士道之善，全是由只求轮回所积集的，所以是由世间八法与烦恼造集的，更确切的说是由贪所集之善，这些是善非是罪。又下士道中，希求获得欲界天人圆满者，积集布施持戒等福德，希求获得色界与无色界圆满者修奢摩他，毗钵舍那与止观双运三摩地等，这些虽然是由烦恼与世间八法作的，但不是罪恶而是善。这些善在诸大教典中称之为「福德同品善」同样属上界的一切烦恼及其所集业亦非不善。「救怖与正愿戒」及「正愿施」等并非是不善，所以虽是世间八法与贪等烦恼所造集，而非罪与不善者有很多谄诳等上界之一切烦恼，因奢摩他坚固及众多善法摄持故不成不善，此为圣无著所说，那么有人会问：「究竟何为善，何为不善呢」？当知诸佛菩萨最为呵斥绝不赞叹的那些业以及其动机烦恼为不善，与此全然相反之业及其等起为善，二者皆非之身口意业为无记。这样的话，以烦恼为动机然非是罪者为数众多。但是，为了现世的利养，名闻或快乐而作灌顶，说法，念经，诵咒等，就会变成罪障之蕴，象这种贩卖甚深法，贪婪心，损害心，谄诳，诡诈，谄求，侧求，研求，以利求利（五邪命）及绮语等一切罪障，犹如天雨不断倾注。由念及此，诸位祖师多说：「若不离现世之耽著，任作何者莫非是罪」。又或耽著现世故，一切所作皆是胜义之罪，由念及此故说一切是罪。大成就者林杰日巴曾说：「轮回分别大城中，世间八法起尸游，斯乃最可畏尸林，上师于中作禳除。」《宗喀巴大师散集》中说：「愿于世间八法者，自心获得平等性，恒离世法之纷乱，以诸法喜而养生」！</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../ptdcdzj/zmxf/xsd/xptdcdcxfmhc.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../ptdcdzj/zmxf/xsd/clztyqrdtnwcgxsrqqly.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../ptdcdzj/zmxf/xsd/xptdcdcxfmhc.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../ptdcdzj/zmxf/xsd/clztyqrdtnwcgxsrqqly.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../ace.js"></script>
+        <script src="../../../editor.js"></script>
+        <script src="../../../mode-rust.js"></script>
+        <script src="../../../theme-dawn.js"></script>
+        <script src="../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

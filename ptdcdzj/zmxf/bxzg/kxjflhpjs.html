@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《空性》(吉弗里霍 普金斯)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="空性吉弗里霍-普金斯"><a class="header" href="#空性吉弗里霍-普金斯">《空性》(吉弗里霍 普金斯)</a></h1>
+<p>　　　　空性</p>
+<p>　　　　　　　　　　　　　　　　　　吉弗里霍普金斯
+　　　　　　　　　　　　　　　　　　李胜海居士译</p>
+<p>　　宗喀巴说唯有佛教才是欲解脱轮回者应趣之门，而在佛教中唯有通达中观应成派所说的空性才有能力除苦。应成师所说空性较其它宗派所说更为微细。其它的宗派是辅助，某人不研习应成派而采取其它某一宗派或许暂时进步较大，但最终必须通达微细的空性。一切修行都令人获得堪修正趣关要唯一之道的能力，故此都是导向关要的。到达究竟唯依一种道。
+　　小乘道虽不究竟，但对一小乘行者而言却是得无上菩提（佛位）的方便。此处所说的“小乘”与“大乘”非指佛教的四宗：小乘二宗毗婆娑宗与经部宗与大乘二宗唯识宗与中观宗，而指四宗皆讲说的小乘道与大乘道。小乘道是为声闻与独觉种姓行人而说，大乘是为菩萨种姓而说。在四宗所说小乘与大乘道之中，宗喀巴阐明了最究竟的宗派中观应成派。“大乘”有时指唯识宗与中观宗，有时指四宗皆讲的菩萨道——因为小乘宗派也讲菩萨道。小乘宗派的毗婆娑宗与经部宗也承许本生故事与毗奈耶中所说佛在往昔行菩萨道之事。小乘宗派说释迦牟尼佛是我们这一时代唯一圆满菩萨道者。
+　　根据毗婆娑宗与经部宗，声闻独觉的阿罗汉劣于佛。他们三者都已解脱轮回并且死时皆身心断灭而消失，但在生时菩萨的果位称为佛而其余二者称（阿罗汉）杀贼——已杀以贪憎痴为主的烦恼之（敌）贼，是因为佛有特别的智力，更深细的神通力与异于他人的身相。菩萨于三无数劫中修集福智故而证得更高的佛位。在毗婆娑宗与经部宗看，行菩提道是极为希有的。
+　　小乘二宗均说三乘，三者各别能载化机至所欲之果位。二宗皆说为获果位所应通达的空性，而此空性即补特伽罗非实体有。他们证成补特伽罗（人）不是自足之体，非如主人能管辖奴仆般能主宰身心之实体有。由通达与串习此非实体有诸烦恼乃至一切苦皆能断除。根据小乘的宗派小乘行者（声闻与独觉）与菩萨的智慧分是相同的，而积聚福德之力所耗费时间的长短构成了各乘的主要差异。
+　　大乘的宗派唯识宗与中观宗（其中后者又分自续派与应成派）并没有转述毗婆娑宗与经部宗所说的小乘，而是各陈自宗所说的小乘道。如据应成宗，为离轮回必须通达微细的空性，即补特伽罗与法无自性，故此声闻缘觉必须同菩萨一样通达微细空性。据应成宗，声闻独觉的小乘道与菩萨的大乘道之差异在于菩萨成就以慈悲所引生的为利一切有情而欲成就无上菩提的利他愿心（菩提心）。当此菩提心能任运生起——无论行住坐卧都能如坐上修时之有力，则此人成为大乘道的菩萨，非仅持大乘宗见者。
+　　持应成宗见者自然欲生慈心、悲心与菩提心，但在当下他可能仅有任运的（欲出离轮回的）出离心，在这种情形下则是住小乘之道而持大乘宗见者。换而言之，经长久的修习其出离心能日夜任运而起，无论行住坐卧对轮回之盛事无一刹那的欣慕，则已达小乘道的最下边际：资粮道。他可能暂时置圆满修习菩提心于一边，而仅求个人脱苦。作为应成师，其所修持的是自性空而非毗婆娑宗与经部宗所说较粗的实体有空。此小乘道较直接由自己所明了的轮回苦推知他人之苦而生慈生悲心，成佛以成办他人的利益而进修空性，则于得佛位较为迂回。
+　　根据应成宗，修菩萨道的基础是为利有情而欲成就无上菩提的菩提心。菩萨以无量门在少至三无数劫之中趋入布施、持戒、忍辱、精进、禅定与智慧的六度之行，以便能增强心力而对治所知障。其经过二无数劫修行于菩萨十地之中第八地之初获得从轮回解脱，花费如此长久之时积聚福德资粮，是为了对治诸境似与其支分（安立名言的所依）相合的显现（此属所知障）。
+　　为断除这些障需旷劫修行的教语能鼓舞瑜伽师产生长时修行的意乐，他准备实际地在将来无量生之中修习六度。菩萨如同一位母亲，其手中抱持的婴孩踢她，扯她的头发，将手指戳入她的眼睛，而她却十分耐心，明白其责任需要花费多久的时间。同样，菩萨愿用一劫的时间以使一个有情得到微小的进步。
+　　虽然菩萨经二无数劫始从轮回解脱，而声闻经少至三生即能出轮回，但菩萨所行之道对于最终成佛却更速疾。声闻修习自利之时，其心为我爱执所染故而延缓成佛之道。然而声闻独觉最终将入菩萨道。经多劫住于寂定，诸佛会把他们唤起，令他们了知即对自利尚未圆满，何况他利，故而他们最终趋入菩萨乘。故此虽有三乘，究竟唯有一乘。
+　　根据应成宗，声闻与独觉具有最细的智慧，证最细的人法二种无我，而根据唯识宗与自续派，声闻与独觉不能证得微细法无我，故不具有最细智慧。毗婆娑宗、经部宗、唯识宗与自续派都说声闻与独觉仅由证悟与串习微细的人无我而得解脱轮回。让我们来分析一下这一点。
+　　无我分为二种：人无我与法无我。人无我又分为二：粗与细。毗婆娑宗与经部宗不说法无我，因为他们认为诸法是谛实有并且与能了别的识是异体。
+　　关于人无我，诸宗都说有粗细二种。根据应成以外的诸宗，粗者是常、一、自在之我空。这种我执是分别而非俱生，它是依外道的假设而来，换而言之，我们不会自然地错执我具有常、一与自在的三相。
+　　根据除应成宗以外的宗派，微细的人无我是自足（藏：rang rkya ba）或实体有（藏：rdzas yod）之我空。此处瑜伽师所证为非有能自在身心的实体有或自足之体的补特伽罗（人）。身心错乱地（显现为）似乎依于补特伽罗而补特伽罗似乎不依于身心，补特伽罗似是主人，而身心如其仆从。这种错执有二种：分别与俱生，前者是由熏习（人为的）宗见之力得来的执着（观念），而后者则是习惯性的或未经灌输的执着（观念）。大多数宗教、哲学和心理学体系是增强这些错乱的俱生执着，以致错上加错。
+　　唯识宗宣说与毗婆娑宗与经部宗同样的微细人无我但又说更为深细的法无我，这就是能取所取异体空。有境与境或能取（识）所取（外境）显现为相异阻隔，但在真实中并非如此。瑜伽师通过正理与比喻（如梦喻）以对治对于错乱显现的认同并最终在一切显现境中断除错乱相。
+　　在中观宗，法无我是非由心安立的存在方式的空。事物似是不依于他而有，不须由对心显现而安立而是有自己的存在方式，但实际上是由对心显现而安立，就如幻师的幻象是由对观者为咒力所迷的心显现而安立为有。中观宗的应成派更将无我精细地阐说为自性空，其义是诸境甚至不是其支分之聚合而仅是于此聚上由名言所安立。虽然诸法显现为实在的有，但用理智寻求时则不可得。（此处）也如唯识宗，瑜伽师由定中的修习以对治对于实有的错乱显现的认同（自性有的显现属所知障，而对此显现的认同即执着自性有属烦恼障）并于最终增强心力以令错乱的成分彻底消失。
+　　在应成宗以外的宗派中，声闻与独觉仅证人无我。这些宗派说补特伽罗错乱地（显现为）似有一个异于身心的性相，这一点他们举主人与仆从为例，其前者能自在后者。根据十七世纪末十八世纪初的格鲁派学者嘉木样协巴应成师说身心如诸商人，而补特伽罗则如商主。所不同的商主亦是商人，但主人却不是仆从。补特伽罗错乱地（显现为）似是上司，似能主宰身心，但不必（与身心）异体。故此根据应成宗，俱生我执无论是粗是细均无执我与身心异体者。
+　　应成以外的宗派认作微细的人无我，应成师视作粗人无我，应成以外的诸师说为俱生与微细的人我执，应成师视作分别与粗人我执，即根据应成宗唯依邪宗始执补特伽罗有异于身心的性相。故此，根据此最究竟的宗派，由证他宗所说的人无我不能出离轮回。不仅于此，他宗亦未能精确地阐说粗人无我之所破。
+　　根据唯识宗与自续派，菩萨较声闻独觉更为聪慧，他们观见更深而根本的空性法无我，故能除遣更根本的障碍。而应成宗则认为余者所说的细人无我是粗人无我，余者所说的细人无我则为补特伽罗自性空所取代。应成宗又（在法无我所破中）以自性有取代能取所取异体，故在此宗空性理论中的所破上人无我与法无我是相同的，两者均是自性有，此处人法二无我之间无深浅粗细的差异。
+　　唯识师说能取所取体性非异是微细的法无我，自续师说无彼境非对心显现而安立的有是微细的法无我，在唯识与自续两派中微细法无我比微细的人无我更微细，为能证之，行者之根器须更明利，而菩萨之器则（较小乘行者）更利。然而，当应成师将补特伽罗无自性立为微细人无我，法无自性立为微细法无我，则二者无粗细之别，一旦证得其一，余亦能证。
+　　故此根据西藏终极的宗派应成宗，不通达人法二种空性无解脱轮回之可能。据此宗派，声闻与独觉均证得较余宗称为微细者更细的无我，往昔小乘大阿罗汉证得此最深空性，而菩萨虽更明利却不是证悟另一个更甚深的真实，只是由更多的理路来悟解同样的空性。
+　　应成宗是唯一说三乘共一证悟的大乘宗派。小乘二宗的毗婆娑宗与经部宗说三乘证悟同样的微细无我，但这仅是无补特伽罗自足或实体有的体性。唯识宗与自续派称菩萨较证细人无我的声闻与缘觉证得更细的空性，即法无我。此外，在自续派的两个分派顺瑜伽行自续派与顺经部行自续派之中，前者说有粗法无我，此即唯识宗的细法无我能取所取体性无别，作为中观师他们亦说细法无我的谛实有空，其谛实有即非由对心显现而安立为有。他们说独觉修习粗法无我：能取所取体性不异，菩萨修习细法无我：一切法非谛实有，而声闻修习细人无我，无实体有或自足之体性（的补特伽罗）故此顺瑜伽行自续派说有三种证悟。
+　　自续师说诸境有其特别的存在方式，但无非由对心显现而安立者。如幻师化出的盛宴有通过对观者的错乱心显现而安立的存在方式。咒力影响了包括咒师本人在内每一个人的心，观者以为就在那处有一宴席不依于他自在而有，而此虽对咒师如此显现，他却并不相信，他知道其体性而（于此上）不安立不依他的实体。同样，诸法对有情的不错乱识——眼、耳、鼻、舌、身、意识显现，而通过对心的显现它们特别的存在方式亦得以安立，错谬则在于诸境上被加上了不依于对心显现而有的存在方式。无我见的所破是诸境不依他的体性。
+　　对于应成师而言，如一事物有其特别的存在方式，则非由心安立，此二者是矛盾的。应成师说一切法（或补特伽罗或其它法）如同幻师所化之幻象是说它显现为自性有而实则不是。他们讲说了较他宗更为深细的所破，而他宗所说在西藏则被认为是对治较粗的妄执。佛宣说其它非究竟宗派的原因是化机自知不能悟解甚深教授则会泄气，故授以非甚深的无我而告之此是最深。
+　　粗我执较容易观察到，如当有人对我们说：“今天你的头发很光泽”，这时有一个能自在或拥有头发的“我”的执着。或者，有时当我们被责备或称赞时，即在胸间有一极紧而坚实、无可否认、不错谬、几乎可触可见之物——被冒犯、伤害、称赞或帮助的“我”有时我们在它现起时用微细不受干扰的意识加以检查时，它似乎是（与身心）相异的，有时它更似主之于仆，而非商主之于商队，这是分别、粗的人我执，而我们于此上专注可能较进趣俱生粗人我执更易进步。
+　　任何宗教的一个讲求实修而谦逊的修行者会确知自己眼下还不能悟解最极的教授，为了避免这一问题，即在当今师长们虽然讲的是实体有空的见，却佯称是在说无自性的见。故此不难想象佛会开示（应成以外）其它的宗派而称其为究竟的宗派。
+　　此权宜说教的存在使得了义与不了义两类佛经的分判成为必须：其二者之差别在于某经是否主要讲说空性，若是则诸法的存在方式（真实义）在经中作了阐述，此经是了义的，因经语能如言而取故。非主要并明了讲说空性的经典则（是不了义）须加解释以便能了知经中所说诸法终极的存在方式。例如，佛说有五蕴：色、受、想、行、识，这一教授是能如言而取、决定并可靠的，这是因为诸蕴的存在是量所成立的，然而此教授（是不了义）需加解释以便能了知诸蕴终极的存在方式——其自性空。
+　　不了义经有二种：可如言取义者（如上蕴的例子）与不可如言取义者。不可如言取义的教授非由量所成，必须在特别化机对此教法的需要方面加以解释。例如佛说通过证悟与串习四谛：苦谛、集谛、灭谛、道谛能获得解脱。有四谛十六行相，略说为：
+　　苦谛：
+　　1、无常
+　　2、苦
+　　3、空
+　　4、无我
+　　集谛
+　　1、因
+　　2、集
+　　3、生
+　　4、缘
+　　灭谛
+　　1、灭
+　　2、静
+　　3、妙
+　　4、离
+　　道谛
+　　1、道
+　　2、如
+　　3、行
+　　4、出
+　　故此一切佛教宗派皆认为苦谛即轮回的内外诸法是无常、苦、空、和无我。
+　　有为法是无常是因为其坏灭不需除本身的生以外的因，有为法有坏灭的性质。这并不表示混杂，因就如在无风的房子里火焰能保持平稳，在得止（奢摩他）之后心能稳固住于任意选择的所缘境上，然而某刹那的火焰却非后一刹那的火焰。
+　　苦谛是苦是因为有身心之苦受，或虽有乐却易转成苦。苦谛是空是因为（苦谛）非常、一、自在的补特伽罗或如此补特伽罗的我所。苦谛是无我是因为（苦谛）非自体有之补特伽罗或如此补特伽罗的我所。法称说了知空、无我是设其余行相的目的，而此二行相是解脱轮回之道。
+　　然而根据应成宗，这些仅是粗的道，唯助于修心，非解脱之。这样的证悟不能成为补特伽罗自相有或自性有的俱生我执的对治，他们能导向解脱却非正解脱。
+　　故此根据应成宗，如自续、唯识、经部与毗婆娑宗所讲说的小乘道适宜于暂时无力修解脱道而需要能生此能力之辅助的绝大多数声闻缘觉。由于权宜化机的数量多于特殊化机，特别适宜他们的宗派（的设置）成为必须。当诸宗派依次增上的道理得到了理解，法门的繁多不仅不会被视为相违，反见为最为合宜，并能对佛殊胜的说法能力引生信心。</p>
+<p>　　此文是《西藏的密宗（宗喀巴）密宗道次第广论第一卷并释》的译者吉弗里霍普金斯所辑补遗部分的《空性》篇，原文注云主要依据是嘉木样协巴《宗派广论》与贡却季美旺布将此论摄略而成的《宗派宝蔓论》，小乘对菩萨道的解释取自达仓的宗派论。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../ptdcdzj/zmxf/bxzg/xczpdzjcrpqjs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../ptdcdzj/zmxf/bxzg/ptdcdgysgbfzygqgxjs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../ptdcdzj/zmxf/bxzg/xczpdzjcrpqjs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../ptdcdzj/zmxf/bxzg/ptdcdgysgbfzygqgxjs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../ace.js"></script>
+        <script src="../../../editor.js"></script>
+        <script src="../../../mode-rust.js"></script>
+        <script src="../../../theme-dawn.js"></script>
+        <script src="../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

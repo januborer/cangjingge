@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>胜天王般若波罗蜜经卷第六  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="胜天王般若波罗蜜经卷第六"><a class="header" href="#胜天王般若波罗蜜经卷第六">胜天王般若波罗蜜经卷第六</a></h1>
+<p>　　　　胜天王般若波罗蜜经卷第六</p>
+<p>　　　　　　　　陈优禅尼国王子月婆首那译</p>
+<p>　　　　述德品第十</p>
+<p>　　尔时文殊师利菩萨摩诃萨。即从座起偏袒右肩右膝著地。合掌向佛头面作礼而白佛言。世尊。菩萨摩诃萨。于几劫数行般若波罗蜜。供养几佛而能如是对扬如来。说甚深般若波罗蜜如胜天王。</p>
+<p>　　尔时佛告文殊师利菩萨摩诃萨。善男子。如此之事不可思量。若非无数百千亿劫修习众行种善根者。则不闻是般若波罗蜜名。善男子。十方恒河沙世界中。诸恒河沙数尚可知。是菩萨摩诃萨。几劫行般若波罗蜜。供养几佛数不可知。文殊师利。过去无量无边阿僧祇不可思议劫。尔时有佛。名曰多闻如来应供正遍知明行足善逝世间解无上士调御丈夫天人师佛世尊。国名日光。劫名增上。时多闻佛。为诸菩萨摩诃萨说清净法门。诸善男子。勤修精进莫顾身命。</p>
+<p>　　时彼会中有一菩萨摩诃萨。名曰进力。即从座起偏袒右肩。右膝著地合掌向佛。头面作礼而白佛言。世尊。所说勤修精进莫顾身命如我解佛所说义者。菩萨摩诃萨。应当懈怠尔乃速成阿耨多罗三藐三菩提。何以故。菩萨摩诃萨若勤精进。是则不能久住生死。菩萨摩诃萨行般若波罗蜜。断伏烦恼久住生死。终无自度速证涅槃不化众生。世尊。菩萨摩诃萨。处生死中用之为乐。不以涅槃而为乐也。何以故。世尊。菩萨摩诃萨。利众生事以之为乐。随彼所乐即用方便。说种种法令得安乐。若证漏尽不能利益一切众生。世尊。是故菩萨观察生死起大悲心。不舍众生成就本愿。世尊。菩萨摩诃萨。具方便力久住生死。得见无量无边诸佛。及闻无量无边正法。教化无量无边众生。是故菩萨摩诃萨。不厌生死不乐涅槃。世尊。菩萨摩诃萨若观生死而起惊怖则堕非道。不能利益一切众生。通达如来甚深境界。云何非道。所谓贪乐声闻辟支佛地。于诸众生无大悲心。何以故声闻辟支佛道。即非菩萨摩诃萨道。何以故。声闻缘觉怖畏生死求速出离。功德智慧则不具足。以是义故。非菩萨道。</p>
+<p>　　尔时多闻世尊赞进力菩萨摩诃萨言。善哉善哉。善男子。如汝所说。菩萨摩诃萨。应修自行勿习非道。</p>
+<p>　　进力菩萨白佛言。世尊。何者是菩萨摩诃萨自所行道。</p>
+<p>　　尔时多闻世尊告进力菩萨摩诃萨言。善男子。菩萨摩诃萨。成就一切功德智慧。以大悲力不舍众生。远离声闻辟支佛地。得无生智不舍三有。心无求望而增善根。方便修行诸波罗蜜。以智慧力无分别心。生诸善根成就尽智。无量功德。无一法生方便现生。无一众生方便教化。知一切法皆自性离。观诸佛国犹如虚空。而以方便严净佛土。知一切佛法身无像。方便示现相好庄严。随诸众生心所须欲。即能应与。菩萨身心常寂静离。而为众生种种说法。亦以方便远离喧挠。修诸禅定知自性空。悉能通达甚深智慧。而以方便为他说法。不证声闻辟支佛果。求佛解脱不舍菩萨一切道行。善男子。是名菩萨摩诃萨道。文殊师利。</p>
+<p>　　进力菩萨从多闻世尊。闻说菩萨所行境界得未曾有。即白佛言。希有世尊。如我解佛所说义者。菩萨摩诃萨具足方便。一切诸法无非其道。世尊。譬如虚空悉能容受一切众色。如是菩萨具足方便所行之道摄一切法。又如虚空树木药草果树香树因之增长。如是诸物不染虚空亦不能净。不能令嗔亦不令喜。如是菩萨摩诃萨。有方便般若波罗蜜。缘一切法皆悉是道。若凡夫法。若学人法。辟支佛法。若菩萨法。若如来法。何以故。菩萨摩诃萨悉通达故。又譬如火若遇树木竹草必无退还。是等草木皆利益火发其光明。诸法亦尔。悉是菩萨摩诃萨道。譬如金刚自体坚密。刀不能斫。火不能烧。水不能烂。毒不能害。菩萨摩诃萨方便智慧。声闻缘觉及诸外道。一切烦恼所不能坏。世尊。如清水珠若在浊水即为之清。菩萨摩诃萨。般若波罗蜜珠。能使一切众生烦恼悉得清净。世尊。譬如妙药珠宝毒不共居能消众毒。菩萨摩诃萨行般若波罗蜜方便。不与一切烦恼共俱悉能断灭。世尊。以是因缘。一切诸法皆是菩萨摩诃萨道。</p>
+<p>　　文殊师利。进力菩萨说是法门时。众中八千菩萨发阿耨多罗三藐三菩提心。二百菩萨得无生法忍。文殊师利。过去多闻佛所进力菩萨。今胜天王是。</p>
+<p>　　尔时文殊师利菩萨白佛言。世尊。云何菩萨摩诃萨行般若波罗蜜。得坚固力拥护正法。</p>
+<p>　　佛告文殊师利菩萨言。善男子。菩萨摩诃萨。宁弃身命不舍正法。于他卑恭不起憍慢。无势力人之所耻辱其心能忍。饥渴众生即便惠施最胜饮食。在厄难者施其无畏。于诸疾病如法疗治。贫穷众生令丰财宝。诸佛塔庙白灰泥涂。恶事则掩光扬善事。苦恼众生则施安乐。文殊师利。菩萨摩诃萨行般若波罗蜜。修如是行得坚固力拥护正法。</p>
+<p>　　文殊师利菩萨白佛言。世尊。菩萨摩诃萨行般若波罗蜜。云何能调伏心。</p>
+<p>　　佛告文殊师利菩萨言。菩萨摩诃萨行般若波罗蜜。不滥他事先思后行。心性调直离谄曲行。不自矜高意常柔软。文殊师利。菩萨摩诃萨。如是行者能调伏心。</p>
+<p>　　文殊师利菩萨白佛言。世尊。菩萨摩诃萨行般若波罗蜜。修是等行当生何道。</p>
+<p>　　佛告文殊师利菩萨言。菩萨摩诃萨如是行般若波罗蜜者。或生天中。或生人中。若生天中则为帝释值佛出世。或大梵王娑婆国主值佛出世。若生人中作转轮圣王长者居士值佛出世。文殊师利。菩萨摩诃萨。调伏心行得如是生。</p>
+<p>　　文殊师利菩萨白佛言。世尊。正信流出何法。</p>
+<p>　　佛告文殊师利菩萨。正信流出得善知识。世尊。布施流出何法。</p>
+<p>　　佛言。流出大富。</p>
+<p>　　世尊。多闻流出何法。</p>
+<p>　　佛言。流出般若波罗蜜。</p>
+<p>　　世尊。持戒流出何法。</p>
+<p>　　佛言。流出一切善道。</p>
+<p>　　世尊。忍辱流出何法。</p>
+<p>　　佛言。流出容受众生。</p>
+<p>　　世尊。精进流出何法。</p>
+<p>　　佛言。能成就一切佛法。</p>
+<p>　　世尊。思惟流出何法。</p>
+<p>　　佛言。流出寂静。</p>
+<p>　　世尊。般若流出何法。</p>
+<p>　　佛言。般若流出离一切烦恼。</p>
+<p>　　世尊。听法流出何法。</p>
+<p>　　佛言。流出远离疑网。</p>
+<p>　　世尊。如法问流出何法。</p>
+<p>　　佛言。出决定智。</p>
+<p>　　世尊。住寂静流出何法。</p>
+<p>　　佛言。流出禅定及诸神通。</p>
+<p>　　世尊。正修流出何法。</p>
+<p>　　佛言。流出厌离道。</p>
+<p>　　世尊。无常声流出何法。</p>
+<p>　　佛言。流出无所摄护。</p>
+<p>　　世尊。苦声流出何法。</p>
+<p>　　佛言。流出无生。</p>
+<p>　　世尊。无我声流出何法。</p>
+<p>　　佛言。流出灭我我所。</p>
+<p>　　世尊。空声流出何法。</p>
+<p>　　佛言。流出寂静。</p>
+<p>　　世尊。正念流出何法。</p>
+<p>　　佛言。流出圣正见。</p>
+<p>　　世尊。圣心离流出何法。</p>
+<p>　　佛言。流出三昧神通。</p>
+<p>　　世尊。圣道流出何法。</p>
+<p>　　佛言。流出圣果。</p>
+<p>　　世尊。信乐流出何法。</p>
+<p>　　佛言。流出成就诸解脱。</p>
+<p>　　世尊。佛生流出何法。</p>
+<p>　　佛言。流出一切助菩提法。</p>
+<p>　　尔时胜天王白佛言。世尊。云何佛生。</p>
+<p>　　佛告胜天王言。如发菩提心。</p>
+<p>　　世尊。云何发菩提心。</p>
+<p>　　佛言。大王。如生大悲。</p>
+<p>　　世尊。云何生大悲。</p>
+<p>　　佛言。不舍一切众生。</p>
+<p>　　世尊。云何不舍一切众生。</p>
+<p>　　佛言。如不舍三宝。</p>
+<p>　　世尊。谁不舍三宝。</p>
+<p>　　佛言。无烦恼者。</p>
+<p>　　尔时胜天王白佛言。希有世尊。希有修伽陀。诸佛世尊如是秘密甚深微妙。常说一切法空无生无灭寂静。不破所修善恶果报远离断常。世尊。于世界中颇有众生闻如是法。不起正信敬重之心生毁谤不。世尊。是等众生过去之世。因由善业得受人身。亲近恶知识故。不信如是甚深之法。则为孤负过去善业。诸佛世尊恩德深重。假使自割身肉出血供养如来。亦不能报以佛恩故。我等今日增长善根。得大法乐住大自在。世尊。菩萨摩诃萨行般若波罗蜜。应知佛恩。近善知识。当学佛行令得佛果。</p>
+<p>　　说是法时。众中二万五千菩萨得无生法忍。四万五千人天发阿耨多罗三藐三菩提心。一万二千天子得远尘离垢法眼净。</p>
+<p>　　　　现化品第十一</p>
+<p>　　尔时善思惟菩萨摩诃萨白胜天王言。如来所造化佛更能化不。</p>
+<p>　　尔时胜天王答善思惟菩萨言。今对世尊以为明证。佛所化佛更能化作恒河沙数无量化佛种种色相。神通说法利益众生。善男子。诸佛宿世愿力清净故能如是。</p>
+<p>　　善思惟菩萨白胜天王言。大王。善说甚深之法。诸佛宿世愿力清净。唯愿大王。请佛神力。令此般若波罗蜜久住世间无有隐没。</p>
+<p>　　胜天王答善思惟菩萨言。善男子。般若波罗蜜一切诸佛之所护持。何以故。文字所说般若波罗蜜。如是文字不生不灭无有隐没。字所显义亦不生不尽无有隐没。善男子。诸佛如来甚深般若波罗蜜亦不隐没。何以故。法不生故。若法无生此则无灭。即是如来秘密之教。若佛出世若佛不出性相常住。是名法界。亦曰如如。名不异际随顺因缘而不违逆。是为正法。其性常住无有隐没。</p>
+<p>　　善思惟菩萨白胜天王言。大王。能护正法是何等人。</p>
+<p>　　胜天王答善思惟菩萨言。善男子。若不违逆一切法者。名护正法。何以故。无有诤论不违道理。名护正法。</p>
+<p>　　又问。云何不违道理。</p>
+<p>　　答曰。若顺文字不违道理无所诤论。名护正法。何以故。世间凡夫皆著诸见。顺道理者则常说空。是故世间而起诤论。如是凡夫爱重有法。顺道理者于此则轻。世间说有常乐我净。顺道理者说无常苦不净无我。是故世间而生诤论。善男子。一切凡夫顺世间流。顺道理者逆世间流。是故世间则生诤论。一切凡夫著阴界入。顺道理者说一切法悉无所著。是故世间而起诤论。善男子。随顺世者不行道理。顺道理者与世相违。</p>
+<p>　　善思惟菩萨白胜天王言。大王。今者取何等法。</p>
+<p>　　胜天王答善思惟菩萨言。我不取人不取法。</p>
+<p>　　又问。云何不取。</p>
+<p>　　答曰。我离众生离法离。是离悉不可得。过去未来现在离。离不可得。诸佛离诸佛不离。佛国土离国土不离。法离法不离。善男子。如是之行名顺道理无取不取。</p>
+<p>　　尔时善思惟菩萨赞胜天王言。善哉大士。善哉正士。能说如是甚深般若波罗蜜。无取无著无名无字。灭诸戏论。离能分别及所思惟。</p>
+<p>　　尔时众中有一天子。名曰贤德。即从坐起偏袒右肩右膝著地。合掌向佛头面作礼而白佛言。世尊。如胜天王所说无分别者为是何法。</p>
+<p>　　佛告贤德天子言。无分别法即是寂静。何以故。取可取无。离我我所。不起不息。是名无分别法。善男子。菩萨摩诃萨。如是观者能护正法。不见能护及以所护。说此法时。众中十千比丘心得解脱。一千天子得远尘离垢法眼净。</p>
+<p>　　尔时善思惟菩萨白胜天王言。何等辩才能如是说甚深之法。</p>
+<p>　　胜天王答善思惟菩萨言。善男子。一切烦恼习性无者。所得辩才能如是说。过言语道不可名宣第一义智。如是辩才能作此说。</p>
+<p>　　尔时善思惟菩萨问贤德天子言。善男子。云何无生法中以辩才说。</p>
+<p>　　尔时贤德天子答善思惟菩萨言。菩萨摩诃萨。不住无生无灭法中。则无辩才说甚深法。何以故。远离戏论不见所缘不见能缘。心无所住是故能说。不住人法不住此彼。唯住清净第一义谛。是故能说。</p>
+<p>　　尔时善思惟菩萨即白佛言。世尊。贤德天子甚为希有。乃能通达甚深之法辩才无尽。</p>
+<p>　　佛告善思惟菩萨言。善男子。此贤德天子。从妙喜世界不动佛所。而来至此娑婆世界。听受甚深般若波罗蜜。</p>
+<p>　　佛复告善思惟菩萨言。贤德天子。已于过去无量百千亿劫。修习陀罗尼门。穷劫说法亦无终尽。</p>
+<p>　　善思惟菩萨白佛言。世尊。何等陀罗尼。</p>
+<p>　　佛言。善男子。名众法不入陀罗尼。善男子。此陀罗尼过诸文字。言不能入心不能量。内外众法皆不可得。善男子。无有少法能入此者。故名众法不入陀罗尼。何以故。此法平等无有高下亦无出入。无一文字从外来入。亦无一字从此法出。又无一字住此法中。亦无文字共相见者。亦不分别法与非法。是诸文字说亦不减不说无增。从本以来无起造者无坏灭者。善男子。如文字心亦如是。如心一切法亦如是。何以故。法离言语亦离思量。本无生灭故无出入。是名众法不入陀罗尼。若能通达此法门者辩才无尽。何以故。通达不断无尽法故。善男子。能入虚空者则能入此陀罗尼门。善男子。菩萨摩诃萨。能通达此陀罗尼门。心得清净身口亦尔。所行附理般若坚固。一切众魔无有能乱。一切外道不敢视瞻。一切烦恼莫之能坏。身力成就心离怯弱。所说无尽能宣甚深一切圣谛。智慧多闻犹如大海。安住三昧喻须弥山。处众无畏如师子王。世法不染犹彼莲华。利益众生譬之大地洗诸垢秽喻如大水。成熟世间以方大火。清凉平等能悦众心。类之如月。能破诸暗譬其以日。摧烦恼怨名为勇健。心性调伏犹如大龙。能震法雷大云为喻。普雨众法譬之大雨。为诸众生除烦恼病犹彼良医。以法治世譬如国王。能护众生及护正法等四天王。于人天中财富最胜犹如帝释。心得自在譬大梵王自在王领娑婆世界。身得无碍如伽娄罗鸟。教示众生如世间父。能出法宝类毗沙门王能出众宝。功德智慧之所庄严。众生见者无不利益。诸佛世尊之所称赞。一切天众咸拥护之。善男子。菩萨摩诃萨。得是众法不入陀罗尼门。种种自在利益众生。方便说法而不穷尽。心无疲倦不求名利。法施平等无有嫉妒。持戒清净于身口意永无愆失。忍辱清净离诸嗔恼。精进清净所作办立。禅定清净善调伏心。般若清净悉无疑滞。具四无量犹如梵王。行诸三昧三摩跋提。世间最胜修无上道。具诸功德一切智慧受灌顶位。</p>
+<p>　　说是陀罗尼法门时。众中六万四千菩萨得不退转。三万菩萨得无生法忍。二万人天得远尘离垢法眼净。无量无边人天发阿耨多罗三藐三菩提心。</p>
+<p>　　　　胜天王般若波罗蜜经陀罗尼品第十二</p>
+<p>　　尔时文殊师利菩萨摩诃萨。即从坐起偏袒右肩。右膝著地合掌向佛。头面作礼而白佛言。希有世尊。如来所说。菩萨摩诃萨得是众法不入陀罗尼。所成功德无量无边。</p>
+<p>　　尔时佛告文殊师利菩萨言。善男子。如是功德。假使如来百千年说亦复不尽。</p>
+<p>　　尔时众中有一菩萨摩诃萨名寂静意。白文殊师利菩萨言。菩萨摩诃萨。得是陀罗尼。为佛世尊之所赞叹。如此之人善得大利。自行化彼皆悉不空。</p>
+<p>　　尔时文殊师利菩萨答寂静意菩萨摩诃萨言。善男子。第一义中无法可赞无色无相。无色相者有何可赞。无可赞故于何欢喜。寂静意菩萨白文殊师利菩萨言。如我闻佛修多罗中说。一切法无我我所。无能令喜无能令嗔。此法平等菩萨应学。譬如大地。住在水上。若凿井池即得用水。其不凿者无由致之。如是圣智境界遍一切法。若有勤修般若方便即便得之。其不修者云何能得。是故菩萨欲求菩提。不得懈怠勤修精进。如是之法则在现前。善男子。如生盲人不能见色。如是烦恼盲诸众生不能见法。如人有眼无外光明不能见色。行人如是。虽有智慧无善知识不能见法。如有天眼不假外明自能见色。菩萨摩诃萨入法流者自然胜进。如在胎者日日增长而不自见。菩萨摩诃萨勤行精进亦不自见众行增长。而能成就一切佛法。譬如雪山有药树王不枯不析。菩萨摩诃萨勤修精进。一切众行不退不失。譬如转轮圣王。出现于世则具七宝。菩萨摩诃萨发菩提心具七法宝。所谓布施持戒忍辱精进禅定智慧及方便力。又如转轮圣王游四天下。于诸众生其心平等。菩萨摩诃萨以四摄法利益众生亦复如是。又如转轮圣王所在之处则无诤讼。菩萨摩诃萨如实说法亦无诤论。譬如三千大千世界初成。即有须弥山王及以大海。菩萨亦尔。若发阿耨多罗三藐三菩提心。即有般若及以大悲。譬如日出其高山者先照光明。菩萨摩诃萨得般若炬。高行菩萨善根熟者先照其光。譬如大地荷负一切。华果树木草药皆悉平等。菩萨摩诃萨得是陀罗尼门。于诸众生其心平等。</p>
+<p>　　尔时世尊赞寂静意菩萨摩诃萨言。善男子。如汝所说。善男子。菩萨摩诃萨得是陀罗尼门。凡有所说一文一字无非佛语。善男子。此所说法离色声香味触。何以故。非世法故。无尽无边能入一切身心轻利。假使百千佛前说者亦不怯弱。何以故。此菩萨摩诃萨。得佛住持力故心无所著。不著我。不著众生。不著法。即得清净法界。清净如来。清净实际。得法无尽。字无尽。说无尽。即生欢喜。得般若故。得阇那故。无疑网故。</p>
+<p>　　说是陀罗尼法门时。众中八千菩萨得此众法不入陀罗尼。一万二千菩萨得不退转。五千菩萨得无生法忍。一万六千天子得远尘离垢法眼净。无量无边众生发阿耨多罗三藐三菩提心。</p>
+<p>　　尔时世尊告寂静意菩萨言。此陀罗尼能伏众魔。破诸外道及憎嫉法人。灭烦恼火然般若灯。拥护法师令至涅槃。调伏自心善化外众。美身威仪见者欢喜。为正行人平等说法。如实观察众生根性不前不后。</p>
+<p>　　说是法时。三千大千世界诸须弥山及以大海皆悉震动。诸天雨华。曼陀罗华。摩诃曼陀罗华。曼殊沙华。摩诃曼殊沙华。优钵罗华。拘物头华。分陀利华。迦摩罗华。诸天空中作众音乐不鼓自鸣。</p>
+<p>　　尔时世尊告寂静意菩萨言。善男子。过去之世无量无边不可数不可数劫。有佛出世名曰宝月如来应供正遍知明行足善逝世间解无上士调御丈夫天人师佛世尊。国名无毁。劫名欢喜。声闻弟子三十二亿。菩萨摩诃萨无复数量。是佛成道无有苦行及降天魔。时彼众中有一菩萨名宝功德。辩才巧妙种种说法。</p>
+<p>　　尔时大众请佛住世勿入涅槃。时宝功德菩萨告大众言。如来世尊无生无灭。何用劝请勿入涅槃。若虚空入涅槃如来乃入涅槃。若实际真如法界不思议界入涅槃。如来乃入涅槃。何以故。如来之法无成无坏无染无净。非世出世有为无为非断非常。假令一口而有十舌。是一一舌复生百舌。是一一舌复生千舌。亦不能说如来成坏。宝功德菩萨说此法时。八万六千菩萨得不退转。七千菩萨得无边功德陀罗尼。悦意陀罗尼。无碍陀罗尼。欢喜陀罗尼。大悲陀罗尼。月爱陀罗尼。月光陀罗尼。日爱陀罗尼。日光陀罗尼。须弥山陀罗尼。大海陀罗尼。德王陀罗尼。三万六千人天得远尘离垢法眼净。</p>
+<p>　　佛告寂静意菩萨言。尔时宝功德菩萨岂异人乎。即汝身是。以此因缘汝能说是陀罗尼门。</p>
+<p>　　尔时文殊师利菩萨而说偈言。</p>
+<p>　　　　总持如妙药　　能疗众惑病</p>
+<p>　　　　犹彼天甘露　　得者永不死</p>
+<p>　　尔时功德华王菩萨而说偈言。</p>
+<p>　　　　总持无文字　　文字显总持</p>
+<p>　　　　般若大悲力　　离言文字说</p>
+<p>　　尔时珊兜率陀天王即从坐起偏袒右肩。右膝著地合掌向佛。头面作礼而白佛言。世尊。诸佛如来不可思议。诸佛说法亦不可思议。诸大菩萨所行所说亦不可思议。我等诸天宿世之中善根深厚。得值如来闻说是法。即以种种天诸宝华天华天香。散佛如来以为供养。</p>
+<p>　　尔时世尊告珊兜率陀天王言。大王。凡欲供养佛如来者当修三法。所谓发阿耨多罗三藐三菩提心。护持正法。如闻修行。大王。若有修行此三法者。是人名为供养如来。大王。假使如来寿命一劫住世。说此供养福报不能穷尽。是故大王。若欲供养佛如来者。具此三法乃名供养。大王。若有护持如来一四句偈。是人则为拥护过去现在未来诸佛阿耨多罗三藐三菩提。何以故。诸佛如来皆从法生。法供养者名真供养。一切资财所不能及。法供养者诸供养中最为第一。</p>
+<p>　　尔时世尊告珊兜率陀天王言。我念过去无量无边阿僧祇阿僧祇劫数行菩萨道时闻虚空中诸天说偈。</p>
+<p>　　　　天人远离大宝藏　　王贼水火所去失</p>
+<p>　　　　百千万劫法难闻　　得闻不持不施等</p>
+<p>　　　　道心为本化众生　　如实修行心寂静</p>
+<p>　　　　自利利他平等心　　如是修行供养佛</p>
+<p>　　大王。我于往昔初闻此偈即为他说。有八千人发阿耨多罗三藐三菩提心。是故大王。以法供养最为第一。何以故。一切诸佛从法生故。</p>
+<p>　　　　胜天王般若波罗蜜经卷第六</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/stwbrblmj/stwbrblmjjd5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/stwbrblmj/stwbrblmjjd7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/stwbrblmj/stwbrblmjjd5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/stwbrblmj/stwbrblmjjd7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

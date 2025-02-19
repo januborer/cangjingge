@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>佛说濡首菩萨无上清净分卫经卷下  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="佛说濡首菩萨无上清净分卫经卷下"><a class="header" href="#佛说濡首菩萨无上清净分卫经卷下">佛说濡首菩萨无上清净分卫经卷下</a></h1>
+<p>　　　　佛说濡首菩萨无上清净分卫经卷下</p>
+<p>　　　　　　　　宋沙门翔公于南海郡译</p>
+<p>　　时龙首菩萨谓濡首曰。去矣族姓子。东行分卫。</p>
+<p>　　答曰龙首。其幻化野马宁有东西南北方乎。－曰吾于仁前尚不能言。况敢所说。何则然者。以其诸辩从尊所问。仁即应顺如法发遣。一一解散而无挂碍。故吾无辞莫知所对。－曰夫达者都无言取。况共乃复有所说乎。是者诸法之无由矣。－曰何谓为诸法之无。</p>
+<p>　　答曰龙首。无所无者。斯诸法无是诸法要。以此之慧。乃能通彼众音声耳。无所宣布乃为要义。是岂非至要义说哉。－曰此续在想行者也。－曰何所行应离诸想。</p>
+<p>　　答曰龙首。菩萨不于色痛想行识界有想。又于法本亦无所行。其本无者亦无所行。以是之行得离诸想。说是深邃微妙法时。五千菩萨逮致此慧。二千天人发菩萨心。</p>
+<p>　　时龙首曰。吾将退矣。以童真非我侣故。－濡首报曰。吾无去来亦非有侣亦无所俱。何则然者。以道无侣故。亦不想念与诸法侣。又亦不与欲行为侣。于本无法。亦不见而有其侣复与所俱。又本无者都不言有。吾我性有人寿命及身养育法。人物言说识觉所倚著。及其所作行趣之事。诸法之本本无如此。当与其谁而为侣俱耶。其有侣者是欲侣俱也。譬如龙首。有明达人而念言曰。如来所化幻士所化。如是此化等一无异化。而斯人化各各言曰。吾与汝侣汝与我俱。于仁龙首意云何。其此人化为有侣无。－答濡首曰。化无侣也。所以者何。用化本无无所有无形像不可得故。－曰如是龙首。于其生死都亦无侣亦无所俱。其有侣俱斯则有别。若起侣想是便与欲俱。明达菩萨当解侣想。何则然者。以其诸法如幻如化无侣不侣。欺哉诸法慌忽无信。若梦影响。所有如空。想识无安无处无持无意。无念无所有。已离诸念。于念无念应本无念。－曰濡首。仁为曾与幻士化人。对共语言行来坐起。又共谈会有所思惟不。</p>
+<p>　　濡首答曰。不见也。</p>
+<p>　　龙首曰。幻士何像貌。－曰其幻者似人像类。幻之化像亦复若此。合同像耳。所以者何。如其幻化亦不彼脱亦不此脱。幻化亦不与人而异。人亦不与幻化有异人便幻化。如幻化者以幻化法而问幻事。诸法亦尔。－又问濡首。仁为自曾与幻化复共坐起有所言谈交游讲会相对住不。－曰云何龙首。幻士及化与欲有异耶。至于吾我及人寿命养育之法有异乎。吾以此幻化之说。欲试问仁。知大士于斯有异辩才。当敷何法也。－曰仁如所试。为欲试虚空之幻化法耳。仁便念幻化为有想也。幻者本无。无想无念亦无形像。亦无所有已离众念。</p>
+<p>　　濡首曰。若此龙首。法亦如幻幻化本空。其空无像亦不可见。－曰濡首。诸法无像不可见乎。如仁所言。一切菩萨摩诃萨等当云何受其封拜得成无上正真道意。为谁知度受封拜者。</p>
+<p>　　濡首答曰。云何龙首。曾行山中为闻响声。于山中为有响声出不乎。其声为有所住处不。以何耳识闻其声耶。彼声为有所说不。宁有受持响声者耶。又复谁共谁闻响声者。－龙首菩萨答曰。无也。</p>
+<p>　　濡首曰。如此若菩萨解诸法。若如响空者。则一切诸音声如响离彼众声。其诸菩萨以此封拜于无上正真之道。于斯亦无受封莂者。－十方诸来大菩萨众咸闻濡首童真所说。莫不喜踊叹歌无量。</p>
+<p>　　尔时龙首谓濡首曰。宜时侣行入城分卫。念其日时得无过耶。</p>
+<p>　　答曰龙首。诸法无过亦不有时。其处于想行之者。彼则有时不时之想耳。明达菩萨于本了无解空法者。岂其有时不时言哉。凡诸余法有时不时。无时非时乃应无上如佛法律矣。其在算数计时节者斯则有过时之想。如诸世尊贤圣弟子。常自饱足以道智慧。慧无想识于想无想行无诸作。亦无想念无念不念。以此智慧而常饱足。世尊圣众都无食念。亦不复想有食之事。其如此食而为食者。是谓贤圣应无杂食。若永服食如此食者。是则长演甘露法食者。彼以此食用之为力。能住身命至于一劫复过一劫。所以者何。其如此者彼已觉了诸法之行故。都无想念解空清净。晓了如此。是不复有求食之识。如其凡夫未达者也。又诸如来无上正觉及普世贤圣之等。有大慈悲喜护之心。惠施仁爱愍念众生。使兴于世耳。唯欲济度五道勤苦故。现入郡国县邑聚落行受分卫。而彼众圣已离诸食不食于食。唯以慧解诸定正受为常充足。其于杂食而续食者。斯受流转便数生死。用是之故诸佛世尊。以于诸食而悉明了。都无复杂食之想。慷慨喟然安和住身。能如恒沙复过是数。从始发意。永常无复诸饥渴杂想念也。至在佛树明星出时。从始所可受食者。彼因此食。其于正士及大丈夫英雄龙猛。又至师子诸调儒夫及众华孚正士秀异种种莲华男子无上丈夫法御天人师。应所当得。应所明了。应所觉达。悉已了而具足。等于一像合会智慧。得成无上正真道意也。以是龙首。一切菩萨普诸如来及贤圣等。唯以此食升致无上正真觉道。便能住寿如恒沙劫。又能逾此复倍无数。而诸如来永无其劳。所以者何。以其应于无想食故。无念不念无合不合。亦不想合贤圣之行。恒便随顺出诸香气。自然清净无想无念无诸巢窟。亦无戏行本空自净。如是龙首。菩萨摩诃萨当作此食乃应法食。</p>
+<p>　　龙首答曰。善哉善哉。濡首所说法之微妙。吾已饱足于是上食。但闻此法食之要说。便为已甚具足矣。况其长食无杂食者。岂当复食思欲食哉。－云何龙首。虚空之体宁当有杂食之食。又言饱足乎。－对曰濡首。空无所有也。－又曰龙首。为能饱足幻士所化不。</p>
+<p>　　答曰不也。－云何龙首。宁可以食饱足中现像耶。</p>
+<p>　　答曰不也。－又曰龙首。夫大海者宁复饱足于众流乎。</p>
+<p>　　答曰不也。－濡首复曰。如是龙首。诸法无厌若如虚空。而仁向言有饱想乎。诸法如空无想无愿。无起无行亦无所作无所造。永然无欲以定以脱。无色无像无坚无固。了如虚空都无所持。诸法如此。云何而起有饱想耶。－龙首又曰。若是濡首。有此行者一切不复食于食乎。而仁说食本空耶。</p>
+<p>　　濡首曰。若此龙首。则一切众生而无食也。譬如龙首。世尊化作恒边沙人以食食诸化人。云何族姓子。彼诸化人以何为食。宁复有食者不乎。</p>
+<p>　　答曰。化者无想不识无所有亦复无食。何况言当有食者耶。若此龙首。一切诸法有见无见如幻化也。普诸众生而不解此。以其不解便即流转受生死矣。于中观之亦无所有亦无所得亦无流转。解生死无如本无者。则一切无受亦无生死。不晓本空便有生死。其生死者亦无生死。于其生死亦无所受亦无所得。何生死法者乎。</p>
+<p>　　答曰濡首。斯言甚善。宜知其时可共行矣。还于祇树给孤独园。吾诸饥渴永为已断。</p>
+<p>　　答曰龙首。譬如幻士所可化人。而化人言吾饥渴。斯宁为饥野马法耶。如是龙首。一切若此。其诸法者皆如野马。解此乃解。而族姓子言。吾饥渴以为断乎。当食斯食。如诸法食不断无坏亦无饥渴。一切诸法本已饱足。以故彼诸凡夫下士不了其本。则作此言。吾饥我渴又言饱足。如诸贤圣解其法本。彼无饥渴亦无想足。解诸饥渴亦无生死。亦无戏行亦无想念。彼已无动亦无倚著。诸法已脱本无著故。</p>
+<p>　　龙首又曰。如仁濡首。诸所可说彼之要言。但说法界也。－濡首复谓龙首曰。其法界者。亦无说不说。亦无言趣无屈无申。所以者何。如是龙首。法界无所有。言者无说亦不所说。亦无戏行无所著无合偶。彼无想念亦不有念。亦无所起亦无灭行。譬如龙首。虚空之界无想无念无起无灭。诸法亦尔同如虚空其本相空。本不可得亦不可知。其相如是亦不可得有能得其相。彼诸如来般泥洹者亦当可得。若此龙首。一切诸法都无处所。无色无像亦不可见。以是之故。恒边沙诸如来般泥洹者。其于法中亦复无般泥洹者。亦无地水火风界而般泥洹。亦无空界亦无识界。般泥洹者泥洹如是。于泥洹中亦无泥洹。若诸法有泥洹想者。则虚空界有泥洹想耶所以者何。以其诸法本定而空。诸法静寂。而复寂于此凡夫下士之类起有泥洹想念者。因便有吾。言我有受。有吾我受。有寿命受。有人物受。有想识共来。解真无法者。即起是想想念泥洹。以此故而不得脱。便生老病死。取要言之十二因缘至于大苦众患集会。为彼之故言有泥洹。为诸有二想。行者以其不解诸法本无。已不晓了不觉悟故。与诸如来诸佛世尊。明解深入权行菩萨。宿树众善立不退转。积累功德有大威神。为极唱导无上大师。与如是等菩萨摩诃萨行。而违反起有诤想。又与声闻缘觉之众。与其相违而起忿诤。与彼诤故当受大罪。以其诤故长流生死。当归不净极臭处矣。一切众圣永所不叹。诸上明达所可远离。譬如族姓子有城郭若复聚落。去其不远积众臭秽。于其彼处人众趣往昼夜不息。遂增污秽不净臭处不洁之物也。诸愚凡夫处于五道。起灭不竟众想无。断广其生死如彼增臭也。以其不明又不晓了。不解其元不达本无。雾笼茷盛痴冥积故。广受流转增长生死五道之趣。或生地狱或即饿鬼。复归畜生。或天或人。神变无常五道勤苦。灾患颠倒痛痒创楚。众恼之元诸苦所由。遂增臭秽流不净气。使彼明达贤圣之众乃以为灭所共贪疾。又诸慧士所可远离。用是杂垢长不解脱。复使斯类是趣其生。是归有老生老苦。极忧恼万端。是致病死殃福追之。善则荣乐罪则祸随。以要言之患变猛集至其痛热众苦合会。而彼以故不脱生死。但由未了其本无故。长受生死如其增臭也。－龙首复谓濡首曰。云何濡首。得了其本。－曰以无心想以寂寞行。以起静定向入清净。其住是者则晓其本。－曰云何濡首。何谓为幻之寂寞曰其解了如幻者。此则幻之寂寞清净也。</p>
+<p>　　尔时耆年须菩提至濡首所睹其大众。即而问曰。诸正士等普来会此。为何讲乎。</p>
+<p>　　答曰贤者。吾于诸言都无所说。又贤者。宁闻诸幻人有所说不。山中之响梦影野马。为有言谈耶。复闻有其说者不乎。又贤者。如来所化宁有耳声。其复有闻者不为有识。若受持语言名字句说者不。</p>
+<p>　　答曰不也。－时须菩提。[火+霍]然于所坐慌惚之间。寂而灭定时舍利弗诣濡首所。睹其普众大会之场。率多菩萨咸听濡首所讲之说。见须菩提在于彼坐寂而灭定。问濡首曰。此贤者为何志故居斯便灭定。曰舍利弗。是须菩提离灭定不与法而有其诤。如是贤者。此以无诤行。无住无著无巢无处。过诸窟法而三摩越。时须菩提作是灭定。从定寤起而向世尊。即偏袒右肩。叉手跪作是言。自归诸佛无上觉者。其有显演如是深邃微妙法像难见之文。不可议说。已断所著等离诸想。已得寂安。其不退转大士等及诸初发意菩萨。逮闻如此劝发之说。岂不快哉。濡首又谓须菩提曰。不于此法有说有劝有彼所向也。何则然者。以诸法无劝无说无谈无识。又此要义无言无语。无住无动无去无来。无坐无卧无倚无处亦无所有。所以者何。是诸法本空无所有。其本不可得故。曰何谓濡首其本行法。曰惟贤者。诸法无行是行之要。当作是行。晓行是行乃为至行也。若此可共都行求食。曰濡首。吾不复入于聚落分卫。所以者何。逮闻是要已离聚落。亦离城想亦离色想。以要言之。亦离声香味细滑法想。都离诸想而无想念。曰唯须菩提。如此离其想行者。所是云何而进止乎。云何濡首。何谓如来所化色痛想行识。以何识法。如来所现化。化以何想而有进止。有所瞻视复有屈申乎。曰善哉善哉。须菩提。如世尊所叹仁为最晓空闲行者。</p>
+<p>　　濡首又曰。唯须菩提。可共诣佛礼事供养。濡首重曰。唯贤者。吾以清净食而请于仁。时舍利弗谓濡首曰。于何所与吾等食。为当施设何等之食。曰唯贤者。其所食者亦不有食。亦不吞食。又所吞食。亦不色声亦不香味亦不细滑。其所食处不在欲界。又不色界亦不无色。不处三界亦不离其中。是则诸佛世尊食处。时舍利弗谓濡首曰。善哉善哉。如仁所说吾已饱足。于时是无上食叹之名。况其已食如此食者。曰唯贤者。其食不以肉内外眼见。亦不天眼亦不慧眼处有所见。其食如此乃应等食也。尔时耆年须菩提及舍利弗并诸众生。闻是叹食之说。即于其处寂而灭定。时妙心谓濡首菩萨曰。当以何食食。须菩提舍利弗等。为以何食而三摩越。曰以无漏食。行无倚著食。行无众食。以此行而行。其作此食者。不复于三界食于食也尔时贤者须菩提舍利弗。从灭定寤各行分卫。时须菩提。入大长者家分卫。其长者妇为优婆夷。见须菩提默然而住。即请贤者为何之乎。</p>
+<p>　　答曰姊。来求分卫。曰贤者。仁续分卫想。来止了耶。曰姊。吾从本际已了分卫想。曰须菩提。其本际宁有了未了。言从本际已了分卫想乎。曰姊。如本际空未际亦空悉如本空。优婆夷曰。若此贤者。已悉空者奚为复说了不了乎。仁便伸手当施卿分卫。须菩提即自伸手曰贤者。是为罗汉不了其本反取灭证者手非。须菩提曰姊。罗汉手无形不可见亦无屈伸。譬如幻士为幻化人作此言。何所是幻者手乎。复言可伸幻者手耶。曰姊。幻手为可见不。又可伸乎。</p>
+<p>　　答曰不也。须菩提曰。若此姊。世尊说一切诸法如幻本空。若是贤者。世尊说一切空。何为贤者续求食。时优婆夷未寻与须菩提分卫。重曰贤者。可前钵。适当前钵。钵忽然不现。时优婆夷。以手索钵钵而无处。手亦不近于须菩提。优婆夷曰。善哉善哉。此则无著清净之身。应佛所叹空闲行者。优婆夷适作是言。钵即自出。时须菩提便前授钵。优婆夷取钵盛满饭授须菩提。便谓之言。贤者。是为释迦文佛所称叹。处闲居第一者钵非。曰姊。如佛所说空闲行者非有钵矣。曰如贤者空闲行者非有钵耶。曰姊无也。曰又贤者。闲居尚无钵。岂当复有受食缘乎。曰贤者。已记闲居。亦当无罗汉取灭证耶。又贤者。食此饭已。当了知食者如幻所食如化。又如化人食于幻者。亦当如以野马饮于渴者。其食所食当了如此。明解是者乃应如来达三世本无分卫之行也。若贤者。其起施念。有想受者。便造有众分数也。已受数者则有二见。以有二见便与凡夫流转五道。生死同归也。</p>
+<p>　　时优婆夷复谓须菩提。又如贤者。诸佛要法不但受食。及与施者。当应了如幻如化为本无为无有至于生死与泥洹法。亦当晓了如梦幻化野马影响亦如本无。于诸法亦悉当尔。诸法清净都无所有。无施无受。无戒无犯。无忍无诤。无进无懈。无定无乱。无慧无愚。于一切法都无所有。是行乃应世尊如法受食。弟子行法其如此解分卫行者。则于三界无杂食之想。亦复不处泥洹之乐也。须菩提闻优婆夷所说。即惘漠不知所言。曰贤者。泥洹为寂耶。岂无言而不对乎。曰姊。斯何言乃如此。须菩提曰姊。了幻法耶。</p>
+<p>　　答曰贤者。吾了诸法悉如幻化。幻者及化亦皆本无无所有。时须菩提。便于所处忽而灭定。欲知优婆夷志求何乘。以为其证。勇辩乃尔敢师子吼。明解幻法所说自恣。而无挂碍。尽力观察处。优婆夷为阿那含。曰姊。已得阿那含乎。优婆夷曰。云何贤者。如来法本宁有阿那含行法乎。又贤者。法无形色。亦复无来想像之迹。无彼此识无中间行。亦无所想无取无证。亦无处所。乃为明了道之行耳。向贤者。云何处阿那含毕。乐罗汉证法乎。又贤者。法无去来。其有去来有所趣向。有所有趣有起有灭有念有想。皆堕凡夫流转未解数也。是时优婆夷忽于所处。于须菩提前化于高广大人交露之座。普现感动光明相像。显转无上阿惟越致法轮。令普舍卫境界之内及十方土。莫不闻见此之所兴感变也。尔时空中万二千天。闻彼所说悉逮一生补处。舍卫国内志菩萨行者二万八千人。承宿众德皆得不退转。十方之众诸来大士其闻是说。百亿菩萨本得无所从生法忍。复闻是上要说即皆逮一生补处。于是濡首龙首菩萨。并诸土普来之众。及舍利弗须菩提等。俱从舍卫国甫出城门。[火+霍]然轻举忽升虚空。濡首菩萨寻扬身光。威神炜炜照耀暐晔。明影玓瓅逾于日月。普蔽余光皓然晃昱乃彻窈冥。如金翅王飞而行焉。一切众生莫不见者。其所经由彼众天人。皆闻诸法如梦幻化野马影响泡沫芭蕉之。要言深邃像说。各怀欢喜慈心相向。一切天人但闻梦幻声。而化幻法于见无见亦不可得。诸逮闻是像微妙说者。合百千众得不退转。时所经游于其中间。有长者子其名善意。宿立德本。亦闻濡首无上幻化之要说言。并复睹见神景变化。即发无上正真道意。寻自誓愿。吾于来世得为如来无上平等最正觉道。时所现感动亦当如是。濡首见彼族姓子有决得妙岐嶷之质。欲绍佛种乃发大志心在菩萨口咏誓愿声畅一切如师子吼。即请善意而告之曰。族姓子。汝解诸法如幻化者。必离劳乘声闻缘觉之地也。便当成致无上正真道意。又当晓了诸法梦幻之妙法说悉为无所有。时长者子跪而对曰。蒙解说诸法如幻如化。濡首重以诸法要言劝发长者子。长者子忻乐之心遂而踊跃。时彼大姓心巨旷解逮致法忍。八千天人发无上正真道意。时五千天子在于虚空。闻濡首劝进之说。[火+霍]然心解逮得无从生法乐之忍。咸悉肃然恭敬之至。已礼濡首忽升虚空各还本土。是时濡首龙首菩萨。舍利弗须菩提等。还于祇树给孤独园。俱诣世尊。稽首佛足却坐一面。龙首菩萨便从坐起。向佛叉手已濡首童真诸所讲谈法要之说。具启世尊。时佛赞曰。善哉善哉。濡首童真。善说诸法无上微妙。如梦如幻如化野马影响之声。则是诸慧深奥之至。是诸佛要。斯乃应如无形无像本无幻说。时佛顾告贤者阿难。受是濡首诸法要文。阿难敬前长跪白佛。唯然世尊。如教受之。当何名此经。云何奉持。时佛重复敷演濡首妙心菩萨等所说慧要。及舍卫国长者优婆夷。为须菩提所现感动。乃至转一生补处之轮。佛复告阿难。当受是上要之慧。又是贤者。此名濡首无上清净分卫经。亦名决了诸法如幻如化三昧。勤念受持。当广宣传普布演说。又是阿难。若善男子善女人等。闻斯要专心信向。是者阿难。则应面见诸佛世尊。又为濡首童真菩萨。必所感致无上正真之道。会成至佛。况其受持诵习讽读奉行应者。德极无上。是善男子善女人等。为逮诸佛之慧藏。为得诸佛最上要镇。又为诸佛之所拥护。普为十方诸现在佛所授封莂。诸佛为手授其决。当成无上正真道慧。佛说是已。濡首童真龙首妙心及诸菩萨。舍利弗须菩提等及众比丘。一切会者诸天龙神阿须伦人与非人。闻佛所说莫不欢喜。前为佛作礼而退。</p>
+<p>　　　　佛说濡首菩萨无上清净分卫经卷下</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/fsrspswsqjfwj/fsrspswsqjfwjjs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/jmlsyjgbrblmj.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/fsrspswsqjfwj/fsrspswsqjfwjjs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/jmlsyjgbrblmj.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

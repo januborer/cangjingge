@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《修空性略讲》(李 胜海居士译)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="修空性略讲李-胜海居士译"><a class="header" href="#修空性略讲李-胜海居士译">《修空性略讲》(李 胜海居士译)</a></h1>
+<p>　　　　修空性略讲</p>
+<p>　　　　　　　　　　　　　　　　李胜海居士译</p>
+<p>　　《广论》讲修空性资粮有三点：1、依止善知识，2、积资净忏，3、祁请上师，广大闻思。《广论》中讲修观资粮中要广大闻思，先树正见。</p>
+<p>　　得观必须得止，得中观见不一定需要止，见也是一种内心体验。</p>
+<p>　　嘉木祥协巴（妙音笑），是位非常重要的人物。初发业者如何生起空性体验，即先依止相似的止，修相似的观。如何依止止来修观，现证空性呢？依止无上瑜伽圆满次第来修空性。得中观见不用在得止之前，次第无定，均可以。</p>
+<p>　　修密前可以不得止，但空性见一定要有，无上瑜伽得止快。</p>
+<p>　　《广论》中辨别了义与不了义经的区别。龙树等菩萨是完全可靠的。自续、应成两派是中观见。佛护论师写了《中论释》破自生，清辩论师主张用因明论式来成立宗派见。月称维护了佛护，不许自续派的观点。集大成者是月称论师，应成派是四宗公认的，有马鸣及阿底峡尊者。自续派中有顺经部的（以清辩论师为代表）有顺瑜伽部的（以静命、莲花戒为主）。</p>
+<p>　　顺瑜伽行者不许有离心之外境，顺经部行者许有外境，他们都认为在胜义谛中一切不许有自性。瑜伽行派认为心是有自性，名言有，和不许有自性是不同的概念。所以要依止龙树和月称，连名言中也不许有自性。</p>
+<p>　　空性和无我。我是自性义，人和法均无自性。先讲人无我，后讲法无我，人无我容易修，人无我比较特别，学论要反复思考。</p>
+<p>　　主要的正理。人无我有七项观察，法无我是破四生，广论中主讲。参照以前大论师以前的修法，正理之王是缘起，其他一切正理均和缘起有关。三主要道中也讲观察空性圆满。略论中用四个步骤，一切法分成五大类。归纳起来，破一、破异、破不一亦不异，破又一又异。</p>
+<p>　　无明是生死根本。人我见不全是萨迦耶见，萨迦耶见又分我和我所。人我见中最主要的是自己的萨见（略称）。因为人最执著于自己，故从我自身破起。方法是找到所破，心如何执著，才能找到空性。若为破彼境，略论释中要求无我正理。生死根本是实执，什么也不想不能破实执，行相相同，作用相反。断实执，在境中见到无我轮回种子也摧坏了，看对境如何执著然后如何破。边执是通过对法有自性之执著，通过分析对于有自性之法是不存在的观点树立起来。</p>
+<p>　　心注一境后得止，用智慧来分析，名言中所认识的法之自性。寂天论师：当修行人寻求法之自性，有任何东西可贪吗？法称论师：你如果不否认错执之境，你不可能离开错执。《三昧王经》中说当一切法分析后，行者只有通过这一途径才能通往寂静。</p>
+<p>　　用正理是为了对治实执，不为了辩论。</p>
+<p>　　认识所破：人无我所破，怎样执人我之自性。人我执中粗分是指学了其他见地而得来的不变，不可分自在之我，细分是指与生俱来不用学就认为是自足自立实体有的我。具体执著为：五蕴依赖于我，我不依赖于五蕴；我是主人，五蕴身心是仆人。实体有和自足其实是不正确的，如同经理和全体职工一样，不是主仆关系，经理也是职工，不是体性各异，没有离蕴之我。</p>
+<p>　　名言中有：外道认为我和五蕴相异，有离蕴我；有部是五蕴聚的我，经部认为我是意识，应成派认为我只是一个观念，安立名言所依，五蕴和我，五蕴并不是我，如杯弓蛇影，是名言安立，分别安立的，只是名字或观念；唯识认为能取和所取是一体空，心外无物；自续认为修人无我也一样比唯识更进一步，修法无我，名言中是有自性的。（参考《宗派宝蔓论》p.15,16）唯识是讲胜义无自性，应成派认为名言全是主观的。前面的观点较粗，后面的观点较细。</p>
+<p>　　应成派认为自性是最细的，人无我是针对有自性的。我者是有自性之义，一切法均是自性安立。所破不认识，会产生问题，没有真实觉受，把论敌驳倒，只是理智所破。</p>
+<p>　　三种我执，三种方式。世俗不懂我执自性，认为实有自性，学过空性就知道一切法无自性，只是名言安立，世俗上安立名言中有。所有一切不一定要破，只破有自性的东西。</p>
+<p>　　执有自性的东西是怎么显现的呢？不明显地要想激动之事。强大的苦乐之事容易显现，力量太强，就不显现了，会退下去，非常难显现。观察时是用心之一角，很善巧的。五世达赖说：观察时显现，胃是我，呼吸是我，但仍未找到。我和五蕴如水乳一般融为一体，自足如木头立于牛奶中很清晰，很客观，非名言，是自立自在的，见到所破的形象则容易破斥。</p>
+<p>　　想强大的苦乐事是为了找到我执，我和身心融和成一体，「我」是实在，很客观的东西，不是名言安立的，很可信，很实在。如果这个世间上有一种东西，它是没有「我」的，那再没有什么真实之东西了。「我」和安立名言之五蕴相合，自在所破，任运自然。仅用想象，还不对。不要制造感觉，理论上之见，要客观地观察。</p>
+<p>　　一切法是名言，要三点配合起来修。这三点一齐来修，摧我执之山，已经正确认识我执之量，证空不难。积年累月，一直到找到为止。</p>
+<p>　　五蕴显不显现，只有一个孤伶伶之我。</p>
+<p>　　人我观察之第二步。「我」和五蕴的关系不是一就是异，他们是相互排斥的，完全排斥了其他可能性，从理论上肯定，在闻思修上花功夫。</p>
+<p>　　第三步，在上一步决定的基础上，如同非常怀疑老朋友一样，这是无始以来执著的习气。「我」和五蕴肯定不是有自性的，因为这个我是无意义的。只不过「我」是五蕴之异名，如同怀兔是月亮之异名。非常明确之经历来说明不对，用许多正理对每个人不适合。「我」是实有，如针刺手指，则「我」不光是异名，而发觉这是我的身心。</p>
+<p>　　五蕴是有五个蕴，是多，则「我」也应该是多；「我」只有一个，则五蕴也只能应该为一，只有一个蕴了。五蕴有生灭，则「我」也应有生灭，有自性的话，则「我」不能忆念前生，它们之间不可能有关系。业会失坏，「我」和五蕴是一，下世即另外一个五蕴，和「我」没关系了，岂不业失坏了吗？受报的只是「我」这个概念，在概念上延续下去。无自性但仍有业果，无自性但仍有作用。</p>
+<p>　　「我」是无始以来最珍贵的，屋子里只有两间房子，「我」不是存在于「一」这个房间，就是存在于「异」的房间，很怀疑地去找，现在在「一」这个房间中找不到，则这个「我」很重要，下个赌注，很害怕，到另一间屋子去找，怕失掉，一定要找到它。</p>
+<p>　　「我」和五蕴是异，「我」就不会有五蕴之特点，生、住、异灭了。别人踢你一脚，也不是在踢你，必须知道。从经历上来讲，安立名言所依，跟身心无关，那么从何处安立「我」呢？否则不可能。。或者五蕴是有为法，「我」既和五蕴是异，那么是否除了五蕴以外还有有为法了，这是不合理，另一种说法是「我」是无为法，我即是涅磐，或虚空不会变，而称为「我」就很荒唐。或者五蕴身心拿走了，应见到我了，有自性、客观的。（名言有，只是安立。）</p>
+<p>　　找过后，决定了不可得，名言中有自性有的我，都不显现，如虚空之瑜伽，内心决定「我」不可得，有自性之「我」决定不可得。决定的是境。</p>
+<p>　　否定中有两种，即没有肯定的否定，即无遮，如佛弟子不饮酒；有肯定的否定，即非遮，如天授很胖，他白天不吃饭。</p>
+<p>　　修空性中决定无遮，得了正见的标准，以前未修是产生了恐怖的感觉，以前修过的则产生非常欢喜。有自性之我不可得，名言有不是无遮。（略论，修定修观法要中有参考。）</p>
+<p>　　人无我之七项观察：前四步和前面一样，先观所破，凡是有自性「我」的话，只有二种情况，否则即不存在，我和五蕴非一，我和五蕴非异。首先确定所破，认识无我的所破，确定由因得出无我。安立我非自性有（宗），是缘起故（因），无我之因推出无我（喻）。我是缘起的，我是非一非异，我非蕴之所依（基础），我非依蕴，我非拥蕴，我非蕴聚、蕴形。</p>
+<p>　　龙树菩萨只讲五项。后二项是月称论师所讲。龙树所讲是来自经中的二十个执著。第一个执色是我，从有自性上讲，有自性则拥有色，色中有我，我中有色这四种，加上受想行识各有四种，合成为二十个。我和五蕴相异是外道的见解。主要是以前面二个下手，破一破异，天生不是这么执的，如果破了执著，能解脱了。不观察，从理论上道理上破。表面上看大师在破外道，是在辩论。一异问题是把各种分别结合起来。破这些，广修身心有受用，多一点有受用。</p>
+<p>　　第三，我不是蕴之所依，对酸奶来说，碗不是所依，树林的雪不是狮子之所依。不然我和五蕴相异了，反复修内心决定。（我在蕴中，蕴在我中。）</p>
+<p>　　第四，我非有自性的存在于五蕴中，或依于五蕴，如天寿住在帐子中，狮子住于林中，也是相异。</p>
+<p>　　第五，我非拥有蕴，如人拥有身体，我有耳朵，我有桌子。或归于一体。</p>
+<p>　　第六，我非五蕴聚合，五蕴聚是安立名言所依，与所安立法不是一样东西，五蕴聚不是有自性的，五蕴聚和各别五蕴非一非异。决定五蕴聚不是自性有。</p>
+<p>　　第七，我是蕴形（色聚），《广论》二十二卷中详述，定中修虚空瑜伽（名言不显现），出定修如幻瑜伽（名言显现有自性，不是实有），好象是实在的，内心决定无自性的幻有，只是名字，有作用。我是名言安立，可以造业感果。</p>
+<p>　　人无我中我所，把心转到我所也能破我所。</p>
+<p>　　决定一个法之空性则决定一切法之空性。没有深浅之分，只是对象不同，修人无我，与修法无我一样的。</p>
+<p>　　法无我破四生：〈1〉先认识所破，观身体能占有这么大空间，覆盖四肢，身体和躯体相融合，自立显现为实有。〈2〉正理推出无我。〈3〉确立对象（主语）正理成立。</p>
+<p>　　着重讲第二点，法有自性的话，只能是自生、他生、共生和无因而生四种，《广论》中二十三卷。</p>
+<p>　　自生（数论），《四谛经》五地菩萨趣入六地修十种平等，其中一种是无生，通过解释无生，其他很容易理解。佛护论师：自生即无义故。自生即获得自体，如有了体性要再生的话，即无意义了，因为因已经有了，果还有何意？（反）已经有的体性和再生不矛盾，生是显现义，体性未变。举苗为例。（驳）则苗会自己再再生，有无穷之过患。（反）因为还未显现，潜在之自体需要生如果显现的东西不需要生了。（驳）显现本来已经成立的话，不要再生了。显现再生的话变成无穷了，显现如果以前有的是不对，显现以前没有的观点是错的。已经生的必须要生的话，生的机会是没有的。（反）自性种子和苗不可分，有个转化的问题。种子灭坏，苗则产生，所以苗不是从苗生，体性是一，是两种状态，这样苗不会使种子坏灭。（驳）以前就有苗了，从苗生苗，苗之出现，不会使种子灭坏。种子和苗一个体性的观点也要驳斥。不会一个样，体性是一，在一切方面一样。（反）只是两种状态，种子状态失去，苗状态成立。（驳）种子自体和苗自体不一样。当种子状态之法消失后，有苗的状态法产生。所谓种子状态法和种子是一回事，除了种子状态外，没有其他种子了。苗的状态下，不能认识种子，同样不能认识苗，或在苗状态下，能认识种子状态。体性是一，不同特点，性质不同。（参考《入中论》）。</p>
+<p>　　他生（胜论）：同时破有「自性」之他生和他性，黑暗应火焰中生，一切果从「非因」生，因果是「自性」相异的话，变成没有关系的自他，果是从没有关系之他而生，则也可以从「非因」中生出来。因为「非因」和果相异，有「自性」就和有关系相矛盾。果和因如果是「自性」相异的话，则一因能生多果，或多因生一果。（反）不是一切物可以产生一个东西，只是某果之因（亲因）的同一相续。（驳）因为果和因是有自性相异的话，则果和因是有实质的，则相互没有关系，不能称为同一相续，如稻麦种对于各自生出来的东西没有差异，是自性相异，异性是名言上有。有自性之他生不存在，种子和苗不是异性，不是同时而有的。如果有自性的话，不会受到其他影响，但现在不是这样，是相互影响的。（有自性的他生和有自性的他性请参考《入中论》《广论》《略论释》）</p>
+<p>　　共生：两种缺点都存在。</p>
+<p>　　无因生：有的事看不出来是有原因的，故持戒无意义，见到的东西容易使人相信。佛弟子认为尖刺是从尖刺之种子而生，因为在某些地方产生，本身即依于条件，这些条件本身就是因。很微细之因，只有用佛之智慧观察，否则种田就无意义了，如果任何事产生任何事，法的产生是随意的话，芒果树不会生芒果了。</p>
+<p>　　缘起性之苗非自性生，也是缘起有。宗：谓词「非自性生」，除去常边。因：缘起除常边。缘起破一切常执。佛超过一切大师。龙树赞偈：因缘所生法，不生亦不灭，四加行，熄灭诸戏论。（能所二相，自性有之戏论，现证空性时能所二相熄灭）。</p>
+<p>　　《入中论》，《宗派论》讲述缘起之构成。</p>
+<p>　　缘起有三个词：三层不同意思。（1）由因而生（有为法）。各派相同，果从因生，非中观派认为缘起反而是谛实有，而不是谛实空。（2）有为法和无为法依止支分而得到他们的空性，应成派用此法证明谛实空。如一幢屋子（总体）有十间房间（支分）光有房间（支分）而无屋子（总体），连房间（支分）也不会存在。（3）一切法依于能安立之心而安立的。（最细的）。没有心来安立法之有，他们这些法不能出现了。常人认为一切法是客观的，从客观那边反映过来，而不是由显现，由心之安立在境上面去。第一，第二应成派也接受了。月称论师认为缘起之事是依因缘而起的，这里因缘不光指亲因（阳光、种子、烦恼），还指了支分与能安立境有之心。起不光有生义，还有有义，及成就义。</p>
+<p>　　《中论》讲到：做者依于所做之事，所做之事依于做者而有，除此以外，不能看到安立之心。很鲜明指出不是两个东西产生另外一个，由心安立而得到体性。</p>
+<p>　　缘起性的一切法非自性有，因缘起故，依他安立故。由确定因能除断边，缘起断一切边执，一切法无自性获得能避免一切常边，能知道一切法依他而有，不是自性而有的，一切法无自性之证悟，能确定缘起除断边，能确定因除常边。宗因二者如何？越深入，就越来越细。缘起是正理之王。</p>
+<p>　　月称在《入中论》中讲到缘起，非是无因生，或大自在天生，或从共生，是从缘而生。</p>
+<p>　　世界上或事实上不是由七个方式（七项观察）而有，不分析的话，是以它的支分而成立的。</p>
+<p>　　（金刚屑因，参考《藏传因明学》）</p>
+<p>　　一般人认为缘起和空性是对立的，空性时缘起不顺，缘起时空性不顺。中观师破出自性有，与一般人观念相违背的，他了知凡是自性有的，就不会缘起了。（三主要道中讲）。</p>
+<p>　　对缘起很熟悉的话，能引申对空性的认识。因果之教法到处都讲，将来生中碰到因果，就又能转化到空性上来，不断不断地进步。</p>
+<p>　　缘空性修止观双运入于加行道，先得空性见，先缘其他境修定，《广论》推荐观像，修止之条件，反复止观双运，平衡。</p>
+<p>　　不加造作的菩提心，任运而起，程度和座上修一样，则进入资粮道。止观双运　　暖位　　顶位　　忍位　　世第一。修菩提心是多劫教授中心。断所知障要很大的福德资粮，对于声闻乘讲声闻乘法是成佛之方便。先发菩提心，得止后修空性。</p>
+<p>　　暖位是指无分别智不久将要生起，如火将生前之暖。前兆生起，有分别之空性生起，有分别是指心里之影像总义，空性见不到，是心中之影像，非常清楚之情况。顶位善得止，如同棉花球，根不断。忍位不堕恶趣，世第一即马上见道了。在暖顶两个阶段，能与所都显现，定中都能决定，显现境中所破自性有之空。修中能见到境是空，我是有境（主观），空性是自己的空，仍有自己的主客观之空，不同于止观双运前之征兆。忍位不能决定空性之显现（客观），有个空性影像显现。世第一只是主观方面不能决定。现证空性时，心境两方面均消失，如清水注入清水，不可言说。章嘉国师赞叹宗喀巴大师能够用眼睛来看得见空性。没有中介影像（分别）世俗、名言，自性有都不显现，一切分别执著都断了，见惑全断了。修惑中认为有自性的烦恼是最利害的。五停心只能断现行，不能断根。初地有百种功德。</p>
+<p>　　烦恼障是人法之实执或其他烦恼或种子，最主要的是无明实执。没有断烦恼障，决不可能断所知障。所知障是显现自性之实执，烦恼障是肯定有实执自性。</p>
+<p>　　二谛是一体的，无分别缘空性，一个心不能同时缘两个东西，同时缘二谛的是佛。如所有智，尽所有智。菩萨发心断所知障，断实执，人法二执都要修，菩萨修断二障是用无量正理来修的，将来断所知障也要用很多正理。烦恼障到八地断尽了。声闻乘只是用少量正理来修。关于八十八使，应成派认为是一齐断的，在初地，每一个都有无间道，都有解脱道。关于修惑，二地是断下下品，三地是断中下品，四地是上下品，五地是下中品（后面不详）。声闻是四果四向。声闻要入菩萨乘要从头做起花一大劫，积聚福德资粮。</p>
+<p>　　应成派，八地菩萨可以对治自性之显现，执着未断，习气根本断不了。</p>
+<p>　　所知执分四个：三清净地，没有根本烦恼，所知障也有上、中、下三品。八地断上品，九地断中品，十地前一部分断粗的下品，十地后一部分断细的下品，有情生中最后身，得解脱（身）道。最后之无间道要经过密宗。显密所说的佛果是一样的，显教只把行者带到十地，无上瑜伽才能成佛。</p>
+<p>　　法身自性身，法身自法身。佛的如所有智，尽所有智没有区别。报身——受用身——恒常。化身——有情不同因缘而显现。</p>
+<p>　　附（1）暖、顶位能所决定还是有的。忍位所取决定慢慢退失，存在着我在修空性。世第一位能取（我）慢慢退失。（2）无为法依于支分，总空性依于个别空性。（3）加持也要有因缘，是过去的善根未引发，修善法则功德增长，力量大，得到现报，加持使善法因缘早日成佛。（4）往生之正因积聚很大的福德资粮，观想佛刹土胜境，作意，发愿，现在汉地的标准很难说，要发大菩提心。（5）宗派不是作者讲出来了，是佛所说，反复了解空性才能解脱。不知宗派的人只知此生之快乐，不学系统观察。被宗派影响的人，建立基、道、果三者，从自己观点出来。宗派即是通过经典通过逻辑建立起来之观点而不是由他所转，建立起来之结论。成立之结论，不会轻易舍弃。（6）发自内心皈依三宝，是内道，反之为外道。佛教说法总是对众生有益的，其他外道的说法多少总是对众生有所损害，外道之舍命是主动的，内道之舍命也要条件，或是被动的，否则妨碍解脱，顺世外道是持常见外道的反面。认识佛教道理要阐明清楚，学外道为了坚定自己的信念和度化有缘众生。确定四法印决定是不是佛教，一切有漏是苦。（7）有部是不许自证分，和随教行之经部分不出的。（8）自证分粗讲即是心识既能了别外境又能了别自身。（9）有部有十八种，还有不同的分法，定义是指总的不同见解。释名指名字上的解释。（10）有境也被境所缘，可以归入境。每个名都有境，故称为有境（对象）（11）有部指蕴聚是我，用心识来分量与非量，不许自证分故不许自证现量，认识的角度来分量与非量。根是了别境是直接，没有一层隔阂，不带境之相。光是眼根，眼识所依，也能见色，心识自己能见，墙后的东西也应能看见。有障碍则不能见，眼识依靠眼根，被其他色阻挡。不带相，看什么是什么，眼根也能见者，其他宗派，只有眼识才能见者。其他宗派认为心所是心王之支分，现量有定义即新证不虚妄。非量定义是邪知、疑、已觉智等。</p>
+<p>　　吉祥圆满</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../ptdcdzj/zmxf/bxzg/ptdcdgysgbfzygqgxjs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../ptdcdzj/ckzl/zkbdsdptdcdlyzxdfx1957ndseq.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../ptdcdzj/zmxf/bxzg/ptdcdgysgbfzygqgxjs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../ptdcdzj/ckzl/zkbdsdptdcdlyzxdfx1957ndseq.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../ace.js"></script>
+        <script src="../../../editor.js"></script>
+        <script src="../../../mode-rust.js"></script>
+        <script src="../../../theme-dawn.js"></script>
+        <script src="../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

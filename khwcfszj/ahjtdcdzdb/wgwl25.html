@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>第廿五章　五根、五力 - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="第廿五章-五根五力"><a class="header" href="#第廿五章-五根五力">第廿五章　五根、五力</a></h1>
+<p>第廿五章　五根、五力</p>
+<p>　 　（第一节）“五根”就是信根、精进根、念根、定根、慧根。“信根者，当知是四不坏净。精进根者，当知是四正勤。念 根者，当知是四念处。念根者，就是四念处。定根者，当知是四禅。慧根者，当知是四圣谛”“定根”就是四禅八定。</p>
+<p>　 　【法义分享】五根就如同“树根”，能够深入地中吸取养分，一方面又能够使树干坚固不动。为什么称作“五根 ”？如此就能够产生五种力量，使枝叶茂盛，进而开花结果。就是“五根”与“五力”的关系。 所谓“五根”，需要五种力量的扎根，你先有扎根之后，然后它又稳固，能够吸收营养，这样就慢慢会成长、茁壮，五种力量就会出来， 就能够开花结果。所以，修行方面也是一样，需要“五根”深入地下、吸收营养，又使地基稳固，如此就能够自然成长而开花结果。真正 要大彻大悟，必须要累积很多的小悟；真正要解脱生死，一定要好好脚踏实地的闻、思、修，一步一脚印。</p>
+<p>　 　“信根”就是信心坚固，成就四不坏净。而信心的建立，初步来自于听闻正法、如理思惟，加上如实观察而生起信心，但最后必是透过 真修实证而确定，同时成就四无畏。所以，佛教讲的“信根”，就是要成就四不坏净。所谓“四不坏净”就是 建立起了对佛、法、僧、戒的坚强信心，不是一般所谓信仰层面的“信仰”，是来自于真正的闻、思，然后又去求真求证、实修实证。当 你真正有所体会，自然生起坚定的信心，佛教所谓“信根”的成就，都是来自于真正亲自去证明到、亲自去品尝到，与信仰层面的 “信”不一样。</p>
+<p>　　信仰层面的“信”，是没有吃到、没有品尝到，你只是相信，真正“信根”的成就，“四不坏净”的成就，都是要你亲自有去品尝到、闻思修证。</p>
+<p>　 　（第二节）什么叫“信根”呢？“若比丘于如来所起净信心，根本坚固，余沙门、婆罗门… …”包括种种修行人，“及余世间，无能沮坏其心者，是名信根”。事实上，这里只是一个举例，对佛陀有 坚定的信心，当然是包括对法、对僧、对戒这些。当你对佛陀有坚定的信心，不管谁都没办法动摇，记得！对佛陀产生的坚定信心，到达“不坏净 ”，别人没办法动摇，如果中间没有正确的理解，很容易产生一种弊病－－依人，无形中产生“依人”，因为有些大师会强 调他就是佛陀，要对他产生坚定的信心，到达不坏净，到达坚固、不动摇。不管谁动摇、都要不坏啊！……这样很容易落入 “依人”而没有“依法”。</p>
+<p>　 　所谓对如来、对佛陀所产生的坚定信心，是来自于对佛陀所讲的法，你有去求真求证，证明佛陀所讲的真实不虚。所以，真正对佛陀的信心不动摇，是来自于因为 去求证佛陀所讲的真实不虚，是来自于对法的求真、体悟，来自于对法的体证。佛陀就是讲法，讲述宇宙人生的真理实相，佛陀是真、是假，透过你的求证之后，觉 得佛陀真的没有虚伪，佛陀所讲的就是实相、就是真理，因为经过你的求证。</p>
+<p>　 　这只是一个代表，你对法真正体悟、求证，就会对佛陀产生不坏净，不可本末颠倒过来，不可先对一个偶像产生不坏净，然后认为他所讲的都是对的，这样变成是 被人所抓住，然后以为他所讲的法，他所说的那些都是……，结果以一个偶像为神圣不可侵犯，他所讲的这些，你不敢去超越、不敢 去求证。因此，人的权威，绝对不可以胜过法的权威；没有佛法的存在，没有真理的存在，就没有佛陀。佛陀是引导大家“依法不依人 ”，真正有去体证到法，我们内心很自然由衷的产生，对佛陀的一种感恩、一种恭敬，因为经过我们求证之后，我们由衷而发。所以，这是有先后，不 可本末颠倒。</p>
+<p>　　什么叫做“精进根”呢？这是“四正勤”－－“已生恶要令断，未生恶令不起，未生善法令生起，已生善法令增广”。</p>
+<p>　　“何等为念根？”“念根”就是好好勤修“四念住”，在整个禅修期间，都是在培养你行、住、坐、卧、语、默、动、静之中，全面的觉醒、正念正知，这是“念根”的意思。</p>
+<p>　　什么叫做“定根”？就是四禅八定的成就，至少你要有未到地定到初禅，真正要见法，最好具有初禅的定力。</p>
+<p>　 　何谓“慧根”？“慧根”就是苦、集、灭、道，有的人认为“四圣谛”不重要， 这只是自了汉，事实上不是这样。如果没有真正体悟“四圣谛”，没办法产生真正的智慧。我们整个修行的过程，就是要去开发智慧，也 就是体悟“三法印”、体证“四圣谛”－－苦、集、灭、道。</p>
+<p>　 　（第三节）修行者“五根若利、若满足，得阿罗汉；若软、若劣，得阿那含”“阿那含”是三果， “若软、若劣，得斯陀含；若软、若劣，得须陀洹。满足者成满足事，不满足者成不满足事，于此五根不空无果。若于此五根一切无者，我说彼为外道 凡夫之数”。</p>
+<p>　 　“一分耕耘、一分收获”，所谓顿根、利根，或是天才、天份，不是先天、天生就这样，像爱迪生发明这么多东西，但是人家赞叹他、 称赞他，认为他很有天才，但是他就很谦虚的回答：你们认为我是天才、发明家，但是我个人认为我只是一分的天才、九十九分的努力。包括佛陀也从来没有好高骛 远，说一下子就要从“空”入门，一下子就要从果地起修，都是脚踏实地去追寻，到后来才真正大彻大悟，要酝酿足够的动能，才能够爆 发出大彻大悟。所以，你要脚踏实地去求真求证，如果地基打得越深入、而稳固，就能够盖越高的大楼。</p>
+<p>　 　（第四节）“若圣弟子成就慧根者，能修信根，依离、依无欲、依灭、向于舍，是名信根成就；信根成就者，即是慧根”其他的也都是 这样说。“此五根者，慧根为其首，以摄持故”“栋为其首，众材所依”八正道是以正见为首，所谓 “正见”就是正知正见，代表一种智慧。“五根”要成就，也是一样“慧根为其首 ”，所谓“慧根”，当然是要透过不断的闻思、求真求证。所以，“五根”要成就，修行要解 脱、要成就，一样都是要有智慧。在这整个过程，都不只是盲目的信仰、信心就好，都是要有智慧，所谓“智慧”是容许你不断去求真求 证，只要还没有经过求真求证的，你还不确定的，你就要保留，然后去求真求证。</p>
+<p>　 　在修行的过程中，这里有讲到“依离、依无欲、依灭、向于舍”，是“世间法”与“出世间法 ”，一个满重要的分水岭。【法义分享】“依离、依无欲、依灭、向于舍”这是是否走在出世间法解脱道上的重要检验标 准。如果想透过“修行”而得到更多的名闻利养，那都是属于世间法的修行。如果你想透过修行而得到更多的名闻利养，不管法门多么殊 胜，那都是属于世间法的修行。“为学日增；为道日损”，这是从老子《道德经》摘出来的一句话，无学位的阿罗汉是“空 无所得”，包括最难舍的“自我”也都舍掉了。也唯有“自我”死亡，才能够到达不生不死的彼 岸。唯有能放下一切，才能得到“无限”（只要你有抓取、有所得，必属有限）。</p>
+<p>　 　因为“依远离、依无欲，依灭、向于舍”满深的，一个阿罗汉是“空无所得”，包括最难舍的 “自我”也都舍掉了，但是不要以负面方面来看待，说成就阿罗汉就是自了汉，就是消极、悲观、焦芽败种，那是完全错误的判断，因为 众生根本不知道什么叫做“无为”？什么叫做“无学”？什么叫做“无我”？一个 真正体证到宇宙真理实相的人，他会溶入这个“空”里面，体证到“无我”，于是那个“自我 ”会消失。记得！只要你有“自我”，就一定有苦、有不安；“自我”不死、苦就存在。所以， 那些大彻大悟的人，为什么能够溶入“空”里面，就是因为他彻证、体证到，本来实相就是这样“无我”，当 他了悟到实相之后，他不再贪生怕死，就是溶入实相、溶入法界里面，这时候“自我”舍掉，也唯有“自我” 死亡之后，才能够到达不生不死的彼岸。大家现在可以先理解，但是到后来也都要唯证乃知，唯有能够放下一切，才能够得到无限。</p>
+<p>　 　只要你有所贪爱抓取、有所执著贪取，你所抓的，到最后都是一场梦一场空，唯有你真正能够放下一切，你才能够得到无限。放下一切绝不是消极悲观，什么事都 不要做，绝不是这样的，放下一切就是过去让它归零、让它死掉，真的让它放下。对于未来，当然我们有一个规划，就好像说愿景也会有，但是你所能够活的、所能 够掌握的，就只有现在。所以，真正一个解脱者，就是掌握每一个当下、活在现在，现在当下的因缘、该做什么，你就全然的去做。唯有你真正能够活在当下，你的 生命才会真的活起来，你的生命意义才会真正发挥出来。所以，唯有能放下一切，才能够得到无限。</p>
+<p>　 　（第五节）“成就信根者，作如是学；圣弟子无始生死，无明所著，爱所系，众生长夜生死，往来流驰，不知本际，有因故有生死，因永尽者，则无 生死……”真正能够了悟生死大事，必须透过对身心内外、宇宙人生实相的透彻了解，就是大彻大悟之后，你不会在那 里背道而驰，不会“惑、业、苦”。所谓“惑、业、苦”就是因为你不了解宇宙真理的生命实相，因此无明、 盲目的造作，就会受种种苦，不知道原因，然后又在那里惑、业、苦。如果能够了悟这些真理实相，然后“惑”没有了，把 “无明”转为“明”了，无明、冲动的种种原因、苦因没有了，“无明”的业行没 有了，苦也没有了，叫做“因永尽者”。“则无生死”的意思，如果真正能够了悟“无我 ”，你不会贪生怕死，不会贪生怕死。</p>
+<p>　 　（第六节）什么叫做觉力？“于善、不善法如实知，有罪、无罪，习近、不习近……”应该要亲近、去 学习的，或不应该亲近、去学习的，“卑法、胜法，黑法、白法，有分别法、无分别法……”什么叫做 “有分别法”？什么叫做“无分别法”？要清楚觉悟。什么叫做“缘起法”？什么 叫做“非缘起法”？要如实知。能够真正知道，才叫做“觉力”。修四念处的身念处、受念处，是开发二六时 中的正知正念，开发觉性，是属于初步的觉醒，不是说一直在修四念处的身念住、受念住，这样一直保持清醒明觉、保持觉性，这样就能够明心见性，不是这样，那 是一个觉醒的过程，有了觉醒的过程、基础之后，再来下一步就是要去见法、去体悟法。</p>
+<p>　 　事实上，“明心”就是醒过来，然后去见到法性，见到宇宙真理的实相。所谓“实相”，必须要去觉悟到哪 些呢？就是刚才所讲的“觉力”，就是觉悟，真正的觉醒、真正的觉悟，一定要去体悟到这些。所以，一个大彻大悟的人，当他体悟到 “无分别法”，不是说溶入“无分别”之后，是非、好坏都不知道，因、果这些都没有了，那都是凡夫的这样 瞎猜，不是这样！他一样清清楚楚的了解，什么叫做“无分别法”？众生没办法体会，但是他能够体会到。</p>
+<p>　 　什么叫做精进力？就是四正勤。什么叫做无罪力呢？“谓无罪身、口、意”含意可浅可深，浅的意思就是我们透过梵行的修行，净化我 们的身、口、意，不要去造恶，叫做一种迈向身、口、意的清净，叫做“无罪力”；如果能够体悟到无罪力的深层意思，你就可以放下原 罪，可以超越这些，因为含意很深，在此跟大家讲个重点，以后再慢慢去体悟、慢慢去求证。所谓“无罪力”是说：你的出生不是你的 错。一般宗教师会跟你讲，你的出生是因为你的造业、你的业力，现在没有讲说哪一个宗教，不拘于任何宗教，很多的宗教师就是会让你背负著很多的业力，然后加 上很多的罪在你身上，又是一些原罪，然后把你打入次等人民，再来你就会苦苦的哀求、苦苦的乞求，这样宗教事业才能蓬勃发展，你们要去求证，答案我不直接 讲。</p>
+<p>　 　如果你还有我慢，所谓的原罪业力，你就没办法摆脱。只要还有我慢、你就会有，有一天你要能够体会到这些，才能够真正的解脱出来。如果没有正知正见，原 罪、业力很容易落入宿命论里面，这些我们只点到为止讲就好，因为都有待大家再深度去闻、思、修、证，这样才能够从次等人民、比高、比大、比小 ……那些二元对立的心态，真正的跳脱出来。所以，到后面我们就即将要讲到超越二元对立，只要你还有自卑感，就一定还有我慢。 真正的觉醒－－要证悟到“无分别法”与“非缘起法”，超越二元对立的世界，才能溶入一体绝对的世界。当 然，你要证悟到“无分别法”，也要有魄力承担，禅宗常讲的“入空戏论灭”，中论、中观方面，也都会讲到 “入空戏论灭”，那是进入“无分别”，但是理上的、头脑上的理解，你是可以理解，但事实上你展现出来 的，却很难展现出“平等一如”的心。</p>
+<p>　 　当你看到一个自称“法王”的，或是看到一个大师来了，次等人民的哀求、乞求的心态出来了。我们要慢慢深入去了解，到后来真正体 悟到你跟一切众生是完全平等，大家是在完全平等的立场上，分工合作、相辅相成、互相感恩，感恩的心会由衷生起。就像中鼎这样大的一家公司，大家是分工合 作，虽然有位置上的不同，个人扮演的角色有不同，但是事实上大家是分工合作，本质上大家都是平等的，我们各在自己的工作岗位，大家好好的负责，大家分工合 作、团结，我们感恩别人的成就，也尽我们一份的心力。</p>
+<p>　 　当你真正体会平等，你是感恩一切众生，但你不是任何众生的仆人，不是任何众生的属民，就是要体会到什么叫做无罪力？什么叫做无分别法？这是相当重要的。 所谓“因缘法”是缘起法，但是“非缘起法”，在《阿含经》里面，词句很少、很少，因为这是非常深的地 方，像我以前虽然在佛学院读研究所，那时候下过很多功夫在《阿含》方面，但是也还是没有看到这方面的重要，因为词句都很简短的带过，这样而已，那后来才发 现到这个相当重要，但是因为它非常深、不容易理解，佛陀对外讲的也比较少，但它是非常重要的，当大家的闻、思、修、证基础具足之后，后面就会讲到这方面 的，什么叫做非缘起法？什么叫做无分别法？不是说非缘起法就不是佛教所讲的缘起法，如果佛教只有讲缘起法，没办法有真正的究竟解脱者，还要再超越缘起甚 深，缘起甚深、再来空、涅槃，“空”是甚深极甚深，才是所谓的非缘起法、无分别法，后面课程会再深入解析。</p>
+<p>　 　（第七节）所谓的“无分别法”，以人与一棵大树比较，当你真正慢慢去体会，我们众生的“我慢”，才会 有明显的减少。“若最胜施者，谓法施”种种布施里面，最胜的布施是法布施，当然其他布施也是随缘量力、也都很好，但是佛陀希望栽 培真正的解脱者，而不只是慈悲行善布施而已。真正的解脱者才是佛陀所要的，最胜的施就是法布施。“最胜爱语者，谓善男子乐闻… …”当你真正法身具足，就能够“应化身”展现，看到什么样根器的人跟他谈，能够以比较相应的法。所谓 “三身”，就是报身、法身、应化身。</p>
+<p>　 　禅宗有一句“三身四智体中圆”，所谓“三身”，第一个是“报身”，第二是 “法身”，第三是“应化身”，不要对此想得太抽象、太玄、太虚，有些人都讲得好像很虚、很遥不可及。事 实上，只要好好的实修实证，都可以去体证到。什么叫做“报身”？现象界当下存在的原状、形状，叫做你的“报身 ”，但是不要又冠上说这是你的业报、你的业力、你的报应……，不要把它加上那么多，包括说你会胖胖的，或是瘦瘦 的、高高的，或是个子比较小，或是长相怎么样……，就是你现在的“报身”，现在的情况就是这样，因 此每个人都不一样，是谓“报身”。</p>
+<p>　 　什么叫做“法身”？就是宇宙的真理实相，整个法界、整个大自然叫做“法界”，所谓“法身 遍一切”，意即整个法界展现出来的法相、真理，诸如无常、无我，法则是遍一切都存在。我们先讲整个实相的存在，再讲到后面的“法 身”，现在是讲整个法，就是整个法界，法界存在的真理实相，就是无常、无我、涅槃寂静，是整个实相的存在。一个真正大彻大悟的解脱者，就是体 证到宇宙的真理实相，然后跟整个法界溶为一体，跟整个宇宙的无常、无我、涅槃寂静的实相溶为一体，真正去见到法，真正去了悟实相，于是不会背道而驰，因此 他跟整个法溶为一体，溶入整个法界，这样展现出来的叫做“法身”，你有慧眼就会看得见。一个真正的解脱者溶入法界，因为体道、悟 道而行道，体悟到宇宙的道－－法界里面的真理实相，悟道、然后行道，因为他的所作所为与宇宙的真理实相是一致的，不会背道而驰，因此本身溶入、跟整个宇宙 溶为一体，是溶入整个法界。</p>
+<p>　 　一方面他本身所做的，也都会符合无常、无我、涅槃寂静的真理实相，不管他是动、是静，都是法身的展现－－法身具足，就是证到阿罗汉的涅槃无为之人，他所 展现的就是“法身”，他整个到处看到的都是法，都是无常、无我的真理实相。当一个人真正能够体悟到这些实相－－法身具足，意即大 彻大悟之后，然后能够“不住涅槃”，不会执著在解脱里面，然后又会入红尘、回红尘跟众生广结善缘。所谓“应化身 ”，看众生需要哪方面的，然后他会随顺因缘，跟众生广结善缘，就是“应化身”。不是观“空 ”，要溶入“空”，因为观“空”，那个“我”、“ 能、所”还没有消失，“应化身”的展现，就是大慈大悲的展现。</p>
+<p>　　如果一个真正的解脱者、法身具足，所谓“应化身”，他是真正有智慧，一定是悲智双运。所以，不会有自私自利的解脱者，不会有自私自利的阿罗汉，所谓“唯证乃知”，真正证悟到，你就会知道。</p>
+<p>　 　（第八节）有“四力”。“若比丘成就四力者，得离五恐怖”，“四力”就是 “觉力、精进力、无罪力、摄力”，要远离各种恐怖，必须真正觉醒过来；要精进用功，才能到达真正的觉醒，包括无罪力方面，刚才已 经有点到为止，你这些都要去体证到，才会远离五种恐怖。远离哪些恐怖呢？“不活恐怖、恶名恐怖、众中恐怖、死恐怖、恶趣恐怖”。 什么叫做“不活恐怖”呢？一个人畏惧面对现实的生活，对家庭的重担、经济压力、生活不易……，让他 对生命产生畏缩方面，叫做“不活恐怖”。</p>
+<p>　 　所谓“恶名恐怖”，就是很在乎别人的闲言闲语，一般众生都常常活在别人的眼光中，这样做事很难有魄力，你会有很多的牵绊、很多 的挂碍。能不能凭著你的良心理性、凭著你的智慧去做？觉得该做、你就去做，至于说别人要怎样误解、不谅解、攻击批评……，只 要觉得问心无愧，其他的，别人要如何看待、如何评断，都能够去承担、去消化，这些都要有魄力。所以，修行要具有大丈夫相，大丈夫相跟男女性别无关，真的要 有气魄。</p>
+<p>　 　所谓“众中恐怖”，是一般容易犯的“大众畏”，有的人私底下很会讲，叽哩呱啦！很擅长于讲话，但是当 他要上台讲话，就结结巴巴讲不出来，紧张得发抖，或是有的人私下一谈法，认为他懂很多、很会讲啊！觉得自己的法很好、很高，但是当他要上台讲，能不能讲出 一套解脱道？能不能讲出一套你是怎么体悟的具体内容？他讲不出来啊！或是有的他私下能够讲，但是一上台就是没办法，就是所谓“大众畏 ”、“众中恐怖”。</p>
+<p>　　所谓“死恐怖”，是五种恐怖里面最严重的一个，就是对死神、对死神、对黑洞的恐怖，因为生死大事仍未了，仍然未了悟生死大事。</p>
+<p>　　所谓“恶趣恐怖”，就是对三恶道的恐怖，当具有前面四种觉力、四种力之后，这些就可以消失。</p>
+<p>　 　【法义分享】众生常被五种恐怖逼压的好苦、好苦，然后不敢去面对的众生，就一直逃啊！避啊！或转移注意力到名利欲望的追逐，或透过种种的忙碌来忘掉自 己、掩饰内心的不安，或找种种刺激来麻醉自己。但不管怎么厉害、怎么逃，绝对逃不出“死神”的手掌。事实上，这是一般众生很常有 的现象，常被五种恐怖压的好苦、好苦，一般众生就是想各种方法逃啊！避啊！转移注意力，或是透过名利的追逐、透过忙碌啦，都是这样。所以，大家要慢慢去体 会，然后检验自己有没有这一种现象。不管你怎么逃，绝对逃不出“死神”的手掌，就像西游记里面，孙悟空很厉害，但是却逃不出如来 佛的手掌。事实上，不是说佛陀的身体那么长、那么大，那只是一个比喻，是讲一个佛陀法身，“如来佛”是讲整个法界，因为佛陀跟法 界溶为一体，所以逃不出“如来佛”的手掌，就是你再怎么逃，都逃不出法界的。所以，那绝对逃不出死神的手掌，只要你有 “自我”，不管你多么厉害。</p>
+<p>　 　唯有不再逃跑了，愿停下来，张开慧眼去如实深观，才能解决一切的问题。唯有不再逃跑了，包括说不再心外去求法了，你愿意停下来，张开慧眼去如实深观，才 能解决一切的问题。当你真的觉醒过来，了悟宇宙人生实相，远离颠倒梦想之际，死神消失了。这里告诉你“死神”消失的秘诀， “我慢”如果存在，死神就跟在后面；如果“我慢”消失了，死神也消失了。</p>
+<p>　 　这几句话都很精简扼要，但是含意都很深，我们要慢慢去体会，这里提到：唯有你不再逃跑，愿意停下来，张开慧眼去如实深观，才能解决一切的问题。如果你没 有好好静下来，面对现在的这些去好好解决，认为要到他方世界去，我以后再说、来世再说，都还有逃避的心理。如果这一世没有解决，你到下一世还是要解决。</p>
+<p>　 　所谓“九鸟在林，不如一鸟在手”，面对没办法把握的、遥远不可知的未来，只是一个幻想、一个想像、一个理想，你眼前的没办法把 握，你会错失掉很多的善因善缘。所以，你要有美好的未来，也唯有你现在能够把握现在，你希望有美好的未来，不错！很好啊！但是重点还是当下、现在。所以， 解决问题的方法，唯有你不再逃跑，不再向心外去求法，真正愿意回来在当下，脚踏实地的闻思修证。真正的法、真理实相，不是在遥远的他方世界，都是在现在、 当下，在你的眼前，在你当下的身心之中，在大自然之中。</p>
+<p>　 　因此，要见法不是到未来，不是到他方世界去，都是只有现在、当下，记得！如果“我慢”存在，“死神” 就跟在后面；若“我慢”消失了，“死神”也会消失。在后面第三十一章“最后的五大关卡 ”课程，我们会再来讲。</p>
+<p>　 　（第九节、第十节）讲的是五种力，就是“力”方面，当“五根”扎稳之后，就会有力量产生出来。事实 上，所谓“五力”就是“五根”扎稳之后，它产生的力道。“力道”一出来，会帮 助你推向涅槃的彼岸。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../khwcfszj/ahjtdcdzdb/xsnc24.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../khwcfszj/ahjtdcdzdb/syqjz26.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../khwcfszj/ahjtdcdzdb/xsnc24.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../khwcfszj/ahjtdcdzdb/syqjz26.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

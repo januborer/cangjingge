@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>首楞嚴經觀世音菩薩圓通章（唐，般刺密帝譯）  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="首楞嚴經觀世音菩薩圓通章唐般刺密帝譯"><a class="header" href="#首楞嚴經觀世音菩薩圓通章唐般刺密帝譯">首楞嚴經觀世音菩薩圓通章（唐，般刺密帝譯）</a></h1>
+<p>大佛頂首楞嚴經觀世音菩薩圓通章</p>
+<p>　　　　　唐，般刺密帝　譯</p>
+<p>　　爾時觀世音菩薩，即從座起，頂禮佛足，而白佛言：世尊！憶念我昔無數恒河沙劫，於時有佛，出現於世，名觀世音。我於彼佛，發菩提心。彼佛教我，從聞思修，入三摩地。初於聞中，入流亡所。所入既寂，動靜二相，了然不生。如是漸增，聞所聞盡。盡聞不住，覺所覺空。空覺極圓，空所空滅。生滅既滅，寂滅現前。忽然超越世出世間。十方圓明。獲二殊勝：一者、上合十方諸佛本妙覺心，與佛如來，同一慈力。二者、下合十方一切六道眾生，與諸眾生，同一悲仰。</p>
+<p>　　世尊！由我供養觀音如來，蒙彼如來，授我如幻聞熏聞修，金剛三昧。與佛如來，同慈力故，令我身成三十二應，入諸國土。世尊！若諸菩薩，入三摩地，進修無漏，勝解現圓，我現佛身，而為說法，令其解脫。若諸有學寂靜妙明，勝妙現圓，我於彼前，現獨覺身，而為說法，令其解脫。若諸有學，斷十二緣，緣斷勝性，勝妙現圓，我於彼前，現緣覺身，而為說法，令其解脫。若諸有學，得四諦空，修道入滅，勝性現圓，我於彼前，現聲聞身，而為說法，令其解脫。若諸眾生，欲心明悟，不犯欲塵，欲身清淨，我於彼前，現梵王身，而為說法，令其解脫。若諸眾生，欲為天主，統領諸天，我於彼前，現帝釋身，而為說法，令其成就。若諸眾生，欲身自在，遊行十方，我於彼前，現自在天身，而為說法，令其成就。若諸眾生，欲身自在，飛行虛空，我於彼前，現大自在天身，而為說法，令其成就。若諸眾生，愛統鬼神，救護國土，我於彼前，現天大將軍，身而為說法，令其成就。若諸眾生，愛統世界，保護眾生，我於彼前，現四天王身，而為說法，令其成就。若諸眾生，愛生天宮，驅使鬼神，我於彼前，現四天王國太子身，而為說法，令其成就。若諸眾生，樂為人王，我於彼前，現人王身，而為說法，令其成就。若諸眾生，愛主族姓，世間推讓，我於彼前，現長者身，而為說法，令其成就。若諸眾生，愛談名言，清淨自居，我於彼前，現居士身，而為說法，令其成就。若諸眾生，愛治國土，剖斷邦邑，我於彼前，現宰官身，而為說法，令其成就。若諸眾生，愛諸數術，攝衛自居，我於彼前，現婆羅門身，而為說法，令其成就。若有男子，好學出家，持諸戒律，我於彼前，現比丘身，而為說法，令其成就。若有女人，好學出家，持諸禁戒，我於彼前，現比丘尼身，而為說法，令其成就。若有男子，樂持五戒，我於彼前，現優婆塞身，而為說法，令其成就。若有女子，五戒自居，我於彼前，現優婆夷身，而為說法，令其成就。若有女人，內政立身，以修家國，我於彼前，現女主身，及國夫人，命婦大家，而為說法，令其成就。若有眾生，不壞男根，我於彼前，現童男身，而為說法，令其成就。若有處女，愛樂處身，不求侵暴，我於彼前，現童女身，而為說法，令其成就。若有諸天，樂出天倫，我現天身，而為說法，令其成就。若有諸龍，樂出龍倫，我現龍身，而為說法，令其成就。若有藥叉，樂度本倫，我於彼前，現藥叉身，而為說法，令其成就。若乾闥婆，樂脫其倫，我於彼前，現乾闥婆身，而為說法，令其成就。若阿修羅，樂脫其倫，我於彼前，現阿修羅身，而為說法，令其成就。若緊那羅，樂脫其倫，我於彼前，現緊那羅身，而為說法，令其成就。若摩呼羅伽，樂脫其倫，我於彼前，現摩呼羅伽身，而為說法，令其成就。若諸眾生，樂人修人，我現人身，而為說法，令其成就。若諸非人，有形無形，有想無想，樂度其倫，我於彼前，皆現其身，而為說法，令其成就，是名妙淨三十二應，入國土身，皆以三昧，聞熏聞修，無作妙力，自在成就。</p>
+<p>　　世尊！我復以此聞熏聞修，金剛三昧，無作妙力，與諸十方三世六道，一切眾生，同悲仰故，令諸眾生，於我身心，獲十四種無畏功德：一者、由我不自觀音，以觀觀者，令彼十方苦惱眾生，觀其音聲，即得解脫。二者、知見旋復，令諸眾生，設入大火，火不能燒。三者、觀聽旋復，令諸眾生，大水所漂，水不能溺。四者、斷滅妄想，心無殺害，令諸眾生，入諸鬼國，鬼不能害。五者、熏聞成聞，六根銷復，同於聲聽，能令眾生，臨當被害，刀段段壞，使其兵戈，猶如割水，亦如吹光，性無搖動。六者、聞熏精明，明遍法界，則諸幽暗性不能全，能令眾生，藥叉羅剎，鳩槃茶鬼，及毗舍遮，富單那等，雖近其傍，目不能視。七者、音性圓銷，觀聽返入，離諸塵妄，能令眾生，禁繫枷鎖，所不能著。八者、滅音圓聞，遍生慈力，能令眾生，經過險路，賊不能劫。九者、熏聞離塵，色所不劫，能令一切多婬眾生，遠離貪欲。十者、純音無塵，根境圓融，無對所對，能令一切忿恨眾生，離諸瞋恚。十一者、銷塵旋明，法界身心，猶如琉璃，朗徹無礙，能令一切昏鈍性障，諸阿顛迦，永離癡暗。十二者、融形復聞，不動道場，涉入世間，不壞世界，能遍十方，供養微塵諸佛如來，各各佛邊，為法王子，能令法界無子眾生，欲求男者，誕生福德智慧之男。十三者、六根圓通，明照無二，含十方界，立大圓鏡，空如來藏，承順十方微塵如來，祕密法門，受領無失，能令法界無子眾生，欲求女者，誕生端正，福德柔順，眾人愛敬，有相之女。十四者、此三千大千世界，百億日月，現住世間諸法王子，有六十二恒河沙數，修法垂範，教化眾生。隨順眾生，方便智慧，各各不同，由我所得，圓通本根，發妙耳門，然後身心，微妙含容，周遍法界。能令眾生，持我名號，與彼共持，六十二恒河沙，諸法王子，二人福德，正等無異。世尊！我一名號，與彼眾多名號無異，由我修習，得真圓通，是名十四施無畏力，福備眾生。</p>
+<p>　　世尊！我又獲是圓通，修證無上道故。又能善獲，四不思議，無作妙德。一者、由我初獲，妙妙聞心，心精遺聞，見聞覺知，不能分隔，成一圓融，清淨寶覺。故我能現，眾多妙容，能說無邊，祕密神咒其中或現一首，三首，五首，七首，九首，十一首。如是乃至，一百八首，千首，萬首，八萬四千，爍迦羅首。二臂，四臂，六臂，八臂，十臂，十二臂，十四，十六，十八，二十，至二十四。如是乃至，一百八臂，千臂，萬臂，八萬四千，母陀羅臂。二目，三目，四目，九目。如是乃至，一百八目，千目，萬目，八萬四千，清淨寶目。或慈，或威，或定，或慧，救護眾生，得大自在。二者、由我聞思，脫出六塵，如聲度垣，不能為礙。故我妙能，現一一形，誦一一咒，其形其咒，能以無畏，施諸眾生。是故十方微塵國土，皆名我為，施無畏者。三者、由我修習，本妙圓通，清淨本根。所遊世界，皆令眾生，捨身珍寶，求我哀愍。四者、我得佛心，證於究竟，能以珍寶，種種供養，十方如來。傍及法界，六道眾生，求妻得妻，求子得子，求三昧，得三昧，求長壽，得長壽。如是乃至，求大涅槃，得大涅槃。佛問圓通，我從耳門，圓照三昧，緣心自在，因入流相，得三摩提，成就菩提，斯為第一。世尊！彼佛如來，歎我善得，圓通法門，於大會中，授記我為，觀世音號，由我觀聽，十方圓明，故觀音名，遍十方界。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../gsypszj/fsgslsfjlsjglysy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../gsypszj/slyjdszpsytztbcmdy.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../gsypszj/fsgslsfjlsjglysy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../gsypszj/slyjdszpsytztbcmdy.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

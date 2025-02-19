@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《平等舍修法口传教 授》(雍增．墀江仁波切著　仁钦曲札　译)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="平等舍修法口传教-授雍增墀江仁波切著-仁钦曲札-译"><a class="header" href="#平等舍修法口传教-授雍增墀江仁波切著-仁钦曲札-译">《平等舍修法口传教 授》(雍增．墀江仁波切著　仁钦曲札　译)</a></h1>
+<p>　　　　「平等舍」修法口传教授</p>
+<p>　　　　　　　　　　　　　　　　　　　雍增．墀江仁波切　造</p>
+<p>　　　　　　　　　　　　　　　　　　　仁钦曲札　译</p>
+<p>　　菩提心修法有两种：（一）七因果；（二）自他平等相换。这两种修心法的前行都含有「平等舍」修法，如《摄般若波罗蜜多论》中说：</p>
+<p>　　「于诸有情心平等，起父母想饶益心，及以慈心调伏之。」</p>
+<p>　　这里所讲的「平等舍」与「四无量」中的「平等舍」是不一样的。「四无量」中的「平等舍」，是由于发现众生因贪、嗔在轮回中流浪，故而祈愿一切众生远离贪、嗔而住于「平等舍」。此处所讲的「平等舍」是修心，摆脱亲、疏与贪、嗔的控制，进而对一切有情生起平等心的「平等舍」。这种平等舍又有两种差别：</p>
+<p>　　「七因果」中「知母」的前行「平等舍」，仅是对仇敌、亲友、中庸三者遮除亲、疏与贪、嗔的「平等舍」，是一种与声闻乘共同的「平等舍」修法；「自他平等相换」前行的「自他平等」，就不单是上述的「平等舍」，而是一种在思想与行为方面为一切有情拔苦、予乐不分远近的平等心，是大乘不共的殊胜「平等舍」修法。</p>
+<p>　　修「知母」前行「平等舍」时，应设想我们面前有特别憎恶的仇敌、极为可爱的亲友与非敌非友的中庸三种有情。面对这三种人，我们分别会生起明显的悦意、不悦意与漠然这三种心。以仇敌为例，观察一下自己为什么会对他生起不舒服和不喜欢的心，将会察觉到：那是由于此人在今生曾伤害过我们。于是，应作如下思惟来破除嗔恚：</p>
+<p>　　「此人在过去多生之中曾作过我的父母和亲友，曾帮助我无数次。不仅如此，说不定在今生当中或死亡之前，也可能成为朋友来帮助我。不论如何，有一件事绝对可以确定，那就是在后世解脱轮回之前无数次的受生中，此人将与过去一样，对我施行无数次的饶益。在过去、现在、未来三个时期，此人已为我、将为我成办无量的利益，像这样的至友，如果只以今生一时的少许伤害，就对这位「敌人」生起嗔心而加以抛弃，我不就和凶残的野兽、非人没有两样了吗？所以，从今以后绝对不能生起这种恶念。」</p>
+<p>　　同样的，对亲友生起悦意与贪恋时也应该观察原因，如此便可发现这是因为他们在今生中成为我们的亲属，或在财物、饮食方面曾照顾过我们。随后就该作如下思惟来破除贪恋：</p>
+<p>　　「这位亲友在过去多生中曾是我的仇人，我们曾经彼此杀害无数次，吃对方的肉，喝对方的血；而且，在今生死亡之前，他也可能变成我的冤家，对我毫无利益可言；即便在今生中不曾伤害我，也难保在后世中我们不会成为仇敌而互相伤害。如果只因为目前稍有助于我，就对这位亲友过分贪恋，不正像贪著于魔女的诱惑或猪贪恋于猪倌一样？因此，我不应对所谓的至亲生起贪恋。」</p>
+<p>　　当我们对中庸的众有情生起漠然之心，应该想到：</p>
+<p>　　「此人目前虽然对我没有特别的利益和损害，看起来似乎与我毫无关系，事实不然，在许多生中，此人曾经是有助于我的朋友或亲人，将来也必定会如此，所以将此人抛弃是不合情理的。」</p>
+<p>　　简言之，我们应思推过去、现在和未来三世因缘，对敌、友破除贪、嗔，修习使心平等的「平等舍」。</p>
+<p>　　修「自他平等相换」修心前行之「舍」时，必须对敌、友、中庸三者不分远近亲疏地给予喜乐，消除他们的痛苦，但如果不仔细思考其中的缘由，是不可能产生出这种平等的态度与行动的。这里分「观待世俗之能立」与「观待胜义之能立」二部分来讲。</p>
+<p>　　第一，观待世俗之能立，又分成「观待他人之能立」与「观待自身之能立」。观待他人又可细分为三因：</p>
+<p>　　一、纵然在梦中，自己也不愿有丝毫痛苦，对快乐又永不知足；同样的，所有的有情，包括微小的虫蚁在内，也都想要快乐、不愿受苦，所以对他们作取舍的分别并不合理。</p>
+<p>　　二、假设有十个乞丐前来乞食，由于他们都是来乞讨的，所以对他们的施食就不会有亲疏之分。同样的，一切有情缺乏快乐，不要说是无漏乐，就连些微的有漏乐也是少如晨星。正因为他们求乐的心相同，所以应该不分亲疏，而平等的为他们成办利乐。</p>
+<p>　　三、假如有一群痛苦的病人需要照顾，由于他们身受的苦痛一样，因此不应起贪嗔与取舍的分别，否则会有过失；同样的，一切有情都受烦恼三毒控制，全受到轮回总别之苦，所以，对他们无法有取舍之别。</p>
+<p>　　「从有情的立场来看，这样的说法似乎言之成理，不过他们与我并没有多大关系，我又何必去承担那种责任呢？」这种念头一来，便应接着修。</p>
+<p>　　第二，观待自身之能立。在此也可细分成三因来思惟：</p>
+<p>　　一、当知我们所求的解脱与一切智，都必须依靠一切有情才能获得；不仅如此，无始以来昀许多生中，一切有情都曾做过我的父母、朋友等亲人，并饶益我，所以，不应有敌、友等亲疏与取舍的分别。</p>
+<p>　　二、「虽然他们曾帮助过我，但也曾伤害过我啊？」有这种怀疑时，应当思惟：这些有情对我所作的伤害只是一时的，而直接与间接对我所作的利益却非常多，以我们现在的情况为例便可了知，因此，不应有亲疏与取舍的分别。</p>
+<p>　　三、不仅如此，由于我们已确定会死亡，而且死期不定，就像关在同一个牢狱的死囚，明日就要一起被处决，今晚还在作自他的分别和贪嗔的分别，实在是无聊之举。当自己、他人和一切有情都将落入无常鬼之口，还要作贪嗔与取舍的分别，完全无道理可言。</p>
+<p>　　此外，我们还必须思惟观待胜义之能立，在此也可细分成三因：</p>
+<p>　　一、称损害者为敌、称饶益者为友，这些都是错乱心安立与执著的结果。如果这个论点可以成立，那么，如来的一切种智也应作这样的认可才是，为什么佛并没有将为他抹檀香的人视为亲友，也没有将用刀斧砍他的人视为仇敌，如《释量论》中说：「于刀割香涂，观一切平等，说名为离贪。」因此，所谓「敌友」的分类纯属自心错乱之相。</p>
+<p>　　二、我们通常将所谓的仇敌与亲友看成是永恒的、持久的。如果真是如此，怨敌与亲友应该不会有变化。事实不然，中士道修心中有一节是修「无定过患」，当依「父转为子母为妻」等引文所说，思惟敌友转变不定的情形。因此，过分执著敌友的观念作取舍的分别是没有道理的。</p>
+<p>　　三、《集学论》中说：「自他惟观待，妄如此彼岸。彼岸自非彼，观谁而成此？」我们看待问题往往有各自的角度。例如，对同一个人来讲，有人将他视为亲友，也有人将他视为仇敌，从而出现两种迥异的态度；就像此山与彼山是相对的。从胜义的角度来看，这种看法不能成立。所以，执著于一方，作贪嗔与取舍的分别是不合理的。</p>
+<p>　　在详细思考了上述九种因由之后，我们应当作出如下五种决定：</p>
+<p>　　一、如上所述，不论我们是以世俗的理由还是以胜义的理由思惟，对有情心生贪嗔与分别，且作出取舍，是根本站不住脚的；不单如此，这种贪嗔之心将成为现后、久暂千百种伤害与痛苦的根本，如同把我们关入轮回牢狱不得解脱的狱卒，好似牵我们入地狱火中的索命鬼；彷佛让我们在梦中也不得安宁的毒瘤。因此，我们必须根除这样的恶心。相反的，为一切有情予乐、拔苦的平等心，对我们目前与将来都有极大的利益，而且是三世诸佛菩萨所履行和将履行的唯一之道，是诸佛菩萨一致公认的修持中心，当思：「不论那些有情是饶益我还是伤害我，我都应该尽最大的努力来断除贪嗔与亲疏之心，在予乐、拔苦的思想与行动上必须做到没有丝毫的分别!祈请上师本尊加持，使我有能力修持!」同时念诵《供养上师仪轨》中的颂文：</p>
+<p>　　「痛苦虽微皆不欢，快乐纵多终不足，</p>
+<p>　　自他不二愿加持，见他受乐心欣喜，」</p>
+<p>　　配合祈祷，决意成就平等心，无论在思想与行动上都愿意为一切有情予乐、拔苦。</p>
+<p>　　二、在思惟自他平等之后，再思惟我爱执的过患。当知：从造不善业受生无间狱，乃至于声闻、缘觉、阿罗汉偏堕寂边，以及某些菩萨道行迟缓等现象都是我爱执造成的，换言之，轮回、涅槃二者的所有过患，都是我爱执的习气所产生的。经多方思惟后，常念：「这个我爱执是产生现后、久暂一切伤害的根本，有如毒的种子一般，不将之根除，将永无安乐之时，因此，从现在开始，刹那都不应受此恶心的支配，祈请上师本尊加持，使我能断除我爱执!」同时念诵：</p>
+<p>　　「观我爱执如重病，引发非爱众苦因，</p>
+<p>　　应当怨彼记恨彼，加持除此我执魔，」</p>
+<p>　　配合祈祷，决意断除我爱执之恶念。</p>
+<p>　　三、其次应当思惟他爱执的功德。当知现世的快乐、名声，以及轮回中天、人的快乐，直到成佛，轮回、涅槃二者的一切幸福，都是仰仗他爱执的力量产生的。经多方思惟，当念：「这些有情是出生一切利乐的根本，基、道、果三阶段不可或缺的唯一亲友，不论对我施行何等伤害，都应当视他如上师佛陀、爱他如同如意宝般，刹那也不离弃，启请上师本尊加持，使我能生起他爱执，」同时念诵：</p>
+<p>　　「爱护诸母令享乐，视为无边功德门，</p>
+<p>　　纵使众生仇视我，爱彼如命愿加持，」</p>
+<p>　　配合祈祷，决意将他爱执作为修持的中心。</p>
+<p>　　四、再三思惟我爱执的过患与他爱执的功德之后，便应当致力修持这两种爱执心的互换。那么，我们是否有能力做这种修持呢？当思：「过去大师佛陀与我一样在轮回中流浪，然而，佛陀以爱他为重，因此自他二利都得圆满，终而成佛；我却因为只顾着成办自利，结果非但不能成就丝毫自利，更遑论利他，所以才会沦落到目前这种局面。」用这样的方式思惟两种爱执的功过，可以帮助我们修两种爱执的互换。此外，如果我们的心能熟习修持，就能把他人的身体当成自己的。如同称父母的精血为自己的身体而执为「我所」那样。思考了这些理由，便可明白我们是能够做到自他相换的。于是当念：「我能修也必修这个自他相换，祈请上师本尊加持，使我能修自他相换法门!」同时念诵：</p>
+<p>　　「总之凡愚为自利，能仁专修利他行，</p>
+<p>　　了知功罪利害心，自他互易愿加持，」</p>
+<p>　　配合祈祷，决意修持自他相换。</p>
+<p>　　五、将我爱执过患与他爱执功德二者放在一起思惟。例如：由于我爱执的关系，杀害其他有情，受生于地狱、寿命短促；因为他爱执的缘故，断除杀生，受生于乐趣、获得长寿，这样不断地交替思惟十善业道的妙果与十不善业道的恶果等功过，最后认识到：「总之，我爱执是一切衰损的门径、他爱执是一切功德的基础，因此，在任何情况下，我都不应放弃自他相换，且应以它作为修持的中心，祈请上师本尊加持，使我具有这样的能力!」同时念诵：</p>
+<p>　　「我爱执即众苦门，爱护众母为德本，</p>
+<p>　　故于自他互易行，修为心要愿加持!」</p>
+<p>　　配合祈祷，决意对自他相换修法产生兴趣而修持。</p>
+<p>　　如果上述这些前行所缘的修习做得恰到好处，正行配合自他相换思惟的取舍所缘，便会自然地修到要点；反之，如果这些前行只是一些空洞言辞，在修正行取舍时，眼睛半睁半闭、装模作样地作修法状，到头来也不过是修些空话罢了。</p>
+<p>　　关于共与不共的正行所缘修法，应根据各种引导与上师的教授来修，在这里就不多写了。</p>
+<p>　　口说自他相换如诵咒，事关紧急胆大且妄为，</p>
+<p>　　师尊父母悉皆抛脑后，空具大乘者名我悲哀。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../ptdcdzj/zmxf/ssd/xxqssgylxfyzqjrbqzrqqly.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ssd/dcxxqygbwppkrbqbrqqly.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../ptdcdzj/zmxf/ssd/xxqssgylxfyzqjrbqzrqqly.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ssd/dcxxqygbwppkrbqbrqqly.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../ace.js"></script>
+        <script src="../../../editor.js"></script>
+        <script src="../../../mode-rust.js"></script>
+        <script src="../../../theme-dawn.js"></script>
+        <script src="../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>文殊师利所说摩诃般若波罗蜜经卷上  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="文殊师利所说摩诃般若波罗蜜经卷上"><a class="header" href="#文殊师利所说摩诃般若波罗蜜经卷上">文殊师利所说摩诃般若波罗蜜经卷上</a></h1>
+<p>　　　　文殊师利所说摩诃般若波罗蜜经卷上</p>
+<p>　　　　　　　　梁扶南国三藏曼陀罗仙译</p>
+<p>　　如是我闻。一时佛在舍卫国祇树给孤独园。与大比丘僧满足千人。菩萨摩诃萨十千人俱。以大庄严而自庄严。皆悉已住不退转地。其名曰弥勒菩萨。文殊师利菩萨。无碍辩菩萨。不舍担菩萨。与如是等大菩萨俱。文殊师利童真菩萨摩诃萨。明相现时从其住处来诣佛所。在外而立。</p>
+<p>　　尔时尊者舍利弗。富楼那弥多罗尼子。大目犍连。摩诃迦叶。摩诃迦旃延。摩诃拘絺罗。如是等诸大声闻。各从住处俱诣佛所。在外而立。</p>
+<p>　　佛知众会皆悉集已。尔时如来从住处出。敷座而坐。告舍利弗。汝今何故。于晨朝时在门外立。</p>
+<p>　　舍利弗白佛言。世尊。文殊师利童真菩萨。先已至此住门外立。我实于后晚来到耳。</p>
+<p>　　尔时世尊问文殊师利。汝实先来到此住处。欲见如来耶。</p>
+<p>　　文殊师利即白佛言。如是世尊。我实来此欲见如来。何以故。我乐正观利益众生。我观如来如如相。不异相不动相不作相。无生相无灭相。不有相不无相。不在方不离方。非三世非不三世。非二相非不二相。非垢相非净相。以如是等。正观如来利益众生。</p>
+<p>　　佛告文殊师利。若能如是见于如来。心无所取亦无不取。非积聚非不积聚。</p>
+<p>　　尔时舍利弗语文殊师利言。若能如是如汝所说。见如来者甚为希有。为一切众生故见于如来。而心不取众生之相。化一切众生向于涅槃。而亦不取向涅槃相。为一切众生发大庄严。而心不见庄严之相。</p>
+<p>　　尔时文殊师利童真菩萨摩诃萨语舍利弗言。如是如是。如汝所说。虽为一切众生发大庄严心。恒不见有众生相。为一切众生发大庄严。而众生趣亦不增不减。假使一佛住世。若一劫若过一劫。如此一佛世界。复有无量无边恒河沙诸佛。如是一一佛若一劫若过一劫。昼夜说法心无暂息。各各度于无量恒河沙众生。皆入涅槃。而众生界亦不增不减。乃至十方诸佛世界。亦复如是。一一诸佛说法教化。各度无量恒河沙众生。皆入涅槃。于众生界亦不增不减。何以故。众生定相不可得故。是故众生界不增不减。</p>
+<p>　　舍利弗复语文殊师利言。若众生界不增不减。何故菩萨为诸众生。求阿耨多罗三藐三菩提。常行说法。</p>
+<p>　　文殊师利言。若诸众生悉空相者。亦无菩萨求阿耨多罗三藐三菩提。亦无众生而为说法。何以故。我说法中。无有一法当可得故。</p>
+<p>　　尔时佛告文殊师利。若无众生云何说有众生及众生界。</p>
+<p>　　文殊师利言。众生界相如诸佛界。</p>
+<p>　　又问众生界者是有量耶。</p>
+<p>　　答曰。众生界量如佛界量。佛又问众生界量有处所不。答曰众生界量不可思议。</p>
+<p>　　又问众生界相为有住不。</p>
+<p>　　答曰。众生无住犹如空住。</p>
+<p>　　佛告文殊师利。如是修般若波罗蜜时。当云何住般若波罗蜜。</p>
+<p>　　文殊师利言。以不住法为住般若波罗蜜。</p>
+<p>　　佛复问文殊师利。云何不住法。名住般若波罗蜜。</p>
+<p>　　文殊师利言。以无住相。即住般若波罗蜜。</p>
+<p>　　佛复告文殊师利。如是住般若波罗蜜时。是诸善根。云何增长云何损减。</p>
+<p>　　文殊师利言。若能如是住般若波罗蜜。于诸善根无增无减。于一切法亦无增无减。是般若波罗蜜性相亦无增无减。世尊。如是修般若波罗蜜。则不舍凡夫法。亦不取贤圣法。何以故。般若波罗蜜不见有法可取可舍。如是修般若波罗蜜。亦不见涅槃可乐生死可厌。何以故。不见生死况复厌离。不见涅槃何况乐著。如是修般若波罗蜜。不见垢恼可舍。亦不见功德可取。于一切法心无增减。何以故。不见法界有增减故。世尊。若能如是是名修般若波罗蜜。世尊。不见诸法有生有灭。是修般若波罗蜜。世尊。不见诸法有增有减。是修般若波罗蜜。世尊。心无悕取不见法相有可求者。是修般若波罗蜜。世尊。不见好丑不生高下不作取舍。何以故。法无好丑离诸相故。法无高下等法性故。法无取舍住实际故。是修般若波罗蜜。</p>
+<p>　　佛告文殊师利。是诸佛法得不胜乎。</p>
+<p>　　文殊师利言。我不见诸法有胜如相。如来自觉一切法空。是可证知。</p>
+<p>　　佛告文殊师利。如是如是。如来正觉自证空法。</p>
+<p>　　文殊师利白佛言。世尊。是空法中。当有胜如而可得耶。</p>
+<p>　　佛言。善哉善哉。文殊师利。如汝所说是真法乎。</p>
+<p>　　佛复谓文殊师利言。阿耨多罗是名佛法不。</p>
+<p>　　文殊师利言。如佛所说。阿耨多罗是名佛法。何以故。无法可得名阿耨多罗。</p>
+<p>　　文殊师利言。如是修般若波罗蜜。不名法器。非化凡夫法。亦非佛法非增长法。是修般若波罗蜜。复次世尊。修般若波罗蜜时。不见有法可分别思惟。</p>
+<p>　　佛告文殊师利。汝于佛法不思惟耶。</p>
+<p>　　文殊师利言。不也世尊。如我思惟。不见佛法。亦不可分别是凡夫法是声闻法是辟支佛法。如是名为无上佛法。复次修般若波罗蜜时。不见凡夫相。不见佛法相。不见诸法有决定相。是为修般若波罗蜜。复次修般若波罗蜜时。不见欲界不见色界不见无色界不见寂灭界。何以故。不见有法是尽灭相。是修般若波罗蜜。复次修般若波罗蜜时。不见作恩者不见报恩者。思惟二相心无分别。是修般若波罗蜜。复次修般若波罗蜜时。不见是佛法可取。不见是凡夫法可舍。是修般若波罗蜜。复次修般若波罗蜜时。不见凡夫法可灭。亦不见佛法而心证知。是修般若波罗蜜。</p>
+<p>　　佛告文殊师利。善哉善哉。汝能如是善说甚深般若波罗蜜相。是诸菩萨摩诃萨所学法印。乃至声闻缘觉学无学人亦当不离是印而修道果。</p>
+<p>　　佛告文殊师利。若人得闻是法不惊不畏者。不从千佛所种诸善根。乃至百千万亿佛所久植德本。乃能于是甚深般若波罗蜜。不惊不怖。</p>
+<p>　　文殊师利白佛言。世尊。我今更说般若波罗蜜义。</p>
+<p>　　佛言。便说。</p>
+<p>　　世尊。修般若波罗蜜时。不见法是应住是不应住。亦不见境界可取舍相。何以故。如诸如来不见一切法境界相故。乃至不见诸佛境界。况取声闻缘觉凡夫境界。不取思议相亦不取不思议相。不见诸法有若干相。自证空法不可思议。如是菩萨摩诃萨。皆已供养无量百千万亿诸佛。种诸善根。乃能于是甚深般若波罗蜜。不惊不怖。复次修般若波罗蜜时。不见缚不见解。而于凡夫乃至三乘不见差别相。是修般若波罗蜜。</p>
+<p>　　佛告文殊师利。汝已供养几所诸佛。</p>
+<p>　　文殊师利言。我及诸佛如幻化相。不见供养及与受者。</p>
+<p>　　佛告文殊师利。汝今可不住佛乘耶。</p>
+<p>　　文殊师利言。如我思惟不见一法。云何当得住于佛乘。</p>
+<p>　　佛言。文殊师利。汝不得佛乘乎。</p>
+<p>　　文殊师利言。如佛乘者。但有名字非可得亦不可见。我云何得。</p>
+<p>　　佛言。文殊师利。汝得无碍智乎。</p>
+<p>　　文殊师利言。我即无碍。云何以无碍而得无阂。</p>
+<p>　　佛言。汝坐道场乎。</p>
+<p>　　文殊师利言。一切如来不坐道场。我今云何独坐道场。何以故。现见诸法住实际故。</p>
+<p>　　佛言。云何名实际。</p>
+<p>　　文殊师利言。身见等是实际。</p>
+<p>　　佛言。云何身见是实际。</p>
+<p>　　文殊师利言。身见如相。非实非不实。不来不去亦身非身。是名实际。</p>
+<p>　　舍利弗白佛言。世尊。若于斯义谛了决定。是名菩萨摩诃萨何以故。得闻如是甚深般若波罗蜜相。心不惊不怖不没不悔。</p>
+<p>　　弥勒菩萨白佛言。世尊。得闻如是般若波罗蜜具足法相。是即近于佛坐。何以故。如来现觉此法相故。</p>
+<p>　　文殊师利白佛言。世尊。得闻甚深般若波罗蜜。能不惊不怖不没不悔。当知此人即是见佛。</p>
+<p>　　尔时复有无相优婆夷白佛言。世尊。凡夫法声闻法辟支佛法佛法。是诸法皆无相。是故于所从闻般若波罗蜜。皆不惊不怖不没不悔。何以故。一切诸法本无相故。</p>
+<p>　　佛告舍利弗。善男子善女人。若闻如是甚深般若波罗蜜。心得决定不惊不怖不没不悔。当知是人。即住不退转地。若人闻是甚深般若波罗蜜。不惊不怖信乐听受欢喜不厌。是即具足檀波罗蜜尸波罗蜜羼提波罗蜜毗梨耶波罗蜜禅波罗蜜般若波罗蜜。亦能为他显示分别如说修行。</p>
+<p>　　佛告文殊师利。汝观何义。为得阿耨多罗三藐三菩提。住阿耨多罗三藐三菩提。</p>
+<p>　　文殊师利言。我无得阿耨多罗三藐三菩提。我不住佛乘。云何当得阿耨多罗三藐三菩提。如我所说即菩提相。</p>
+<p>　　佛赞文殊师利言。善哉善哉。汝能于是甚深法中巧说斯义。汝于先佛久种善根。以无相法净修梵行。</p>
+<p>　　文殊师利言。若见有相则言无相。我今不见有相。亦不见无相。云何而言以无相法净修梵行。</p>
+<p>　　佛告文殊师利。汝见声闻戒耶。</p>
+<p>　　答曰见。</p>
+<p>　　佛言汝云何见。</p>
+<p>　　文殊师利言。我不作凡夫见不作圣人见。不作学见不作无学见。不作大见不作小见。不作调伏见不作不调伏见。非见非不见。</p>
+<p>　　舍利弗语文殊师利言。汝今如是观声闻乘。若观佛乘当复云何。</p>
+<p>　　文殊师利言。不见菩提法。不见修行菩提及证菩提者。</p>
+<p>　　舍利弗语文殊师利言。云何名佛。云何观佛。</p>
+<p>　　文殊师利言。云何为我。</p>
+<p>　　舍利弗言。我者但有名字。名字相空。</p>
+<p>　　文殊师利言。如是如是。如我但有名字。佛亦但有名字。名字相空即是菩提。不以名字而求菩提。菩提之相无言无说。何以故。言说菩提二俱空故。复次舍利弗。汝问云何名佛。云何观佛者。不生不灭不来不去。非名非相。是名为佛。如自观身实相。观佛亦然。唯有智者乃能知耳。是名观佛。</p>
+<p>　　尔时舍利弗白佛言。世尊。如文殊师利所说般若波罗蜜。非初学菩萨所能了知。</p>
+<p>　　文殊师利言。非但初学菩萨所不能知。及诸二乘所作已办者亦未能了知。如是说法。无能知者。何以故。菩提之相。实无有法而可知故。无见无闻无得无念。无生无灭无说无听。如是菩提。性相空寂。无证无知无形无相。云何当有得菩提者。</p>
+<p>　　舍利弗语文殊师利言。佛于法界。不证阿耨多罗三藐三菩提耶。</p>
+<p>　　文殊师利言。不也舍利弗。何以故。世尊即是法界。若以法界证法界者即是诤论。舍利弗。法界之相即是菩提。何以故。是法界中无众生相。一切法空故。一切法空即是菩提。无二无分别故。舍利弗。无分别中则无知者。若无知者即无言说。无言说相。即非有非无非知非不知。一切诸法亦复如是。何以故。一切诸法不见处所。决定性故。加逆罪相不可思议。何以故。诸法实相不可坏故。如是逆罪亦无本性。不生天上不堕地狱亦不入涅槃。何以故。一切业缘皆住实际。不来不去非因非果。何以故。法界无边无前无后故。是故舍利弗。若见犯重比丘不堕地狱清净行者不入涅槃。如是比丘非应供非不应供。非尽漏非不尽漏。何以故。于诸法中住平等故。</p>
+<p>　　舍利弗言。云何名不退法忍。</p>
+<p>　　文殊师利言。不见少法有生灭相。名不退法忍。</p>
+<p>　　舍利弗言。云何复名不调比丘。</p>
+<p>　　文殊师利言。漏尽阿罗汉。是名不调。何以故。诸结已尽更无所调故名不调。若过心行名为凡夫。何以故。凡夫众生不顺法界。是故名过。</p>
+<p>　　舍利弗言。善哉善哉。汝今为我善解漏尽阿罗汉义。</p>
+<p>　　文殊师利言。如是如是。我即漏尽真阿罗汉。何以故。断求声闻欲及辟支佛欲。以是因缘故名漏尽得阿罗汉。</p>
+<p>　　佛告文殊师利。诸菩萨等坐道场时。觉悟阿耨多罗三藐三菩提不。</p>
+<p>　　文殊师利言。菩萨坐于道场。无有觉悟阿耨多罗三藐三菩提。何以故。如菩提相。无有少法而可得者。名阿耨多罗三藐三菩提。无相菩提谁能坐者亦无起者。以是因缘不见菩萨坐于道场。亦不觉证阿耨多罗三藐三菩提。</p>
+<p>　　文殊师利白佛言。世尊。菩提即五逆五逆即菩提。何以故。菩提五逆无二相故。无学无学者。无见无见者。无知无知者。无分别无分别者。如是之相名为菩提。见五逆相亦复如是。若言见有菩提而取证者。当知此辈即是增上慢人。</p>
+<p>　　尔时世尊告文殊师利。汝言我是如来。谓我为如来乎。</p>
+<p>　　文殊师利言。不也世尊。我谓不是如来为如来耶。无有如相可名为如。亦无如来智能知于如。何以故。如来及智无二相故。空为如来但有名字。我当云何谓是如来。</p>
+<p>　　佛告文殊师利。汝疑如来耶。</p>
+<p>　　文殊师利言。不也世尊。我观如来无决定性。无生无灭故无所疑。</p>
+<p>　　佛告文殊师利。汝今不谓如来出现于世耶。</p>
+<p>　　文殊师利言。若有如来出现世者。一切法界亦应出现。</p>
+<p>　　佛告文殊师利。汝谓恒沙诸佛入涅槃耶。</p>
+<p>　　文殊师利言。诸佛一相不可思议。</p>
+<p>　　佛语文殊师利。如是如是。佛是一相不思议相。</p>
+<p>　　文殊师利白佛言。世尊。佛今住世耶。</p>
+<p>　　佛语文殊师利。如是如是。</p>
+<p>　　文殊师利言。若佛住世。恒沙诸佛亦应住世。何以故。一切诸佛皆同一相不思议相。不思议相无生无灭。若未来诸佛出兴于世。一切诸佛亦皆出世。何以故。不思议中无过去未来现在相。但众生取著。谓有出世谓佛灭度。</p>
+<p>　　佛语文殊师利。此是如来。阿罗汉。阿鞞跋致菩萨所解。何以故。是三种人。闻甚深法。能不诽谤。亦不赞叹。</p>
+<p>　　文殊师利白佛言。世尊。如是不思议法。谁当诽谤谁当赞叹。</p>
+<p>　　佛告文殊师利。如来不思议。凡夫亦不思议。</p>
+<p>　　文殊师利白佛言。世尊。凡夫亦不思议耶。</p>
+<p>　　佛言。亦不思议。何以故。一切心相皆不思议。</p>
+<p>　　文殊师利言。若如是说。如来不思议。凡夫亦不思议。今无数诸佛求于涅槃徒自疲劳。何以故。不思议法即是涅槃。等无异故。</p>
+<p>　　文殊师利言。如是凡夫不思议诸佛不思议。若善男子善女人。久习善根近善知识乃能了知。</p>
+<p>　　佛告文殊师利。汝欲使如来于众生中为最胜耶。</p>
+<p>　　文殊师利言。我欲使如来于诸众生为最第一。但众生相亦不可得。</p>
+<p>　　佛言。汝欲使如来得不思议法耶。</p>
+<p>　　文殊师利言。欲使如来得不思议法。而于诸法无成就者。</p>
+<p>　　佛告文殊师利汝欲使如来说法教化耶。</p>
+<p>　　文殊师利白佛言我欲使如来说法教化。而是说及听者皆不可得。何以故。住法界故。法界众生无差别相。</p>
+<p>　　佛告文殊师利。汝欲使如来为无上福田耶。</p>
+<p>　　文殊师利言。如来是无尽福田是无尽相。无尽相即无上福田。非福田非不福田。是名福田。无有明闇生灭等相。是名福田。若能如是解福田相。深植善种亦无增减。</p>
+<p>　　佛告文殊师利。云何植种不增不减。</p>
+<p>　　文殊师利言。福田之相。不可思议。若人于中如法修善亦不可思议。如是植种名无增无减。亦是无上最胜福田。</p>
+<p>　　尔时大地以佛神力。六种震动现无常相。一万六千人皆得无生法忍。七百比丘三千优婆塞四万优婆夷六十亿那由他六欲诸天。远尘离垢于诸法中得法眼净。</p>
+<p>　　　　文殊师利所说摩诃般若波罗蜜经卷上</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/stwbrblmj/stwbrblmjjdjx.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/wsslssmhbrblmj/wsslssmhbrblmjjx.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/stwbrblmj/stwbrblmjjdjx.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/wsslssmhbrblmj/wsslssmhbrblmjjx.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

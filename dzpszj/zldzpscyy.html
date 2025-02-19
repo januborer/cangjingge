@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>赞礼地藏菩萨忏愿仪（明智旭集）  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="赞礼地藏菩萨忏愿仪明智旭集"><a class="header" href="#赞礼地藏菩萨忏愿仪明智旭集">赞礼地藏菩萨忏愿仪（明智旭集）</a></h1>
+<p>　　　　赞礼地藏菩萨忏愿仪</p>
+<p>　　　　明　菩萨沙弥古吴　智旭　述</p>
+<p>　　（行者净身口意，至尊像前，应念我及众生，积迷造罪，无救无归；大士洪慈，为归为救，又念大士法身，及十方三宝，体常遍满，无所不在；与我现前心性，平等无二。起深信解，如奉慈颜。敷具拱立，唱云：）</p>
+<p>　　一切恭敬，</p>
+<p>　　一心顶礼十方常住三宝。</p>
+<p>　　（总一礼已，严持香华，如法供养。唱云：）</p>
+<p>　　愿此香华云，遍满十方界，供养一切佛，尊法诸贤圣。无边佛土中，受用作佛事。</p>
+<p>　　（至此停唱。烧香散华，至心想云：）</p>
+<p>　　一切佛法僧宝，体常遍满，无所不在。愿令以此香华，等同法性，普熏一切诸佛刹土，施作佛事。十方一切供具，无时不有。我今当以十方所有一切种种香华、璎珞、幢幡、宝盖、诸珍妙饰、种种音乐、灯明烛火、饮食衣服、卧具、汤药，乃至尽十方所有一切种种庄严供养之具，忆想遥拟，普共众生，奉献供养。一切世界中，有修供养者，我今随喜；若未修供养者，愿得开导，令修供养。又愿我身速能遍至一切刹土，于一一佛法僧所，各以一切种种庄严供养之具，共一切众生等持奉献，供养一切诸佛法身、色身、舍利形像、浮图庙塔，一切佛事；供养一切所有法藏，及说法处；供养一切贤圣僧众，愿共一切众生，修行如是供养已，渐得成就六波罗蜜、四无量心，深知一切法本来寂静，无生无灭，一味平等，离念清净，毕竟圆满。</p>
+<p>　　（想已，起云：）</p>
+<p>　　供养已，一切恭敬。</p>
+<p>　　（一礼已，次复合掌赞云：）</p>
+<p>　　南无地藏菩萨摩诃萨，以神通力，现声闻像，是诸微妙功德伏藏，是诸解脱珍宝出处，是诸菩萨明净眼目，是趋涅槃彻（一本作「商」）人导首；如如意珠，雨众财宝，随所希求，皆令满足；照行善者，犹如朗日；照失道者，犹如明炬；除烦恼热，如月清凉；渡四流者，为作桥梁；趋彼岸者，为作船筏。伏诸外道如师子王，降诸天魔如大龙象，护诸怖畏如亲如友，防诸怨敌如堑如城，救诸危难犹如父母，藏诸怯劣犹若丛林，令诸有情善根不坏，现妙境界令众欣悦，劝发有情增上惭愧；求福慧者令具庄严，能无功用转大法轮，殊胜功德不能测量，久修坚固大愿大悲，勇猛精进过诸菩萨。于一食顷至心归依称名念诵礼拜供养，能令一切，皆离忧苦，求诸所愿，速得满足，安置生天涅槃之道。故我一心归命顶礼。</p>
+<p>　　（赞已，一礼，添香致敬。唱云：）</p>
+<p>　　一心顶礼本师释迦牟尼如来。</p>
+<p>　　（拜下，想云：能礼所礼性空寂，感应道交难思议，我此道场如帝珠，释迦如来影现中。我身影现如来前，头面接足归命礼。下皆准此，唯改佛名。）</p>
+<p>　　一心顶礼过去师子奋迅具足万行如来，觉华定自在王如来。</p>
+<p>　　一心顶礼一切智成就如来，清净莲华日（「日」疑为「目」）如来。</p>
+<p>　　一心顶礼无边身如来，宝性如来，波头摩胜如来，师子吼如来。</p>
+<p>　　一心顶礼宝胜如来，宝相如来，袈裟幢如来，大通山王如来。</p>
+<p>　　一心顶礼净月佛，山王佛，智胜佛，净明王佛，智成就佛，无上佛，妙声佛，满月佛，月面佛，如是等不可说诸佛如来。</p>
+<p>　　一心顶礼拘留孙佛，毗婆尸佛，等七佛如来。</p>
+<p>　　一心顶礼普光佛等五十三佛如来。</p>
+<p>　　一心顶礼过去殑伽沙等诸佛如来。</p>
+<p>　　一心顶礼忉利天宫，十方集会，无量世界不可说不可说一切诸佛如来。</p>
+<p>　　一心顶礼未来净住世界安乐劫中无相如来及十方三世一切诸佛如来。</p>
+<p>　　一心顶礼十方一切诸佛所有色身、舍利、形像、浮图庙塔、一切佛事。</p>
+<p>　　（想云：诸佛法身如虚空，化事住世难思议，我皆影现化事前，一一皆悉归命礼。）</p>
+<p>　　一心顶礼地藏菩萨本愿经，大乘大集地藏十轮经，占察善恶业报经及十方三世一切法藏。</p>
+<p>　　（总三礼，想云：真空法界如虚空，常住法宝难思议，我皆影现法宝前，莫不皆悉归命礼。）</p>
+<p>　　一心顶礼文殊师利菩萨，财首菩萨，定自在王菩萨摩诃萨。（想偈如佛，但改菩萨名字，下皆仿此）</p>
+<p>　　一心顶礼无尽意菩萨，解脱菩萨，普贤菩萨摩诃萨。</p>
+<p>　　一心顶礼普广菩萨，观世音菩萨，虚空藏菩萨摩诃萨。</p>
+<p>　　一心顶礼好疑问菩萨，弥勒菩萨，金刚藏菩萨，坚净信菩萨摩诃萨。</p>
+<p>　　一心顶礼十方三世一切菩萨摩诃萨。</p>
+<p>　　一心顶礼憍陈那尊者，优波离尊者，目乾连尊者，一切声闻缘觉贤圣僧。</p>
+<p>　　一心顶礼忉利宫中分身来集地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼大集会中现声闻相地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼占察经中善安慰说地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入能发智定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入具足无边智定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入具足清净智定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入具足惭愧智定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入具足诸乘明定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入无忧神通明定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入具足胜通明定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入普照诸世间定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入诸佛灯炬明定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入金刚光定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入智力难推伏定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入电光明定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入具足上妙味定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入具足胜精气定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入上妙诸资具定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入无诤智定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入能引胜踊跃定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入具足世路光定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入善住胜金刚定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入增上观胜幢定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入具足慈悲声定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入引集诸福德定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼入海电光定地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼能入如是殑伽沙等诸定，成熟一切有情地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼以诸定力除刀兵劫地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼以诸定力除疾（一本作「疫」）病劫地藏菩萨摩诃萨。</p>
+<p>　　一心顶礼以诸定力除饥馑劫地藏菩萨摩诃萨。</p>
+<p>　　（礼竟如前，想偈毕，复作是念：）</p>
+<p>　　我及众生，无始常为三业六根重罪所障，不见诸佛，不知出要，但顺生死，不知妙理。我今虽知，犹与众生，同为一切重罪所障。今对地藏、十方佛前，普为众生，归命忏悔。惟愿加护，令障消灭。</p>
+<p>　　（作是念已，胡跪唱言：）</p>
+<p>　　普为法界一切众生，悉愿断除三障，归命忏悔。</p>
+<p>　（唱已，五体投地，复作是念：）</p>
+<p>　　我与众生，无始来今，繇爱见故，内计我人（一），外加恶友（二），不随喜他一毫之善（三），惟遍三业广造众罪（四），事虽不广恶心遍布（五），昼夜相续无有间断（六），覆讳过失不欲人知（七），不畏恶道（八），无惭无愧（九），拨无因果（十）。</p>
+<p>　　故于今日，深信因果（一），生重惭愧（二），生大怖畏（三），发露忏悔（四），断相续心（五），发菩提心断恶修善（六），勤策三业翻昔重过（七），随喜凡圣一毫之善（八），念十方佛有大福慧，能救拔我及诸众生，从二死海置三德岸（九），从无始来，不知诸法本性空寂，广造众恶，今知空寂，为求菩提，为众生故，广修诸善，遍断众恶（十）。惟愿地藏慈悲摄受。</p>
+<p>　　（作是念已，应起胡跪。唱言：）</p>
+<p>　　至心忏悔。我弟子（某甲），与法界众生，自迷法性，枉受轮回；无明覆心，不知出要，怀聪明慢，自实愚痴；闻大乘法，谬生空解，拨无因果，断灭善根。远离正信，远离正愿，离正意乐及以正见，远善知识、好处、好时，远离净戒、正定、正慧，随逐恶友，起诸邪见，造身语意无量罪业；或复毁谤大乘正法，或复毁谤独觉乘法，或复毁谤声闻乘法，障弊（一本作「蔽」）隐没，不令流布；或复于彼诸佛弟子，若是法器，若非法器；具戒破戒，下至无戒；著片袈裟剃须发者，多行忿恨、诃骂、毁辱、讥刺、诽谤，隐善扬恶，以粗恶言，期克迫胁，打棒伤害，侵夺依钵，侵夺资生，绝其饮食，退令还俗，脱其袈裟，枷锁系缚，禁闭牢狱，轻慢触恼，令不安乐；夺窣堵波及僧祇物，十恶五逆，至一阐提，乘此业缘，于无量劫，堕诸恶趣，备历三涂，受种种苦，楚痛难言；设得值遇无量诸佛，及大菩萨，亲承供养，发露忏除；复更护持无量道法，修学无量难行苦行，由彼业障有余未尽，令我等辈未能证得安乐涅槃，未能证得三摩地门殊胜功德，今向地藏菩萨摩诃萨及诸佛世尊，发大乘心，弘如来教，为令此土三宝种性，威德炽盛，久住世故；为欲摧灭一切众生坚固烦恼，令无余故，与诸众生，复深惭愧，发露忏悔，求悉消除。惟愿</p>
+<p>　　十方诸大慈尊，及地藏大士，哀愍覆护，济拔我等，令此罪障，皆得除灭；永不复受恶趣苦果。我等今者对世尊前，及与大士，以至诚心，发真誓愿，从今以去，乃至菩提，常愿不遇如是恶缘，决定不造如是重罪，终不毁谤诸佛正法，亦不触恼诸出家人，必不挑坏众生法眼，亦不断灭三宝种性。惟愿</p>
+<p>　　世尊及与大士，摄受证知，所发誓愿。令我等早成十法，及成十轮，获得无罪正路法忍。于三乘法，若三乘人，及非法器，得无误失，于大乘法，升进无转；利慧胜福，常得增长；于一切定，诸陀罗尼，诸忍诸地，速得自在；常得值遇诸善知识，常得不离见一切佛及诸菩萨声闻弟子，不离闻法，不离亲近供养众僧，于诸善根常能精进，菩提行愿无厌足心，先所造恶摧坏散灭，速能证得无上法轮，善巧方便成熟众生，皆令获得利益安乐。</p>
+<p>　　（或一说，或三说，起立。唱云：）</p>
+<p>　　忏悔发愿已，归命礼三宝。</p>
+<p>　　（一礼已，起立，正身，运想一切三宝遍满虚空，安坐法座，一一回身，如法旋绕，此身如影，音声如响，普遍十方，上供三宝，下警群灵，勿令心散，和雅唱云：）</p>
+<p>　　南无十方佛，南无十方法，南无十方僧。</p>
+<p>　　南无本师释迦牟尼佛。</p>
+<p>　　南无地藏菩萨本愿经。</p>
+<p>　　南无大乘大集地藏十轮经。</p>
+<p>　　南无占察善恶业报经。</p>
+<p>　　南无地藏菩萨摩诃萨。</p>
+<p>　　（或三称，或七称，旋绕既毕，回身至法座前，正立，至心唱云：）</p>
+<p>　　自归依佛，当愿众生，体解大道，发无上心。</p>
+<p>　　自归依法，当愿众生，深入经藏，智慧如海。</p>
+<p>　　自归依僧，当愿众生，统理大众，一切无碍。</p>
+<p>　　和南圣众。</p>
+<p>　　（再礼佛三拜，问讯毕，次至静室，或念地藏菩萨名，或持灭定业真言，或观大士平等法身，或作唯心识等二种观道，唯信唯笃，则必能灭障，必证法忍矣。）</p>
+<p>　　　　后序</p>
+<p>　　鸣呼！大法久湮，人多谬解，执大谤小，举世皆然。宁知地狱众苦，已随其后；喑哑余报，复更难穷。故我地藏慈尊，于大集会中，现声闻相。而世尊广叹胜德，且为之较量，云：假使有人，于弥勒、妙吉祥、并观自在、普贤之类，殑伽沙等大菩萨所，于百劫中，至心归依，称念礼供，求诸所愿，不如有人，于一食顷，归依称念礼供地藏。以菩萨久修坚固大愿大悲，勇猛精进，过诸菩萨故也。盖末世之中驾（「驾」疑为「笃」）言于大乘甚易，而躬行于僧行实难。宁知废小谈大，并其大而亦非；悟大用小，并其小而亦大。故法华诫弘经者必依四安乐行，涅槃极谈常住佛性，尤扶戒律。今大士之功德独盛，得非亦在此乎。智旭深恨夙生恶习，少年力诋三宝，造无间罪。赖善根未殒，得闻本愿尊经，知有出世大孝，乃转邪见而生正信。仍以谤法余业，虽辛勤修证，不登法忍。每一展读大士三经，辄不禁涕泗横流。悲昔日之无知，感大士之拯拔也。因念浊智流转之日，与我同此过者不少。敬宗十轮并占察、本愿二典，述此仪法，庶几共涤先愆，克求后果，不终为无依行乎！未登无生正位，皆可修之；无论初心与久学也。</p>
+<p>　　　　崇祯丁丑后，自恣前十日，</p>
+<p>　　　　菩萨沙弥智旭识于九子别峰之梵网室咒坛中。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../dzpszj/zcseybjxf.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../dzpszj/jhszjs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../dzpszj/zcseybjxf.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../dzpszj/jhszjs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>光赞经卷第八  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="光赞经卷第八"><a class="header" href="#光赞经卷第八">光赞经卷第八</a></h1>
+<p>　　　　光赞经卷第八</p>
+<p>　　　　　　　　西晋三藏竺法护译</p>
+<p>　　　　摩诃般若波罗蜜所因出衍品第十九</p>
+<p>　　佛告须菩提。如汝所问。何从出衍中。何从住衍中。谁为成衍者。从三界生住萨芸若。有本无生无甫当生。所以者何。其摩诃衍萨芸若慧。于此二事。法无所合亦无所散。无色无见无所取舍。则为一相则无有相。所以者何。其无相法无所出生。法有生者。则为欲令法界出生。其无相法有所生者。则为欲令本无出生。其无相法则无所生。欲令生者则为欲令真本际生。其有欲令无相生者。则为欲令不可思议法界出生。其有欲令无相法生。则为欲令专精修行而出生。其有欲令无相法生。则便欲令断界出生。取要言之。须菩提。则为欲令离欲界生。其有欲令无相法生者。则为欲令灭度界生。须菩提。彼为欲令寂然空无而出生矣。其有欲令色痛痒思想生死识无相法生者。则为欲令有相法生。所以者何。色则为空。从三界生住萨芸若。痛痒思想生死识。亦无有空。从三界生萨芸若者则无所住。所以者何。若解色者色则为空。解痛痒思想生死识者识则为空。眼耳鼻舌身心亦空。欲令生者。则为欲令虚空出生。眼色识耳声识鼻香识舌味识身更识意欲识。此十八种因缘所见则为空。无欲令生者。则为欲令无相法生。所以者何。须菩提。眼之所视悉皆为空。耳鼻舌身意。亦如是习皆空。须菩提。三界为空眼所视空。从三界生萨芸若者。则无所住六情亦空。因三界生萨芸若者。则无所住。六情所受所习皆空无有相。欲令生者则为欲令生者。则为欲令梦幻出生。所以者何。梦幻水月芭蕉野马深山之响。皆悉自然。自然之事如来之化。三界自然则无所生。萨芸若者则无所住。所以者何。须菩提。如梦自然。梦自然者悉无所有。幻化之事亦复如是。须菩提。其欲令檀波罗蜜有尸波罗蜜羼波罗蜜惟逮波罗蜜禅波罗蜜般若波罗蜜生者。则为欲令无相法生。所以者何。须菩提。六波罗蜜者悉皆自然。从三界生萨芸若者亦无所住。所以者何。须菩提。六波罗蜜者则为自然。其自然者故曰为空。其有欲令无相法生者。则为欲令内空外空有空无空近空远空真空出生。所以者何。须菩提。其七空者则为自然。以自然故。因三界生萨芸若者则无所住。所以者何。须菩提。用七空自然故名曰为空。故空为空。须菩提。其有欲令无相法生者。则为欲令四意止四意断四神足念五根五力七觉八道行生。所以者何。皆自然空。因三界生萨芸若者则无所住。须菩提。其有欲令三十七品出生者。则为欲令无相法生。所以者何。须菩提。三十七品则为自然。不生三界萨芸若者。则无所住。所以者何。三十七品自然空。空故曰空。须菩提。其有欲令十力无畏十八不共诸佛之法四分别辩悉自然空。空故曰空。须陀洹斯陀含阿那含阿罗汉辟支佛。上至怛萨阿竭阿罗诃三耶三佛生者。则为欲令无相法生。所以者何。须菩提。其三乘者亦复自然。不出三界萨芸若者则无所住。所以者何。须菩提。阿罗汉者则为自然。自然故空故曰为空。辟支佛者则为自然。自然故空故曰为空。怛萨阿竭则为自然。自然故空故曰为空。须菩提。其有欲令名号生者。则为欲令无相法生。空无相无愿亦复如是。其欲令因缘言辞生者。则为欲令无相法生。所以者何。须菩提。其名号空。不生三界萨芸若者则无所住。所以者何。名号则空。用名号空故曰为空。因缘言辞诸可处所悉皆为空。诸法处空故曰为空。其有欲令无所生生。则为欲令无相法生。所以者何。无相法空悉无处所。处所空故故曰为空。其有欲令无灭无想无尘无嗔无所有生者。则为欲令无相法生。所以者何。此诸事空空故曰空。名号因缘言辞所处。三十七品十种力四无畏十八不共诸佛之法四分别辩。亦复如是。是故须菩提摩诃衍者从三界生为无所生。生萨芸若生亦无所生无有动处。又须菩提所问。在何所住者。心无所住衍无有处。所以者何。无所住故。一切诸法亦无所住。</p>
+<p>　　又须菩提。衍所住者住无所住。其法界者。亦无所住住无所住。衍亦如是住无所住。如上虚空无所由转。衍亦如是住无所住。又譬如无生住无所住。衍亦如是住无所住。譬如无灭无尘无嗔及无所有住无所住。衍亦如是住无所住。所以者何。法界自然住无所住。所以者何。法界自然用自然故自然为空。及与七空悉无所有自然为空。空无所有故曰为空。是故须菩提。衍无所住住无所住故无动转。须菩提所问。从何所住而成衍者。衍无所生。所以者何。无有从中生者。无有甫当生者。一切诸法悉无所有。以此无故。一切诸法亦复如是。何所有法当有生者。所以者何。我人寿命亦复如是。亦无有如亦无所见。亦无所得本末清净。是故我人寿命。如是法界悉不可得本末悉空。是故怛萨阿竭悉不可得。其本际者亦不可得本末悉净。是故诸界不可思议。悉不可得本末清净。是故阴种诸入悉不可得本末清净。阴种诸入不可得故本末清净。六波罗蜜者悉不可得本末清净。是故七空亦不可得本末清净。意止意断神足根力七觉八道三十七品十种力四无所畏十八不共诸佛之法四分别辩。亦不可得本末清净。须陀洹斯陀含阿那含阿罗汉辟支佛。上至怛萨阿竭阿罗诃三耶三佛。悉不可得本末清净。三乘之法萨芸若慧。不可得故本末清净。其无所有生悉不可得本末清净。无灭无尘无嗔无争。诸无所有及诸所有。悉不可得本末清净。其过去当来今现在事。往来所住住止所生。悉不可得本末清净。所益所损悉不可得本末清净。谁当逮得不可得者。其法界者亦不可逮无有得者。所以者何。欲逮法界则不可得。若求阿罗汉辟支佛怛萨阿竭。欲得此者悉不可得。若有欲得三十七品十力无畏十八不共诸佛之法四分别辩者。亦不可得无能逮者。若有欲逮得阿耨多罗三耶三菩悉不可得。本际悉空而不可得。六波罗蜜及与七空。亦复如是悉不可得。其无所生亦无所灭。无尘无嗔无所有者悉不可得。所以者何。正真观之悉无所有悉不可得。其欲逮得第一住者亦不可得。至于十住。亦不可得本末清净。何所有第一住者。其清净观者及种性八等所示现地是所有地离欲之地所作办地辟支佛地菩萨道地三耶三佛地及第一地悉不可得。其七空者悉不可得。计于内空上至十住悉不可得。七空十住悉无所有悉不可得。所以者何。须菩提。其第一住但名字耳。为不可得。上至十住亦复如是。假有所得为不可得本末清净。而为众生讲说内空悉不可得。一切众生亦不可得。而为众生说七品空事。所可说者悉不可得本末清净。以内空故佛土清净悉无所得。七空自然自然空故佛土清净。悉不可得本末清净。是故内空及与五眼悉不可得。皆无所有自然。自然空为其五眼。悉无处所本末清净。是故须菩提。菩萨摩诃萨于一切悉无所得。则为逮得成摩诃衍三拔致萨芸若慧。</p>
+<p>　　　　摩诃般若波罗蜜无去来品第二十</p>
+<p>　　尔时贤者须菩提白佛言。所言摩诃衍者。其摩诃衍义之所趣。唯天中天。于天上人中世间而最为尊。莫不归者。衍与空等。譬如虚空容覆无量阿僧祇人莫不戴仰。唯天中天。摩诃衍者亦复如是。菩萨摩诃萨覆不可计阿僧祇人悉因得度。摩诃衍者。不见来时不见去时不见住处。如是天中天。摩诃衍者。不得过去当来现在。亦无中间见亦无所得。其名等于三世。故曰为衍是故为摩诃衍。</p>
+<p>　　于时世尊告须菩提。如是如是。所谓摩诃衍者。是为菩萨摩诃萨六波罗蜜檀波罗蜜尸波罗蜜羼波罗蜜惟逮波罗蜜禅波罗蜜般若波罗蜜。是为须菩提菩萨摩诃萨摩诃衍。</p>
+<p>　　复次须菩提。菩萨摩诃萨摩诃衍者。谓一切诸陀罗尼门诸三昧门首楞严三昧。取要言之。空等三昧。解脱三昧。无著三昧。寂灭三昧。是谓菩萨摩诃萨摩诃衍。</p>
+<p>　　复次须菩提。菩萨摩诃萨摩诃衍者。晓了七空三十七品十力无畏十八不共诸佛之法四分别辩。是为菩萨摩诃萨摩诃衍也。</p>
+<p>　　又须菩提。所言摩诃衍者。天上天下世间最上莫不归仰者。譬如须菩提欲界本无而无本无。等无有异不可分别。无有颠倒诚谛自然。久长坚固无有别离法。无合无散未曾所有。是为摩诃衍。天上天下人中最尊莫不归仰者。假使须菩提。劫尽烧时悉为现之。教化一切令知无常。无有长久无坚固者悉无所有。是故摩诃衍。天上天下世间最尊莫不归仰者。</p>
+<p>　　又须菩提。欲界如是等无有异。无有颠倒诚谛自然。无本坚固无别离法无有因缘。其无所有终不所有。是为摩诃衍。天上天下最尊。设使须菩提。欲界有想无常颠倒而现破坏。一切无常无有长久不可坚固。别离之法悉无所有。是故须菩提。摩诃衍天上天下。于无色界亦复如是。设使须菩提。诸色本无悉无所有亦复如是。等亦无差别无有若干诚谛自然。本无坚固无别离法。其无有者不可令有。是为摩诃衍。天上天下最尊。假使须菩提。色有所念而应清净。而为颠倒悉令饱满。皆当无常无有久存不得坚固。别离之法悉无所有。是故摩诃衍色痛痒思想生死识亦复如是。眼耳鼻舌身心等无有异。眼色识耳声识鼻香识舌味识身更识意欲识。等无有异悉无所有。所可分别。至诚真谛。计有常者久长坚固是非摩诃衍。用习六事心有想念。因缘所习迷惑多求以自饱满。是一切法皆悉无常无有长存不可久固。是故摩诃衍天上天下最尊。设使须菩提。法界所有悉无所有。是为摩诃衍。天上天下最尊坚固无所有生。如须菩提法界所有悉无所有。行无所有。是故摩诃衍天上天下最尊。设使须菩提。怛萨阿竭现有所有悉无所有。其真本际不可思议。其界所有悉无所有。是为摩诃衍。天上天下最尊。正使须菩提。诸界者不可思议。其所有者悉无所有。是故摩诃衍天上天下最尊。设使须菩提。六波罗蜜所有悉无所有亦复不无。是为摩诃衍。正使须菩提。其内空者不有不无自然为空。不有不无是为摩诃衍。所以须菩提。其内空者自然无有。有了空者不有不无。故曰摩诃衍。设使须菩提。三十七品。十力无畏十八不共诸佛之法四分别辩。不有不无亦不不无。是为摩诃衍。正使须菩提。其种性法不有不无亦不不无。用种性法不有不无亦不不无。是故摩诃衍。正使须菩提。其八等法不有不无。须陀洹法斯陀含法阿那含法阿罗汉法辟支佛法诸佛之法不有不无。用不有不无亦不无无。是故摩诃衍。正使须菩提。其八等法及与佛法。不有不无亦不无无。是故摩诃衍。用须菩提其诸种性不有不无亦不无无。用诸八等不有不无亦不无无。须陀洹斯陀含阿那含阿罗汉辟支佛。上至怛萨阿竭阿罗诃三耶三佛不有不无亦不无无。是故摩诃衍。须菩提。欲知以诸八等怛萨阿竭阿罗诃三耶三佛。不有不无亦不无无。是故摩诃衍。设使须菩提。诸天人民阿须伦及与世间。不有不无亦不无无。以诸天人民及阿须伦世间所有不有不无亦不无无。是故摩诃衍。假使须菩提。菩萨从初发意。乃至道场坐于佛树于中发心。不有不无亦不无无。如须菩提。菩萨摩诃萨从初发意乃至道场。于中发心一切不有不无亦不无无。是故摩诃衍。假使须菩提。菩萨摩诃萨。其智慧尊犹如金刚。不有不无亦不无无。是为菩萨摩诃萨晓了达见一切诸碍及众尘劳得萨芸若。以须菩提菩萨摩诃萨了诸挂碍一切尘劳悉无所有逮萨芸若。是故摩诃衍。正使须菩提。怛萨阿竭阿罗诃三耶三佛。其三十二大人之相。不有不无亦不无无。是故怛萨阿竭阿罗诃三耶三佛。天上天下最尊。威神圣德光明微妙。靡所不照无有畴匹。是故怛萨阿竭阿罗诃三耶三佛。威神巍巍圣德光明。照于十方恒沙诸佛世界。及诸天上天下诸天人民。诸阿须伦光明普遍。用不有不无亦不无无。是故怛萨阿竭阿罗诃三耶三佛光明。照于十方恒沙世界。</p>
+<p>　　又须菩提。怛萨阿竭有八部之音。不有不无亦不无无。是故怛萨阿竭阿罗诃三耶三佛。声告十方于阿僧祇无量世界。用怛萨阿竭其八部声。不有不无亦不无无。是故有八种音声。告于十方不可思议无量世界。</p>
+<p>　　又须菩提。怛萨阿竭所转法轮。不有不无亦不无无。是为怛萨阿竭转于法轮。沙门婆罗门诸梵天众。天上天下莫能当者。皆令如法各得其所。是故怛萨阿竭为转法轮。沙门婆罗门天上天下。及诸人民莫能当者。</p>
+<p>　　又须菩提。一切众生不有不无亦不无无。是故怛萨阿竭数转法轮。令诸众生不至无余于泥洹界。</p>
+<p>　　又须菩提。此诸众生不有不无亦不无无。悉了是已故。怛萨阿竭转于法轮。是故众生至无余界。于泥洹界而般泥洹。</p>
+<p>　　　　摩诃般若波罗蜜衍与空等品第二十一</p>
+<p>　　佛告须菩提。如汝所言。衍与空等者。所说至诚。如是如是。衍与空等。譬如虚空不可计知东方里数。南方西方北方四隅上下亦不可知。无远无近无有边际。怛萨阿竭慧亦如是。不可尽极八方上下。无有边际无有远近。慧不可尽。譬如虚空无长无短无有方面无增无减。怛萨阿竭慧亦如是。无长无短不圆不方无增无减。</p>
+<p>　　又须菩提。譬如虚空无有五色青黄赤白。衍亦如是。</p>
+<p>　　又须菩提。譬如虚空无有过去当来现在。衍亦如是无去来今。</p>
+<p>　　又须菩提。譬如虚空无能增者无能减者。衍亦如是不增不减。故言衍与空等。</p>
+<p>　　又须菩提。譬如虚空无有尘劳无嗔恨。无有生者亦无所灭。亦无所住亦无不住亦无所念。衍亦如是。是故言衍与空等。</p>
+<p>　　又须菩提。譬如虚空无有善恶。无有言辞亦无不言。譬如虚空无见无闻无念无知。衍亦如是。是故言衍与空等。</p>
+<p>　　又须菩提。譬如虚空亦无有异亦无不异。亦无所断亦无所造证亦无所除。衍亦如是。</p>
+<p>　　又须菩提。譬如虚空无有欲法不离欲法。无嗔恚法不离嗔恚。无愚痴法不离愚痴。衍亦如是。又须菩提譬如虚空不与欲界合同。不与色界及无色界合同。亦不离三界。衍亦如是。</p>
+<p>　　又须菩提。譬如虚空无初发意从第一住衍亦如是无有十住。</p>
+<p>　　又须菩提。譬如虚空无有清浊无所观见无有处所。无种性地八人等地无示现地。无我所地无所欲地。无所作不作地。衍亦如是。</p>
+<p>　　又须菩提。譬如虚空无须陀洹果。无斯陀含果。无阿那含果。无阿罗汉果。</p>
+<p>　　又须菩提。譬如虚空无声闻地。无辟支佛地。无三耶三佛地。衍亦如是。</p>
+<p>　　又须菩提。譬如虚空无有形像亦无不像。亦无有见亦不无见无受无舍无合无散。衍亦如是。</p>
+<p>　　又须菩提。譬如虚空则无有常亦无不常。无苦无乐无我不我衍亦如是。</p>
+<p>　　又须菩提。譬如虚空亦无有空亦无不空。无有异空无有异想。亦无无想亦无有愿亦无不愿。衍亦如是。故言衍与空等。</p>
+<p>　　又须菩提。譬如虚空无有寂然无不寂然。无有惔怕亦无不怕。</p>
+<p>　　又须菩提。譬如虚空无有光明亦无闇冥。衍亦如是。</p>
+<p>　　又须菩提。譬如虚空无所逮得亦无不得。衍亦如是。是故言衍与空等。</p>
+<p>　　又须菩提。譬如虚空无言无说亦无不言。衍亦如是。是故言衍与空等。是故须菩提。虚空平等衍亦平等。如须菩提所言。譬如虚空无有边际。覆不可计阿僧祇人。衍亦如是。安不可计阿僧祇人。如是须菩提。譬如虚空覆不可计阿僧祇人。衍亦如是。护不可计阿僧祇人计人无人。譬如虚空不可得有空以无有。摩诃衍者亦复如是。是故须菩提。摩诃衍者。安护无数阿僧祇人。所以者何。人与虚空及摩诃衍。此一切法都不可得故。</p>
+<p>　　复次须菩提。人不可计空亦不可计。虚空亦不可计。摩诃衍亦不可计。是故摩诃衍覆不可计阿僧祇人。所以者何。须菩提。人与虚空及摩诃衍。悉不可计悉不可得。</p>
+<p>　　复次须菩提。不可计是故摩诃衍覆护不可计阿僧祇人。</p>
+<p>　　复次须菩提。人无所有法界亦无所有一切诸法亦无所有。故曰虚空亦无所有。人与虚空及摩诃衍悉无所有。阿僧祇无所有。无有量无所有。无有底无所有。是故摩诃衍覆护不可计阿僧祇人。所以者何。众生法界及摩诃衍。又阿僧祇不可限量无有崖底。悉不可得故。</p>
+<p>　　复次须菩提。人无所有。怛萨阿竭亦无所有。虚空亦无所有。摩诃衍亦无所有。阿僧祇亦无所有。不可计亦无所有。无底亦无所有。一切诸法亦无所有。是故须菩提。摩诃衍者。为不可计阿僧祇崖底人而设拥护。所以者何。怛萨阿竭虚空众生及摩诃衍。其阿僧祇不可计议无有崖底。悉不可得故。</p>
+<p>　　复次须菩提。吾我无所有。所知所见亦无所有。本际无所有。当作是了本际以无。至不可计及阿僧祇无央数者亦无所有。以无所有一切诸法亦无所有。是故摩诃衍名曰不可计阿僧祇覆护无央数人。所以者何。须菩提。一切众生所知所见及与本际。至阿僧祇无央数不可计皆不可得。</p>
+<p>　　复次须菩提。吾我及人悉无所有。所知所见亦无所有。不可思议境界亦无所有。色痛痒思想生死识亦无所有。虚空亦无所有。摩诃衍亦无所有。阿僧祇亦无所有。不可计亦无所有。无央数亦无所有。一切诸法亦无所有。是故摩诃衍为不可计阿僧祇人之覆护。所以者何。如须菩提。吾我诸法悉不可逮。</p>
+<p>　　复次须菩提。吾我及人悉为虚空。所知所见亦复虚无。眼亦虚无。耳鼻舌身意亦复虚无。以虚无虚空亦虚无。空以虚无摩诃衍者亦复虚无。以无二虚阿僧祇无央数不可计亦复虚无。不可计以虚无。一切诸法亦复虚无。是故摩诃衍。覆无央数不可计阿僧祇人。所以者何。须菩提。吾我及人一切诸法悉不可得。</p>
+<p>　　复次须菩提。吾我无所有。所知所见亦无所有。所知所见以无所有。檀波罗蜜亦无所。有尸波罗蜜羼波罗蜜惟逮波罗蜜禅波罗蜜般若波罗蜜亦无所有。般若波罗蜜以无所有。虚空亦无所有。摩诃衍亦无所有。是故摩诃衍覆护无央数不可计阿僧祇人。所以者何。须菩提。吾我及寿一切诸法悉不可得故。</p>
+<p>　　复次须菩提。吾我及人则无所有。世间所知内空外空近空远空真空所有空无所有空亦无所有。七空以无有。虚空亦无所有。摩诃衍亦无所有。无央数不可计阿僧祇亦无所有。一切诸法亦无所有。是故摩诃衍。覆护不可计无央数阿僧祇人。所以者何。须菩提。我人及寿一切诸法悉不可得故。</p>
+<p>　　复次须菩提。我人知见悉无所有。意止意断神足根力七觉八道三十七品亦无所有。十力无畏十八不共诸佛之法亦无所有。虚空摩诃衍亦无所有。是故摩诃衍覆护不可计无央数阿僧祇人。所以者何。吾我及人一切诸法悉不可得故。</p>
+<p>　　复次须菩提。我人知见悉无所有。种性诸法亦无所有。所作之地以无所有。虚空亦无所有。摩诃衍亦无所有。不可计阿僧祇人一切诸法。亦无所有。是故摩诃衍覆护不可计无央数阿僧祇人。</p>
+<p>　　复次须菩提。我人知见亦无所有。须陀洹斯陀含阿那含阿罗汉辟支佛亦无所有。一切诸法亦无所有。是故摩诃衍覆护不可计无央数阿僧祇人。所以者何。吾我及人一切诸法悉不可得。</p>
+<p>　　复次须菩提。声闻辟支佛上至怛萨阿竭亦无所有。萨芸若亦无所有。一切诸法亦无所有。是故摩诃衍覆护不可计无央数阿僧祇人所以者何。须菩提。我人诸法悉不可得故。</p>
+<p>　　又须菩提。泥洹之界覆护不可计阿僧祇人。衍亦如是。是故衍与空等。覆护不可计阿僧祇人。如须菩提所问。摩诃衍者。亦不见来时亦不见去时。亦不见住处。衍亦如是。所以者何。一切诸法不可转动。是故无有住者无有来者亦无所住。所以者何。须菩提。色痛痒思想生死识。亦无所从来亦无所从去亦无所住。须菩提。色痛痒思想生死识亦清净。无所从来无所从去亦无所住。色痛痒思想生死识者无本。无所从来无所从去亦无所住。色痛痒思想生死识自然。无所从来无所从去亦无所住。色痛痒思想生死识自然相。无所从来无所从去亦无所住。眼耳鼻舌身意自然相者。无所从来无所从去亦无所住。其地水火风空是诸种者。无有清净亦无无本。其自然者亦无地种。自然相者。无所从来无所从去亦无所住。水火风种虚空识种亦复如是。怛萨阿竭本无自然及自然相。无所从来无所从去亦无所住。须菩提。本际清净本际无本。本原自然本自然相。不可计议及清净界者。无所从来无所从去亦无所住。不可思议及与无本。无所念界及与自然。无思议界自然之相。无所从来无所从去亦无所住。须菩提。六波罗蜜亦清净。般若波罗蜜亦无无本亦无自然。自然之相。无所从来无所从去亦无所住。三十七品十力无畏十八不共诸佛之法道德清净。佛与正觉。无所从来无所从去亦无所住。其无所有及与无本。其无为者不为自然。其无为者无自然相。无所从来无所从去亦无所住。如须菩提所言。摩诃衍者。不得过去不得当来不得中间。三世平等。摩诃衍者但有字耳。如是须菩提所言。摩诃衍者。无去来今三世平等。摩诃衍者但有字耳。所以者何。须菩提。过去亦空当来亦空现在亦空。三世平等三世空等。摩诃衍者亦复空等。菩萨亦空。其以空者。无一无二无三无四不多不少。是故名曰三世平等。为摩诃衍。菩萨功德巍巍。无有等侣无正无邪。亦不于欲亦不离欲。亦不嗔恚不离嗔恚。亦不愚痴不离愚痴。不得憍慢不离憍慢。不得贪悭妒嫉亦无所离。不得善法恶法。不得有常无常。不得苦乐。不得我不我。欲界色界无色界亦不可得。不度欲界不度色界不度无色界。所以者何。不得自然。过去色空当来色空现在色空。痛痒思想生死识。亦复如是。色不可得。用过去当来现在色空故。不可得空故曰空。空不可得。何况念空有去来今。痛痒思想生死识。亦复如是。</p>
+<p>　　又须菩提。六波罗蜜。不得过去不得当来不得现在。须菩提。六波罗蜜亦不可得。三世平等故。六波罗蜜为不可得。其平等者无去来今。用平等故。</p>
+<p>　　复次须菩提。其三十七品十力无畏十八不共诸佛之法亦不可得。过去当来现在三世平等故。三十七品十力无畏诸佛之地亦不可得。其平等者无去来今。十力无畏十八不共诸佛之法无去来今。以平等故。故曰平等。何况平等去来今三十七品十力无畏十八不共诸佛之法。而可得乎。</p>
+<p>　　复次须菩提。过去当来现在凡夫亦不可得。三世平等。故故凡夫等。所以者何。推求人永不可得。须陀洹斯陀含阿那含阿罗汉辟支佛。菩萨怛萨阿竭亦不可得。当来现在亦复如是。三世平等故。诸声闻辟支佛菩萨怛萨阿竭亦不可得。推极人本不可得故。如是须菩提。故菩萨摩诃萨。作是住般若波罗蜜。觉了三世。为以具足萨芸若慧。是为菩萨摩诃萨。为摩诃衍三世平等。菩萨摩诃萨以住是者。天上天下世间最尊。因得出生萨芸若慧。</p>
+<p>　　须菩提白佛言。善哉善哉。唯天中天。摩诃衍者。是菩萨摩诃萨学此衍者。过去菩萨摩诃萨。亦因学是得萨芸若慧。当来菩萨摩诃萨。亦因是学得萨芸若慧。今现在十方不可计无央数阿僧祇世界。诸菩萨摩诃萨。亦复学是摩诃衍。得萨芸若慧。是故天中天。菩萨摩诃萨摩诃衍也。</p>
+<p>　　佛告须菩提。如是如是。过去未来当今现在。怛萨阿竭阿罗诃三耶三佛。悉学是法得萨芸若慧。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/gzj/gzjjd7.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/gzj/gzjjd9.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/gzj/gzjjd7.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/gzj/gzjjd9.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

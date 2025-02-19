@@ -1,0 +1,467 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>佛说最上根本大乐金刚不空三昧大教王经卷第七  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="佛说最上根本大乐金刚不空三昧大教王经卷第七"><a class="header" href="#佛说最上根本大乐金刚不空三昧大教王经卷第七">佛说最上根本大乐金刚不空三昧大教王经卷第七</a></h1>
+<p>　　　　佛说最上根本大乐金刚不空三昧大教王经卷第七</p>
+<p>　　　　　　　　西天译经三藏朝奉大夫试光</p>
+<p>　　　　　　　　禄卿明教大师臣法贤奉诏译</p>
+<p>　　　　最上成就印相分第二十四</p>
+<p>　　尔时金刚手菩萨，宣说此决定不空最上善巧微妙广大不可思议甚深之法，所有尽无尽成就法，皆悉能成。行人当随意随处，结跏趺坐心意调柔，然后以左手结坚固一切智印，安于左胯之侧，右手戏掷金刚杵，以金刚三业成就故，是即金刚萨埵。依如是法仪，速成坚固不退，乃至诸大菩萨及如来地，于诸成就得大自在，如是金刚萨埵一切处坚固。行人设复未入曼拏罗，修此大印者，得诸佛恭敬供养，获一切圣财大乐自在。此大秘密印三界中最上。成就此大印，与金刚萨埵等无有异，所有诸成就及种种事业大妙乐等，以此大印故皆悉圆满，所求之法无不成就。</p>
+<p>　　复说金刚萨埵根本大印。以此印故，于一切曼拏罗，所有三昧钩召入寤敬爱等，种种成就法皆得圆满，亦名金刚秘密三昧印。其印当十指相合，名为金刚合掌，又复十指相交如拳，名为金刚缚。以此金刚缚，展二头指及二拇指，复屈二中指入于掌内，与二拇指相捻，二头指平正如金刚杵，是名金刚萨埵根本大印，即此根本大印。复二中指如钩，安于本心如作钩召势，是名金刚钩印。此金刚钩印，与金刚萨埵作大爱乐，若用此钩印及心明作钩召时，金刚萨埵生大爱敬，速降曼拏罗，当得金刚萨埵大欲大乐，如是钩召已，所有一切如来及诸菩萨乃至一切有情，悉皆平等速得钩召，若钩召不降赴者速得破坏。</p>
+<p>　　复说大乐金刚三昧心阏伽印。先当二手作如金刚钵相。然结前金刚印，后以二中指如花枝，当以心明加持，以此三昧阏伽印。若授灌顶者，是人得一切自在，此印功用亦如前印，于一切法皆得用之。</p>
+<p>　　复说入曼拏罗幡印。当右手竖三指如幡，拇指与小指头相捻，作嬉戏歌舞，入于曼拏罗而先顶礼本尊。若结此印入曼拏罗者，即成金刚阿阇梨定成供养事。然后随力随意，以香华标帜等当献供养。复用结幡印，顶礼于本尊而发是言：我今顶礼本尊。言已即作金刚合掌安于顶上，顶礼金刚萨埵及诸如来而伸称赞。然后二手作金刚缚，拇指相交，各屈头指，安自顶上如戴宝冠。复改金刚拳，于顶左右而作系鬘相。复如垂带势，作是印法已，当想如金刚萨埵授已灌顶，然后以大乐金刚甘露水自灌其顶，作灌顶已，所有金刚阿阇梨法皆得成就。</p>
+<p>　　又复若为弟子授灌顶者，当以金刚合掌作顶礼印，以众妙花授与灌顶，如是印法及诸曼拏罗仪，即成一切成就自在，是名金刚萨埵印成就仪。</p>
+<p>　　复说印法。若欲召请金刚萨埵者，行人当跏趺而坐，结大乐秘密金刚钩印，及诵心明而作钩召。然后依法献种种歌舞等供养而伸称赞。复结嬉戏印作礼持诵，以金刚歌舞等供养故，所作之法即得成就，即说最上秘密金刚歌曰：</p>
+<p>　　萨哩[口+缚]　努啰　[言+我]稣珂素　怛摩　那娑　怛鍐　[口+缚]日啰　萨埵波啰摩稣啰多　婆[口+缚]弥　摩贺　稣珂涅哩　除　萨啰　野[抨-平+柰]　钵啰　底钵爹悉[亨+也]左罗具钵啰　拏多</p>
+<p>　　如是金刚歌，若常赞咏者，得大乐尊坚固爱敬作诸成就。此大秘密歌常持于本心，若于赞叹时令唇齿相合，依诸仪轨不离金刚语，善成诸部法咏吽字等歌，随力而作随其所欲，以调顺语业微出其声，令梵音和雅歌咏金刚萨埵法。此最上成就歌，当于一切处随意持诵，当用金刚萨埵大印，其印左手作智拳，右手持金刚杵，以此印明当作成就法。</p>
+<p>　　如是等印皆依本尊法，及用心明所作皆成。复说一切如来印相。其印以二手，先作一切如来金刚智拳，如金刚宝灌顶法而作灌顶，灌于五处。复作合掌如供养势，磔开其手却作二拳，左拳向外竖立头指，右拳向内安于本心，成印此一切如来智拳大印，是决定不空。结此印时获不退地，当证阿耨多罗三藐三菩提，是人不可见远离诸禁缚，乃至诸魔军亦不能娆乱。又复结此印者，当观如佛，若供养此人，当如供养诸佛菩萨。如是大印仪，所有三昧印莲华印金刚印，皆亦如是。</p>
+<p>　　所谓羯磨印者。先二手平仰，二拇指舒向于头指，安于本心已，复作如宝灌顶成印。</p>
+<p>　　又复如前二手平仰各微屈头节，二中指相结如金刚莲华，即成法印，即说此印明曰：</p>
+<p>　　阿　呼　怛[口+览]　纥哩　吽</p>
+<p>　　又复改羯磨印。以左手作金刚拳，屈拇指入拳内，此成一切如来智拳大印。</p>
+<p>　　又复以右手如捻衣角，钩于本心，而复展手作触地相，此成降诸魔军印。</p>
+<p>　　又复不改此印，而复仰手成印，是名出生印，亦名施愿印，亦名授记印。复以此印作捻衣角，如开莲华势成印，是名出生法印，亦名清净诸法印。复以此印，竖三指如幡即成幡印，结此印，时所有愿求决定成就。</p>
+<p>　　复说一切如来智拳大羯磨印成就。若用此印安病人身其病即差。若安于心诸毒销除，乃至邪印法等悉皆灭坏，即说明曰：</p>
+<p>　　唵　吽</p>
+<p>　　用此明同前羯磨印法，功能成就。若结印持诵此明，旋转于身获大辩才，所有一切如来最上大密印，悉得坚固。如是若安于诸根得诸根圆满，若称念诸佛已，旋转诸方复安于本心，或自求成就或为他作，皆悉得大悦乐，乃至证佛菩提。若结此印观想诸佛，当了五蕴如陶师轮，然后身作礼敬口诵大明一心正念观想。住于舍念戒精进慈定智慧方便力，坚固出生陀罗尼门，满足十地行四无碍解十八不共法，以毗首羯磨法广饶益众生，以金刚三业作大佛事。即说诸大明曰：</p>
+<p>　　唵　冒地唧多[口+缚]日哩</p>
+<p>　　唵　三满多跋[抨-平+柰]啰　左哩曳</p>
+<p>　　唵　进多　摩尼</p>
+<p>　　唵　阿[宁+也]噜提</p>
+<p>　　唵　惹　底尾[口+缚]哩帝</p>
+<p>　　唵　萨哩[口+缚]　尾倪也　你</p>
+<p>　　唵　尾啰　[言+我]达哩摩　帝</p>
+<p>　　唵　尾　哩也　葛[口+缚]济</p>
+<p>　　唵　萨哩[口+缚]　[言+我]　弥你</p>
+<p>　　唵　[口+缚]日啰　[抨-平+柰]哩　茶唧帝吽</p>
+<p>　　唵　萨哩[口+缚]　怛他　[言+我]帝</p>
+<p>　　唵　莎婆　[口+缚]戍驮达哩摩　多　倪也　那尾戍地</p>
+<p>　　唵　达哩摩　尾输驮[宁+也]</p>
+<p>　　唵　尾逊婆[口+缚]日哩　尼发吒</p>
+<p>　　唵　哥　摩啰　拟</p>
+<p>　　唵　[口+弱][口+缚]日哩</p>
+<p>　　唵　吽萨哩[口+缚]　[抨-平+柰]　摩[宁+也]</p>
+<p>　　唵　纥哩</p>
+<p>　　唵　阿哥　啰目契</p>
+<p>　　唵　钵啰　倪也　播　啰弥帝　阿鍐　吽唵　阿</p>
+<p>　　唵　萨哩[口+缚]　怛他　[言+我]多哥　野　拟哩</p>
+<p>　　唵　萨哩[口+缚]　怛他　[言+我]多[口+缚]　拟尾　戍地</p>
+<p>　　唵　萨哩[口+缚]　怛他　[言+我]多唧多[口+缚]日哩　阿</p>
+<p>　　如是一切如来语印法鼓，出微妙之音有微妙之义，是大法语是诸佛心，能决定成就所作事业。当依法持诵念诸佛已，然后以一切如来正念及一切如来印，而作成就。</p>
+<p>　　复说金刚火焰日轮印相。先结金刚大印。复改作三昧印，后复作金刚缚已。诸指皆如火焰轮。二中指如金刚杵成印，此印能调伏三界，亦能作敬爱金刚萨埵。</p>
+<p>　　又复不改前印。左手作拳，头指竖立如期克相。右手如钩成印，是名降三界印，此印能钩召一切。</p>
+<p>　　又复二手作忿怒拳已，复作金刚钩，如期克相成印，是名金刚钩印，此印善作一切事，能作诸成就。</p>
+<p>　　又复作金刚合掌，十指如火焰成印，是名颦眉菩萨印，此印善作种种事，善调伏诸恶。</p>
+<p>　　又复作金刚合掌。复左手如钩势成印，此印能钩召一切，亦能作入寤法，悉得成就。</p>
+<p>　　又复左手作金刚拳，右手如三叉成印，此印能脱一切枷锁禁缚。</p>
+<p>　　又复二手如开敷莲华成印，此印能断一切烦恼。</p>
+<p>　　又复二手作金刚缚，二拇指相并成印，亦名降三界印，此印善作钩召调伏最上成就。</p>
+<p>　　又复右手头指，钩左手头指，如挽弓势成印。此印善作钩召，亦能作诸敬爱。</p>
+<p>　　又复如降三界印，右手作金刚拳展臂，以小指安左手背成印。此印善破诸恶邪印，善作诸成就。</p>
+<p>　　又复二手作金刚缚，柔软紧密成印，是名金刚成就印。</p>
+<p>　　又复二手作金刚缚，二拇指与头指。如金刚杵成印。此印能破坏诸恶。所有幡印与铃印，皆作最胜法，亦能破坏诸恶，三界中殊胜，是金刚萨埵灌顶印。</p>
+<p>　　又复金刚部贤圣印，二手作金刚拳。依此法仪本部贤圣，以金刚宝作灌顶，作金刚合掌，以净帛覆面，二拇指如金刚。当作金刚灌顶已。然后依法作礼，受持金刚杵，乃随力献阿阇梨供养，即得成一切法。</p>
+<p>　　如是等诸部印相，皆依法结同大明用，即得所作成就。</p>
+<p>　　　　最上秘密仪轨分第二十五</p>
+<p>　　尔时诸如来　及大菩萨众</p>
+<p>　　金刚贤圣等　共异口同音</p>
+<p>　　发如是问言　金刚手菩萨</p>
+<p>　　如仁者所说　最上羯磨法</p>
+<p>　　善作诸成就　其所说仪轨</p>
+<p>　　微妙真实理　从无相之法</p>
+<p>　　而现诸仪轨　是仪轨云何</p>
+<p>　　何名最上教　复何为根本</p>
+<p>　　何名本无有　复名金刚手</p>
+<p>　　以何为大欲　复何名大乐</p>
+<p>　　何名为善贤　何名高举势</p>
+<p>　　何名诸法中　自在金刚手</p>
+<p>　　内外大心明　云何而出生</p>
+<p>　　根本微妙歌　何说复何义</p>
+<p>　　大金刚三昧　此法名何等</p>
+<p>　　云何菩提心　云何三摩地</p>
+<p>　　云何菩提行　以何降魔军</p>
+<p>　　云何证菩提　云何本部生</p>
+<p>　　云何欲解脱　何者三种名</p>
+<p>　　云何一切处　大金刚大乐</p>
+<p>　　何不空三昧　何八曼拏罗</p>
+<p>　　当有何果利　及成就仪轨</p>
+<p>　　大秘密真理　以何而演说</p>
+<p>　　云何本尊法　诸部复云何</p>
+<p>　　云何灌顶理　云何贤圣众</p>
+<p>　　云何五秘密　何名虚空藏</p>
+<p>　　如何标帜法　一切钩召法</p>
+<p>　　云何诸供养　云何见前法</p>
+<p>　　云何成就仪　云何非勤苦</p>
+<p>　　如是诸秘密　最上真实理</p>
+<p>　　为成微妙字　而广利众生</p>
+<p>　　如上为宣说　是时金刚手</p>
+<p>　　受诸佛劝请　为利众生故</p>
+<p>　　而说如上法</p>
+<p>　　所言仪轨者　谓诸法仪轨</p>
+<p>　　是无仪轨法　饶益诸众生</p>
+<p>　　而现诸仪轨　由如是仪轨</p>
+<p>　　清净诸法故</p>
+<p>　　言最上教者　谓摄一切法</p>
+<p>　　出生佛菩萨　秘密真实理</p>
+<p>　　是名最上教</p>
+<p>　　所言根本者　谓即真实智</p>
+<p>　　遍满虚空界　如金刚坚固</p>
+<p>　　是大欲大乐　最上微妙字</p>
+<p>　　即金刚萨埵　诸仪轨实理</p>
+<p>　　所言本无者　如虚空本性</p>
+<p>　　谓金刚萨埵　是大坚固身</p>
+<p>　　是名本无有　言金刚手者</p>
+<p>　　是即大自在　善施诸成就</p>
+<p>　　是金刚部主　爱乐微妙字</p>
+<p>　　所言大欲者　谓离诸过失</p>
+<p>　　了达究竟法　是名为大欲</p>
+<p>　　所言大乐者　谓真实妙理</p>
+<p>　　即金刚萨埵　出生所依故</p>
+<p>　　所言善贤者　谓清净法界</p>
+<p>　　解脱诸如来　遍满普贤身</p>
+<p>　　其高举势者　谓所有成就</p>
+<p>　　最上自在印　钩召诸成就</p>
+<p>　　是名高举势</p>
+<p>　　所言诸法中　自在金刚手</p>
+<p>　　谓即根本教　真实微妙理</p>
+<p>　　若至心诵持　获一切功德</p>
+<p>　　是名诸法中　自在金刚手</p>
+<p>　　所言菩提心　谓不可思议</p>
+<p>　　广大甚深法　成就诸妙乐</p>
+<p>　　能变化一切　清净菩提心</p>
+<p>　　由是而坚固　作诸殊胜业</p>
+<p>　　安住三摩地　即此三摩地</p>
+<p>　　金刚智出生　从金刚所生</p>
+<p>　　名金刚萨埵　此即诸佛身</p>
+<p>　　是名菩提心</p>
+<p>　　所言大金刚　谓摄诸有情</p>
+<p>　　令修我教法　秘密真实理</p>
+<p>　　若常修习者　即成大金刚</p>
+<p>　　所言菩提行　谓观诸有情</p>
+<p>　　染著诸烦恼　为利益彼故</p>
+<p>　　常行普贤行　是名菩提行</p>
+<p>　　所言降魔者　谓即诸魔心</p>
+<p>　　是心即如来　若能调伏心</p>
+<p>　　无复诸魔娆　是即降魔军</p>
+<p>　　所言证菩提　谓解悟本心</p>
+<p>　　坚固菩提智　了真实妙理</p>
+<p>　　即成等正觉　是名证菩提</p>
+<p>　　又言金刚手　谓调伏诸恶</p>
+<p>　　令迷者悟解　诸佛金刚杵</p>
+<p>　　坚固菩提心　诸佛所付授</p>
+<p>　　是法界真理　受持为器仗</p>
+<p>　　成就诸法故　是名金刚手</p>
+<p>　　所言本部生　谓智度为母</p>
+<p>　　方便解为父　从金刚手法</p>
+<p>　　出生诸部法　是名本部生</p>
+<p>　　所言欲解脱　谓大欲大乐</p>
+<p>　　善获诸成就　诸成就乐句</p>
+<p>　　是即大乐法　是名欲解脱</p>
+<p>　　所言三种名　谓三世无边</p>
+<p>　　而悉能调伏　而作三界主</p>
+<p>　　复名为三宝　复名为三界</p>
+<p>　　能作诸成坏　是为三种名</p>
+<p>　　所言一切处　大金刚大乐</p>
+<p>　　谓一切有情　欲广大利益</p>
+<p>　　其心无定止　若于一切处</p>
+<p>　　安住坚固心　了达真实义</p>
+<p>　　是名一切处</p>
+<p>　　所言根本歌　及内外心明</p>
+<p>　　谓三有最胜　成就大自在</p>
+<p>　　菩萨利有情　是大欲大乐</p>
+<p>　　秘密微妙句　吽字歌心明</p>
+<p>　　乃至外心明　皆真实理智</p>
+<p>　　以外秘密心　而生悦乐故</p>
+<p>　　所作皆成就　名根本歌等</p>
+<p>　　其不空三昧　谓作成就法</p>
+<p>　　以微妙大乐　所作获成就</p>
+<p>　　非勤苦而得　此大三昧法</p>
+<p>　　诸佛不能越　名不空三昧</p>
+<p>　　八曼拏罗者　谓随其处所</p>
+<p>　　但以随分力　各称彼根性</p>
+<p>　　随时作诸法　即现贤圣众</p>
+<p>　　其所得果报　获大究竟福</p>
+<p>　　作此曼拏罗　先观察十方</p>
+<p>　　当从北起首　而乃絣四线</p>
+<p>　　分列八坛相　皆依本仪法</p>
+<p>　　依本尊相应　想成曼拏罗</p>
+<p>　　作诸成就法　即此曼拏罗</p>
+<p>　　是大真实理</p>
+<p>　　所言大秘密　谓诸秘密法</p>
+<p>　　而本无所有　是大乐金刚</p>
+<p>　　即同普贤身　金刚众大主</p>
+<p>　　是名大秘密</p>
+<p>　　所言本尊法　谓根本最胜</p>
+<p>　　曼拏罗之主　是最上大欲</p>
+<p>　　是大适悦心　而常现笑容</p>
+<p>　　其身如月色　众宝严身相</p>
+<p>　　光明普照耀　是三有最胜</p>
+<p>　　施诸妙乐境　善成微妙句</p>
+<p>　　故号为本尊</p>
+<p>　　所言灌顶理　谓佛宝功德</p>
+<p>　　三界无比法　唯此宝最胜</p>
+<p>　　受佛灌顶者　而证法王位</p>
+<p>　　是名灌顶理</p>
+<p>　　所言三摩地　当结跏趺坐</p>
+<p>　　而结禅定印　以左手押右</p>
+<p>　　观想金刚手　是名三摩地</p>
+<p>　　所言贤圣众　谓金刚贤圣</p>
+<p>　　是真实义智　善悟解一切</p>
+<p>　　诸成就最胜　一切大吉祥</p>
+<p>　　具诸法圣财　一切法中最</p>
+<p>　　所有成就法　皆贤圣印相</p>
+<p>　　即金刚萨埵　秘密大主宰</p>
+<p>　　所言五秘密　谓毗卢遮那</p>
+<p>　　及不动如来　宝生无量寿</p>
+<p>　　不空成就等　是名五秘密</p>
+<p>　　所言诸部者　谓一切如来</p>
+<p>　　真实之妙理　成金刚萨埵</p>
+<p>　　毗卢遮那佛　不动如来部</p>
+<p>　　宝生无量寿　不空成就等</p>
+<p>　　真理亦如是　又金刚部主</p>
+<p>　　善调诸恶者　以纯善方便</p>
+<p>　　如日而普照　此金刚部尊</p>
+<p>　　饶益诸有情　善成诸教法</p>
+<p>　　毗首金刚部　是摄大方便</p>
+<p>　　观自在菩萨　依众莲华部</p>
+<p>　　获最上成就　观自在菩萨</p>
+<p>　　即金刚萨埵　莲华部真理</p>
+<p>　　摄三摩地智　莲华部清净</p>
+<p>　　能净诸有情</p>
+<p>　　所言虚空藏　谓即大圣财</p>
+<p>　　遍满于虚空　虚空藏菩萨</p>
+<p>　　是大灌顶法　所有宝生部</p>
+<p>　　是无尽宝藏　大灌顶法幢</p>
+<p>　　善摄一切愿　即金刚萨埵</p>
+<p>　　于诸曼拏罗　常施真实理</p>
+<p>　　金刚部灌顶　宝生无量寿</p>
+<p>　　真理亦如是</p>
+<p>　　根本诸标帜　是最上成就</p>
+<p>　　以妙真实理　是自在器仗</p>
+<p>　　五种大秘密　即是金刚杵</p>
+<p>　　其诸部标帜　谓真实理智</p>
+<p>　　诸佛毗首行　即证大菩提</p>
+<p>　　而彼金刚部　宝部莲华部</p>
+<p>　　善摄一切义　成就秘密法</p>
+<p>　　所言钩召法　谓诸秘密仪</p>
+<p>　　以金刚钩铃　而作于钩召</p>
+<p>　　所言诸供养　谓诸秘密仪</p>
+<p>　　适悦而供养　种种歌舞等</p>
+<p>　　所言见前法　谓诸秘密仪</p>
+<p>　　各用于本印　然后当一心</p>
+<p>　　持诵真实理　又复诸如来</p>
+<p>　　诸成就见前　以大三昧法</p>
+<p>　　真实微妙理　是根本真空</p>
+<p>　　金刚萨埵性　是即普贤身</p>
+<p>　　亦为金刚主</p>
+<p>　　所言成就法　谓诸仪轨中</p>
+<p>　　所作成就事　当依本尊法</p>
+<p>　　而作诸成就　但随所住处</p>
+<p>　　诸仪轨皆成　依法持铃杵</p>
+<p>　　觉悟于世间　欲成就诸法</p>
+<p>　　速成根本教</p>
+<p>　　所言非勤苦　谓所作成就</p>
+<p>　　而不须加行　随意随处所</p>
+<p>　　随欲随饮食　乃至四威仪</p>
+<p>　　语言及戏笑　但发至诚心</p>
+<p>　　住等引相应　依本尊仪法</p>
+<p>　　如是相应理　速成一切法</p>
+<p>　　此根本大教　是甚深秘密</p>
+<p>　　若依法修习　所愿皆圆满</p>
+<p>　　所有诸如来　及诸大菩萨</p>
+<p>　　常受持此法　是最上大乐</p>
+<p>　　真实微妙句　大欲大妙乐</p>
+<p>　　　　佛说最上根本大乐金刚不空三昧大教王经卷第七</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/fszsgbdljgbksmdjwj/fszsgbdljgbksmdjwjjd6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/fsrwbrblmj.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/fszsgbdljgbksmdjwj/fszsgbdljgbksmdjwjjd6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/fsrwbrblmj.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>大明度经卷第六  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="大明度经卷第六"><a class="header" href="#大明度经卷第六">大明度经卷第六</a></h1>
+<p>　　　　大明度经卷第六</p>
+<p>　　　　　　　　南吴月支国居士支谦译</p>
+<p>　　　　普慈闿士品第二十八</p>
+<p>　　佛告善业。闿士疾欲得佛者索明度无极。当如普慈闿士。</p>
+<p>　　善业言。今普慈所在。</p>
+<p>　　佛言。在上方过六百三十亿佛国。佛名香积。其刹名众香。</p>
+<p>　　又言。彼何因索明度。</p>
+<p>　　佛言。前世积行功德追逮本愿所致。前已供养无央数佛。时闿士卧出天人于梦中告曰。若求大法寤即求之。求之不睹其意惆怅。欲得佛闻大明法。时世无佛。国无闿士所行净法。是故哀恸。如人有过在国王所。财物悉没父母及身闭在牢狱。时忉利天人下观见闿士日哭。知有至心精进求道。天人即于其亲属中学字闿士。先是时世有佛。名景法自秽来王。已灭度久。不睹佛不闻经不见比丘僧。时复于梦中见忉利天人。告之曰。前有佛字景法自秽来王。梦闻佛字则寤。寤已大欢喜。则捐家入山投命弃身无所贪慕。而大啼哭自念。恶所致不见佛不闻经不得闿士所行法。是时空中有声言。善士。止无哀恸矣。有大法名明度。若有守志行之。其得佛疾。若当求是法。得闻守行者。佛功德身三十二相八十种好若当得之。亦当以经法教十方人。问空中声。何缘得闻。当到何方索作何方便。空中声报言。从是东行莫得休息。若行时莫念左右前后上下行止。莫念恐怖欢喜食饮坐起行道中止。莫念淫怒痴。莫念守行有所得。莫念内外五阴眼耳鼻口身心地水火风空。莫念众生吾我寿命。有空无空有道无道有经无经。生天上生世间。闿士善恶。一切念断适无所著。从是东行作是行不毁者。今得明度不久。过去诸佛行闿士道求之。如此得明度随其教精进行必早得佛。闿士闻之大欢喜言。当随天教。报言。莫失此教。言毕不复闻声。随是教则东行适无所念。行道中念曰。去是几所乃当得明度。复大哀恸。上方空中有化佛言。善哉善哉。若所索得甚难。作是精进者今得不久。普慈闿士叉手仰视化佛。身金色放十亿光焰三十二相。心大欢喜叉手白佛言。愿佛说法。我从佛闻皆欲得之。</p>
+<p>　　佛言。受我教法悉念持之。诸经法本无无恐惧。本净无端绪。住诸经法无端绪。无所说住无所说教。如虚空无形住如灭度无异。无所从生无形住。如幻如水中影。如梦中所见。其等无异。佛音声如是。当随经教殖志守净。从是东行去是二万里。国名香净。法王法治处。其国丰乐人民众多。其城纵广四百八十里。皆以七宝作之。其城七重间有七宝琦树。上有杂宝罗縠帷幔以覆城矣。其间有宝交露垂铃。城四门外有无极戏庐。绕城有七重池。水中有杂种青莲及诸名花。其香薰国光色遐耀。行者近华身衣如之皆在池中生。池间陆地有薝卜花忍中花琦华。如是数百种。池中有众鸟。凫雁鸳鸯异类之鸟数百种。有七宝船其人乘船游戏池中。罗列五色幢幡。杂色花盖街巷周遍。譬如忉利天帝释殿。悬幡之声道德为本。昼夜不休闻者行进。如彼天上难檀洹戏庐音乐之声快乐不绝。城中皆是闿士。有成就者。有发意者服饰炫熿珍琦无量。中有闿士字法来。众圣中王。有六百八十万玉女妻。诸闿士常敬之。于国中央施高座随次转下。黄金座白银座琉璃座水精座。其上皆布文绣綩綖。座间皆散杂种香华。上施宝盖。中外周匝烧众名香。法来闿士常于高座为诸闿士说明度。中有听有书有学有讽诵守者。若到彼所当为若说之。前数千亿世常为若师。是若发意时师也。往至佛所时若所闻见慎莫疑殆。何以故。若未晓变谋明慧。当谛觉邪事。善士慎于邪教。莫念师在深宫以之懈怠。敬当如佛。用经法故莫念财利。无贪为宝当贡所尊慈孝于师。作是行者今得大法矣。闿士从化佛闻是教。其善忘身入见十方佛定。诸佛皆遥叹言。善哉善哉善士。我曹本求闿士道时。用精进故获明度。成为一切智三十二相八十好十种力四无所畏四事不护十八不共。亦复得诸佛所叹。若寻佛迹当则吾等作斯行者闿士功德。若当具足得之。普慈闿士从定寤作是念。诸佛本何所来去何所。作是惟已。便复哀恸念。佛教我至法来所。便从是去。中道得一国。国名邪所乐。城外园中止宿自念。佛法宝难得闻。我当尽力供养于师。今我一身加复贫穷。无珍宝及香花供养于师。作是念已。则入城街里自炫云。谁欲买我者。是时邪在城外戏。与万婇女共游戏。邪闻闿士自炫声便念。闿士自卖身。欲供养法来。志存索佛。当出我界度人众多今当坏子。令一国人皆不见其形不闻其声。如是城中人悉不闻见其形声。闿士卖身不售。便自宛转卧地啼哭呼曰。吾卖身以奉师。都无买我者。当云何乎。帝释遥见闿士精进乃尔。来下试之知为至诚索佛道但谀谄乎。便化作梵志问言。高士将欲何求勤苦乃尔。用何等故宛转哭乎。报言。不须问也。又问至三。所欲敕使愿语我意今欲相助闿士报言。我自卖身以供养师。梵志曰。吾欲大祠欲得人血肉髓心。卿能与我者我益与卿宝。闿士闻之心大欢喜。即取刀自刺两臂以血与之。复割两髀肉。又破骨以髓与之。适欲刺其胸。</p>
+<p>　　时楼上有长者女。遥见大愍伤之。与诸妓女五百人下至闿士所问言。高士年尚幼少端正如是。何以自割截身体乃尔乎。报言。我出血割肉取髓卖之以供养师。女问。设供养师者能得何等。师名为谁。在何方止。闿士报言。在东方字法来。当为我说明度。闻者当守净行。可疾得佛身三十二相十种力四无所畏四事不护十八不共。得法轮转度十方人。女闻之喜曰。如所言天上天下无比。卿何其自苦乃尔乎。我足子名宝。身与众女愿从子行。供养明师欲闻深经闿士言。甚善。梵志言。善哉善哉。闿士高行精进难及吾非梵志也。是天王释矣。故来试子子欲何求我悉与子。报言。天王哀我者使身平复。愿则如旧疮愈身强力气逾前。释即自去。长者女语普慈言。愿见吾亲索宝辞去。闿士睹彼女亲。女具陈之。亲曰。甚善吾亦有志。伤年西垂体违心愿矣。若欲所得便自说之。女言我欲得珍宝琦物。父母言。自恣取之。女便取琦物织成栴檀名香及杂诸宝。五百乘车悉载自重。五百侍女自副。诸女启长者女亲。欲侍贵女随闿士行。亲许即行。以渐进路遥见香净国。七宝城郭幢幡光色众宝交露。钟铃乐音宝树戏庐。车步诸妓香风四出。譬如天上。闿士及诸女遥见如斯欣豫无喻。念曰。吾等义当下车步行入城。共从西门入。问路人曰。彼何等台七宝服饰姝好乃尔乎。路人曰。贤者不知耶。有闿士字法来。人中最尊。无不供养作礼者。是闿士用明度故作是台。其中有七宝函。以紫磨黄金为素。书明度著函中。有若干百种名香。法来闿士日日供养。持杂花名香然灯悬幡花盖杂宝。正音道乐尽礼供养。余闿士亦然。忉利天人昼夜各三。持天名花供养明度。普慈闿士及诸女闻之大喜。俱以杂香金缕织成杂衣有散上作幡毾壁敷地者。毕俱至法来闿士高座会所相去不远。遥见在高座上。为人幼少颜貌端正光耀彻射为巨亿万人说明度。与法来相见。持杂种香若干宝衣以上师矣。作礼绕八百匝。自归言。愿吾等进高行获尊经。法来闿士慰劳之曰。多贺来到得无疲倦。他所敕使所欲得者莫自疑难。我是度人之师。适无所爱惜。普慈闿士言。我本索明度时于山中哀恸。空中有化佛。身有三十二相紫磨金色十亿光焰出。佛叹我言。善哉善哉。索明度当尔。从是东行二万余里。其国名香净。中有闿士字法来。人中最尊常反覆教人。若至彼闻当得明度。前巨亿万劫常为若师。斯若初发意时师也。我闻师名心大欢喜不自胜。用欢喜故。即得悉见十方佛定。是时诸佛赞叹我言。善哉善哉。我曹求佛索明度亦然自致成佛。寤则不见。我自念言。佛为从何所来去至何所。愿师为我说。法来言。贤者善听。空不愿无想。本无所从来。去亦无所至。佛亦尔。无处无所生无形。幻化野马梦中人。灭度想像无生无长无所适。经界本端无所从来。去亦无所至。欲知佛亦尔。普慈闿士闻深法如是比不可量。即于座上得六万定门。何等为定门无处所定。脱诸邪中不恐定。脱于爱欲之本定。脱出患难定。不可计诸法句入定。譬若海水不可量多少慧所入定。庄须弥山功德庄严定。五阴四大六衰无形观定。悉见诸佛定。闿士定。道诸经无形见说定。珍宝庄饰定悉观珍宝入定。悉念诸佛定。闿士上高座定。真不退转及法轮为转定。庄佛功德定。所闻众事无瑕秽悉及净定。所闻众事知海定。无所获无过定。乐经音声遍至定。经法章显旗幡定。如来身无形入定。诸经无形遍见定。闿士印定。如来目见定。照明境界定。佛界所愿具足定。解十方难定。临成佛庄严定。种种杂花异色定。多珍宝定。法轮常转定。诸音声远闻入要定。入十方人本定。诸三界悉遍至定。成佛诸功德定。无能过六度闿士树下坐时定。坏余外道罗网定。如来见飞定。无量功德庄严定。诸珍宝智慧功德定。一切智地定。悉净自定。悉遍照明定。悉入十方人因坻定。根智慧出中定。三世悉等定。如是比普慈闿士得六万定。尔时法来闿士起入宫中。</p>
+<p>　　　　法来闿士品第二十九</p>
+<p>　　是时普慈闿士安隐从定觉起。与诸婇女共至法来宫门外。立自念言。我用经法故来。师今在内。我无宜坐卧矣。须师出上高座说明度无极。尔乃坐矣。诸女亦效立。是时法来适教中宫诸婇女。说经道已。沐浴澡洗更著新衣。上明度台坐惟诸定。如斯七岁不动。不摇普慈闿士及诸女。亦复经行七岁不坐不卧。后天人于空中语之言。却后七日法来闿士当从定起。闻天人语声。自念言。我当为师敷坐扫洒令净。皆到说经处。特为师施高座。诸女各取著身衣服敷座上。是时邪自念言未尝有是闿士今施高座用敬索佛故精进勇健。无休懈时得道者。当出我界度脱众生无量。吾当坏子。邪悉坏诸闿士座皆令缭綟雨沙砾石荆蕀枯骨污座。普慈及诸女见地辄沙砾荆蕀枯骨在其座间。自念言。今师当坐说经。及诸弟子皆当来听。我更扫除整顿坐席整已地辄有尘土来坌师及诸闿士今当洒之即行索水。邪令水竭。念曰。我曹索水不得。当云何。当取身血以洒之。时普慈及诸女。各取刀处处刺身出血洒地。用慈于法故。时释自念言。今世乃有是人。精进恭敬慈孝于师。赞言善哉善哉。贤者。诚难及。今闻明度不久会当得佛贤者今他所敕使愿相告矣有如贤者辈我当护。所欲得者悉当与之。普慈报言。我欲所得者自当知之。是时释化地悉使作水精琉璃。其上有金沙。使普慈及诸女身体疮瘢悉平复如故。座四面化作琉璃水池。周匝皆有珍宝栏楯。及四宝池侠陛两边有七宝树若干百种行列殊好。闿士及女人为诸闿士储水。天雨众花光色耀国。甘香四被。闻者心软凡四千石。释上普慈闿士语之言。持是花供养明度。及散法来诸闿士上。以天衣五百领法来在座以衣敷上。普慈即悉受之便为咒愿。是时法来闿士七岁以后从定觉起到高座。与二百亿闿士共坐。于前坐者甚众多。是时普慈及诸女皆共散花。并持旃檀捣香及名杂香诸珍宝散法来诸闿士上。前以头面著足。起绕三匝却住。以微意视法来大会方四十里满其中人。法来闿士四向视来会者。用经法故即为说明度言。善士且听。诸经法本。端悉等如来智慧无所挂碍如幻无形。如风本端不可计。明度亦然。一切我所悉断本本净。明度亦本净。譬如野马像人本无。如梦中有欲其欲本无。如所名人本无。如应仪灭度空无所生。明度亦然。如来灭度亦等无异。明度本等。譬如然火则时灭之。本无所从来。去亦无所至。如梦中见须弥山本无。如佛现飞本无所有。明度亦然。前于欲中相娱。计之无所有。如人名声无所有。如来无于前见者。念所作因见明度。念所作本无所有。如幻师化作像本无所有。如虚空适无所住。如幻师学无所不示往古来今亦不可合为一。明度者亦无三世。当作是知。名计本无形罢字有形。明度无不至无不入。何以故。空本无色。明度譬如虚空。无不至无不入。入于地水火风空。入于彼此五阴。入人寿命有德无德入于欲不欲有无有想无想愿无愿。入于生中。入于日月星宿质谅神龙鬼王执乐神似人形神胁臆行神蛇躯神。亦入禽兽饿鬼地狱蜎飞蠕动蚑行喘息。入于贫贱富贵贤者圣智仙人沟港频来不还应仪缘一觉。入于闿士。入于佛。入于灭度四意止四意断四神足五根五力七觉意八道行有智无智十种力四无所畏四事不护十八不共佛经世经巫祝。入于宿命所行展转生死中有苦无苦自在不自在度脱好不好善不善智不智明不明往古来今可见不可见教法所有无所有一切有形无形。无不入矣。</p>
+<p>　　佛告善业。法来闿士为普慈说明度所入处。如是具说昼夜七日。是时人听经呼如饭顷。何以故。法来闿士威神力恩。普慈闿士闻大欢喜。诸女共持天衣及八百石杂宝供养法来闿士释复持天上名花以散法来及诸闿士上。以增功德。是时一佛界中树木花树果诸杂宝树。悉倾曲躬为法来闿士作礼。雨蜜香之花。其花香闻一佛刹中。一切人闻是花之香。各遥见法来闿士在高座上说经。并见普慈及诸女心皆乐之柔弱欢喜。皆遥作礼。其国中悉震动。是时巨亿万人悉得无数经法。不可复计闿士皆得不退转。时诸女前白普慈言。我等愿以身命自归为给使。并五百乘车珍宝以上归。师为我等忍大众苦以归当佛。今蒙大恩乃得闻尊经无丝发之疑。今我等为师给使巨亿万劫。尚未能报须臾之恩。普慈受之。前白法来闿士言。今以身及诸女众珍宝以上大师。师哀我等愿受之。使我得其功德。法来闿士欲使普慈成其功德故悉受之。反遗普慈言。以是诸女可为给使。诸车珍宝可自给。忉利。天上诸天人各叹言。善哉善哉。普慈。众宝悉以施师是意难得。时有巨忆万人共到法来所听经。普慈欢喜即于座上得六万定门。何等为定。愿乐定。威仪定。欢德定。月盛满定。日光焰定。如来行定。悉念佛定。闿士生生定。乐智慧定。度脱坚住定。诸境界中无所住定。国土种种严入定。如来相入无想定。十方人无形印封定。如来出生定。无所畏乐定。弃捐。珍宝定。如来力庄严定。诸经法明乐定。诸法无所从来解事定。净如梵天定。三世悉等入定。严佛藏定。佛音声悉成定。如是定辈得六万门。闿士从定觉。悉得智慧力入诸经法中。普慈白言。愿师为我说佛声。当何以知之。法来曰。贤者明听。譬如箜篌不以一事成。有柱有弦有人摇手鼓之。其音乃同自在欲作何等曲。欲知佛声音亦然。闿士有本发意。累世作功德。教授问佛事合会。是事乃得佛身。音声亦尔。其法皆从因缘起。不从闿士行得。不离行得。不从佛身得。不离佛身得。贤者欲知佛身音声。合会是事乃得佛声耳。复次贤者。譬如吹笙师。其音调好与歌相入。笙者以竹为本有人工吹。合会是事其声乃悲。如来身不以一事二事成。以若干事累世作功德。教人入道本愿所致。用是故佛身相及种好悉见如是。譬如佛灭度后有人作佛形像。端正姝好如佛无异。人见莫不称叹。持花香缯彩供养者贤者谓佛神在其像中耶。</p>
+<p>　　对曰不也。所以作像者。但欲使人系意敬自警修得其福耳。亦不用一事二事成。有金有智人若有见佛时人。佛灭度后念佛故作像。欲使十方供养得其福。法来报言。如贤者言。成佛身不用一事二事。有闿士之行。有本索佛时人。若有常见佛作功德。用是故成佛身。智慧变化飞行及诸种好乃成佛身。譬如鼓有竹木革桴有人击之其声乃出。欲知佛身亦尔。用若干百千事乃成之耳。有初发意。有六度无极行。晓知本无无所从生之事。坐于树下降伏邪官属。诸经法当知如幻无异。以是成佛身。譬如画师有壁彩笔手画之乃成画人。佛身亦尔。用数千事有布施持戒不犯十恶。常随善师等心哀众。无能坏者世世见佛。闿士闻行坚持无忘。守真不谄常行至诚。又譬如无结爱天所止观第光耀天上端正姝好。是天第舍不自作不有来作者。本无所从来。去亦无所至。因缘所生。其人前世作德所致。用布施众生。故得生彼第舍中止。贤者欲知佛身因缘所生。用世人欲见佛。其人前世有功德。远离八恶处生慧信于佛。佛所以现身者。欲度众生故。如山中响不用一事二事。有山有呼人有耳听乃闻。佛本无形亦无所著。因缘所生世世习行空。生死因缘佛悉晓之。本无生死亦无灭度。作是示现作是说。譬如幻师化作转轮王。慈化润众闻者皆喜。人索珍宝所爱被服悉恣与之。王在众中坐起行步容仪安谛。人有见者莫不敬礼。不以一事二事成。有师有咒有聚人随所喜化现之。有黠者知为化矣。斯幻人无所从来。去亦无所至。本空化所作。黠者知因缘所由。佛身亦然用众事有功德有欢德。念群生使安隐。具闿士愿分布经法教授使行。弃定思惟分别为人说经使学。诸天人民莫不欢喜。中有自贡高者不知惭者淫乱悭贪者。强梁自用者。喜斗不可谏者。淫怒痴所覆者。行恶不可计者。佛在众人中端正殊好。坐起行步法仪安谛。众恶已尽唯有诸德使人得安。亦自行佛事。本空无著。如幻师所作。闿士见佛身如是。虽尔不著无诸想念。虽知本空恭敬作礼供养。无极往古来今诸佛皆从众事各有缘生。闿士作是念。守行者得佛疾。法来闿士说佛身时。四万八千闿士即解尽信之行百亿闿士得无挂碍问皆能报。四百亿闿士得不退转。八百亿闿士皆得阿阇浮住法。是时天持名花来雨散法来及诸闿士上。持法来威神。都一佛界诸有音乐皆自作声。数千万天从虚空中散天衣作音乐。共乐法来及诸闿士。衣皆行列覆一佛界。诸天烧杂香。其香分散亦遍一佛界。地悉震动。闿士普见诸佛。诸佛皆遥叹法来言。善哉善哉。是时诸佛授普慈闿士决。后当作佛字内摩迦祇陀颇罗耶如来无所著正真道最正觉。诸女即化为男。世世所生不离诸佛。常以大明教授十方以求作佛。</p>
+<p>　　佛告善业。闿士疾欲得佛者。索明度无极精进恭敬。如普慈闿士。</p>
+<p>　　　　嘱累阿难品第三十</p>
+<p>　　佛告阿难。以明度无极经嘱累汝。谛持念了取字句。莫使缺减左右顾望。此是无尽经藏镇。诸法悉从中出。无量经卷种种异慧。所见人民若干种所喜所行道经所入慧。一切皆从是明度藏中出。若干种所见相种种所行。若干种根痴种慧种。人民所求尽所求慧。如来悉知从明度中出。是经如来无所著正真道最正觉母。是慧眼并我身皆从是出生。</p>
+<p>　　佛言。阿难。若敬我所说法为敬事我。若自敬身有慈孝于佛。持是奉事明度。悉为供养诸佛已若身口心有慈孝于佛。不言无孝。若常得佛仪常如法。心常净无瑕秽。若见佛不言不见。如是悉为报佛恩已。我语若阿难。是明度中忘一句一字舍之不书。若为不见我不敬于佛。为无供养。为背佛恩。</p>
+<p>　　佛言。阿难。若谛受谛念明度。用慈孝于佛故。承用教故。此乃往古来今佛天中天之所施教也。用是供养者若于众生为大慈。为以亲近持佛藏。佛灭度后若当护是经莫令减少。我手付若。当受闿士大士。闿士大士持是所致。诸勤苦生死牢狱悉破坏。诸无智者为痴所系著悉得放解。诸邪官属无不降伏。诸所欲法悉除去。上佛座作无上正真道。人民无目者愚痴者。悉与闿士与正法。第一大道无两正法。无上正真道最正觉慧。是为明度决。我灭度后三千国土其中人民。若悉教入法中。悉令成就得应仪道。</p>
+<p>　　曰教示乃尔所人。如是一劫若百劫为说经令得灭度。虽尔尚不足为承事我。不如持一句教闿士为具供养佛已。</p>
+<p>　　佛言我今于是称誉若嘱累明度。至一劫百劫不能竟。粗捔说耳。</p>
+<p>　　佛从袈裟中出臂举右手著阿难头上摩头。又以著阿难肩上。云何阿难。若慈于佛不。阿难言。佛天中天自当知之。如是至三。佛复问。云何若孝于佛不。复三。阿难言。佛天中天自当知之。</p>
+<p>　　佛言。若以弘慈报恩备矣。尊奉明法恭矣。受经义句当令分明心所念。余弃之。一心于是中书经正字画治句逗。取时持时学时。当谛受与闿士令经上下句逗相得。书时好笔好素上。当自归承事作礼供养花香捣香烧香泽香缯盖幡。譬如天上所有洁净香。著麻油中好灯炷。自归头面著地。却然炷加敬作礼承事。</p>
+<p>　　佛说明度无极时。在王舍鸡山中众弟子诸闿士中央坐佛年三十得佛。十二月十五日过食后说经毕。诸弟子闿士诸天质谅神龙鬼王人民皆大欢喜。前为佛作礼而去。</p>
+<p>　　　　佛说明度经卷第六</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/dmdj/dmdjjd5.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/mhbrcj/mhbrcjjd1ymcap.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/dmdj/dmdjjd5.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/mhbrcj/mhbrcjjd1ymcap.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

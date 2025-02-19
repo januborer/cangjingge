@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>弘一法师论地藏菩萨─普劝净宗道侣兼诵地藏经  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="弘一法师论地藏菩萨普劝净宗道侣兼诵地藏经"><a class="header" href="#弘一法师论地藏菩萨普劝净宗道侣兼诵地藏经">弘一法师论地藏菩萨─普劝净宗道侣兼诵地藏经</a></h1>
+<p>　　　　弘一法师论地藏菩萨（之二）</p>
+<p>　　　　普劝净宗道侣兼持诵地藏经</p>
+<p>　　　　庚辰地藏诞日在永春讲
+　　　　弘一大师讲　王梦惺记</p>
+<p>　　予来永春，迄今一年有半。在去夏时王梦惺居士来信，为言拟偕林子坚居士等将来普济寺，请予讲经。斯时予曾复一函，俟秋凉后即入城讲《金刚经》大意三日。及秋七月，予以掩关习禅，乃不果往。日昨梦惺居士及诸仁者入山相访，因雨小住寺院，今日适逢地藏菩萨圣诞，故乘此胜缘，为讲净宗道侣兼持诵《地藏经》要旨，以资纪念。</p>
+<p>　　净宗道侣修持之法，固以净土三经为主。三经之外，似宜兼诵《地藏经》以为助行。因地藏菩萨，与此土众生有大因缘。而《地藏本愿经》，尤与吾等常人之根器深相契合。故今普劝净宗道侣，应兼持诵《地藏菩萨本愿经》。谨述旨趣于下，以备净宗道侣采择焉。</p>
+<p>　　一、净土之于地藏，自昔以来，困缘最深。而我八祖莲池大师，撰《地藏本愿经》序，劝赞流通。逮我九祖蕅益大师，一生奉事地藏菩萨，赞叹弘扬益力。居九华山甚久，自称为「地藏之孤臣」。并尽形勤礼地藏忏仪，常持地藏真言，以忏除业障，求生极乐。又当代净土宗泰斗印光法师，于《地藏本愿经》尤尽力弘传流布，刊印数万册，令净业学者至心读诵，依教行持。今者窃遵净宗诸祖之成规，普劝同仁兼修并习。胜缘集合，盖非偶然。</p>
+<p>　　二、地藏法门以三经为主。三经者：《地藏菩萨本愿经》、《地藏菩萨十轮经》、《地藏菩萨占察善恶业报经》。《本愿经》中虽未显说往生净土之义，然其他二经则皆有之。《十轮经》云：「当生净佛国，导师之所居。」《占察经》云：「若人欲生他方现在净国者，应当随彼世界佛之名字，专意诵念，一心不乱，如上观察者，决定得生彼佛净国。」所以我莲宗九祖蕅益大师，礼地藏菩萨占察忏时发愿文云：「舍身他世，生在佛前，面奉弥陀，历事诸佛，亲蒙授记，回入尘劳，普会群迷，同归秘藏。」由是以观，地藏法门实与净宗关系甚深，岂唯殊途同归，抑亦发趣一致。</p>
+<p>　　三、《观无量寿佛经》，以修三福为净业正因。三福之首，曰孝养父母。而《地藏本愿经》中，备陈地藏菩萨宿世孝母之因缘。故古德称《地藏经》为「佛门之孝经」，良有以也。凡我同仁，常应读诵《地藏本愿经》，以副《观经》孝养之旨。并依教力行，特崇孝道，以报亲恩，而修胜福。</p>
+<p>　　四、当代印光法师教人持佛名号求生西方者，必先劝信因果报应，诸恶莫作，众善奉行，然后乃云：「仗佛慈力，带业往生。」而《地藏本愿经》中，广明因果报应，至为详尽。凡我同仁，常应读《地藏本愿经》，依教奉行，以资净业。倘未能深信因果报应，不在伦常道德上切实注意，则岂仅生西未能，抑亦三涂有分。今者窃本斯意，普劝修净业者，必须深信因果，常检点平时所作所为之事。真诚忏悔，努力改过。复进而修持五戒十善等，以为念佛之助行，而作生西之资粮。</p>
+<p>　　五、吾人修净业者，倘能于现在环境之苦乐顺逆一切放下，无所挂碍。依苦境而消除身见，以逆缘而坚固净愿，则诚甚善。但如是者，千万人中罕有一二。因吾人处于凡夫地位，虽知随分随力修习净业，而于身心世界犹未能彻底看破，衣食住等不能不有所需求，水火刀兵饥馑等天灾人祸亦不能不有所顾虑。倘生活困难，灾患频起，即于修行作大障碍也。今若能归信地藏菩萨者，则无此虑。依《地藏经》中所载，能令吾人衣食丰足，疾疫不临，家宅永安，所求遂意，寿命增加，虚耗辟除，出入神护，离诸灾难等。古德云：身安而后道隆。即是之谓。此为普劝修净业者，应归信地藏之要旨也。</p>
+<p>　　以上略述持诵《地藏经》之旨趣。义虽未能详尽，亦可窥其梗概。惟冀净宗道侣，广为传布。于《地藏经》至心持诵，共获胜益焉。</p>
+<p>　　　　（录自《弘一大师讲演集》）</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../dzpszj/hyfsldzpsdzpssddg.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../dzpszj/ypfsldzpsdspsdshsy.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../dzpszj/hyfsldzpsdzpssddg.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../dzpszj/ypfsldzpsdspsdshsy.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

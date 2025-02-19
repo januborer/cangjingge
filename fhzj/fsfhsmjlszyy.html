@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>佛说法华三昧经（刘宋．智严译）  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="佛说法华三昧经刘宋智严译"><a class="header" href="#佛说法华三昧经刘宋智严译">佛说法华三昧经（刘宋．智严译）</a></h1>
+<p>佛说法华三昧经</p>
+<p>　　　　佛说法华三昧经一卷</p>
+<p>　　　　宋凉州沙门智严译</p>
+<p>　　佛在罗阅只耆阇崛山中。与诸尊弟子比丘千二百五十。菩萨七万三千人。诸释梵不可复计。十方飞来无央数。皆神通妙达。复有他方恒边沙诸天人及诸菩萨。如是等百亿千恒沙。皆来会在佛前坐。时舍利弗须菩提等诸尊菩萨。皆有疑心念言。何因缘诸上人。皆来在是间会。有何异要之瑞应。尔时诸弟子。起疑心念。为佛作礼长跪欲问佛。佛时已放无数光从口出。若千亿亿稍稍引大遍虚空明。远照恒边沙刹土。地复震动。于是尽明。即不复见佛身相。大众愕然。共议佛三昧为何所之趣。各自思之。即便还坐三昧。求佛至处座前有菩萨名慧相。便报言。善哉善哉。当尔贤者。思惟了不知所至处。须臾罗阅王后宫太子皇女及婇女夫人。三万二千人。皆从共来诣山中到不见佛。复有不想菩萨。问王将从何多。王名辩通。答言。见佛光明故来耳。王女名利行。便问菩萨。佛今所在为到何方。答曰。向已求佛。了不知。处女答曰。卿是佛第一神通者。应当知处。菩萨答曰。且坐。须臾顷。地即震动。从地中出。坐自然大宝莲华上。众坐上人愕然。王女利行。起为佛作礼讫。住佛前说偈问佛</p>
+<p>　向见大光明　　疑佛有异要</p>
+<p>　故来将大众　　欲问心狐疑</p>
+<p>　反更不见佛　　意甚有怪惊</p>
+<p>　愿得具为说　　当令大众解</p>
+<p>　各发一三昧　　推求佛身相</p>
+<p>　了言不知处　　各共坐作议</p>
+<p>　更起何三昧　　毕欲求佛意</p>
+<p>　女来问众等　　佛今为所在</p>
+<p>　纯行有至心　　必欲有所问</p>
+<p>　愿见世尊授　　令意解狐疑</p>
+<p>　具为现众等　　分别解说之</p>
+<p>　向所三昧处　　所名在何所</p>
+<p>　　佛语女利行。所问甚深。当为汝分别说。向所三昧。名法华。譬如大国中有一树。有一华覆三千大千刹土。其香熏恒边沙佛国。若有人。得闻名字若知解。自然疾得是三昧。若诸病痛者。得闻是三昧。应时自解。人根众病消尽。女利行问佛。何谓华之威德。乃有是慧。佛语女利行。华者一树之色。人见莫不爱乐。欲得之者。法华三昧是。生死中之色。大光受有形。人不知不闻。不信是三昧。不奉行之。未应菩萨不见慧。失人之本。反随沫流。终已不见明。女利行复问佛。今欲得是三昧。行何法。有几事。行得人中。愿佛弘慈恩润。广开行议。令一切闻解。皆入三昧中。佛言。善哉善哉。多所度脱。永度无极。有二事。何谓为二。一者知法身如幻如化。二者知淫怒痴无根无形。佛尔时说偈言</p>
+<p>　法身有一切　　化幻现沉浮</p>
+<p>　淫怒痴无形　　如水现泡沫</p>
+<p>　观察人身物　　如灭无形住</p>
+<p>　离散合自成　　分别计皆空</p>
+<p>　　佛语女利行。复有四事。别如行三昧者。何谓为四。一者行戒无色想。二者行檀无受者。三者不厌无乱者。四者行智无愚者。是为四。佛尔时说偈言</p>
+<p>　不犯戒无毁　　行檀不入智</p>
+<p>　不厌无痴乱　　不愚无智慧</p>
+<p>　不说无行者　　有行不言向</p>
+<p>　三昧可得入　　无处无中边</p>
+<p>　　佛语女利行。复有三十六事。是为三昧所见事。何谓三十六事。不见生不见死。不减不增。不出不入。不在外不在内。无住无止。无水色无火色。无风色无地色。无痛无痒无思无想。无生无死无识。无贪无淫。无嗔无恚。无愚无痴。无悭无施。无恶无善。无心无意无识行。不起上若干事。不灭上若干事。如一无形像。是为三十六事法华所见事。佛尔时说偈言</p>
+<p>　不想念无念　　不行色想要</p>
+<p>　无行法华净　　空寂无吾我</p>
+<p>　不处有入中　　没灭无形像</p>
+<p>　不观善以恶　　俱皆空自然</p>
+<p>　　佛告女利行。法华三昧所见。譬亦如是。佛说是三十六事品时。无数天人及世间大众人。及王所侍从。大小合有四十亿万。皆发无上正真道意。女利行及后宫人。三万二千婇女夫人。逮得无所从生法乐。于中立女。见众人皆发道意。心甚欢喜。起为佛作礼。绕佛三匝。住佛前说偈言</p>
+<p>　世尊实神妙　　演知三世事</p>
+<p>　断世淫怒垢　　开化沫流人</p>
+<p>　皆到无为城　　快乐乃安宁</p>
+<p>　如是天人中　　地为大动倾</p>
+<p>　今日合大众　　亿亿百万千</p>
+<p>　当来及过去　　现在得自然</p>
+<p>　愿得大普恩　　法华威神力</p>
+<p>　三界一切人　　皆得是三昧</p>
+<p>　令我值在世　　常行法华事</p>
+<p>　使世无老死　　快乐无忧患</p>
+<p>　三苦自然除　　皆如为三昧</p>
+<p>　空想于愿识　　自然现相好</p>
+<p>　教授沫流人　　得意慈普行</p>
+<p>　光光威仪好　　等为身如来</p>
+<p>　合聚于沫生　　三昧豫生行</p>
+<p>　便使于空中　　得慧如上首</p>
+<p>　　女利行说偈已作是念。今欲教授人。不见法则。何事开解人。佛即知女心中念。便语女。欲持何法。教何人法。复何所在人。复何所止。立女白佛言。如是所说。无法无教无人。佛语女。无法有八事行。无教有六事除。无人有七事散。女问佛。何谓八事行六事除七事散。佛言。一者直见不邪。二者直闻不听。三者直治不曲。四者直说不烦。五者直行不迷。六者直念不思。七者直意不动。八者直受不寻。是为八事行无法。何谓无教六事除。一者不念有见无见无。二者不念有声无声无。三者不念有味无味无。四者不念有香无香无。五者不念有触无触无。六者不念有意无意无。是为六事除。何谓无人七事散。无水色。无风色。无火色。无地色。无心色。无识色。无行色。是为七事散。无人可教。当作此解。佛尔时说偈言</p>
+<p>　若有解法华　　三昧要句品</p>
+<p>　当念勤精进　　晓解得正言</p>
+<p>　七八六已足　　计本无形迹</p>
+<p>　不受自可欲　　去想安寂然</p>
+<p>　说法无言教　　不见有寿命</p>
+<p>　人本空无寂　　不解沫言有</p>
+<p>　不除不断欲　　出入无住处</p>
+<p>　无痛无思想　　不生不死灭</p>
+<p>　有念为劳苦　　不复著因缘</p>
+<p>　示现有色欲　　已反爱灰尘</p>
+<p>　观见有病痛　　常意与本并</p>
+<p>　慧见不空念　　寂寂安空空</p>
+<p>　法华三昧现　　不出不入住</p>
+<p>　无见不见空　　是为疾得如</p>
+<p>　便能行施法　　以慧为布施</p>
+<p>　说慧等如是　　诸佛皆称叹</p>
+<p>　　女闻说是时。倍复踊跃欢喜。起为佛作礼。踊在空中去地七尺。还坐金刚莲华上。时坐中有比丘心念言。是为真是女为幻人。自起为佛作礼长跪叉手。说偈问佛言</p>
+<p>　本自生愚痴　　不识道慧义</p>
+<p>　不知女利行　　为是真男女</p>
+<p>　审是一定人　　用法何复问</p>
+<p>　真是女子身　　所问何以深</p>
+<p>　生来侍佛法　　未见如是人</p>
+<p>　所见非凡及　　智慧何以尔</p>
+<p>　本从何方来　　而生于王家</p>
+<p>　宿命行何法　　逮及几佛来</p>
+<p>　精进健乃尔　　所问如来报</p>
+<p>　戒具真有行　　能问如有说</p>
+<p>　能忍有柔意　　但能口说行</p>
+<p>　休心意何如　　实欲往试之</p>
+<p>　可应几法住　　往对不起意</p>
+<p>　若实有智慧　　我欲从解要</p>
+<p>　省视所说法　　咏广入道俗</p>
+<p>　有何异心意　　独得是智慧</p>
+<p>　　佛便语比丘言。自若干因缘。即说偈报言</p>
+<p>　女利行本心　　立德识本处</p>
+<p>　在世来千岁　　常习于三昧</p>
+<p>　心解众色要　　寂然与禅同</p>
+<p>　真是女子身　　不为化来现</p>
+<p>　本从无色世　　今来在世界</p>
+<p>　续复如本行　　已行便立正</p>
+<p>　无身现说心　　普念众慈行</p>
+<p>　念法空为本　　不起因缘相</p>
+<p>　比丘自不解　　何怪是女身</p>
+<p>　不见无有本　　反自受缚著</p>
+<p>　禅思欲去色　　更反为色乱</p>
+<p>　远苦避三毒　　已入三毒苦</p>
+<p>　汝自不解身　　自谓得常安</p>
+<p>　万物如幻化　　入出无形住</p>
+<p>　四色本虚空　　自然受形著</p>
+<p>　爱习自拘限　　坏本起末欲</p>
+<p>　　尔时比丘八万四千人。闻说偈意解。即发无上正真道意。不可计天人。散华名香皆来供养佛。时舍利弗心念。女子乃有是辩。何不去女作男。佛即知舍利弗心所念。便语舍利弗。汝自问女。舍利弗即问。唯女利行。所说非常事。如与如来共对语。何不去女作男。女利行答言。唯舍利弗。道德之要以慧善见。不视于四色。是地水火风。五情合六入为衰。心意识如幻如化。出入无形。痴意不尽。故与三流对。更出浮沉。何足珍。虽漏尽结解。有不净想。无色如为恶。苦住反为乐。舍利弗问。学佛之法。应有谤毁言不。女问。贤者舍利弗。云何为谤毁。答言。一好一恶。是为谤毁。女报言。未晓未了。大人所说。不以小为小大为大。好恶无二。等无异。谤身。身是色。谤意。意无形。四色法空。无形无造。何所受谤毁者。舍利弗答曰。卿所说是菩萨大人所行。卿未应菩萨。何缘乃说此事。女报言。大人为以何立。报言。普等为言。何谓为普。教授十方人。远苦得道。是为普。唯贤者所说。不说普。说生死勤苦耳。女语舍利弗。谓为普者。不见有人无人有教无教有法无法所念。是曰为普。不为见生死苦欲教之令得道。是为普。舍利弗。无有辩才析答此言。女尔时说偈叹曰</p>
+<p>　人用三尘乱　　辄为六衰著</p>
+<p>　五恶十贼对　　三厄堕困穷</p>
+<p>　十二连相续　　四色拘没三</p>
+<p>　不解名颠倒　　坐受空聚藏</p>
+<p>　无故没三淫　　自网投深渊</p>
+<p>　坚藏畏二三　　自灭更受生</p>
+<p>　宛为空所缚　　恒怀不净想</p>
+<p>　自呼是常安　　为得真自然</p>
+<p>　是辈满阎浮　　亿亿百万千</p>
+<p>　所行遍十方　　不益一切人</p>
+<p>　当有随受行　　皆共堕海流</p>
+<p>　可作大法行　　入海勉欲根</p>
+<p>　决海令灭尽　　平故无还流</p>
+<p>　返原尽欲室　　令人归故乡</p>
+<p>　故乡名无为　　号字清净堂</p>
+<p>　快乐多紫金　　入出杨光明</p>
+<p>　恒边沙劫佛　　莫不称叹说</p>
+<p>　以法空无戏　　无相不愿识</p>
+<p>　渊流以海水　　皆复不足说</p>
+<p>　广意开化人　　自然常自安</p>
+<p>　惟念诸贤者　　乃自反不解</p>
+<p>　无故自受缚　　幻化受报应</p>
+<p>　　尔时四万二千罗汉。皆正意。第七住。八万五千释梵。皆逮无所行从生。六万四千贤女。起为佛作礼。住佛前说偈言</p>
+<p>　今日女利行　　为我众等说</p>
+<p>　闻说佛深法　　令我心开解</p>
+<p>　实欲知道德　　皆从何所来</p>
+<p>　聚合众一切　　有何神妙德</p>
+<p>　而致与大众　　莫不惊愕心</p>
+<p>　伏意往乐从　　随教之所行</p>
+<p>　愿欲求天尊　　愍发起濯众</p>
+<p>　至心受大慧　　如来神化现</p>
+<p>　应时诸女身　　倒愿去色欲</p>
+<p>　便欲作沙门　　佛之知我情</p>
+<p>　毕觉诸审谛　　使身如菩萨</p>
+<p>　宣佛神道教　　当复转化人</p>
+<p>　诸贤大众女　　俱起在佛前</p>
+<p>　头面稽首礼　　愿得如佛像</p>
+<p>　　佛语诸女。所说实至心。今欲求所愿。先当报父母。次当复由王得听可去耳。于是诸女。说偈报白言</p>
+<p>　欲愿作沙门　　先当报父母</p>
+<p>　次当复由王　　得听可作道</p>
+<p>　为道不苦晚　　但当勤开心</p>
+<p>　晓解心意本　　一切与同等</p>
+<p>　便有决大意　　心解乃至道</p>
+<p>　道从解心起　　不住于缚著</p>
+<p>　化达观众见　　如复心出生</p>
+<p>　从本知本空　　知皆非常苦</p>
+<p>　心乱便随流　　所见必有对</p>
+<p>　不生善恶想　　尔乃作沙门</p>
+<p>　　诸贤女。起往至父母所。长跪白父母及大王。今日受王恩德。来诣佛所。为尊女利行问佛深妙法。欲求无为道。现身及一切佛。为女说本末生死苦痛。但为色欲著。不知道德本。缘是无常至。当就三苦勤。愿欲作沙门。愿父母听我作沙门。当得道还度父母。父母语诸女。求自然道。各自见便利。随意所习行。汝曹尚去。我亦随汝去。汝自白语王。得听便自去用问我为。诸女稽首大王前。泪出而言。人在三界中。苦欲坐色想。不得自在。无常卒至无有代者。实欲作沙门。并与诸女俱。无为得道者。当还度父母。王愿从本意。王语女利行等。早欲使汝去。随行作沙门。以汝三事未足。是以不遣汝耳。一者未尽学识诸礼教。二者常乐未有见苦。三者口食恣味未有足者。以是故。不欲遣汝耳。若有至意者。便去勿疑。吾亦欲作沙门。王即起至佛所。作礼白佛言。闻说智慧意甚愿乐。国付太子。身归三尊给侍左右。并受法教。欲作沙门求道如佛。佛即放光若干种色。其明照十方。地为六反震动。诸天作乐覆满于虚空。散华名宝覆三千大千刹土天下丘墟皆平。其有大山。化为黄金。枯木更生。中有不端正者。皆得愿。树木枯者。皆生条叶。自然风吹。皆歌叹佛功德。生华者即自堕落。各气到佛所。罗住空中。各说偈赞佛功德</p>
+<p>　今蒙圣神力　　得救死复生</p>
+<p>　光色还本然　　复实滋道成</p>
+<p>　生死淫乱色　　譬于枯木时</p>
+<p>　值佛说音声　　还来合本并</p>
+<p>　六色沉着瞑　　四色合五欲</p>
+<p>　分别法空然　　解道成法行</p>
+<p>　为得真定智　　快乐得安宁</p>
+<p>　一切皆欢喜　　稽首礼佛足</p>
+<p>　　尔时诸六通及罗汉。见华有是说。女利行即化为男子。复为菩萨一女子。作是二化变。众坐莫不欢喜。时一佛刹中无有女人。诸六通道者十万五千人。三万须陀洹。皆得阿惟越致。八万六千人及阿那含皆得柔顺法忍。不可计罗汉。更发无上正真道意。其有辟支佛行。即如弥勒辈。王即以国付太子。太子名辩积。拜跪白大王。王为欲施子孙之殃。与色身之福。施子孙。当以法财之利。持诛灭之怨大罪。与子孙。大国之治世世漏没。人根不知大慧。灭善之路。与子孙。当奈何。父王有教。不得不从。辄便礼拜。辞王而去。还国宫殿。坐领国。普告。若不到佛所求无为道作善孝者。罪与三逆等。太子于殿上。精进勇慧。广开大道意。心甚过本无量。即灭一城之恶。地即为六反震动。时人民皆言。愿太子便得作佛。我曹大众。皆当承弟。亦当作佛。佛时笑。五色光出。照于十方佛刹。人民皆发愿。令我得道如佛。天下饮食自然在前。如忉利天上。其国菩萨。皆如阿弥陀国中。太子辩积。得功德在宫七日。出诣佛所。从大众群臣大小人民无央数至佛所。为作礼住佛前。说亿亿万千偈。赞曰</p>
+<p>　佛作三昧决　　功德甚巍巍</p>
+<p>　光相威神照　　感动三千刹</p>
+<p>　施人无上慧　　德普入众心</p>
+<p>　感发开童蒙　　莫不受福成</p>
+<p>　演咏法华事　　改世濯群异</p>
+<p>　降伏犷强者　　和更受柔顺</p>
+<p>　等寻道场光　　世人受业长</p>
+<p>　去老逮空寂　　不死而复生</p>
+<p>　除病远秽辱　　色想没灭劳</p>
+<p>　阴盖即以除　　清净无欲尘</p>
+<p>　思想受欲定　　流布还无为</p>
+<p>　空定常寂然　　不住不然行</p>
+<p>　不行无法识　　示现光相成</p>
+<p>　本法无增减　　常安寂空空</p>
+<p>　如来现神化　　一切得真道</p>
+<p>　愚痴寂然定　　心与无生同</p>
+<p>　我今听说法　　演出法华慧</p>
+<p>　心解得发愿　　一切得如佛</p>
+<p>　今欲城国土　　愿便说法华</p>
+<p>　以何法行得　　当有几事解</p>
+<p>　疾得是法华　　依义说其慧</p>
+<p>　皆令分别知　　一切心得解</p>
+<p>　晓了诸法事　　当从中外得</p>
+<p>　得之为远近　　便可立得佛</p>
+<p>　复更于劫数　　久从几佛受</p>
+<p>　解慧而有要　　须臾变化成</p>
+<p>　愿以具演说　　皆令大众知</p>
+<p>　太子及众人　　作礼还复坐</p>
+<p>　　佛语女利行。欲知法华之开解所示现也。当来过去现在诸佛。皆从是散身譬喻品得道知谛。尔时有亿百千天及诸梵。不可计人民。四十八万菩萨。逮得无所从生。其有声闻皆更发意。时不想菩萨白佛言。今日大众听闻法华三昧。解说事要都未受诀。佛告菩萨。今日说法华三昧者。皆以授诀有劫数。各各自有国土处所。是故不复说耳。若汝不解。自往皆问之。时太子及女利行。即白菩萨心中所欲问。即各说偈答报言</p>
+<p>　惟贤上智慧　　何以不解要</p>
+<p>　其有求想报　　皆为不受慧</p>
+<p>　当说有处所　　则非法华事</p>
+<p>　要当须口说　　欲听真高声</p>
+<p>　不解其本末　　语亦俱不知</p>
+<p>　指示道径法　　犹若如盲人</p>
+<p>　师子之大音　　尚复呼小声</p>
+<p>　受诀已得佛　　不知礼正道</p>
+<p>　受诀有国土　　譬亦如幻化</p>
+<p>　有对便出应　　不复预思想</p>
+<p>　见附住教授　　弥及去来今</p>
+<p>　神通无不知　　不须有言说</p>
+<p>　受诀在空无　　寂然安无为</p>
+<p>　常定不动转　　私细人不知</p>
+<p>　开演于未然　　寂静无所为</p>
+<p>　是为所乐国　　清净为证正</p>
+<p>　不念有思想　　是为快法安</p>
+<p>　相好示光明　　是为勤苦现</p>
+<p>　弟子有人民　　是为入欲浊</p>
+<p>　不苦不勤念　　都尽不起灭</p>
+<p>　　如是说十八万亿偈报。菩萨即欢喜。说偈赞曰</p>
+<p>　我自生愚痴　　不解上人语</p>
+<p>　不知其音法　　反呼未受决</p>
+<p>　如今所说偈　　甚深难具陈</p>
+<p>　愿发本时意　　与神共参论</p>
+<p>　　时太子白佛言。今诸贤皆尚不解要。以善权方便开解。佛即笑。五色光从心口出。十方皆明。阿难白佛。佛不妄笑。笑必有意。愿闻其说。佛语阿难。汝见大众不。阿难答言见。今是如来。问皆具答。各各在十方教化。度恒沙等天人民。皆使作佛。尔时自然雨香华七宝。覆三千大千刹土。而周匝遍无有空处。佛语太子。此法华所解。人身之事如是。尔时不可计洹沙百千人民。皆发无上正真道意。逮无所从生心。无数千声闻。皆逮阿惟越致地。阿难长跪白佛言。此名何经。云何奉行。佛语阿难。名法华三昧。女利行所问解人身散情经要集。若有男女。书写讽诵读。胜行檀八十劫。若供养对跪拜者。胜菩萨行慈三千亿万劫。若当晓解展转相教。胜供养恒边沙佛。若有一闻是经者。不复更生死勤苦。不信谤者。此人以随末流。未复还本。佛语阿难。嘱累汝法华三昧事。千劫尚不能尽。粗说要谛。受书持奉行。勿得减一字。正书句逗相得。太子所从大众开解。各得道慧。皆如上首。起为佛作礼而去</p>
+<p>　　　　法华三昧经</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../fhzj/fsgbyjbtzljlszyy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../fhzj/dfgjlsqnbtly.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../fhzj/fsgbyjbtzljlszyy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../fhzj/dfgjlsqnbtly.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

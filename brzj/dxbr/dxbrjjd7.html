@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>道行般若经卷第七  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="道行般若经卷第七"><a class="header" href="#道行般若经卷第七">道行般若经卷第七</a></h1>
+<p>　　　　道行般若经卷第七</p>
+<p>　　　　　　　　后汉月支国三藏支娄迦谶　　译</p>
+<p>　　　　摩诃般若波罗蜜守空品第十七</p>
+<p>　　须菩提白佛言：菩萨行般若波罗蜜，何等为入空，何等为守空三昧。佛言：菩萨行般若波罗蜜，色痛痒思想生死识空观，当作是观，一心作是观不见法，如是不见法，于法中不作证。须菩提言：佛所说不于空中作证，云何菩萨于三昧中住，于空中不得证。佛言：菩萨悉具足念空不得证，作是观不取证，作是观观入处，甫欲向是时不取证，不入三昧，心无所著，是时不失菩萨法本不中道得证，何以故？本愿悉护萨和萨故，为极慈哀故，自念言：我悉具足于功德，是时不取证，菩萨得般若波罗蜜，获得极大功德，悉得智慧力，譬若人能勇悍却敌，为人极端正猛健无所不能，能晓兵法，六十四变皆知习之，为众人所敬，若有所至处，无不得其力者，有所得者转分布与人，其心欢欣，若有他事与父母妻子俱去，过大剧道厄难之中，安隐父母，语其妻子言：莫有恐惧，当俱出是难中，既出得送父母妻子归乡里，不逢邪恶到家莫不欢欣者，何以故？用是人勇悍多智慧黠健故，是菩萨行极大慈，心念十方萨和萨，是时持慈心悉施人上，是菩萨过阿罗汉地，出辟支佛地，于三昧中住，悉愍伤萨和萨无所见，于是中不取证，入空中深不作阿罗汉，菩萨作是行时，为行空三昧，向泥洹门不有想，不入空取证，譬若飞鸟飞行空中无所触碍，菩萨行甫欲向空，至空向无想，不堕空中，不堕无想，悉欲具佛诸法，譬若工射人射空中，其箭住于空中，后箭中前箭，各各复射，后箭各各中前箭，其人射欲令前箭堕尔乃堕，菩萨行般若波罗蜜，为沤和拘舍罗所护，自于其地不中道取证堕，阿罗汉辟支佛地，持是功德逮得阿耨多罗三耶三菩，功德盛满便得佛，为菩萨于经本中观，不中道取证。须菩提白佛言：菩萨谦苦作是学，不中道取证。佛言：是菩萨悉为护萨和萨，守空三昧向泥洹门，心念分别，何等为分别，守空三昧无相三昧无愿三昧，是为分别沤和拘舍罗，使是菩萨不中道取证，何以故？沤和拘舍罗护之故，故心念一切萨和萨，持是所念故，得沤和拘舍罗，不中道取证，若菩萨深入观，守空三昧向泥洹门，无想三昧向泥洹门，无愿三昧向泥洹门，用是故分别久远已来人，所因缘想中，求得阿耨多罗三耶三菩为说经，当使远是因缘，守空三昧守无想三昧守无愿三昧，向泥洹门，皆不中道取证，菩萨如是念久远人，呼常有想，常有安想，常有我想，常有好想各各本我作阿耨多罗三耶三菩时，用人故为说经，使断有想有安想有我想有好想，悉断求云何断，是常无常，是乐皆苦，是身非身，是好皆丑，菩萨自心念，为得沤和拘舍罗，守空，守无想，守无愿三昧，向泥洹门，不中道取证，若有菩萨心念人发远已来，求因缘，求想，求欲，求聚想，求空想，求是想，皆现在，菩萨言：我一切欲使世间无有是，用是念人故得沤和拘舍罗，是法观空想愿识，无所从生齐限，是菩萨不中道取证，法当作是知，云何菩萨求般若波罗蜜，当晓习于法中，心当何缘求，心当云何入，守空三昧，守无相三昧，守无愿三昧，向泥洹门，皆不中道取证，守无识三昧，守无所从生三昧，是菩萨不得决故，守空三昧，无相三昧，无愿三昧，无识三昧，无所从生三昧，念是三昧，竟有来问者，不即持不可计心为解者，知是非阿惟越致菩萨，何以故？阿惟越致心无央数悉知，用是比行不具足，知是菩萨未得阿惟越致。须菩提白佛言：若有菩萨能解是者，便为阿惟越致。佛言：闻深般若波罗蜜若不闻能解者，即是阿惟越致。须菩提言：不可计人求菩萨道，少有能解者。佛言：能解者以受决以于是功德中，极姝所知法者，阿罗汉辟支佛所不能及，诸天阿须伦龙鬼神所不及，是为阿惟越致相。</p>
+<p>　　　　摩诃般若波罗蜜道行经远离品第十八</p>
+<p>　　佛言：复次须菩提，梦中菩萨摩诃萨不入阿罗汉地，不入辟支佛地，不乐索其中，亦不教他人入其中，心亦不念般若中诸法，梦中视不般若中为证，心悉常在佛，如是须菩提，阿惟越致菩萨摩诃萨，当知是阿惟越致相，复次须菩提，菩萨摩诃萨梦中与若干百弟子，共会在中央坐，不可数千弟子，不可数百千弟子，共会在中央坐说经，与比丘僧相随，最在前头，怛萨阿竭阿罗呵三耶三佛说经悉见亦复是。须菩提！阿惟越致菩萨摩诃萨，当知是阿惟越致相，复次须菩提，菩萨摩诃萨梦中在极高虚空中坐，为比丘僧说经，还自见七尺光，自在所变化，于余处所作，为如佛说经，菩萨摩诃萨于梦中作是亦复是。须菩提！阿惟越致菩萨摩诃萨，当知是阿惟越致相，复次须菩提，菩萨摩诃萨梦中不恐不怖不难不畏，梦中若见郡县，其中兵起展转相攻，若火起，若见虎狼师子及余兽，若见断人头者，如是余变化大勤苦者，多困穷者，饥者渴者，都以厄难，悉作是见，其心不恐不怖不惊不摇，于梦中见，以觉即起坐，作是念，如梦中所见，都是三处，我作佛时悉为说经遍教亦复是。须菩提！阿惟越致菩萨摩诃萨，当知是阿惟越致相，复次须菩提，何从知是菩萨摩诃萨得阿耨多罗三耶三菩，成作佛时，其境内一切无有恶心，是时须菩提，菩萨摩诃萨梦中若见畜生相啖人民疾疫时，其心稍稍生逮得是愿，作是念我会当作佛，如我作佛时，使我界中一切无有恶，用是故知亦复是须菩提，阿惟越致菩萨摩诃萨，当知阿惟越致相，诸恶悉除赐亦复是须菩提，阿惟越致相复次须菩提，是菩萨摩诃萨于梦中觉已，若见城郭火起时，便作是念，我于梦中所见，用是比用是相见不怖，用是比用是相行具足，菩萨摩诃萨如是，是为阿惟越致，相持是比持是相行具足，是为阿惟越致菩萨摩诃萨，今我审应审至审是所向者当无异，今是城郭火起，用我故，悉当灭，悉当消，悉当去不复现。佛言：假令火赐灭已，赐消已，赐去已，知是须菩提，菩萨摩诃萨受决已，过去怛萨阿竭阿罗诃三耶三佛，授阿耨多罗三耶三菩，知是阿惟越致相假令火不灭不消不去，知是菩萨摩诃萨未受决，设火神烧一舍置一舍，复越烧一里置一里，知是须菩提，其家人前世时断经故所致，是辈之人所作宿命悉自见，宿命所作恶于是悉除赐，从是以来断经余殃悉尽，是宿命恶悉消，如是须菩提，知是菩萨摩诃萨，未得阿惟越致阿耨多罗三耶三菩，复次须菩提，用是比用是相行具足，菩萨摩诃萨当作是视，持是比持是相，当为说令知之，或时须菩提，若男子女人为鬼神所下，若为所持，是彼菩萨作是念，或我受决，如过去怛萨阿竭阿罗诃三耶三佛，授我阿耨多罗三耶三菩阿惟三佛，是阿耨多罗三耶三菩，所念悉净洁故，设我当作阿耨多罗三耶三菩阿惟三佛，所念皆净洁，是阿耨多罗三耶三菩，却阿罗汉心，却辟支佛心，设却阿罗汉心，以设却辟支佛心以阿耨多罗三耶三菩会当作佛不得不作佛，阿耨多罗三耶三菩当作佛者，十方阿僧祇刹现在诸佛，无不知者，无不见者，无不证者，今怛萨阿竭阿罗诃三耶三佛，悉知我所识念，我审当作阿耨多罗三耶三菩阿惟三佛，审如我所语，审如我所为，审如我所言，是鬼神当用我故去，便告言：是男子女人，何等鬼神所取持乎？鬼神即为去，设是不去者，是菩萨摩诃萨说是时，当知须菩提，是菩萨摩诃萨未受决，过去怛萨阿竭阿罗诃三耶三佛，不授阿耨多罗三耶三菩，佛语须菩提，其人审至诚者，弊魔往到是菩萨摩诃萨前住，作是语言若本作是住若本字某若以受决，欲以乱之，是菩萨当说是语时，我是真者，鬼神当随我语，我审受决，为阿耨多罗三耶三菩，审如我至诚者，是鬼神即当去，是弊魔便作是念，我当使鬼神去，何以故？弊魔极尊有威神，鬼神不敢当，魔作是念，鬼神用魔威神故便舍去，如是菩萨作是念，用我威神故鬼神即去耳。佛言：不知用魔威神故去也，是彼菩萨摩诃萨以自谓审然，便自贡高，轻易人形笑人，无所录，语人言：我于过去怛萨阿竭阿罗诃三耶三佛所，受决以其余人悉未受决，用是故自可自贡高，反嗔恚起恚怒，稍稍增多，则离萨芸若大远，失阿耨多罗三耶三菩智，是辈菩萨无有沤和拘舍罗，嗔怒更生，起是两地，当堕阿罗汉地，若堕辟支佛道地，是辈须菩提持不成，是菩萨摩诃萨当觉知魔为，舍善知识去，亦不与善知识语，亦不与善知识从事，亦不录善知识，用是故知为魔所固，如是须菩提，菩萨摩诃萨当知魔为，何以故当觉是事，知魔来在菩萨前，魔时时变服，往作是语言，过去怛萨阿竭阿罗呵三耶三佛，授若受阿耨多罗三耶三菩，若本字某，若母字某，若父字某，若兄字某，若姊字某，若弟字某，若亲厚字某，若知识字某，若父母兄字某，若七世祖父母字某，若母外家字某，若父外家字某，若在某城生，若在某国生，若在某郡生，若在某县生，若在某乡生，若常软语，若今作是语，若乃前世时，亦复作是软语，或时高才，便复随形言：若前世时亦复高明，或见自字，或见乞食，或时一处饭，或时就饭者，或时先啖果菜却食饭，或时在丘墓间，或时路靖，或时在树间止，或时有受请者，或时不受请，或时少多取足，或时麻油不涂身，或时语声好，或时巧谈语，魔见如是因底诡言，若前世时亦复巧谈语如是，若前世时施行法亦复如是，何以故？若前世时净洁行今还得，若前世时行净洁故，功德所致，今若还是功德耳，若前世时某家子，若种姓亦复字某，前世有是行，若今世亦复净洁得是，彼菩萨心便作是念想，我得无尔乎？是弊魔便复作是语言，若以受决阿惟越致，过去怛萨阿竭阿罗诃三耶三佛，若授决已，用是故若得净洁，佛语须菩提，我所说阿惟越致菩萨摩诃萨持是比持是相持是行用占之，我所说者不具足得反自用是，当知是菩萨辈终不成就，当知为魔所坏，何以故？用是比用是相，阿惟越致菩萨摩诃萨，知是了不得，用魔说其功德故，说其字故，是辈菩萨摩诃萨闻魔所语，心欢欣自谓审然，便行形调人，轻易同学人，自贡高彼菩萨用受是字故，便失其本行堕魔罗网，复次须菩提，用受是字故，菩萨摩诃萨不觉魔为，反自呼得阿耨多罗三耶三菩，魔复作是语言：若当作阿耨多罗三耶三菩，若作佛时当字某，是菩萨闻是字心中作是念，我得无然乎？我亦先时念如是，我本作是生意，以我本作是念已。佛言：是菩萨如是于智中少，是菩萨无有沤和拘舍罗，反作是念，是所言我字当作佛时，亦如我先时所念，我定当作阿耨多罗三耶三菩字如是。佛言：如魔所教，若魔天共作，是比丘为魔所迷，佛语须菩提，我所署菩萨用是比用是相，我不教令作是为，我所教了不得，亡是比失是相反用是字故自意念，我是阿惟越致便轻余菩萨，用是轻易故离佛，远离萨芸若，远离阿耨多罗三耶三菩智，远是沤和拘舍罗，亡以般若波罗蜜，亡以善知识，以更得恶知识，是菩萨会堕阿罗汉辟支佛道中，若后大久远勤苦能复求佛者，用般若波罗蜜恩故，当复得阿耨多罗三耶三菩自致作佛。佛言：尔时发意受是字时，不即觉，不即改，不即悔，如是当堕阿罗汉辟支佛道。佛言：若有比丘教重禁四事法，若复他事，所犯毁是禁，不复成沙门不复为佛子，是坏菩萨辈，罪过于比丘四事法，是菩萨言：我于某国某郡某县某乡生，作是意生念时，其罪最重，当作是知，置是四事重法，是为五逆恶，当意生是念时其罪重，是菩萨用受其字故，意信生是念故其罪大，当作是知，如是须菩提，用是字故，为魔入深罪，复次须菩提，远离之德，菩萨摩诃萨，弊魔复往作是语言，远离法正当尔，怛萨阿竭阿罗诃三耶三佛所称誉。</p>
+<p>　　佛语须菩提，我不作是说远离教菩萨摩诃萨，于独处止，于树间止，于闲处止。须菩提白佛言：云何天中天，菩萨摩诃萨远离何所，复有异远离乎？亦不于独处止，亦不于树间止，亦不于闲处止，何等为异远离，佛语须菩提，正使各各有阿罗汉，随是行念，各各有辟支佛，随是行念，各各有菩萨摩诃萨，城外行远离，各各行菩萨摩诃萨一切恶不得犯，各各行菩萨摩诃萨，若当于独处止，若于树间止，若于闲处止，了了行菩萨摩诃萨，是远离法，我乐使作是行，不使远行绝无人处于中也，菩萨摩诃萨持是远离，当昼夜行，当了了行，是故菩萨摩诃萨远离于城傍行，持是比菩萨摩诃萨当各各行，若于独处止，若于树间止，若于闲处止，各各行菩萨摩诃萨，我所说远离法如是，尔时弊魔，当往教行远离法语言，若当于独处止，若于树间止，若于闲处止，当作是行，是菩萨随魔教便亡远离法魔语言道等取阿罗汉法，作是念无有异，当随是行，辟支佛道作是念无有异，亦当随是行，菩萨道作是念无有异，亦当随是行，般若波罗蜜难了知入中，若当作是行舍般若波罗蜜。佛言：是菩萨所愿未得反随其行，于法中未了知，是菩萨摩诃萨反自用是，当轻易余菩萨，自念谁能过我者轻易城傍行菩萨，城傍行菩萨了了净洁心无所念，不入阿罗汉法中住，不入辟支佛法中住，所有恶心不受，禅悦弃定，于三昧中悉逮得所愿悉具足度。佛言：是无有沤和拘舍罗，菩萨正使于百千由旬空泽中，在其中行，禽兽所不至处，贼所不至处，罗刹所不至处，在彼间止，若百岁若百千岁，若百千万岁正使复过是，不知是远离法，会无所益，是远离菩萨不具足，自念自用悉得，以了不自知为亡也，自用在远离中立，是为两舌耳，不得远离也，我不喜是菩萨心尔也，我所道远离菩萨摩诃萨不尔也，是所远离不具足知，于是远离中了不得，如是为三远离耳，如是弊魔便往飞在虚空中立，作是语，善哉善男子，是真远离法，怛萨阿竭阿罗诃三耶三佛所说，正当随是远离行，如是疾得阿耨多罗三耶三菩阿惟三佛，是菩萨闻是语喜，便从远离起去，往到城傍远离菩萨所是菩萨比丘成就有德人也，反往轻言，若所行法非也。佛言：如是诸仁者中，有了了随行菩萨摩诃萨反呼非，中有反行反呼是，不当敬者而敬之，当所敬者反嗔向，语是菩萨言：我行远离有飞人来语我言，善哉善哉，若审是远离法，正当随是行，用是故我来相语耳，今若当随我所行，如我所行无有比，若有城傍行，谁当来语若谁当来告若善哉。佛言：是菩萨有德之人，而反轻如是。须菩提！菩萨当作是知，如担死人种无所复中直反呼，是菩萨有短是为菩萨怨家，是为厌菩萨，以是为天上天下之大贼也，正使如沙门被服，亦复是贼无异也，于菩萨有德人中，亦复是贼也，是曹辈。须菩提！不当与共从事也，不当与共语言也，亦不当恭敬视也，何以故？多嗔怒起败人好心，是辈人也，当作是知，何所须菩提，菩萨摩诃萨不舍萨芸若，不置阿耨多罗三耶三菩，是所菩萨摩诃萨不舍萨芸若故，是阿耨多罗三耶三菩阿惟三佛，为一切护萨和萨，是彼坏菩萨辈，不当与从事，不当敬，不当与会所当护法，一当自坚持，常当急持净洁心立，心所狎习，常当谛持，常当正心，常当怖畏，勤苦处无得入其中，无得入三处，是彼坏菩萨辈所在彼处，常当持慈心向，常当哀之令安隐，愍伤之慈念之，常当自护自念，使我无得生是恶心，一切使我心无瑕秽，我设有是不善疾使我弃，如是须菩提，菩萨摩诃萨所有行极上，当作是知。</p>
+<p>　　　　摩诃般若波罗蜜道行经善知识品第十九</p>
+<p>　　复次须菩提，菩萨摩诃萨在事欲得阿耨多罗三耶三菩阿惟三佛，是彼当与善知识从事恭敬承事，须菩提问佛，菩萨摩诃萨善知识，当何以知之，佛语须菩提，佛天中天，是菩萨摩诃萨善知识，若有说般若波罗蜜者，教人入是经中，是菩萨摩诃萨善知识，六波罗蜜，是菩萨摩诃萨善知识，当作是知，六波罗蜜是舍怛罗，六波罗蜜是道，六波罗蜜是护，六波罗蜜是一，六波罗蜜是将，过去怛萨阿竭阿罗诃三耶三佛，皆从六波罗蜜出，甫当来怛萨阿竭阿罗诃三耶三佛，皆从六波罗蜜出，今现在十方阿僧祇刹，怛萨阿竭阿罗诃三耶三佛，亦皆从六波罗蜜出成萨芸若，皆于四事中取道，用四事护萨和萨，何等四事，一者布施于人，二者欢乐于人，三者饶益于人，四者等与，是为四，如是须菩提，菩萨摩诃萨是故为舍怛罗，是故为母，是故为父，是故为舍，是故为台，是故为度，是故为自归，是故为导，是故为六波罗蜜，是故为萨和萨之度，何因菩萨摩诃萨学六波罗蜜，用无有极处人民故，悉欲断其根，是菩萨摩诃萨皆于般若波罗蜜中学，须菩提问佛，何所是般若波罗蜜相，佛语须菩提，无所挂碍是般若波罗蜜相。须菩提言：是所相得般若波罗蜜，如是相得诸法。佛言：如是须菩提，无所有相得般若波罗蜜，是所相得诸法，何以故？须菩提，诸法各各异，诸法各各虚空，如是须菩提，是所相各各虚空，是为般若波罗蜜相，诸法各各虚空，如是须菩提，是所相般若波罗蜜各各虚空，随是相诸法各各虚空，须菩提问佛，正使天中天，诸法各各虚空，何缘人民欲生无有尽时，各各无有减时，各各无有尽处时，虚空无有增时，虚空无有息时，各各虚空无有阿耨多罗三耶三菩阿惟三佛，不从是中各各虚空，是法不得阿耨多罗三耶三菩阿惟三佛，云何天中天，是法当何以知决，佛语须菩提，尔须菩提，昼夜人民欲得是因致是作是求须菩提言：如是天中天，昼夜人民欲得是因致是作是求。佛言：云何须菩提，若见我欲得是空不。须菩提言：不也天中天。佛言：如是不？须菩提，自作是得是空不。须菩提言：如是天中天，空。佛言：云何须菩提，但用是故，欲得是因致是，人民用是故勤苦，无有解已时。须菩提言：如天中天，极安隐人民，欲得是因致是，勤苦无有休息时。佛言：如是须菩提，人民所欲故便著，当作是知人，民所生本从是生，从是中无可取，无可取者不作是得，是了无所有，如是，须菩提无有减尽时，从是中了无有生增益者，作是晓知，是为菩萨摩诃萨行般若波罗蜜。须菩提白佛言：作是晓知者，菩萨摩诃萨为不求色，不求痛痒思想生死识，作是晓知，行般若波罗蜜菩萨摩诃萨，为悉等行，诸阿罗汉诸辟支佛所不能及，有德之人所行道，是彼极过上，是所得爱无有能逮者，是菩萨摩诃萨当作是念，得般若波罗蜜已，当作是行，菩萨摩诃萨昼夜行，疾近阿耨多罗三耶三菩阿惟三佛。佛言：云何须菩提，阎浮利人民，及四面蜎飞蠕动悉令作人，各各得人道已，皆令求阿耨多罗三耶三菩，以发意索佛道，各各尽寿作布施，持是布施施与作阿耨多罗三耶三菩，于须菩提意云何，是菩萨摩诃萨作是布施，其福宁多不。须菩提言：甚多甚多天中天。佛言：不如是菩萨摩诃萨得般若波罗蜜已守一日，正使最后守一日，如般若波罗蜜中教，作是念行，其福过彼上，或时菩萨摩诃萨得般若波罗蜜已，如是法作是念行，是都卢于众中极尊，何以故？其余人无有能及是慈者，舍诸佛，是菩萨摩诃萨无有与等者，是善男子深入知中晓了，是智悉具足，悉见世间勤苦者，尔时极大愍伤，念眼彻视见不可计人民，悉具足无有懈时，用不懈故得是行，当尔时极大感念，悉念萨和萨，不用是相住，亦不用余住是所。须菩提！菩萨摩诃萨其智极大明，虽未作阿耨多罗三耶三菩，明如是，随是行一切刹土皆共尊举，正上阿耨多罗三耶三菩，终不逮，若受人衣被饮食床卧具医药悉具足，是般若波罗蜜者，心在其中立，所受施悉除去近萨芸若，如是须菩提，菩萨摩诃萨所啖无有罪益，于萨和萨悉示道径，无有边，无有极处，悉明照诸在牢狱中者，悉欲度脱，萨和萨悉欲示眼，是般若波罗蜜中法，当念行，当随是教，用是念行，是般若波罗蜜有入中者，不动行，不摇行，何以故？随是不动摇行莫念想，莫得作异念持短入般若波罗蜜中，当作是行，昼夜入般若波罗蜜中莫懈止，譬若须菩提男子得摩尼珠，前时未得，却后得是摩尼珠，欢欣踊跃，得是摩尼珠已，却后复亡之，用是故大愁毒，坐起忧念想如亡七宝，作是念，云何我直亡是珍宝，如是须菩提，菩萨摩诃萨欲索珍宝者，常当坚持心无得失萨芸若，常当入是中念。须菩提白佛言：设使所念用身亡乎？云何菩萨摩诃萨念萨芸若不亡，佛语须菩提，设是菩萨摩诃萨作是知无为，不失般若波罗蜜，何以故？须菩提，般若波罗蜜虚空，是般若波罗蜜亦不增亦不减。须菩提言：是般若波罗蜜虚空，云何生菩萨摩诃萨，般若波罗蜜成就其行，近阿耨多罗三耶三菩。佛言：不也须菩提，菩萨摩诃萨亦不增亦不减，正使须菩提，是经中说时，菩萨摩诃萨闻是亦不恐亦不怖，当作是知，是善男子则为行般若波罗蜜。须菩提白佛言：如是般若波罗蜜为空行乎不？须菩提，有离般若波罗蜜行得不？须菩提，空行不？须菩提，离空行不？须菩提，败色行不？须菩提败痛痒思想生死识行不？须菩提，离色颇所有行不？须菩提，离痛痒思想生死识颇所有行不。须菩提言：云何天中天行般若波罗蜜。佛言：云何须菩提，见是法不？何所法行般若波罗蜜。须菩提言：不见也天中天。佛言：云何须菩提，遍见不？见般若波罗蜜，何所菩萨摩诃萨行。须菩提言：不见也天中天。佛言：设使须菩提，遍见不？是菩萨摩诃萨行般若波罗蜜。须菩提言：不见也，天中天。佛言：设使须菩提，不遍见法，有所生处不。须菩提言：不见也天中天，佛语须菩提，是菩萨摩诃萨逮无所从生法乐，如是乐悉具足，无所从生受决阿耨多罗三耶三菩，是怛萨阿竭阿罗诃三耶三佛所至处，无所复畏，悉作是护，菩萨摩诃萨作是求，作是行，作是力，为逮佛慧，极大慧，自在慧，萨芸若慧，怛萨阿竭慧，设见不得佛，佛语为有异。须菩提白佛言：设使诸法无所从生受决阿耨多罗三耶三菩，佛语须菩提，不也。须菩提白佛言：云何菩萨摩诃萨得阿耨多罗三耶三菩，佛语须菩提，见不？所当受决阿耨多罗三耶三菩。须菩提言：我不见法当作阿耨多罗三耶三菩。佛言：如是须菩提，如是诸法，无无从中得菩萨不作是念，持是法当受决不受决。</p>
+<p>　　　　道行般若经卷第七</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/dxbr/dxbrjjd6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/dxbr/dxbrjjd8.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/dxbr/dxbrjjd6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/dxbr/dxbrjjd8.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

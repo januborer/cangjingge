@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>小品般若经卷第二  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="小品般若经卷第二"><a class="header" href="#小品般若经卷第二">小品般若经卷第二</a></h1>
+<p>　　　　小品般若波罗蜜经卷第二</p>
+<p>　　　　　　　　后秦龟兹国三藏鸠摩罗什译</p>
+<p>　　　　塔品第三（丹本云宝答品）</p>
+<p>　　尔时释提桓因、梵天王、自在天王，及众生主、诸天女等，皆大欢喜，同时三唱：「快哉！快哉！佛出世故，须菩提乃能演说是法。」</p>
+<p>　　尔时诸天大众俱白佛言：「世尊！若菩萨能不离般若波罗蜜行，当视是人如佛。」</p>
+<p>　　佛告诸天子：「如是如是！昔我于众华城，燃灯佛所，不离般若波罗蜜行。时燃灯佛记我于来世，过阿僧祇劫，当得作佛，号释迦牟尼如来、应供、正遍知、明行足、善逝、世间解、无上士、调御丈夫、天人师、佛、世尊。」</p>
+<p>　　诸天子白佛言：「希有世尊！诸菩萨摩诃萨，般若波罗蜜能摄取萨婆若。」</p>
+<p>　　佛因释提桓因告欲色界诸天子，及四众比丘、比丘尼、优婆塞、优婆夷等：「憍尸迦！若有善男子、善女人，能受持读诵般若波罗蜜，如所说行，魔、若魔天，人、若非人，不得其便，终不横死。善男子、善女人，受持读诵般若波罗蜜故，忉利诸天发阿耨多罗三藐三菩提心，未受持读诵般若波罗蜜者，来至其所。复次，憍尸迦！善男子、善女人，受持读诵般若波罗蜜时，若在空舍，若在道路，若或失道，无有恐怖。」</p>
+<p>　　尔时四天王白佛言：「世尊！若善男子、善女人，受持读诵般若波罗蜜，如所说行，我等皆当护念。」</p>
+<p>　　释提桓因白佛言：「世尊！若善男子、善女人，受持读诵般若波罗蜜，如所说行，我当护念。」</p>
+<p>　　梵天王，及诸梵天俱白佛言：「世尊！若善男子、善女人，受持读诵般若波罗蜜，如所说行，我等亦当护念。」</p>
+<p>　　释提桓因白佛言：「希有世尊！善男子、善女人，受持读诵般若波罗蜜，得如是现世功德。世尊！若受持读诵般若波罗蜜者，则为受持诸波罗蜜。」</p>
+<p>　　佛言：「如是如是！憍尸迦！受持读诵般若波罗蜜者，则为受持诸波罗蜜。复次，憍尸迦！善男子、善女人，受持读诵般若波罗蜜，所得功德，汝今善听，当为汝说。」</p>
+<p>　　释提桓因受教而听佛告：「憍尸迦！若有欲毁乱违逆我此法者，虽有是心，渐渐自灭，终不从愿。何以故？憍尸迦！若善男子、善女人，受持读诵般若波罗蜜，种种毁乱违逆事起，法应皆灭，是故此人终不从愿。憍尸迦！善男子、善女人，受持读诵般若波罗蜜，得如是现世功德。譬如有药，名为摩醯，有蛇饥行求食，见有小虫而欲食之，虫赴药所，蛇闻药气，即回还去。所以者何？药力能消蛇毒故。憍尸迦！善男子、善女人亦如是。若受持读诵般若波罗蜜，种种毁乱违逆事起，以般若波罗蜜力故，即自消灭。复次，憍尸迦！若受持读诵般若波罗蜜，护世四天王皆当护念。复次憍尸迦！是人终不说无益之语，有所言说，人所信受，少于嗔恚，终不怀恨，不为我慢所覆，不为嗔恚所使。善男子、善女人若嗔恚时，能作是念：若我嗔者，则坏诸根，颜色变异，我欲求阿耨多罗三藐三菩提，云何当随嗔心。如是思惟，即得正念。憍尸迦！善男子、善女人，受持读诵般若波罗蜜，亦得是现世功德。」</p>
+<p>　　释提桓因白佛言：「希有世尊！般若波罗蜜为回向故，不为高心。」</p>
+<p>　　佛告憍尸迦：「善男子、善女人，受持读诵般若波罗蜜，若入军阵，诵般若波罗蜜，若住若出，若失寿命，若被恼害，无有是处。若刀箭向者，终不能伤。何以故？般若波罗蜜是大咒术，无上咒术。善男子、善女人，学此咒术，不自念恶，不念他恶，不两念恶。学是咒术，得阿耨多罗三藐三菩提，得萨婆若智，能观一切众生心。复次，憍尸迦！若般若波罗蜜经卷住处、若读诵处，人、若非人，不得其便；唯除业行，必应受者。憍尸迦！譬如道场四边，若人若畜生，无能恼者。何以故？过去未来现在诸佛，此中得道，已得今得当得，是处一切众生，无恐无畏，无能恼害。憍尸迦！以般若波罗蜜故，是处则吉，人所恭敬，供养礼拜。」</p>
+<p>　　释提桓因白佛言：「世尊！若善男子、善女人，书般若波罗蜜，受持经卷，供养恭敬，尊重赞叹，以好花香、璎珞、涂香、烧香、末香、杂香、缯盖、幢幡，而以供养。若复有人，以如来舍利，供养恭敬，尊重赞叹，以好花香、璎珞、涂香、烧香、末香、杂香、缯盖、幢幡，而以供养，其福何所为多？」</p>
+<p>　　「憍尸迦！我还问汝，随汝意答，于意云何？如来行何道，得萨婆若？所依止身，得阿耨多罗三藐三菩提？」</p>
+<p>　　释提桓因白佛言：「世尊！如来学般若波罗蜜故，得是身，得阿耨多罗三藐三菩提。憍尸迦！佛不以身故，名为如来，以得萨婆若故，名为如来。憍尸迦！诸佛萨婆若，从般若波罗蜜生，是身萨婆若智所依止故。如来因是身得萨婆若智，成阿耨多罗三藐三菩提，是身萨婆若所依止故，我灭度后舍利得供养。憍尸迦！若善男子、善女人，书般若波罗蜜，受持读诵，供养恭敬，尊重赞叹，以好花香、璎珞、涂香、烧香、末香、杂香、缯盖、幢幡，而以供养，是善男子、善女人，即是供养萨婆若智。是故若人书写般若波罗蜜，供养恭敬，尊重赞叹，当知是人得大福德。何以故？供养萨婆若智故。」</p>
+<p>　　释提桓因白佛言：「世尊！阎浮提人不供养恭敬尊重赞叹般若波罗蜜，为不知得如是大利益耶？」</p>
+<p>　　佛言：「憍尸迦！于意云何？阎浮提有几所人于佛得不坏信？几所人于法于僧得不坏信？」</p>
+<p>　　释提桓因言：「少所人于佛得不坏信，于法于僧得不坏信。世尊！阎浮提少所人得须陀洹、斯陀含、阿那含、阿罗汉。得辟支佛者，转复减少。能行菩萨道者，亦复转少。」</p>
+<p>　　「如是如是！憍尸迦！阎浮提少所人于佛得不坏信，乃至能发阿耨多罗三藐三菩提心，行菩萨道者，亦复转少。憍尸迦！无量无边阿僧祇众，生发阿耨多罗三藐三菩提心，于中若一若二，住阿毗跋致地，是故当知善男子、善女人，发阿耨多罗三藐三菩提心，乃至能受持读诵，供养恭敬，尊重赞叹般若波罗蜜。何以故？是人作是念：过去诸佛行菩萨道时，从是中学，我等亦应于是中学。般若波罗蜜，是我大师。憍尸迦！若我现在，若我灭后，菩萨常应依止般若波罗蜜。若善男子、善女人，于我灭后，以供养如来故，起七宝塔，尽其形寿，以好花香、涂香、末香、衣服、幢幡供养是塔，于意云何？是善男子、善女人，以是因缘故，得福多不？」</p>
+<p>　　释提桓因言：「甚多，世尊！」</p>
+<p>　　佛言：「憍尸迦！若善男子、善女人，供养般若波罗蜜经卷，恭敬尊重赞叹，以好华香、涂香、末香、衣服、幢幡而以供养，其福甚多。憍尸迦！置是一塔，若满阎浮提七宝塔，善男子、善女人，尽其形寿，以好华香，乃至伎乐，供养是塔，于意云何？是人以是因缘，故得福多不？」</p>
+<p>　　释提桓因言：「甚多，世尊！」</p>
+<p>　　佛告憍尸迦：「若善男子、善女人，供养般若波罗蜜经卷，恭敬尊重赞叹，以好华香、涂香、末香、衣服、幢幡，其福甚多。憍尸迦！置是满阎浮提七宝塔，若满四天下七宝塔，若人尽形寿，以花香供养，乃至伎乐，若复有人供养般若波罗蜜，其福甚多。憍尸迦！置是满四天下七宝塔，若满周梨迦小千世界七宝塔，若人尽形寿，以好华香供养，乃至幢幡。若复有人，供养般若波罗蜜，其福甚多。憍尸迦！置是周梨迦小千世界七宝塔，若满二千中世界七宝塔，若人尽形寿，以花香供养，乃至幢幡，若复有人供养般若波罗蜜，其福甚多。憍尸迦！置是二千中世界，若满三千大千世界七宝塔，若善男子、善女人，尽其形寿，以花香供养，乃至幢幡，憍尸迦！于意云何？是人以是因缘故得福多不？」</p>
+<p>　　释提桓因言：「甚多，世尊！」</p>
+<p>　　佛告憍尸迦：「若复有人供养般若波罗蜜经卷，恭敬尊重赞叹，花香乃至幢幡，其福甚多。憍尸迦！置是满三千大千世界七宝塔，假令三千大千世界所有众生，一时皆得人身，是一一人起七宝塔，尽其形寿，以一切好华名香、幢幡伎乐歌舞供养是塔。憍尸迦！于意云何？是人以是因缘故得福多不？」</p>
+<p>　　释提桓因言：「甚多，世尊！」</p>
+<p>　　佛告憍尸迦：「若善男子、善女人，供养般若波罗蜜经卷，恭敬尊重赞叹，花香乃至幢幡供养，其福甚多。」</p>
+<p>　　释提桓因言：「如是如是！世尊！若人供养般若波罗蜜，即是供养恭敬过去未来现在诸佛萨婆若。世尊！置是三千大千世界，一一众生所起七宝塔，若满十方恒河沙等世界众生，皆得人身，一一人，起七宝塔。若于一劫，若减一劫，以好华香，乃至伎乐供养是塔。若复有人供养般若波罗蜜经卷，恭敬尊重赞叹，华香乃至伎乐，其福甚多。」</p>
+<p>　　佛言：「如是如是！憍尸迦！是善男子、善女人，以是供养般若波罗蜜经卷因缘故，其福甚多，无量无边，不可得数，不可思议。何以故？憍尸迦！一切诸佛萨婆若智皆从般若波罗蜜生。憍尸迦！以是因缘故，若善男子、善女人，供养般若波罗蜜经卷，恭敬尊重赞叹，华香乃至伎乐供养，于前功德，百分不及一；分千分万分、百千万亿分，不及一；乃至算数譬喻所不能及。」</p>
+<p>　　　　明咒品第四</p>
+<p>　　尔时释提桓因，与四万天子在会中者，语释提桓因言：「憍尸迦！应受持读诵般若波罗蜜。」</p>
+<p>　　佛告释提桓因：「憍尸迦！汝受持读诵般若波罗蜜，若阿修罗生念，欲与忉利诸天共斗，尔时汝当诵念般若波罗蜜，以是因缘故，阿修罗恶心即灭。」</p>
+<p>　　释提桓因白佛言：「世尊！般若波罗蜜是大明咒，般若波罗蜜是无上咒，般若波罗蜜是无等等咒。」</p>
+<p>　　佛言：「如是如是！憍尸迦！般若波罗蜜是大明咒，般若波罗蜜是无上咒，般若波罗蜜是无等等咒。何以故？憍尸迦！过去诸佛，因是明咒，得阿耨多罗三藐三菩提。未来诸佛，亦因是咒，当得阿耨多罗三藐三菩提。今十方现在诸佛，亦因是咒，得阿耨多罗三藐三菩提。憍尸迦！因是明咒，十善道出现于世，四禅、四无量心、四无色定、五神通，出现于世。因菩萨故，十善道出现于世，四禅、四无量心、四无色定、五神通，出现于世。若诸佛不出于世，但因菩萨故，十善道、四禅、四无量心、四无色定、五神通，出现于世。譬如月不出时，星宿光明，照于世间。如是，憍尸迦！世无佛时，所有善行正行，皆从菩萨出生。菩萨方便力，皆从般若波罗蜜生。复次，憍尸迦！若善男子、善女人，供养般若波罗蜜经卷，恭敬尊重赞叹，得是现世福德。」</p>
+<p>　　释提桓因白佛言：「世尊！得何等现世福德？」</p>
+<p>　　「憍尸迦！是善男子、善女人，毒不能伤，火不能烧，终不横死。又善男子、善女人，若官事起，诵念般若波罗蜜，官事即灭，诸求短者皆不得便。何以故？般若波罗蜜所护故。复次，憍尸迦！善男子、善女人，诵念般若波罗蜜，若至国王，若王子大臣所，皆欢喜问讯，与共语言。何以故？憍尸迦！般若波罗蜜为慈悲一切众生故出。是故，憍尸迦！诸求短者，皆不得便。」</p>
+<p>　　尔时外道出家百人，欲求佛短，来向佛所。释提桓因作是念：是诸外道出家百人欲求佛短，来向佛所。我从佛所，受般若波罗蜜，今当诵念。是诸外道来至佛所，或能断说般若波罗蜜。如是思惟已，即诵念从佛所受般若波罗蜜。时诸外道，遥见佛，复道而去。</p>
+<p>　　舍利弗作是念：何因缘故，是诸外道见佛而去？</p>
+<p>　　佛知舍利弗心所念，告舍利弗：「是释提桓因诵念般若波罗蜜。如是外道，乃无一人有善心者，皆持恶意来求佛短，是故外道，各各复道而去。」</p>
+<p>　　尔时恶魔作是念：今是四众，及欲色界诸天子，在佛前坐，其中必有菩萨，受阿耨多罗三藐三菩提记者，我当坏乱。即化作四种兵，向佛所。</p>
+<p>　　尔时释提桓因作是念：魔严四兵来至佛所，四种兵相，摩伽陀国，频婆娑罗王之所无有；憍萨罗国，波斯匿王亦所无有；诸释子所无有；诸黎车所无有。今是兵相，必是恶魔所作。是魔长夜欲求佛短，恼乱众生，我当诵念般若波罗蜜。</p>
+<p>　　释提桓因即默诵般若波罗蜜，随其所诵，恶魔稍稍复道而去。</p>
+<p>　　尔时忉利诸天，化作天华，在于空中散佛上，作是念：愿般若波罗蜜久住阎浮提，阎浮提人，当得诵习。</p>
+<p>　　是时诸天，复以天花散佛上，作是言：「世尊！若有众生行般若波罗蜜，修习般若波罗蜜，魔、若魔天，不得其便。」</p>
+<p>　　尔时释提桓因白佛言：「世尊！若人得闻般若波罗蜜者，已曾亲近诸佛，不从小功德来。何况受持读诵，如所说学，如所说行。何以故？世尊！诸菩萨萨婆若，当于般若波罗蜜中求。世尊！譬如大宝，当于大海中求。世尊！诸佛萨婆若大宝，应于般若波罗蜜中求。」</p>
+<p>　　佛言：「如是如是！憍尸迦！诸佛萨婆若皆于般若波罗蜜中生。」</p>
+<p>　　尔时阿难白佛言：「世尊！世尊不赞说檀波罗蜜名，不赞说尸罗波罗蜜、羼提波罗蜜、毗梨耶波罗蜜、禅波罗蜜名。何以故？但赞说般若波罗蜜名。」</p>
+<p>　　佛告阿难：「般若波罗蜜导五波罗蜜。阿难！于意云何？若布施不回向萨婆若，成檀波罗蜜不？」</p>
+<p>　　阿难言：「不也！世尊！」</p>
+<p>　　「若持戒忍辱精进禅定智慧，不回向萨婆若，成般若波罗蜜不？」</p>
+<p>　　阿难言：「不也！世尊！」</p>
+<p>　　「阿难！是故般若波罗蜜为五波罗蜜导。阿难！譬如大地种散其中，因缘和合，即得生长，不依此地，终不得生。阿难！如是五波罗蜜，住般若波罗蜜中而得增长，为般若波罗蜜所护故，得向萨婆若。是故，阿难！般若波罗蜜为五波罗蜜作导。」</p>
+<p>　　尔时释提桓因白佛言：「世尊！是善男子、善女人，受持读诵般若波罗蜜，如所说行，所得功德，如来说之，犹亦未尽。」</p>
+<p>　　佛告憍尸迦：「我不但说是人受持读诵般若波罗蜜，如所说行功德。憍尸迦！若有善男子、善女人，供养般若波罗蜜经卷，恭敬尊重赞叹，以好华香乃至幢幡，我亦说其所得功德。」</p>
+<p>　　释提桓因白佛言：「世尊！我亦当护念是善男子、善女人，供养般若波罗蜜经卷，恭敬尊重赞叹，以好华香乃至幢幡者。」</p>
+<p>　　佛言：「憍尸迦！是善男子、善女人，受持读诵般若波罗蜜，若干百千诸天大众，为听法故，来至其所，是法师为诸天说法时，非人益其气力。若法师疲极，不乐说法，诸天恭敬法故，令其乐说。憍尸迦！是亦善男子、善女人，得是现世功德。复次，憍尸迦！是善男子、善女人，于四众中说般若波罗蜜时，其心不畏，有来难问及诘责者。何以故？是人为般若波罗蜜护念故，不见有人得般若波罗蜜短者，般若波罗蜜亦无短可得。是人如是为般若波罗蜜护念故，无畏有来难问诘责者。憍尸迦！是亦善男子、善女人，现世功德。复次，憍尸迦！是善男子、善女人，读诵般若波罗蜜故，为父母所爱，为宗亲知识沙门婆罗门所敬，衰恼斗讼，如法能度。憍尸迦！是亦善男子、善女人，现世功德。复次，憍尸迦！般若波罗蜜经卷所住处，四天王天上诸天，发阿耨多罗三藐三菩提心者，皆来至般若波罗蜜所，受持读诵，供养作礼而去。忉利天、夜摩天、兜率陀天、化乐天、他化自在天上诸天，发阿耨多罗三藐三菩提心者，皆来至般若波罗蜜所，受持读诵，供养作礼而去。梵天、梵世天、梵辅天、梵众天、大梵天、光天、少光天、无量光天、光音天、净天、少净天、无量净天、遍净天、无阴行天、福生天、广果天、无广天、无热天、妙见天、善见天、无小天上诸天，发阿耨多罗三藐三菩提心者，皆来至般若波罗蜜所，受持读诵，供养作礼而去。憍尸迦。汝勿谓但有无小天为供养般若波罗蜜故来。三千大千世界中欲色界诸天。发阿耨多罗三藐三菩提心者。皆来至般若波罗蜜所。受持读诵供养作礼而去善男子、善女人，应作是念：十方无量阿僧祇国土中，所有诸天龙夜叉、乾闼婆、阿修罗、迦楼罗、紧那罗、摩睺罗伽、人、非人是等，来至般若波罗蜜所，受持读诵，供养作礼时，我当以般若波罗蜜法施善男子、善女人。般若波罗蜜经卷所住处，若殿堂、若房舍，无能毁坏，除先行业必应受者。憍尸迦！亦是善男子、善女人，现世功德。」</p>
+<p>　　释提桓因白佛言：「世尊！是善男子、善女人，云何知诸天来受持读诵，供养礼敬般若波罗蜜时？」</p>
+<p>　　佛言：「憍尸迦！若善男子、善女人，见大光明，必知天龙夜叉、乾闼婆等，来至其所。复次，憍尸迦！善男子、善女人，若闻殊异之香，必知诸天来至其所。复次，憍尸迦！善男子、善女人，所住之处，应令净洁；以净洁故，非人皆大欢喜，来到其所。是中先住小鬼，不堪大力诸天威德故，皆悉避去；随大力诸天数数来故，其心转乐大法。是故所住处，四边不应令有臭秽不净。复次，憍尸迦！善男子、善女人，身不疲极，卧起安隐，不见恶梦。若其梦时，但见诸佛、诸佛塔庙，阿罗汉众、诸菩萨众，修习六波罗蜜，学萨婆若，净佛世界。又闻佛名，某甲佛于某方某国，与若干百千万亿众，恭敬围绕而为说法。憍尸迦！善男子、善女人，梦中所见如是觉已安乐，气力充足，身体轻便。是善男子、善女人，不贪饮食，譬如坐禅比丘，从三昧起，以学禅故，不贪饮食。何以故？憍尸迦！非人益其气力故。善男子、善女人，欲得如是等现世功德，当受持读诵般若波罗蜜，如所说行。憍尸迦！善男子、善女人若不能受持读诵般若波罗蜜，如所说行，当书写经卷，供养恭敬，尊重赞叹，以好华香、涂香、末香、烧香、杂香、衣服、幢幡伎乐摩诃般若波罗蜜。」</p>
+<p>　　　　舍利品第五</p>
+<p>　　尔时佛告释提桓因言：「憍尸迦！满阎浮提舍利以为一分，般若波罗蜜经卷以为一分。二分之中，为取何分？」</p>
+<p>　　释提桓因白佛言：「世尊！我取般若波罗蜜。何以故？世尊！我于舍利非不恭敬，以舍利从般若波罗蜜生故，般若波罗蜜所熏，故得供养。世尊！我于忉利天上善法堂中，我有坐处，忉利诸天子来供养我故。若我不在座上，诸天子为我坐处，作礼恭敬，绕已而去。作是念：释提桓因于此处坐，为忉利诸天说法。诸佛舍利亦如是。从般若波罗蜜生，萨婆若所依止故得供养。是故，世尊！我于二分之中，取般若波罗蜜。世尊！置满阎浮提舍利，若满三千大千世界舍利以为一分，般若波罗蜜经卷以为一分，二分之中，我取般若波罗蜜。何以故？诸佛舍利，因般若波罗蜜生，故得供养。世尊！譬如负债人，常畏债主，以得亲近，奉事王故，债主反更恭敬怖畏。何以故？依恃国王，其力大故。世尊！舍利亦如是，依止般若波罗蜜故得供养。世尊！般若波罗蜜如王，舍利如亲近王人。如来舍利，依止一切智慧，故得供养。世尊！诸佛一切智慧亦从般若波罗蜜生，是故我于二分之中，取般若波罗蜜。世尊！譬如无价宝珠，有如是功德。其所住处，非人不能得其便。若男若女，若大若小，为非人所持。宝珠至其处，非人则去。若有热病，珠能除灭。若有风病，以珠著身上，风患即除。若有冷病，以珠著身上，冷患亦除。是珠住处，夜时能为明，热时能为凉，寒时能为温。珠所住处，蛇毒不入。若男若女，若大若小，为毒虫所螫，以珠示之，毒即除灭。若诸目患，以珠著目上，目患即除。世尊！又是宝珠，若著水中，与水同色；若以白缯裹著水中，水色即白；若以青黄紫赤种种色缯裹著水中，水即各随其色，水浊即为清。是珠成就如是功德。」</p>
+<p>　　尔时阿难问释提桓因：「此是阎浮提宝？为是天上宝？」</p>
+<p>　　释提桓因言：「此是天上宝。阎浮提人，亦有是宝，但功德少而重。天上宝珠，功德多而轻。人宝比天宝，算数譬喻所不能及。世尊！若是珠在箧中，虽举珠去，以珠功德故，其箧则贵。世尊！以般若波罗蜜萨婆若智功德故，如来灭后，舍利得供养。以如来舍利，是萨婆若智所住处故。我于二分之中，取般若波罗蜜。世尊！置是满三千大千世界舍利，若满如恒河沙等世界中舍利以为一分，般若波罗蜜经卷以为一分，二分之中，我取般若波罗蜜。何以故？诸佛如来萨婆若智。皆从般若波罗蜜生，萨婆若所熏，故舍利得供养。复次，世尊！若善男子、善女人，欲如实见十方无量阿僧祇诸佛者，当行般若波罗蜜，当修般若波罗蜜。」</p>
+<p>　　佛言：「如是如是！憍尸迦！过去诸佛，皆因般若波罗蜜，得阿耨多罗三藐三菩提；未来诸佛，亦因般若波罗蜜，得阿耨多罗三藐三菩提；现在十方无量阿僧祇世界诸佛，亦因般若波罗蜜，得阿耨多罗三藐三菩提。」</p>
+<p>　　释提桓因白佛言：「世尊！摩诃波罗蜜是般若波罗蜜，佛因是般若波罗蜜。皆知一切众生心心所行。」</p>
+<p>　　佛言：「憍尸迦！菩萨摩诃萨长夜行般若波罗蜜故。」</p>
+<p>　　释提桓因白佛：「言世尊！菩萨但行般若波罗蜜，不行余波罗蜜耶？」</p>
+<p>　　佛言：「憍尸迦！菩萨皆行六波罗蜜。若布施时，般若波罗蜜为上首；若持戒、若忍辱、若精进、若禅定、若观诸法时，般若波罗蜜为上首。譬如阎浮提种种树、种种形、种种色、种种叶、种种华、种种果，其阴皆一，无有差别。五波罗蜜亦如是，入般若波罗蜜中无有差别。世尊！是般若波罗蜜，有大功德，有无量无边功德，有无等等功德。世尊！若有人写般若波罗蜜经卷，供养恭敬，尊重赞叹，以好华香乃至幢幡。若复有人写般若波罗蜜经卷，与他人。是二功德，何所为多？」</p>
+<p>　　佛言：「憍尸迦！我还问汝，随意答我。于意云何？若有人得佛舍利，但自供养；若复有人得佛舍利自供养，亦与他人，令供养。是二功德，何所为多？」</p>
+<p>　　释提桓因言：「世尊！若人得佛舍利自供养，亦与他人令供养，其福甚多。」</p>
+<p>　　佛言：「如是如是！憍尸迦！若善男子、善女人，写般若波罗蜜经卷，供养恭敬，尊重赞叹，以好花香乃至幢幡，不如善男子、善女人，写般若波罗蜜经卷，自供养，亦与他人令供养，其福甚多。」</p>
+<p>　　佛言：「憍尸迦！若善男子、善女人，在在处处为人解说般若波罗蜜，其福甚多。」</p>
+<p>　　　　小品般若经卷第二</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/xpbr/xpbrjjd1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/xpbr/xpbrjjd3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/xpbr/xpbrjjd1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/xpbr/xpbrjjd3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

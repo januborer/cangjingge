@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《大乘修心七义论贯 注》(伽喀巴大师造　雍增．墀江仁波切著)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="大乘修心七义论贯-注伽喀巴大师造-雍增墀江仁波切著"><a class="header" href="#大乘修心七义论贯-注伽喀巴大师造-雍增墀江仁波切著">《大乘修心七义论贯 注》(伽喀巴大师造　雍增．墀江仁波切著)</a></h1>
+<p>　　　　大乘修心七义论贯注</p>
+<p>　　　　　　　　　　　　伽喀巴大师造　帕绷喀仁波切编</p>
+<p>　　　　　　　　　　　　雍增．墀江仁波切注　仁钦曲札译</p>
+<p>　　敬礼大悲！</p>
+<p>　　不了义之大悲为大悲心本尊观自在，了义之大悲如《入中论》礼赞偈所说，为于初、中、后三时均极重要之大悲心，于彼前敬礼。</p>
+<p>　　为显其法源清净故开示造者殊胜：</p>
+<p>　　甘露梵文为“阿密哩达”，意为无死，唯佛方能摧破微细死魔，能得如是无死果位之藏教授，金洲所传来。此教诫出处为《亲友女因缘》、《牵地狱车力士记》、《华严经》、《文殊游戏经》、龙猛《宝鬘论》之“彼罪我身熟”等，弥勒之《经庄严论》、無著之《菩萨地》，寂天《入行论》之“诸凡自他者”等。</p>
+<p>　　令于教授起敬重故开示其法殊胜：</p>
+<p>　　如金刚石碎片，亦能映蔽其它珍宝，喻此修心法之一分亦能压伏我爱执；如少许日光能除暗，喻此法之一分亦能除我爱执；如药树之少许叶片亦能除病，喻此法能除我爱执，文义等应知。五浊横流时难入正道，于此时节，以修心法为伴侣故，恶缘无法扰动等，能将恶缘转为菩提道。</p>
+<p>　　如何以正教授引导弟子之次第共有七义</p>
+<p>　　（一）开示加行基础法</p>
+<p>　　先学诸加行，即思维暇满、利大、难得、死无常、恶趣苦、皈依、业果与轮回苦等。</p>
+<p>　　（二）正行修菩提心</p>
+<p>　　若详细思维，将知轮涅一切皆是发心助缘，观待轮回本性，能策发“汝应发心”之念；观待声缘堕寂静边之理，亦激励发心。需发心的原因之一是：一切有情皆为死无常所遍覆，而且如《四百论》中所说：“是故无常者，一切转为苦。”轮回之处、身、受用等一切，皆具无常与苦之自性故，思维三界众生之苦状而发心。又思维众生皆随业烦恼转、于烦恼品缘起中连续流转之理而发心。</p>
+<p>　　此中分二：有关胜义菩提心修法与世俗菩提心修法两种修法。因利根化机串习空性之关系，古籍中大多先说胜义菩提心修法，本文根据自宗文殊怙主宗喀巴大师之轨矩，仿照《修心日光》、《善慧密意庄严》、《甘露藏》、格邬仓根本文句等诸论样式，依殊胜密意置于后述，是故先说修世俗菩提心：</p>
+<p>　　初应修自他平等，其修法出处为《集学论》所说之“自他平等串习已，菩提心者当坚固”。所谓“自他平等”者，并非自他二者在无我方面平等，轮回中受苦平等，或求乐、不欲苦平等，乃是指对其他有情亦能生起如珍爱自己之心。其修法请参阅余论。</p>
+<p>　　复次，如格西夏博岗巴所说：“若未能视自如仇之前，上师等任何人均不能利益之；若能视自如仇，方能生起一切利益”，故应将众过归于一，亦即如《入行论》中所说：“尽世所有苦，皆从自利生。”及“世间诸灾害，所有怖畏苦，悉从我执生，留此魔何益？”荡巴云：“苦乐二报非关他，根源在自定日瓦”。《修心利器轮》中说：“由此我获敌，亦捕隐藏贼，扮我欺诳者，是我执无疑。”毒物、兵刃、诤讼、疾病、人与非人损害、三恶趣等，彼等一切皆依我爱执生。龙猛之《菩提心释》云：“于有情离贪，如毒行应离，声闻离贪故，仅获劣菩提，不舍有情故，获圆满菩提”，诸声闻众误入下劣道亦是我爱执之过。总之，如《入行论》所说：“此何须繁说，凡愚作自利，能仁行利他，观此二差别。”认定我爱执为一切衰损之根本。该论又云：“尽世所有乐，悉从利他生。”诸有情是出生现前与究竟一切善资粮之大库藏，犹似如意宝，亦如良田及乳汁无尽之牝牛，恩德极大，故应珍视。然如《入行论》所说：“有情与诸佛，同能生佛法，若是敬信佛，何不敬有情？”我等现在虽于佛像前献供、敬礼，发离苦求乐之愿，祈祷相续中生起地道，然却轻弃作为息苦生乐之因与出生大乘地道果之因的有情。见此轻视极为错误已，于诸有情思众皆有恩。</p>
+<p>　　其它有情之苦及苦因我悉取之，我之身、受用、善根等皆舍予有情，取舍间杂修。若念他之痛苦无害于我，故毋需除之，如是则年少时不应积财养老；若念相续各异故不同者，则自己不需除母亲之苦；若念母恩大故不同者，当知一切有情同是具恩母亲；此外且有手不应除足病之过；若念彼是一聚合故不同者，当知所谓聚合是多刹那与多支分积聚而成，无独立之聚合；若念自己重要故不能舍离者，当知无始以来虽为成办自利，然悉无所成且堕于轮回百般损害之泥沼中。《入行论》云：“若不能真换，自乐及他苦，非仅不成佛，生死亦无乐。”</p>
+<p>　　心力弱者，最初将自己下午之苦于上午取之等，先从自身取而作修心。若串习者，次于亲友、中庸、仇敌等依次增修，最终能取遍满虚空众生之苦；复令取舍乘来去之风息。</p>
+<p>　　依悦意、不悦意、中庸三境生起三毒时，决断为有情之三毒，而发起愿诸有情远离三毒之三善根。</p>
+<p>　　结行略教授，于彼策念故口诵“愿彼等罪熟我身，我无余善熟于他”等，及“众生所有苦”等取舍启请文，且如《华严经．净行品》中所说，配合威仪瑜伽，威仪尽诵持。</p>
+<p>　　修胜义菩提心者：方便分获坚固之后，示密胜义菩提心修法：外所取境所摄诸物，唯于心中如是显现，此外无微尘许实有，是故思诸法如梦；能取内心之所摄诸法亦无自性有，故尔观心于胜义中亦无生，不仅有法能、所二取所摄之诸法，即便法性本身亦应决择为无实，是故对治自然解；通达空性能得涅槃；若未通达则不能消灭轮回，且能生起轮回因果，是故空性为轮涅一切之根本“赖耶”，而且从空性能现起一切缘起故，道体住赖耶，中间如幻士——胜义谛如幻分二种，可言有而非实有，虽显而空、现相如幻，此中依后者修。</p>
+<p>　　（三）转恶缘为菩提道</p>
+<p>　　此中分二：略示和广说。初者，于不善之增上果，如天龙争斗、黑品增长、疾病灾荒、动乱斗诤等内外一切中断现起时，以及种种罪果充满情器时，应以此法将逆缘与中断转为修道助伴，将能害者转为善知识，由此将此等纷乱恶缘成觉道。金洲云：“恶缘善劝请，魔鬼佛神变，病苦罪扫帚，苦法性显现”，《入行论》云：“又苦诸功德，谓以厌除慢，悲悯生死者，羞恶而喜善”。</p>
+<p>　　第二广说分二：依意乐发心转变与依加行积净转变。</p>
+<p>　　初者，境、时与苦、乐、好、恶等，遇缘即修习为一切皆善，亦即如喀切班钦所说：“苦乐回向善资粮，利乐虚空愿充满，若苦承担一切苦，痛苦大海愿枯竭。”嘉瓦杨贡巴云：“种种苦不幸，堪布身中尽”。余处亦如是：“富不可爱贫可爱，富者积护痛苦大，贫者苦行佛法成，佛徒心向乞丐身；赞不可爱谤可爱，赞者我慢傲心生，谤者自过全显露；乐不可爱苦可爱，乐者烦恼五毒盛，苦者昔造恶业尽。苦是上师之大悲，苦为安乐必经道，彼若无者乐亦无；苦为悉地之桥梁，，能令证德增广大。”此视安乐非庄严而视痛苦为庄严与功德之法，非说除此大乘修心时外，即不需重视，此在三士道修法中均极重要。因为最初学下士道时，于现在未死前之乐视为过失，舍弃现世，重视皈依与业果之取舍，视积资净障等修法苦行所受之苦为庄严，甘之如饴，生起希求后世之心；学共中士道时，了知后世虽或能得善趣天人身与富乐圆满，然亦是有漏乐，不可保信，终会转变，重又聚集苦因与引发痛苦，由是心生厌离，视一切轮回乐为过失，如呕吐患者见食，以希求解脱之心，视三学修持苦行之苦为庄严而非负担，以消灭集苦轮回；学上士道时犹为重要，众所周知不须赘言。总之，若不视乐为过失，则不能解脱轮回与恶趣，若不为法受苦即不能获得解脱；若不见希求自乐为过患，则不能生起利他之心，若不受苦行精进之苦，则六度行之修持不能究竟。</p>
+<p>　　第二：四行胜方便——一切善根回向菩提因等积集资粮，清净妨碍道于相续中生起之违缘罪堕，念魔碍之恩德悲悯施放朵玛，于诸护法托付增长发心之事业，由此等门增长修心之修持。</p>
+<p>　　（四）开示一生修持之总纲</p>
+<p>　　摄教授心要，应修五种力——心不随我执、贪、嗔等转者为牵引力，不离修心意乐者为串习力，令发心不坏且增长故积集资粮者为白法种子力，思我爱执过患而断除者为破坏力，愿诸善根为发心不坏及增长之因者为发愿力。又有大乘迁识法——一切财产施予会众者为白法种子力，于身不贪者为牵引力，念烦恼过失者为破坏力，愿不离发心为愿力，相续修习发心者为串习力；五力重忆念佛之行传，作狮子卧姿等威仪。</p>
+<p>　　（五）开示修心纯熟之量</p>
+<p>　　佛所说诸法归于对治我爱执与我执之一要；他人之证明与自己问心无愧之二证取其主；贫富苦乐皆一味故常怀欢喜心；心纯熟量为与前不同而能将我爱执之心颠倒；具有能忍众苦之大苦行者，珍爱他人之大菩萨，不违越法行之大沙门，羞犯微细罪堕之大持律师，纯熟大乘正道之大瑜伽师，是为五大纯熟相；且如善巧马术者，能应付突发事件，散乱亦能主。</p>
+<p>　　（六）开示十八种修心三昧耶</p>
+<p>　　常学1、修心不违承许之戒、2、不流于怪诞3、不堕偏党之三总义；</p>
+<p>　　4、以前之意乐心改而身威仪不须修饰如故；</p>
+<p>　　5、勿说他过缺支节；</p>
+<p>　　6、莫观察及思他人过失事；</p>
+<p>　　7、依对治先治重三毒烦恼；</p>
+<p>　　8、修习修心，不求于轮回快乐与自利菩提等果报；</p>
+<p>　　9、莫啖为驱鬼而作修心等、与八法之心混杂及搀杂我爱执动机的如杂毒之食；</p>
+<p>　　10、不可讲情义——不于烦恼作对治而放逸懈怠，及于仇敌长期怀恨；</p>
+<p>　　11、勿作世间说他人过失与驳斥之诤骂；</p>
+<p>　　12、勿俟于他人有难时之狭路；</p>
+<p>　　13、不可当庭广众斥责对方，揭发过失而治罚之，及以猛咒逼迫天魔等而刺其心；</p>
+<p>　　14、莫以欺诈方便推诿过失等于他人；</p>
+<p>　　15、莫为驱鬼消灾而作修心等作经忏用；</p>
+<p>　　16、众利与功劳等勿争先；</p>
+<p>　　17、天莫变成修心不成为我爱执对治，反成其助伴之魔；</p>
+<p>　　18、莫为自乐故令他人受苦，或希望他人生苦，即乐支莫求苦。</p>
+<p>　　（七）开示二十二种修心学处</p>
+<p>　　1、以此修心修持作印定之一，贯彻于衣食住行等一切威仪之众瑜伽；</p>
+<p>　　2、妙缘、恶缘与烦恼等随生何者，唯以修心对治而作即可，亦即一除诸障难；</p>
+<p>　　3、一切善加行最初需发心、最后须回向菩提，故初后修二事；</p>
+<p>　　4、于苦乐二境皆安忍，不失修心之修持；</p>
+<p>　　5、舍命护佛法总三昧耶与修心十八三昧耶之二戒；</p>
+<p>　　6、勤学初念烦恼对治难、中退烦恼生起难、后断烦恼相续难之三难事；</p>
+<p>　　7、取值遇贤妙上师、自心堪能、衣食顺缘具足之三主要因；</p>
+<p>　　8、修敬信上师、欢喜修心、防护三门不退失之三不退失；</p>
+<p>　　9、具身不离敬礼旋绕等业、语不离祈祷念诵、意不离发心之三不舍离；</p>
+<p>　　10、于修心之境无敌、亲、中庸三者之偏党；</p>
+<p>　　11、修心之修持着重周遍于一切境及一切事、且非唯口说之深透；</p>
+<p>　　12、于家眷、仇人、恩将仇报者、因业力自然不喜见者与父母五境较难修心故，应专门分别而修，亦即于特殊犹常修修心；</p>
+<p>　　13、不待衣食顺缘等众缘备方作修心；</p>
+<p>　　14、后世较今生重要，修心较其它修持重要故，今当修主要；</p>
+<p>　　15、远离不能忍修法苦行而忍俗务苦行之忍辱颠倒、不尝法味而尝世俗味之味着颠倒、对有罪者不起悲心而于正法行者起悲心之悲心颠倒、于弟子等不教授佛法而授以现世学问之求心颠倒、不希求正法而希求世间之欲心颠倒、不随喜善而随喜恶之随喜颠倒等六颠倒；</p>
+<p>　　16、于修持莫时修时辍、轻尝便舍；</p>
+<p>　　17、斩绝专修习至究竟；</p>
+<p>　　18、观察令断疑解脱；</p>
+<p>　　19、为利有情作修心故，饶益他人时不思有所恃；</p>
+<p>　　20、禀性不应有于他人微少损害亦忿恨等之暴戾；</p>
+<p>　　21、随逐苦乐如夏季天空须臾变化，随时舍弃修持，如是喜怒莫轻发，</p>
+<p>　　22、于修持勿着于功绩与名闻等声誉。</p>
+<p>　　最后以格西切喀瓦大师所说“于菩提心获自信颂”作为结束：</p>
+<p>　　我因多胜解，轻苦与恶名，获伏我执教，今死亦无憾！</p>
+<p>　　新、旧噶当派文集中有大量《修心七义》根本文句与注疏等，然正文次第互不相同、文句多寡参差不齐。或与引导科判不相吻合，或有非属通用之文句等，情形不一。有鉴于此，长时以来拟编写一根本文，按照符合自宗文殊怙主宗喀巴大师语教传统之诸论，即《修心日光》、《善慧密意庄严》、《甘露藏》等之密意编排。后于木亥年（1935）在昌都甘丹强巴林寺讲《菩提道次第广论》时，由一心专修者朗忍巴．彭措贝丹献礼劝请，于是细察多种本释汇编成根本文句，另以科判庄严合成一文，僭名帕绷喀转世者书，愿众生利益增长！</p>
+<p>　　本文为具恩根本上师大勇识嘉杰．雍增墀江金刚持至尊善慧智持教海吉祥贤，为利益我这劣慧者杜松巴．贝丹易于修持《修心七义》根本法故，以无上慈悲欣然赐予贯注，愿此微妙加持甘露，流入自他一切有情心中！吉祥圆满！</p>
+<p>　　一九九四年九月译于上海</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../ptdcdzj/zmxf/ssd/zsecxxqyljjawljkbksghqy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ssd/fxmsawlsjccsawljkbjs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../ptdcdzj/zmxf/ssd/zsecxxqyljjawljkbksghqy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ssd/fxmsawlsjccsawljkbjs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../ace.js"></script>
+        <script src="../../../editor.js"></script>
+        <script src="../../../mode-rust.js"></script>
+        <script src="../../../theme-dawn.js"></script>
+        <script src="../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>佛说开觉自性般若波罗蜜多经卷第二  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="佛说开觉自性般若波罗蜜多经卷第二"><a class="header" href="#佛说开觉自性般若波罗蜜多经卷第二">佛说开觉自性般若波罗蜜多经卷第二</a></h1>
+<p>　　　　佛说开觉自性般若波罗蜜多经卷第二</p>
+<p>　　　　　　　　译经三藏朝散大夫试鸿胪卿光梵</p>
+<p>　　　　　　　　大师赐紫沙门臣惟净等奉　诏译</p>
+<p>　　复次须菩提。若人于色中所有不实分别分量及疑动分量。而能如实平等观者。即于色中色而无所得。若于色中色无所得时。即于色中色见无所得。若于色中色见无所得。即于色中众生无所得。若于色中众生无所得。即于色中一切无所得。若于色中一切无所得时。即一切有所得。若或于法有所得相可成立者。即有所得相而有依止。是故于彼大乘法中不能出离。何况声闻缘觉乘中。须菩提。若人于受想行识中所有不实分别分量及疑动分量。而能如实平等观者。即识中识而无所得。若识中识无所得时。即识中识见无所得。若识中识见无所得。即识中众生无所得。若识中众生无所得。即识中一切无所得。若识中一切无所得时。即一切有所得若或于法有所得。相可成立者。即有所得相而有依止。是故于彼大乘法中不能出离。何况声闻缘觉乘中。</p>
+<p>　　复次须菩提。若菩萨于诸色中随其言说。即生取著作用而行。如是行者是行有身见亦复行于有爱。若或离有寻求而有所行。是于色中不了知相。须菩提。受想行识亦复如是。若菩萨于诸识中随其言说。即生取著作用而行。如是行者是行有身见。亦复行于有爱。若或离有寻求而有所行。是于识中不了知相。</p>
+<p>　　复次须菩提。若菩萨于诸色中随其言说。不生取著不作用而行。是不行有身见。亦复不行有爱。离有寻求亦无所行。是于色中善了知相。</p>
+<p>　　须菩提。受想行识亦复如是。若菩萨于诸识中随其言说。不生取著不作用而行。是不行有身见。亦复不行有爱。离有寻求亦无所行。是于识中善了知相。</p>
+<p>　　复次须菩提。若菩萨摩诃萨于诸色中能具三种心种子缘而摄受者。是为净法。何等为三。一信解心种子。二厌离心种子。三不坏心种子。</p>
+<p>　　须菩提。受想行识亦复如是。若菩萨摩诃萨于诸识中能具三种心种子缘而摄受者。是为净法。何等为三。一信解心种子。二厌离心种子。三不坏心种子。</p>
+<p>　　复次须菩提。菩萨摩诃萨于诸色中应当发起三种之心。何等为三。一无取著心。二无和合心。三清净心。是故须菩提。菩萨摩诃萨。于彼色中若心有生。若心无生。大生平等生。悉应如实平等观察。由能如是平等观故。是菩萨速疾证得阿耨多罗三藐三菩提果。</p>
+<p>　　须菩提。受想行识亦复如是。菩萨摩诃萨。于诸识中应当发起三种之心。何等为三。一无取著心。二无和合心。三清净心。是故须菩提。菩萨摩诃萨于彼识中。若心有生若心无生。大生平等生。悉应如实平等观察。由能如是平等观故。是菩萨速疾证得阿耨多罗三藐三菩提果。</p>
+<p>　　复次须菩提。若菩萨摩诃萨。于诸色中见有见无者。当知是菩萨不实知解。须菩提。受想行识亦复如是。若菩萨摩诃萨。于诸识中见有见无者。当知是菩萨不实知解。</p>
+<p>　　复次须菩提。若菩萨摩诃萨起心欲住平等界中。彼心于色求解脱时。即于色中其心动转。有动遍动。由如是故。当知此菩萨难得解脱。</p>
+<p>　　须菩提。受想行识亦复如是。若菩萨摩诃萨起心欲住平等界中。彼心于识求解脱时。即于识中其心动转。有动遍动。由如是故。当知此菩萨难得解脱。</p>
+<p>　　复次须菩提。若菩萨摩诃萨起心欲住平等界中。彼心于色求解脱时。若于色中心无系著无不系著。由如是故。当知此菩萨善得解脱。</p>
+<p>　　须菩提。受想行识亦复如是。若菩萨摩诃萨起心欲住平等界中。彼心于识求解脱时。若于识中心无系著无不系著。由如是故。当知此菩萨善得解脱。</p>
+<p>　　复次须菩提。若菩萨摩诃萨于诸色中解无相法。苦自止息诸相寂静。如夫异生不能如实了知色故。即于色中而生取著现转覆蔽。由彼于色生取著心现覆蔽已。即于声闻缘觉乘中不能出离。何况大乘。又由如是取著覆蔽因故。长时在于地狱畜生饿鬼人天诸趣。受生死苦轮转无尽。</p>
+<p>　　须菩提。受想行识亦复如是。乃至眼色眼识。耳声耳识。鼻香鼻识。舌味舌识。身触身识。意法意识。亦悉无性假性实性。须菩提。如是意识于三性转。愚夫异生不能如实了知识故。于识等中而生取著现转覆蔽。由彼于识生取著心现覆蔽已。即于声闻缘觉乘中不能出离。何况大乘。又由如是取著覆蔽因故。长时在于地狱畜生饿鬼人天诸趣。受生死苦轮转无尽。</p>
+<p>　　复次须菩提。如是色于三性中转。若有智者如实了知。即于色中不生取著。亦不现转其心开明。由彼于色不生取著心开明已。即于大乘法中而能出离。何况声闻缘觉乘中。又由如是不生取著心开明故。不于长时在彼地狱畜生饿鬼人天诸趣受生死苦。中推求于色无所得时。色即一切都无照发。色无照已。即于色法平等性中如实了知。是菩萨速疾证得阿耨多罗三藐三菩提果。</p>
+<p>　　须菩提。受想行识亦复如是。若菩萨摩诃萨于诸识中推求于识无所得时。识即一切都无照发。识无照已。即于识法平等性中如实了知。是菩萨速疾证得阿耨多罗三藐三菩提果。</p>
+<p>　　尔时世尊重说颂曰。</p>
+<p>　　　　推求无异法　　　　物境无照心</p>
+<p>　　　　智了于法性　　　　此即得菩提</p>
+<p>　　复次须菩提。菩萨摩诃萨若于色中善解无性法者。即于色中色修作具足。而于色界亦无所动。是菩萨速疾证得阿耨多罗三藐三菩提果。</p>
+<p>　　须菩提。受想行识亦复如是。菩萨摩诃萨若于识中善解无性法者。即于识中识修作具足。而于法界亦无所动。是菩萨速疾证得阿耨多罗三藐三菩提果。</p>
+<p>　　尔时世尊重说颂曰。</p>
+<p>　　　　智善解无性　　　　修作悉具足</p>
+<p>　　　　亦不动法界　　　　即得一切智</p>
+<p>　　复次须菩提。色中无义无句义大义。菩萨摩诃萨若能如实正了知者。是菩萨速疾证得阿耨多罗三藐三菩提果。</p>
+<p>　　须菩提。受想行识亦复如是。识中无义无句义大义。菩萨摩诃萨若能如实正了知者。是菩萨速疾证得阿耨多罗三藐三菩提果。</p>
+<p>　　尔时世尊重说颂曰。</p>
+<p>　　　　无义无句义　　　　大义亦复然</p>
+<p>　　　　菩萨善了知　　　　速得菩提果</p>
+<p>　　复次须菩提。菩萨摩诃萨于诸色中应当了知五种贪法。知已舍离。何等为五。一寻求贪。二遍寻求贪。三分别贪。四贪。五大贪。</p>
+<p>　　须菩提。受想行识亦复如是。菩萨摩诃萨于诸识中应当了知五种贪法。知已舍离。何等为五。一寻求贪。二遍寻求贪。三分别贪。四贪。五大贪。</p>
+<p>　　须菩提。菩萨摩诃萨于诸色中若能舍离此五贪已。即于诸色自性无所得。若色自性无所得时。即色中色亦无所得。若色中色无所得时。即色中色而有所得。若色中色有所得者。即彼色中色而无所得。由如是故。于诸色中若有所得若无所得。诸种类色而悉超越。即能出离成就阿耨多罗三藐三菩提果。</p>
+<p>　　须菩提。受想行识亦复如是。菩萨摩诃萨于诸识中若能舍离此五贪已。即于诸识自性无所得。若识自性无所得时。即识中识亦无所得。若识中识无所得时。即识中识而有所得。若识中识有所得者。即彼识中识而无所得。由如是故。于诸识中若有所得若无所得。诸种类识而悉超越。即能出离成就阿耨多罗三藐三菩提果。</p>
+<p>　　复次须菩提。菩萨摩诃萨于诸色中应当了知五种嗔法。知已舍离。何等为五。一寻伺嗔。二遍寻伺嗔。三分别伺嗔。四嗔。五大嗔。</p>
+<p>　　须菩提。受想行识亦复如是。菩萨摩诃萨于诸识中应当了知五种嗔法。知已舍离。何等为五。一寻伺嗔。二遍寻伺嗔。三分别伺嗔。四嗔。五大嗔。</p>
+<p>　　须菩提。菩萨摩诃萨于诸色中若能舍离此五嗔已。即于诸色自性无所得。若色自性无所得时。即色中色亦无所得。若色中色无所得时。即色中色而有所得。若色中色有所得者。即彼色中色而无所得。由如是故。于诸色中若有所得若无所得。诸种类色而悉超越。即能出离。成就阿耨多罗三藐三菩提果。</p>
+<p>　　须菩提。受想行识亦复如是。菩萨摩诃萨于诸识中若能舍离此五嗔已。即于诸识自性无所得。若识自性无所得时。即识中识亦无所得。若识中识无所得时。即识中识而有所得。若识中识有所得者。即彼识中识而无所得。由如是故。于诸识中若有所得若无所得诸种类识而悉超越。即能出离成就阿耨多罗三藐三菩提果。</p>
+<p>　　复次须菩提。菩萨摩诃萨于诸色中应当了知五种痴法。知已舍离。何等为五。一动乱痴。二动乱相痴。三无动乱相痴。四痴。五大痴。</p>
+<p>　　须菩提。受想行识亦复如是。菩萨摩诃萨于诸识中应当了知五种痴法。知已舍离。何等为五。一动乱痴。二动乱相痴。三无动乱相痴。四痴。五大痴。</p>
+<p>　　须菩提。菩萨摩诃萨于诸色中若能舍离此五痴已。即于诸色自性无所得。若色自性无所得时。即色中色亦无所得。若色中色无所得时。即色中色而有所得。若色中色有所得者。即彼色中色而无所得。由如是故。于诸色中若有所得若无所得。诸种类色而悉超越。即能出离成就阿耨多罗三藐三菩提果。</p>
+<p>　　须菩提。受想行识亦复如是。菩萨摩诃萨于诸识中若能舍离此五痴已。即于诸识自性无所得。若识自性无所得时。即识中识亦无所得。若识中识无所得时。即识中识而有所得。若识中识有所得者。即彼识中识而无所得。由如是故。于诸识中若有所得若无所得。诸种类识而悉超越。即能出离成就阿耨多罗三藐三菩提果。</p>
+<p>　　复次须菩提。菩萨摩诃萨于诸色中应当了知五种慢法。知已舍离。何等为五。一多闻慢。二高胜慢。三增上慢。四慢。五大慢。</p>
+<p>　　须菩提。受想行识亦复如是。菩萨摩诃萨于诸识中应当了知五种慢法。知已舍离。何等为五。一多闻慢。二高胜慢。三增上慢。四慢。五大慢。</p>
+<p>　　须菩提。菩萨摩诃萨于诸色中若能舍离此五慢已。即于诸色自性无所得。若色自性无所得时。即色中色亦无所得。若色中色无所得时。即色中色而有所得。若色中色有所得者。即彼色中色而无所得。由如是故。于诸色中若有所得若无所得。诸种类色而悉超越。即能出离成就阿耨多罗三藐三菩提果。</p>
+<p>　　须菩提。受想行识亦复如是。菩萨摩诃萨于诸识中若能舍离此五慢已。即于诸识自性无所得。若识自性无所得时。即识中识亦无所得。若识中识无所得时。即识中识而有所得。若识中识有所得者。即彼识中识而无所得。由如是故。于诸识中若有所得若无所得。诸种类识而悉超越。即能出离成就阿耨多罗三藐三菩提果。</p>
+<p>　　　　佛说开觉自性般若波罗蜜多经卷第二</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/fskjzxbrblmdj/fskjzxbrblmdjjd1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/fskjzxbrblmdj/fskjzxbrblmdjjd3.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/fskjzxbrblmdj/fskjzxbrblmdjjd1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/fskjzxbrblmdj/fskjzxbrblmdjjd3.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

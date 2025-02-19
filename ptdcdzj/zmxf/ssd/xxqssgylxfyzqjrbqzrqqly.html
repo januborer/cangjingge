@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《修心取舍所广缘略 修法》(雍增．墀江仁波切著　仁钦曲札　译)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="修心取舍所广缘略-修法雍增墀江仁波切著-仁钦曲札-译"><a class="header" href="#修心取舍所广缘略-修法雍增墀江仁波切著-仁钦曲札-译">《修心取舍所广缘略 修法》(雍增．墀江仁波切著　仁钦曲札　译)</a></h1>
+<p>　　　　修心「取舍」所缘广略修法</p>
+<p>　　　　　　　　　　　　　　　　雍增．墀江仁波切　造</p>
+<p>　　　　　　　　　　　　　　　　仁钦曲札　译</p>
+<p>　　　　修心「取舍」所缘广修法：</p>
+<p>　　观我爱执恶心在内心成一黑团状，诸有情坐在自己面前，虽然体性上分属六道，但外表都现苦恼母亲之相。</p>
+<p>　　修「取」时，观想下至无间地狱，上至色、无色界有顶，八苦或三苦所摄之一切轮回苦果呈黑气相，各别从六道依次取来；因业烦恼集之业集中有十不善、五无间、违犯三律仪学处等，烦恼集中有六根本烦恼、二十种随烦恼等烦恼及习气，这些也依次取来；声闻、缘觉、菩萨相续中见道、修道之逆品，包括微细所知障在内的一切所断，也依次取来。所取来的一切均呈黑气相融入自心，将我爱执恶心碎为齑粉。母亲有情得以脱离苦与苦因，身体变成澄净光明之体。</p>
+<p>　　修「舍」时，舍身、受用、善根三者。第一，舍身时观自身变成无数或仅有一身均可，不需观成摩尼宝的形状、颜色等。想自身如同如意宝、能够变出一切想要的事物。施予外器世间，从地狱开始的一切不净器世间过患均得以清净，转成如净土一般；施予内情世间，恶趣有情之身由此转成善趣具七功德之暇满身，天、人等善趣有情之一切身粗重过患得以清净，转成相好庄严之身等；</p>
+<p>　　舍受用时，观想自身变成如意身，属于自己的食物、财产、房屋等，不属于自己的一切有主、无主受用等，如虚空藏出生一切所需资具，施予有情，一切母亲有情得以圆满世、出世间之一切顺缘；</p>
+<p>　　舍善根时，观想自相续中的三学、闻思修三慧、包括念诵一句陀罗尼以上的三世善根，呈白光相施予有情。一切有情由此在相续中顺易生起信等七圣财、四无量、六度、三十七菩提分、四续部道之证德等。</p>
+<p>　　此外，可观想将上师、佛、菩萨心相续中的断、证功德以及无量善资粮取来，因为他们不会将这些功德据为己有。将之施予有情，由此具足一切成佛因缘，当下即可成佛。</p>
+<p>　　此处如果想修「以果为道发心」之法，观想从资粮田主尊心间放出一个化身融入自己，于是自己转成释迦佛，放出与有情数量相同的光束、普照一切有情，于是有情都成佛，变成释迦佛之身，像「加行法」前行中所说的那样修。假如此处不修「以果为道」，则将上述的「当下即可成佛」改想成「均已成佛」。</p>
+<p>　　修上述「取舍」时，应从无间地狱开始依次修，包括三恶趣、人天、声闻、缘觉、有学无学圣者、十地直至最后有菩萨。例如，观声闻、缘觉、菩萨断除盖障而圆满二资粮成佛时，「取舍」之对象应分别与各自本分之程度相应。</p>
+<p>　　　　修心取舍所缘略修法：</p>
+<p>　　与《供养上师仪轨》中的「惟愿大悲师加持」等三次祈祷配合起来修，在面前观想所缘境诸有情呈苦恼母亲之相。</p>
+<p>　　作第一遍祈祷时，观一切母亲有情之苦呈黑气相从她们的左鼻孔中冒出，进入自己左鼻孔，攻击内心那个我爱执恶心黑团，它就像一小撮灰尘遭大水冲刷一样，变得荡然无存。这是取母亲有情相续之轮回苦果。</p>
+<p>　　修「舍」时，观自己的这个暇满身变成如意身，放出白光，进入母亲有情的左鼻孔与她们融合，她们的所有身粗重过患得以清净、获得修法圆满之身——具足大乘四轮之暇满身。</p>
+<p>　　作第二遍祈祷时，观想诸有情相续中作为轮回因之业，与八万四千烦恼等粗细业烦恼集呈黑烟相从右鼻孔冒出，经自己左鼻孔入内，同时变成霹雳、冰雹状，落到心中我爱执恶心黑团之上，如雷击石、碎为齑粉。此为取苦因诸集。</p>
+<p>　　修「舍」时，观想自己由前生布施所生善果呈白光相从右鼻孔出，变成所需受用，同时自己的食物、财产、房屋、书籍等一切受用也变成如虚空藏般，施予有情，由此一切修法顺缘无不具备，受用圆满等同梵天福报。</p>
+<p>　　作第二遍祈祷时，观想诸有情相续中的一切所知障呈黑气相从右鼻孔冒出，经自己左鼻孔入内，同时变成蜘蛛、蝎子、蛤蟆、蛇、虎、豹等凶残动物相，如兀鹰争食尸肉，将内心我爱执恶心那坨黑团啖食殆尽。</p>
+<p>　　修「舍」时，观想自相续中闻、思、修三慧、三学等过去已累积、未来将累积之所有善根，呈白光相放出右鼻孔，进入诸有情左鼻孔与他们融合，一切有情由此在相续中容易发起从恭敬善知识开始，直至无学双运的一切殊胜地道断证功德，从而成佛。</p>
+<p>　　简言之，「取」分三次：取轮回苦果、取苦因业与烦恼障、取所知障；「舍」也分三次，舍自身、舍受用、舍善根，依次与三次祈祷合修。如果有兴趣也有时间，可修「取舍」乘风息之法：「取」时吸气；「舍」时呼气。</p>
+<p>　　上述所缘修法主要是针对苦恼有情，是普通的修法。如果要进一步缘净土菩萨、有学无学声闻、凡圣菩萨等来修「取舍」，则应配合他们的断证程度等来修。以十地菩萨为例，可以观想自己的身、受用、善根变成利他的资具与供品、而作施舍，应像这样的作法懂得如同修相应的「取舍」所缘。</p>
+<p>　　修「舍」时，如果依上述所说谈想霹雳、冰雹、蜘蛛、蝎子等相感到不舒服，可只观黑气之相。</p>
+<p>　　当上师示疾时，亦可观想将不净业感景象中的上师三密违缘取来，自身、受用、善根变成药物、供品等所需顺续而供养之，上师的三密及事业由此得到增广，不费力地任运实现所有利益圣教、众生的心愿。依靠殊胜福田，我们将积集广大的福德资粮。</p>
+<p>　　由九因相之门修自他平等之「平等舍」修法，以及上述配合《供养上师仪轨》文句之「取舍」修法，是每日将「修心」法作为定课人士的心宝。</p>
+<p>　　不可将教授降格为讲说之法，当作商品来卖；像我这样法已成魔的作法不值得效仿。正如扎·贝珠仁波切所言：</p>
+<p>　　烦恼之火烧自心，喜说妙香散十方，</p>
+<p>　　具粗暴行之线香，日后愿令圣者喜</p>
+<p>　　虽然自己是三毒的仆人，但想到这对信解修心法的后人在需要这些教授时会有很大的助益，我墀江巴，将具恩上师的教授笔录成文。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../ptdcdzj/zmxf/xsd/xsjjyzppkrbqyysbrbqzyxy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ssd/pdsxfkcjsyzxjrbqzrqqly.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../ptdcdzj/zmxf/xsd/xsjjyzppkrbqyysbrbqzyxy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ssd/pdsxfkcjsyzxjrbqzrqqly.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../ace.js"></script>
+        <script src="../../../editor.js"></script>
+        <script src="../../../mode-rust.js"></script>
+        <script src="../../../theme-dawn.js"></script>
+        <script src="../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

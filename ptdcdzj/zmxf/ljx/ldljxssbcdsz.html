@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《〈乐道〉六加行》 (四世班禅大师著)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="乐道六加行-四世班禅大师著"><a class="header" href="#乐道六加行-四世班禅大师著">《〈乐道〉六加行》 (四世班禅大师著)</a></h1>
+<p>　　　　《乐道》六加行</p>
+<p>　　　　　　　　　　　　　　　　　　　四世班禅大师著</p>
+<p>　　　　　　　　　　　　　　　　　　　江波居士口译</p>
+<p>　　道次第的传承来源此不讲，主说正文。</p>
+<p>　　第一加行：一，打扫居室。二，陈设资粮田身口意所依（三业分别所依为像，经，塔）。</p>
+<p>　　扫除工作：念扫尘除垢咒，心里想迎请资粮田，心中有承事的意乐，否则为不恭敬。不管居室是否洁净，每座前定要行此工作。所扫除之灰尘为自己烦恼，诸智者都如是除，用此方来对治贪嗔痴三毒。也可与道次第配合，对修每个所缘或某个法之前或修中所现的所有障碍都可用此法对治。从现在到以后修般若都能用此法。灰尘是自己及无始有情之不净，将之扫除。（此为大乘修法，可把菩萨行即六度，净治成熟，圆满自他。将此善回向给有情，器世间之众生，同时可修清净佛土之缘。以上缘起为成佛及将来自己净土也如此壮严之因）按此修习每扫一下将给自己积聚无量无边之功德，常啼菩萨，小路尊者及传承上师都如是修，这些修法都应是修行人该知的。</p>
+<p>　　陈设三业所依：质地好坏新旧都无关紧要（平等起观）将教主，具恩根本上师，宗大师供在佛堂的中央或最上边。本尊菩萨等最后是护法（上到下或中至外排列）经：《摄般若颂》是最起码的，密宗在上显宗在下，大乘在上小乘在下。与格鲁派不相同的（见行）不能供在一起（绝对讲）。佛塔：供铜塔为上，照片等都可以。如因穷或其他原因无三业所依，修法可用树叶（片）石头铁片在物上设五堆代替。（此为修法曼陀罗非供养曼陀罗）。佛与月亮一样，在有水的地方都能显出，佛智在所有法上一刹那都可周遍，一作意佛即在身边，佛的智，身周遍一切。</p>
+<p>　　第二加行：陈设壮严无谄供品。从质上讲出家人不以五邪命所获（诈现异相，占卜，高声现威，自说功德学问，说供养多得福多。）在家人不以十不善法所获。如果如前这样，颇邦喀大师说还不如不供。以现世人法为动机所得这些都是不可以的。</p>
+<p>　　如何陈设壮严：所陈设之供品要整齐，美观，供水数量为七，以纯净水作供水，可加香料。观想供品广大，念咒加持，呈现于一切诸佛刹土。此加行看是小事，却内含成佛速之缘起，万不能使因里有失，诸佛弟子都应如法作，万望别自行一套害了自己。</p>
+<p>　　第三加行：一，在安乐座上身具足毗卢七法。二，在殊胜善行中作皈依发心。此座为专修之座座下有白色的右旋字，吉祥草头向内铺一圈在上就可铺着坐着舒服的垫子，前略低于后。（此中都有各自的密意）。上座后身具足毗卢七支，先想一想佛的传记，自己在未成佛之前应不离上师及座位，坚定自己的信心，誓言，坐上去就应有所成就才是。</p>
+<p>　　在殊胜善行中作皈依发心：改正动机修法初的愿力与修法后的回向二要素非常重要，开始修时一定要正，所谓心王不正心所决不会正。先将心转成无记再转为善心，接着先修数习观将心静下，同时可配合九节佛风种下密法习气。（此中呼吸法以上师传的为准）。随后缘皈依境而皈依发心，自己额高处的前方观想为五具皈依境。宝座上有日月轮莲花，释迦佛的体性是根本上师，身披法衣，相好壮严安住在光中，周围是各种传承上师围绕，在他们前方的宝座上都有说法之经函，光明为体，标签向着自己，经函是佛，上师的内证功德所现。他们都朝自己微笑现出喜悦的样子。将皈依境及大悲的功德思维一下，以此等起心来作皈依发心。我及有情在轮回中，它无边无底，我现在侥幸能获暇满大义之人生，难获遇之佛教也遇上了，不立即解脱以后就没有机会了。能使我出离轮回彻底解救我的只有我承事前面的上师三宝，且能解救父母有情，故我要皈依他们。观自己周围是无始的父母有情，他们都是人的样子，但苦还是原来的苦（此缘起使他们将来都能得人身）我们都对轮回苦非常害怕。对面前的佛法僧生起强有力的信心，看佛法僧的功德，不管父母有情信不信（此中有将来自己成佛时易度化他们之缘起）。自他一切有情至心来皈依三宝（怖畏轮回苦，生三宝真实能救之心才能得皈依体，此才是皈依的重点）。接下来念皈依上师颂，观想皈依境放光及甘露流入自他有情的心间把无始所造之业除净。对上师的扰乱及不净想，轻毁，讥等对上师所造的业变成烟汁碳水从自己的根门毛孔排除，整个身体变得非常纯净明了，寿命，福报都增长，自他有情都得上师的救护。皈依佛：观金刚持放光及甘露加持自他有情，对以前出佛身血毁塔等所有对皈依佛的学处而作的不净事都清净了。由佛宝的加持入自他有情身心，使不净流出，自他一切有情都得到佛宝的救护。皈依法：从一切经函中放光明及甘露加持自他一切有情。特别清除以前谤法，贩卖经典，对法宝不敬舍弃正法凡依法宝所造的不善业，现今由法宝的加被力而消除所造之业，自他一切有情都得到了法宝的加被救护。皈依僧：从皈依境中的菩萨，勇士空行僧宝中放出光明及甘露流入自他一切有情身心，对治以前对僧宝的不敬，毁坏僧物，挑拨等罪，凡依僧宝所造的不善业都由此加被力而消除。僧宝的加被力进入自他一切有情的身心中，得到僧宝的救护。（念颂）发心是大乘的根本可以广修，在前可受菩萨戒，正受愿行菩提心，修欢喜心，修完后可以修以果为道的修法（此处不讲）。修四无量心：每个颂都要念三遍，先平等舍，慈，悲，喜要把文字与自心结合起来修才有动力。发殊胜心：为利一切的父母有情，无论如何都要证得甚深觉位，故要修上师本尊瑜伽法，缺此根本修一切都无用。收摄皈依境，有三种方法（皈依境）</p>
+<p>　　一：化光溶于自身</p>
+<p>　　二：皈依境象鸟一样入于空中</p>
+<p>　　三：让他自然消失</p>
+<p>　　第四加行：观想资粮田：</p>
+<p>　　在此之前先加持地基及供品。（供养云咒三遍）地基如镜样平坦且坚硬，表面如吠琉璃一样。咒的作用加持供品，使供品鲜美且遍及虚空来作供养。</p>
+<p>　　正观：观法与皈依境一样，乐道，速道的皈依境都相同。（步骤与观法此处略记）注意：资粮田中一切圣众都是根本上师所化，他们的断证功德都是一样。资粮田中每一尊都要观五处嗡啊莎哈，每尊前面有宝座经函，资粮田外有周遍整个法界的变化，无穷无尽这个观想非常重要。上师作的是佛的事业，放光又收回不断不要休止，将来自己任运成就无所障碍的缘起，他们头上有白色嗡字，喉间有红色啊字，心间有蓝色的字，脐间黄色莎字，密处有绿色哈字将来自己成佛时同时具足三部五佛。佛心间字放光迎请智慧尊，一切智慧尊的自性是空性。到十方无量的地方去迎请，（念颂可广可略）到了自己的资粮田处就合为一，每一尊佛的整个资粮田都到自己面前诸尊的资粮田来合为一。任何一尊都成为总摄三宝的智慧尊。心中生起极大恭敬心。修后就不会对资粮田诸尊去分别，没有高低，优劣等的区分，他们的作用不同体性一样，都是自己上师的变现，上师为了把自己从轮回中救出来，故用了各种极为善巧的方法来救拔有情。此中每一部中包括其他一切部，以后成就一部就成就百部。胜解要坚固，念恩生信生敬为主要观想为次要，不光想诸尊的功德还要念及恩德。随后念杂榜火，从他方国土诸来的诸尊溶入三昧耶尊无二无别。</p>
+<p>　　献沐浴：为了对治无始以来受了财障的负担，你看一上座就打瞌睡，要么漆黑一片，此等障碍都是无德受了供养而未集资忏罪所至。现为了对治障碍而进修沐浴法：观为如净土之浴池及换衣室，然后诸尊请下到各自的地方去沐浴，换衣涂香。（此处略记，修时广观）最后浴室都化空。</p>
+<p>　　第五加行：敬献七支和曼陀罗：修法无成就是因没有积福净罪。为了正道功德在自相续中生起先要排出违缘，集福净罪最为重要，六加行的中心也要放在此上。无论是谁要成就，最应修的是七支法而且七法要完整的修，不能有所缺少要圆满无误的来修，因为七法少了一法也决不能成佛。从敬礼到回向不光是凡夫修的就是佛与佛见面都要互相修七支法，故七支法是每一个有情应修的殊胜法。现在能获此殊胜法的有情很少了，真正修习此法的更少。现在具备殊胜因缘能尽快集资忏罪故应精进修习能成就多少就是多少。此是现后资粮的根本，在四季常无间断的下乐善的种子，对福田用信心来耕耘，不知道此殊胜法或知而不修实在是太可惜了。如果这些不清楚修法就无动力，生活中这样的实例太多太多此处就不举例说明。</p>
+<p>　　敬礼支：要以身语意三业最极恭敬以及承事的意思来修持。（此简略说明）身恭敬：合掌低头等一切。（背千万不能弯）语恭敬：对三宝的各种赞叹。意恭敬：就是对三宝上师的敬信。顶礼如果是如法每顶礼一次：自己身体覆之地面到地基（八万四千由旬）总的微尘数乘上一千个转轮王的受用就等于一如法顶礼的功德。也可配合道次第的祈请颂来修，三十五佛中也有，不过此不修三十五佛忏法。</p>
+<p>　　供养支：对上师三宝及资粮田中诸尊作供养的具体功德请阅《妙法莲花经》《佛说业报差别经》。现世供养就可得三决定心：一，不坚实的身，上师三宝所受用就变得坚实了。二，无恶趣怖畏得增上身与菩提。三，集福生欢喜心。死时有三相出现：一，作善业能回忆起来。二，供养了可忆念佛。三，痛苦不会逼迫。可得四见：一，修加行或本尊观时会见佛。二，顶礼时会见佛。三，在资粮田里作供养亲见上师是佛。四，现在供养现世就会见到收获。自己作了供养应欢喜，也可作有上供养及无上供养。（以神通或定力变化的世间没有的供品，也可作外，内，密，真如供养。（可参考《方广经》《入行论》等。）主要是应以菩提心为等起且要将仪轨中的意义弄懂来修，念。总之行者应至诚恭敬的供养上师三宝。（此支可修曼茶）</p>
+<p>　　供现曼陀罗：一，供养曼陀罗。二，祈请曼陀罗</p>
+<p>　　一：以曼陀罗为引道来现供养，所缘非常明显等于把三千大千世界的四大洲来作供养，能集广大福德资粮容易成就的稀有方便，行者要努力精进修此法，诸大德无不修此法来集资。如果连曼遮盘都不知在何处，那就是对集资净障不重视的征兆更应快快修习。曼遮盘的质地可随自己的能力而用，在盘上堆的东西也可随自财力而供。正供时左手不空后拿起曼遮盘的底层，用右手抓物撒在曼遮上且用右手腕部擦拭盘面。顺时针擦时作净罪愿，逆时针擦时祁请资粮田中诸尊的加被（三事求加）。</p>
+<p>　　一：从依师到止观之间所有颠倒之心除去，祁请一切不颠倒心速速生起。</p>
+<p>　　二：从依师到止观之间违缘除去，顺缘具足。</p>
+<p>　　三：从依师到止观之间的证量尽快如量生起。故进曼遮盘的物品都要作真实想，（宗大师说供23堆为最好，现在一般都供37堆）。</p>
+<p>　　正观时可观三千大千世界完全在行供养，也可随自心力适可，但起码要观天界。（此也可说供世界，因世界也有自己的一份，不一定定要转化为梵天才能作此观想），供时更可以将三世的善根作为供物而作供养，可按仪轨，为了所缘明了清楚可参考《俱舍论》，将自心转为佛一样的清净心来作供养，有师带修更好。关于陈设的方向有各种说法，按密乘说：外内密真实四曼遮同四灌顶，生圆二次第完全可以配合修（此还未得传承）先修一遍广的仪轨后如果要记数就可修略颂与咒。（先颂皈依发心，再念颂观想与念咒如此算一次）。要结束时再修一座广轨。</p>
+<p>　　忏悔支：此前定要了解业果不然无法修持。《宝蔓论》讲一切的不善法（业）是一切苦，恶趣的根源。无始以来我们所造业象国家宝库一样，现今侥幸得了暇满意大之人生，如不皈依如法修行忏悔将受无尽之苦。我们的行为多是犯罪犯戒，心理上时时充满烦恼，现今所犯之堕罪如下雨一样，对此不忏悔来防护罪行就不断增长。对造业不失，业增长之理应多多修习，使之成为修法动力。想想如果自己已死如今在何处，除了在三恶趣受苦别无去处。现在自己还能分辨善恶，还可以自己支配时间应向净罪方法努力极其重要。最重要的是对善恶因果的决定不能再广开三恶道之门，在没有死之前净罪的相一定要出来，不然没有机会再得人生了。忏悔应用四力忏悔才为有力（依止力，忏悔力，对治力，防护力）。可按三十五佛仪轨修，百字明咒，礼拜，米字马等忏悔法，最好是按师传承来修。（可将以上法合修）自己应长时，猛烈四力具足精进的来修，定可使净罪相早日出现。最后还要念颂总忏悔文，必须思维自己的罪已忏净了千万要对法生起信心不能有一丝疑心。</p>
+<p>　　随喜支：《摄般若颂》讲三千大千世界尚可用尺量，但一念随喜功德是难以测量，宗喀巴大师说有一种方法用很小的力就可以集具非常多的善资粮。这种方法就是修随喜。别人以很大力所作的事你只要意念一动就可得同他一样多的资粮，此法极为善巧方便。修此法不光随喜别人也可对自己的善业随喜，可千万不能自高自大。（此法可广修，对上师诸佛三宝同修都可一一随喜，不能有所分别而应平等随喜）</p>
+<p>　　请转法轮支：法指教证所摄的正教，轮指从一个补特伽罗转到另一个补特伽罗不断的传下。法是由佛一代代根据不同情况一代代传下来，传下的是教法轮是圣教，经过闻思修获得证法轮再一代代相续传下来，证法轮依于教法轮，教法轮依于祈请，如果不祈请法就会灭了多多思维佛成道时的事例。现在自己应至心恭敬的修此法祈请上师三宝转正法轮，自己化身无量手捧法轮请三千大千世界的诸佛转深广法轮他们都欢喜的接受了祈请。</p>
+<p>　　请佛住世支：《金光明经》讲正法不会隐没为了利益众生，佛观一切众生根机，佛示现一切相摄受有缘有情。由于佛弟子善根福报不同故佛再后来为了摄受利益有缘弟子故是要示现涅槃。为了更能利益现世有情（绝大多数）天天应念上师住世文是极其重要的。诸佛上师示涅槃很大一部分是取决于弟子的福与不失因缘时机的劝请。自己应观想分身无量到无量刹土去劝请，为利一切有情的原故而劝请诸佛住世，为利绝大部分有情获增上解脱请佛住世经劫海，自己跪下祈请且诸佛同意了。重义不重文对于面前资粮田中每一尊面前都捧有一交叉金刚杵的狮子座进行劝请，上师同意了。用五堆曼遮也可代替狮子座而行劝请，《游戏经》中讲凡进行此法可得商主座，家主座，转轮王座，自在天座，梵天座，无上菩提座，转法轮狮子座八种位，而且可得长寿报。</p>
+<p>　　回向支：修任何法如果不用殊胜的回向来摄受善根，都会被恶力所毁。如果回向三有果是会成功的，但用完了就没有了。对于自求涅槃福报在无余涅槃时就会干沽。以一切有情为缘，果在未圆满之前不尽，获得后福报也无止尽，故任作何善都要以殊胜回向来作摄受极为重要。我们的善根回向无上菩提，用自他三世所作善根来回向，为了利益一切有情且使这些善根永远不尽，以无所缘大悲方便智慧摄受来回向。把此善根转成菩提，回向与发愿的区别认定有回向的东西以此出生什么果此是回向也是发愿，没有回向的东西就是发愿，以此作意想什么都会得到。回向一，将前六支所作产生的善根，自他三世的善根集起来回向无上菩提。二，把自他一切有情善根作为佛菩萨度生的助缘，使一切有情尽快获得究竟利益，回向的菩提愿很多，归于一个就是主持正法，每个愿都是成佛的因，早日得具德善知识摄受，通达一切教证而究竟圆满，使正法久住且能宏扬，三事求加，得到上师三宝的加被，前一刹那还不好，后一刹那由于资粮田诸尊威力故而即刻转变过来。</p>
+<p>　　第六加行：祈请加持此处求加并不多余，前只略说大纲，现仔细说明如教祈请使与自相续和合。《乐道》《速道》三事求加是第五加行。宗大师请问文殊，证德速在相续中生起，应对那些因多作努力。告曰先把上师本尊看无别，集福净罪努力作，对此三法应精进，如果没有此三法成熟相续再怎么修证德也不会生起。要速获证德必先得加持，一个人观想上师不如忆念上师的功德的十万分之一，一个人闭关念十万上师咒不如理念一次上师祈请颂的功德，自己念经经劫修不如自己与上师合一的片刻。祈请至尊上师与自心合一，在自相续中发出不同的体验，别人看作是过失对自己却成了功德能清净无余障碍圆满二资粮。可阅《开圣道文》功德之基的祈请（仪轨中的最后十颂）每一个颂的最后一句都要念两遍。念第一颂时颂本身有一个副标题，加被聚集融化，加持聚集祈请把要祈请的问题聚集起来为一而作祈请，如米堆一样从最初到最后的加被。观从资粮田流出五色光明甘露入自他有情身心使之清净。除去业障，妨害功德生起的障除去且由此获依师的一切证德。二颂生起暇满难得意大之心。三颂生起无常恶趣苦皈依共下道之量在相续上生起。四颂生起求解脱之心。五颂行解脱道的证德。六颂修大乘道之方便，总的资粮田放光甘露特别是广大行派放光甘露使生起慈悲菩提心的障碍清除。七修六度广大菩萨行，本尊分身溶入自身能修的证德生起，后是从甚深派放光及甘露清除防碍生起殊胜菩提心证德的障碍，本尊分身入自身后所有证德生起。八是从加持派放光及甘露消除生起空见菩萨行的障碍，本尊入自身生起勤勇精进的证德。九从深见派放光甘露除去防碍止观双运的障碍，本尊入身而生起殊胜止观双运的证德。十从加持派中放光甘露加持令障碍修密宗根器之违缘消除，本尊入身生起符合修密法的证德。十一受密戒后防碍密戒的违缘除去，本尊入身如理守护密戒的证德生起。十二净自四部（密法）障碍，上师入自身各种双运功德生起，总是道次第的功德生起，特别是密法生起次第的证得与风溶入中脉生大乐圆满次第的证德如量生起。十。三，请护法守护特别是勇士空行放光及甘露使修显密，内，外，秘障清除，妙道所有顺缘无难生起，诸护法放光及甘露且分身无量来作，息，增，怀，伏，四种事业而使自己成就。十四：总结从依师到双运的一切障碍除去，依六加行，七支所有的善根使我们在今生余生亲近具德善知识他们都欢喜摄受，受用上师讲的正法甘露。共下士，中士，上士共不共所有法类都得成就，这些道的功德不须化很大的力而依加被而证得金刚持位（佛）。内心猛烈发起此愿，依善根力量一切生中与上师不离，受用不缺一切第道证得，速疾获得金刚持位。</p>
+<p>　　收摄资粮田：具体观想主尊心间放光照到资粮田诸尊，本身是光明为体，此时光越来越强他们化成光明依次下下融入上上。诸护法入于空行-勇士-声闻-圆觉-菩萨-密乘-无上密乘-无上部四大本尊。广大行派溶入弥勒佛，甚深见派溶入妙音怙主，上边都溶入金刚持，前面诸传承师一一溶入根本上师此时面前只剩下五具，他们的莲花座溶入狮子座再化光溶入主尊座。对面前五具尊生起亲见诸佛本尊想。弥勒佛化光从主尊右臂融入，妙音怙主从主尊左臂融入，金刚持从主尊的头顶入与主尊心间的智慧萨垛溶入，前面的根本上师退入不化光，因要使上师长久住世故。对上师金刚持明显的观一观，念摄收祁请面前上师欢喜住自头顶，对面上师溶入原来头上的上师，狮子座等化光入上师座内，再由上师化释迦佛体性是根本上师，在他心间有智慧萨垛，他心间有蓝色字，此时再现七支，曼遮罗（可略）。供上师法的安橛祁请：</p>
+<p>　　师是三宝师是本尊师是明妃护法尊</p>
+<p>　　从今受持竟菩提中皈师永不皈依余</p>
+<p>　　如是中间诸有无边慈悲钩索愿摄引</p>
+<p>　　离二怖畏悉地安排谴除中断作伴随　（三遍）</p>
+<p>　　此只观想自己的根本上师他总摄三宝的自性，坚持不懈的祁请永远不舌自己的上师，生起非常猛烈信心顶上上师是四身及一切皈依处的总摄体这样就不会希求其他（除此上师外别无上师三宝）只有他是我现，后，中有所有时都是我唯一的护主，请求上师在一切时，位中以大悲而作摄受，此颂出自于《变幻经函》，作上师供时也作如是祁请，道次第分三个阶段，加行，正行，结行，到此道次的加行就圆满结束。</p>
+<p>　　回向文：</p>
+<p>　　文殊勇士如实知　　　　　　　普贤菩萨亦如是</p>
+<p>　　我普随学彼等故　　　　　　　此诸善根悉回向</p>
+<p>　　三世诸佛咸称赞　　　　　　　如是回向最殊胜</p>
+<p>　　我亦以此诸善根　　　　　　　为贤行故善回向</p>
+<p>　　愿以此修诸福善　　　　　　　回向一切佛菩萨</p>
+<p>　　一切行愿皆能办　　　　　　　住持教证二正法</p>
+<p>　　此力令我一切生　　　　　　　大乘四轮永不离</p>
+<p>　　正见出离菩提心　　　　　　　二次道程皆究竟</p>
+<p>　　稀有行持具净戒　　　　　　　大菩萨行大心志</p>
+<p>　　乐空二次瑜伽行　　　　　　　善慧佛教愿值遇</p>
+<p>　　戒律清净且多闻　　　　　　　觉心精熟见行净</p>
+<p>　　善慧第二佛教中　　　　　　　无染行持愿坚守</p>
+<p>　　以此善业之力愿大宝佛教宏扬久住！</p>
+<p>　　修此法的主要参考资料：</p>
+<p>　　《菩提道次第广论》《略论》及释</p>
+<p>　　《解脱掌中论》及颇邦喀大师的耳传教授。</p>
+<p>　　吉祥圆满</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../ptdcdzj/zmxf/ljx/ptdcdtyydxfjsppkdsz.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ljx/ptdcdaldlssbcdsz.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../ptdcdzj/zmxf/ljx/ptdcdtyydxfjsppkdsz.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ljx/ptdcdaldlssbcdsz.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../ace.js"></script>
+        <script src="../../../editor.js"></script>
+        <script src="../../../mode-rust.js"></script>
+        <script src="../../../theme-dawn.js"></script>
+        <script src="../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

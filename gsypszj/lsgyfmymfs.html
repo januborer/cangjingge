@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>略釋觀音法門（顯明法師）  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="略釋觀音法門顯明法師"><a class="header" href="#略釋觀音法門顯明法師">略釋觀音法門（顯明法師）</a></h1>
+<p>　　　　略释观音法门</p>
+<p>　　　　　显明法师　讲述</p>
+<p>　　　　　大慧居士　记辑</p>
+<p>　　　　传说中的示迹因缘</p>
+<p>　　首先，祈愿大慈大悲救苦救难观世音菩萨的加被，使诸位增福生慧，一切如意平安。</p>
+<p>　　我们这个道场，一向解行并重，德慧双修，非常精进。这次乘观音菩萨出家纪念日，举行为期三天的「观音法门」共修法会，大众发心，要我与南老师分别就史迹、教理与行持作简要说明，使大家对观音菩萨的慈心悲愿有更深入的了解，的确是一件很有意义的事。</p>
+<p>　　我们娑婆世界的众生与观音菩萨最为投缘，不但「家家弥陀，户户观音。」每年农历的二月十九观音菩萨圣诞，六月十九观音菩萨成道纪念日，和九月十九的观音菩萨出家纪念日，佛教的寺院都要举行隆重的纪念法会，因缘非常殊胜。老衲愿就所知，以事、以理、以显、以密来与诸位作共同研究。</p>
+<p>　　观音菩萨是多劫以来的应化圣贤，年代邈远，其最初示迹因缘，已经无从稽考。在国内有两本书，一本为「编年通论」，一本为「汝州志」，记载著有关观音菩萨的事迹，可以作为参考。编年通论第十卷说：唐朝终南山的道宣律师，严持戒律，道行高峻，受天人供养。有一天，他问天人，观世音菩萨的本迹因缘，是怎么回事？天人告诉他，在过去劫很久很久以前，有一个庄严王，他的王后是宝应夫人，生有三个公主，长公主叫妙严，次公主叫妙音，三公主叫妙善，观世音菩萨最初示现人间，是庄严王的三公主。</p>
+<p>　　根据汝州志记载：在春秋时代，有一个楚庄王（西元前六一三～五九一），他有三个女儿，三公主叫妙善。楚庄王有病，医生说要亲人的眼睛合药，病方能愈；妙善公主便把自己的眼睛挖出来调药给父王服用，果然治好了病，使楚庄王很感动。后来妙善公主出家，父王给地盖了一座寺庙，不久，妙善公主便出现千手千眼的庄严宝相。观音菩萨千手千眼的典故，据说与这个故事有关。后来民间通常的说法，讲观世音菩萨是妙庄严王的三女，很可能是以上两说综合的结果。</p>
+<p>　　　　圣贤应化　　济度有情</p>
+<p>　　佛与大菩萨在人间示现，几乎都是应化身，他那一天出家？那一天成道？极难有详确的历史可考；在我们这一劫的历史文化中，只有释迦牟尼佛是例外。他本是印度净饭王的悉达多太子，舍弃荣华富贵，出家修道，当生成就佛果，他与我国孔子出生的年代很相接近，是世界四大哲人之一，史迹具在。其余如梁武帝时（西元五○二～五四九）达摩祖师是观音应化，布袋和尚与傅大士是弥勒应化。唐太宗时（西元六二七～六四九）丰干禅师是弥陀，寒山、拾得是文殊、普贤，杜顺和尚也是文殊应化。唐肃宗时（西元七五六～七六二）韩国金乔觉是地藏应化。吴越王朝时（西元九○八～九七八）长耳和尚是定光佛（燃灯佛）应化，永明寿禅师（西元九○三～九七五）是弥陀应化。乾隆时（西元一七三六～一七九○）的达天禅师是地藏应化等，可举的例子很多，这些佛菩萨的圣诞，就是从后来应化的贤圣僧的生日来作为纪念的。</p>
+<p>　　但是，化身与应身是有区别的，应身现的是佛相，化身是现的六道相。因此，我们学佛的人，不可以轻慢任何人，乃至猫、狗也好，都不能轻慢。记得我小的时候，在宁波念佛学院，离普陀山很近。同学们曾结伴去朝礼普陀山，由那里的同学招待、当响导。在普陀山的路上，看见一条狗，我踢了它一脚，我说：「好狗不挡道嘛！」狗被我一踢就汪汪叫著跑掉了。旁的同学看了，便说：「哎呀！你把观音菩萨给踢跑了。」吓得我一身冷汗。就理上说，不管是观音菩萨也好，其他佛菩萨也好，六道众生的什么身都能现，并且常常会以你所忽略或不恭敬的那种身形出现。如果我们了解这个道理，把所有呈现在我面前的众生，都拿他们当佛菩萨看待，那就不会错了。</p>
+<p>　　在我们这个芸芸的众生界中，凡圣杂处，那些乘愿再来的圣贤，未必现的是圣相，从外表上看，有的跟我们差不多，有的也许比我们还颠倒，但是他们在平凡中示现不平凡，在颠倒中依旧不颠倒，就需要我们以慧眼去观察。例如永明寿禅师现的是精进相，每天要做一百零八件事；傅大士现的是慈悲相，把自家的田产房屋都布施了，还把太太也押给别人，把所得的钱拿来布施。梁武帝后来召见他，把宫廷的门都关了，他不慌不忙拿出一个木捶来一敲，所有的宫门应声而开。这说明什么？「一性圆通一切性，一法遍含一切法，一月普现一切水，一切水月一月摄。」布袋和尚的做法非常洒脱，人家问佛法，他把布袋「放下」，如果当下不契，他又背起布袋走了。有人定要他开口说法，他还是说他的布袋：「我有一布袋，虚空无障碍，散开遍十方，收回观自在。」高士们也没有他的旷达。济颠和尚现的是邋遢相，衣衫不整，酒肉不忌，说起话来，疯疯颠颠，到时却无不应验。他究竟是个怎样的人？有首自述的诗偈说得很明白：「六十年来狼藉，东墙打到西壁，如今收拾归来，依旧水连天碧。」</p>
+<p>　　　　从闻思修　　入三摩地</p>
+<p>　　华严经告诉我们：「若人欲识佛境界，当净其意如虚空。」如果我们的身心和思想观念，无挂无牵，一片明净，就会体认到圣凡的差别，在生命的原动力上，应化圣贤是乘愿现世，或顺或逆，不动本来，自己作得了主；凡夫是受业力牵缠，或升或沉，因境而异，自己作不得主。</p>
+<p>　　现在我们来略释「观世音菩萨」的名号所包含的意义。观世音菩萨在唐代又称观音菩萨，那是避唐太宗李世民的名讳所产生的称呼，现在已经没有这个忌讳，可随各人的喜爱自由称念。这「观世音」三字，是要我们观世间一切音声，包括称他名号的音声，入于耳根圆通的法门。楞严经说：</p>
+<p>　　初于闻中，入流亡所，所入既寂，动静二相，了然不生。</p>
+<p>　　世间的音声，有动相，有静相，我们的动相是由外境六尘所引发，所感为妄心；静相是粗妄想销落后所现的清净境，仍旧执著在一个清净的境界里，还是妄心，不是真心。妄心背觉合尘，被境所转，真心不被物转而能转物。但是，真心要在一念无杂、精进不已、动静二相自然廓清后才会出现，那时放光动地，无我无人，也可称为「心空及第归。」</p>
+<p>　　我们不可说观世音菩萨修耳根圆通，就光在耳朵上大作文章。耳朵的根就是心，没有心，耳朵发生不了作用。当我们心不在焉的时候，视而不见，听而不闻。耳朵是浮尘根，神经系统是胜义根，而真正的老板是心。譬如放风筝，风筝是浮尘根，线是胜义根，拉线的这个人才是主人。主人叫它动就动，远就远，一切操之在我，这点非常重要。</p>
+<p>　　因此，观世音这个「观」，不是用耳闻，而是用心观，用清净心来观。所谓「一根反源，六用解脱。」就是这个道理。六根解脱了，也不是六根清净，而是心清净。心中清净了，眼耳鼻舌身意自然清净。不是舍本逐末，光执著在修眼、修耳上做工夫。</p>
+<p>　　再说「观自在」。心经开头就说：</p>
+<p>　　观自在菩萨行深般若波罗密多时，照见五蕴皆空，度一切苦厄。</p>
+<p>　　观世音与观自在，说他是一个人可以，说他是两个人也可以。大凡菩萨观世间一切法都是自在的，能够自然而然的拔苦与乐，使人离苦得乐。如果你观不自在，就不能拔苦与乐。譬如你帮助别人一大笔钱，解决了一桩困难，后来懊悔帮这个忙，这一下就不自在、不对劲了。</p>
+<p>　　　　观世音与观自在</p>
+<p>　　所以，观自在首先要你观一切人、一切事、一切物，而在这上面得到自在，没有挂碍，无所得，无所求，不取不舍，然后才能真正得到解脱，福慧增上。如果你帮助别人，抱著将来得到回报的心理，就无法自在。助人为快乐之本，永远需要别人帮助就痛苦了。要靠领救济金过活，就更痛苦了。观自在的重点在一「观」字，用的是眼根；观世音的重点在一「音」字，用的是耳根。就范围来说，观世音专指观世音菩萨，而观自在可包括所有的菩萨，因为所有的菩萨都自在的，当然也包括观世音菩萨在内。</p>
+<p>　　另外，还有一个「观世自在」菩萨，是密宗莲花部的部主，就是如来成佛观察十缘生句，而得到普眼的莲花，这个今天不作深入讨论。又有一位「观自在王」如来，在密宗是阿弥陀佛的本名，阿弥陀佛是观自在王的德号。密宗又称观世音菩萨是阿弥陀佛的化身。但在显教，观世音菩萨是阿弥陀佛的弟子，与大势至菩萨胁侍两旁，「观经」里说到两位菩萨的功德是一样的。</p>
+<p>　　观世音菩萨头上是个化佛，大势至菩萨头上是个宝瓶。大势至菩萨同我们阎浮提众生也是因缘深厚，在净土念佛法门中，关系极为重要。「都摄六根，净念相继。」这是大势至菩萨教导我们念佛的方法。所以「大势至菩萨念佛圆通章」对我们来说，也非常珍贵。</p>
+<p>　　「悲华经」里说到，阿弥陀佛涅槃之后，观世音菩萨将在西方极乐世界成佛，佛号为「遍出一切光明功德山王如来」，似乎阿弥陀佛和观世音菩萨不是同一个人。又据「观音三昧经」里释迦牟尼佛说，观世音菩萨在他以前成佛，名「正法明如来」，则观音菩萨实是古佛。当时释迦佛是在正法明如来法运下作苦行弟子，现在则观音菩萨又以释迦佛的弟子示现，这在佛法里来说，仍是平等的。</p>
+<p>　　经论里记载，从前有一辟支佛的弟子，生性憨直，师徒两人，幽居岩壑，生活单调而清苦。一天外出，弟子打著伞，背著行囊，侍奉师父行脚，心念罗汉自度，太过自私，愿行菩萨道广度众生。其师突命弟子前行，自己来代替打伞背行囊随行。走了一阵路，弟子过意不去，想想师父年纪已大，不忍遽去，他的师父又开腔了，徒弟啊，还是你来打伞背包裹吧！弟子弄不清这是怎么回事，师父说，原来你发心作菩萨，我应该替你打伞；现在你退心了，仍想作小乘罗汉，你当然应该站到后面去。</p>
+<p>　　但是，观音菩萨与释迦佛互为弟子，这是度生方便，慈悲愿力不可思议，属于非常的示现，并无碍于他们所成就的境界。</p>
+<p>　　　　男身或女身的问题</p>
+<p>　　佛菩萨并无男女之分，应以何身得度，即现何身而为说法，不能说他一定是男身，或一定是女身。唐宋以前，观音菩萨像都是男身老比丘相，现在五台山雕塑的观音圣像还是男身。根据胡石麟所写的「笔丛」和宋代王世贞的「观音本纪」，都讲一向不知道观音菩萨是女的。元代的法师在画观音像时才有画成女身的。当然，画成「面然大士」也可以。面然大士是瑜伽施食法门中鬼王的代表，也是观音菩萨的化身。观音菩萨可以变为鬼王，当然也可以变女人，以及其他的形象，执著观音菩萨为女身的想法，这就错了。</p>
+<p>　　六祖坛经说：「慈悲是观音，喜舍是势至。」这是表德的说法。如果你心中真的大慈大悲，那你就是观世音菩萨。如果你经常充满喜悦，时时不吝布施，那你就是大势至菩萨。我们也看到有些寺院供的是千手千眼观世音菩萨像，那表示菩萨有无穷无尽的方便和功能。我们每人有一双手和两只眼睛，如果这些手眼几十人、几百人、几千人集中起来，大家同心同德，力量就大。观音菩萨是一身具足千手千眼，所以威德就不可思议了。</p>
+<p>　　观音菩萨的形态，有六观音、七观音、八观自在、十五尊等种种区别，数目逐渐增加，遂成三十二种应化身，应种种机缘，随时间与处所不同，说种种法，救护各类众生。六观音普通所称与经论不同，智者大师根据经论所列为：（一）大悲观音（破地狱三障）、（二）大慈观音（破饿鬼三障）、（三）师子无畏观音（破畜生三障）、（四）大光普照观音（破修罗三障）、（五）天人丈夫观音（破人道三障）、（六）大梵深远观音（破天道三障）。密宗（东密）所称六观音为圣观音、千手千眼观音、马头观音、十一面观音、如意轮观音和准胝观音。古德有首显密互融的颂说：「大悲千地狱，大慈正（圣观音）饿鬼，师子马形畜，大光面修罗，天人准胝人，大梵如意天。」尤为简洁详明。</p>
+<p>　　　　三观、三智与三境</p>
+<p>　　平常我们所见到的观音圣像，如杨柳观音（又称药王观音，右手执杨枝）、龙头观音（乘坐龙头上）、持经观音（乃声闻观音，手持经卷）、圆光观音（背上有火焰光明，端坐岩石上）、游戏观音（坐于云上，左膝直立，右手支持身躯）、白衣观音（著白衣，跏趺坐于白莲花上）、莲卧观音（坐莲华叶上双手合掌）、泷见观音（坐于岩上观瀑）、施药观音（坐于水旁岩石上，右手撑颊部，左手叉腰，凝视莲华）、鱼篮观音、水月观音、一叶观音、青颈观音、威德观音、琉璃观音（高王观音）、持莲观音、洒水观音等，都在三十二观音应化身内，其中白衣、青颈、阿耨、阿摩提、多罗尊等不是在印度变化的观音，大概是在我国唐朝以后民间的信仰，但国人最具亲切感的，一为马郎妇观音（事出唐宪宗元和十二年于陕西金沙滩），一为蛤蜊观音（开元年间，唐文宗尝食蛤蜊，刳而不开，及开，见蛤蜊内有观音像，遂不复食。），一为高王观音（北魏太平年间，定州勇士孙权德诵经免难。）其神异均不可思议。</p>
+<p>　　观音菩萨常住的圣地，在印度南方海滨的补陀洛伽山，又名光明山，小白华山。我国浙江省定海县舟山群岛的普陀山上，最高峰名补陀洛伽，以及西藏拉萨的布达拉宫等，也是观音菩萨的应化道场。</p>
+<p>　　法华经观世音菩萨普门品中，讲到「观」与「音」有几句话非常重要，现在特地提出来略作解释。先说「观」：「真观清净观，广大智慧观，悲观及慈观。」我在法集中曾经讲过，真观就是诸法性空。清净观呢？是度生不住相。广大智慧观是中道。悲观及慈观是以上面三观来拔苦与乐。也可以说，真观是空，清净观是假，广大智慧观中，合起来是「空、假、中」三观。</p>
+<p>　　次说音：「妙音观世音、梵音海潮音、胜彼世间音。」能观的智，所观的境，境智一如，所做的事情也好，所发的声音也好，都妙，就是妙音。观世音呢？就是不变随缘，寻声救苦。梵音是真空清净无染的声音。海潮音有起有落，定时不差。胜彼世间音则指空有不二，互摄互入，为中道境，这是显教解释五个观，五个音，但不出于「三观」、「三智」与「三境」。</p>
+<p>　　　　密教中的观音菩萨</p>
+<p>　　密教中的千手观音，从大悲观音变化而来；圣观音从大慈观音变化而来，马头观音从师子无畏观音变化而来，十一面观音从大光普照观音变化而来，准胝观音从天人丈夫观音变化而来，如意轮观音从大梵深远观音变化而来，可见显密原无二致。密教以修身、口、意三密相应而得当生证到佛果的，但藏密与东密在修持「身密」部份稍有出入，这因唐代文成公主下嫁西藏弄赞甘普王，侍从有儒士及道士，这些由道士们传去的中国道家修炼方法，与藏地原始宗教的修持法以及由印度传入的密宗修身法汇合而成了他们特有的修身方法。</p>
+<p>　　修气、修脉、修明点，为密宗调身方便，对变化气质，收效甚大。气有上行气、中行气、下行气的分别，脉有中脉、左脉、右脉的区分，密宗的学者们说：「气不入中脉，而得证菩提者，绝无是处。」脉又与轮并提，有梵穴轮、顶轮、眉间轮、喉轮、心轮、脐轮、海底轮、统称三脉七轮。有声有色，这「妙音观世音，梵音海潮音。」实际就是七轮中的音声。密尚持咒，口密就是声密。这「唵」、「啊」、「吽」三字，即是梵文声母的总纲，唵字又是宇宙原始生命能量的根本音，阿字是宇宙开辟万有生命生发的根本音，吽字是万有生命潜藏生发的根本音，以这三个字发音组成一个咒，便是普贤如来的根本咒，普贤如来的意译是妙密。观音菩萨的六字大明咒：「唵、嘛、呢、叭、咪、吽。」便概括了唵字与吽字的咒身，其中「嘛、呢、叭、咪」四字之音，都是阿部音的变化妙用。</p>
+<p>　　总之，观音法门，博大精微，浩瀚无边，我们修学观音法门，就是要学观音菩萨的大慈大悲，普度慈航，如果你们以求观音菩萨的恳切心情，来要求自己，你自己就是观音菩萨，就能家庭和睦，妻贤子孝，国泰民安，众生乐利，祝福大家都成就大慈大悲、救苦救难的观世音菩萨。</p>
+<p>　　今天的时间已到，等一下大家还要念诵观音圣号，我们先来齐唱观音菩萨偈赞以为本次讲演作结：</p>
+<p>　　　　观音菩萨妙难酬　　清净庄严累劫修</p>
+<p>　　　　赫赫红莲安足下　　弯弯秋月锁眉头</p>
+<p>　　　　瓶中甘露常遍洒　　手内杨枝不计秋</p>
+<p>　　　　千处祈求千处应　　苦海常作度人舟</p>
+<p>　　　　南无普陀山净琉璃世界大慈大悲观世音菩萨</p>
+<p>　　　　（七十二年十月廿二日讲于台北东西精华协会中国总会禅学中心）</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../gsypszj/ysfslgsyps.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../gsypszj/nhjlgsyps.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../gsypszj/ysfslgsyps.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../gsypszj/nhjlgsyps.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

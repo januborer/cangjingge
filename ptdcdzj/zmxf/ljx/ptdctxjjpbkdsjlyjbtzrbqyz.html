@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《菩提道次探玄捷 径》(颇邦喀大师节录于绛巴吞珠仁波切原著)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="菩提道次探玄捷-径颇邦喀大师节录于绛巴吞珠仁波切原著"><a class="header" href="#菩提道次探玄捷-径颇邦喀大师节录于绛巴吞珠仁波切原著">《菩提道次探玄捷 径》(颇邦喀大师节录于绛巴吞珠仁波切原著)</a></h1>
+<p>　　　　菩提道次第探玄捷径</p>
+<p>　　　　　　　　　　　　　　颇邦喀大师节录于上师绛巴吞珠仁波切原著</p>
+<p>　　　　念诵初阶易修便读有缘项严论</p>
+<p>　　尽一切时顶礼皈依于师与佛并金刚持无别足前，愿垂大悲随赐摄受！</p>
+<p>　　本书惟将胜者大温莎巴所传菩提道次第前行教授六加行法，纂成一篇，令易持诵。</p>
+<p>　　六加行法</p>
+<p>　　初、扫除居室，陈列身语意之所依。</p>
+<p>　　二、无谄端严陈设供品。</p>
+<p>　　　　三、身具毗卢七法入安适座，乃乘殊胜善心修皈依等。</p>
+<p>　　一、首先明现皈依境者</p>
+<p>　　于自正前虚空处，现起八大狮子所擎高广宝座，其上班莲及月日轮。上住体为自之具恩本师，相为胜者释迦牟尼，身色如纯金，顶上肉髻，一面二臂，右按地印，左等持印，上持钵盂，充满甘露，身披袈裟，其色金黄。相好严身，光体清明。于此所生光蕴聚中跏趺而坐。其周亲承及历（代）传（承）师、本尊、佛陀、菩萨、勇士空行、主从护法等诸会众、相与辅翼围绕而住。诸尊自前妙好座端，陈列各自所说教法，形作经函，自体光明。福田圣众欢悦向我。我亦心念福田圣众功德大悲而起净信。作意思惟：我及慈母一切有情，从无始来至于今兹，虽已总受轮回、别受三途种种重苦，然犹难尽苦之边际。我今幸一获得难得义大暇满殊胜人身，复遇难遇希有佛法，若不即证永断轮回最上解脱正等觉位，后复仍须如其所应，总受轮回、别受三途诸有重苦，安住正前上师三宝有力能救是诸苦故，我为诸母有情义利，当求证得正觉果位，为证此故，当皈依于上师三宝。</p>
+<p>　　如是思已</p>
+<p>　　二、皈依发心</p>
+<p>　　皈依师　皈依佛　皈依法　皈依僧（诵皈依三遍或随量念诵）</p>
+<p>　　诸佛正法众中尊　直至菩提我皈依</p>
+<p>　　我以施等诸资粮　为利有情愿成佛（以上诵三遍发心）</p>
+<p>　　三、四无量心</p>
+<p>　　一切有情云何能离亲疏爱憎，安住等舍，愿其安住，我令安住，愿祈师佛加持，能令如是。</p>
+<p>　　一切有情云何能具乐及乐因，愿其具足，我令具足，愿祈师佛加持，能令如是。</p>
+<p>　　一切有情云何能离苦及苦因，愿其远离，我令远离，愿祈师佛加持，能令如是。</p>
+<p>　　一切有情云何能不离增上生暨胜解脱所有安乐，愿其不离，我令不离，愿祈师佛加持，能令如是。（以上诵三遍等，应与相续真实和合修四无量。）</p>
+<p>　　四、殊胜发心</p>
+<p>　　为利慈母一切有情，必须尽力速速证得正等觉位，为证此故，当以深道师佛瑜伽为门，趣入修习菩提道次第。（以上殊胜发心）</p>
+<p>　　五、供养</p>
+<p>　　愿得一切悉转依　　大地清净无砂砾　　平正匀齐如手掌　　自性柔滑吠琉璃</p>
+<p>　　天上人间供养品　　或由实陈或意显　　无上普贤供养云　　愿遍一切虚空界</p>
+<p>　　嗡那谟坝噶哇达　班遮沙惹扎马达勒　打他噶打亚　阿惹哈得桑藐桑菩打亚</p>
+<p>　　打亚他　嗡班遮班遮　麻哈班遮　麻哈得乍班遮　麻哈比鸦班遮　麻哈菩谛者达班遮</p>
+<p>　　麻哈菩谛扪卓巴　桑扎吗那班遮　沙哇噶吗　阿瓦惹那　此(须/勿)　打那班遮娑诃</p>
+<p>　　以上诵三遍</p>
+<p>　　愿以三宝谛实力　诸佛菩萨加持力　福慧圆满威德力　法界清净不可思议力　成如是性</p>
+<p>　　以上说谛力加持供物</p>
+<p>　　　　第四、明想资粮田。</p>
+<p>　　明想资粮田二法之中，为易诵故依供养上师法列如次</p>
+<p>　　　　乐空无别　广虚空中　普贤供养云海内</p>
+<p>　　　　枝叶花果　美妙庄严　随欲如意宝树端</p>
+<p>　　　　喷焰宝珠　狮子座上　莲华日月为褥敷</p>
+<p>　　　　具足三恩　根本上师　一切诸佛为体性</p>
+<p>　　　　现比丘相　袈裟着身　一面二臂含笑颜</p>
+<p>　　　　右手说法　左手定印　持钵甘露极充满</p>
+<p>　　　　身披三衣　郁金花色　金色智冠顶上严</p>
+<p>　　　　心内能仁　金刚大持　一面二臂身青蓝</p>
+<p>　　　　手持铃杵　拥佛母俱　受用乐空俱生智</p>
+<p>　　　　众宝严身　着美绫罗　天界宝饰妙天衣</p>
+<p>　　　　相好庄严　放千光明　五色彩虹周围绕</p>
+<p>　　　　足结金刚　跏趺坐式　五蕴清净为五佛</p>
+<p>　　　　四界清净　即四明妃　诸处脉节诸菩萨</p>
+<p>　　　　二万一千　毛孔罗汉　一切支分忿怒王</p>
+<p>　　　　光即护方　药义密迹　足下世间神祗众</p>
+<p>　　　　周匝亲承　传承诸师　本尊坛中诸天众</p>
+<p>　　　　诸佛菩萨　勇士空行　护法海众遍围绕</p>
+<p>　　　　每尊三门　三金刚相　吽字放光如钩形</p>
+<p>　　　　从本性处　迎请智尊　和合无分安稳住</p>
+<p>　　　　上观想三昧耶尊，次迎请智能尊，诵</p>
+<p>　　众生依怙主　摧尽魔军尊　遍知真实性　佛眷祈临此</p>
+<p>　　乍吽榜火　与真言尊无二无别</p>
+<p>　　以上明想资粮田</p>
+<p>　　此间浴室异香馥　水晶为地莹且耀　宝柱生辉具悦意　珍珠华盖具光灿（以上生起沐室）</p>
+<p>　　请沐浴云</p>
+<p>　　犹如降诞时　诸天献沐浴　我以净天水　如是浴佛身</p>
+<p>　　嗡莎尔哇达他噶达　阿比克迦达　莎玛亚西耶阿吽</p>
+<p>　　拭身云</p>
+<p>　　以诸无等净香衣　拂拭诸佛菩萨身</p>
+<p>　　嗡　吽(口＋掌)　(口＋舍)　　阿　迦亚　比学达那耶娑诃。</p>
+<p>　　供涂香云</p>
+<p>　　以诸胜妙涂　香喷三千界　抹如紫磨金　光炽诸佛身</p>
+<p>　　供衣云</p>
+<p>　　轻软滑薄天之衣　供于不坏金刚身　我以不退信意献　愿我亦得金刚体</p>
+<p>　　供严饰云</p>
+<p>　　佛具相好自性严　虽不更须余严饰　仍供宝严愿众生　得诸相好庄严身</p>
+<p>　　请住世云</p>
+<p>　　由悲我及众生故　以尊神变威德力　乃至我所供养时　尔时世尊祈安住</p>
+<p>　　　　第五、摄积资忏净之要供七支曼遮等</p>
+<p>　　一、七支供</p>
+<p>　　所有十方世界中　三世一切人师子　我以清净身语意　一切遍礼尽无余</p>
+<p>　　普贤行愿威神力　普现一切如来前　一身复现刹尘身　一一遍礼刹尘佛</p>
+<p>　　于一尘中尘数佛　各处菩萨众会中　无尽法界尘亦然　深信诸佛皆充满</p>
+<p>　　各以一切音声海　普出无尽妙言辞　尽于未来一切劫　赞佛甚深功德海</p>
+<p>　　以诸最胜妙华鬘　伎乐涂香及伞盖　如是最胜庄严具　我以供养诸如来</p>
+<p>　　最胜衣服最胜香　末香烧香与灯烛　一一皆如妙高聚　我悉供养诸如来</p>
+<p>　　我以广大胜解心　深信一切三世佛　悉以普贤行愿力　普遍供养诸如来</p>
+<p>　　我以贪瞋愚痴力　由身语意所造作　所有一切诸恶业　我今各各皆忏悔</p>
+<p>　　十方一切诸众生　二乘有学及无学　一切如来与菩萨　所有功德皆随喜</p>
+<p>　　十方所有世间灯　最初成就菩提者　我今一切皆劝请　转于无上妙法轮</p>
+<p>　　诸佛若欲示涅盘　我悉至诚而劝请　惟愿久住刹尘劫　利乐一切诸众生</p>
+<p>　　所有礼赞供养佛　请佛住世转法轮　随喜忏悔诸善根　回向众生及佛道</p>
+<p>　　二、供曼陀罗者</p>
+<p>　　嗡班遮布弥阿吽　大自在金刚地基　嗡班遮惹克阿吽　外铁围山所绕中间　须弥山王　东胜身洲　南赡部洲　西牛贺洲　北俱卢洲　身及胜身　拂及妙拂　谄及胜道行　俱卢与俱卢月　大宝山　如意树　随欲乳牛　自然香稻　转轮宝　牟尼宝　玉女宝　大臣宝　白象宝　骏马宝　将军宝　宝藏瓶　嬉女　缦女　歌女　舞女　花女　香女　灯女　涂女　日　月　众宝伞　尊胜幢　其中人天富乐　无不具足　以此奉献根本传承诸胜恩师及三世皈依处总聚体──具恩根本上师、慧贤、能仁、金刚持、佛、尊、圣眷等前，为利众生，愿悲纳受，祈请受已，以大悲心，加持我等</p>
+<p>　　香涂地基妙花敷　山王四洲日月饰</p>
+<p>　　缘念佛刹而供养　愿众咸受清净刹</p>
+<p>　　自他身语意财三世福　微妙宝坛普贤供养聚</p>
+<p>　　心取供师本尊及三宝　愿悲纳受加持于我等</p>
+<p>　　意当　古汝(日/阿)那　曼遮那　冈里亚打亚米。</p>
+<p>　　或供</p>
+<p>　　香涂地基妙花敷　山王四洲日月饰</p>
+<p>　　缘念佛刹而供养　愿众咸受清净刹</p>
+<p>　　三、由三大义门而启白云</p>
+<p>　　皈敬于上师三宝之前，启请诸尊加持我心相续，我与慈母一切有情，从不恭敬善知识起，乃至执着二我相所有一切颠倒心迅速消灭，凡恭敬善知识等一切不颠倒心速易生起，暨内违缘皆速息灭。</p>
+<p>　　具德根本上师宝　安住我顶莲月上</p>
+<p>　　从大恩门求摄受　身语意业赐成就（赐予三密胜悉地）</p>
+<p>　　　　第六、启请求加　依要义门务使与自相续合一而诵</p>
+<p>　　无等救度世尊师，补处尊者弥勒主，佛所授记无着足，佛菩萨三前启请。</p>
+<p>　　南赡智严世亲师，获中观道解脱军，住坚信地解脱军，开世眼三前启请。</p>
+<p>　　成希有处殊胜军，深道净心调伏军，大行宝藏毗卢师，众生亲友三启请。</p>
+<p>　　开般若道贤狮子，总持佛要瞿萨里，悲生摄受具善者，众生舵手三启请。</p>
+<p>　　发胜菩提金洲师，掌大车轨燃灯智，光显善道仲敦巴，佛教轴心三启请。</p>
+<p>　　瑜伽自在衮巴瓦，坚住妙定内素巴，遍持律藏塔玛巴，边地灯炬三启请。</p>
+<p>　　精勤修持南喀僧，圣者加持南喀杰，断世八法僧格桑，贤善佛子前启请。</p>
+<p>　　菩提心视生如子，本尊摄受赐加持，浊世度生至上友，南喀坚赞前启请。</p>
+<p>　　无缘悲藏观自在，无垢智王妙吉祥，雪岭智顶宗喀巴，善慧名称足启请。</p>
+<p>　　善说无敌释迦顶，总摄佛智文殊师，观察深义圣龙树，善说顶首三启请。</p>
+<p>　　解圣者意名月称，上首弟子大智鹃，佛子智鹃第二足，正理自在三启请。</p>
+<p>　　如实观察深缘起，掌大车轨燃灯智，光显圣道仲敦巴，赡洲庄严二启请。</p>
+<p>　　善培佛种博多瓦，无比智辨霞日瓦，得菩提旨伽喀巴，满众生愿三启请。</p>
+<p>　　教证主宰基补瓦，无垢教王克白却，三界众主仁布齐，三大上座前启请。</p>
+<p>　　清净律仪桑钦布，亿部律主错那巴，达对法海摩扎巴，度生导师三启请。</p>
+<p>　　掌握深观广行法，成为有缘救怙处，以善事业宏佛教，吉祥上师前启请。</p>
+<p>　　成道自在楚逞八，如法依师迅鲁沃，胜道治心吉贡巴，如来佛子三启请。</p>
+<p>　　希有德藏桑结温，圣者加持南喀杰，断世八法僧格桑，贤善佛子前启请。</p>
+<p>　　菩提心视生如子，本尊摄受赐加持，浊世度生至上友，南喀坚赞前启请。</p>
+<p>　　善慧宫殿富三学，德业化机呈福详，名称光辉照十方，善慧名称有启请。</p>
+<p>　　成道自在降白措，德学善说格勒白，持耳传教(嘉)巴苏吉，无比恩师三启请。</p>
+<p>　　证双运身却(季)多吉，现证三身温莎巴，桑结耶协教证主，善巧成就三启请。</p>
+<p>　　罗桑却季坚赞主，心子衮却坚赞足，显明善道罗桑耶(协)，尊者上师三启请。</p>
+<p>　　宏教阿旺降巴师，心子罗桑宁扎足，已获如海天边德，大恩上师三启请。</p>
+<p>　　罗桑耶协敦(巴)饶吉，以善巧慧度脱生，善施善慧名称法，无比大师三启请。</p>
+<p>　　贤劫导师教证教，护持讲修无伦匹，大恩无等根本师，三业竭诚申启请。</p>
+<p>　　多闻成教坛城广，行二次第现兽形，化机除暗白莲亲，持教诸贤德启请。</p>
+<p>　　三世救处总集身，善讲罗桑妙着语，三学因果顿成意，有恩变化身启请。</p>
+<p>　　慈爱如理(降巴楚丹)等圣财，心性善语掌教首，四种事业遍大地，普被尊者师启请。</p>
+<p>　　观察广博经教眼，有缘解脱胜津梁，以爱怜心巧方便，阐教诸善士启请。</p>
+<p>　　次诵</p>
+<p>　　诸功德本谓如理，依止恩师是道基，善了知已多策励，恭敬依止祈加持。</p>
+<p>　　一次获此暇妙身，已知义大极难得，昼夜恒取心要心，能续生起祈加持。</p>
+<p>　　身命动摇如水泡，速疾坏灭当念死，死后如影随于形，黑白业果恒随逐。</p>
+<p>　　获定解已于罪聚，虽诸小罪亦应除，勤修一切妙善聚，常不放逸祈加持。</p>
+<p>　　受用无厌众苦门，不可保信三有乐，见过患已当希求，解脱妙乐祈加持。</p>
+<p>　　彼净意乐所引生，正念正知不放逸，于圣教本别解脱，能至心修祈加持。</p>
+<p>　　如我沦堕生死海，诸母有情亦如是，见已负荷度生任，修菩提心祈加持。</p>
+<p>　　仅发心已于三戒，不习不能成菩提，深见已于菩萨戒，能勤勇学祈加持。</p>
+<p>　　散驰邪境令寂灭，如理观察真实义，寂止妙观双运道，速生心中祈加持。</p>
+<p>　　共道已熟成器时，乘中最胜金刚乘，有缘所趣妙津梁，能易趣入祈加持。</p>
+<p>　　尔时二种悉地本，谓护净律三昧耶，愿获真实决定解，舍命守护祈加持。</p>
+<p>　　尔后如实善通达，续部关要二次第，四座瑜伽不散漫，依师言修祈加持。</p>
+<p>　　宣此妙道善知识，如理学侣皆长住，内外所有障碍聚，能全息灭祈加持。</p>
+<p>　　愿得生生不违离，真实上师受法益，地道功德极圆满，金刚持位迅证成。</p>
+<p>　　收摄资粮田者</p>
+<p>　　具德根本上师宝，安住我顶莲月座，大恩为门垂摄受，祈赐身语意悉地。</p>
+<p>　　俱胝妙善所生身，满足无边众生语，如实尽观所知意，释迦教主前敬礼。</p>
+<p>　　无上大师佛陀宝，无上救者正法宝，无上圣者僧伽宝，总皈依处尊前礼。</p>
+<p>　　实设意显无余供，无始积罪尽忏悔，圣凡诸善尽随喜，安住直穷生死际。</p>
+<p>　　为众生转正法轮，二善回向大菩提。</p>
+<p>　　四洲妙高日月七珍宝　大宝曼陀普贤供养聚</p>
+<p>　　供献上师本尊三宝前　伏祈垂悲受已求加持</p>
+<p>　　以上想上师来临住于自己之顶上而供七支及简略曼遮已　次诵</p>
+<p>　　启白总摄皈依处　师佛能仁金刚持</p>
+<p>　　以上诵锭撅启请</p>
+<p>　　次缘想顶上之上师能仁而念</p>
+<p>　　谨于上师胜者释迦牟尼座前顶礼供养而行皈依</p>
+<p>　　继念</p>
+<p>　　嗡牟尼牟尼吗哈牟尼耶娑诃　以上佛之名称随量念诵已</p>
+<p>　　愿我迅速由此善，成就上师成佛陀，虽一众生亦无余，愿得同登彼刹士。</p>
+<p>　　久勤所积二资粮，宽广如空尽所有，为导痴蔽慧眼众，我愿成就胜者王。</p>
+<p>　　未到彼位生生中，皆得文殊悲摄受，值遇胜道全次第，修习令诸胜者喜。</p>
+<p>　　我所实解道关要，由猛利悲引方便，灭除众生愚蒙心，长久住持圣者教。</p>
+<p>　　诸凡圣教未被地，或虽已被复衰微，心为大悲极撼动，显扬如是利乐藏。</p>
+<p>　　佛及佛子希有业，所成菩提道次第，赐益求解脱众心，永护胜者大事业。</p>
+<p>　　成办修道妙顺缘，及除违缘人非人，愿其生生不远离，诸佛所赞清净道。</p>
+<p>　　若时如理勤修习，最胜乘中十法行，尔时力士常作伴，吉祥大海遍十方。</p>
+<p>　　吉祥圆满</p>
+<p>　　如是之门所生善　勇猛回向利自他</p>
+<p>　　　　　　　　由颇邦喀大师节录于上师绛巴吞珠仁波切原著中而成此易修易诵仪轨</p>
+<p>　　　　　　　　十年浩劫中，由郭和卿译师所译原稿，散失不全，嗣由祝维翰、刘立千二译师先后补译，始译成此仪。</p>
+<p>　　　　　　　　低劣弟子昂旺敦振谨识　一九八九年十二月于成都</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../ptdcdzj/szyd/sl/sysycdqrdsctggjczjyrqgy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ljx/ptdcdljxfnhssj.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../ptdcdzj/szyd/sl/sysycdqrdsctggjczjyrqgy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../ptdcdzj/zmxf/ljx/ptdcdljxfnhssj.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../ace.js"></script>
+        <script src="../../../editor.js"></script>
+        <script src="../../../mode-rust.js"></script>
+        <script src="../../../theme-dawn.js"></script>
+        <script src="../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

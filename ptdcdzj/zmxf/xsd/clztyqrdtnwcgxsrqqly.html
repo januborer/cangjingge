@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>《策励自他一切人等 痛念无常歌　心匙》(仁钦曲札　译)  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="策励自他一切人等-痛念无常歌-心匙仁钦曲札-译"><a class="header" href="#策励自他一切人等-痛念无常歌-心匙仁钦曲札-译">《策励自他一切人等 痛念无常歌　心匙》(仁钦曲札　译)</a></h1>
+<p>　　　　策励自他一切人等痛念无常歌──心匙</p>
+<p>　　　　　　　　　　　　　　　　　　　　仁钦曲札　译</p>
+<p>　　呜呼哀哉具恩师，伏祈大悲作瞻视！</p>
+<p>　　苦恼若我众行径，一生自欺似无心。</p>
+<p>　　劝告自己衷心语，《心匙》心中当牢记，</p>
+<p>　　萦绕心髓不散乱，思维自身之本性。</p>
+<p>　　无始轮回至今生，已经无数生死轮，</p>
+<p>　　虽受种种乐与苦，然犹未办少分利。</p>
+<p>　　虽得暇满昔虽获，皆未受益而虚掷，</p>
+<p>　　如今若能自爱者，当修善行久乐藏。</p>
+<p>　　貌似精明实愚痴，耽著童戏般现世，</p>
+<p>　　忽遭可谓阎摩逼，无计可施终将临。</p>
+<p>　　自念尚且不死故，忙于无尽现世业，</p>
+<p>　　可畏阎摩忽现前，宣布死期终将临。</p>
+<p>　　随勤筹措明日事，即刻起程终将临。</p>
+<p>　　剩事残饮未竟业，无奈放舍终将临。</p>
+<p>　　铺衾而卧但今日，如朽木颓卧&lt;末床&gt;（2），</p>
+<p>　　无力翻身拈摸手，牵捉衣友终将临。</p>
+<p>　　除却今日难再穿，&lt;末衣&gt;内外遍裹缠，</p>
+<p>　　犹如石块渐僵硬，初见自尸终将临。</p>
+<p>　　&lt;末语&gt;遗嘱与愁叹，悲哀之中强欲言，</p>
+<p>　　舌根乾故难达意，极灰心时终将临。</p>
+<p>　　&lt;末食&gt;圣物与舍利，伴诸流汁注口中，</p>
+<p>　　纵然一口难下咽，流出尸口终将临。</p>
+<p>　　洽心合意众亲友，悲悯苦恼围绕住，</p>
+<p>　　&lt;末伴&gt;哭泣伤别离，从今永绝终将临。</p>
+<p>　　可怖幻象如浪涌，断肢节苦甚难忍，</p>
+<p>　　无可奈何苦痛中，此生相没终将临。</p>
+<p>　　善念提示极重要，是故师友兴大悲，</p>
+<p>　　虽于耳旁勤提醒，惟增沮丧终将临。</p>
+<p>　　喉间频发唏嘘声，呼吸渐短气壅滞。</p>
+<p>　　最后停止入断弦，今生完结终将临。</p>
+<p>　　百般珍惜悦意身，终成反胃腐烂尸。</p>
+<p>　　此身粗褥亦难忍，终置荒凉尸林地。</p>
+<p>　　此身芒刺亦难忍，终遭剁削骨肉碎。</p>
+<p>　　此身蚤虱亦难忍，终为鸟兽食殆尽。</p>
+<p>　　尸身虽以锦衣裹，终将置于焚化炉。</p>
+<p>　　此身爇香亦难忍，终被焚烧火蕴中。</p>
+<p>　　炽燃柴薪烧骨肉，收骨灰时终将临。</p>
+<p>　　此身厚衣亦难忍，终被埋于窄地坑。</p>
+<p>　　悦耳大名之前后，加&lt;已故&gt;语终将临。</p>
+<p>　　亲戚朋友与仆役，哭声四起终将临。</p>
+<p>　　衣帽家当散四方，无一剩余终将临。</p>
+<p>　　独住中有险关道，凄惨惆怅终将临。</p>
+<p>　　四大（3）颠倒仇敌至，生大恐惧终将临。</p>
+<p>　　见处山崩断岩下，土雨压身奈何之？</p>
+<p>　　幻见趣入大海中，巨浪涡卷奈何之？</p>
+<p>　　闻似大火爆炸声，心耳具裂奈何之？</p>
+<p>　　黑暴劫风包卷起，幻相可畏奈何之？</p>
+<p>　　大红业风紧驱迫，为暗吞没奈何之？</p>
+<p>　　阎摩使者绳索捆，惘然被牵奈何之？</p>
+<p>　　牛头蝎面众狱卒，百般折磨奈何之？</p>
+<p>　　死主阎摩法王前，算善恶帐奈何之？</p>
+<p>　　推委生前贪瞋诈，阎摩揭穿奈何之？</p>
+<p>　　自罪易熟当惩罚，入阎摩狱奈何之？</p>
+<p>　　地狱烈火铁地上，自身裸卧奈何之？</p>
+<p>　　兵刃雨降身破碎，受而不死奈何之？</p>
+<p>　　烊铜锅煮骨肉烂，受犹不死奈何之？</p>
+<p>　　身火无二极炽燃，然犹不死奈何之？</p>
+<p>　　冰穴风袭身冻裂，成千百片奈何之？</p>
+<p>　　堕入饥渴饿鬼中，多年饥饿奈何之？</p>
+<p>　　若成劣缘愚旁生，互相啖食奈何之？</p>
+<p>　　极难忍受饿趣苦，真正临头奈何之？</p>
+<p>　　现应速速不放逸，当下精进正是时，</p>
+<p>　　不仅适宜恐迟故，应即速速提精神。</p>
+<p>　　具恩师父之口授，善慧佛陀（4）论心要，</p>
+<p>　　显密全圆道修法，当与心中起实证。</p>
+<p>　　自他二利久乐藏，日日尽力求获取，</p>
+<p>　　试与阎摩作竞赛，三门合一勤修行！</p>
+<p>　　此《策励自他一切人等痛念无常歌──心匙》一文，是因离事专修者昂旺年札请求在先，布达拉宫四任管家索南衮嘎亦一再劝请，近来昂旺年札复作请求，由僭名帕绷喀转世者造于贡薄地区之楚·扎西德钦寺。愿众生利益增长！</p>
+<p>　　注释：</p>
+<p>　　（1）收入《帕绷喀大师文集》第六函第一篇《道歌学处类汇编》。</p>
+<p>　　（2）意为此生最后所卧之床，“末衣”即此生最后所著之衣等，下同。</p>
+<p>　　（3）地、水、火、风。</p>
+<p>　　（4）宗喀巴大师。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../ptdcdzj/zmxf/xsd/dzsjbfdfbppkdszrqqzjy.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../../ptdcdzj/zmxf/xsd/xsjjyzppkrbqyysbrbqzyxy.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../ptdcdzj/zmxf/xsd/dzsjbfdfbppkdszrqqzjy.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../../ptdcdzj/zmxf/xsd/xsjjyzppkrbqyysbrbqzyxy.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../../ace.js"></script>
+        <script src="../../../editor.js"></script>
+        <script src="../../../mode-rust.js"></script>
+        <script src="../../../theme-dawn.js"></script>
+        <script src="../../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

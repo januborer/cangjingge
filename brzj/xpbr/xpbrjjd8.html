@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>小品般若经卷第八  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="小品般若经卷第八"><a class="header" href="#小品般若经卷第八">小品般若经卷第八</a></h1>
+<p>　　　　小品般若波罗蜜经卷第八</p>
+<p>　　　　　　　　后秦龟兹国三藏鸠摩罗什译</p>
+<p>　　　　深心求菩提品第二十</p>
+<p>　　佛告须菩提：「若菩萨欲得阿耨多罗三藐三菩提，应当亲近善知识。」</p>
+<p>　　须菩提白佛言：「世尊！何等是菩萨善知识？」</p>
+<p>　　佛告须菩提：「诸佛世尊，是菩萨善知识。何以故？能教菩萨令入般若波罗蜜故。须菩提！是名菩萨善知识。复次，须菩提！六波罗蜜是菩萨善知识；六波罗蜜是菩萨大师；六波罗蜜是菩萨道；六波罗蜜是菩萨光明；六波罗蜜是菩萨炬。须菩提！过去诸佛，皆从六波罗蜜生；未来诸佛，皆从六波罗蜜生；现在十方无量阿僧祇世界诸佛，皆从六波罗蜜生。又三世诸佛萨婆若，皆从六波罗蜜生。何以故？诸佛行，六波罗蜜以四摄法，摄取众生。所谓布施爱语，利益同事，得阿耨多罗三藐三菩提。须菩提！是故当知六波罗蜜，是大师，是父是母，是舍是归，是洲是救，是究竟道。六波罗蜜利益一切众生。是故，！菩萨欲自深智明了，不随他语，不信他法。若欲断一切众生疑，应当学是般若波罗蜜。」</p>
+<p>　　「世尊！又何等相，是般若波罗蜜？」</p>
+<p>　　「须菩提！无碍相，是般若波罗蜜。」</p>
+<p>　　「世尊！颇有因缘，如般若波罗蜜无碍相，一切法亦无碍相耶？」</p>
+<p>　　「有。须菩提！如般若波罗蜜无碍相，一切法亦无碍相。何以故？须菩提！一切法离相，一切法空相。是故，须菩提！当知般若波罗蜜亦离相空相，一切法亦离相空相。」</p>
+<p>　　「世尊！若一切法离相空相，云何众生，有垢有净？」</p>
+<p>　　「何以故？离相法无垢无净，空相法无垢无净。离相法，空相法，不能得阿耨多罗三藐三菩提。离离相，离空相，更无有法能得阿耨多罗三藐三菩提。世尊我今云何当知是义？须菩提！我还问汝，随意答我。须菩提！于意云何？众生长夜著我我所不？」</p>
+<p>　　「如是如是！世尊！众生长夜著我、我所。」</p>
+<p>　　「须菩提！于意云何？我、我所空不？」</p>
+<p>　　「世尊！我、我所空。」</p>
+<p>　　「须菩提！于意云何？众生以我、我所，往来生死不？」</p>
+<p>　　「如是如是！世尊！众生以我、我所，故往来生死。」</p>
+<p>　　「须菩提！如是众生名为有垢，随众生所受所著故。是中实无有垢，亦无受垢者。须菩提！若不受一切法，则无我、无我所，是名为净。是中实无有净，亦无有受净者。菩萨如是行，名为行般若波罗蜜。」</p>
+<p>　　「世尊！若菩萨如是行，则不行色，不行受想行识。若菩萨如是行者，一切世间、天、人、阿修罗不能降伏。世尊！菩萨如是行，者胜一切声闻、辟支佛所行，住无胜处。世尊！无胜菩萨昼夜行是应般若波罗蜜念，近于阿耨多罗三藐三菩提，疾得阿耨多罗三藐三菩提。」</p>
+<p>　　佛告须菩提：「于意云何？假令阎浮提所有众生，一时皆得人身，发阿耨多罗三藐三菩提心。发心已，尽形寿布施。以是布施，回向阿耨多罗三藐三菩提。须菩提！于意云何？是人以是因缘得福多不？」</p>
+<p>　　须菩提言：「甚多，世尊！」</p>
+<p>　　佛言：「若菩萨乃至一日，行应般若波罗蜜念，其福胜彼。随喜菩萨行应般若波罗蜜念，能为一切众生而作福田。何以故？唯除诸佛，其余众生，无如是深慈心，如菩萨摩诃萨。诸菩萨因般若波罗蜜，能生如是慧。以是慧，见一切众生受诸苦恼，如被刑戮，菩萨即得大悲之心。得大悲已，以天眼观诸众生，见无量众生，有无间罪，堕于诸难，即生怜愍之心。不住是相，亦不住余相。须菩提！是名诸菩萨大智光明。行是道者，则为一切众生福田，而不退转阿耨多罗三藐三菩提。所受供养，衣服饮食、卧具医药，所须之物，一心修习般若波罗蜜故，能净报施恩，亦近萨婆若。是故菩萨，若欲不空食国中施，若欲利益一切众生，若欲示一切众生正道，若欲解一切众生牢狱系缚，若欲与一切众生慧眼，常应修行，应般若波罗蜜念。若行应般若波罗蜜念，是菩萨有所言说，亦与般若波罗蜜相应。何以故？是菩萨有所言说，皆随顺般若波罗蜜念。有所念，亦随顺言说。菩萨常应如是昼夜念般若波罗蜜。须菩提！譬如人得未曾有宝。得已，大喜，而复还失。以是因缘，忧愁苦恼。其心常念：我今如何失此大宝？须菩提！菩萨亦如是。大宝者，是般若波罗蜜。菩萨得是已，常应以应萨婆若心，念般若波罗蜜。」</p>
+<p>　　须菩提白佛言：「世尊！若一切念，从本已来，性常离者，云何说言不应离是，应般若波罗蜜念。」</p>
+<p>　　「须菩提！若菩萨能如是知，即不离般若波罗蜜。何以故？般若波罗蜜空，是中无有退失。」</p>
+<p>　　「世尊！若般若波罗蜜空，菩萨云何以般若波罗蜜而得增长？云何亦得近于阿耨多罗三藐三菩提？」</p>
+<p>　　「须菩提！菩萨行般若波罗蜜，亦无增无减。须菩提！若菩萨闻是说，不惊不怖，不没不退，当知是菩萨行般若波罗蜜。」</p>
+<p>　　「世尊！般若波罗蜜空相是行般若波罗蜜不？」</p>
+<p>　　「不也，须菩提！」</p>
+<p>　　「世尊！离般若波罗蜜更有法行般若波罗蜜不？」</p>
+<p>　　「不也，须菩提！」</p>
+<p>　　「世尊！空可行空不？」</p>
+<p>　　「不也，须菩提！」</p>
+<p>　　「世尊！离空可行空不？」</p>
+<p>　　「不也，须菩提！」</p>
+<p>　　「世尊！行色是行般若波罗蜜不？」</p>
+<p>　　「不也，须菩提！」</p>
+<p>　　「世尊！行受想行识，是行般若波罗蜜不？」</p>
+<p>　　「不也，须菩提！」</p>
+<p>　　「世尊！离色，有法可行般若波罗蜜不？」</p>
+<p>　　「不也，须菩提！」</p>
+<p>　　「世尊！离受想行识，有法可行般若波罗蜜不？」</p>
+<p>　　「不也，须菩提！」</p>
+<p>　　「世尊！菩萨云何行，名为行般若波罗蜜？」</p>
+<p>　　「须菩提！于意云何？汝见有法行般若波罗蜜不？」</p>
+<p>　　「不也，世尊！」</p>
+<p>　　「须菩提！汝见般若波罗蜜法是菩萨行处不？」</p>
+<p>　　「不也，世尊！」</p>
+<p>　　「须菩提！于意云何？汝所不见法，颇有生不？」</p>
+<p>　　「不也，世尊！」</p>
+<p>　　「须菩提！是名诸佛无生法忍。菩萨能成就如是忍者，当得受阿耨多罗三藐三菩提记。须菩提！是名诸佛无所畏道。菩萨行是道，修习亲近，若当不得佛无上智、大智、自然智、一切智、如来智，无有是处。世尊！一切法无生，以是得受阿耨多罗三藐三菩提记不？」</p>
+<p>　　「不也，须菩提！」</p>
+<p>　　「世尊！今云何名为得受阿耨多罗三藐三菩提记？」</p>
+<p>　　「须菩提！于意云何？汝见有法受阿耨多罗三藐三菩提记不？」</p>
+<p>　　「不也，世尊！我不见有法受阿耨多罗三藐三菩提记，亦不见所用法，亦不见所得法。须菩提！如是一切法不可得。不应作是言：是法可得，是所用法可得。」</p>
+<p>　　尔时释提桓因在大会中白佛言：「世尊！般若波罗蜜甚深难见难解，毕竟离故。若人闻是般若波罗蜜，书写受持读诵，当知是人，福德不少。」</p>
+<p>　　「憍尸迦！于意云何？假令阎浮提所有众生，成就十善道，其所得福，不如是人闻是般若波罗蜜，书写受持读诵，百分不及一，百千万亿分不及一，乃至算数譬喻所不能及。」</p>
+<p>　　时有一比丘，语释提桓因言：「憍尸迦！如是善男子、善女人，胜于仁者。」</p>
+<p>　　释提桓因言：「此人一发心顷，尚胜于我，何况得闻般若波罗蜜，书写受持读诵，如所说行。是人于一切世间、天、人、阿修罗中，最为殊胜。菩萨行般若波罗蜜，不但胜于一切世间、天、人、阿修罗，亦胜须陀洹、斯陀含、阿那含、阿罗汉、辟支佛，菩萨行般若波罗蜜。不但胜须陀洹，乃至辟支佛，亦胜菩萨离般若波罗蜜，无方便行檀波罗蜜。不但胜离般若波罗蜜，无方便行檀波罗蜜，亦胜离般若波罗蜜，无方便行尸罗波罗蜜、羼提波罗蜜、毗梨耶波罗蜜、禅波罗蜜。如是菩萨最为殊胜。若菩萨随般若波罗蜜所说行者，皆胜一切世间、天、人、阿修罗。一切世间、天、人、阿修罗，皆应恭敬供养。若菩萨行，随般若波罗蜜所教行者，是菩萨不断一切种智，是菩萨近阿耨多罗三藐三菩提，是菩萨必坐道场，是菩萨拯济没溺生死众生。菩萨如是学，名为学般若波罗蜜。如是学，名为不学声闻、辟支佛。若菩萨如是学，时四天王持四钵至其所，作是言：『善男子！汝疾学得阿耨多罗三藐三菩提。坐道场时，我等当奉此四钵。』世尊！我亦自往问讯，何况余诸天子。菩萨学般若波罗蜜者，诸佛常共护念。世间众生，种种苦恼，是菩萨能随行般若波罗蜜故，无是诸苦。世尊！是菩萨现世功德。」</p>
+<p>　　尔时阿难作是念：是释提桓因自以智慧力如是说耶？为是佛神力？</p>
+<p>　　释提桓因知阿难心所念，语阿难言：「皆是佛神力。」</p>
+<p>　　佛告阿难：「如是如是！阿难！如释提桓因所说，皆是佛神力。阿难！菩萨学般若波罗蜜，修习般若波罗蜜时，三千大千世界，诸魔皆生疑惑。是菩萨，为当中道，证实际，堕声闻、辟支佛地，为当直至阿耨多罗三藐三菩提。」</p>
+<p>　　　　恭敬菩萨品第二十一</p>
+<p>　　佛告阿难：「若菩萨不离般若波罗蜜行，尔时恶魔忧恼如箭入心，放大雨雹，雷电霹雳，欲令菩萨惊怖毛竖，其心退没，于阿耨多罗三藐三菩提，乃至一念错乱。阿难！恶魔不必普欲恼乱一切菩萨。」</p>
+<p>　　「世尊！何等菩萨为恶魔所乱？」</p>
+<p>　　「阿难！有菩萨先世闻说深般若波罗蜜，不能信受。如是之人，恶魔恼乱而得其便。复次，阿难！若菩萨闻深般若波罗蜜时，心生疑惑，有是深般若波罗蜜耶？无耶？阿难！如是菩萨亦为恶魔之所得便。复次，阿难！有菩萨离善知识，为恶知识所得。是人不闻深般若波罗蜜中义。以不闻故，不知不见。云何应行般若波罗蜜？云何应修般若波罗蜜？阿难！是人亦为恶魔得便。复次，阿难！若菩萨受持邪法，是人亦为恶魔得便。恶魔作是念：是人助我，亦令余人助我，亦能满我所愿。阿难！是人亦为恶魔得便。复次，阿难！菩萨云何为恶魔得便？若菩萨闻深般若波罗蜜，语余菩萨言：『是般若波罗蜜甚深，我等犹尚不能得底，汝等何用闻为！』是人亦为恶魔得便。阿难！若菩萨轻余菩萨言：『我是远离行者，汝等无此功德。』尔时恶魔甚大欢喜踊跃。阿难！若有众菩萨为恶魔称其名字，得是名字故，轻余清净善心菩萨，是等无有阿毗跋致菩萨功德相貌，而假托阿毗跋致功德，增长烦恼，自高其身，而下他人，作是言：『我有所功德，汝无是事。』尔时恶魔即大欢喜，作是念：我之宫殿，则为不空，增益地狱饿鬼畜生。恶魔加其神力故，是人所语，人皆信受。信受已，随所见学，随所说行。随所见学，随所说行已，亦复增益烦恼。如是人等，以颠倒心故，所起身口意业果报皆苦，以是因缘故，增益地狱、饿鬼、畜生。阿难！恶魔见是利益，亦大欢喜。阿难！若求佛道者，与声闻人共诤。恶魔复作是念：是人虽远离萨婆若而不大远。阿难！若菩萨共菩萨诤，恶魔即大欢喜，作是念：是人两离萨婆若。远阿难！若不得受记菩萨，嗔恨受记者，而共诤竞，恶口骂詈，若爱惜萨婆若，随其起念，一念却一劫，尔乃还得发大庄严。」</p>
+<p>　　阿难白佛言：「世尊！如是罪者，可得悔不？要当毕其随念劫数，尔乃还得发大庄严。」</p>
+<p>　　佛言：「有出罪法，不说无出罪法。我说菩萨声闻，皆有出罪法。不说无出阿难！若菩萨共菩萨诤，恶口骂詈，不相悔谢，结恨在心，我不说此人有出罪法。是人若爱惜萨婆若，毕其随念劫数，亦复还得发大庄严。阿难！若菩萨共菩萨诤，恶口骂詈，即相悔谢，后不复作。作是念：我应谦下一切众生。我若嗔诤，加报于人，则为大失。我应当为一切众生，而作桥梁。我尚不应轻汝他人，何况加报！应如聋哑，不应自坏深心。我得阿耨多罗三藐三菩提时，当度是等。云何加忿，自起嗔碍。阿难！求菩萨道者，于声闻人，乃至不应生于嗔碍。」</p>
+<p>　　阿难白佛言：「世尊！菩萨与菩萨共住，其法云何？」</p>
+<p>　　佛言：「相视当如佛想，是我大师，同载一乘，共一道行。如彼所学，我亦应学。彼若杂行，非我所学。若彼清净学，应萨婆若念，我亦应学。菩萨若如是学，是名同学。」</p>
+<p>　　尔时须菩提白佛言：「世尊！若菩萨为尽学，则学萨婆若；为无生学，为离学，为灭学，则学萨婆若。」</p>
+<p>　　佛告须菩提：「如汝所说菩萨为尽学，则学萨婆若；为无生学，为离学，为灭学，则学萨婆若者。须菩提！于意云何？如来以如，得名如来。是如非尽非离非灭耶？」</p>
+<p>　　「如是，世尊！」</p>
+<p>　　「须菩提！如是学者，名为学萨婆若。学萨婆若，为学般若波罗蜜，学佛地十力、四无所畏、十八不共法。须菩提！菩萨如是学者，则到诸学彼岸。如是学者，魔若魔民不能降伏。如是学者，疾得阿毗跋致。如是学者，疾坐道场。如是学者，学自行处。如是学者，学救护法。如是学者，学大慈大悲。如是学者，学三转十二相法轮。如是学者，学度众生。如是学者，学不断佛种。如是学者，学开甘露门。须菩提！凡夫下劣，不能如是学。欲调御一切众生者，能如是学。须菩提！菩萨如是学者，不堕地狱、畜生、饿鬼，不生边地。如是学者，不生旃陀罗家，不生竹草作家，不生除粪人家，不生诸余贫贱之家。须菩提！菩萨如是学者，不盲不瞎，不睐眼，不痤短，不聋哑，不顽钝，不形残，身根具足。须菩提！菩萨如是学者，不夺他命，不盗他物，不邪淫，不妄语，不两舌，不恶口，不无益语，不贪嫉，不嗔恼，不邪见，不邪命活，不畜邪见眷属，不畜破戒眷属。须菩提！菩萨如是学者，不生长寿天。何以故？菩萨成就方便故。何等为方便？所谓从般若波罗蜜起，虽能入禅，而不随禅生。须菩提！菩萨如是学者，得佛清净力，清净无畏。」</p>
+<p>　　「世尊！若一切法，本净相者，菩萨复得何等清净法？」</p>
+<p>　　佛言：「如是如是！须菩提！一切法本清净相，菩萨于是本净相法中，行般若波罗蜜，不惊不怖，不没不退，是名清净般若波罗蜜。须菩提！凡夫不知不见一切法本清净相，是故菩萨发勤精进，于是中学，得清净诸力，诸无畏。须菩提！菩萨如是学者，悉能通达一切众生心、心所行。须菩提！譬如少所地，出阎浮檀金，众生聚中，亦少能如是学般若波罗蜜。譬如众生，少有能起转轮王业，多有能起诸小王业。如是，须菩提！少有众生能行般若波罗蜜道，多有发声闻、辟支佛乘。须菩提！少有众生能学阿耨多罗三藐三菩提心者。于学阿耨多罗三藐三菩提中，少能如说行者。于如说行中，少能随学般若波罗蜜者。于随学中，少能得阿毗跋致者。是故，须菩提！菩萨欲在少中之少，当学般若波罗蜜，修习般若波罗蜜。」</p>
+<p>　　　　无悭烦恼品第二十二</p>
+<p>　　佛告须菩提：「若菩萨如是学般若波罗蜜，则不生烦恼心，不生悭心，不生破戒心，不生嗔恼心，不生懈怠心，不生散乱心，不生愚痴心。须菩提！菩萨如是学，皆摄诸波罗蜜。须菩提！譬如六十二见，皆摄在身见中。须菩提！菩萨学般若波罗蜜时，皆摄诸波罗蜜。譬如人死，命根灭故，诸根皆灭。如是，须菩提！菩萨学般若波罗蜜，皆摄诸波罗蜜。是故，须菩提！菩萨若欲摄诸波罗蜜，当学般若波罗蜜。须菩提。菩萨学般若波罗蜜。即于一切众生中最为上首。须菩提！于意云何？三千大千世界众生宁为多不？」</p>
+<p>　　「世尊！阎浮提众生尚多，何况三千大千世界？须菩提是众生皆为菩萨。」</p>
+<p>　　「若有一人，尽形寿供养衣服饮食卧具医药，须菩提！于意云何？是人以是因缘得福多不？」</p>
+<p>　　「甚多！甚多！世尊！」</p>
+<p>　　「须菩提！若有菩萨如弹指顷，修习般若波罗蜜，福胜于彼。如是，须菩提！般若波罗蜜大利益诸菩萨，能助阿耨多罗三藐三菩提。是故，须菩提！若菩萨欲得阿耨多罗三藐三菩提，欲于一切众生中为无上者，欲为一切众生作救护，欲得具足佛法，欲得佛所行处，欲得佛所游戏，欲得佛师子吼，欲得三千大千世界、大会讲法，当学般若波罗蜜。须菩提！我不见菩萨学般若波罗蜜，不得如是具足之利。世尊！是菩萨亦得具足声闻利耶？须菩提！菩萨亦学具足声闻利但？不愿住声闻法中，欲具足诸功德必皆能知，但不于中住，作是念：我亦当说是声闻功德，教化众生。若菩萨如是学者，能为一切世间、天、人、阿修罗作福田，于声闻、辟支佛福田为最殊胜。菩萨如是学者，得近萨婆若，不舍般若波罗蜜，不离般若波罗蜜。菩萨如是行般若波罗蜜，名为不退于萨婆若，远声闻、辟支佛地，近阿耨多罗三藐三菩提。是菩萨，若作是念：此是般若波罗蜜，是某般若波罗蜜，当得萨婆若。如是亦分别，即不行般若波罗蜜。若菩萨不分别般若波罗蜜，不见般若波罗蜜，不言此是般若波罗蜜，是某般若波罗蜜，当得萨婆若。如是亦不见不闻，不觉不知，即行般若波罗蜜。」</p>
+<p>　　尔时释提桓因作是念：是菩萨行般若波罗蜜，尚胜一切众生，何况得阿耨多罗三藐三菩提。若人乐闻般若，是人为得大利，寿命中最，何况能发阿耨多罗三藐三菩提心。是人则为世间之所贪慕，是人当得调御众生。</p>
+<p>　　尔时释提桓因化作曼陀罗华，满掬散佛上，作是言：「世尊！若有人发阿耨多罗三藐三菩提心者，愿令具足佛法，具足萨婆若，具足自然法，具足无漏法。世尊！我乃至不生一念，欲使发阿耨多罗三藐三菩提心者，有退转。世尊！我见生死之中，有诸苦恼，不生一念，欲使菩萨有退转者，我亦为阿耨多罗三藐三菩提，当勤行精进。何以故？是人等，能发如是心，则大利益一切世间。我自得度，当度未度者。我自得脱，当脱未脱者。我自得安，当安未安者。我自灭度，当度未灭度者。世尊！若人于初发心菩萨随喜，若于行六波罗，蜜若于阿毗跋致，若于一生补处随喜，是人为得几所福？」</p>
+<p>　　「德憍尸迦！须弥山王，尚可称量，是人随喜福德，不可称量。憍尸迦！三千大千世界尚可称量，是人随喜福德，不可称量。」</p>
+<p>　　释提桓因白佛言：「世尊！若人不能于是诸心随喜者，则为魔之所著，当知是为魔之眷属。不能于是诸心随喜者，当知是人于魔天命终，来生此间。何以故？是诸心皆能破诸魔事。是人随喜福德，应回向阿耨多罗三藐三菩提。若人发阿耨多罗三藐三菩提心者，则为不舍佛，不舍法，不舍僧。以是故，应于是诸心而生随喜。」</p>
+<p>　　「如是如是！憍尸迦！若人于是诸心随喜，当知是人疾得值佛。是人以是随喜福德善根故，在所生处，常得供养恭敬，尊重赞叹，不闻诸恶音声，亦不堕于诸恶道中，常生天上。何以故？是人随喜，为欲利益无量无边众生故。是随喜心，渐渐增长，能至阿耨多罗三藐三菩提。是人得阿耨多罗三藐三菩提时，当灭度无量众生。憍尸迦！以是因缘，当知是人，于是诸心随喜者，即是利益无量无边众生善根故随喜。」</p>
+<p>　　须菩提白佛言：「世尊！是心如幻，云何能得阿耨多罗三藐三菩提？」</p>
+<p>　　「须菩提！于意云何？汝见是人心如幻不？」</p>
+<p>　　「不也，世尊！我不见是心如幻。」</p>
+<p>　　「于意云何？若不见是幻，不见如幻。心离幻，离如幻心，更见有法可得阿耨多罗三藐三菩提不？」</p>
+<p>　　「不也，世尊！离幻，离如幻心，更不见法得阿耨多罗三藐三菩提。世尊！若我不见异法，当说何法若有若无？世尊！若法毕竟离，即不在有无；若法毕竟离，是法不得阿耨多罗三藐三菩提。世尊！无所有法，亦不能得阿耨多罗三藐三菩提。是故般若波罗蜜，毕竟离。若法毕竟离，则不可修习。如是法者，不能生余法，般若波罗蜜毕竟离故。世尊！般若波罗蜜毕竟离，云何能得阿耨多罗三藐三菩提？阿耨多罗三藐三菩提亦毕竟离，云何以离得离？」</p>
+<p>　　佛言：「善哉！善哉！须菩提！般若波罗蜜毕竟离，阿耨多罗三藐三菩提亦毕竟离，以是因缘故，能得阿耨多罗三藐三菩提。须菩提！若般若波罗蜜非毕竟离者，则非般若波罗蜜。如是，须菩提！亦不离般若波罗蜜。得阿耨多罗三藐三菩提，亦不以离得离。」</p>
+<p>　　　　小品般若经卷第八</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../brzj/xpbr/xpbrjjd7.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../brzj/xpbr/xpbrjjd9.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../brzj/xpbr/xpbrjjd7.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../brzj/xpbr/xpbrjjd9.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../../ace.js"></script>
+        <script src="../../editor.js"></script>
+        <script src="../../mode-rust.js"></script>
+        <script src="../../theme-dawn.js"></script>
+        <script src="../../theme-tomorrow_night.js"></script>
+
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

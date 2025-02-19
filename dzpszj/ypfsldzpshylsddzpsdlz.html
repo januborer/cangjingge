@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>演培法师论地藏菩萨─弘一律师对地藏菩萨的礼赞  - 藏经阁</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="佛经，地藏菩萨，观世音菩萨，净土宗，禅宗，华严，般若，金刚经，菩提道次第">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                    </div>
+
+                    <h1 class="menu-title">藏经阁</h1>
+
+                    <div class="right-buttons">
+                        <a href="https://github.com/januborer/cangjingge" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="演培法师论地藏菩萨弘一律师对地藏菩萨的礼赞"><a class="header" href="#演培法师论地藏菩萨弘一律师对地藏菩萨的礼赞">演培法师论地藏菩萨─弘一律师对地藏菩萨的礼赞</a></h1>
+<p>　　　　演培法师论地藏菩萨（之五）</p>
+<p>　　　　弘一律师对地藏菩萨的礼赞　　　　演培</p>
+<p>　　　　佛历二五一七年夏历七月廿八日讲于佛教居士林</p>
+<p>　　每年中国夏历七月到来，我国佛教徒不少发心读诵地藏本愿经及称念地藏菩萨圣号。特别是传为地藏大士示现道场的九华山，到了夏历七月，中国各地的善男信女，络绎不绝的齐向该山奔驰而来，甚至还有三步一拜或一步一拜的，其盛况真的不是笔墨所能形容！从这，可以想见地藏菩萨的感人之深，或者说是地藏菩萨的悲愿之切！</p>
+<p>　　宇宙万事万物的生起，佛教说是由于因缘，这是谁都知道的。就是人与人间的关系，亦看因缘的如何为定，甚至菩萨的度生，同样是看因缘的相不相契，以决定他是否接受菩萨的教化。每个发菩提心的菩萨，虽都以度生为己任，但若与某些众生没有缘，仍然不会受你感化的。不但菩萨如此，就是诸佛亦然。这在大乘经中，我佛常说到的。</p>
+<p>　　大乘经中所说到的菩萨，有名有号的固然多得不可胜数，无名无号的更是多得数如恒沙。但与娑婆世界阎浮众生特别有缘的，不能不说是观音菩萨与地藏菩萨，所以我国僧俗佛子所称念的菩萨圣号，亦以此二大士为最。不论走到那里，不论什么时候，我们都可听到称念二大士圣号的声音，可以得到证明。颧音的有缘姑且不论，现在谈谈地藏的有大因缘。</p>
+<p>　　地藏经卷中如来赞叹品说：「当知地藏菩萨有如是等不可说百千万亿大威神力，利益之事。阎浮众生，于此大士有大因缘。」卷下地神护法品说：「是地藏菩萨于阎浮提有大因缘。」又见闻利益品说：「是地藏菩萨于阎浮提有大因缘。若说于诸众生见闻利益等事，百千劫中说不能尽。」佛在经中三次说到地藏菩萨于阎浮众生有缘，所以称念其圣号的特别多。</p>
+<p>　　观音菩萨圣号得到普遍称念，净土行者的大力宣扬，实是一个主要的因素。当知地藏圣号的为人宣称，大德高僧的有力推崇，同样是个重大推动力。假定不是大德高僧一直强调菩萨的慈悲愿力，一般佛子还是不知称念的。菩萨得到大德高僧的推崇，主要当然还是由于有大因缘而来，如与众生没有大的因缘，纵然受到高度的推崇，亦还是没有用的。</p>
+<p>　　近代大德最为推崇地藏大士的，当以弘一律师为第一人。律师于一九二七年撰联赞地藏菩萨并记云；「多劫荷慈恩，今居永宁，得侍十年香火；尽形修忏法，愿生极乐，早成无上菩提。辛酉三月，余来永宁，居庆福寺，亲得瞻仰礼敬承事供养地藏菩萨摩诃萨，并修占察忏仪。明岁，庚午，首涉十载，自幸余生，获逢圣教，岂无庆跃！碎身莫酬，揽笔成词，辄中赞愿，惟冀见闻随喜，同证菩提。」这是律师于五十岁时记录下来的句语。</p>
+<p>　　于民国肇建后十年，律师于赞礼地藏菩萨忏愿仪跋中说；「改元后十年岁次辛酉四月二十一日，为亡母王太淑人六旬冥庆，敬写赞礼地藏菩萨忏愿仪一卷。以此功德，回向亡母，早消业障，往生西方。」为了纪念慈母的六十冥寿，为表对于慈母的无尽孝思，特发心写此忏仪回向。可见律师追念慈母的孝心，与地藏大士为母发广大愿的孝心精神相吻合的。</p>
+<p>　　最突出的，是听地藏经所受到的感动。如亦幻法师说：「是年（一九三○）十月十五日，天台静权法师来金仙寺宣讲地藏经，弥陀要解。弘一法师参加听法，两个月没有缺过一座。权法师从经义演绎到孝思在中国伦理学上之重要的时候，一师恒当著大众哽咽涕泣如雨，全体听众无不愕然惊惧。座上讲师亦弄得目瞪口呆，不敢讲下去……因他确实感动极了。」如果律师没有诚挚的孝意，怎么会有这样的至情流露？由此亦可看出律师的感动之深。</p>
+<p>　　正因地藏经给律师所受的感动深切，所以很愿此经得以普遍的流通。律师在地藏菩萨本愿经白话解释序中说：「余以本愿章疏，惟有科注一部。渊文奥理，未契初机。乃劝宅梵撰白话解，而为钤键。」现在流行很广而又众多的地藏经白话解，就是由律师之请所撰成的。虽说胡宅梵居士亦曾以是经为功课，熟读深思，但若不是律师的劝请，可能没有这部白话解的出现。一般人们欲想深解此经义趣，是亦就不可能；欲想共沐地藏宏恩，是亦同样万难。</p>
+<p>　　在每年地藏菩萨的圣诞，律师往往有所表示：如一九二○年手书十善业道经，跋说：「庚申七月二十九日，地藏菩萨圣诞，演音敬写十善业道经，回向法界众生，愿同修十善业道，以此净因，决定往生极乐。」一九二五年七月三十日，为地藏菩萨圣诞，律师在泉州净峰寺，午后为众讲九华山示迹大意。一九二六年七月，又曾手书地藏经见闻利益品行世。一九三二年律师在厦门万寿岩著地藏菩萨圣德大观一卷，叙说：「自惟剃染以来，至心归依地藏菩萨十有五载，受恩最厚，久欲辑录教迹，流传于世，赞扬圣德，而报深思，今其时矣。」</p>
+<p>　　又律师在厦门时，遇到卢世侯居士，是位地藏菩萨的崇奉者。时正发心刺血绘地藏菩萨圣像，律师见到非常欢喜，当即劝他画地藏菩萨九华垂迹图。居士奉律师的慈命，不但很乐意的接受，而且特地到九华山观礼圣迹。当每幅垂迹图画成时，律师皆随喜的为之题赞，因而此垂迹图，博得各方面的尊重，因这是名书家名画家所共合成，更显出地藏大士的圣德。</p>
+<p>　　对此，一九三三年闰五月，律师为卢世侯所绘地藏菩萨九华垂迹图题赞附记中说：「壬申仲冬，余来禾岛，始识世侯居士，时方集录地藏菩萨圣德大观。居士割指沥血，为绘圣像，捧持入山。余感其诚曰：『请续画九华垂迹。』尔后世侯往青阳观礼圣迹，复游钱塘富春，逮于四月，藻绘已讫，余为忭喜，略辍赞词，并辑一帙，冀以光显往迹，式酬圣德焉耳。」到了一九三九年，诸弟子为印金刚经及九华垂迹图，以为律师六十寿，以显律师崇重大士。</p>
+<p>　　同年律师在永春普济寺，曾著有「修净业宜诵地藏经为助行」。一九四○年地藏诞日，律师在永春讲「普劝净宗道侣兼持诵地藏经」。于此有前言说：「余来永春，迄今一年有半。在去夏时，王梦惺居士来信，为言拟偕林子坚居土等将来普济寺，请余讲经……及秋七月，余以掩关习禅，乃不果往……今日适逢地藏王菩萨圣诞，故乘此胜缘，为讲净宗道侣兼持诵地藏经要旨，以资纪念。」律师对地藏圣德的宣扬，可说不遗余力的尽形寿而为。</p>
+<p>　　一般称念地藏圣号的，只知有地藏本愿经，但据弘一律师与李圆净书，谓除地藏本愿经、地藏十轮经、占察善恶业报经，被世称为地藏三经外，金刚三昧经的最后一品，亦是地藏菩萨所说。其他载有地藏菩萨圣号的经典很多。虽多数皆称地藏菩萨，但大乘本生心地观经，则称为地藏王菩萨。信中律师诚挚的说：「朽人受菩萨慈恩甚深，故据所知，拉杂写出，以奉慧览。蕅益大师灵峰宗论中，屡有关于地藏菩萨之著作，亦乞仁者披阅之。」</p>
+<p>　　律师虽以重兴南山律宗为志，但亦以西方弥陀净土为归。为什么要劝修净宗的道侣兼诵地藏菩萨本愿经？这有没有他的所本？律师为此特举例说：「地藏十轮经云：『当生净佛国，导师之所居；乘于无上乘，速得最胜智。』又说：『当生净佛土，远离诸过恶；住彼证菩提，今离诸嗔忿。』又说：『如是菩萨福德智慧速疾圆满，不久安住清净佛国，证得无上正等菩提。』又说：『速往净佛国，证得大菩提。』」诸如此类的文句，经中很多。</p>
+<p>　　律师复举占察善恶业报经说：「地藏菩萨言：『若人欲生他方现在净国者，应当随彼世界佛之名字，专意诵念，一心不乱，如是观察者，决定得生彼佛净国，善根增长，速获不退』」。故蕅益大师依占察经立忏法，谓欲随意往生净佛国土者，应受持修行此忏悔法。忏法中发愿文云：「舍生他世，生在佛前；面奉弥陀，历侍诸佛，亲蒙授记，回入尘劳；普会群迷，同归秘藏。」此为兼诵地藏经，作为往生净土的助行之最大证明，是以不是律师随便主张。</p>
+<p>　　这末讲来，我们在这七月，读诵地藏本愿经，称念地藏的圣号，不要误以为恐堕地狱，而得地藏大士的救济，当知地藏不是专度地狱众生的，而是效法释尊大无畏精神，来此秽恶的娑婆世界，普度一切的罪苦众生。如地藏十轮经卷一说：「我今学世尊，发如是大愿，当于此秽土，得无上菩提。」所以经中又说：「地藏已于无量无数大劫，五浊恶世无佛世界，成熟有情。」从这可知地藏菩萨的慈悲愿力，是要在秽恶世界度诸罪苦众生的。</p>
+<p>　　讲到救度罪苦众生，虽说是以一切罪苦众生为所救济的对象，但地藏菩萨的慈悲愿力，为佛子甚至为世人所了知的，似乎是以救度地狱众生为其主要的任务。殊不知这个想法，并不完全正确的。众生因罪业堕地狱里去受极大苦，菩萨本其无尽的愿力，当要设法把他救出来，但这是不得已的办法，亦即不忍众生长期的在地狱中受苦，所以要深入地狱去化度他们，使他们离地狱苦得人天乐，甚至超升他们到极乐世界去，享受净土中的种种快乐。</p>
+<p>　　但这只是地藏菩萨度生的一面，而在地藏菩萨度生的本愿，是要每个众生不堕地狱，就可化度他们得到解脱。所以真正说来，地藏菩萨虽常在地狱度生，但亦经常的在这人世间，苦口婆心的以种种逼切语，教化难调难伏的刚强众生。告诉他们，什么事情是可做的，什么事情是不可做的，如何做人才可不堕地狱，是为真正的度地狱众生。假定不在人间化导世人断恶修善，让世人造恶堕入地狱，才用种种方法去救度他们，虽不失菩萨悲心，但已落于下乘。</p>
+<p>　　在座诸位，不论是长期或唯在七月持诵地藏经及称念圣号，首要打破错误观念的，就是不要希望死后堕入地狱，请求地藏菩萨的救度，而应在这现实的人间，依于地藏经的指示，如法如律的做个像样的人，千万不要做损人利己的事。当知佛法所说的因果，绝对是纤毫不爽的，现在做人如果任意的造种种恶，将来的受苦没有任何人可代替。地藏经地狱名号品说：「业力甚大，能敌须弥，能深巨海，能障圣道。是故众生莫轻小恶以为无罪，死后有报纤毫受之。父子至亲，岐路各别，纵然相逢，无肯代受。」如是因果昭然，怎可有所忽视？</p>
+<p>　　做人，特别是做个佛法行人，当然以不作恶而行众善为最理想，但若造诸恶业，特别是毁谤大乘，期必堕恶道无疑。但地藏经阎浮众生业感品说：「若遇善知识，劝令一弹指间，归依地藏菩萨，是诸众生即得解脱三恶道报。」所以对自己的前途，亦不必感到悲观失望。诸位是诚敬的佛子，亦是礼念地藏大士的，不但可得解脱三恶道报，且必证得无上菩提无疑。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../dzpszj/ypfsldzpsxxdzpsdxqjs.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../dzpszj/dzpsbyjbhjs.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../dzpszj/ypfsldzpsxxdzpsdxqjs.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../dzpszj/dzpsbyjbhjs.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+        <script src="../ace.js"></script>
+        <script src="../editor.js"></script>
+        <script src="../mode-rust.js"></script>
+        <script src="../theme-dawn.js"></script>
+        <script src="../theme-tomorrow_night.js"></script>
+
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
